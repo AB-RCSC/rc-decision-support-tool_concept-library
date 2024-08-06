@@ -1,0 +1,1039 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Capture-recapture (CR) / Capture-mark-recapture (CMR) &#8212; Remote Camera Decision Support Tool</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/RCDST_MockUp_FocusGroups_2024-05-24';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Glossary" href="../09_glossary_ref/09_01_glossary.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Remote Camera Decision Support Tool - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Remote Camera Decision Support Tool - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Capture-recapture (CR) / Capture-mark-recapture (CMR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_glossary_ref/09_01_glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09_glossary_ref/09_01_glossary2.html">Glossary2</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/AB-RCSC/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/AB-RCSC/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/issues/new?title=Issue%20on%20page%20%2F02_dialog-boxes/RCDST_MockUp_FocusGroups_2024-05-24.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/02_dialog-boxes/RCDST_MockUp_FocusGroups_2024-05-24.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Capture-recapture (CR) / Capture-mark-recapture (CMR)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="capture-recapture-cr-capture-mark-recapture-cmr">
+<h1>Capture-recapture (CR) / Capture-mark-recapture (CMR)<a class="headerlink" href="#capture-recapture-cr-capture-mark-recapture-cmr" title="Link to this heading">#</a></h1>
+<div class="full-width docutils">
+<div class="dropdown admonition">
+<p class="admonition-title">Click on this dropdown for more information</p>
+<p>Capture-recapture (CR) model / Capture-mark-recapture (CMR) model (Karanth, 1995; Karanth &amp; Nichols, 1998)</p>
+<p>ta da</p>
+<p><a class="reference internal" href="#./09_glossary_ref/09_01_glossary2.ipynb#number_of_images"><span class="xref myst">number_of_images</span></a></p>
+<p></p>
+<p><strong>Capture-recapture (CR) model / Capture-mark-recapture (CMR) model (Karanth, 1995; Karanth &amp; Nichols, 1998)</strong>: A method of estimating the abundance or density of marked populations using the number of animals detected and the likelihood animals will be detected (detection probability). CR (Karanth, 1995; Karanth &amp; Nichols, 1998) can be used to estimate vital rates where all newly detected unmarked animals become marked and are distinguishable in future (Efford, 2022). Spatially explicit capture-recapture (SECR; Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008) models have largely replaced CR and CMR models and provide more accurate density estimates (Blanc et al., 2013, Obbard et al., 2010, Sollmann et al., 2011).</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><strong>Assumptions, Pros, Cons</strong></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<strong>Assumptions</strong></div>
+<ul class="simple">
+<li><p class="sd-card-text">Demographic closure (i.e., no births or deaths)<sup>1</sup></p></li>
+<li><p class="sd-card-text">Geographic closure (i.e., no immigration or emigration)<sup>1</sup></p></li>
+<li><p class="sd-card-text">All individuals have at least some probability of being detected<sup>2</sup></p></li>
+<li><p class="sd-card-text">Sampled area encompasses the full extent of individuals’ movements<sup>2,10</sup></p></li>
+<li><p class="sd-card-text">Activity centres are randomly dispersed<sup>12</sup></p></li>
+<li><p class="sd-card-text">Activity centres are stationary<sup>12</sup></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<strong>Pros</strong></div>
+<ul class="simple">
+<li><p class="sd-card-text">May be used as a <a class="reference internal" href="#mods_relative_abundance"><span class="xref myst">relative abundance index</span></a> that controls for <a class="reference internal" href="#imperfect_detection"><span class="xref myst">imperfect detection</span></a><sup>1</sup></p></li>
+<li><p class="sd-card-text">Easy-to-use software exists to implement (e.g., CAPTURE); MARK Implements more complicated models with covariates (and must be used for <a class="reference internal" href="#mods_marked__resight"><span class="xref myst">mark-resight modelling</span></a>)<sup>1</sup></p></li>
+<li><p class="sd-card-text">Can use the robust design with “open” models to obtain recruitment and survival rate estimates<sup>1</sup></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<strong>Cons</strong></div>
+<ul class="simple">
+<li><p class="sd-card-text">Requires that individuals are distinguishable.<sup>1</sup> However, CR<sup>10,11</sup> has also been used to estimate abundance of species that lack natural markers but that have phenotypic and/or environment-induced characteristics<sup>2,13,14</sup></p></li>
+<li><p class="sd-card-text">When the sample size is large enough to reliably estimate <a class="reference internal" href="#density"><span class="xref myst">density</span></a>  with CR,<sup>10,11</sup> individuals are unlikely to have a unique marker<sup>2,13,14</sup></p></li>
+<li><p class="sd-card-text">Dependent on the surveyed area, which is difficult to track and calculate<sup>1</sup></p></li>
+<li><p class="sd-card-text">Requires a minimum number of captures and recaptures<sup>1</sup></p></li>
+<li><p class="sd-card-text">Relatively stringent requirements for study design (e.g., no “holes” in the trapping grid)<sup>1</sup></p></li>
+<li><p class="sd-card-text">Geographic closure at the plot level, which is often unrealistic<sup>1</sup></p></li>
+<li><p class="sd-card-text">Assumes a specific relationship between abundance and detection<sup>1</sup></p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#density"><span class="xref myst">Density</span></a> cannot be explicitly estimated because the true area animals occupy is never measured (only approximated)<sup>16</sup></p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details><div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Overview</label><div class="sd-tab-content docutils">
+<a class="reference internal image-reference" href="02_dialog-boxes/03_images/00_demo/CR_EMBED_LAYMAN_EXAMPLE1.png"><img alt="02_dialog-boxes/03_images/00_demo/CR_EMBED_LAYMAN_EXAMPLE1.png" class="align-center" src="02_dialog-boxes/03_images/00_demo/CR_EMBED_LAYMAN_EXAMPLE1.png" style="width: 80%;" /></a>
+<a class="reference internal image-reference" href="02_dialog-boxes/03_images/00_demo/CR_EMBED_LAYMAN_EXAMPLE2.png"><img alt="02_dialog-boxes/03_images/00_demo/CR_EMBED_LAYMAN_EXAMPLE2.png" class="align-center" src="02_dialog-boxes/03_images/00_demo/CR_EMBED_LAYMAN_EXAMPLE2.png" style="width: 90%;" /></a>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Advanced</label><div class="sd-tab-content docutils">
+<p><br />
+To estimate density using camera trap CR, we must first estimate population size 𝑁. CR models use individuals’ detection histories – that is, the record of when each individual was photographed or not photographed (i.e., (re)captured or not (re)captured) – to solve for 𝑁 (Figure 3; Royle 2020). Population-level detection histories look like a matrix of 1s and 0s, where 1s signify that an individual was captured during a given sampling occasion 𝑘, and 0s signify that the individual was not captured during that occasion (Royle 2020, Royle et al. 2014). The number of individuals photographed at least once over the course of the study (i.e., the count of animals captured) is 𝑛.<br />
+Importantly, the count of animals is not the same as the size of the population (i.e., 𝑛 ≠ 𝑁). Some individuals will never be photographed during a study, even though they are present and able to be detected (i.e., they are in 𝑁 but not in 𝑛; Royle 2020). Using the matrix of detection histories, we must therefore calculate the likelihood animals will be detected by an array of camera traps – that is, detection probability p (Royle 2020).
+Taking this information together, we can calculate population size 𝑁 as:</p>
+<a class="reference internal image-reference" href="02_dialog-boxes/03_images/00_demo/Clarke-et-al_2023_eqn_cr1.png"><img alt="02_dialog-boxes/03_images/00_demo/Clarke-et-al_2023_eqn_cr1.png" class="align-center" src="02_dialog-boxes/03_images/00_demo/Clarke-et-al_2023_eqn_cr1.png" style="width: 80px;" /></a>
+<p>which is often referred to as the canonical estimator of population size (Royle 2020). Population size 𝑁 can then be divided by an estimate of the area of the sampling frame 𝐴 to obtain density.
+CR models have important limitations – notably that they do not consider the spatial configuration of camera traps or the spatial pattern of animal detections. This gives rise to two major issues:
+The sampling frame 𝐴 is not known (Chandler and Royle 2013). In other words: the true area animals occupy is never measured, only approximated using adhoc approaches (e.g., using a buffer strip around the trap array; Rich et al. 2014, Sollmann 2018). Consequently, density cannot be calculated explicitly (Chandler and Royle 2013), and CR-derived density estimates are somewhat arbitrary and difficult to compare across studies (Green et al. 2020, Royle et al. 2014, Sollmann 2018).
+Detection probability is assumed to be the same across all individuals and sampling occasions, even though the likelihood a given individual is detected at a given camera trap will change with its proximity to that trap. An animal that occupies territory far away from a trap is less likely to be detected there than one that lives nearby, for example (Morin et al. 2022).
+The standard CR model has largely been phased out with the advent of spatially-explicit CR models (see 2.1.2 Spatial Capture-Recapture; Burton et al. 2015, Sollmann 2008), which address the shortcomings of CR and have been shown to produce more accurate density estimates (e.g., Blanc et al. 2013, Obbard et al. 2010, Sollmann et al. 2011).</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Visual Resources</label><div class="sd-tab-content docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+</div>
+</div>
+</div>
+<div class="docutils">
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>URL</p></th>
+<th class="head"><p>Note</p></th>
+<th class="head"><p>Reference</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>R package - “RMark”</p></td>
+<td><p><a class="reference external" href="https://cran.r-project.org/web/packages/RMark/index.html">https://cran.r-project.org/web/packages/RMark/index.html</a></p></td>
+<td><p>“The R counterpart to MARK, allowing complex models to be fit using just a few lines of code. With some work, it is possible to get RMark functioning on Mac and Linux (see RMark documentation).” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
+<td><p>Laake J (2013). “RMark: An R Interface for Analysis of Capture-Recapture Data with MARK.” AFSC Processed Rep. 2013-01, Alaska Fish. Sci. Cent., NOAA, Natl. Mar. Fish. Serv., Seattle, WA. <a class="reference external" href="https://apps-afsc.fisheries.noaa.gov/Publications/ProcRpt/PR2013-01.pdf">https://apps-afsc.fisheries.noaa.gov/Publications/ProcRpt/PR2013-01.pdf</a>.</p></td>
+</tr>
+<tr class="row-odd"><td><p>R package - “multimark”</p></td>
+<td><p><a class="reference external" href="https://cran.r-project.org/web/packages/multimark/index.html">https://cran.r-project.org/web/packages/multimark/index.html</a></p></td>
+<td><p>Conventional capture-recapture using multiple marks - Conventional capture-recapture (and mark-resight) “Allows for an integrated analysis of data on two individuallyidentifiable animal marks (e.g. left and right flanks of animals), as might be obtained from capture-recapture surveys which do not use paired cameras. Also implements standard models using a single mark.” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
+<td><p>McClintock BT (2015). “multimark: an R package for analysis of capture–recapture data consisting of multiple “noninvasive” marks.” Ecology and Evolution, 5(21), 4920–4931. <a class="reference external" href="https://doi.org/10.1002/ece3.1676">https://doi.org/10.1002/ece3.1676</a>.</p></td>
+</tr>
+<tr class="row-even"><td><p>Program - “MARK”</p></td>
+<td><p>&lt;<a class="reference external" href="http://www.phidot.org/software/mark/downloads">www.phidot.org/software/mark/downloads</a>&gt;</p></td>
+<td><p>Conventional capture-recapture (and mark-resight) “Relatively complex and comprehensive software with a steep learning curve. Also implements occupancy models. Fits models using maximum likelihood methods (unlike CAPTURE), allowing for model selection and hypothesis testing. Good support available from an active community.” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
+<td><p>White, G. C., &amp; Burnham, K. P. (1999). Program MARK: Survival estimation from populations of marked animals. Bird Study, 46(sup1), S120–S139. <a class="reference external" href="https://doi.org/10.1080/00063659909477239">https://doi.org/10.1080/00063659909477239</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Program - “CAPTURE”</p></td>
+<td><p>&lt;<a class="reference external" href="http://www.mbr-pwrc.usgs.gov/software/capture.shtml">www.mbr-pwrc.usgs.gov/software/capture.shtml</a>&gt;</p></td>
+<td><p>“Software for making abundance and density estimates using a limited range of conventional capture-recapture models. Inference is based on the models in White et al. (1978), rather than modern maximum likelihood estimation.” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+References</label><div class="sd-tab-content docutils">
+<font size="1">
+<p>Ahumada, J. A., Fegraus, E., Birch, T., Flores, N., Kays, R., O’Brien, T. G., Palmer, J., Schuttler, S., Zhao, J. Y., Jetz, W., Kinnaird, M., Kulkarni, S., Lyet, A., Thau, D., Duong, M., Oliver, R., &amp; Dancer, A. (2019). Wildlife Insights: A Platform to Maximize the Potential of Camera Trap and Other Passive Sensor Wildlife Data for the Planet. <em>Environmental Conservation</em>, 47(1), 1-6. <a class="reference external" href="https://doi.org/10.1017/s0376892919000298">https://doi.org/10.1017/s0376892919000298</a></p>
+<p>Ahumada, J. A., Silva, C. E. F., Gajapersad, K., Hallam, C., Hurtado, J., Martin, E., McWilliam, A., Mugerwa, B., O’Brien, T., Rovero, F., Sheil, D., Spironello, W. R., Winarni, N., &amp; Andelman, S. J. (2011). Community Structure and Diversity of Tropical Forest Mammals: Data from a Global Camera Trap Network. <em>Philosophical Transactions: Biological Sciences, 366</em>(1578), 2703-2711. <a class="reference external" href="https://doi.org/10.1098/rstb.2011.0115">https://doi.org/10.1098/rstb.2011.0115</a></p>
+<p>Alberta Biodiversity Monitoring Institute [ABMI] (2021). <em>Terrestrial ARU and Remote Camera Trap Protocols:</em> Edmonton, Alberta. <a class="reference external" href="https://abmi.ca/home/publications/551-600/599">https://abmi.ca/home/publications/551-600/599</a></p>
+<p>Alberta Remote Camera Steering Committee (RCSC). 2023. Remote Camera Metadata Standards: Standards for Alberta. Version 2.0. Edmonton, Alberta. <a class="reference external" href="https://cassstevenson.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2.1_Citation-and-Info.html">https://cassstevenson.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2.1_Citation-and-Info.html</a></p>
+<p>Alonso, R. S., McClintock, B. T., Lyren, L. M., Boydston, E. E., &amp; Crooks, K. R. (2015). Mark-recapture and Mark-resight Methods for Estimating Abundance with Remote Cameras: A Carnivore Case Study. <em>PLoS One, 10</em>(3), e0123032. <a class="reference external" href="https://doi.org/10.1371/journal.pone.0123032">https://doi.org/10.1371/journal.pone.0123032</a></p>
+<p>Anile, S., &amp; Devillard, S. (2016). Study Design and Body Mass Influence RAIs from Camera Trap Studies: Evidence from the Felidae. <em>Animal Conservation, 19</em>(1), 35–45. <a class="reference external" href="https://doi.org/10.1111/acv.12214">https://doi.org/10.1111/acv.12214</a></p>
+<p>Apps, P. J., &amp; McNutt, J. W. (2018). How Camera Traps work and how to work them. <em>African Journal of Ecology, 56</em>(4), 702–709. <a class="reference external" href="https://doi.org/10.1111/aje.12563">https://doi.org/10.1111/aje.12563</a></p>
+<p>Arnason, A. N., Schwarz, C. J. &amp; Gerrard, J. M. (1991). Estimating Closed Population Size and Number of Marked Animals from Sighting Data. <em>Journal of Wildlife Management, 55</em>(4), 716–730. <a class="reference external" href="https://doi.org/10.2307/3809524">https://doi.org/10.2307/3809524</a></p>
+<p>Augustine, B. C., Royle, J. A., Kelly, M. J., Satter, C. B., Alonso, R. S., Boydston, E. E., &amp; Crooks, K. R. (2018). Spatial Capture–Recapture with Partial Identity: An Application to Camera Traps. <em>The Annals of Applied Statistics, 12</em>(1), 67-95. <a class="reference external" href="https://doi.org/10.1214/17AOAS1091">https://doi.org/10.1214/17AOAS1091</a></p>
+<p>Augustine, B. C., Royle, J. A., Murphy, S. M. Chandler, R. B., Cox, J. J., &amp; Kelly, M. J. (2019). Spatial Capture–Recapture for Categorically Marked Populations with an Application to Genetic Capture–Recapture. <em>Ecosphere, 10</em>(4) e02627-n/a. <a class="reference external" href="https://doi.org/10.1002/ecs2.2627">https://doi.org/10.1002/ecs2.2627</a></p>
+<p>Bayne, E., Dennett, J., Dooley, J., Kohler, M., Ball, J., Bidwell, M., Braid, A., Chetelat, J., Dillegeard, E., Farr, D., Fisher, J., Freemark, M., Foster, K., Godwin, C., Hebert, C., Huggard, D., McIssac, D., Narwani, T., Nielsen, S., Pauli, B., Prasad, S., Roberts, D., Slater, S., Song, S., Swanson, S., Thomas, P., Toms, J., Twitchell, C., White, S., Wyatt,&amp; F., Mundy, L. (2021). <em>Oil Sands Monitoring Program: A Before-After Dose- Response Terrestrial Biological Monitoring Framework for the Oil Sands</em>. (OSM Technical Report Series No. 7). <a class="reference external" href="https://open.alberta.ca/publications/9781460151341">https://open.alberta.ca/publications/9781460151341</a></p>
+<p>Becker, M., Huggard, D. J., Dickie, M., Warbington, C., Schieck, J., Herdman, E., Serrouya, R., &amp; Boutin, S. (2022). Applying and Testing a Novel Method to Estimate Animal Density from Motion-Triggered Cameras. <em>Ecosphere, 13</em>(4), 1-14. <a class="reference external" href="https://doi.org/10.1002/ecs2.4005">https://doi.org/10.1002/ecs2.4005</a></p>
+<p>Beery, S., Morris, D., &amp; Yang, S. (2019). Efficient Pipeline for Camera Trap Image Review. <em>Microsoft AI for Earth</em>. <a class="reference external" href="https://doi.org/10.48550/arXiv.1907.06772">https://doi.org/10.48550/arXiv.1907.06772</a></p>
+<p>Bessone, M., Kühl, H. S., Hohmann, G., Herbinger, I., N’Goran, K. P., Asanzi, P., Da Costa, P. B., Dérozier, V., Fotsing, E. D. B., Beka, B. I., Iyomi, M. D., Iyatshi, I. B., Kafando, P., Kambere, M. A., Moundzoho, D. B., Wanzalire, M. L. K., Fruth, B., &amp; Michalski, F. (2020). Drawn out of the Shadows: Surveying Secretive Forest Species with Camera Trap Distance Sampling. <em>Journal of Applied Ecology, 57</em>(5), 963–974. <a class="reference external" href="https://doi.org/10.1111/1365-2664.13602">https://doi.org/10.1111/1365-2664.13602</a></p>
+<p>Bischof, R., Dupont, P., Milleret, C., ChipperfIeld, J., &amp; Royle, J.A. (2020). Consequences of Ignoring Group Association in Spatial Capture-Recapture. <em>Wildlife Biology, 2020</em>(1). <a class="reference external" href="https://doi.org/10.2981/wlb.00649">https://doi.org/10.2981/wlb.00649</a>
+</font>\</p>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Glossary</label><div class="sd-tab-content docutils">
+<p><strong>*Access Method</strong>
+:   The method used to reach the camera location (e.g., on “Foot,” “ATV,” “Helicopter,” etc.).</p>
+<p><strong>*Adult</strong>
+:   Animals that are old enough to breed; reproductively mature.</p>
+<p><strong>*Age Class</strong>
+:   The age classification of one or more individuals (if the classification is the same) being categorized (e.g., “Adult,” “Juvenile,” “Subadult,” “Subadult - Young of Year,” “Subadult - Yearling”, or “Unknown”).</p>
+<p><strong>*Analyst</strong>
+:   The first and last names of the individual who provided the observation data point (species identification and associated information). If there are multiple analysts for an observation, enter the primary analyst.</p>
+<p><strong>*Animal ID</strong>
+:   A unique ID for an animal that can be uniquely identified (e.g., marked in some way). More than one unique individual can be identified in an image; each individual should be entered as a unique row. If Animal IDs were not collected, leave blank.</p>
+<p><strong>Audible lure</strong>
+:   Sounds imitating noises of prey or conspecifics that draw animals closer by eliciting curiosity (Schlexer, 2008).</p>
+<p><strong>Bait</strong>
+:   A food item (or other substance) that is placed to attract animals via the sense of taste and olfactory cues (Schlexer, 2008).</p>
+<p><strong>*Bait/Lure Type</strong>
+:   The type of bait or lure used at a camera location. Leave blank if not applicable.</p>
+<p><strong>*Batteries Replaced</strong>
+:   Whether the camera’s batteries were replaced.</p>
+<p><strong>*Behaviour</strong>
+:   The behaviour of an individual or multiple individuals being categorized (e.g., “Standing,” “Drinking,” “Vigilant,” etc.).</p>
+<p><strong>*Camera Active On Arrival</strong>
+:   Whether a camera was functional upon arrival.</p>
+<p><strong>*Camera Active On Departure</strong>
+:   Whether a camera was functional upon departure.</p>
+<p><strong>Camera angle</strong>
+:   The degree at which the camera is pointed toward the FOV Target Feature relative to the horizontal ground surface (with respect to slope, if applicable).</p>
+<p><strong>*Camera Attachment</strong>
+:   The method/tools used to attach the camera (e.g., attached to a tree with a bungee cord; reported as codes such as “Tree + Bungee/Strap”).</p>
+<p><strong>*Camera Damaged</strong>
+:   Whether the camera was damaged or malfunctioning; if there is any damage to the device (physical or mechanical), the Crew should describe the damage in the Service/Retrieval Comments.</p>
+<p><strong>Camera days per camera location</strong>
+:   The number of days each camera was active and functioning during the period it was deployed (e.g., 24-hour periods or the difference in days between the Deployment Start Date Time and the Deployment End Date Time if there were no interruptions).</p>
+<p><strong>*Camera Direction (degrees)</strong>
+:   The cardinal direction that a camera faces. Ideally, cameras should face north (N; i.e. “0” degrees), or south (S; i.e. “180” degrees) if north is not possible. The Camera Direction should be chosen to ensure the field of view (FOV) is of the original FOV target feature.</p>
+<p><strong>*Camera Height (m)</strong>
+:   The height from the ground (below snow) to the bottom of the lens (recorded in metres to the nearest 0.05 m).</p>
+<p><strong>*Camera ID</strong>
+:   A unique alphanumeric ID for the camera that distinguishes it from other cameras of the same make or model.</p>
+<p><strong>Camera location</strong>
+:   The location where a single camera was placed (recorded as “Camera Location Name”).</p>
+<p><strong>*Camera Location Characteristic(s)</strong>
+:   Record any significant features around the camera at the time of the visit. This may include for example, manmade or natural linear features (e.g., trails), habitat types (e.g., wetlands), wildlife structure (e.g., beaver dam). Camera Location Characteristics differ from FOV Target Features in that Camera Location Characteristics could include those not in the camera’s Field of View.</p>
+<p><strong>*Camera Location Comments</strong>
+:   Comments describing additional details about a camera location.</p>
+<p><strong>*Camera Location Name</strong>
+:   A unique alphanumeric identifier for the location where a single camera was placed (e.g., “BH1,” “BH2”).</p>
+<p><strong>*Camera Make</strong>
+:   The make (i.e., the manufacturer; e.g., “Reconyx” or “Bushnell’) of a particular camera.</p>
+<p><strong>*Camera Model</strong>
+:   The model number or name (e.g., “PC900” or “Trophy Cam HD”) of a particular camera.</p>
+<p><strong>*Camera Serial Number</strong>
+:   The serial number of a particular camera, which is usually found inside the camera cover (e.g., “P900FF04152022”).</p>
+<p><strong>Camera spacing</strong>
+:   The distance between cameras (i.e., also referred to as “inter-trap distance”). This will be influenced by the chosen sampling design, the survey objectives, the target species and data analysis.</p>
+<p><strong>Capture-recapture (CR) model / Capture-mark-recapture (CMR) model (Karanth, 1995; Karanth &amp; Nichols, 1998)</strong>
+:   A method of estimating the abundance or density of marked populations using the number of animals detected and the likelihood animals will be detected (detection probability). CR (Karanth, 1995; Karanth &amp; Nichols, 1998) can be used to estimate vital rates where all newly detected unmarked animals become marked and are distinguishable in future (Efford, 2022). Spatially explicit capture-recapture (SECR; Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008) models have largely replaced CR and CMR models and provide more accurate density estimates (Blanc et al., 2013, Obbard et al., 2010, Sollmann et al., 2011).</p>
+<p><strong>*Card Status (% Full)</strong>
+:   The remaining storage capacity on an SD card; collected during a camera service or retrieval.</p>
+<p><strong>Categorical partial identity model (mods_catspim (Augustine et al., 2019; Sun et al., 2022)</strong>
+:   A method used to estimate the density of partially marked populations in which the “spatial locations of where partial identity samples are captured to probabilistically resolve their complete identities” (Augustine et al., 2018, 2019). catSPIM models use partial identity traits (e.g., sex class, antler points) to help infer individual identities (Augustine et al., 2019; Sun et al., 2022). catSPIM is an extension of the SC model (Chandler &amp; Royle, 2013).</p>
+<p><strong>Clustered design</strong>
+:   Multiple cameras are deployed at a sample station (Figure 3d). A clustered design can be used within a systematic or stratified approach (i.e., systematic clustered design or as a clustered random design [Wearn &amp; Glover-Kapfer, 2017]).</p>
+<p><strong>Convenience design</strong>
+:   Camera locations or sample stations are chosen based on logistic considerations (e.g., remoteness, access constraints, and costs).</p>
+<p><strong>Crew</strong>
+:   The first and last names of the individuals who collected data for a deployment or a service/retrieval.</p>
+<p><strong>Cumulative detection probability</strong>
+:   The probability of detecting a species at least once during the entire survey (Steenweg et al., 2019).</p>
+<p><strong>Density</strong>
+:   The number of individuals per unit area.</p>
+<p><strong>Deployment</strong>
+:   A unique placement of a camera in space and time (recorded as “Deployment Name”). There may be multiple deployments for one camera location. Deployments are often considered as the time between visits (i.e., deployment to service, service to service, and service to retrieval). Any change to camera location, sampling period, camera equipment (e.g., Trigger Sensitivity setting, becomes non-functioning), and/or conditions (e.g., not baited then baited later; camera SD card replaced) should be documented as a unique deployment.</p>
+<p><strong>*Deployment Area Photo Numbers</strong>
+:   The image numbers for the deployment area photos (if collected, e.g., “DSC100”). These are optionally documented on a Camera Deployment Field Datasheet for each set of camera deployment area photos. Leave blank if not applicable.</p>
+<p><strong>Deployment area photos</strong>
+:   Photos of the area around the camera location, collected as a permanent, visual record of the FOV Target Features, Camera Location Characteristics, environmental conditions (e.g., vegetation, ecosite, weather) or other variables of interest. The recommendation includes collecting four photos taken from the centre of the target detection zone (Figure 5), facing each of the four cardinal directions. The documentation of the collection of these photos is recorded as “Deployment Area Photos Taken” (Yes/No).</p>
+<p><strong>*Deployment Area Photos Taken</strong>
+:   Whether deployment area photos were taken (yes/no; optional). The recommendation includes collecting four photos taken from the centre of the target detection zone (Figure 5), facing each of the four cardinal directions.</p>
+<p><strong>*Deployment Comments</strong>
+:   Comments describing additional details about the deployment.</p>
+<p><strong>*Deployment Crew</strong>
+:   The first and last names of the individuals who collected data during the deployment visit.</p>
+<p><strong>Deployment End Date Time (DD-MMM-YYYY HH:MM:SS)</strong>
+:   The date and time that the data was retrieved for a specific deployment (e.g., 27-JUL-2019 23:00). The Deployment End Date Time may not coincide with when the last image or video was collected (i.e., the Image Set End Date Time). Recording this field allows users to account for deployments where no images were captured and to confirm the last date and time that the camera was active.</p>
+<p><strong>*Deployment Image Count</strong>
+:   The total number of images collected during the deployment, including false fires (i.e., empty images with no species) and those triggered by a time-lapse setting.</p>
+<p><strong>Deployment metadata</strong>
+:   Metadata that is collected each time a camera is deployed. Each deployment event should have its own Camera Deployment Field Datasheet. The relevant metadata fields that should be collected differ when a camera is deployed vs. serviced or retrieved.</p>
+<p>:   Refer to Appendix A - Table A5 and Camera Deployment Field Datasheet.</p>
+<p><strong>*Deployment Name</strong>
+:   A unique alphanumeric identifier for a unique camera deployed during a specific survey period (ideally recorded as: “Camera Location Name”<em>“Deployment Start Date” (or …</em>”Deployment End Date”) (e.g., “BH1_17-JUL-2018” or “BH1_17-JUL-2018_21-JAN-2019”). Alternative naming conventions may be used, but the goal should be to minimize duplicate Image Names.</p>
+<p><strong>*Deployment Start Date Time (DD-MMM-YYYY HH:MM:SS)</strong>
+:   The date and time that a camera was placed for a specific deployment (e.g., 17-JUL-2018 10:34:22). The Deployment Start Date Time may not coincide with when the first image or video was collected (i.e., the Image Set Start Date Time). Recording this field allows users to account for deployments where no images were captured and to confirm the first date and time a camera was active.</p>
+<p><strong>Deployment visit</strong>
+:   When a crew has gone to a location to deploy a remote camera.</p>
+<p><strong>Detection “event”</strong>
+:   A group of images or video clips that are considered independent from other images or video clips based on a certain time threshold (or “inter-detection interval”). For example, 30 minutes (O’Brien et al., 2003; Gerber et al., 2010; Kitamura et al., 2010; Samejima et al., 2012) or 1 hour (e.g., Tobler et al., 2008; Rovero &amp; Marshall, 2009).</p>
+<p><strong>Detection distance</strong>
+:   “The maximum distance that a sensor can detect a target” (Wearn and Glover-Kapfer, 2017).</p>
+<p><strong>Detection probability (aka detectability)</strong>
+:   The probability (likelihood) that an individual of the population of interest is included in the count at time or location i.</p>
+<p><strong>Detection rate</strong>
+:   The frequency of independent detections within a specified time period.</p>
+<p><strong>Detection zone</strong>
+:   The area (conical in shape) in which a remote camera can detect the heat signature and motion of an object (Rovero &amp; Zimmermann, 2016) (Figure 5).</p>
+<p><strong>Distance sampling (DS) model (Howe et al., 2017)</strong>
+:   A method to estimate abundance by using distances at which animals are detected (from survey lines or points) to model abundance as a function of decreasing detection probability with animal distance from the camera (using a decay function) (Cappelle et al., 2021; Howe et al., 2017).</p>
+<p><strong>*Easting Camera Location</strong>
+:   The easting UTM coordinate of the camera location (e.g., “337875”). Record using the NAD83 datum. Leave blank if recording the Longitude instead.</p>
+<p><strong>Effective detection distance</strong>
+:   The distance from a camera that would give the same number of detections if all animals up to that distance are perfectly detected, and no animals that are farther away are detected; Buckland, 1987, Becker et al., 2022).</p>
+<p><strong>*Event Type</strong>
+:   Whether detections were reported as an individual image captured by the camera (“Image”), a “Sequence,” or “Tag.”</p>
+<p><strong>False trigger</strong>
+:   Blank images (no wildlife or human present). These images commonly occur when a camera is triggered by vegetation blowing in the wind.</p>
+<p><strong>Field of View (FOV)</strong>
+:   The extent of a scene that is visible in an image (Figure 5); a large FOV is obtained by “zooming out” from a scene, whilst “zooming in” will result in a smaller FOV (Wearn &amp; Glover-Kapfer, 2017).</p>
+<p><strong>Flash output</strong>
+:   The camera setting that provides the level of intensity of the flash (if enabled).</p>
+<p><strong>*FOV Target Feature</strong>
+:   A specific man-made or natural feature at which the camera is aimed to maximize the detection of wildlife species or to measure the use of that feature. Leave blank if not applicable.</p>
+<p><strong>*FOV Target Feature Distance (m)</strong>
+:   The distance (in metres) from the camera to the FOV Target Feature (recorded to the nearest 0.5 m). Leave blank if not applicable.</p>
+<p><strong>*GPS Unit Accuracy (m)</strong>
+:   The margin of error of the GPS unit used to record spatial information (e.g., “5” [m]), such as the coordinates of the camera location. On most GPS units (e.g., “Garmin”) this information is provided on the unit’s satellite information page.</p>
+<p><strong>*Human Transport Mode/Activity</strong>
+:   The activity performed, or mode of transportation used, by a human observed (e.g., hiker, skier, all terrain vehicle etc.). Leave blank if not applicable.</p>
+<p><strong>Hurdle model (Mullahy, 1986)</strong>
+:   A regression model used in the setting of excess zeros (zero-inflation) and overdispersion (Mullahy, 1986). Hurdle models (aka “zero-altered” models) differ from zero-inflation models in that they are two-part models, and the zero and non-zero counts are modelling separately (thus, they are only adequate when the counting process cannot generate a zero value) (Blasco-Moreno et al., 2019). [relative abundance indices]</p>
+<p><strong>Image</strong>
+:   An individual image captured by a camera, which may be part of a multi-image sequence (recorded as “Image Name”).</p>
+<p><strong>Image classification</strong>
+:   The process of assigning class labels to an image according to the wildlife species, other entities (e.g., human, vehicle), or conditions within the image. Image classification can be performed manually or automatically by an artificial intelligence (AI) algorithm. Image classification is sometimes used interchangeably with “image tagging.”</p>
+<p><strong>Image classification confidence</strong>
+:   The likelihood of an image containing an object of a certain class (Fennell et al., 2022).</p>
+<p><strong>*Image Flash Output</strong>
+:   The Image Flash Output setting determines the level of intensity of the flash (if enabled). Record the Image Flash Output as reported in the image Exif data (e.g., “Flash Did Not Fire”, “Auto”). Leave blank not applicable and “Unknown” if not known.</p>
+<p><strong>*Image Infrared Illuminator</strong>
+:   The infrared illuminator setting can be enabled, if applicable to the camera make/model, to obtain greater visibility at night by producing infrared light. Record the Image Infrared Illuminator as reported in the image Exif data (e.g., “On” or “Off”). Record “Unknown” if not known.</p>
+<p><strong>Image Name</strong>
+:   A unique alphanumeric file name for the image. It is important to include (at a minimum) the camera location, date, time, and image number when generating an Image Name to avoid duplicate file names (e.g., “BH1_17-JUL-2018_22-JUL-2018 10:34:22_IMG_100”).</p>
+<p><strong>Image processing</strong>
+:   The series of operations that are taken to extract information from images. In the case of remote camera data, it can include loading the images into a processing platform, extracting information from the image metadata (e.g., the date and time the image was taken), running an artificial intelligence (AI) algorithm to identify empty images, classifying animals or other entities within the image.</p>
+<p><strong>*Image Sequence</strong>
+:   The order of the image in a rapid-fire sequence as reported in the image Exif data (text; e.g., “1 of 1” or “1 of 3”). Leave blank if not applicable.</p>
+<p><strong>*Image Set End Date Time (DD-MMM-YYYY HH:MM:SS)</strong>
+:   The date and time of the last image or video collected during a specific deployment (e.g., “17-JUL-2018 12:00:02”). The Image Set End Date Time may not coincide with the deployment end date time. Recording this field allows users to account for deployments that were conducted but for which no data was found and to confirm the last date and time a camera was active (if functioning) if no images or videos were captured prior to Service/Retrieval (especially valuable if users did not collect Time-lapse images or if the camera malfunctioned).</p>
+<p><strong>*Image Set Start Date Time (DD-MMM-YYYY HH:MM:SS)</strong>
+:   The date and time of the first image or video collected during a specific deployment (e.g., “17-JUL-2018 12:00:02”). The Image Set Start Date Time may not coincide with the Deployment Start Date Time. Recording this field allows users to confirm the first date and time a camera was active (reliable if Time-lapse images were collected; especially valuable if the user scheduled a start delay).</p>
+<p><strong>Image tagging</strong>
+:   The process of classifying an image according to the wildlife species, other entities (e.g., human, vehicle), or conditions within the image. Image tagging may follow image classification to further classify characteristics of the individuals (e.g., age class, sex class, or behaviour) or entities within the image.</p>
+<p><strong>*Image Trigger Mode</strong>
+:   The type of trigger mode used to capture the image as reported in the image Exif data (e.g., “Time Lapse”, “Motion Detection,” “CodeLoc Not Entered,” “External Sensor”). Record “Unknown” if not known.</p>
+<p><strong>*Image/Sequence Comments</strong>
+:   Comments describing additional details about the image/sequence.</p>
+<p><strong>*Image/Sequence Date Time (DD-MMM-YYYY HH:MM:SS)</strong>
+:   The date and time of an image or sequence. Depending on the Event Type, Image/Sequence Date Time may be reported for an individual image or the first image of a unique sequence. Record as “DD-MMM-YYYY HH:MM:SS” (e.g., 22-JUL-2018 11:02:02).</p>
+<p><strong>Imperfect detection</strong>
+:   Species are often detected “imperfectly,” meaning that they are not always detected when they are present (e.g., due to cover of vegetation, cryptic nature or small size) (MacKenzie et al., 2004).</p>
+<p><strong>Independent detections</strong>
+:   Detections that are deemed to be independent based on a user-defined threshold (e.g., 30 minutes).</p>
+<p><strong>*Individual Count</strong>
+:   The number of unique individuals being categorized. This may be recorded as the total number of individuals, or according to Age Class and/or Sex Class.</p>
+<p><strong>Infrared illuminator</strong>
+:   The camera setting that can be enabled (if applicable to the camera make and camera model) to obtain greater visibility at night by producing infrared light.</p>
+<p><strong>Instantaneous sampling (IS) (Moeller et al., 2018)</strong>
+:   A method used to estimate abundance or density from time-lapse images from randomly deployed cameras; the number of unique individuals (the count) is needed (Moeller et al., 2018).</p>
+<p><strong>Intensity of use (Keim et al., 2019)</strong>
+:   “The expected number of use events of a specific resource unit during a unit of time… [which characterizes] how frequently a particular resource unit is used” (Keim et al., 2019). The intensity of use differs from the probability of use (which characterizes “the probability of at least one use event of that resource unit during a unit of time”; Keim et al., 2019).</p>
+<p><strong>Inter-detection interval</strong>
+:   A user-defined threshold used to define a single “detection event” (i.e., independent “events”) for group of images or video clips (e.g., 30 minutes or 1 hour). The threshold should be recorded in the Survey Design Description.</p>
+<p><strong>Inventory</strong>
+:   Rapid assessment surveys to determine what species are present in a given area at a given point in time; there is no attempt made to quantify aspects of communities or populations (Wearn &amp; Glover-Kapfer, 2017).</p>
+<p><strong>*Juvenile</strong>
+:   Animals in their first summer, with clearly juvenile features (e.g., spots); mammals older than neonates but that still require parental care.</p>
+<p><strong>Kernel density estimator</strong>
+:   The probability of “utilization” (Jennrich &amp; Turner, 1969); describes the relative probability of use (Powell &amp; Mitchell, 2012).</p>
+<p><strong>*Key ID</strong>:   The unique ID for the specific key or set of keys used to lock/secure the camera to the post, tree, etc.</p>
+<p><strong>*Latitude Camera Location</strong>
+:   The latitude of the camera location in decimal degrees to five decimal places (e.g., “53.78136”). Leave blank if recording Northing instead.</p>
+<p><strong>*Longitude Camera Location</strong>
+:   The longitude of the camera location in decimal degrees to five decimal places (e.g., “-113.46067”). Leave blank if recording Easting instead.</p>
+<p><strong>Lure</strong>
+:   Any substance that draws animals closer; lures include scent (olfactory) lure, visual lure and audible lure (Schlexer, 2008).</p>
+<p><strong>Marked individuals / populations / species</strong>
+:   Individuals, populations, or species (varies with modelling approach and context) that can be identified using natural or artificial markings (e.g., coat patterns, scars, tags, collars).</p>
+<p><strong>Mark-resight (MR) model (Arnason et al., 1991; McClintock et al., 2009)</strong>
+:   A method used to estimate the abundance of partially marked populations using the number of marked individuals, the number of unmarked individuals, and the detection probability from marked animals (Wearn &amp; Glover-Kapfer, 2017). MR is similar to capture-recapture (CR; Karanth, 1995; Karanth &amp; Nichols, 1998) models, except only a portion of animals are individually identified.</p>
+<p><strong>Metadata</strong>
+:   Data that provides information about other data (e.g., the number of images on an SD card).</p>
+<p><strong>Model assumption</strong>
+:   Explicitly stated (or implicitly premised) conventions, choices and other specifications (e.g., about the data, wildlife ecology/behaviour, the relationships between variables, etc.) on which a particular modelling approach is based that allows the model to provide valid inference.</p>
+<p><strong>Modelling approach</strong>
+:   The method used to analyze the camera data, which should depend on the state variable, e.g., occupancy models [MacKenzie et al., 2002], spatially explicit capture recapture (SECR) for density estimation [Chandler and Royle, 2013], etc. and the target species.</p>
+<p><strong>*Motion Image Interval (seconds)</strong>
+:   The time (in seconds) between images within a multi-image sequence that occur due to motion, heat, or activation of external detector devices. The Motion Image Interval is pre-set in the camera’s settings by the user, but the time at which the camera collects images because of this setting is influenced by the presence of movement or heat. For example, if the camera was set to take 3 images per event at a Motion Image Interval of 3 seconds when the camera detects motion or heat, the first image will be collected (e.g., at 09:00:00), the second image will be collected 3 seconds later (09:00:03), and the third will be collected 3 seconds after that (09:00:06). This setting differs from the Quiet Period in that the delay occurs between images contained within a multi-image sequence, rather than between multi-image sequences (as in quiet period). If a Motion Image Interval was not set, enter “0” seconds (i.e., instantaneous).</p>
+<p><strong>Negative binomial (NB) regression (Mullahy, 1986)</strong>
+:   A regression model used for count data with overdispersion but without zero-inflation. [relative abundance indices]</p>
+<p><strong>N-mixture models</strong>
+:   A class of models for estimating absolute abundance using replicated counts of animals from several different sites; site-specific counts are treated as independent random variables to estimate the number of animals available for capture at each site; detection is imperfect (Royle 2004). N-mixture models are a type of site-structured model (i.e., that “treat each camera as though it samples… [a] distinct population within a larger meta-population” [Clarke et al., 2023]).</p>
+<p><strong>*Northing Camera Location</strong>
+:   The northing UTM coordinate of the camera location (e.g., “5962006”). Record using the NAD83 datum. Leave blank if recording the Latitude instead.</p>
+<p><strong>*# Of Images</strong>
+:   The number of images on an SD card.</p>
+<p><strong>Occupancy</strong>
+:   The probability a site is occupied by the species.</p>
+<p><strong>Occupancy model (MacKenzie et al., 2002)</strong>
+:   A modelling approach used to account for imperfect detection by first evaluating the detection probability of a species via detection histories (i.e., present or absent) to determine the probability of the true presence or absence of a species at a site (MacKenzie et al., 2002).</p>
+<p><strong>Overdispersion</strong>
+:   A variance significantly larger than the mean (Bliss &amp; Fisher, 1953); greater variability in a set of data than predicted by the error structure of the model (Harrison et al., 2018); excess variability can be caused by zero inflation, non-independence of counts, or both (Zuur et al., 2009).</p>
+<p><strong>Paired design</strong>
+:   A form of clustered design when two cameras that are placed closely together to increase detection probability (“paired cameras”) or to evaluate certain conditions (“paired sites”, e.g., on- or off trails). Paired placements can help to account for other variability that might occur (i.e., variation in habitat quality).</p>
+<p><strong>Partially marked individuals / populations / species</strong>
+:   Individuals, populations, or species (varies with modelling approach and context) that have a suite of partially identifying traits (e.g., antler points, sex class, age class). For populations/species, those in which a proportion of individuals carry marks or in which individuals themselves are partially marked.</p>
+<p><strong>*Photos Per Trigger</strong>
+:   The camera setting that describes the number of photos taken each time the camera is triggered.</p>
+<p><strong>Poisson regression</strong>
+:   A regression model for count data used when data are not overdispersed or zero-inflated (Lambert, 1992). [relative abundance indices]</p>
+<p><strong>Project</strong>
+:   A scientific study, inventory or monitoring program that has a certain objective, defined methods, and a defined boundary in space and time (recorded as “Project Name”).</p>
+<p><strong>*Project Coordinator</strong>
+:   The first and last name of the primary contact for the project.</p>
+<p><strong>*Project Coordinator Email</strong>
+:   The email address of the Project Coordinator.</p>
+<p><strong>*Project Description</strong>
+:   A description of the project objective(s) and general methods.</p>
+<p><strong>*Project Name</strong>
+:   A unique alphanumeric identifier for each project (e.g., “UofA_WildEdmonton-Urban-Wildlife-Monitoring_2018”).</p>
+<p><strong>Pseudoreplication</strong>
+:   When observations are not statistically independent (spatially or temporally) but are treated as if they are independent.</p>
+<p><strong>Purpose of Visit</strong>
+:   The reason for visiting the camera location (i.e. to deploy the camera [“Deployment”], retrieve the camera [“Retrieve”] or to change batteries/SD card or replace the camera [“Service”]).</p>
+<p><strong>*Quiet Period (seconds)</strong>
+:   The user-defined camera setting which provides the time (in seconds) between shutter “triggers” if the camera was programmed to pause between firing initially and firing a second time. If a Quiet Period was not set, enter “0.”
+Also known as “time lag” (depending on the Camera Make and Camera Model; Palmer et al., 2018). The Quiet Period differs from the Motion Image Interval in that the delay occurs between multi-image sequences rather than between the images contained within multi-image sequences (as in the Motion Image Interval).</p>
+<p><strong>Random (or “simple random”) design</strong>
+:   Randomized Camera Locations (or sample stations) across the area of interest, sometimes with a predetermined minimum distance between Camera Locations (or sample stations).</p>
+<p><strong>Random encounter and staying time (REST) model (Nakashima et al., 2018)</strong>
+:   A recent modification of the REM (Nakashima et al., 2018) that substitutes staying time (i.e., the cumulative time in the cameras’ detection zone) for movement speed (staying time and movement speed are inversely proportional) (Cappelle et al., 2021).</p>
+<p><strong>Random encounter model (REM) (Rowcliffe et al., 2008, 2013)</strong>
+:   A method used to estimate the density of unmarked populations; uses the rate of independent captures, an estimate of movement rate, average group size, and the area sampled by the remote camera.</p>
+<p><strong>Recovery time</strong>
+:   The time necessary for the camera to prepare to capture the next photo after the previous one has been recorded (Trolliet et al., 2014).</p>
+<p><strong>Registration area</strong>
+:   The area in which an animal entering has at least some probability of being captured on the image</p>
+<p><strong>Relative abundance indices</strong>
+:   An index of relative abundance. When observational data is converted to a detection rate (i.e., the frequency [count] of independent detections of a species within a distinct time period). An index can be a count of animals or any sign that is expected to vary with population size (Caughley, 1977; O’Brien, 2011).</p>
+<p><strong>*Remaining Battery (%)</strong>
+:   The remaining battery power (%) of batteries within a camera.</p>
+<p><strong>Royle-Nichols model (Royle &amp; Nichols, 2003; MacKenzie et al., 2006)</strong>
+:   A method used to estimate population abundance or density, which assumes that individuals are counted only once per sampling occasion (Royle, 2004), but that does not require all individuals to be marked. Royle-Nichols models are a type of site-structured model (i.e., that “treat each camera as though it samples… [a] distinct population within a larger meta-population” [Clarke et al., 2023]).</p>
+<p><strong>Sample station</strong>
+:   A grouping of two or more non-independent camera locations, such as when cameras are clustered or paired (recorded as “Sample Station Name”).</p>
+<p><strong>*Sample Station Name</strong>
+:   A sequential alphanumeric identifier for each camera location within a grouping of two more non-independent camera locations when cameras are deployed in clusters, pairs or arrays (e.g., “SS1” in “SS1_BH1”, “SS1_BH2”, “SS1_BH3” etc.). Leave blank if not applicable.</p>
+<p><strong>Scent lure</strong>
+:   Any material that draws animals closer via their sense of smell (Schlexer, 2008).</p>
+<p><strong>*SD Card ID</strong>
+:   The ID label on an SD card (e.g., “CMU-100”).</p>
+<p><strong>*SD Card Replaced</strong>
+:   Whether the SD card was replaced.</p>
+<p><strong>*Security</strong>
+:   The equipment used to secure the camera (e.g., “Security box,” “Bracket,” “Bracket + Screws,” or “None”).</p>
+<p><strong>Sequence</strong>
+:   A user-defined group of images or video clips considered as a single “detection event“ (recorded as “Sequence Name”); often users choose a certain time threshold (or “inter-detection interval“) to define independent “events“; e.g., 30 minutes or 1 hour. The threshold should be recorded in the Survey Design Description).</p>
+<p><strong>*Sequence Name</strong>
+:   A unique alphanumeric for a multi-image sequence. The Sequence Name should ideally consist of the Deployment Name and the names of the first and last images and videos in the sequence (separated by “<em>”) (i.e., “Deployment Name”</em>”IMG_#[name of first image in sequence]”<em>”IMG</em>#[name of last image in sequence] (e.g., “BH1_22-JUL-2018 IMG_001-IMG_005”).</p>
+<p><strong>Service/Retrieval</strong>
+:   When a crew has gone to a location to service or retrieve a remote camera.</p>
+<p><strong>*Service/Retrieval Comments</strong>
+:   Comments describing additional details about the service/retrieval.</p>
+<p><strong>*Service/Retrieval Crew</strong>
+:   The first and last names of the individuals who collected data during the service/retrieval visit.</p>
+<p><strong>Service/Retrieval metadata</strong>
+:   Metadata that should be collected each time a camera location is visited to service or retrieve a camera, including data on any change to the camera location, sampling period, and/or setting type (e.g., not baited and then baited later). The relevant metadata fields that should be collected differ when a camera is deployed vs. serviced or retrieved.
+Refer to Appendix - Table A5 and the Camera Service/Retrieval Field Datasheet.</p>
+<p><strong>Service/Retrieval visit</strong>
+:   When a crew has gone to a location to service or retrieve a remote camera.</p>
+<p><strong>*Sex Class</strong>
+:   The sex classification of an individual or multiple individuals (if the classification is the same) being categorized (e.g., “Male,” “Female,” or “Unknown”).</p>
+<p><strong>Space-to-event (STE) model (Moeller et al., 2018)</strong>
+:   A method used to estimate abundance or density that accounts for variable detection probability through the use of time-lapse images and is unaffected by animal movement rates (collapses sampling intervals to an instant in time, and thus estimates are unaffected by animal movement rates) (Moeller et al., 2018).</p>
+<p><strong>Spatial autocorrelation</strong>
+:   The tendency for locations that are closer together to be more similar.</p>
+<p><strong>Spatial count (SC) model / Unmarked spatial capture-recapture (Chandler &amp; Royle, 2013)</strong>
+:   A method used to estimate the density of unmarked populations; similar to SECR (Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008; Royle et al., 2009); however, SC models account for individuals’ unknown identities using the spatial pattern of detections (Chandler &amp; Royle, 2013; Sun et al., 2022). SC uses trap-specific counts to estimate the location and number of activity centres to estimate density.</p>
+<p><strong>Spatial mark-resight (SMR) (Chandler &amp; Royle, 2013; Sollmann et al., 2013a, 2013b)</strong>
+:   A method used to estimate the density of “partially marked populations by combining… [detection] histories of marked [individuals] and counts of unmarked [individuals]” (Doran-Myers, 2018) over several occasions (Sollman et al., 2013a; Rich et al., 2014; Whittington et al., 2018). SMR models can be implemented using different statistical frameworks, including Bayesian estimation (Royle and Young, 2008; Morin et al., 2022).</p>
+<p><strong>Spatial partial identity model (2-flank SPIM) (Augustine et al., 2018)</strong>
+:   A method used to estimate the density of partially marked populations in which the “spatial locations of where partial identity samples are captured to probabilistically resolve their complete identities” (Augustine et al., 2018). Paired sampling design is commonly used to capture both the right and left flanks of an animal to resolve individual identities (Augustine et al., 2018). 2-flank SPIM is an extension of the SCR model (Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008; Royle et al., 2009).</p>
+<p><strong>Spatially explicit capture-recapture (SECR) / Spatial capture-recapture (SCR) (Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008; Royle et al., 2009)</strong>
+:   The SECR (or SCR) method is used to estimate the density of marked populations; an extension of traditional capture-recapture (CR; Karanth, 1995; Karanth &amp; Nichols, 1998) models (Karanth, 1995; Karanth &amp; Nichols, 1998) that explicitly accounts for camera location and animal movement (Burgar et al., 2018). SECR models use spatially referenced individual capture histories to infer where animals’ home range centres are, assuming that detection probability decreases with increasing distance between cameras and home range centres (Clarke et al., 2023). SECR models can be implemented using different statistical frameworks, including Bayesian estimation (Royle and Young, 2008; Morin et al., 2022).</p>
+<p><strong>Species</strong>
+:   The capitalized common name of the species being categorized (“tagged”).</p>
+<p><strong>*Stake Distance (m)</strong>
+:   The distance from the camera to a stake (in metres to the nearest 0.05 m). Leave blank if not applicable.</p>
+<p><strong>State variable</strong>
+:   A formal measure that summarizes the state of a community or population at a particular time (Wearn &amp; Glover-Kapfer, 2017), e.g., species richness or population abundance.</p>
+<p><strong>Stratified design</strong>
+:   The area of interest is divided into smaller strata (e.g., habitat type, disturbance levels), and cameras are placed within each stratum (e.g., 15%, 35% and 50% of sites within high, medium, and low disturbance strata).</p>
+<p><strong>Stratified random design</strong>
+:   The area of interest is divided into smaller strata (e.g., habitat type, disturbance levels), and then a proportional random sample of sites is selected within each stratum (e.g., 15%, 35% and 50% of sites within high, medium and low disturbance strata).</p>
+<p><strong>Study area</strong>
+:   A unique research, inventory or monitoring area (spatial boundary) within a project (there may be multiple study areas within a single project) (recorded as “Study Area Name”).</p>
+<p><strong>Study Area Description</strong>
+:   A description for each unique research or monitoring area including its location, the habitat type(s), land use(s) and habitat disturbances (where applicable).</p>
+<p><strong>*Study Area Name</strong>
+:   A unique alphanumeric identifier for each study area (e.g.,”OILSANDS_REF1,” “OILSANDS_REF2”). If only one area was surveyed, the Project Name and Study Area Name should be the same.</p>
+<p><strong>*Subadult</strong>
+:   Animals older than a “Juvenile” but not yet an “<a class="reference internal" href="#adult"><span class="xref myst">Adult</span></a>”; a “Subadult” may be further classified into “Young of the Year” or “Yearling.”</p>
+<p><strong>*Subadult - Yearling</strong>
+:   Animals approximately one year old; has lived through one winter season; between “Young of Year” and “<a class="reference internal" href="#adult"><span class="xref myst">Adult</span></a>.”</p>
+<p><strong>*Subadult - Young of Year</strong>
+:   Animals less than one year old; born in the previous year’s spring, but has not yet lived through a winter season; between “Juvenile” and “Yearling.”</p>
+<p><strong>Survey</strong>
+:   A unique deployment period (temporal extent) within a project (recorded as “Survey Name”).</p>
+<p><strong>*Survey Design</strong>
+:   The spatial arrangement of remote cameras within the study area.</p>
+<p><strong>*Survey Design Description</strong>
+:   A description of any additional details about the Survey Design.</p>
+<p><strong>*Survey Name</strong>
+:   A unique alphanumeric identifier for each survey period (e.g., “FORTMC_001”).</p>
+<p><strong>*Survey Objectives</strong>
+:   The specific objectives of each survey within a project. Survey objectives should be specific, measurable, achievable, relevant, and time-bound (i.e., SMART). Objectives may include include the Target Species, the state variables, proposed modelling approach(es) and the variables of interest (e.g., occupancy, density). If a project has only one survey or multiple surveys with identical methods and locations, the project and Survey Objectives may be the same. Otherwise, the differences between each unique survey should be documented carefully.</p>
+<p><strong>Systematic design</strong>
+:   Camera locations occur in a regular pattern (e.g., a grid pattern) across the study area.</p>
+<p><strong>Systematic random design</strong>
+:   Camera locations are selected using a two-stage approach. Firstly, girds are selected systematically (to occur within a regular pattern) across the study area. The location of the camera within each grid is then selected randomly.</p>
+<p><strong>*Tag</strong>
+:   When individuals or groups of individuals are categorized within images, regardless of whether the information applies to all of the individuals in the image.</p>
+<p><strong>*Target Species</strong>
+:   The capitalized common name(s) of the species that the survey was designed to detect.</p>
+<p><strong>Targeted design</strong>
+:   Camera locations or sample stations are placed in areas that are known or suspected to have higher activity levels (e.g., game trails, mineral licks).</p>
+<p><strong>Test image</strong>
+:   An image taken from a camera after it has been set up to provide a permanent record of the visit metadata (e.g., Sample Station Name, Camera Location Name, Deployment Name, Crew, and Deployment Start Date Time [DD-MMM-YYYY HH:MM:SS]).</p>
+<p>:   Taking a test image can be useful to compare the information from the image to that of which was collected on the Camera Service/Retrieval Field Datasheet after retrieval and can help in reducing recording errors.</p>
+<p><strong>*Test Image Taken</strong>
+:   Whether a test image (i.e., an image taken from a camera after it has been set up to provide a permanent record of the visit metadata) was taken. Arm the camera, from ~5 m in front, walk towards the camera while holding the Test Image Sheet (see next page).</p>
+<p><strong>Time in front of the camera (TIFC) (Huggard, 2018; Warbington &amp; Boyce, 2020; tested in Becker et al., 2022)</strong>
+:   A method used to estimate density that treats camera image data as quadrat samples (Becker et al., 2022).</p>
+<p><strong>Time-lapse image</strong>
+:   Images that are taken at regular intervals (e.g., hourly or daily, on the hour). It is critical to take a minimum of one time-lapse image per day at a consistent time (e.g., 12:00 pm [noon]) to create a record of camera functionality and local environmental conditions (e.g., snow cover, plant growth, etc.). Time-lapse images may always be useful for modelling approaches that require estimation of the “viewshed” (“viewshed density estimators” such as REM or time-to-event (TTE) models; see Moeller et al., [2018] for advantages and disadvantages).</p>
+<p><strong>Time-to-event (TTE) model (Moeller et al., 2018)</strong>
+:   A method used to estimate abundance or density from the detection rate while accounting for animal movement rates (Moeller et al., 2018). The TTE model assumes perfect detection (though there is a model extension to account for imperfect detection that requires further testing).</p>
+<p><strong>Total number of camera days</strong>
+:   The number of days that all cameras were active during the survey.</p>
+<p><strong>Trigger “event”</strong>
+:   An activation of the camera detector(s) that initiates the capture of a single or multiple images, or the recording of video.</p>
+<p><strong>*Trigger Mode(s)</strong>
+:   The camera setting(s) that determine how the camera will trigger: by motion (“Motion Image”), at set intervals (“Time-lapse image”), and/or by video (“Video”; possible with newer camera models, such as Reconyx HP2X).</p>
+<p><strong>*Trigger Sensitivity</strong>
+:   The camera setting responsible for how sensitive a camera is to activation (to “triggering”) via the infrared and/or heat detectors (if applicable, e.g., Reconyx HyperFire cameras have a choice between “Low,” “Low/Med,” “Med,” “Med/High,” “High,” “Very high” and “Unknown”).</p>
+<p><strong>Trigger speed</strong>
+:   The time delay necessary for the camera to shoot a photo once an animal has interrupted the infrared beam within the camera’s detection zone (Trolliet et al., 2014). Trigger speed differs from Motion Image Interval (a camera setting specified by the user) in that the trigger speed is inherent to the Camera Make and Camera Model (e.g., two different cameras, models both with a Motion Image Interval set to “no delay,” may not be able to capture images at the same speed).</p>
+<p><strong>Unmarked individuals / populations / species</strong>
+:   Individuals, populations, or species (varies with modelling approach and context) that cannot be identified using natural or artificial markings (e.g., coat patterns, scars, tags, collars). Unmarked population models rely on supplementary data (e.g., animal movement speed) and/or assumptions as a surrogate for individual identification; that is, to distinguish between multiple detections of the same individual from detections of multiple individuals when individuals do not have unique features (Gilbert et al., 2020; Morin et al., 2022).</p>
+<p><strong>User label</strong>
+:   A label (up to 16 characters) that can be programmed in the camera’s settings, and that will be visible in the data band of all photos and videos taken by the camera (Reconyx, 2018). It is recommended that users program the Sample Station Name/Camera Location Name as the user label, which serves as a means to confirm which Sample Station Name/Camera Location Name is associated with the images/videos.</p>
+<p><strong>*UTM Zone Camera Location</strong>
+:   The coordinate system that divides geographic areas into north-south zones. In Alberta the UTM zones are either 11, 12, or TTM. Enter all other UTM zones in the Camera Location Comments field (e.g., zones 7-10 for British Columbia), or use Latitude and Longitude instead of UTM coordinates.</p>
+<p><strong>*Video Length (seconds)</strong>
+:   If applicable, describes the camera setting that specifies the minimum video duration (in seconds) that the camera will record when triggered. Leave blank if not applicable.</p>
+<p><strong>Viewshed</strong>
+:   The area visible to the camera as determined by its lens angle (in degrees) and trigger distance (Moeller et al., 2023).</p>
+<p><strong>Viewshed density estimators</strong>
+:   Methods used to estimate the abundance of unmarked populations from observations of animals that relate animal observations to the space directly sampled by each camera’s viewshed (Moeller et al., 2023); they result in viewshed density estimates that can be extrapolated to abundance within broader sampling frames (Gilbert et al., 2020; Moeller et al., 2023).</p>
+<p><strong>Visit</strong>
+:   When a crew has gone to a location to deploy, service, or retrieve a remote camera.</p>
+<p><strong>*Visit Comments</strong>
+:   Comments describing additional details about the deployment and/or service/retrieval visits.</p>
+<p><strong>Visit metadata</strong>
+:   Metadata that should be collected each time a camera location is visited to deploy, service or retrieve a camera. Other relevant metadata fields that should be collected differ when a camera is deployed vs. serviced or retrieved.</p>
+<p>:   Refer to Appendix A - Table A5, Camera Deployment Field Datasheet, and Camera Service/Retrieval Field Datasheet.</p>
+<p><strong>Visual lure</strong>
+:   Any material that draws animals closer via their sense of sight (Schlexer, 2008).</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02_dialog-boxes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../09_glossary_ref/09_01_glossary.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Glossary</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Alberta Remote Camera Steering Committee (RCSC)
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2024.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

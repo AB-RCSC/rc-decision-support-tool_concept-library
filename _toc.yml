@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+  - maxdepth: 4
+    titlesonly: False
+    chapters:
+    - file: 02_dialog-boxes/RCDST_MockUp_FocusGroups_2024-05-24.md
+    - file: 09_glossary_ref/09_01_glossary.md
+    - file: 09_glossary_ref/09_01_glossary2.ipynb
