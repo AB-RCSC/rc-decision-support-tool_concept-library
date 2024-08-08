@@ -8,5 +8,23 @@ parts:
     titlesonly: False
     chapters:
     - file: 02_dialog-boxes/RCDST_MockUp_FocusGroups_2024-05-24.md
+    - file: 02_dialog-boxes/image_lib_test.md
     - file: 09_glossary_ref/09_01_glossary.md
-    - file: 09_glossary_ref/09_01_glossary2.ipynb
+    - file: 02_dialog-boxes/03_01_obj_inventory__mod_inventory.md
+    - file: 02_dialog-boxes/03_02_obj_divers_rich__mod_divers_rich.md
+    - file: 02_dialog-boxes/03_03_obj_occupancy__mod_occupancy.md
+    - file: 02_dialog-boxes/03_04_obj_rel_abund__mod_rai.md
+    - file: 02_dialog-boxes/03_11_obj_pop_size__mod_cr_cmr.md
+    - file: 02_dialog-boxes/03_12_obj_density__mod_scr_secr.md
+    - file: 02_dialog-boxes/03_13_obj_density__mod_smr.md
+    - file: 02_dialog-boxes/03_14_obj_density__mod_sc.md
+    - file: 02_dialog-boxes/03_15_obj_density__mod_catspim.md
+    - file: 02_dialog-boxes/03_16_obj_density__mod_2flankspim.md
+    - file: 02_dialog-boxes/03_17_obj_density__mod_rem.md
+    - file: 02_dialog-boxes/03_18_obj_density__mod_rest.md
+    - file: 02_dialog-boxes/03_19_obj_density__mod_tifc.md
+    - file: 02_dialog-boxes/03_20_obj_density__mod_ds.md
+    - file: 02_dialog-boxes/03_21_obj_density__mod_tte.md
+    - file: 02_dialog-boxes/03_22_obj_density__mod_ste.md
+    - file: 02_dialog-boxes/03_23_obj_density__mod_is.md
+    - file: 02_dialog-boxes/03_24_obj_behaviour__mod_behaviour.md
