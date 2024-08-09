@@ -1,4 +1,43 @@
 #######################################################################################
+## INFO SETUP
+
+## MISC LINKS
+## https://jupyterbook.org/en/stable/basics/repository.html#add-a-button-to-suggest-edits 
+
+## Clickable card
+## https://jupyterbook.org/en/stable/content/components.html#content-cards
+## https://sphinx-design.readthedocs.io/en/sbt-theme/badges_buttons.html
+## https://sphinx-design.readthedocs.io/en/sbt-theme/cards.html
+
+## open new link - Surround the link with two underscores (_) 
+
+## Bold: __string__ or **string** 
+## Italic: _string_ or *string*
+## Use 2 spaces or this code for a manual line break: <br>
+## Indented quoting: Use a greater than sign (>) and then a space, then type the text.
+## Bullets: Use the dash sign (- ) with a space after it, or a space, a dash, and a space ( - ), to create a circular bullet.
+
+
+## pip install notebook
+## pip install jupyterlab
+## pip install jupyter-book
+## pip install jupyterlab-myst
+## pip install jupytext
+## pip install myst-parser
+## conda install -c conda-forge nodejs
+## pip install mystmd
+## pip install sphinx
+## pip install sphinx_design
+## pip install myst-nb
+## pip install jupyter-sphinx
+## pip install nbsphinx
+
+## pip install sphinxext-rediraffe
+## pip install sphinx-tippy
+## pip install myst-nb
+## pip install sphinx-hoverxref
+
+#######################################################################################
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
@@ -9,8 +48,8 @@ logo                        : logo.png # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 exclude_patterns            : [.files,.obsidian,_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "**.xls", "**.csv", "**.docx"]
 # Auto-exclude files not in the toc
-only_build_toc_files        : false
-
+only_build_toc_files        : true
+only_build_toc_files: true
 
 #######################################################################################
 # Execution settings
@@ -74,27 +113,27 @@ parse:
     name_obj_vital_rate: "Vital rates"
     name_obj_density: "Density"
     name_obj_behaviour: "Behaviour"
-    term_mod_inventory: "Species inventory"
-    term_mod_divers_rich: "Species diversity & richness"
-    term_mod_occupancy: "Occupancy models"
-    term_mod_rai: "Relative abundance indices"
-    term_mod_behaviour: "Behaviour"
-    term_mod_cr_cmr: "Capture-recapture (CR) */ Capture-mark-recapture (CMR)"
-    term_mod_scr_secr: "Spatial capture-recapture (SCR) */ Spatially explicit capture recapture (SECR)"
-    term_mod_mr: "Mark-resight (MR)"
-    term_mod_smr: "Spatial mark-resight "
-    term_mod_sc: "Spatial count (SC) model */ Unmarked spatial capture-recapture"
-    term_mod_catspim: "Spatial Partial Identity Model (Categorical SPIM; catSPIM)"
-    term_mod_2flankspim: "Spatial Partial Identity Model (2-flank SPIM)"
-    term_mod_roylenichols: "Royle-Nichols"
-    term_mod_nmixture: "N-mixture"
-    term_mod_rem: "Random encounter model (REM)"
-    term_mod_rest: "Random encounter and staying time (REST)"
-    term_mod_tifc: "Time in front of the camera (TIFC)"
-    term_mod_ds: "Distance sampling (DS)"
-    term_mod_tte: "Time-to-event (TTE)"
-    term_mod_ste: "Space-to-event (STE)"
-    term_mod_is: "Instantaneous sampling (IS)"
+    name_mod_inventory: "Species inventory"
+    name_mod_divers_rich: "Species diversity & richness"
+    name_mod_occupancy: "Occupancy models"
+    name_mod_rai: "Relative abundance indices"
+    name_mod_behaviour: "Behaviour"
+    name_mod_cr_cmr: "Capture-recapture (CR) / Capture-mark-recapture (CMR)"
+    name_mod_scr_secr: "Spatial capture-recapture (SCR) */ Spatially explicit capture recapture (SECR)"
+    name_mod_mr: "Mark-resight (MR)"
+    name_mod_smr: "Spatial mark-resight "
+    name_mod_sc: "Spatial count (SC) model / Unmarked spatial capture-recapture"
+    name_mod_catspim: "Spatial Partial Identity Model (Categorical SPIM; catSPIM)"
+    name_mod_2flankspim: "Spatial Partial Identity Model (2-flank SPIM)"
+    name_mod_roylenichols: "Royle-Nichols"
+    name_mod_nmixture: "N-mixture"
+    name_mod_rem: "Random encounter model (REM)"
+    name_mod_rest: "Random encounter and staying time (REST)"
+    name_mod_tifc: "Time in front of the camera (TIFC)"
+    name_mod_ds: "Distance sampling (DS)"
+    name_mod_tte: "Time-to-event (TTE)"
+    name_mod_ste: "Space-to-event (STE)"
+    name_mod_is: "Instantaneous sampling (IS)"
     ref_intext_abolaffio-et-al_2019: "Abolaffio et al, 2019"
     ref_intext_ahumada-et-al_2019: "Ahumada et al., 2019"
     ref_intext_ahumada-et-al_2011: "Ahumada et al., 2011"
@@ -604,6 +643,7 @@ extensions:
     - myst_parser
     - sphinx_design
     - myst_nb
+    - sphinxext-rediraffe
 
 #######################################################################################
 # Launch button settings

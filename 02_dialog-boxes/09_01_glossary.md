@@ -20,41 +20,40 @@ editor_options:
 
 # Glossary
 
-(#number_of_images)=
-
+(number_of_images)=
 **\*# Of Images**
 
 : The number of images on an SD card.
 
-(#access_method)=
+(access_method)=
+{{ term_access_method }}
+
+: {{ term_def_access_method }}
 
 **\*Access Method**
-The method used to reach the camera location (e.g., on "Foot," "ATV," "Helicopter," etc.).
+: The method used to reach the camera location (e.g., on "Foot," "ATV," "Helicopter," etc.).
 
-(#age_class_adult)=
+(age_class_adult)=
 
 **Adult**
-Animals that are old enough to breed; reproductively mature.
+: Animals that are old enough to breed; reproductively mature.
 
-(#age_class)=
-
+(age_class)=
 **Age Class**
-The age classification of individual(s) being categorized (e.g., "Adult," "Juvenile," "Subadult," "Subadult - Young of Year," "Subadult - Yearling", or "Unknown").
+: The age classification of individual(s) being categorized (e.g., "Adult," "Juvenile," "Subadult," "Subadult - Young of Year," "Subadult - Yearling", or "Unknown").
 
-(#analyst)=
-
+(analyst)=
 **Analyst**
 
-The first and last names of the individual who provided the observation data point (species identification and associated information). If there are multiple analysts for an observation, enter the primary analyst.
+: The first and last names of the individual who provided the observation data point (species identification and associated information). If there are multiple analysts for an observation, enter the primary analyst.
 
-(#animal_id)=
+(animal_id)=
 
 **\*Animal ID**
 
 A unique ID for an animal that can be uniquely identified (e.g., marked in some way). If multiple unique individuals are identified, enter an Animal ID for each as a unique row. Leave blank if not applicable.
 
-(#baitlure_audible_lure)=
-
+(baitlure_audible_lure)=
 Audible lure
 
 Sounds imitating noises of prey or conspecifics that draw animals closer by eliciting curiosity (Schlexer, 2008).
@@ -236,13 +235,11 @@ Deployment
 A unique placement of a camera in space and time (recorded as "Deployment Name"). There may be multiple deployments for one camera location. Deployments are often considered as the time between visits (i.e., deployment to service, service to service, and service to retrieval). Any change to camera location, sampling period, camera equipment (e.g., Trigger Sensitivity setting, becomes non-functioning), and/or conditions (e.g., not baited then baited later; camera SD card replaced) should be documented as a unique deployment.
 
 (#deployment_area_photo_numbers)=
-
 **\*Deployment Area Photo Numbers**
 
 The image numbers for the deployment area photos (if collected, e.g., "DSC100"). These are optionally documented on a Camera Deployment Field Datasheet for each set of camera deployment area photos. Leave blank if not applicable.
 
 (#deployment_area_photos)=
-
 Deployment area photos
 
 Photos of the area around the camera location, collected as a permanent, visual record of the FOV Target Features, Camera Location Characteristics, environmental conditions (e.g., vegetation, ecosite, weather) or other variables of interest. The recommendation includes collecting four photos taken from the centre of the target detection zone (Figure 5), facing each of the four cardinal directions. The documentation of the collection of these photos is recorded as "Deployment Area Photos Taken" (Y/N).
