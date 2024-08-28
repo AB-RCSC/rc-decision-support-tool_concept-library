@@ -16,9 +16,6 @@ editor_options:
 ---
 (i_mod_divers_rich)=
 # {{ name_mod_divers_rich }}
-<!--**{{ name_mod_divers_rich }}**
-*{{ mod_appl_mod_divers_rich }}*
-**{{ term_mod_divers_rich }}**: {{ term_def_mod_divers_rich }}-->
 
 :::::::::{div} full-width
 
@@ -98,6 +95,7 @@ Species diversity is more complex, and includes a measure of the number of speci
 :align: center
 :scale: 60%
 ```
+
 ::::::
 
 ::::::{tab-item} Advanced
@@ -122,6 +120,7 @@ The **two principal ways of estimating species richness from camera trap dat ** 
 ::::::
 
 ::::::{tab-item} Visual resources
+
 :::::{grid} 3
 :gutter: 1
 :padding: 0
@@ -304,6 +303,7 @@ Both communities contain five species of animalcules. Species richness is the sa
 </iframe>
 
 :::::
+::::::
 
 ::::::{tab-item} Analytical tools & resources
 
@@ -368,10 +368,6 @@ Both communities contain five species of animalcules. Species richness is the sa
 {{ ref_bib_wildco_lab_2021b }}
 
 {{ ref_bib_yue_et_al_2015 }}
-::::::
-
-::::::{tab-item} Glossary
-keys_here
 ::::::
 
 :::::::

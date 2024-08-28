@@ -20,11 +20,12 @@ myst:
 (i_test)=
 # test
 <!-- # {{ name_mod_scr_secr}} -->
-:::::::::{div} full-width
+::::::::{div} full-width
 
 ::::::{dropdown} Assumptions, Pros, Cons
 :::::{grid}
 :gutter: 1
+
 ::::{grid-item-card} Assumptions
 - {{ mod_scr_secr_assump_01 }}
 - {{ mod_scr_secr_assump_02 }}
@@ -43,6 +44,7 @@ myst:
 - {{ mod_scr_secr_assump_15 }}
 - {{ mod_scr_secr_assump_16 }}
 ::::
+
 ::::{grid-item-card} Pros
 - {{ mod_scr_secr_pro_01 }}
 - {{ mod_scr_secr_pro_02 }}
@@ -53,6 +55,7 @@ myst:
 - {{ mod_scr_secr_pro_07 }}
 - {{ mod_scr_secr_pro_08 }}
 ::::
+
 ::::{grid-item-card} Cons
 - {{ mod_scr_secr_con_01 }}
 - {{ mod_scr_secr_con_02 }}
@@ -66,6 +69,7 @@ myst:
 ::::
 :::::
 ::::::
+
 :::::::{tab-set}
 
 ::::::{tab-item} Overview
@@ -76,9 +80,21 @@ Add some info here
 
 <!-- This is commented out. -->
 
-[Camera locations](/09_gloss_ref/09_glossary.md#camera_location)
+[camera days per camera location](./09_gloss_ref/09_glossary.md#camera_days_per_camera_location)
 
-[Camera locations](/09_glossary.mdcamera_location)
+[camera days per camera location](../09_gloss_ref/09_glossary.md#camera_days_per_camera_location)
+
+[camera days per camera location](09_gloss_ref/09_glossary.md#camera_days_per_camera_location)
+
+
+
+[test](/09_gloss_ref/09_glossary.md#access_method)
+
+[test](./09_gloss_ref/09_glossary.md#access_method)
+
+[test](../09_gloss_ref/09_glossary.md#access_method)
+
+
 
 ::::::
 
@@ -331,4 +347,4 @@ tada
 
 ::::::
 
-::::::::
+:::::::

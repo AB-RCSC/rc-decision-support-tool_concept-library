@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -73,7 +73,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/09_gloss_ref/09_glossary';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="prev" title="Species diversity &amp; richness" href="../03_02_mod_divers_rich.html" />
+    <link rel="prev" title="Occupancy models" href="../03_03_mod_occupancy.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -194,31 +194,42 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Testing 123</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../00_template_master_test.html">test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../00_00_welcome.html">Welcome to the <strong>Remote Camera Decision Support Tool</strong>!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../00_00_welcome.html">Welcome to the Remote Camera Decision Support Tool!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../00_00_test_start.html">Welcome to the Remote Camera Decision Support Tool!</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Objectives &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_02_objective.html">State Variable <em>vs.</em> Objective</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01_03_num_cams.html">Number of cameras available</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Study area &amp; Site selection constraints</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_06_cam_strat_covar.html">Stratified by covariates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Duration &amp; Timing</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_08_surv_dur_min_max.html">Duration (minimum &amp; maximum)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_10_sp_asymptote.html">Species-accumulation asymptote</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Target species</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../01_13_sp_info.html">Ecological knowledge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_14_sp_type.html">Carnivore / ungulate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../01_15_sp_dens_low.html">Low density species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_16_sp_occ_restr.html">Occurrence restricted</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_17_sp_hr_size.html">Home range size</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_18_sp_size.html">Body size</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_19_sp_rarity.html">Rarity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../01_20_sp_detprob_cat.html">Detection probability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../01_21_sp_behav.html">Behaviour (Investigative)</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations - Modelling Approaches</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data &amp; Analysis</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_47_cam_independent.html">Camera location independence</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations \- Modelling Approaches</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../03_01_mod_inventory.html">Species inventory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03_02_mod_divers_rich.html">Species diversity &amp; richness</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03_03_mod_occupancy.html">Occupancy models</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="current nav bd-sidenav">
@@ -439,14 +450,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="glossary">
 <span id="id1"></span><h1>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h1>
-<dl class="simple myst" id="access-method">
-<dt><strong>*Access Method</strong></dt><dd><p>The method used to reach the camera location (e.g., on “Foot,” “ATV,” “Helicopter,” etc.).</p>
-</dd>
-</dl>
-<dl class="simple myst" id="age-class-adult">
-<dt><strong>Adult</strong></dt><dd><p>Animals that are old enough to breed; reproductively mature.</p>
-</dd>
-</dl>
+<p>{.glossary}</p>
+<p id="access-method"><strong>*Access Method</strong>: The method used to reach the camera location (e.g., on “Foot,” “ATV,” “Helicopter,” etc.).</p>
+<p id="age-class-adult"><strong>Adult</strong>: Animals that are old enough to breed; reproductively mature.</p>
 <dl class="simple myst" id="age-class">
 <dt><strong>Age Class</strong></dt><dd><p>The age classification of individual(s) being categorized (e.g., “Adult,” “Juvenile,” “Subadult,” “Subadult - Young of Year,” “Subadult - Yearling”, or “Unknown”).</p>
 </dd>
@@ -1265,12 +1271,12 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../03_02_mod_divers_rich.html"
+       href="../03_03_mod_occupancy.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Species diversity &amp; richness</p>
+        <p class="prev-next-title">Occupancy models</p>
       </div>
     </a>
 </div>

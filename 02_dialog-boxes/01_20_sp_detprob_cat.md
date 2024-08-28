@@ -17,12 +17,7 @@ editor_options:
 (i_sp_det_prob_cat)=
 # {{ title_i_sp_detprob_cat }}
 
-[camera days per camera location](./09_gloss_ref/09_glossary.mdamera_days_per_camera_location)
-
-[camera days per camera location](09_gloss_ref/09_glossary.md#camera_days_per_camera_location)
-
 ::::::::{div} full-width
-<!--**{{ title_i_sp_detprob_cat }}**-->
 
 :::::::{tab-set}
 
@@ -51,7 +46,7 @@ editor_options:
 
 {{ term_detection_probability }}**: {{ term_def_detection_probability }}
 
-We use this information to adjust the recommended [camera days per camera location](](./09_gloss_ref/09_glossary.mdamera_days_per_camera_location) and [total number of camera days](./09_gloss_ref/09_glossary.md#total_number_of_camera_days). For example, if the species is hard to detect, you may have to deploy cameras for longer to ensure you’ve sampled long enough to say that the species truly was not there (*vs.* it was there, but you did not detect it; “missed detections”, e.g., high cover of shrubs impeding your ability to see the species).
+We use this information to adjust the recommended [camera days per camera location](](./09_gloss_ref/09_glossary.md#camera_days_per_camera_location) and [total number of camera days](./09_gloss_ref/09_glossary.md#total_number_of_camera_days). For example, if the species is hard to detect, you may have to deploy cameras for longer to ensure you’ve sampled long enough to say that the species truly was not there (*vs.* it was there, but you did not detect it; “missed detections”, e.g., high cover of shrubs impeding your ability to see the species).
 
 You may need to consult previous studies to get a sense of which category is the most appropriate for your  
 
@@ -62,22 +57,24 @@ You may need to consult previous studies to get a sense of which category is the
 
 Individuals and/or species are not always detected when they are present (i.e., detected "imperfectly”; MacKenzie et al., 2004). Missed detections occur or many reasons, including due characteristics of the environment (e.g., due to cover of vegetation), the time period (e.g., seasons), characteristics of the species (e.g., cryptic nature or small size), etc. **The question here is asking about detection probability as it relates to the characteristIcs of the species (not the species in a particular habitat type or during a specific season).**
 
-```{image} ../03_images/03_image_files/det.gif
+:::{image} ../03_images/03_image_files/det.gif
 :width: 400px
 :align: center
-```
+:::
 
 **Why do we care?**
 
 We care about this because when you fail to detect an individual/species that was, in fact, present, this is called a “false absence”, which may lead to incorrect conclusions from the data. Understanding and correcting for sources of this type of error is often thought of in terms of probabilities (i.e., "detection probability" aka detectability).
 
-:::{warning} It’s not an exact science
+:::{admonition} It’s not an exact science
+:class: warning
+
 Since detectability is affected by many other processes, detectability is best incorporated from models that use your data since this will result in the best suited infromation to inform your design; however, when you are first designing your study, this is not possible…..\[\[insert more here\]\]
 :::
 
-:::{note} Analysis aside
-:class: dropdown
-
+:::{admonition} Analysis aside
+:class: seealso
+\
 Many sources of detection error can be accounted for in analysis; this is done by assessing the relationships between the characteristics of the environment that we might expect to affect detection (e.g., cover of shrubs in front of the camera), and information on where (and when) the species was and was not detected. For example, there were consistently fewer detections on cameras placed in high shrub cover. 
 
 By assessing the relationships at locations repeatedly sampled over time, we begin to unravel the relationship between the environmental characteristics and missed detections on your cameras. We can then use this information to determine if we have sampled long enough (i.e., do we have enough information to differentiate between missed detections and true absences) and/or correct for this error in analysis by incorporating these effects in our models. 
@@ -86,6 +83,7 @@ By assessing the relationships at locations repeatedly sampled over time, we beg
 ::::::
 
 ::::::{tab-item} Advanced
+\
 Before study design choices are made, there is one critical concept to understand in remote camera research, which may impact study design choices at all levels of the data hierarchy. Reliable use of remote cameras to detect wildlife species hinges on the [assumption](./09_gloss_ref/09_glossary.md#mods_modelling_assumption) that what is captured on the cameras accurately reflects what is present on the landscape. However, species are often detected "imperfectly," meaning that they are not always detected when they are present (i.e., [imperfect detection](./09_gloss_ref/09_glossary.md#imperfect_detection); e.g., due to cover of vegetation, cryptic nature or small size) (MacKenzie et al., 2004). [Imperfect detection](./09_gloss_ref/09_glossary.md#imperfect_detection) can occur because the camera failed to capture an individual present at the site or because the animal was simply not present during the [survey](./09_gloss_ref/09_glossary.md#survey) period (Martin et al., 2005).
 
 [Imperfect detection](./09_gloss_ref/09_glossary.md#imperfect_detection) results in “false absences” and may lead to incorrect conclusions from the data. Understanding and correcting for sources of “false absences” is often thought of in terms of probabilities. [Detection probability](./09_gloss_ref/09_glossary.md#detection_probability) is the probability (likelihood) that an individual from the population of interest is included in the count at time or location *i* (MacKenzie & Kendall, 2002). [Detection probability](./09_gloss_ref/09_glossary.md#detection_probability) can be influenced through multiple processes and at multiple scales. Understanding the sources of “false absences” and factors that affect [detection probabilities](./09_gloss_ref/09_glossary.md#detection_probability) is an essential step when designing a study, deploying cameras and analyzing camera data.
@@ -101,9 +99,9 @@ The detection probability of an animal by a camera depends on three **conditiona
 
 **Figure 1.** Three conditional probabilities (Pr) of detection that may impact the [detection probability](./09_gloss_ref/09_glossary.md#detection_probability) of an animal (or species) by a camera (adapted from Moeller et al. \[2023\], Hofmeester et al. \[2019\], and Findlay et al. \[2020\]).
 
-Detection probability can be affected by species-specific characteristics, [Camera Model](](./09_gloss_ref/09_glossary.mdamera_model) specifications and set-up, and environmental variables (Hofmeester et al., 2019). For example, **species-specific characteristics** (individuals or populations), such as body size (e.g., O'Brien et al., 2011), behaviour (e.g., Caravaggi et al., 2020; Rowcliffe et al., 2011), and rarity can influence [detection probability](./09_gloss_ref/09_glossary.md#detection_probability), with larger, bolder and more common species generally having higher [detection rates](./09_gloss_ref/09_glossary.md#detection_rate). [**Camera Model**](](./09_gloss_ref/09_glossary.mdamera_model), specifications and set-up, such as the [Trigger Sensitivity](./09_gloss_ref/09_glossary.md#settings_trigger_sensitivity), [**Camera Height**](](./09_gloss_ref/09_glossary.mdamera_height), or [**angle**](](./09_gloss_ref/09_glossary.mdamera_angle) may affect [detection probability](./09_gloss_ref/09_glossary.md#detection_probability) in that smaller species might not be detected or identifiable if the [Trigger Sensitivity](./09_gloss_ref/09_glossary.md#settings_trigger_sensitivity) is low, or the [Camera Height](](./09_gloss_ref/09_glossary.mdamera_height) or [angle](](./09_gloss_ref/09_glossary.mdamera_angle) is too high. The [**Camera Direction**](](./09_gloss_ref/09_glossary.mdamera_direction) could impact the probability of an animal triggering a camera if it is directed towards an object that impedes the [Field of View (FOV)](./09_gloss_ref/09_glossary.md#field_of_view) or image quality (e.g. due to sun glare). **Environmental factors** (e.g., vegetation cover, snow depth) may affect [detection probability](./09_gloss_ref/09_glossary.md#detection_probability) and occurrence (e.g., Becker et al., 2022; Hofmeester et al., 2019; Iknayan et al., 2014; Steenweg et al., 2019). For example, a low number of detections in a densely vegetated site might be because of poor camera visibility or avoidance of this habitat by the species of interest.
+Detection probability can be affected by species-specific characteristics, [Camera Model](./09_gloss_ref/09_glossary.md#camera_model) specifications and set-up, and environmental variables (Hofmeester et al., 2019). For example, **species-specific characteristics** (individuals or populations), such as body size (e.g., O'Brien et al., 2011), behaviour (e.g., Caravaggi et al., 2020; Rowcliffe et al., 2011), and rarity can influence [detection probability](./09_gloss_ref/09_glossary.md#detection_probability), with larger, bolder and more common species generally having higher [detection rates](./09_gloss_ref/09_glossary.md#detection_rate). [**Camera Model**](./09_gloss_ref/09_glossary.md#camera_model), specifications and set-up, such as the [Trigger Sensitivity](./09_gloss_ref/09_glossary.md#settings_trigger_sensitivity), [**Camera Height**](./09_gloss_ref/09_glossary.md#camera_height), or [**angle**](./09_gloss_ref/09_glossary.md#camera_angle) may affect [detection probability](./09_gloss_ref/09_glossary.md#detection_probability) in that smaller species might not be detected or identifiable if the [Trigger Sensitivity](./09_gloss_ref/09_glossary.md#settings_trigger_sensitivity) is low, or the [Camera Height](./09_gloss_ref/09_glossary.md#camera_height) or [angle](./09_gloss_ref/09_glossary.md#camera_angle) is too high. The [**Camera Direction**](./09_gloss_ref/09_glossary.md#amera_direction) could impact the probability of an animal triggering a camera if it is directed towards an object that impedes the [Field of View (FOV)](./09_gloss_ref/09_glossary.md#field_of_view) or image quality (e.g. due to sun glare). **Environmental factors** (e.g., vegetation cover, snow depth) may affect [detection probability](./09_gloss_ref/09_glossary.md#detection_probability) and occurrence (e.g., Becker et al., 2022; Hofmeester et al., 2019; Iknayan et al., 2014; Steenweg et al., 2019). For example, a low number of detections in a densely vegetated site might be because of poor camera visibility or avoidance of this habitat by the species of interest.
 
-Hofmeester et al. (2019) suggested there are **six scales (orders) that may impact [detection probability](./09_gloss_ref/09_glossary.md#detection_probability)** and that should be considered within an explicit time period (adapted from Hofmeester et al. [2019]; [Figure 2](#TOC_surv_guidelines_fig_2)):
+Hofmeester et al. (2019) suggested there are **six scales (orders) that may impact [detection probability](./09_gloss_ref/09_glossary.md#detection_probability)** and that should be considered within an explicit time period (adapted from Hofmeester et al. \[2019\]; [Figure 2](#TOC_surv_guidelines_fig_2)):
 
 1)  **Distribution range** (1st order; i.e., the physical or geographical range of a species)
 
@@ -128,7 +126,7 @@ Hofmeester et al. (2019) suggested there are **six scales (orders) that may impa
 
 It is important to consider how all these factors and scales will impact study design. Unmeasured variation in [detection probability](./09_gloss_ref/09_glossary.md#detection_probability) can result in the inability to differentiate the effects of [detection probability](./09_gloss_ref/09_glossary.md#detection_probability) *vs.* habitat preference (Jennelle et al., 2002) and, in turn, cause erroneous estimates of occurrence and abundance (Burton et al., 2015; Dénes et al., 2015; Kays et al., 2021).
 
-Factors that influence [detection probability](./09_gloss_ref/09_glossary.md#detection_probability) at the microsite and camera specification / set-up scales are likely to result in the largest biases and thus warrant the most consideration (see Hofmeester et al. [2019] for details). Therefore, it is particularly important to consider *how* to place cameras to avoid such biases. Deploying cameras in a consistent fashion (e.g., carefully ensuring that cameras are always set at the same [Camera Height](](./09_gloss_ref/09_glossary.mdamera_height), orientation ([direction](](./09_gloss_ref/09_glossary.mdamera_direction)), and [angle](](./09_gloss_ref/09_glossary.mdamera_angle) is essential.
+Factors that influence [detection probability](./09_gloss_ref/09_glossary.md#detection_probability) at the microsite and camera specification / set-up scales are likely to result in the largest biases and thus warrant the most consideration (see Hofmeester et al. [2019] for details). Therefore, it is particularly important to consider *how* to place cameras to avoid such biases. Deploying cameras in a consistent fashion (e.g., carefully ensuring that cameras are always set at the same [Camera Height](./09_gloss_ref/09_glossary.md#camera_height), orientation ([direction](./09_gloss_ref/09_glossary.md#camera_direction)), and [angle](./09_gloss_ref/09_glossary.md#camera_angle) is essential.
 
 ::::::
 

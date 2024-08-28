@@ -68,6 +68,8 @@ latex:
 #######################################################################################
 # Parse and render settings
 parse:
+parse:
+  myst_url_schemes: [mailto, http, https]
   myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
     # - amsmath
     - colon_fence
@@ -138,8 +140,7 @@ parse:
     title_i_sp_detprob_cat_multi: "Detection probability"
     title_i_cam_makemod_same: "Camera make & model"
     title_i_cam_settings_mult: "Camera settings"
-    title_i_cam_protocol_ht_angle: "Camera height"
-    title_i_cam_direction_ds: "Camera directions"
+    title_i_cam_protocol_ht_angle_dir: "Camera height, angle, direction"
     title_i_bait_lure: "Bait/lure"
     title_i_bait_lure_cams: "Bait/lure (All or subset of camera locations)"
     title_i_targ_feature: "Targetting specific features"
@@ -944,7 +945,7 @@ parse:
     mod_ds_pro_03: "Can be applied to low-density populations ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_ds_pro_04: "Does not require individual identification ({{ ref_intext_howe_et_al_2017 }})"
     mod_inventory_assump_01: "No formal [assumption](/09_gloss_ref/09_glossary.md#mods_modelling_assumption)s ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_inventory_con_01: "Not reliable estimates for inference ('considered as unfinished, working drafts') ({{ refchandler-royle_intext_wearn_gloverkapfer_2017 }})"
+    mod_inventory_con_01: "Not reliable estimates for inference ('considered as unfinished, working drafts') ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_inventory_pro_01: "Maximum flexibility for [study](/09_gloss_ref/09_glossary.md#survey) design (e.g., [camera days per camera location](/09_gloss_ref/09_glossary.md#camera_days_per_camera_location) or use of [lure](/09_gloss_ref/09_glossary.md#baitlure_lure) ({{ ref_intext_rovero_et_al_2013 }})) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_is_assump_01: "Demographic closure (i.e., no births or deaths) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_is_assump_02: "Geographic closure (i.e., no immigration or emigration) ({{ ref_intext_moeller_et_al_2018 }})"

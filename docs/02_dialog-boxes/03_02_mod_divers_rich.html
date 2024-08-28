@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -73,8 +73,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/03_02_mod_divers_rich';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Glossary" href="09_gloss_ref/09_glossary.html" />
-    <link rel="prev" title="Behaviour (Investigative)" href="01_21_sp_behav.html" />
+    <link rel="next" title="Occupancy models" href="03_03_mod_occupancy.html" />
+    <link rel="prev" title="Species inventory" href="03_01_mod_inventory.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -195,31 +195,42 @@
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Testing 123</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_template_master_test.html">test</a></li>
-<li class="toctree-l1"><a class="reference internal" href="00_00_welcome.html">Welcome to the <strong>Remote Camera Decision Support Tool</strong>!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_00_welcome.html">Welcome to the Remote Camera Decision Support Tool!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_00_test_start.html">Welcome to the Remote Camera Decision Support Tool!</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Objectives &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_02_objective.html">State Variable <em>vs.</em> Objective</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_03_num_cams.html">Number of cameras available</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Study area &amp; Site selection constraints</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_06_cam_strat_covar.html">Stratified by covariates</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Duration &amp; Timing</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_08_surv_dur_min_max.html">Duration (minimum &amp; maximum)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_10_sp_asymptote.html">Species-accumulation asymptote</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Target species</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_13_sp_info.html">Ecological knowledge</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_14_sp_type.html">Carnivore / ungulate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_15_sp_dens_low.html">Low density species</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_16_sp_occ_restr.html">Occurrence restricted</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_17_sp_hr_size.html">Home range size</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_18_sp_size.html">Body size</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_19_sp_rarity.html">Rarity</a></li>
 <li class="toctree-l1"><a class="reference internal" href="01_20_sp_detprob_cat.html">Detection probability</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_21_sp_behav.html">Behaviour (Investigative)</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations - Modelling Approaches</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Data &amp; Analysis</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="01_47_cam_independent.html">Camera location independence</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations \- Modelling Approaches</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="03_01_mod_inventory.html">Species inventory</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Species diversity &amp; richness</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_03_mod_occupancy.html">Occupancy models</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
@@ -440,9 +451,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="species-diversity-richness">
 <span id="i-mod-divers-rich"></span><h1>Species diversity &amp; richness<a class="headerlink" href="#species-diversity-richness" title="Link to this heading">#</a></h1>
-<!--**{{ name_mod_divers_rich }}**
-*{{ mod_appl_mod_divers_rich }}*
-**{{ term_mod_divers_rich }}**: {{ term_def_mod_divers_rich }}-->
 <div class="full-width docutils">
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -837,9 +845,10 @@ Shiny</label><div class="sd-tab-content docutils">
 </iframe>
 </div>
 </div>
-<div class="sd-tab-item docutils">
-<p class="sd-tab-label rubric">Analytical tools &amp; resources</p>
-<div class="sd-tab-content docutils">
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Type</p></th>
@@ -896,10 +905,8 @@ Shiny</label><div class="sd-tab-content docutils">
 </table>
 </div>
 </div>
-</div>
-</div>
-<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
 References</label><div class="sd-tab-content docutils">
 <p>Ahumada, J. A., Silva, C. E. F., Gajapersad, K., Hallam, C., Hurtado, J., Martin, E., McWilliam, A., Mugerwa, B., O’Brien, T., Rovero, F., Sheil, D., Spironello, W. R., Winarni, N., &amp; Andelman, S. J. (2011). Community Structure and Diversity of Tropical Forest Mammals: Data from a Global Camera Trap Network. <em>Philosophical Transactions: Biological Sciences, 366</em>(1578), 2703–2711. <a class="reference external" href="https://doi.org/10.1098/rstb.2011.0115">https://doi.org/10.1098/rstb.2011.0115</a></p>
 <p>Baylor Tutoring Center. (2021, July 31). <em>Species Diversity and Species Richness</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=UXJ0r4hjbqI">https://www.youtube.com/watch?v=UXJ0r4hjbqI</a></p>
@@ -926,11 +933,6 @@ References</label><div class="sd-tab-content docutils">
 <p>Wearn, O. R., Carbone, C., Rowcliffe, J. M., Bernard, H. &amp; Ewers, R. M. (2016). Grain-dependent responses of mammalian diversity to land-use and the implications for conservation set-aside. <em>Ecological Applications, 26</em>(5), 1409–1420. <a class="reference external" href="https://doi.org/10.1890/15-1363">https://doi.org/10.1890/15-1363</a></p>
 <p>WildCo Lab (2021b). <em>WildCo: Reproducible camera trap data exploration and analysis examples in R</em>. University of British Columbia. <a class="reference external" href="https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/#what-this-guide-is">https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/#what-this-guide-is</a></p>
 <p>Yue, S., Brodie, J. F., Zipkin, E. F., &amp; Bernard, H. (2015). Oil palm plantations fail to support mammal diversity. <em>Ecological Applications, 25</em>(8), 2285–2292. <a class="reference external" href="https://doi.org/10.1890/14-1928.1">https://doi.org/10.1890/14-1928.1</a></p>
-</div>
-<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
-Glossary</label><div class="sd-tab-content docutils">
-<p>keys_here</p>
 </div>
 </div>
 </div>
@@ -967,20 +969,20 @@ Glossary</label><div class="sd-tab-content docutils">
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="01_21_sp_behav.html"
+       href="03_01_mod_inventory.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Behaviour (Investigative)</p>
+        <p class="prev-next-title">Species inventory</p>
       </div>
     </a>
     <a class="right-next"
-       href="09_gloss_ref/09_glossary.html"
+       href="03_03_mod_occupancy.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Glossary</p>
+        <p class="prev-next-title">Occupancy models</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

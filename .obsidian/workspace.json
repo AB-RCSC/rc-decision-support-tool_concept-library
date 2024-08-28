@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "02_dialog-boxes/01_10_sp_asymptote.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "02_dialog-boxes/01_10_sp_asymptote.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "02_dialog-boxes/01_10_sp_asymptote.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "02_dialog-boxes/01_10_sp_asymptote.md"
               }
             }
           }
@@ -148,11 +148,14 @@
   },
   "active": "c01cf922f18052e4",
   "lastOpenFiles": [
+    "02_dialog-boxes/~$refs_glossary_substitutions_2024-08-25 (version 1).xlsx",
+    "03_images/03_image_files/00_tada.png",
+    "03_images/03_image_files/00_coming_soon - Copy.png",
+    "index.md",
     "_build/html/_sources/index.md",
     "02_dialog-boxes/word_entry/~$try_03_02_mod_divers_rich.docx",
     "02_dialog-boxes/00_template_master_test.md",
     "_build/html/_sources/02_dialog-boxes/00_template_master_test.md",
-    "index.md",
     "_build/html/_sources/02_dialog-boxes/00_00_concept_lib.md",
     "_build/html/_sources/02_dialog-boxes/03_00_mod_approaches.md",
     "_build/html/searchindex.js.tmp",
@@ -172,8 +175,6 @@
     "_build/html/_images/becker_2024_slide9a.png",
     "_build/html/_images/becker_2024_slide8.png",
     "_build/html/_images/mccomb_et_al_2010_fig10_1.png",
-    "_build/html/_images/molloy_2018_fig9.png",
-    "_build/html/_images/background_blue.png",
     "02_dialog-boxes/01_21_sp_behav.md",
     "_build/html/_sources/02_dialog-boxes/01_21_sp_behav.md",
     "_build/html/_sources/02_dialog-boxes/03_19_mod_tifc.md",

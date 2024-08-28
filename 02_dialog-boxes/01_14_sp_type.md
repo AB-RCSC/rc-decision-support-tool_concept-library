@@ -200,6 +200,10 @@ Add some info here
 
 ::::::
 
+::::::{tab-item} Shiny
+Check back in the future!
+::::::
+
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
@@ -214,10 +218,6 @@ Add some info here
 
 ::::::{tab-item} References
 refs here
-::::::
-
-::::::{tab-item} Glossary
-keys here
 ::::::
 
 :::::::
