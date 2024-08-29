@@ -14,21 +14,18 @@ editor_options:
   markdown:
     wrap: none
 ---
-(toc_welcome)=
-# Welcome to the Remote Camera Decision Support Tool!
+# Test embed
+## Welcome to the Remote Camera Decision Support Tool!
 
 :::::::::{div} full-width
 <br>
-> A free, online, interactive, visual study decision support system for remote camera projects
+A free, online, interactive, visual study decision support system for remote camera projects
 
 ::::::{card}
-
-<!-- https://shiny.posit.co/r/gallery/life-sciences/biodiversity-national-parks/-->
-
 <iframe 
     width="100%"
     height="1100"
-    src="/http://rc-decision-support-tool.ca/voila/render/objective.ipynb?"
+    src="http://www.rc-decision-support-tool.ca/voila/render/objective.ipynb?"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>

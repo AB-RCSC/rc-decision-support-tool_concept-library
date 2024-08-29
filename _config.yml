@@ -75,7 +75,7 @@ parse:
     - colon_fence
     - deflist
     - dollarmath
-    # - html_admonition
+    - html_admonition
     # - html_image
     - linkify
     # - replacements
@@ -1782,7 +1782,7 @@ extensions:
 ##repository:
 repository:
   url: https://github.com/AB-RCSC/rc-decision-support-tool_concept-library  # Online location of your book
-  path_to_book: docs  # Optional path to your book, relative to the repository root
+#  path_to_book:  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
 #######################################################################################
@@ -1790,6 +1790,7 @@ repository:
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+
 html:
 #  favicon                   : ""     # A path to a favicon image
   use_issues_button: true            # Whether to add a link to your repository button
@@ -1797,14 +1798,18 @@ html:
 #  use_issues_button: true           # Whether to add an "open an issue" button
   use_edit_page_button: true         # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   google_analytics_id       : G-PJDP7DQ9Q0  # A GA id that can be used to track book views.#  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
+  analytics:
+      google_analytics_id: G-PJDP7DQ9Q0
+# 
+#   comments:
+#       utterances: true
+#           repo: AB-RCSC/rc-decision-support-tool_concept-library
 #  extra_footer              : ""  # Will be displayed underneath the footer.
 #  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
 #  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
-analytics:
-  google_analytics_id: G-PJDP7DQ9Q0
-comments:
-#    hypothesis              : false
-    utterances              : true
+
+
+#   hypothesis              : false
 #  announcement              : "" # A banner announcement at the top of the site.
 
 # documentation utterances - https://utteranc.es/#configuration

@@ -18,7 +18,7 @@ editor_options:
 # Welcome to the Remote Camera Decision Support Tool!
 :::::::::{div} full-width
 <br>
-> A free, online, interactive, visual study decision support system for remote camera projects
+A free, online, interactive, visual study decision support system for remote camera projects
 
 ::::::{card}
 
@@ -62,7 +62,7 @@ At each step, you will be able to access information related to the question in 
 
 :::{important} Sampling design
 :class: dropdown
-\
+
 Relevant to the appropriate modelling approach(es) identified
 - Camera arrangement
 - Camera spacing
@@ -74,7 +74,7 @@ Relevant to the appropriate modelling approach(es) identified
 
 :::{important} Analysis considerations
 :class: dropdown
-\
+
 (e.g., variables to consider in your analysis to reduce bias)
 :::
 
@@ -85,7 +85,7 @@ CAVEATS HERE
 ::::::
 
 ::::::{dropdown} 🔎 Information formats
-\
+
 Information is available in the following tabs of the "info pop-ups":
 - **Overview** \- short, digestible information about the topic
 - **Advanced** \- more “in the weeds” information for those who want to dig into the details
@@ -113,12 +113,12 @@ In addition to the modelling approaches mentioned above as \[FUTURE\]....
 -->
 ::::::
 
+::::::{card}
 ## Questions?
 If you have questions or would like further information, please contact Cassie Stevenson, Alberta Remote Camera Steering Committee (RCSC) / Alberta Biodiversity Monitoring Institute (ABMI), <abwildlifecameras@gmail.com>; <cjsteven@ualberta.ca>.
+::::::
 
 ***
-
-:::::::{div} full-width
 
 :::::{grid} 5
 :gutter: 1
@@ -126,51 +126,47 @@ If you have questions or would like further information, please contact Cassie S
 ::::{grid-item}
 :align: center
 
-```{image} ../03_images/02_logos/aca_ed.png
-:scale: 80%
+:::{image} ../03_images/02_logos/aca_ed.png
 :align: center
-```
+:::
 ::::
 
 ::::{grid-item}
 :align: center
-```{image} ../03_images/02_logos/abgov_ed.png
-:scale: 80%
+:::{image} ../03_images/02_logos/abgov_ed.png
 :align: center
-```
+:::
 
 ::::
 
 ::::{grid-item}
 :align: center
 
-```{image} ../03_images/02_logos/eccc_ed.png
+:::{image} ../03_images/02_logos/eccc_ed.png
 :scale: 80%
 :align: center
-```
+:::
 
 ::::
 
 ::::{grid-item} 
 :align: center
 
-```{image} ../03_images/02_logos/fos_ed.png
+:::{image} ../03_images/02_logos/fos_ed.png
 :scale: 80%
 :align: center
-```
+:::
 ::::
 
 ::::{grid-item} 
 :align: center
 
-```{image} ../03_images/02_logos/abmi_ed.png
+:::{image} ../03_images/02_logos/abmi_ed.png
 :align: center
 :scale: 80%
-```
+:::
 ::::
 :::::
-
-:::::::
 
 ***
 
