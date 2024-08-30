@@ -424,7 +424,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -440,6 +442,29 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives-resources">Objectives &amp; Resources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#study-area-site-selection-constraints">Study area &amp; Site selection constraints</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duration-timing">Duration &amp; Timing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#target-species">Target species</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#target-species-single">Target species (single)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#target-species-multiple">Target species (multiple)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equipment-deployment">Equipment &amp; Deployment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis">Data &amp; Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations">Recommendations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling-approaches">Modelling Approaches</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -450,14 +475,14 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="concept-library">
-<span id="id1"></span><span id="toc-concept-lib"></span><h1>Concept Library<a class="headerlink" href="#concept-library" title="Link to this heading">#</a></h1>
-<div class="full-width docutils">
+<span id="toc-concept-lib"></span><h1>Concept Library<a class="headerlink" href="#concept-library" title="Link to this heading">#</a></h1>
 <!-- 
 conda activate rclib
 cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
 jupyter-book build ./
 -->
-<h2 class="rubric" id="objectives-resources"><span id="id2"></span><span id="i-objective-resources"></span>Objectives &amp; Resources</h2>
+<section id="objectives-resources">
+<span id="i-objective-resources"></span><h2>Objectives &amp; Resources<a class="headerlink" href="#objectives-resources" title="Link to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row sd-p-1 docutils">
@@ -492,7 +517,8 @@ jupyter-book build ./
 </div>
 </div>
 </div>
-<h3 class="rubric" id="study-area-site-selection-constraints"><span id="id3"></span><span id="i-study-area-site-selection-constraints"></span>Study area &amp; Site selection constraints</h3>
+<section id="study-area-site-selection-constraints">
+<span id="i-study-area-site-selection-constraints"></span><h3>Study area &amp; Site selection constraints<a class="headerlink" href="#study-area-site-selection-constraints" title="Link to this heading">#</a></h3>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row sd-p-1 docutils">
@@ -541,7 +567,10 @@ jupyter-book build ./
 </div>
 </div>
 </div>
-<h2 class="rubric" id="duration-timing"><span id="i-duration-timing"></span>Duration &amp; Timing</h2>
+</section>
+</section>
+<section id="duration-timing">
+<span id="i-duration-timing"></span><h2>Duration &amp; Timing<a class="headerlink" href="#duration-timing" title="Link to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row sd-p-1 docutils">
@@ -576,8 +605,11 @@ jupyter-book build ./
 </div>
 </div>
 </div>
-<h2 class="rubric" id="target-species"><span id="id4"></span><span id="i-target-species"></span>Target species</h2>
-<h3 class="rubric" id="target-species-single"><span id="id5"></span><span id="i-target-species-single"></span>Target species (single)</h3>
+</section>
+<section id="target-species">
+<span id="i-target-species"></span><h2>Target species<a class="headerlink" href="#target-species" title="Link to this heading">#</a></h2>
+<section id="target-species-single">
+<span id="i-target-species-single"></span><h3>Target species (single)<a class="headerlink" href="#target-species-single" title="Link to this heading">#</a></h3>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row sd-p-1 docutils">
@@ -796,7 +828,9 @@ jupyter-book build ./
 </div>
 </div>
 </div>
-<h3 class="rubric" id="target-species-multiple"><span id="id6"></span><span id="i-target-species-multiple"></span>Target species (multiple)</h3>
+</section>
+<section id="target-species-multiple">
+<span id="id1"></span><span id="i-target-species-multiple"></span><h3>Target species (multiple)<a class="headerlink" href="#target-species-multiple" title="Link to this heading">#</a></h3>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
 <div class="sd-col sd-d-flex-row sd-p-1 docutils">
@@ -845,7 +879,10 @@ jupyter-book build ./
 </div>
 </div>
 </div>
-<h2 class="rubric" id="equipment-deployment"><span id="i-equipment-deployment"></span>Equipment &amp; Deployment</h2>
+</section>
+</section>
+<section id="equipment-deployment">
+<span id="i-equipment-deployment"></span><h2>Equipment &amp; Deployment<a class="headerlink" href="#equipment-deployment" title="Link to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row sd-p-1 docutils">
@@ -904,7 +941,9 @@ jupyter-book build ./
 </div>
 </div>
 </div>
-<h2 class="rubric" id="data-analysis"><span id="id7"></span><span id="i-data-analysis"></span>Data &amp; Analysis</h2>
+</section>
+<section id="data-analysis">
+<span id="id2"></span><span id="i-data-analysis"></span><h2>Data &amp; Analysis<a class="headerlink" href="#data-analysis" title="Link to this heading">#</a></h2>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row sd-p-1 docutils">
@@ -987,8 +1026,11 @@ jupyter-book build ./
 </div>
 </div>
 </div>
-<h2 class="rubric" id="recommendations"><span id="id8"></span><span id="i-recommendations"></span>Recommendations</h2>
-<h3 class="rubric" id="modelling-approaches"><span id="id9"></span><span id="i-recommendations-modelling-approach"></span>Modelling Approaches</h3>
+</section>
+<section id="recommendations">
+<span id="id3"></span><span id="i-recommendations"></span><h2>Recommendations<a class="headerlink" href="#recommendations" title="Link to this heading">#</a></h2>
+<section id="modelling-approaches">
+<span id="id4"></span><span id="i-recommendations-modelling-approach"></span><h3>Modelling Approaches<a class="headerlink" href="#modelling-approaches" title="Link to this heading">#</a></h3>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row sd-p-1 docutils">
@@ -1193,7 +1235,8 @@ jupyter-book build ./
 </div>
 </div>
 </div>
-</div>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 <div class="toctree-wrapper compound">
@@ -1257,6 +1300,36 @@ jupyter-book build ./
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives-resources">Objectives &amp; Resources</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#study-area-site-selection-constraints">Study area &amp; Site selection constraints</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#duration-timing">Duration &amp; Timing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#target-species">Target species</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#target-species-single">Target species (single)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#target-species-multiple">Target species (multiple)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equipment-deployment">Equipment &amp; Deployment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data-analysis">Data &amp; Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommendations">Recommendations</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#modelling-approaches">Modelling Approaches</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -14,11 +14,10 @@ editor_options:
   markdown:
     wrap: none
 ---
-(toc_concept_lib)=
 (#toc_concept_lib)=
+
 # Concept Library
 
-:::::::::{div} full-width
 <!-- 
 conda activate rclib
 cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
@@ -26,7 +25,6 @@ jupyter-book build ./
 -->
 
 (i_objective_resources)=
-(#i_objective_resources)=
 ## Objectives & Resources
 
 ::::{grid} 3
@@ -62,7 +60,6 @@ jupyter-book build ./
 ::::
 
 (i_study_area_site_selection_constraints)=
-(#i_study_area_site_selection_constraints)=
 ### Study area & Site selection constraints
 
 ::::{grid} 3
@@ -143,12 +140,14 @@ jupyter-book build ./
 
 ::::
 
-(i_target_species)=
+
 (#i_target_species)=
+
 ## Target species
 
-(i_target_species_single)=
+
 (#i_target_species_single)=
+
 ### Target species (single)
 
 ::::{grid} 3
@@ -730,5 +729,3 @@ jupyter-book build ./
 :::
 
 ::::
-
-:::::::::
