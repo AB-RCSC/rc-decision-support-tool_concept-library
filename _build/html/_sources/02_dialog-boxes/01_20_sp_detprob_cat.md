@@ -13,11 +13,16 @@ kernelspec:
 editor_options: 
   markdown: 
   wrap: none
+myst:
+  substitutions:
+    glossary: "https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/09_gloss_ref/09_glossary.html"
 ---
 (i_sp_det_prob_cat)=
 # {{ title_i_sp_detprob_cat }}
 
 ::::::::{div} full-width
+
+[test]({{ glossary }}#test)
 
 :::::::{tab-set}
 

@@ -60,7 +60,7 @@ jupyter-book build ./
 ::::
 
 (i_study_area_site_selection_constraints)=
-### Study area & Site selection constraints
+## Study area & Site selection constraints
 
 ::::{grid} 3
 :gutter: 3

@@ -5,7 +5,7 @@ format: jb-book
 root: index
 parts:
   - caption: Testing 123
-    maxdepth: 1
+    maxdepth: 0
     titlesonly: False
     chapters:
     - file: 02_dialog-boxes/00_template_master_test.md

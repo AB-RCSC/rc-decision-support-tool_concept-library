@@ -1792,6 +1792,7 @@ repository:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 
 html:
+  home_page_in_navbar: false          # https://stackoverflow.com/questions/74370793/how-to-hide-intro-index-page-in-toc-of-jupyterbook
 #  favicon                   : ""     # A path to a favicon image
   use_issues_button: true            # Whether to add a link to your repository button
   use_repository_button: true        # Whether to add a link to your repository button

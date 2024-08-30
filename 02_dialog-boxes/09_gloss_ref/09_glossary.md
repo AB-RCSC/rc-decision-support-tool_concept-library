@@ -20,6 +20,9 @@ editor_options:
 
 {.glossary}
 
+(#test)=
+test
+
 {#access_method}
 
 **\*Access Method**
