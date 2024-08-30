@@ -17,7 +17,7 @@ editor_options:
 (#toc_concept_lib)=
 
 # Concept Library
-
+::::::::{div} full-width
 <!-- 
 conda activate rclib
 cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
@@ -729,3 +729,5 @@ jupyter-book build ./
 :::
 
 ::::
+
+::::::::

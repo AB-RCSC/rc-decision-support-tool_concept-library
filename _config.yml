@@ -17,6 +17,11 @@
 ## Indented quoting: Use a greater than sign (>) and then a space, then type the text.
 ## Bullets: Use the dash sign (- ) with a space after it, or a space, a dash, and a space ( - ), to create a circular bullet.
 
+## cross-references
+## https://mystmd.org/guide/cross-references
+## https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#definition-lists
+
+
 #######################################################################################
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
