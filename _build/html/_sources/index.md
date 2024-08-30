@@ -23,11 +23,11 @@ editor_options:
 conda activate rclib
 cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
 jupyter-book build ./
-
 -->
+
 (i_objective_resources)=
 (#i_objective_resources)=
-### Objectives & Resources
+## Objectives & Resources
 
 ::::{grid} 3
 :gutter: 3
@@ -108,7 +108,8 @@ jupyter-book build ./
 ::::
 
 (i_duration_timing)=
-### Duration & Timing
+
+## Duration & Timing
 
 ::::{grid} 3
 :gutter: 3
@@ -144,11 +145,11 @@ jupyter-book build ./
 
 (i_target_species)=
 (#i_target_species)=
-### Target species
+## Target species
 
 (i_target_species_single)=
 (#i_target_species_single)=
-#### Target species (single)
+### Target species (single)
 
 ::::{grid} 3
 :gutter: 3
@@ -353,7 +354,7 @@ jupyter-book build ./
 
 (i_target_species_multiple)=
 (#i_target_species_multiple)=
-#### Target species (multiple)
+### Target species (multiple)
 
 ::::{grid} 3
 :::{grid-item-card}
@@ -399,13 +400,13 @@ jupyter-book build ./
 ::::
 
 (#i_equipment_deployment)=
-### Equipment & Deployment
+## Equipment & Deployment
 
 ::::{grid} 3
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/05_39_cam_makemod_same.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_39_cam_makemod_same.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -414,7 +415,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/05_40_cam_settings_mult.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_40_cam_settings_mult.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -423,7 +424,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/05_41_cam_protocol_ht_angle_dir.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_41_cam_protocol_ht_angle_dir.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -436,7 +437,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/05_43_bait_lure.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_43_bait_lure.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -445,7 +446,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/05_45_targ_feature.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_45_targ_feature.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -457,13 +458,13 @@ jupyter-book build ./
 
 (i_data_analysis)=
 (#i_data_analysis)=
-### Data & Analysis
+## Data & Analysis
 
 ::::{grid} 3
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/06_47_cam_independent.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_47_cam_independent.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -472,7 +473,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/06_48_multisamp_per_loc.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_48_multisamp_per_loc.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -481,7 +482,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/06_49_modmixed.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_49_modmixed.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -494,7 +495,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/06_50_num_det.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_50_num_det.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -503,7 +504,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_02_mod_divers_rich.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_mod_divers_rich.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -512,7 +513,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/06_52_num_recap.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_52_num_recap.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -525,7 +526,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/06_51_num_det_individ.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_51_num_det_individ.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -537,11 +538,11 @@ jupyter-book build ./
 
 (i_recommendations)=
 (#i_recommendations)=
-### Recommendations
+## Recommendations
 
 (i_recommendations_modelling_approach)=
 (#i_recommendations_modelling_approach)=
-#### Modelling Approaches
+### Modelling Approaches
 
 ::::{grid} 3
 :gutter: 3

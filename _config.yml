@@ -26,7 +26,7 @@ author                      : Alberta Remote Camera Steering Committee (RCSC)
 copyright                   : "2024"  # Copyright year to be placed in the footer
 logo                        : logo.png # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-exclude_patterns            : [.files,.obsidian,_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "**.xls", "**.csv", "**.docx","**.999_cassie_scratch","**.00_for-later"]
+exclude_patterns            : [.files,.obsidian,_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "**.xls", "**.csv", "**.docx","**.999_cassie_scratch","**.00_for-later","**.00_archive"]
 # Auto-exclude files not in the toc
 only_build_toc_files: true
 

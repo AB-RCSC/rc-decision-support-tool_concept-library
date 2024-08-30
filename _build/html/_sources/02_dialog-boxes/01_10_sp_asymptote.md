@@ -16,8 +16,8 @@ editor_options:
 ---
 (i_sp_asymptote)=
 # {{ title_i_sp_asymptote }}
-<br>
-:::::::::{div} full-width
+
+::::::::{div} full-width
 
 :::::::{tab-set}
 
@@ -209,7 +209,6 @@ NULL
 ::::
 
 :::::
-
 ::::::
 
 ::::::{tab-item} Shiny apps/Widgets
@@ -239,7 +238,6 @@ Rarefied Species Accumulation Curves (the simple way) tutorial
 ::::::
 
 ::::::{tab-item} References
-
 {{ ref_bib_colwell_et_al_2012 }}
 
 {{ ref_bib_deng_et_al_2015 }}
@@ -255,9 +253,7 @@ Rarefied Species Accumulation Curves (the simple way) tutorial
 {{ ref_bib_vandooren_2016 }}
 
 {{ ref_bib_wearn_gloverkapfer_2017 }}
-
 ::::::
 
 :::::::
-
-:::::::::
+::::::::
