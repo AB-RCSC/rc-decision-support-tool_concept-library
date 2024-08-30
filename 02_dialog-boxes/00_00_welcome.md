@@ -19,7 +19,7 @@ editor_options:
 :::::::::{div} full-width
 A free, online, interactive, visual study decision support system for remote camera projects
 <br>
-::::::{card}
+
 ## How does it work!? 
 This tool aims to support your decision-making process when designing a remote camera programs by guiding you through a series of decision points related to your study in the form of an interactive flow chart.
 At each step, you will be able to access information related to the question in the “info popups”; information is provided with different levels of complexity (overview vs. advanced) and in formats that accommodate multiple learning styles (e.g., figures, videos, Shiny apps, etc.). Once you have answered all of the questions, study design recommendations will be generated from your selections, which will include the following:
@@ -58,8 +58,8 @@ At each step, you will be able to access information related to the question in 
     -   *\[FUTURE\]* More specific approaches related to behaviour
 :::
 
-:::{important} Sampling design
-:class: dropdown
+:::{admonition} Sampling design
+:class: important
 
 Relevant to the appropriate modelling approach(es) identified
 - Camera arrangement
@@ -70,19 +70,18 @@ Relevant to the appropriate modelling approach(es) identified
 - Total number of camera days
 :::
 
-:::{important} Analysis considerations
-:class: dropdown
+:::{admonition} Analysis considerations
+:class: important
 
 (e.g., variables to consider in your analysis to reduce bias)
 :::
 
-::::{warning} It’s not perfect! (or some other text here along these lines)
-CAVEATS HERE
+:::{admonition} It’s not an exact science
+:class: warning
+CAVEATS HERE / it's not perfect (or some other text here along these lines)
 ::::
 
-::::::
-
-::::::{dropdown} nformation formats
+::::::{dropdown} Information formats
 
 Information is available in the following tabs of the "info pop-ups":
 - **Overview** \- short, digestible information about the topic
@@ -99,7 +98,7 @@ Information include in the info popups is always available in the **[Concept Lib
 :::
 ::::::
 
-::::::{dropdown}  Future development
+::::::{dropdown} 🚀 Future development
 \
 In addition to the modelling approaches mentioned above as \[FUTURE\]....
 
@@ -111,10 +110,9 @@ In addition to the modelling approaches mentioned above as \[FUTURE\]....
 -->
 ::::::
 
-::::::{card}
+
 # Questions?
 If you have questions or would like further information, please contact Cassie Stevenson, Alberta Remote Camera Steering Committee (RCSC) / Alberta Biodiversity Monitoring Institute (ABMI), <abwildlifecameras@gmail.com>; <cjsteven@ualberta.ca>.
-::::::
 
 ***
 

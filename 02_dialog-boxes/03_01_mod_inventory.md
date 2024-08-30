@@ -16,13 +16,8 @@ editor_options:
 ---
 (i_mod_inventory)=
 # {{ name_mod_inventory }}
-<!--**{{ name_mod_inventory}}**
-{{ *{{ mod_appl_mod_inventory }}*<p/>
-**{{ term_mod_inventory }}**: {{ term_def_mod_inventory }}-->
 
 :::::::::{div} full-width
-::::::::{admonition} Click here for more information
-:class: dropdown
 
 ::::::{dropdown} Assumptions, Pros, Cons
 :::::{grid}
@@ -224,6 +219,10 @@ Add some info here
 
 ::::::
 
+::::::{tab-item} Shiny apps/Widgets
+Check back in the future!
+::::::
+
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
@@ -241,7 +240,5 @@ refs here
 ::::::
 
 :::::::
-
-::::::::
 
 :::::::::
