@@ -17,9 +17,7 @@ editor_options:
 (i_sp_dens_low)=
 # {{ title_i_sp_dens_low }}
 
-:::::::::{div} full-width
-
-<!-- **{{ title_i_sp_dens_low }}**-->
+::::::::{div} full-width
 
 :::::::{tab-set}
 
@@ -200,7 +198,7 @@ Add some info here
 
 ::::::
 
-::::::{tab-item} Shiny
+::::::{tab-item} Shiny apps/Widgets
 Check back in the future!
 ::::::
 
@@ -222,4 +220,4 @@ Check back in the future!
 
 :::::::
 
-:::::::::
+::::::::

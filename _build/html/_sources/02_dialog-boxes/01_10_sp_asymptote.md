@@ -16,11 +16,8 @@ editor_options:
 ---
 (i_sp_asymptote)=
 # {{ title_i_sp_asymptote }}
-
+<br>
 :::::::::{div} full-width
-
-<!-- **{{ title_i_sp_asymptote }}**
-Do you wish to sample long enough to reach the species-accumulation asymptote?-->
 
 :::::::{tab-set}
 
@@ -28,21 +25,20 @@ Do you wish to sample long enough to reach the species-accumulation asymptote?--
 
 This question is related to the state variable “Species Diversity & Richness”
 
-In order to understand what we mean when we say, “species-accumulation asymptote”, we must first explain species accumulation curves. A **species accumulation curves** "gives the expected number of observed species as a function of sampling effort” ({{ ref_intext_deng_et_al_2015 }}). Species accumulation curves are used "to assess and compare diversity across populations, or to evaluate the benefits of additional sampling" ({{ ref_intext_vandooren_2016 }}). The ***species-accumulation asymptote*** refers to the point on the curve where you’ve sampled long enough to observe *most* of the species present.
+In order to understand what we mean when we say, “species-accumulation asymptote”, we must first explain species accumulation curves. A **species accumulation curves** "gives the expected number of observed species as a function of sampling effort” ({{ ref_intext_deng_et_al_2015 }}) and are used "to assess and compare diversity across populations, or to evaluate the benefits of additional sampling" ({{ ref_intext_vandooren_2016 }}). The ***species-accumulation asymptote*** refers to the point on this curve where you’ve sampled long enough to observe *most* of the species present.
 
 Consider the figure below. You can see that as the “number of records” (on the x-axis) increases, at first (where the line is the steepest), you detect new species quickly. This is because many species that are easy to detect and/or common, and thus you’re more likely to encounter them in a shorter amount of time. Yet as time goes on (you collect more samples), the rate at which you detect new species starts to slow down (fewer and fewer new species over the same amount of time that passes / # samples are collected); this is because, in general, rare species will occur much less often, and thus more time is needed to allow them all a chance to visit the camera location. Therefore, the curve starts to level off as after you’ve detected most (or all) of the easily detectable/common species and are slowly detecting those that are less detectable and/or less common. As this line flattens out, eventually, barely any new species are detected, if any are at all.
+
+```{figure} ../03_images/03_image_files/loreau_2010_fig4.png
+:width: 300px
+:align: center
+```
+
+<font size="3">**Loreau (2010) Fig 4** - “Species accumulation and rarefaction curves. Species accumulation curves show the number of species obtained by successively censusing either individual organisms (individual-based accumulation curves) or samples (sample-based accumulation curves).... Credit: Rob Colwell, after Gotelli and Colwell (2001)”</font>
 
 Whether you choose to sample long enough to reach the species-accumulation asymptote will depend on your modelling approach, since it not always necessary; some non-parametric methods are thought to estimate asymptotic richness fairly well “even when extrapolating to double or triple the size of the sample” ({{ ref_intext_colwell_et_al_2012 }}; {{ ref_intext_wearn_gloverkapfer_2017 }}). 
 
 > **If you’re not sure, select the conservative answer of “Yes”**
-
-```{figure} ../03_images/03_image_files/vandooren_2016_fig1_clipped.png
-:width: 600px
-:align: center
-```
-
-<font size="3">
-> **Van Dooren (2016) - Figure 1. Species accumulation curves. Species richness is the asymptote of a species accumulation curve, which expresses the dependence on sampling effort of the number of species sampled from an assemblage...”</font>
 
 ::::::
 
@@ -216,6 +212,10 @@ NULL
 
 ::::::
 
+::::::{tab-item} Shiny apps/Widgets
+Check back in the future!
+::::::
+
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
@@ -238,10 +238,6 @@ Rarefied Species Accumulation Curves (the simple way) tutorial
 | resource11_type | resource11_name | resource11_note | resource11_url | {{ ref_bib_resource11_ref_id }} |
 ::::::
 
-::::::{tab-item} *Shiny
-Check back in the future!
-::::::
-
 ::::::{tab-item} References
 
 {{ ref_bib_colwell_et_al_2012 }}
@@ -258,7 +254,8 @@ Check back in the future!
 
 {{ ref_bib_vandooren_2016 }}
 
-{{ ref_intext_wearn_et_al_2017 }}
+{{ ref_bib_wearn_gloverkapfer_2017 }}
+
 ::::::
 
 :::::::

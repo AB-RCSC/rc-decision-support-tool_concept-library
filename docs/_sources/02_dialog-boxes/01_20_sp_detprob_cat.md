@@ -292,10 +292,9 @@ Factors that influence [detection probability](./09_gloss_ref/09_glossary.md#det
 
 ::::::
 
-::::::{tab-item} Shiny
+::::::{tab-item} Shiny apps/Widgets
 Check back in the future!
 ::::::
-
 
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |

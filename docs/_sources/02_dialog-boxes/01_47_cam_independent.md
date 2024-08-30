@@ -18,10 +18,6 @@ editor_options:
 # {{ title_i_cam_independent }}
 
 :::::::::{div} full-width
-::::::::{admonition} Click here for more information
-:class: dropdown
-
-<!-- **{{ title_i_cam_independent }}**-->
 
 :::::::{tab-set}
 
@@ -202,6 +198,10 @@ Add some info here
 
 ::::::
 
+::::::{tab-item} Shiny apps/Widgets
+Check back in the future!
+::::::
+
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
@@ -214,16 +214,5 @@ Add some info here
 | resource7_type | resource7_name | resource7_note | resource7_url | {{ ref_bib_resource7_ref_id }} |
 ::::::
 
-::::::{tab-item} References
-refs here
-::::::
-
-::::::{tab-item} Glossary
-keys here
-::::::
-
 :::::::
-
-::::::::
-
 :::::::::

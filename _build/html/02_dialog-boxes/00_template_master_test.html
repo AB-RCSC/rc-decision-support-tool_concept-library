@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -196,7 +196,6 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">test</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_00_welcome.html">Welcome to the Remote Camera Decision Support Tool!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="00_00_test_start.html">Test embed</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Objectives &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -226,11 +225,11 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_47_cam_independent.html">Camera location independence</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations \- Modelling Approaches</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations - Modelling Approaches</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="03_01_mod_inventory.html">Species inventory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_02_mod_divers_rich.html">Species diversity &amp; richness</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_03_mod_occupancy.html">Occupancy models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_03_mod_occupancy.html">Occupancy</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
@@ -450,8 +449,7 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="test">
-<span id="i-test"></span><h1>test<a class="headerlink" href="#test" title="Link to this heading">#</a></h1>
-<!-- # {{ name_mod_scr_secr}} -->
+<h1>test<a class="headerlink" href="#test" title="Link to this heading">#</a></h1>
 <div class="full-width docutils">
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -476,7 +474,7 @@ Assumptions</div>
 <li><p class="sd-card-text">Spatially explicit models have further assumptions about animal movement (Wearn &amp; Glover-Kapfer, 2017; Rowcliffe et al., 2008; Royle et al., 2009; O’Brien et al., 2011); these include:</p></li>
 <li><p class="sd-card-text">Home ranges are stable (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Movement is unaffected by cameras (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_location"><span class="xref myst">Camera locations</span></a> are randomly placed with respect to the distribution and orientation of home ranges (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#camera_location"><span class="xref myst">Camera locations</span></a> are randomly placed with respect to the distribution and orientation of home ranges (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Distribution of home range centres follows a defined distribution (Poisson, or other, e.g., negative binomial) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">assumption 15</p></li>
 <li><p class="sd-card-text">assumption 16</p></li>
@@ -528,16 +526,8 @@ Cons</div>
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Overview</label><div class="sd-tab-content docutils">
-<p><br />
-<strong>Spatially explicit capture-recapture (SECR) */ Spatial capture-recapture (SCR) (Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008; Royle et al., 2009)</strong>: The SECR (or SCR) method is used to estimate the density of marked populations; an extension of traditional capture-recapture (CR; Karanth, 1995; Karanth &amp; Nichols, 1998) models (Karanth, 1995; Karanth &amp; Nichols, 1998) that explicitly accounts for camera location and animal movement (Burgar et al., 2018). SECR models use spatially referenced individual capture histories to infer where animals’ home range centres are, assuming that detection probability decreases with increasing distance between cameras and home range centres (Clarke et al., 2023). SECR models can be implemented using different statistical frameworks, including Bayesian estimation (Royle and Young, 2008; Morin et al., 2022).</p>
+<p><strong>Spatially explicit capture-recapture (SECR) */ Spatial capture-recapture (SCR) (Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008; Royle et al., 2009)</strong>: The SECR (or SCR) method is used to estimate the density of marked populations; an extension of traditional capture-recapture (CR; Karanth, 1995; Karanth &amp; Nichols, 1998) models (Karanth, 1995; Karanth &amp; Nichols, 1998) that explicitly accounts for camera location and animal movement (Burgar et al., 2018). SECR models use spatially referenced individual capture histories to infer where animals’ home range centres are, assuming that detection probability decreases with increasing distance between cameras and home range centres (Clarke et al., 2023). SECR models can be implemented using different statistical frameworks, including Bayesian estimation (Royle and Young, 2008; Morin et al., 2022).</p>
 <p>Add some info here</p>
-<!-- This is commented out. -->
-<p><a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_days_per_camera_location"><span class="std std-ref">camera days per camera location</span></a></p>
-<p><a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_days_per_camera_location"><span class="xref myst">camera days per camera location</span></a></p>
-<p><a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_days_per_camera_location"><span class="std std-ref">camera days per camera location</span></a></p>
-<p><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#access_method"><span class="xref myst">test</span></a></p>
-<p><a class="reference internal" href="09_gloss_ref/09_glossary.html#access_method"><span class="std std-ref">test</span></a></p>
-<p><a class="reference internal" href="#../09_gloss_ref/09_glossary.md#access_method"><span class="xref myst">test</span></a></p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
@@ -546,7 +536,7 @@ Advanced</label><div class="sd-tab-content docutils">
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-2">
-🔁 Visual resources</label><div class="sd-tab-content docutils">
+Visual resources</label><div class="sd-tab-content docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
@@ -582,46 +572,6 @@ In-text ref here</div>
 <a class="reference internal image-reference" href="../_images/figure3_filename.png"><img alt="../_images/figure3_filename.png" src="../_images/figure3_filename.png" style="width: 300px;" /></a>
 </figure>
 <p>figure4_caption <p/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure4_filename.png"><img alt="../_images/figure4_filename.png" src="../_images/figure4_filename.png" style="width: 300px;" /></a>
-</figure>
-<p>figure5_caption <p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure5_filename.png"><img alt="../_images/figure5_filename.png" src="../_images/figure5_filename.png" style="width: 300px;" /></a>
-</figure>
-<p>figure5_caption <p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure6_filename.png"><img alt="../_images/figure6_filename.png" src="../_images/figure6_filename.png" style="width: 300px;" /></a>
-</figure>
-<p>figure6_caption <p/>
 </div>
 </div>
 </div>
@@ -682,65 +632,10 @@ In-text ref here</div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid4_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid4_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid5_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid5_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid6_url " 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid6_caption<p/>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
-Shiny</label><div class="sd-tab-content docutils">
+Shiny apps/Widgets</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text"><strong>iNEXTOnline</strong></p>
@@ -818,56 +713,6 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-5">
 References</label><div class="sd-tab-content docutils">
 <p>Refs</p>
-</div>
-<input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-6">
-Glossary</label><div class="sd-tab-content docutils">
-<p>keys_here</p>
-</div>
-<input id="sd-tab-item-7" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-7">
-random test</label><div class="sd-tab-content docutils">
-<p>An icon :fas:<code class="docutils literal notranslate"><span class="pre">spinner;sd-bg-primary</span> <span class="pre">sd-bg-text-primary</span></code>, some more text.</p>
-<ul class="simple">
-<li><p>A regular icon: :material-regular:<code class="docutils literal notranslate"><span class="pre">data_exploration;2em</span></code>, some more text</p></li>
-<li><p>A coloured regular icon: :material-regular:<code class="docutils literal notranslate"><span class="pre">settings;3em;sd-text-success</span></code>, some more text.</p></li>
-<li><p>A coloured outline icon: :material-outlined:<code class="docutils literal notranslate"><span class="pre">settings;3em;sd-text-success</span></code>, some more text.</p></li>
-<li><p>A coloured sharp icon: :material-sharp:<code class="docutils literal notranslate"><span class="pre">settings;3em;sd-text-success</span></code>, some more text.</p></li>
-<li><p>A coloured round icon: :material-round:<code class="docutils literal notranslate"><span class="pre">settings;3em;sd-text-success</span></code>, some more text.</p></li>
-<li><p>A coloured two-tone icon: :material-twotone:<code class="docutils literal notranslate"><span class="pre">settings;3em;sd-text-success</span></code>, some more text.</p></li>
-<li><p>A fixed size icon: :material-regular:<code class="docutils literal notranslate"><span class="pre">data_exploration;24px</span></code>, some more text.</p></li>
-</ul>
-<p>I’m a <strong>substitution</strong></p>
-<p>A coloured icon: :octicon:<code class="docutils literal notranslate"><span class="pre">report;1em;sd-text-info</span></code>, some more text.</p>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm sd-card-hover docutils">
-<img alt="" class="sd-card-img" src="../_images/background_blue.png" />
-<div class="sd-card-img-overlay docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">am i blue?</p>
-</div>
-<a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_32_sp_behav__multi.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_32_sp_behav__multi.html</span></a></div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<img src="..03_images/03_image_files/det.gif" width="750" align="center">
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<img alt="" class="sd-card-img" src="../_images/background_blue.png" />
-<div class="sd-card-img-overlay docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">tada</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>

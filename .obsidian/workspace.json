@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "6f4219b6cf373388",
+    "id": "448fa59309d96359",
     "type": "split",
     "children": [
       {
-        "id": "dbfe12000c9aeea6",
+        "id": "ae676a090b39d0aa",
         "type": "tabs",
         "children": [
           {
-            "id": "c01cf922f18052e4",
+            "id": "8cb006d098b0067f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_dialog-boxes/01_10_sp_asymptote.md",
+                "file": "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b69afcbacaa7ba78",
+    "id": "f8faf629cf095366",
     "type": "split",
     "children": [
       {
-        "id": "911e9e40dad09cee",
+        "id": "f4f383734e7d4504",
         "type": "tabs",
         "children": [
           {
-            "id": "adc4313618d3284c",
+            "id": "3fdc026c65954bd7",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "8df89d043be43306",
+            "id": "3cfd5e756b2499ab",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "8f63dc37266e1e0a",
+            "id": "39562bc4c5fa0031",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -72,20 +72,20 @@
     "width": 300
   },
   "right": {
-    "id": "01ac3b251b7c5f60",
+    "id": "cf774ed40be47c40",
     "type": "split",
     "children": [
       {
-        "id": "0d4e85ddfe0b9352",
+        "id": "5bd636250f05f529",
         "type": "tabs",
         "children": [
           {
-            "id": "5cdb70292f13f9c0",
+            "id": "c07227e31346f247",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_dialog-boxes/01_10_sp_asymptote.md",
+                "file": "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,19 +97,19 @@
             }
           },
           {
-            "id": "1f94739e010edc72",
+            "id": "b72561f9a7aba4e9",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_dialog-boxes/01_10_sp_asymptote.md",
+                "file": "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "5b414f2b719d3a74",
+            "id": "75d607d3714324e1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -120,12 +120,12 @@
             }
           },
           {
-            "id": "5ac1f8a09c6eaed5",
+            "id": "38a43645f42289a0",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_dialog-boxes/01_10_sp_asymptote.md"
+                "file": "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md"
               }
             }
           }
@@ -146,53 +146,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c01cf922f18052e4",
+  "active": "8cb006d098b0067f",
   "lastOpenFiles": [
-    "02_dialog-boxes/~$refs_glossary_substitutions_2024-08-25 (version 1).xlsx",
-    "03_images/03_image_files/00_tada.png",
-    "03_images/03_image_files/00_coming_soon - Copy.png",
-    "index.md",
-    "_build/html/_sources/index.md",
-    "02_dialog-boxes/word_entry/~$try_03_02_mod_divers_rich.docx",
-    "02_dialog-boxes/00_template_master_test.md",
-    "_build/html/_sources/02_dialog-boxes/00_template_master_test.md",
-    "_build/html/_sources/02_dialog-boxes/00_00_concept_lib.md",
-    "_build/html/_sources/02_dialog-boxes/03_00_mod_approaches.md",
-    "_build/html/searchindex.js.tmp",
-    "02_dialog-boxes/~WRL0550.tmp",
-    "02_dialog-boxes/~WRD0530.tmp",
-    "02_dialog-boxes/~WRL3790.tmp",
-    "02_dialog-boxes/~WRD3767.tmp",
-    "03_images/03_image_files/det.gif",
-    "02_dialog-boxes/9376B100",
-    "03_images/03_image_files/no_ref/moeller_lukacs_2021.png",
-    "02_dialog-boxes/~WRL2265.tmp",
-    "02_dialog-boxes/~WRD2242.tmp",
-    "02_dialog-boxes/~WRL1356.tmp",
-    "_build/html/_images/rcsc_et_al_2024_detection_probability_2023_05_04.png",
-    "03_images/03_image_files/chatterhee_et_al_2021_table2.png",
-    "_build/html/_images/becker_2024_slide12.png",
-    "_build/html/_images/becker_2024_slide9a.png",
-    "_build/html/_images/becker_2024_slide8.png",
-    "_build/html/_images/mccomb_et_al_2010_fig10_1.png",
-    "02_dialog-boxes/01_21_sp_behav.md",
-    "_build/html/_sources/02_dialog-boxes/01_21_sp_behav.md",
-    "_build/html/_sources/02_dialog-boxes/03_19_mod_tifc.md",
-    "02_dialog-boxes/01_19_sp_rarity.md",
-    "_build/html/_sources/02_dialog-boxes/01_19_sp_rarity.md",
-    "02_dialog-boxes/01_10_sp_asymptote.md",
-    "_build/html/_sources/02_dialog-boxes/01_10_sp_asymptote.md",
-    "02_dialog-boxes/00_template_test.md",
-    "02_dialog-boxes/00_demo.md",
-    "02_dialog-boxes/00_demo_test.md",
-    "02_dialog-boxes/00_demo_test_addfigs.md",
-    "02_dialog-boxes/03_02_mod_divers_rich.md",
-    "02_dialog-boxes/03_03_mod_occupancy.md",
-    "02_dialog-boxes/03_04_mod_rai.md",
-    "02_dialog-boxes/RCDST_InfoBox_MockUp_FocusGroups_2024-03-04/MockUp_FocusGroups.md",
-    "02_dialog-boxes/RCDST_InfoBox_MockUp_FocusGroups_2024-03-04/RCDST_MockUp_FocusGroups_2024-03-04.md",
-    "docs/_sources/02_dialog-boxes/RCDST_MockUp_FocusGroups_2024-05-24.md",
-    "_build/html/_sources/02_dialog-boxes/00_demo.md",
-    "_build/html/_sources/02_dialog-boxes/00_demo_test_addfigs.md"
+    "02_dialog-boxes/word_entry/word_entry_DEMO_CASS/~$try_03_02_mod_divers_rich.docx",
+    "02_dialog-boxes/00_for-later/03_19_mod_tifc.md",
+    "02_dialog-boxes/00_for-later/03_22_mod_is.md",
+    "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md",
+    "02_dialog-boxes/00_00_welcome.md",
+    "_build/html/_sources/02_dialog-boxes/00_00_welcome.md"
   ]
 }

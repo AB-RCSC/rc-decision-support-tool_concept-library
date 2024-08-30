@@ -47,7 +47,7 @@ editor_options:
 
 :::::::{tab-set}
 
-::::::{tab-item} Overview
+::::::{tab-item}Overview
 
 **{{ term_mod_tifc }}**: {{ term_def_mod_tifc }}
 
@@ -60,7 +60,7 @@ Overview test here
 
 ::::::
 
-::::::{tab-item} Advanced
+::::::{tab-item}Advanced
 
 <p>The time in front of the camera (TIFC) model is based on quadrat sampling. Typically, quadrats are used to sample slow- or non-moving organisms at a moment in time; as a simple example, a researcher lays a quadrat on the ground, counts the number of mussels in it and divides the count by the quadrat area. TIFC treats the camera viewshed like a vertical quadrat ({{ ref_intext_becker_et_al_2022 }}; {{ ref_intext_dickie_2022 }}). Unlike a conventional quadrat, however, the camera viewshed samples highly mobile organisms in a relatively small sliver of space and over long periods time ({{ ref_intext_becker_et_al_2022 }}; {{ ref_intext_dickie_2022 }}). The count of animals in the camera viewshed “quadrat,” then, can be thought of in “animal time” and the area covered by the quadrat in “area-time,” such that: </p><br>
 
@@ -285,14 +285,7 @@ FROM MARCUS PPT; NEED PERMISSION<p/>
 
 {{ ref_bib_becker_et_al_2022 }}
 
-
-
  
-::::::
-
-::::::{tab-item} Glossary
-keys_here
-
 ::::::
 
 :::::::

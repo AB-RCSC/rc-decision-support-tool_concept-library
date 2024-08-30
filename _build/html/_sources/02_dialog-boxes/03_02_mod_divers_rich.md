@@ -287,7 +287,7 @@ Both communities contain five species of animalcules. Species richness is the sa
 
 ::::::
 
-::::::{tab-item} Shiny
+::::::{tab-item} Shiny apps/Widgets
 :::::{card}
 **Visualizing Biodiversity in \[U.S.\] National Parks**
 

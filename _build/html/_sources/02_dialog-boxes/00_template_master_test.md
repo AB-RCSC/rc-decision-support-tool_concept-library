@@ -17,9 +17,8 @@ myst:
   substitutions:
     key1: "I'm a **substitution**"
 ---
-(i_test)=
 # test
-<!-- # {{ name_mod_scr_secr}} -->
+
 ::::::::{div} full-width
 
 ::::::{dropdown} Assumptions, Pros, Cons
@@ -71,30 +70,11 @@ myst:
 ::::::
 
 :::::::{tab-set}
-
 ::::::{tab-item} Overview
-\
+
 **{{ term_mod_scr_secr }}**: {{ term_def_mod_scr_secr }}
 
 Add some info here
-
-<!-- This is commented out. -->
-
-[camera days per camera location](./09_gloss_ref/09_glossary.md#camera_days_per_camera_location)
-
-[camera days per camera location](../09_gloss_ref/09_glossary.md#camera_days_per_camera_location)
-
-[camera days per camera location](09_gloss_ref/09_glossary.md#camera_days_per_camera_location)
-
-
-
-[test](/09_gloss_ref/09_glossary.md#access_method)
-
-[test](./09_gloss_ref/09_glossary.md#access_method)
-
-[test](../09_gloss_ref/09_glossary.md#access_method)
-
-
 
 ::::::
 
@@ -102,7 +82,7 @@ Add some info here
 Add some info here
 ::::::
 
-::::::{tab-item} 🔁 Visual resources
+::::::{tab-item} Visual resources
 :::::{grid} 3
 :gutter: 1
 :padding: 0
@@ -135,37 +115,6 @@ Add some info here
 <p>figure4_caption <p/>
 ::::
 
-:::::
-
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_figure4_ref_id }}
-```{figure} ../03_images/03_image_files/figure4_filename.png 
-:width: 300px
-:align: center
-```
-
-<p>figure5_caption <p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_figure5_ref_id }}
-```{figure} ../03_images/03_image_files/figure5_filename.png 
-:width: 300px
-:align: center
-```
-<p>figure5_caption <p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
-```{figure} ../03_images/03_image_files/figure6_filename.png 
-:width: 300px
-:align: center
-```
-<p>figure6_caption <p/>
-::::
 :::::
 
 :::::{grid} 3
@@ -216,60 +165,10 @@ Add some info here
 ::::
 :::::
 
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_vid4_ref_id }}
-
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid4_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid4_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid5_ref_id }}
- 
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid5_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid5_caption<p/>
-
-::::
-
-::::{grid-item-card} {{ ref_intext_vid6_ref_id }}
-
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid6_url " 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid6_caption<p/>
-::::
-
-:::::
-
 ::::::
 
-::::::{tab-item} Shiny
-:::::{card}
+::::::{tab-item} Shiny apps/Widgets
+::::{card}
 **iNEXTOnline**
 
 <iframe 
@@ -280,12 +179,10 @@ Add some info here
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-:::::
-
+::::
 ::::::
 
 ::::::{tab-item} Analytical tools & resources
-
 | Type        | Name                                                                                   | Note                                                                                                                                                                                                                                                                      | URL                                                                                                        | Reference       |
 |:----------------|:-------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------|:------------------------------------------------------------------------------|
 | resource1_type | resource1_name | resource1_note | resource1_url | {{ ref_bib_resource1_ref_id }} |
@@ -299,52 +196,8 @@ Add some info here
 
 ::::::{tab-item} References
 Refs
-  
-::::::
-
-::::::{tab-item} Glossary
-keys_here
-
-::::::
-
-::::::{tab-item} random test
-An icon :fas:`spinner;sd-bg-primary sd-bg-text-primary`, some more text.
-
-
-- A regular icon: :material-regular:`data_exploration;2em`, some more text
-- A coloured regular icon: :material-regular:`settings;3em;sd-text-success`, some more text.
-- A coloured outline icon: :material-outlined:`settings;3em;sd-text-success`, some more text.
-- A coloured sharp icon: :material-sharp:`settings;3em;sd-text-success`, some more text.
-- A coloured round icon: :material-round:`settings;3em;sd-text-success`, some more text.
-- A coloured two-tone icon: :material-twotone:`settings;3em;sd-text-success`, some more text.
-- A fixed size icon: :material-regular:`data_exploration;24px`, some more text.
-
-{{  key1 }}
-
-
-A coloured icon: :octicon:`report;1em;sd-text-info`, some more text.
-
-::::{card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_32_sp_behav__multi.html
-:img-background: ../03_images/01_ui/background_blue.png
-am i blue?
-::::
-::::{grid} 2
-:gutter: 1
-
-:::{grid-item-card}
-
-<img src="..03_images/03_image_files/det.gif" width="750" align="center">
-
-:::
-
-:::{grid-item-card}
-:img-background: ../03_images/01_ui/background_blue.png
-tada
-:::
-
-::::
-
 ::::::
 
 :::::::
+
+::::::::

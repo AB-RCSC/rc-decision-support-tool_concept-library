@@ -211,6 +211,11 @@ Add some info here
 :::::
 
 ::::::
+
+::::::{tab-item} Shiny apps/Widgets
+Check back in the future!
+::::::
+
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | Reference |
 |:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
@@ -244,11 +249,6 @@ Add some info here
 {{ ref_bib_flather_sieg_2007 }}
 
 {{ ref_bib_kunin_1997 }}
-::::::
-
-::::::{tab-item} Glossary
-keys_here
-
 ::::::
 
 :::::::

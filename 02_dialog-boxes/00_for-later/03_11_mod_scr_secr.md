@@ -67,7 +67,7 @@ editor_options:
 
 :::::::{tab-set}
 
-::::::{tab-item} Overview
+::::::{tab-item}Overview
 \
 **{{ term_mod_scr_secr }}**: {{ term_def_mod_scr_secr }}
 
@@ -77,7 +77,7 @@ SCR models rely on data in which individual animals are observed on multiple occ
 
 ::::::
 
-::::::{tab-item} Advanced
+::::::{tab-item}Advanced
 
 Spatial capture-recapture (SCR) models can be applied to any survey method where animals are individually identifiable and trap locations are known: live trapping and tagging, DNA sampling, camera trapping, etc. (Royle et al., 2014). Here, we will discuss camera trap SCR. 
 SCR models break populations down into the activity, or home range, centres of individual animals. Let us first imagine we know the number and location of all individuals’ activity centres in a population. If we did, we could easily estimate density:</br>
@@ -285,7 +285,7 @@ Another aspect of sampling design practitioners must consider is the number and 
 
 ::::::
 
-::::::{tab-item} Shiny
+::::::{tab-item} Shiny apps/Widgets
 :::::{card}
 **Secrdesign app 1.5**
 

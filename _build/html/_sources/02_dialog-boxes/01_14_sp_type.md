@@ -200,7 +200,7 @@ Add some info here
 
 ::::::
 
-::::::{tab-item} Shiny
+::::::{tab-item} Shiny apps/Widgets
 Check back in the future!
 ::::::
 

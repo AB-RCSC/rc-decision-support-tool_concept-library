@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -73,7 +73,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/03_02_mod_divers_rich';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Occupancy models" href="03_03_mod_occupancy.html" />
+    <link rel="next" title="Occupancy" href="03_03_mod_occupancy.html" />
     <link rel="prev" title="Species inventory" href="03_01_mod_inventory.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -196,7 +196,6 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_template_master_test.html">test</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_00_welcome.html">Welcome to the Remote Camera Decision Support Tool!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="00_00_test_start.html">Test embed</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Objectives &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -226,11 +225,11 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_47_cam_independent.html">Camera location independence</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations \- Modelling Approaches</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations - Modelling Approaches</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="03_01_mod_inventory.html">Species inventory</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Species diversity &amp; richness</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_03_mod_occupancy.html">Occupancy models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_03_mod_occupancy.html">Occupancy</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
@@ -466,10 +465,10 @@ document.write(`
 <div class="sd-card-title sd-font-weight-bold docutils">
 Assumptions</div>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_location"><span class="xref myst">Camera locations</span></a> are <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#sampledesign_random"><span class="xref myst">randomly placed</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_location"><span class="xref myst">Camera locations</span></a> are independent (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">Detection probability</span></a> of different species remains the same (Wearn &amp; Glover-Kapfer, 2017) (‘true’ species richness estimation involves attempting to correct for ‘<a class="reference internal" href="#/09_gloss_ref/09_glossary.md#imperfect_detection"><span class="xref myst">imperfect detection</span></a>’ (Wearn &amp; Glover-Kapfer, 2017)).</p></li>
-<li><p class="sd-card-text">Sampling effort is comparable between <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_location"><span class="xref myst">Camera locations</span></a> (Royle &amp; Nichols, 2003)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#camera_location"><span class="xref myst">Camera locations</span></a> are <a class="reference internal" href="#sampledesign_random"><span class="xref myst">randomly placed</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#camera_location"><span class="xref myst">Camera locations</span></a> are independent (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#detection_probability"><span class="xref myst">Detection probability</span></a> of different species remains the same (Wearn &amp; Glover-Kapfer, 2017) (‘true’ species richness estimation involves attempting to correct for ‘<a class="reference internal" href="#imperfect_detection"><span class="xref myst">imperfect detection</span></a>’ (Wearn &amp; Glover-Kapfer, 2017)).</p></li>
+<li><p class="sd-card-text">Sampling effort is comparable between <a class="reference internal" href="#camera_location"><span class="xref myst">Camera locations</span></a> (Royle &amp; Nichols, 2003)</p></li>
 </ul>
 </div>
 </div>
@@ -514,7 +513,7 @@ Cons</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Assumptions</div>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_location"><span class="xref myst">Camera locations</span></a> are <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#sampledesign_random"><span class="xref myst">randomly placed</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#camera_location"><span class="xref myst">Camera locations</span></a> are <a class="reference internal" href="#sampledesign_random"><span class="xref myst">randomly placed</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Randomness and independence (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Samples are assumed to have been taken at random from the broader population of sites (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 </ul>
@@ -561,9 +560,9 @@ Cons</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Assumptions</div>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_location"><span class="xref myst">Camera locations</span></a> are <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#sampledesign_random"><span class="xref myst">randomly placed</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_location"><span class="xref myst">Camera locations</span></a> are independent (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">Detection probability</span></a> of different species remains the same (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#camera_location"><span class="xref myst">Camera locations</span></a> are <a class="reference internal" href="#sampledesign_random"><span class="xref myst">randomly placed</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#camera_location"><span class="xref myst">Camera locations</span></a> are independent (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#detection_probability"><span class="xref myst">Detection probability</span></a> of different species remains the same (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 </ul>
 </div>
 </div>
@@ -830,7 +829,7 @@ Styring, 2020a</div>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
-Shiny</label><div class="sd-tab-content docutils">
+Shiny apps/Widgets</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <p class="sd-card-text"><strong>Visualizing Biodiversity in [U.S.] National Parks</strong></p>
@@ -982,7 +981,7 @@ References</label><div class="sd-tab-content docutils">
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Occupancy models</p>
+        <p class="prev-next-title">Occupancy</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

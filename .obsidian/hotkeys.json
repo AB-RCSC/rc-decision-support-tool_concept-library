@@ -7,12 +7,5 @@
       "key": "F"
     }
   ],
-  "editor:open-search": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "Q"
-    }
-  ]
+  "editor:open-search": []
 }

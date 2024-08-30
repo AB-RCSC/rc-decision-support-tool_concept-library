@@ -19,8 +19,6 @@ editor_options:
 
 :::::::::{div} full-width
 
-<!-- **{{ title_i_cam_strat_covar}}**-->
-
 :::::::{tab-set}
 
 ::::::{tab-item} Overview
@@ -200,7 +198,7 @@ Add some info here
 
 ::::::
 
-::::::{tab-item} Shiny
+::::::{tab-item} Shiny apps/Widgets
 Check back in the future!
 ::::::
 

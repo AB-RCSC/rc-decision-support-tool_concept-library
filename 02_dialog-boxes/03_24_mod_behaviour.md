@@ -245,10 +245,6 @@ Add some info here
 refs here
 ::::::
 
-::::::{tab-item} Glossary
-keys here
-::::::
-
 :::::::
 
 :::::::::

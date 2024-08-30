@@ -283,10 +283,6 @@ Noon et al., 2012
 MacKenzie et al., 2017
 ::::::
 
-::::::{tab-item} Glossary
-keys_here
-::::::
-
 :::::::
 
 :::::::::

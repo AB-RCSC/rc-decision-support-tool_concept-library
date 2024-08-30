@@ -14,6 +14,7 @@ editor_options:
   markdown:
     wrap: none
 ---
+(toc_concept_lib)=
 (#toc_concept_lib)=
 # Concept Library
 
@@ -22,14 +23,14 @@ editor_options:
 conda activate rclib
 cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
 jupyter-book build ./
+
 -->
+(i_objective_resources)=
 (#i_objective_resources)=
 ### Objectives & Resources
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_01_user_entry.html
@@ -37,7 +38,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_user_entry }}</font></font>*</font>
+*<font color='grey'><font size='3'>{{ title_i_user_entry }}</font></font>*</font>
 :::
 
 :::{grid-item-card}
@@ -46,7 +47,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_objective }}</font></font>**
+**<font size='3'>{{ title_i_objective }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -55,18 +56,17 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_num_cams }}</font></font>**
+**<font size='3'>{{ title_i_num_cams }}</font></font>**
 :::
 
 ::::
 
+(i_study_area_site_selection_constraints)=
 (#i_study_area_site_selection_constraints)=
 ### Study area & Site selection constraints
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card} 
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_04_study_area_mult.html
@@ -74,7 +74,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'><br>{{ title_i_study_area_mult }}</font></font>*
+*<font color='grey'><font size='3'><br>{{ title_i_study_area_mult }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -83,7 +83,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'><br>{{ title_i_cam_dens_gradient }}</font></font>*
+*<font color='grey'><font size='3'><br>{{ title_i_cam_dens_gradient }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -92,7 +92,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'><br>{{ title_i_cam_strat_covar }}</font></font>**
+**<font size='3'><br>{{ title_i_cam_strat_covar }}</font></font>**
 :::
 ::::
 
@@ -103,17 +103,15 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'><br>{{ title_i_cam_high_dens }}</font></font>*
+*<font color='grey'><font size='3'><br>{{ title_i_cam_high_dens }}</font></font>*
 :::
 ::::
 
-(#i_duration_timing)=
+(i_duration_timing)=
 ### Duration & Timing
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card} 
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_08_surv_dur_min_max.html
@@ -121,7 +119,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_surv_dur_min_max }}</font></font>**
+**<font size='3'>{{ title_i_surv_dur_min_max }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -130,7 +128,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_sp_asymptote }}</font></font>**
+**<font size='3'>{{ title_i_sp_asymptote }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -139,21 +137,21 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_study_season_num }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_study_season_num }}</font></font>*
 :::
 
 ::::
 
+(i_target_species)=
 (#i_target_species)=
 ### Target species
 
+(i_target_species_single)=
 (#i_target_species_single)=
 #### Target species (single)
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_12_obj_targ_sp.html
@@ -161,7 +159,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_obj_targ_sp }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_obj_targ_sp }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -170,7 +168,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_sp_info }}</font></font>**
+**<font size='3'>{{ title_i_sp_info }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -179,14 +177,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_sp_type }}</font></font>**
+**<font size='3'>{{ title_i_sp_type }}</font></font>**
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_15_sp_dens_low.html
@@ -194,7 +190,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_sp_dens_low }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_sp_dens_low }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -203,7 +199,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_sp_occ_restr }}</font></font>**
+**<font size='3'>{{ title_i_sp_occ_restr }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -212,14 +208,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_sp_hr_size }}</font></font>**
+**<font size='3'>{{ title_i_sp_hr_size }}</font></font>**
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_18_sp_size.html
@@ -227,7 +221,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_sp_size }}</font></font>**
+**<font size='3'>{{ title_i_sp_size }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -236,7 +230,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_sp_rarity }}</font></font>**
+**<font size='3'>{{ title_i_sp_rarity }}</font></font>**
 :::
 
 
@@ -246,14 +240,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_sp_detprob_cat }}</font></font>**
+**<font size='3'>{{ title_i_sp_detprob_cat }}</font></font>**
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_21_sp_behav.html
@@ -261,7 +253,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_sp_behav }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_sp_behav }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -270,7 +262,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_sp_behav_season }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_sp_behav_season }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -279,14 +271,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_marking_code }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_marking_code }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_24_marking_allsub.html
@@ -294,7 +284,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_marking_allsub }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_marking_allsub }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -303,7 +293,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_3ormore_cat_ids }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_3ormore_cat_ids }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -312,14 +302,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_auxillary_info }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_auxillary_info }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_27_aux_count_possible.html
@@ -327,7 +315,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_aux_count_possible }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_aux_count_possible }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -336,7 +324,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_focalarea_calc }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_focalarea_calc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -345,14 +333,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_cam_high_dens }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_cam_high_dens }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_30_sp_common_pop_lg.html
@@ -360,11 +346,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_sp_common_pop_lg }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_sp_common_pop_lg }}</font></font>*
 :::
 
 ::::
 
+(i_target_species_multiple)=
 (#i_target_species_multiple)=
 #### Target species (multiple)
 
@@ -375,7 +362,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_sp_size_multi }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_sp_size_multi }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -384,7 +371,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_sp_behav_mult }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_sp_behav_mult }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -393,14 +380,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_sp_rarity_multi }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_sp_rarity_multi }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_36_sp_detprob_cat_multi.html
@@ -408,7 +393,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_sp_detprob_cat_multi }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_sp_detprob_cat_multi }}</font></font>*
 :::
 
 ::::
@@ -418,8 +403,6 @@ jupyter-book build ./
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card} 
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/05_39_cam_makemod_same.html
@@ -427,7 +410,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_cam_makemod_same }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_cam_makemod_same }}</font></font>*
 :::
 
 :::{grid-item-card} 
@@ -436,7 +419,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_cam_settings_mult }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_cam_settings_mult }}</font></font>*
 :::
 
 :::{grid-item-card} 
@@ -445,14 +428,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_cam_protocol_ht_angle_dir }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_cam_protocol_ht_angle_dir }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card} 
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/05_43_bait_lure.html
@@ -460,7 +441,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_bait_lure }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_bait_lure }}</font></font>*
 :::
 
 :::{grid-item-card} 
@@ -469,18 +450,17 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_targ_feature }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_targ_feature }}</font></font>*
 :::
 
 ::::
 
+(i_data_analysis)=
 (#i_data_analysis)=
 ### Data & Analysis
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card} 
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/06_47_cam_independent.html
@@ -488,7 +468,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ title_i_cam_independent }}</font></font>**
+**<font size='3'>{{ title_i_cam_independent }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -497,7 +477,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_multisamp_per_loc }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_multisamp_per_loc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -506,14 +486,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_modmixed }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_modmixed }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card} 
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/06_50_num_det.html
@@ -521,7 +499,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_num_det }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_num_det }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -530,7 +508,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_num_det_individ }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_num_det_individ }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -539,14 +517,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_num_recap }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_num_recap }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card} 
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/06_51_num_det_individ.html
@@ -554,21 +530,21 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ title_i_overdispersion }}</font></font>* / *<font color='grey'><font size='2.5'>{{ title_i_zeroinflation }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_overdispersion }}</font></font>* / *<font color='grey'><font size='3'>{{ title_i_zeroinflation }}</font></font>*
 
 :::
 ::::
 
+(i_recommendations)=
 (#i_recommendations)=
 ### Recommendations
 
+(i_recommendations_modelling_approach)=
 (#i_recommendations_modelling_approach)=
 #### Modelling Approaches
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card} 
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_01_mod_inventory.html
@@ -576,7 +552,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ name_mod_inventory }}</font></font>**
+**<font size='3'>{{ name_mod_inventory }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -585,7 +561,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ name_mod_divers_rich }}</font></font>**
+**<font size='3'>{{ name_mod_divers_rich }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -594,14 +570,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ name_mod_occupancy }}</font></font>**
+**<font size='3'>{{ name_mod_occupancy }}</font></font>**
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_04_mod_rai.html
@@ -609,7 +583,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ name_mod_rai }}</font></font>**
+**<font size='3'>{{ name_mod_rai }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -618,7 +592,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_cr_cmr }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_cr_cmr }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -627,15 +601,13 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_scr_secr }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_scr_secr }}</font></font>*
 :::
 
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_13_mod_smr.html
@@ -643,7 +615,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_smr }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_smr }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -652,7 +624,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_sc }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_sc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -661,14 +633,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_catspim }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_catspim }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_16_mod_2flankspim.html
@@ -676,7 +646,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_2flankspim }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_2flankspim }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -685,7 +655,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_rem }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_rem }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -694,14 +664,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_rest }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_rest }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_19_mod_tifc.html
@@ -709,7 +677,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_tifc }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_tifc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -718,7 +686,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_ds }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_ds }}</font></font>*
 :::
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_21_mod_tte.html
@@ -726,14 +694,12 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_tte }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_tte }}</font></font>*
 :::
 ::::
 
 ::::{grid} 3
 :gutter: 3
-:align: auto
-:shadow: lg
 
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_22_mod_ste.html
@@ -741,7 +707,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_ste }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_ste }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -750,7 +716,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='2.5'>{{ name_mod_is }}</font></font>*
+*<font color='grey'><font size='3'>{{ name_mod_is }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -759,7 +725,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='2.5'>{{ name_mod_behaviour }}</font></font>**
+**<font size='3'>{{ name_mod_behaviour }}</font></font>**
 :::
 
 ::::

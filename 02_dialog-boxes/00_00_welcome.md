@@ -14,15 +14,13 @@ editor_options:
   markdown:
     wrap: none
 ---
-(toc_welcome)=
-# Welcome to the Remote Camera Decision Support Tool!
+(#toc_welcome)=
+# Welcome to the Remote Camera Decision Support Tool! 
 :::::::::{div} full-width
-<br>
 A free, online, interactive, visual study decision support system for remote camera projects
-
+<br>
 ::::::{card}
-
-## How does it work!?
+## How does it work!? 
 This tool aims to support your decision-making process when designing a remote camera programs by guiding you through a series of decision points related to your study in the form of an interactive flow chart.
 At each step, you will be able to access information related to the question in the “info popups”; information is provided with different levels of complexity (overview vs. advanced) and in formats that accommodate multiple learning styles (e.g., figures, videos, Shiny apps, etc.). Once you have answered all of the questions, study design recommendations will be generated from your selections, which will include the following:
 
@@ -84,7 +82,7 @@ CAVEATS HERE
 
 ::::::
 
-::::::{dropdown} 🔎 Information formats
+::::::{dropdown} nformation formats
 
 Information is available in the following tabs of the "info pop-ups":
 - **Overview** \- short, digestible information about the topic
@@ -101,7 +99,7 @@ Information include in the info popups is always available in the **[Concept Lib
 :::
 ::::::
 
-::::::{dropdown} 🚀 Future development
+::::::{dropdown}  Future development
 \
 In addition to the modelling approaches mentioned above as \[FUTURE\]....
 
@@ -114,7 +112,7 @@ In addition to the modelling approaches mentioned above as \[FUTURE\]....
 ::::::
 
 ::::::{card}
-## Questions?
+# Questions?
 If you have questions or would like further information, please contact Cassie Stevenson, Alberta Remote Camera Steering Committee (RCSC) / Alberta Biodiversity Monitoring Institute (ABMI), <abwildlifecameras@gmail.com>; <cjsteven@ualberta.ca>.
 ::::::
 
@@ -124,15 +122,12 @@ If you have questions or would like further information, please contact Cassie S
 :gutter: 1
 
 ::::{grid-item}
-:align: center
-
 :::{image} ../03_images/02_logos/aca_ed.png
 :align: center
 :::
 ::::
 
 ::::{grid-item}
-:align: center
 :::{image} ../03_images/02_logos/abgov_ed.png
 :align: center
 :::
@@ -140,30 +135,21 @@ If you have questions or would like further information, please contact Cassie S
 ::::
 
 ::::{grid-item}
-:align: center
-
 :::{image} ../03_images/02_logos/eccc_ed.png
-:scale: 80%
 :align: center
 :::
 
 ::::
 
 ::::{grid-item} 
-:align: center
-
 :::{image} ../03_images/02_logos/fos_ed.png
-:scale: 80%
 :align: center
 :::
 ::::
 
 ::::{grid-item} 
-:align: center
-
 :::{image} ../03_images/02_logos/abmi_ed.png
 :align: center
-:scale: 80%
 :::
 ::::
 :::::

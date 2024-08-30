@@ -73,7 +73,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/00_00_welcome';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Test embed" href="00_00_test_start.html" />
+    <link rel="next" title="State Variable vs. Objective" href="01_02_objective.html" />
     <link rel="prev" title="test" href="00_template_master_test.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -196,7 +196,6 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_template_master_test.html">test</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Welcome to the Remote Camera Decision Support Tool!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="00_00_test_start.html">Test embed</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Objectives &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -226,11 +225,11 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_47_cam_independent.html">Camera location independence</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations \- Modelling Approaches</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations - Modelling Approaches</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="03_01_mod_inventory.html">Species inventory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_02_mod_divers_rich.html">Species diversity &amp; richness</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_03_mod_occupancy.html">Occupancy models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_03_mod_occupancy.html">Occupancy</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
@@ -452,8 +451,8 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-the-remote-camera-decision-support-tool">
 <span id="toc-welcome"></span><h1>Welcome to the Remote Camera Decision Support Tool!<a class="headerlink" href="#welcome-to-the-remote-camera-decision-support-tool" title="Link to this heading">#</a></h1>
 <div class="full-width docutils">
-<br>
-A free, online, interactive, visual study decision support system for remote camera projects
+<p>A free, online, interactive, visual study decision support system for remote camera projects
+<br></p>
 <div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <h2 class="rubric" id="how-does-it-work">How does it work!?</h2>
@@ -533,7 +532,7 @@ CAVEATS HERE</p>
 </div>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">🔎 Information formats</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">nformation formats</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">Information is available in the following tabs of the “info pop-ups”:</p>
 <ul class="simple">
 <li><p class="sd-card-text"><strong>Overview</strong> - short, digestible information about the topic</p></li>
@@ -555,7 +554,7 @@ CAVEATS HERE</p>
 </div>
 </details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
-<span class="sd-summary-text">🚀 Future development</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<span class="sd-summary-text">Future development</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text"><br />
 In addition to the modelling approaches mentioned above as [FUTURE]….</p>
 <!--
@@ -567,7 +566,7 @@ In addition to the modelling approaches mentioned above as [FUTURE]….</p>
 </div>
 </details><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<h2 class="rubric" id="questions">Questions?</h2>
+<h1 class="rubric" id="questions">Questions?</h1>
 <p class="sd-card-text">If you have questions or would like further information, please contact Cassie Stevenson, Alberta Remote Camera Steering Committee (RCSC) / Alberta Biodiversity Monitoring Institute (ABMI), <a class="reference external" href="mailto:abwildlifecameras&#37;&#52;&#48;gmail&#46;com">abwildlifecameras<span>&#64;</span>gmail<span>&#46;</span>com</a>; <a class="reference external" href="mailto:cjsteven&#37;&#52;&#48;ualberta&#46;ca">cjsteven<span>&#64;</span>ualberta<span>&#46;</span>ca</a>.</p>
 </div>
 </div>
@@ -578,15 +577,16 @@ In addition to the modelling approaches mentioned above as [FUTURE]….</p>
 <img alt="../_images/aca_ed.png" class="align-center" src="../_images/aca_ed.png" />
 </div>
 <div class="sd-col sd-d-flex-column docutils">
+<img alt="../_images/abgov_ed.png" class="align-center" src="../_images/abgov_ed.png" />
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference internal image-reference" href="../_images/eccc_ed.png"><img alt="../_images/eccc_ed.png" class="align-center" src="../_images/eccc_ed.png" style="width: 2701.6000000000004px; height: 1630.4px;" /></a>
+<img alt="../_images/eccc_ed.png" class="align-center" src="../_images/eccc_ed.png" />
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference internal image-reference" href="../_images/fos_ed.png"><img alt="../_images/fos_ed.png" class="align-center" src="../_images/fos_ed.png" style="width: 2701.6000000000004px; height: 1630.4px;" /></a>
+<img alt="../_images/fos_ed.png" class="align-center" src="../_images/fos_ed.png" />
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<a class="reference internal image-reference" href="../_images/abmi_ed.png"><img alt="../_images/abmi_ed.png" class="align-center" src="../_images/abmi_ed.png" style="width: 2701.6000000000004px; height: 1630.4px;" /></a>
+<img alt="../_images/abmi_ed.png" class="align-center" src="../_images/abmi_ed.png" />
 </div>
 </div>
 </div>
@@ -635,11 +635,11 @@ In addition to the modelling approaches mentioned above as [FUTURE]….</p>
       </div>
     </a>
     <a class="right-next"
-       href="00_00_test_start.html"
+       href="01_02_objective.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Test embed</p>
+        <p class="prev-next-title">State Variable <em>vs.</em> Objective</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

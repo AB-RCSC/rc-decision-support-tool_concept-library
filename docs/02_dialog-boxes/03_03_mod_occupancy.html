@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Occupancy models &#8212; Remote Camera Decision Support Tool - Concept Library</title>
+    <title>Occupancy &#8212; Remote Camera Decision Support Tool - Concept Library</title>
   
   
   
@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -196,7 +196,6 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="00_template_master_test.html">test</a></li>
 <li class="toctree-l1"><a class="reference internal" href="00_00_welcome.html">Welcome to the Remote Camera Decision Support Tool!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="00_00_test_start.html">Test embed</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Objectives &amp; Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -226,11 +225,11 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="01_47_cam_independent.html">Camera location independence</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations \- Modelling Approaches</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Recommendations - Modelling Approaches</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="03_01_mod_inventory.html">Species inventory</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_02_mod_divers_rich.html">Species diversity &amp; richness</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Occupancy models</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Occupancy</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Glossary</span></p>
 <ul class="nav bd-sidenav">
@@ -435,7 +434,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Occupancy models</h1>
+    <h1>Occupancy</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -449,10 +448,10 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="occupancy-models">
-<span id="i-mod-occupancy"></span><h1>Occupancy models<a class="headerlink" href="#occupancy-models" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="occupancy">
+<span id="i-mod-occupancy"></span><h1>Occupancy<a class="headerlink" href="#occupancy" title="Link to this heading">#</a></h1>
 <div class="full-width docutils">
-<p><strong>Occupancy models</strong>
+<p><strong>Occupancy</strong>
 <br></p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
@@ -465,10 +464,10 @@ document.write(`
 <div class="sd-card-title sd-font-weight-bold docutils">
 Assumptions</div>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#occupancy"><span class="xref myst">Occupancy</span></a> is constant (MacKenzie et al., 2002) (abundance is constant) (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_location"><span class="xref myst">Camera locations</span></a> are independent (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">Detections are <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#independent_detections"><span class="xref myst">independent</span></a> (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">The probability of <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#occupancy"><span class="xref myst">occupancy</span></a> and detection are constant across all <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_location"><span class="xref myst">Camera locations</span></a> within a stratum or can be modelled using covariates (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#occupancy"><span class="xref myst">Occupancy</span></a> is constant (MacKenzie et al., 2002) (abundance is constant) (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#camera_location"><span class="xref myst">Camera locations</span></a> are independent (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text">Detections are <a class="reference internal" href="#independent_detections"><span class="xref myst">independent</span></a> (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text">The probability of <a class="reference internal" href="#occupancy"><span class="xref myst">occupancy</span></a> and detection are constant across all <a class="reference internal" href="#camera_location"><span class="xref myst">Camera locations</span></a> within a stratum or can be modelled using covariates (MacKenzie et al., 2006)</p></li>
 <li><p class="sd-card-text">Species are not misidentified (MacKenzie et al., 2006)</p></li>
 </ul>
 </div>
@@ -484,7 +483,7 @@ Pros</div>
 <li><p class="sd-card-text">Only requires detection*/non-detection data for each site (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Relatively easy-to-use software exists for fitting models (PRESENCE, MARK, and the ‘unmarked’ R package) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Open models exist that allow for the estimation of site colonization and extinction rates (MacKenzie et al., 2006; Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Multi-species <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#mods_occupancy"><span class="xref myst">occupancy models</span></a> (MacKenzie et al., 2002) allow the inclusion of interactions among species while controlling for <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#imperfect_detection"><span class="xref myst">imperfect detection</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Multi-species <a class="reference internal" href="#mods_occupancy"><span class="xref myst">occupancy models</span></a> (MacKenzie et al., 2002) allow the inclusion of interactions among species while controlling for <a class="reference internal" href="#imperfect_detection"><span class="xref myst">imperfect detection</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 </ul>
 </div>
 </div>
@@ -495,8 +494,8 @@ Pros</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Cons</div>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="#/09_gloss_ref/09_glossary.md#occupancy"><span class="xref myst">Occupancy</span></a> (MacKenzie et al., 2002) only measures distribution; it may be a misleading indicator of changes in abundance (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Interpretation*/communication of results may not be straightforward (if the scale of movement is much larger than the <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#camera_spacing"><span class="xref myst">camera spacing</span></a> the results should be interpreted as ‘probability of use’ rather than <a class="reference internal" href="#/09_gloss_ref/09_glossary.md#occupancy"><span class="xref myst">occupancy</span></a>) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="#occupancy"><span class="xref myst">Occupancy</span></a> (MacKenzie et al., 2002) only measures distribution; it may be a misleading indicator of changes in abundance (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Interpretation*/communication of results may not be straightforward (if the scale of movement is much larger than the <a class="reference internal" href="#camera_spacing"><span class="xref myst">camera spacing</span></a> the results should be interpreted as ‘probability of use’ rather than <a class="reference internal" href="#occupancy"><span class="xref myst">occupancy</span></a>) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 </ul>
 </div>
 </div>
@@ -804,11 +803,6 @@ Stewart et al., 2018
 Steenweg et al., 2018
 Noon et al., 2012
 MacKenzie et al., 2017</p>
-</div>
-<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
-Glossary</label><div class="sd-tab-content docutils">
-<p>keys_here</p>
 </div>
 </div>
 </div>
