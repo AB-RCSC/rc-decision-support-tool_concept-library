@@ -19,8 +19,6 @@ editor_options:
 
 :::::::::{div} full-width
 
-<!-- **{{ title_i_num_cams }}**-->
-
 :::::::{tab-set}
 
 ::::::{tab-item} Overview

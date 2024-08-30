@@ -1,0 +1,263 @@
+---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+    format_version: '1.16'
+    jupytext_version: 1.16.1
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+editor_options: 
+  markdown: 
+  wrap: none
+---
+(i_sp_asymptote)=
+# {{ title_i_sp_asymptote }}
+<br>
+:::::::::{div} full-width
+
+:::::::{tab-set}
+
+::::::{tab-item} Overview
+
+This question is related to the state variable “Species Diversity & Richness”
+
+In order to understand what we mean when we say, “species-accumulation asymptote”, we must first explain species accumulation curves. A **species accumulation curves** "gives the expected number of observed species as a function of sampling effort” ({{ ref_intext_deng_et_al_2015 }}) and are used "to assess and compare diversity across populations, or to evaluate the benefits of additional sampling" ({{ ref_intext_vandooren_2016 }}). The ***species-accumulation asymptote*** refers to the point on this curve where you’ve sampled long enough to observe *most* of the species present.
+
+Consider the figure below. You can see that as the “number of records” (on the x-axis) increases, at first (where the line is the steepest), you detect new species quickly. This is because many species that are easy to detect and/or common, and thus you’re more likely to encounter them in a shorter amount of time. Yet as time goes on (you collect more samples), the rate at which you detect new species starts to slow down (fewer and fewer new species over the same amount of time that passes / # samples are collected); this is because, in general, rare species will occur much less often, and thus more time is needed to allow them all a chance to visit the camera location. Therefore, the curve starts to level off as after you’ve detected most (or all) of the easily detectable/common species and are slowly detecting those that are less detectable and/or less common. As this line flattens out, eventually, barely any new species are detected, if any are at all.
+
+```{figure} ../03_images/03_image_files/loreau_2010_fig4.png
+:width: 300px
+:align: center
+```
+
+<font size="3">**Loreau (2010) Fig 4** - “Species accumulation and rarefaction curves. Species accumulation curves show the number of species obtained by successively censusing either individual organisms (individual-based accumulation curves) or samples (sample-based accumulation curves).... Credit: Rob Colwell, after Gotelli and Colwell (2001)”</font>
+
+Whether you choose to sample long enough to reach the species-accumulation asymptote will depend on your modelling approach, since it not always necessary; some non-parametric methods are thought to estimate asymptotic richness fairly well “even when extrapolating to double or triple the size of the sample” ({{ ref_intext_colwell_et_al_2012 }}; {{ ref_intext_wearn_gloverkapfer_2017 }}). 
+
+> **If you’re not sure, select the conservative answer of “Yes”**
+
+::::::
+
+::::::{tab-item} Advanced
+NULL
+::::::
+
+::::::{tab-item} Visual resources
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext_gotelli_colwell_2011 }}
+```{figure} ../03_images/03_image_files/gotelli_and_colwell_2011_fig4_1.png
+:width: 300px
+:align: center
+```
+
+<p>NULL <p/>
+::::
+
+::::{grid-item-card} {{ ref_intext_figure2_ref_id }}
+```{figure} ../03_images/03_image_files/vandooren_2016_fig1.png
+:width: 300px
+:align: center
+```
+
+<p>figure2_caption <p/>
+::::
+
+::::{grid-item-card} {{ ref_intext_loreau_2010 }}
+```{figure} ../03_images/03_image_files/loreau_2010_fig4.png
+:width: 300px
+:align: center
+```
+
+<p>Species accumulation and rarefaction curves. Species accumulation curves show the number of species obtained by successively censusing either individual organisms (individual-based accumulation curves) or samples (sample-based accumulation curves). Smoothed species rarefaction curves represent the statistical expectation of the corresponding accumulation curves. Credit: Rob Colwell, after Gotelli and Colwell (2001) <p/>
+::::
+:::::
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext_loreau_2010 }}
+```{figure} ../03_images/03_image_files/loreau_2010_fig3.png
+:width: 300px
+:align: center
+```
+
+<p>figure5_caption <p/>
+::::
+
+::::{grid-item-card} {{ ref_intext_figure5_ref_id }}
+```{figure} ../03_images/03_image_files/figure5_filename.png
+:width: 300px
+:align: center
+```
+
+<p>figure5_caption<p/>
+::::
+
+::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
+```{figure} ../03_images/03_image_files/figure6_filename.png
+:width: 300px
+:align: center
+```
+
+<p>figure6_caption <p/>
+::::
+:::::
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext_rk_stats_2018 }}
+
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/Jj7LYrU_6RA?si=odfIIBoC2w9h3_CU"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>Video: Species Accumulation Curves (11 minutes)<p/>
+::::
+
+::::{grid-item-card} {{ ref_intext_styring_2020b }}
+
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/OEWdPm3zg9I?si=2RG41LmTRvWfMiEr"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>Generating a species accumulation plot in excel for BBS data<p/>
+::::
+
+::::{grid-item-card} {{ ref_intext_vid3_ref_id }}
+
+<iframe 
+    width="300"
+    height="200"
+    src="vid3_url"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>vid3_caption<p/>
+::::
+:::::
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext_vid4_ref_id }}
+
+<iframe 
+    width="300"
+    height="200"
+    src="vid4_url"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>vid4_caption<p/>
+::::
+
+::::{grid-item-card} {{ ref_intext_vid5_ref_id }}
+ 
+<iframe 
+    width="300"
+    height="200"
+    src="vid5_url"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>vid5_caption<p/>
+::::
+
+::::{grid-item-card} {{ ref_intext_vid6_ref_id }}
+
+<iframe 
+    width="300"
+    height="200"
+    src="vid6_url"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+
+<p>vid6_caption<p/>
+::::
+
+:::::
+
+::::::
+
+::::::{tab-item} Shiny apps/Widgets
+Check back in the future!
+::::::
+
+::::::{tab-item} Analytical tools & resources
+| Type | Name | Note | URL |Reference |
+|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
+| R package / Tutorial | Species Accumulation Curves | \- | <https://www.pisces-conservation.com/sdrhelp/index.html?specaccum.html> | {{ ref_bib_resource1_ref_id }} |
+| Video | Species Accumulation Curves with vegan, BiodiversityR and ggplot2 | 
+Software for interpolation and extrapolation of species diversity
+Rarefied Species Accumulation Curves (the simple way) tutorial
+ | <https://www.youtube.com/watch?v=h3MLWK9IJ4A> | {{ ref_bib_roeland_2020 }} |
+| Video | iNext Online | 
+Software for interpolation and extrapolation of species diversity
+Rarefied Species Accumulation Curves (the simple way) tutorial
+ | <https://www.youtube.com/watch?v=h3MLWK9IJ4A> | {{ ref_bib_roeland_2020 }} |
+| R Shiny App | iNext Online | resource4_note | <https://chao.shinyapps.io/iNEXTOnline> | {{ ref_bib_resource4_ref_id }} |
+| resource5_type | resource5_name | resource5_note | resource5_url | {{ ref_bib_resource5_ref_id }} |
+| resource6_type | resource6_name | resource6_note | resource6_url | {{ ref_bib_resource6_ref_id }} |
+| resource7_type | resource7_name | resource7_note | resource7_url | {{ ref_bib_resource7_ref_id }} |
+| resource8_type | resource8_name | resource8_note | resource8_url | {{ ref_bib_resource8_ref_id }} |
+| resource9_type | resource9_name | resource9_note | resource9_url | {{ ref_bib_resource9_ref_id }} |
+| resource10_type | resource10_name | resource10_note | resource10_url | {{ ref_bib_resource10_ref_id }} |
+| resource11_type | resource11_name | resource11_note | resource11_url | {{ ref_bib_resource11_ref_id }} |
+::::::
+
+::::::{tab-item} References
+
+{{ ref_bib_colwell_et_al_2012 }}
+
+{{ ref_bib_deng_et_al_2015 }}
+
+{{ ref_bib_gotelli_colwell_2011 }}
+
+{{ ref_bib_roeland_2020 }}
+
+{{ ref_bib_rovero_et_al_2010 }}
+
+{{ ref_bib_si_et_al_2014 }}
+
+{{ ref_bib_vandooren_2016 }}
+
+{{ ref_bib_wearn_gloverkapfer_2017 }}
+
+::::::
+
+:::::::
+
+:::::::::

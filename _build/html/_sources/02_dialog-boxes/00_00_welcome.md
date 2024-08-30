@@ -14,93 +14,122 @@ editor_options:
   markdown:
     wrap: none
 ---
-(#toc_welcome)=
+(toc_welcome)=
 # Welcome to the Remote Camera Decision Support Tool! 
 :::::::::{div} full-width
 A free, online, interactive, visual study decision support system for remote camera projects
 <br>
 
-## How does it work!? 
+::::::{dropdown} 📷 How does it work!?
+
 This tool aims to support your decision-making process when designing a remote camera programs by guiding you through a series of decision points related to your study in the form of an interactive flow chart.
-At each step, you will be able to access information related to the question in the “info popups”; information is provided with different levels of complexity (overview vs. advanced) and in formats that accommodate multiple learning styles (e.g., figures, videos, Shiny apps, etc.). Once you have answered all of the questions, study design recommendations will be generated from your selections, which will include the following:
 
-:::{important} Appropriate modelling approach(es)
-:class: dropdown
+At each step, you will be able to access information related to the question in the “info popups”; information is provided with different levels of complexity (overview vs. advanced) and in formats that accommodate multiple learning styles (e.g., figures, videos, Shiny apps, etc.). Click on the dropdown to learn more
 
-- **Species inventory** (Species inventory, presence)
-- **Species diversity & richness**
-    -   *\[FUTURE\]* Species diversity & richness \- Alpha richness (α)
-    -   *\[FUTURE\]* Species diversity & richness \- Gamma richness (γ)
-    -   *\[FUTURE\]* Species diversity & richness \- Beta-diversity (β)
-    -   Occupancy (Occupancy / Species distribution)
-- **Relative abundance indices**
-    -   *\[FUTURE\]* Relative abundance indices \- Poisson
-    -   *\[FUTURE\]* Relative abundance indices \- Zero-inflated poisson (ZIP)
-    -   *\[FUTURE\]* Relative abundance indices \- Negative binomial (NB)
-    -   *\[FUTURE\]* Relative abundance indices \- Zero-inflated negative binomial (ZINB)
-    -   *\[FUTURE\]* Relative abundance indices \- Hurdle
-- **Capture-recapture (CR) / Capture-mark-recapture (CMR)**
-- **Spatial capture-recapture (SCR) / Spatially explicit capture recapture (SECR)**
-- **Spatial mark-resight (SMR)**
-- **Spatial count (SC) model / Unmarked spatial capture-recapture**
-- **Spatial Partial Identity Model (Categorical SPIM; catSPIM)**
-- **Spatial Partial Identity Model (2-flank SPIM)**
-    -   *\[FUTURE\]* Royle-Nichols
-    -   *\[FUTURE\]* N-mixture
-- **Random encounter model (REM)**
-- **Random encounter and staying time (REST)**
-- **Time in front of the camera (TIFC)**
-- **Distance sampling (DS)**
-- **Time-to-event (TTE)**
-- **Space-to-event (STE)**
-- **Instantaneous sampling (IS)**
-- **Behaviour**
-    -   *\[FUTURE\]* More specific approaches related to behaviour
+::::{dropdown} 📉 Information formats
+
+Information is available in the following tabs of the "info pop-ups":
+- **Overview** \- short, digestible information about the topic
+- **Advanced** \- more “in the weeds” information for those who want to dig into the details
+- **Visual resources** \- related figures and videos; you can watch videos within in tool itself, or in youtube.
+- **Analytical tools & resources** \- resources for implementing analyses.
+- **Shiny apps/Widgets** \- (!!!ADD INFO)
+    -   **Integration of data/apps** - Currently, the integration of other apps such as Shiny app is limited to "illustrative" apps (integration of apps or tools for the purpose of illustrating a concept vs. attempting to incorporate simulated information into recommendations), with the exception of the (!!!ADD INFO OCCUPANCY APP)
+- **References** \- references for all of the content in this section
+
+:::{note}
+Contents of info popups is always available in the **[Concept Library]( https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/)**
+:::
+::::
+
+Once you have answered all of the questions, study design recommendations will be generated from your selections, which will include the following:
+
+:::{dropdown} Appropriate modelling approach(es)
+- Species inventory
+- Species diversity & richness
+- Relative abundance indices
+- Capture-recapture (CR) / Capture-mark-recapture (CMR)
+- Spatial capture-recapture (SCR) / Spatially explicit capture recapture (SECR)
+- Spatial mark-resight (SMR)
+- Spatial count (SC) model / Unmarked spatial capture-recapture
+- Spatial Partial Identity Model (Categorical SPIM; catSPIM)
+- Spatial Partial Identity Model (2-flank SPIM)
+- Random encounter model (REM)
+- Random encounter and staying time (REST)
+- Time in front of the camera (TIFC)
+- Distance sampling (DS)
+- Time-to-event (TTE)
+- Space-to-event (STE)
+- Instantaneous sampling (IS)
+- Behaviour
 :::
 
-:::{admonition} Sampling design
-:class: important
-
-Relevant to the appropriate modelling approach(es) identified
+:::{dropdown} Sampling design
+Relevant to the appropriate modelling approach(es) identified:
 - Camera arrangement
 - Camera spacing
 - Number of camera days per camera location
 - Number of cameras
 - Survey duration
 - Total number of camera days
+<br>
 :::
 
-:::{admonition} Analysis considerations
-:class: important
-
+:::{dropdown} Analysis considerations
 (e.g., variables to consider in your analysis to reduce bias)
 :::
 
 :::{admonition} It’s not an exact science
 :class: warning
-CAVEATS HERE / it's not perfect (or some other text here along these lines)
+
+(!!!ADD INFO - Caveat about limitations)
+<!-- It's not perfect, and we don't expect it ever will be! It would be essentially impossible to provide a tool that could provide everyone with the perfect study design.
+
+Additionally, just as the documents upon which this tool is based are meant to evolve with best practices, so will this tool. -->
+
+> It's not rocket science, but it IS remote camera science...
+-- Marcus Becker
+
 ::::
+::::::
 
-::::::{dropdown} Information formats
+::::::{dropdown} Background
+(!!!ADD INFO)
 
-Information is available in the following tabs of the "info pop-ups":
-- **Overview** \- short, digestible information about the topic
-- **Advanced** \- more “in the weeds” information for those who want to dig into the details
-- **Visual resources** \- related figures and videos; you can watch videos within in tool itself, or 
-- **Analytical tools & resources** \- resources for implementing analyses.
-- **Executable Code** \- 
-- **Shiny apps (if available)** \-
-    -   **Integration of data/apps** - Currently, the integration of other apps such as Shiny app is limited to "illustrative" apps (integration of apps or tools for the purpose of illustrating a concept vs. attempting to incorporate simulated information into recommendations), with the exception of the (ADD INFO OCCUPANCY APP)
-- **References** \- references for all of the content in this section
+In the meantime, the rationale for this tool captured succinctly:
 
-:::{note}
-Information include in the info popups is always available in the **[Concept Library]( https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/)**
-:::
+```{figure} ../03_images/03_image_files/00_confusion.png
+:width: 300px
+:align: center
+```
+
 ::::::
 
 ::::::{dropdown} 🚀 Future development
-\
-In addition to the modelling approaches mentioned above as \[FUTURE\]....
+
+We have big plans! As the "demo" version of this tool develops, we will provide more details. For now, please see the following items on docket for 2025-26: 
+
+Appropriate modelling approach(es)
+
+- **Species diversity & richness**
+    - Alpha richness (α)
+    - Gamma richness (γ)
+    - Beta-diversity (β)
+- **Relative abundance indices**
+    -  Poisson
+    -  Zero-inflated poisson (ZIP)
+    -  Negative binomial (NB)
+    -  Zero-inflated negative binomial (ZINB)
+    -  Hurdle
+- **Royle-Nichols**
+- **N-mixture**
+- **Behaviour** - More specific approaches related to behaviour
+
+
+📉 Information formats
+- **Executable Code** \-
+
+Please refer back; we will update this section continually.
 
 <!--
 :::{dropdown} Illustrative vs. data-simulation app-integration
@@ -108,11 +137,15 @@ In addition to the modelling approaches mentioned above as \[FUTURE\]....
 - **DATA-SIMULATION app-integration**: integration of apps or tools for the purpose of performing calculations based on user inputs (e.g., ) that will inform other parts of the decision-making process, tool, and/or resulting recommendations
 :::
 -->
+
 ::::::
 
 
-# Questions?
+***
+
+## Questions?
 If you have questions or would like further information, please contact Cassie Stevenson, Alberta Remote Camera Steering Committee (RCSC) / Alberta Biodiversity Monitoring Institute (ABMI), <abwildlifecameras@gmail.com>; <cjsteven@ualberta.ca>.
+
 
 ***
 
@@ -152,7 +185,13 @@ If you have questions or would like further information, please contact Cassie S
 ::::
 :::::
 
+<br>
+*We honour and acknowledge the traditional lands of Treaties 4, 6, 7, 8, and 10. This territory has been traditional and ancestral land of the Cree, Dene, Blackfoot, Saulteaux, Nakota Sioux, and Metis people since time immemorial, and we recognize this history.*
+*This project was funded by the Alberta Conservation Association (ACA)m the Office of the Chief Scientist (OCS), and Environment and Climate Change Canada (ECCC). This project was provided in-kind support by the Alberta Remote Camera Steering Committee (RCSC), Alberta Environment and Protection Areas (EPA), Alberta Biodiversity Monitoring Institute (ABMI), and the University of Alberta Faculty of Science.*
+
+<br
+
 ***
 
-*This project was funded by the Alberta Conservation Association (ACA)m the Office of the Chief Scientist (OCS), and Environment and Climate Change Canada (ECCC). This project was provided in-kind support by the Alberta Remote Camera Steering Committee (RCSC), Alberta Environment and Protection Areas (EPA), Alberta Biodiversity Monitoring Institute (ABMI), and the University of Alberta Faculty of Science.*
+<br>
 :::::::::
