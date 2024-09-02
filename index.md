@@ -71,7 +71,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'><br>{{ title_i_study_area_mult }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_study_area_mult }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -80,7 +80,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'><br>{{ title_i_cam_dens_gradient }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_cam_dens_gradient }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -100,7 +100,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'><br>{{ title_i_cam_high_dens }}</font></font>*
+*<font color='grey'><font size='3'>{{ title_i_cam_high_dens }}</font></font>*
 :::
 ::::
 
