@@ -296,7 +296,7 @@ Both communities contain five species of animalcules. Species richness is the sa
 
 <iframe 
     width="100%"
-    height="1100"
+    height="900"
     src="https://abenedetti.shinyapps.io/bioNPS/"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
