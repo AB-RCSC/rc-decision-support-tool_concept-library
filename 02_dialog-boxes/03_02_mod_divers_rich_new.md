@@ -83,6 +83,7 @@ editor_options:
 ::::::
 
 :::::::{tab-set}
+
 ::::::{tab-item} Overview
 
 **{{ term_mod_divers_rich }}**: {{ term_def_mod_divers_rich }}
@@ -96,11 +97,9 @@ Species diversity is more complex, and includes a measure of the number of speci
 :scale: 60%
 ```
 
-
 ::::::
 
 ::::::{tab-item} Advanced
-<br>
 
 Parameters:
 - **α-richness (alpha richness)**: species richness at the level of an individual camera location
@@ -118,10 +117,8 @@ Parameters:
 The **two principal ways of estimating species richness from camera trap dat ** are (from {{ ref_intext_wearn_gloverkapfer_2019 }}):<br> 
 - non-parametric estimators ({{ ref_intext_gotelli_chao_2013 }}), which use information about the rarest species in the sample to provide a minimum estimate of the number of true species (e.g. {{ ref_intext_tobler_et_al_2008 }}), 
 - or 2) occupancy models ({{ ref_intext_mackenzie_et_al_2006 }})
-<br>
 ::::::
 ::::::{tab-item} Visual resources
-
 :::::{grid} 3
 :gutter: 1
 :padding: 0
@@ -150,8 +147,7 @@ Both communities contain five species of animalcules. Species richness is the sa
 :width: 300px
 :align: center
 ```
-<p>{{ NULL
- }}<p/>
+<p>{{ NULL}}<p/>
 ::::
 
 :::::
@@ -192,27 +188,42 @@ of biodiversity }}<p/>
 :margin: 0
 
 ::::{grid-item-card} {{ ref_intext riffomonas_project_2022a }}
-:padding: 0
-:margin: 0
-:::{iframe} https://www.youtube.com/embed/ghhZClDRK_g?si=khprL1u5NJrFduTb 
-:width: 300px
-:align: center
-:::
-<br/><p>{{ Abundance, species richness, and diversity }}<p/>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/ghhZClDRK_g?si=khprL1u5NJrFduTb"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p> Abundance, species richness, and diversity <p/>
 ::::
+
 ::::{grid-item-card} {{ ref_intext mecks100_2018 }} 
-:::{iframe} https://www.youtube.com/embed/4gcmAUpo9TU?si=_S-JYDDskR8QbHs5
-:height: 180px
-:align: center
-:::
-<br/><p>{{ Species accumulation and rarefaction curves }}<p/>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/4gcmAUpo9TU?si=_S-JYDDskR8QbHs5"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>{{ Species accumulation and rarefaction curves }}<p/>
 ::::
+
 ::::{grid-item-card} {{ ref_intext riffomonas_project_2022a }}
-:::{iframe} https://www.youtube.com/embed/wq1SXGQYgCs?si=Re5tglERblfkCNhDl
-:height: 180px
-:align: center
-:::
-<br/><p>{{ Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC196) }}<p/>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/wq1SXGQYgCs?si=Re5tglERblfkCNhDl"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>{{ Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC196) }}<p/>
 ::::
 :::::
 
@@ -222,28 +233,45 @@ of biodiversity }}<p/>
 :margin: 0
 
 ::::{grid-item-card} {{ ref_intext vsn_international_2022 }} 
-:padding: 0
-:margin: 0
-:::{iframe} https://www.youtube.com/embed/wBx7f4PP8RE?si=D6mtAMNMLlk3aH8H 
-:height: 180px
-:align: center
-:::
-<br/><p>{{ Species abundance tools in Genstat }}<p/>
+
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/wBx7f4PP8RE?si=D6mtAMNMLlk3aH8H"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>{{ Species abundance tools in Genstat }}<p/>
 ::::
+
 ::::{grid-item-card} {{ ref_intext_baylor_tutoring_center_2021 }}
-:::{iframe} https://www.youtube.com/embed/UXJ0r4hjbqI?si=gYR6rOmIMgyibyvR
-:height: 180px
-:align: center
-:::
-<br/><p>{{ Species Diversity and Species Richness }}<p/>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/UXJ0r4hjbqI?si=gYR6rOmIMgyibyvR"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>{{ Species Diversity and Species Richness }}<p/>
 ::::
+
 ::::{grid-item-card} {{ ref_intext styring_2020 }}
-:::{iframe} https://www.youtube.com/embed/KBByV3kR3IA?si=RPcG1lFQ-v0Shwaw
-:height: 180px
-:align: center
-:::
-<br/><p>{{ Field Ecology - Diversity Metrics in R }}<p/>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/KBByV3kR3IA?si=RPcG1lFQ-v0Shwaw"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+<p>{{ Field Ecology - Diversity Metrics in R }}<p/>
 ::::
+
 :::::
 
 ::::::
@@ -271,8 +299,7 @@ shiny_caption
 
 `````
 ::::::{tab-item} Analytical tools & resources
-| Type | Name | Note | URL |Reference |
-|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
+Error! Not a valid filename.
 | R package | Chapter 9 Community composition | \- | <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/composition.html#estimated-richnes> | {{ ref_bib_wildco_lab_2021b }} |
 | R package | R package “vegan | \- | <https://cran.r-project.org/web/packages/vegan/index.html> | {{ ref_bib_oksanen_et_al_2024 }} |
 | Program | EstimateS | Dedicated software for estimating diversity, using asymptotic or rarefaction methods. Mac version available | <https://www.robertkcolwell.org/pages/1407> | {{ ref_bib_colwell_2022 }} |
@@ -341,4 +368,5 @@ shiny_caption
 ::::::
 
 :::::::
+
 :::::::::

@@ -18,8 +18,6 @@ editor_options:
 
 # Glossary
 
-{.glossary)=
-
 (#test)=
 test
 
