@@ -19,8 +19,6 @@ editor_options:
 
 :::::::::{div} full-width
 
-**{{ name_mod_occupancy }}**
-<br>
 ::::::{dropdown} Assumptions, Pros, Cons
 :::::{grid}
 
@@ -251,25 +249,6 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 :::::
 
-::::::
-
-::::::{tab-item} Shiny apps/Widgets
-
-:::::{card}
-**Visualizing Biodiversity in \[U.S.\] National Parks**
-
-<!-- https://shiny.posit.co/r/gallery/life-sciences/biodiversity-national-parks/-->
-
-<iframe 
-    width="100%"
-    height="900"
-    src="https://abenedetti.shinyapps.io/bioNPS/"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
-:::::
 ::::::
 
 ::::::{tab-item} Shiny apps/Widgets
