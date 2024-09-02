@@ -70,7 +70,7 @@ myst:
 ::::::
 
 :::::::{tab-set}
-::::::{tab-item} Overview
+::::::{tab-item} ~~Overview~~
 
 **{{ term_mod_scr_secr }}**: {{ term_def_mod_scr_secr }}
 
