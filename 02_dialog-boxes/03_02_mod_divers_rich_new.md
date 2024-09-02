@@ -257,7 +257,7 @@ shiny_caption
 
 <iframe 
     width="100%"
-    height="1100"
+    height="900"
     src="https://chao.shinyapps.io/iNEXTOnline"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
