@@ -7,11 +7,11 @@ format: jb-book
 root: index
 parts:
 ### Testing 123
-  - caption: Testing 123
-    maxdepth: 1
-    titlesonly: False
-    chapters:
-    - file: 02_dialog-boxes/00_template_master_test.md
+#  - caption: Testing 123
+#    maxdepth: 0
+#    titlesonly: False
+#    chapters:
+#    - file: 02_dialog-boxes/00_template_master_test.md
 #    - file: 02_dialog-boxes/00_00_welcome.md
 ### Objectives & Resources
   - caption: Objectives & Resources
@@ -53,7 +53,7 @@ parts:
     - file: 02_dialog-boxes/00_04_target_species.md
       sections:
 ##### Target species (Single)
-      - file: 02_dialog-boxes/01_12_obj_targ_sp.md
+#      - file: 02_dialog-boxes/01_12_obj_targ_sp.md
       - file: 02_dialog-boxes/01_13_sp_info.md
       - file: 02_dialog-boxes/01_14_sp_type.md
       - file: 02_dialog-boxes/01_15_sp_dens_low.md 

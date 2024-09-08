@@ -70,11 +70,128 @@ latex:
 #  latex_documents:
 #    targetname: book.tex
 
+#  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
+#  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
+  
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+extensions:
+    - myst_parser
+    - sphinx_design
+    - myst_nb
+    - sphinxext-rediraffe
+
 #######################################################################################
-# Parse and render settings
+# Launch button settings
+
+##launch_buttons:
+##  notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
+##  binderhub_url             : ""  # The URL of the BinderHub (e.g., https://mybinder.org)
+##  jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
+##  thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
+##  colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
+
+##repository:
+repository:
+  url: https://github.com/AB-RCSC/rc-decision-support-tool_concept-library  # Online location of your book
+#  path_to_book:  # Optional path to your book, relative to the repository root
+  branch: main  # Which branch of the repository should be used when creating links (optional)
+
+#######################################################################################
+# HTML-specific settings
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+
+html:
+  home_page_in_navbar: false          # https://stackoverflow.com/questions/74370793/how-to-hide-intro-index-page-in-toc-of-jupyterbook
+#  favicon                   : ""     # A path to a favicon image
+  use_issues_button: true            # Whether to add a link to your repository button
+  use_repository_button: true        # Whether to add a link to your repository button
+#  use_issues_button: true           # Whether to add an "open an issue" button
+  use_edit_page_button: true         # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+  google_analytics_id       : G-PJDP7DQ9Q0  # A GA id that can be used to track book views.#  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
+  analytics:
+      google_analytics_id: G-PJDP7DQ9Q0
+      
+sphinx:
+  config:
+    html_theme: pydata_sphinx_theme
+    html_show_sourcelink: False
+    html_theme_options:
+      sidebars: false
+#      primary_sidebar_end: false
+      nosidebar: true
+#      primary_sidebar: false
+#      primary_sidebar_end: false
+      secondary_sidebar: []
+      secondary_sidebar: false
+      secondary_sidebar_items: false
+      secondary_sidebar_items: []##hide right-side sidebar
+      sidebar_includehidden: false
+      show_nav_level: 0
+      collapse_navigation: True
+      navbar_start: false
+      navbar_start: []
+      navbar_center: ["navbar-logo"]
+#      navbar_center: []
+      navbar_end: []
+      navbar_persistent: []
+      content_footer_items: false
+      content_footer_items: []
+      article_footer_items: false
+      article_footer_items: []
+      footer_start: false
+      footer_end: false
+#      footer_start: []
+#      footer_end: []
+#      footer_center: []
+      show_prev_next: False ##hide previous and next buttons
+#      navbar_end: false
+#      navbar_align: content
+#      #navigation_depth: 0
+#      sidebar-primary: []
+#      sidebar-primary: false
+#      primary_sidebar_end: false
+#      primary_sidebar_end: []
+#      section_nav: []
+#      sidebars: []
+      navbar_align: left
+
+# https://jupyterbook.org/en/stable/structure/toc.html
+
+
+#   comments:
+#       utterances: true
+#           repo: AB-RCSC/rc-decision-support-tool_concept-library
+#  extra_footer              : ""  # Will be displayed underneath the footer.
+#  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
+#  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
+
+
+#   hypothesis              : false
+#  announcement              : "" # A banner announcement at the top of the site.
+
+# documentation utterances - https://utteranc.es/#configuration
+# install utterances from https://utteranc.es/?installation_id=53922952&setup_action=install
+
+### Advanced and power-user settings
+#sphinx:
+#  extra_extensions:   
+#    - hoverxref.extension
+# A list of extra extensions to load by Sphinx (added to those already used by JB).
+#  local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
+#  recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
+#  config                    :   # key-value pairs to directly over-ride the Sphinx configuration
+
+
+#### Parse and render settings
+#
 
 parse:
-#  myst_url_schemes: [mailto, http, https]
+  myst_url_schemes: [mailto, http, https]
   myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
     # - amsmath
     - colon_fence
@@ -88,8 +205,8 @@ parse:
     - substitution
     - tasklist
   myst:
-    myst_heading_anchors: 2
-    myst_linkify_fuzzy_links: TRUE
+    myst_heading_anchors = 4
+#    myst_linkify_fuzzy_links: TRUE
   myst_substitutions:
     mod_scr_secr_assump_15: "assumption 15"
     mod_scr_secr_assump_16: "assumption 16"
@@ -1646,81 +1763,3 @@ parse:
     term_def_visit: "When a crew has gone to a location to deploy, service, or retrieve a remote camera."
     term_def_visit_metadata: "Metadata that should be collected each time a camera location is visited to deploy, Service*/Retrieval Field Datasheet."
     term_def_walktest: "A test performed to ensure the camera height, tilt, etc., adequately captures the desired detection zone. The user will 1) activate the walktest mode, 2) attach the camera at the desired height **/ angle, 3) walk in front of the camera to a specified distance (i.e., the 'Walktest Distance,' e.g., 5 m), and 4) wave their hand in front of the camera (usually at ground level and a chosen height [i.e., the 'Walktest Height,' e.g., 0.8 m]) to determine if the camera is activating (a light on the camera will flash)."
-
-    
-#  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
-#  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
-  
-# Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
-
-extensions:
-    - myst_parser
-    - sphinx_design
-    - myst_nb
-    - sphinxext-rediraffe
-
-#######################################################################################
-# Launch button settings
-
-##launch_buttons:
-##  notebook_interface        : classic  # The interface interactive links will activate ["classic", "jupyterlab"]
-##  binderhub_url             : ""  # The URL of the BinderHub (e.g., https://mybinder.org)
-##  jupyterhub_url            : ""  # The URL of the JupyterHub (e.g., https://datahub.berkeley.edu)
-##  thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
-##  colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
-
-##repository:
-repository:
-  url: https://github.com/AB-RCSC/rc-decision-support-tool_concept-library  # Online location of your book
-#  path_to_book:  # Optional path to your book, relative to the repository root
-  branch: main  # Which branch of the repository should be used when creating links (optional)
-
-#######################################################################################
-# HTML-specific settings
-
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
-
-html:
-  sidebars: false
-  home_page_in_navbar: false          # https://stackoverflow.com/questions/74370793/how-to-hide-intro-index-page-in-toc-of-jupyterbook
-#  favicon                   : ""     # A path to a favicon image
-#   use_issues_button: true            # Whether to add a link to your repository button
-#   use_repository_button: true        # Whether to add a link to your repository button
-#  use_edit_page_button: true         # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
-  google_analytics_id       : G-PJDP7DQ9Q0  # A GA id that can be used to track book views.#  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
-  analytics:
-      google_analytics_id: G-PJDP7DQ9Q0
-
-sphinx:
-  config:
-    html_theme: pydata_sphinx_theme
-    html_show_sourcelink: False
-## https://jupyterbook.org/en/stable/structure/toc.html
-
-
-#   comments:
-#       utterances: true
-#           repo: AB-RCSC/rc-decision-support-tool_concept-library
-#  extra_footer              : ""  # Will be displayed underneath the footer.
-#  home_page_in_navbar       : true  # Whether to include your home page in the left Navigation Bar
-#  baseurl                   : ""  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
-
-
-#   hypothesis              : false
-#  announcement              : "" # A banner announcement at the top of the site.
-
-# documentation utterances - https://utteranc.es/#configuration
-# install utterances from https://utteranc.es/?installation_id=53922952&setup_action=install
-
-#######################################################################################
-# Advanced and power-user settings
-#sphinx:
-#  extra_extensions:   
-#    - hoverxref.extension
-  # A list of extra extensions to load by Sphinx (added to those already used by JB).
-#  local_extensions          :   # A list of local extensions to load by sphinx specified by "name: path" items
-#  recursive_update          : false # A boolean indicating whether to overwrite the Sphinx config (true) or recursively update (false)
-#  config                    :   # key-value pairs to directly over-ride the Sphinx configuration

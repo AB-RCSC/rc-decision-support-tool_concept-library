@@ -14,6 +14,11 @@ editor_options:
   markdown: 
   wrap: none
 ---
+<style>
+  h1 {
+    font-size: 1.5rem;font-weight: bold;
+  }
+</style>
 (i_3ormore_cat_ids)=
 
 # {{ title_i_3ormore_cat_ids }}

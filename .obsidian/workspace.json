@@ -11,8 +11,12 @@
             "id": "8cb006d098b0067f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "02_dialog-boxes/00_01_objective_resources.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "02_dialog-boxes/00_01_objective_resources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "02_dialog-boxes/00_01_objective_resources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "02_dialog-boxes/00_01_objective_resources.md"
+              }
             }
           }
         ]
@@ -140,51 +148,51 @@
   },
   "active": "8cb006d098b0067f",
   "lastOpenFiles": [
-    "02_dialog-boxes/DC5DF400",
-    "_build/html/searchindex.js.tmp",
-    "02_dialog-boxes/03_02_mod_divers_rich.md",
-    "02_dialog-boxes/word_entry/~WRL1787.tmp",
-    "02_dialog-boxes/word_entry/~WRD1760.tmp",
-    "02_dialog-boxes/~$refs_glossary_substitutions_2024-09-04_2.xlsx",
+    "02_dialog-boxes/00_04_target_species.md",
+    "_build/html/_sources/02_dialog-boxes/00_01_objective_resources.md",
+    "_build/html/_sources/02_dialog-boxes/00_04_target_species.md",
+    "02_dialog-boxes/00_01_objective_resources.md",
+    "_build/html/_sources/index.md",
+    "_build/html/index.html",
+    "_build/html/_sources/02_dialog-boxes/09_gloss_ref/09_glossary.md",
+    "_build/html/02_dialog-boxes/09_gloss_ref/09_glossary.html",
+    "_build/html/_sources/02_dialog-boxes/09_gloss_ref/08_references.md",
+    "_build/html/_sources/02_dialog-boxes/09_gloss_ref",
+    "_build/html/02_dialog-boxes/09_gloss_ref/08_references.html",
+    "_build/html/02_dialog-boxes/09_gloss_ref",
+    "_build/html/_sources/02_dialog-boxes/03_03_mod_occupancy.md",
+    "_build/html/02_dialog-boxes/03_03_mod_occupancy.html",
+    "_build/html/_sources/02_dialog-boxes/03_02_mod_divers_rich.md",
+    "_build/html/02_dialog-boxes/03_02_mod_divers_rich.html",
+    "_build/html/_sources/02_dialog-boxes/03_01_mod_inventory.md",
+    "_build/html/02_dialog-boxes/03_01_mod_inventory.html",
+    "_build/html/_sources/02_dialog-boxes/01_47_cam_independent.md",
+    "_build/html/02_dialog-boxes/01_47_cam_independent.html",
+    "_build/html/_sources/02_dialog-boxes/01_21_sp_behav.md",
+    "_build/html/02_dialog-boxes/01_21_sp_behav.html",
+    "_build/html/_sources/02_dialog-boxes/01_20_sp_detprob_cat.md",
+    "_build/html/_sources/02_dialog-boxes/01_19_sp_rarity.md",
+    "_build/html/_sources/02_dialog-boxes/01_18_sp_size.md",
+    "_build/html/_sources/02_dialog-boxes/01_17_sp_hr_size.md",
+    "_build/html/_sources/02_dialog-boxes/01_16_sp_occ_restr.md",
+    "_build/html/_sources/02_dialog-boxes/01_15_sp_dens_low.md",
+    "_build/html/_sources/02_dialog-boxes/01_14_sp_type.md",
+    "_build/html/_sources/02_dialog-boxes/01_13_sp_info.md",
+    "_build/html/_sources/02_dialog-boxes/01_10_sp_asymptote.md",
+    "_build/html/_sources/02_dialog-boxes/01_08_surv_dur_min_max.md",
+    "_build/html/_sources/02_dialog-boxes/01_06_cam_strat_covar.md",
+    "_build/html/_sources/02_dialog-boxes/01_03_num_cams.md",
+    "_build/html/_sources/02_dialog-boxes/01_02_objective.md",
+    "_build/html/_sources/02_dialog-boxes/00_template_master_test.md",
+    "_build/html/_static/logo.png",
+    "_build/html/_static/play-solid.svg",
+    "_build/html/_static/copy-button.svg",
+    "_build/html/_static/check-solid.svg",
+    "_build/html/_static/plus.png",
+    "_build/html/_static/minus.png",
+    "_build/html/_static/file.png",
     "docs/_images/vandooren_2016_fig1.png",
     "docs/_images/southwell_et_al_2019_fig1.png",
-    "docs/_images/tourani_et_al_2020_fig1.png",
-    "docs/_images/rcsc_et_al_2024_detection_probability_2023_05_04.png",
-    "docs/_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png",
-    "docs/_images/pyron_2010_fig1_clipped.png",
-    "docs/_images/pyron_2010_fig1.png",
-    "docs/_images/murray_et_al_2021.jpg",
-    "docs/_images/molloy_2018_fig9.png",
-    "docs/_images/meek_et_al_2014_fig11.png",
-    "docs/_images",
-    "docs/searchindex.js",
-    "docs/search.html",
-    "docs/objects.inv",
-    "docs/index.html",
-    "docs/genindex.html",
-    "docs/_sources/02_dialog-boxes/09_gloss_ref/09_glossary.md",
-    "docs/_sources/02_dialog-boxes/09_gloss_ref/08_references.md",
-    "docs/_sources/02_dialog-boxes/03_02_mod_divers_rich_old.md",
-    "docs/_sources/02_dialog-boxes/03_03_mod_occupancy.md",
-    "docs/_sources/02_dialog-boxes/03_02_mod_divers_rich_new.md",
-    "docs/_sources/02_dialog-boxes/03_01_mod_inventory.md",
-    "docs/_sources/02_dialog-boxes/01_47_cam_independent.md",
-    "docs/_sources/02_dialog-boxes/01_21_sp_behav.md",
-    "docs/_sources/02_dialog-boxes/01_20_sp_detprob_cat.md",
-    "docs/_sources/02_dialog-boxes/01_19_sp_rarity.md",
-    "docs/_sources/02_dialog-boxes/01_18_sp_size.md",
-    "docs/_sources/02_dialog-boxes/01_17_sp_hr_size.md",
-    "docs/_sources/02_dialog-boxes/01_14_sp_type.md",
-    "docs/_sources/02_dialog-boxes/01_16_sp_occ_restr.md",
-    "docs/_sources/02_dialog-boxes/01_15_sp_dens_low.md",
-    "docs/_sources/02_dialog-boxes/01_13_sp_info.md",
-    "docs/_sources/02_dialog-boxes/01_10_sp_asymptote.md",
-    "docs/_sources/02_dialog-boxes/01_06_cam_strat_covar.md",
-    "docs/_sources/02_dialog-boxes/01_08_surv_dur_min_max.md",
-    "docs/_sources/02_dialog-boxes/01_02_objective.md",
-    "docs/_sources/02_dialog-boxes/01_03_num_cams.md",
-    "docs/_sources/02_dialog-boxes/00_template_master_test.md",
-    "docs/_sources/02_dialog-boxes/00_07_rec_approach.md",
-    "docs/_sources/02_dialog-boxes/00_06_data_analysis.md"
+    "docs/_images/tourani_et_al_2020_fig1.png"
   ]
 }

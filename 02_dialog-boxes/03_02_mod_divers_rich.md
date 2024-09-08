@@ -14,6 +14,11 @@ editor_options:
   markdown: 
   wrap: none
 --- 
+<style>
+  h1 {
+    font-size: 1.5rem;font-weight: bold;
+  }
+</style>
 (i_mod_divers_rich)=
 # {{ name_mod_divers_rich }}
 
@@ -171,7 +176,7 @@ Both communities contain five species of animalcules. Species richness is the sa
 ::::
 
 ::::{grid-item-card} {{ ref_intext_loreau_2010 }}
-```{figure} ../03_images/03_image_files/loreau_2010_fig4.png 
+```{figure} ../03_images/03_image_files/loreau_2010_fig4_clipped.png 
 :width: 300px
 :align: center
 ```

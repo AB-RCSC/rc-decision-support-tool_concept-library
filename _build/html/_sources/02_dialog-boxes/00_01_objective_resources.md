@@ -14,10 +14,9 @@ editor_options:
   markdown: 
   wrap: none
 ---
-
 <style>
     h1 {
-    font-size: 2rem;font-weight: bold;
+    font-size: 2rem;font-weight: normal;
   }
   h2 {
     font-size: 1.5rem;
@@ -25,12 +24,10 @@ editor_options:
     color: #2F5496
   }
 </style>
-.bd-main .bd-content .bd-article-container {
-  max-width: 100%;  /* default is 60em */
-}
-::::::::{div} full-width
-(i_objective_resources)=
+(objectives-resources)=
 # Objectives & Resources
+
+::::::::{div} full-width
 
 ::::{grid} 3
 :gutter: 3
@@ -41,7 +38,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_user_entry }}</font></font>*</font>
+*<font color='grey'><font size='3'>{{ title_i_user_entry }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -50,7 +47,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_objective }}</font></font>**
+**<font size='3'>{{ title_i_objective }}</font>**
 :::
 
 :::{grid-item-card}
@@ -59,7 +56,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_num_cams }}</font></font>**
+**<font size='3'>{{ title_i_num_cams }}</font>**
 :::
 
 ::::

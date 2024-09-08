@@ -16,17 +16,20 @@ editor_options:
 ---
 
 <style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
+    h1 {
+    font-size: 2rem;font-weight: normal;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2F5496
   }
 </style>
-(i_target_species)=
-
+(target-species)=
 # Target species
 
-(#i_target_species_single)=
-
-## Target species (single)
+(i_target_species_single)=
+**<font size="4"><span style="color:#2F5496">Target species (single)</font></span>**
 
 ::::{grid} 3
 :gutter: 3
@@ -230,7 +233,7 @@ editor_options:
 ::::
 
 (i_target_species_multiple)=
-# Target species (multiple)
+**<font size="4"><span style="color:#2F5496">Target species (multiple)</font></span>**
 
 ::::{grid} 3
 :::{grid-item-card}

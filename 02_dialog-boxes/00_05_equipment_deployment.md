@@ -14,13 +14,17 @@ editor_options:
   markdown: 
   wrap: none
 ---
-
 <style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
+    h1 {
+    font-size: 2rem;font-weight: normal;
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2F5496
   }
 </style>
-(i_equipment_deployment)=
+(equipment-deployment)=
 # Equipment & Deployment
 
 ::::{grid} 3
