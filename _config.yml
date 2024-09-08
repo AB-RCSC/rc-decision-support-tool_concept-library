@@ -121,9 +121,9 @@ sphinx:
     html_theme: pydata_sphinx_theme
     html_show_sourcelink: False
     html_theme_options:
-      sidebars: false
+#      sidebars: false
 #      primary_sidebar_end: false
-      nosidebar: true
+#      nosidebar: true
 #      primary_sidebar: false
 #      primary_sidebar_end: false
       secondary_sidebar: []
@@ -131,13 +131,13 @@ sphinx:
       secondary_sidebar_items: false
       secondary_sidebar_items: []##hide right-side sidebar
       sidebar_includehidden: false
-      show_nav_level: 0
+#      show_nav_level: 0
       collapse_navigation: True
-      navbar_start: false
-      navbar_start: []
-      navbar_center: ["navbar-logo"]
+#      navbar_start: false
+#      navbar_start: []
+#      navbar_center: ["navbar-logo"]
 #      navbar_center: []
-      navbar_end: []
+#      navbar_end: []
       navbar_persistent: []
       content_footer_items: false
       content_footer_items: []
@@ -540,6 +540,7 @@ parse:
     ref_intext_rcsc_2024: "Alberta Remote Camera Steering Committee [RCSC], 2024"
     ref_intext_rcsc_et_al_2024: "Alberta Remote Camera Steering Committee [RCSC] et al., 2024"
     ref_intext_reconyx_inc._2018: "Reconyx Inc., 2018"
+    ref_intext_ref_intext_pascal_et_al_2020: "Pascal et al., 2020"
     ref_intext_rendall_et_al_2021: "Rendall et al., 2021"
     ref_intext_rich_et_al_2014: "Rich et al., 2014"
     ref_intext_ridout_linkie_2009: "Ridout & Linkie, 2009"
@@ -641,6 +642,7 @@ parse:
     ref_intext_zorn_1998: "Zorn, 1998"
     ref_intext_zuckerberg_et_al_2020: "Zuckerberg et al., 2020"
     ref_intext_zuur_et_al_2007: "Zuur et al., 2007"
+    ref_intext_wildlifedegree_2022: "The Wildlife Degree (2022)"
     ref_bib_abmi_2021: "Alberta Biodiversity Monitoring Institute [ABMI] (2021). *Terrestrial ARU and Remote Camera Trap Protocols.* Edmonton, Alberta. <https://abmi.ca/home/publications/551-600/599>"
     ref_bib_abolaffio_et_al_2019: "Abolaffio, M., Focardi, S., & Santini, G. (2019). Avoiding misleading messages: Population assessment using camera trapping is not a simple task. *Journal of Animal Ecology, 88*(12), 2011–2016. Medline. <https://doi.org/10.1111/1365-2656.13085>"
     ref_bib_ahumada_et_al_2011: "Ahumada, J. A., Silva, C. E. F., Gajapersad, K., Hallam, C., Hurtado, J., Martin, E., McWilliam, A., Mugerwa, B., O'Brien, T., Rovero, F., Sheil, D., Spironello, W. R., Winarni, N., & Andelman, S. J. (2011). Community Structure and Diversity of Tropical Forest Mammals: Data from a Global Camera Trap Network. *Philosophical Transactions: Biological Sciences, 366*(1578), 2703–2711. <https://doi.org/10.1098/rstb.2011.0115>"
@@ -872,6 +874,7 @@ parse:
     ref_bib_rcsc_2024: "Alberta Remote Camera Steering Committee [RCSC]. (2024). Remote Camera Metadata Standards: Standards for Alberta. Version 2.0. Edmonton, Alberta. <https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html>"
     ref_bib_rcsc_et_al_2024: "Alberta Remote Camera Steering Committee [RCSC], Stevenson, C., Hubbs, A., & Wildlife Cameras for Adaptive Management (WildCAM). (2024). Remote Camera Survey Guidelines: Guidelines for Western Canada. Version 3.0. Edmonton, Alberta. <https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/1_Survey-guidelines/1_0.1_Citation-and-Info.html>"
     ref_bib_reconyx_inc._2018: "Reconyx Inc. (2018). Hyperfire Professional/Outdoor Instruction Manual. Holmen, WI, USA. <https://www.reconyx.com/img/file/HyperFire_2_User_Guide_2018_07_05_v5.pdf>"
+    ref_bib_ref_intext_pascal_et_al_2020: "Pascal, L., Memarzadeh, M., Boettiger, C., Lloyd, H., & Chadès, I. (2020). A Shiny R app to solve the problem of when to stop managing or surveying species under imperfect detection. Methods in *Ecology and Evolution, 11*(12), 1707–1715. <https://doi.org/10.1111/2041-210X.13501>."
     ref_bib_rendall_et_al_2021: "Rendall, A. R., White, J. G., Cooke, R., Whisson, D. A., Schneider, T., Beilharz, L., Poelsma, E., Ryeland, J., & Weston, M. A. (2021). Taking the bait: The influence of attractants and microhabitat on detections of fauna by remote‐sensing cameras. Ecological Management & Restoration, 22(1), 72–79. <https://doi.org/10.1111/emr.12444>"
     ref_bib_rich_et_al_2014: "Rich, L. N., Kelly, M. J., Sollmann, R., Noss, A. J., Maffei, L., Arispe, R. L., Paviolo, A., De Angelo, C. D., Di Blanco, Y. E., & Di Bitetti, M. S. (2014).comparing capture-recapture, mark-resight, and spatial mark-resight models for estimating puma densities via camera traps. *Journal of Mammalogy, 95*(2), 382–391. <https://doi.org/10.1644/13-mamm-a-126>"
     ref_bib_ridout_linkie_2009: "Ridout, M. S., & Linkie, M. (2009). Estimating overlap of daily activity patterns from camera trap data. *Journal of Agricultural, Biological, and Environmental Statistics, 14*(3), 322–337. <https://doi.org/10.1198/jabes.2009.08038>"
@@ -967,6 +970,7 @@ parse:
     ref_bib_wildco_lab_2021a: "WildCo Lab (2021a). *WildCo-FaceBlur.* <https://github.com/WildCoLab/WildCo_Face_Blur>"
     ref_bib_wildco_lab_2021b: "WildCo Lab (2021b). *WildCo: Reproducible camera trap data exploration and analysis examples in R*. University of British Columbia. <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/#what-this-guide-is>"
     ref_bib_wildlabs_2021: "The WILDLABS Partnership (2021). *How do I get started with Megadetector?* Siyu Y. <https://www.wildlabs.net/event/how-do-i-get-started-megadetector>"
+    ref_bib_wildlifedegree_2022: "The Wildlife Degree (2022, Feb 3). *Rarefied Species Accumulation Curves (the simple way) tutorial.* [Video]. YouTube. <https://www.youtube.com/watch?v=h3MLWK9IJ4A>"
     ref_bib_young_et_al_2018: "Young, S., Rode-Margono, J., & Amin, R. (2018). Software to facilitate and streamline camera trap data management: A review. *Ecology and Evolution, 8*(19), 9947–9957. <https://doi.org/10.1002/ece3.4464>"
     ref_bib_yue_et_al_2015: "Yue, S., Brodie, J. F., Zipkin, E. F., & Bernard, H. (2015). Oil palm plantations fail to support mammal diversity. *Ecological Applications, 25*(8), 2285–2292. <https://doi.org/10.1890/14-1928.1>"
     ref_bib_zeileis_et_al_2008: "Zeileis, A., Kleiber, C., & Jackman, S. (2008). Regression Models for Count Data in R. *Journal of Statistical Software, 27*(8). <https://doi.org/10.18637/jss.v027.i08>"
