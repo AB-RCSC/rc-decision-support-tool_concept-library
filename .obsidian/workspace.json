@@ -140,6 +140,12 @@
   },
   "active": "8cb006d098b0067f",
   "lastOpenFiles": [
+    "02_dialog-boxes/DC5DF400",
+    "_build/html/searchindex.js.tmp",
+    "02_dialog-boxes/03_02_mod_divers_rich.md",
+    "02_dialog-boxes/word_entry/~WRL1787.tmp",
+    "02_dialog-boxes/word_entry/~WRD1760.tmp",
+    "02_dialog-boxes/~$refs_glossary_substitutions_2024-09-04_2.xlsx",
     "docs/_images/vandooren_2016_fig1.png",
     "docs/_images/southwell_et_al_2019_fig1.png",
     "docs/_images/tourani_et_al_2020_fig1.png",
@@ -150,17 +156,12 @@
     "docs/_images/murray_et_al_2021.jpg",
     "docs/_images/molloy_2018_fig9.png",
     "docs/_images/meek_et_al_2014_fig11.png",
-    "docs/_images/mccomb_et_al_2010_fig4_3_clipped.png",
     "docs/_images",
     "docs/searchindex.js",
     "docs/search.html",
     "docs/objects.inv",
     "docs/index.html",
     "docs/genindex.html",
-    "docs/02_dialog-boxes/09_gloss_ref/08_references.html",
-    "docs/02_dialog-boxes/09_gloss_ref/09_glossary.html",
-    "docs/02_dialog-boxes/09_gloss_ref",
-    "docs/02_dialog-boxes/03_03_mod_occupancy.html",
     "docs/_sources/02_dialog-boxes/09_gloss_ref/09_glossary.md",
     "docs/_sources/02_dialog-boxes/09_gloss_ref/08_references.md",
     "docs/_sources/02_dialog-boxes/03_02_mod_divers_rich_old.md",
@@ -184,7 +185,6 @@
     "docs/_sources/02_dialog-boxes/01_03_num_cams.md",
     "docs/_sources/02_dialog-boxes/00_template_master_test.md",
     "docs/_sources/02_dialog-boxes/00_07_rec_approach.md",
-    "docs/_sources/02_dialog-boxes/00_06_data_analysis.md",
-    "docs/_sources/02_dialog-boxes/00_04_target_species.md"
+    "docs/_sources/02_dialog-boxes/00_06_data_analysis.md"
   ]
 }

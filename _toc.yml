@@ -119,8 +119,8 @@ parts:
     - file: 02_dialog-boxes/00_07_rec_approach.md
       sections:
       - file: 02_dialog-boxes/03_01_mod_inventory.md
-      - file: 02_dialog-boxes/03_02_mod_divers_rich_old.md
-      - file: 02_dialog-boxes/03_02_mod_divers_rich_new.md
+#      - file: 02_dialog-boxes/03_02_mod_divers_rich_old.md
+      - file: 02_dialog-boxes/03_02_mod_divers_rich.md
       - file: 02_dialog-boxes/03_03_mod_occupancy.md
 ##err      - file: 02_dialog-boxes/03_04_mod_rai.md
 ##err      - file: 02_dialog-boxes/03_24_mod_behaviour.md  
