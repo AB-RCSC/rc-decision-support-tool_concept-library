@@ -74,7 +74,7 @@ latex:
 # Parse and render settings
 
 parse:
-  myst_url_schemes: [mailto, http, https]
+#  myst_url_schemes: [mailto, http, https]
   myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
     # - amsmath
     - colon_fence
@@ -88,7 +88,7 @@ parse:
     - substitution
     - tasklist
   myst:
-    myst_heading_anchors: 4
+    myst_heading_anchors: 2
     myst_linkify_fuzzy_links: TRUE
   myst_substitutions:
     mod_scr_secr_assump_15: "assumption 15"

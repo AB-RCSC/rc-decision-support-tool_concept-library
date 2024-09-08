@@ -14,10 +14,10 @@ editor_options:
   markdown: 
   wrap: none
 ---
-(i_cam_num_cams)=
-# {{ title_i_num_cams }}
+(i_sp_dens_low)=
+# {{ title_i_sp_dens_low }}
 
-:::::::::{div} full-width
+::::::::{div} full-width
 
 :::::::{tab-set}
 
@@ -215,9 +215,9 @@ Check back in the future!
 ::::::
 
 ::::::{tab-item} References
-refs here
+Check back in the future!
 ::::::
 
 :::::::
 
-:::::::::
+::::::::

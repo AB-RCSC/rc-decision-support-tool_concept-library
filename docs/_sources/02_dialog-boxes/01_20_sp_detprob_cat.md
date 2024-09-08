@@ -49,7 +49,7 @@ myst:
 
 {{ term_detection_probability }}**: {{ term_def_detection_probability }}
 
-We use this information to adjust the recommended [camera days per camera location](./09_gloss_ref/09_glossary#camera_days_per_camera_location) and [total number of camera days](./09_gloss_ref/09_glossary#total_number_of_camera_days). For example, if the species is hard to detect, you may have to deploy cameras for longer to ensure you’ve sampled long enough to say that the species truly was not there (*vs.* it was there, but you did not detect it; “missed detections”, e.g., high cover of shrubs impeding your ability to see the species).
+We use this information to adjust the recommended [camera days per camera location](../09_gloss_ref/09_glossary#camera_days_per_camera_location) and [total number of camera days](../09_gloss_ref/09_glossary#total_number_of_camera_days). For example, if the species is hard to detect, you may have to deploy cameras for longer to ensure you’ve sampled long enough to say that the species truly was not there (*vs.* it was there, but you did not detect it; “missed detections”, e.g., high cover of shrubs impeding your ability to see the species).
 
 You may need to consult previous studies to get a sense of which category is the most appropriate for your  
 

@@ -1,0 +1,508 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>test &#8212; Remote Camera Decision Support Tool - Concept Library</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/00_template_master_test';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="&lt;no title&gt;" href="00_01_objective_resources.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="../index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">test</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="test">
+<h1>test<a class="headerlink" href="#test" title="Link to this heading">#</a></h1>
+<div class="full-width docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Assumptions, Pros, Cons</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Assumptions</div>
+<ul class="simple">
+<li><p class="sd-card-text">Demographic closure (i.e., no births or deaths) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Detection probability of different individuals is equal (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">or, for SECR, individuals have equal detection probability at a given distance from the centre of their home range (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Detections of different individuals are <a class="reference internal" href="09_gloss_ref/09_glossary.html#independent_detections"><span class="std std-ref">independent</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Behaviour is unaffected by cameras and marking (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Individuals do not lose marks (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Individuals are not misidentified (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#survey"><span class="std std-ref">Surveys</span></a> are independent (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">For conventional models, geographic closure (i.e., no immigration or emigration) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Spatially explicit models have further assumptions about animal movement (Wearn &amp; Glover-Kapfer, 2017; Rowcliffe et al., 2008; Royle et al., 2009; O’Brien et al., 2011); these include:</p></li>
+<li><p class="sd-card-text">Home ranges are stable (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Movement is unaffected by cameras (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_location"><span class="std std-ref">Camera locations</span></a> are randomly placed with respect to the distribution and orientation of home ranges (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Distribution of home range centres follows a defined distribution (Poisson, or other, e.g., negative binomial) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">assumption 15</p></li>
+<li><p class="sd-card-text">assumption 16</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Pros</div>
+<ul class="simple">
+<li><p class="sd-card-text">Produces direct estimates of <a class="reference internal" href="09_gloss_ref/09_glossary.html#density"><span class="std std-ref">density</span></a> or population size for explicit spatial regions (Chandler &amp; Royle, 2013)</p></li>
+<li><p class="sd-card-text">Allows researchers to mark a subset of the population / to take advantage of natural markings (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Estimates are fully comparable across space, time, species and studies (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#density"><span class="std std-ref">Density</span></a> estimates obtained in a single model, fully incorporate spatial information of locations and individuals (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Both likelihood-based and Bayesian versions of the model have been implemented in relatively easy-to-use software DENSITY and SPACECAP, respectively, as well as associated R packages) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Flexibility in study design (e.g., ‘holes’ in the trapping grid) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Open SECR (Efford, 2004; Borchers &amp; Efford, 2008; Royle &amp; Young, 2008; Royle et al., 2009) models exist that allow for estimation of recruitment and survival rates (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Avoid ad-hoc definitions of study area and edge effects (Doran-Myers, 2018)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Cons</div>
+<ul class="simple">
+<li><p class="sd-card-text">Requires that individuals are identifiable (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Requires that a minimum number of individuals are trapped (each recaptured multiple times ideally) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Requires that each individual is captured at a number of camera locations (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Multiple cameras per station may be required to identify individuals; difficult to implement at large spatial scales as it requires a high <a class="reference internal" href="09_gloss_ref/09_glossary.html#density"><span class="std std-ref">density</span></a> of cameras (Morin et al., 2022)</p></li>
+<li><p class="sd-card-text">May not be precise enough for long-term monitoring (Green et al., 2020)</p></li>
+<li><p class="sd-card-text">Cameras must be close enough that animals are detected at multiple camera locations (Wearn &amp; Glover-Kapfer, 2017) (may be challenging to implement at large scales as many cameras are needed)’ (Chandler &amp; Royle, 2013)</p></li>
+<li><p class="sd-card-text">½ MMDM (Mean Maximum Distance Moved) will usually lead to an underestimation of home range size and thus overestimation of <a class="reference internal" href="09_gloss_ref/09_glossary.html#density"><span class="std std-ref">density</span></a> (Parmenter et al., 2003; Noss et al., 2012; Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">con 8</p></li>
+<li><p class="sd-card-text">con 9</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details><div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Overview</label><div class="sd-tab-content docutils">
+<p><strong>Spatially explicit capture-recapture (SECR) / Spatial capture-recapture (SCR) (Borchers &amp; Efford, 2008; Efford, 2004; Royle &amp; Young, 2008; Royle et al., 2009)</strong>: The SECR (or SCR) method is used to estimate the <a class="reference internal" href="09_gloss_ref/09_glossary.html#density"><span class="std std-ref">density</span></a> of marked populations; an extension of traditional capture-recapture (CR; Karanth, 1995; Karanth &amp; Nichols, 1998) models (Karanth, 1995; Karanth &amp; Nichols, 1998) that explicitly accounts for camera location and animal movement (Burgar et al., 2018). SECR models use spatially referenced individual capture histories to infer where animals’ home range centres are, assuming that detection probability decreases with increasing distance between cameras and home range centres (Clarke et al., 2023). SECR models can be implemented using different statistical frameworks, including Bayesian estimation (Royle and Young, 2008; Morin et al., 2022).</p>
+<p>Add some info here</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Advanced</label><div class="sd-tab-content docutils">
+<p>Add some info here</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Visual resources</label><div class="sd-tab-content docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figure1_filename.png"><img alt="../_images/figure1_filename.png" src="../_images/figure1_filename.png" style="width: 300px;" /></a>
+</figure>
+<p>figure1_caption<p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figure2_filename.png"><img alt="../_images/figure2_filename.png" src="../_images/figure2_filename.png" style="width: 300px;" /></a>
+</figure>
+<p>figure2_caption <p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figure3_filename.png"><img alt="../_images/figure3_filename.png" src="../_images/figure3_filename.png" style="width: 300px;" /></a>
+</figure>
+<p>figure4_caption <p/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<iframe 
+    width="300" 
+    height="200" 
+    src="vid1_url" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+<p>vid1_caption<p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<iframe 
+    width="300" 
+    height="200" 
+    src="vid2_url" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+<p>vid2_caption<p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<iframe 
+    width="300" 
+    height="200" 
+    src="vid3_url" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+<p>vid3_caption<p/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Shiny apps/Widgets</label><div class="sd-tab-content docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>iNEXTOnline</strong></p>
+<iframe 
+    width="100%"
+    height="900"
+    src="https://chao.shinyapps.io/iNEXTOnline"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Test embed</label><div class="sd-tab-content docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Test embed</strong></p>
+<iframe 
+    width="100%"
+    height="900"
+    src="https://www.rc-decision-support-tool.ca/voila/render/objective.ipynb?"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Type</p></th>
+<th class="head text-left"><p>Name</p></th>
+<th class="head text-left"><p>Note</p></th>
+<th class="head text-left"><p>URL</p></th>
+<th class="head text-left"><p>Reference</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>resource1_type</p></td>
+<td class="text-left"><p>resource1_name</p></td>
+<td class="text-left"><p>resource1_note</p></td>
+<td class="text-left"><p>resource1_url</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>resource3_type</p></td>
+<td class="text-left"><p>resource2_name</p></td>
+<td class="text-left"><p>resource3_note</p></td>
+<td class="text-left"><p>resource3_url</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>resource3_type</p></td>
+<td class="text-left"><p>resource3_name</p></td>
+<td class="text-left"><p>resource3_note</p></td>
+<td class="text-left"><p>resource3_url</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>resource4_type</p></td>
+<td class="text-left"><p>resource4_name</p></td>
+<td class="text-left"><p>resource4_note</p></td>
+<td class="text-left"><p>resource4_url</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>resource5_type</p></td>
+<td class="text-left"><p>resource5_name</p></td>
+<td class="text-left"><p>resource5_note</p></td>
+<td class="text-left"><p>resource5_url</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>resource6_type</p></td>
+<td class="text-left"><p>resource6_name</p></td>
+<td class="text-left"><p>resource6_note</p></td>
+<td class="text-left"><p>resource6_url</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>resource7_type</p></td>
+<td class="text-left"><p>resource7_name</p></td>
+<td class="text-left"><p>resource7_note</p></td>
+<td class="text-left"><p>resource7_url</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+References</label><div class="sd-tab-content docutils">
+<p>Refs</p>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02_dialog-boxes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

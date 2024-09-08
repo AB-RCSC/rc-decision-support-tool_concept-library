@@ -1,0 +1,713 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>OLD &#8212; Remote Camera Decision Support Tool - Concept Library</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/03_02_mod_divers_rich_old';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Species diversity &amp; richness" href="03_02_mod_divers_rich_new.html" />
+    <link rel="prev" title="Species inventory" href="03_01_mod_inventory.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="00_07_rec_approach.html" class="nav-link">Modelling Approaches</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">OLD</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="old">
+<h1>OLD<a class="headerlink" href="#old" title="Link to this heading">#</a></h1>
+<div class="full-width docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Assumptions, Pros, Cons</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Species richness (Alpha diversity)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Assumptions</div>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_location"><span class="std std-ref">Camera locations</span></a> are <a class="reference internal" href="09_gloss_ref/09_glossary.html#sampledesign_random"><span class="std std-ref">randomly placed</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_location"><span class="std std-ref">Camera locations</span></a> are independent (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#detection_probability"><span class="std std-ref">Detection probability</span></a> of different species remains the same (Wearn &amp; Glover-Kapfer, 2017) (‘true’ species richness estimation involves attempting to correct for ‘<a class="reference internal" href="09_gloss_ref/09_glossary.html#imperfect_detection"><span class="std std-ref">imperfect detection</span></a>’ (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Sampling effort is comparable between <a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_location"><span class="std std-ref">camera locations</span></a> (Royle &amp; Nichols, 2003)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Pros</div>
+<ul class="simple">
+<li><p class="sd-card-text">Fundamental to ecological theory and often a key metric used in management (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Simple to analyze, interpret and communicate (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Models exist to estimate asymptotic species richness, including unseen species (simple versions of these models - ‘EstimateS’ and the ‘vegan’ R-packages) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Cons</div>
+<ul class="simple">
+<li><p class="sd-card-text">Dependent on the scale (as captured in the species-area relationship) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">All species have equal weight in calculations, and community evenness is disregarded (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Insensitive to changes in abundance, community structure and community composition (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Species diversity (Beta diversity)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Assumptions</div>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_location"><span class="std std-ref">Camera locations</span></a> are <a class="reference internal" href="09_gloss_ref/09_glossary.html#sampledesign_random"><span class="std std-ref">randomly placed</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Randomness and independence (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Samples are assumed to have been taken at random from the broader population of sites (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Pros</div>
+<ul class="simple">
+<li><p class="sd-card-text">Can be used to track changes in community composition (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Plays a critical role in effective conservation prioritization (e.g., designing reserve networks) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Important for detecting changes in the fundamental processes (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Cons</div>
+<ul class="simple">
+<li><p class="sd-card-text">No single best measure for all purposes (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Interpretation/communication not always straightforward (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Scale-dependent (i.e., influenced by the size of the communities that are being included) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Species diversity (Gamma diversity)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Assumptions</div>
+<ul class="simple">
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_location"><span class="std std-ref">Camera locations</span></a> are <a class="reference internal" href="09_gloss_ref/09_glossary.html#sampledesign_random"><span class="std std-ref">randomly placed</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_location"><span class="std std-ref">Camera locations</span></a> are independent (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#detection_probability"><span class="std std-ref">Detection probability</span></a> of different species remains the same (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Pros</div>
+<ul class="simple">
+<li><p class="sd-card-text">Captures evenness and richness (although some indices only reflect evenness) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Most indices are easy to calculate and widely implemented in software packages (e.g., ‘EstimateS’ and ‘vegan’ in R) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Cons</div>
+<ul class="simple">
+<li><p class="sd-card-text">Many indices exist, and it can be difficult to choose the most appropriate (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Comparing measures across space, time and studies can be very difficult (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Insensitive to changes in community composition (Wearn &amp; Glover-Kapfer, 2017) (however, this may be conditional on study design)</p></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details></div>
+</details><div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Overview</label><div class="sd-tab-content docutils">
+<p><strong></strong>: 
+<br>
+Species richness is simply the number of species in a community.</p>
+<p>Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon’s Index H’.” Pyron, 2010</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/pyron_2010_fig1.png"><img alt="../_images/pyron_2010_fig1.png" src="../_images/pyron_2010_fig1.png" style="width: 400.8px; height: 209.4px;" /></a>
+</figure>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+Advanced</label><div class="sd-tab-content docutils">
+<br>
+Parameters:
+- **α-richness (alpha richness)**: species richness at the level of an individual camera location
+-  **γ-richness (gamma richness)**: species richness across a whole study area
+- **β-diversity (betadiversity)**: the differences between the communities or, more formally, the variance among the communities
+<br>
+<p><strong>Observed <em>vs</em> estimated species richness</strong> (from Wearn &amp; Glover-Kapfer, 2019):</p>
+<ul class="simple">
+<li><p><strong>Observed species richness</strong>: the sum of the number of species seen (e.g. Kitamura et al., 2010; Pettorelli et al., 2010; Ahumada et al., 2011; Samejima et al., 2012)</p></li>
+<li><p>Observed species richness will not, in general, be a reliable index of actual species richness because, even if sampling effort is strictly controlled, the detectability of species will vary across samples</p></li>
+<li><p><strong>Estimated species richness</strong> (e.g. Tobler et al., 2008; Kinnaird &amp; O’Brien, 2012; Brodie et al., 2015; Yue et al., 2015; Wearn et al., 2016)</p></li>
+<li><p>Species richness estimation involves attempting to correct for “imperfect detection”, i.e. the fact that some species in a given sample may have been missed (Box 6-1).
+<br></p></li>
+</ul>
+<p>The **two principal ways of estimating species richness from camera trap dat ** are (from Wearn &amp; Glover-Kapfer, 2019):<br></p>
+<ul class="simple">
+<li><p>non-parametric estimators (Gotelli &amp; Chao, 2013), which use information about the rarest species in the sample to provide a minimum estimate of the number of true species (e.g. Tobler et al., 2008),</p></li>
+<li><p>or 2) occupancy models (MacKenzie et al., 2006)
+<br></p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Visual resources</label><div class="sd-tab-content docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Pyron, 2010</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/pyron_2010_fig1_clipped.png"><img alt="../_images/pyron_2010_fig1_clipped.png" src="../_images/pyron_2010_fig1_clipped.png" style="width: 300px;" /></a>
+</figure>
+<p>**Figure 1: Species evenness and species richness for animalcule communities**<br>
+Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. <p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Pyron, 2010</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/pyron_2010_fig1.png"><img alt="../_images/pyron_2010_fig1.png" src="../_images/pyron_2010_fig1.png" style="width: 300px;" /></a>
+</figure>
+<p>NULL <p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figure3_filename.png"><img alt="../_images/figure3_filename.png" src="../_images/figure3_filename.png" style="width: 300px;" /></a>
+</figure>
+<p>figure4_caption <p/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Molloy, 2018</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/molloy_2018_fig9.png"><img alt="../_images/molloy_2018_fig9.png" src="../_images/molloy_2018_fig9.png" style="width: 300px;" /></a>
+</figure>
+<p>figure5_caption <p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figure5_filename.png"><img alt="../_images/figure5_filename.png" src="../_images/figure5_filename.png" style="width: 300px;" /></a>
+</figure>
+<p>figure5_caption <p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figure6_filename.png"><img alt="../_images/figure6_filename.png" src="../_images/figure6_filename.png" style="width: 300px;" /></a>
+</figure>
+<p>figure6_caption <p/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Project Dragonfly, 2019</div>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/ghhZClDRK_g?si=khprL1u5NJrFduTb"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+<p>Abundance, species richness, and diversity<p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+mecks100, 2018</div>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/4gcmAUpo9TU?si=_S-JYDDskR8QbHs5"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+<p>Species accumulation and rarefaction curves<p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Riffomonas Project, 2022b</div>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/wq1SXGQYgCs?si=Re5tglERblfkCNhDl"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+<p>Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC196)<p/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+VSN International, 2022</div>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/wBx7f4PP8RE?si=D6mtAMNMLlk3aH8H"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+<p>Species abundance tools in Genstat<p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Baylor Tutoring Center, 2021</div>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/UXJ0r4hjbqI?si=gYR6rOmIMgyibyvR"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+<p>Species Diversity and Species Richness<p/>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Styring, 2020a</div>
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/KBByV3kR3IA?si=RPcG1lFQ-v0Shwaw"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+<p>Field Ecology - Diversity Metrics in R<p/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Shiny apps/Widgets</label><div class="sd-tab-content docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<p class="sd-card-text"><strong>Visualizing Biodiversity in [U.S.] National Parks</strong></p>
+<!-- https://shiny.posit.co/r/gallery/life-sciences/biodiversity-national-parks/-->
+<iframe 
+    width="100%"
+    height="900"
+    src="https://abenedetti.shinyapps.io/bioNPS/"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Type</p></th>
+<th class="head text-left"><p>Name</p></th>
+<th class="head text-left"><p>Note</p></th>
+<th class="head text-left"><p>URL</p></th>
+<th class="head text-left"><p>Reference</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>R package</p></td>
+<td class="text-left"><p>Chapter 9 Community composition</p></td>
+<td class="text-left"><p>-</p></td>
+<td class="text-left"><p><a class="reference external" href="https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/composition.html#estimated-richnes">https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/composition.html#estimated-richnes</a></p></td>
+<td class="text-left"><p>WildCo Lab (2021b). <em>WildCo: Reproducible camera trap data exploration and analysis examples in R</em>. University of British Columbia. <a class="reference external" href="https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/#what-this-guide-is">https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/#what-this-guide-is</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Program</p></td>
+<td class="text-left"><p>R package “vegan</p></td>
+<td class="text-left"><p>Dedicated software for estimating diversity, using asymptotic or rarefaction methods. Mac version available</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.robertkcolwell.org/pages/1407">https://www.robertkcolwell.org/pages/1407</a></p></td>
+<td class="text-left"><p>Oksanen, J., Simpson, G. L., Blanchet, F. G., Kindt, R., Legendre, P., Minchin, P. R., O’Hara, R. B., Solymos, P., Stevens, M. H. H., Szoecs, E., Wagner, H., Barbour, M., Bedward, M., Bolker, B., Borcard, D., Carvalho, G., Chirico, M., De Caceres, M., Durand, S., … Weedon, J. (2024). <em>vegan: Community Ecology Package</em>. R package Version 2.6-6.1. &lt;<a class="reference external" href="https://doi.org/10.32614/CRAN.package.vegan">https://doi.org/10.32614/CRAN.package.vegan</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Program</p></td>
+<td class="text-left"><p>EstimateS</p></td>
+<td class="text-left"><p>Dedicated software for estimating diversity, using asymptotic or rarefaction methods. Mac version available</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.robertkcolwell.org/pages/1407">https://www.robertkcolwell.org/pages/1407</a></p></td>
+<td class="text-left"><p>Colwell, R. K. (2022). EstimateS: Statistical Estimation of Species Richness and Shared Species from Samples. Version 9.1. <a class="reference external" href="https://www.robertkcolwell.org/pages/1407">https://www.robertkcolwell.org/pages/1407</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>R package</p></td>
+<td class="text-left"><p>Package ‘iNEXT’ - Interpolation and Extrapolation for Species Diversity</p></td>
+<td class="text-left"><p>The iNext package (INterpolation and EXTrapolation of species richness) - is both easy to use and rapid to compute. It also comes with a wealth of plotting functions - see the iNext Quick Introduction for a great walk through tutorial. Its core functionality is based on: Chao, Anne, et al. “Rarefaction and extrapolation with Hill numbers: a framework for sampling and estimation in species diversity studies.” Ecological monographs 84.1 (2014): 45-67.</p></td>
+<td class="text-left"><p>&gt;<a class="reference external" href="https://cran.r-project.org/web/packages/iNEXT/iNEXT.pdf">https://cran.r-project.org/web/packages/iNEXT/iNEXT.pdf</a>&gt;</p></td>
+<td class="text-left"><p>Hsieh, T. C., Ma, K. H., &amp; Chao, A. (2015). <em>iNEXT: Interpolation and Extrapolation for Species Diversity</em>. R package Version 2.6-6.1. <a class="reference external" href="https://doi.org/10.32614/CRAN.package.iNEXT">https://doi.org/10.32614/CRAN.package.iNEXT</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Exercise/Tutorial</p></td>
+<td class="text-left"><p>2.2: Measuring Species Diversity</p></td>
+<td class="text-left"><p>Easy to interpet explanation of species richness vs evenness, species area curves, rarefaction, and how to calculate diversity</p></td>
+<td class="text-left"><p><a class="reference external" href="https://bio.libretexts.org/Courses/University_of_California_Davis/BIS_2B%3A_Introduction_to_Biology_-_Ecology_and_Evolution/02%3A_Biodiversity/2.02%3A_Measuring_Species_Diversity">https://bio.libretexts.org/Courses/University_of_California_Davis/BIS_2B%3A_Introduction_to_Biology_-_Ecology_and_Evolution/02%3A_Biodiversity/2.02%3A_Measuring_Species_Diversity</a></p></td>
+<td class="text-left"><p>Gerhart-Barley, L., M. (n.d.). <em>2.2: Measuring Species Diversity</em> <a class="reference external" href="https://bio.libretexts.org/Courses/University_of_California_Davis/BIS_2B%3A_Introduction_to_Biology_-_Ecology_and_Evolution/02%3A_Biodiversity/2.02%3A_Measuring_Species_Diversity">https://bio.libretexts.org/Courses/University_of_California_Davis/BIS_2B%3A_Introduction_to_Biology_-_Ecology_and_Evolution/02%3A_Biodiversity/2.02%3A_Measuring_Species_Diversity</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>R package / Tutorial</p></td>
+<td class="text-left"><p>Species Accumulation Curves with vegan, BiodiversityR and ggplot2</p></td>
+<td class="text-left"><p>Software for interpolation and extrapolation of species diversityRarefied Species Accumulation Curves (the simple way)</p></td>
+<td class="text-left"><p><a class="reference external" href="https://rpubs.com/Roeland-KINDT/694021">https://rpubs.com/Roeland-KINDT/694021</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>resource7_type</p></td>
+<td class="text-left"><p>resource7_name</p></td>
+<td class="text-left"><p>resource7_note</p></td>
+<td class="text-left"><p>resource7_url</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+References</label><div class="sd-tab-content docutils">
+<p>Ahumada, J. A., Silva, C. E. F., Gajapersad, K., Hallam, C., Hurtado, J., Martin, E., McWilliam, A., Mugerwa, B., O’Brien, T., Rovero, F., Sheil, D., Spironello, W. R., Winarni, N., &amp; Andelman, S. J. (2011). Community Structure and Diversity of Tropical Forest Mammals: Data from a Global Camera Trap Network. <em>Philosophical Transactions: Biological Sciences, 366</em>(1578), 2703–2711. <a class="reference external" href="https://doi.org/10.1098/rstb.2011.0115">https://doi.org/10.1098/rstb.2011.0115</a></p>
+<p>Baylor Tutoring Center. (2021, July 31). <em>Species Diversity and Species Richness</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=UXJ0r4hjbqI">https://www.youtube.com/watch?v=UXJ0r4hjbqI</a></p>
+<p>Brodie, J. F., Giordano, A. J., Zipkin, E. F., Bernard, H., Mohd‐Azlan, J., &amp; Ambu, L. (2015). Correlation and persistence of hunting and logging impacts on tropical rainforest mammals. <em>Conservation Biology, 29</em>(1), 110–121. <a class="reference external" href="https://doi.org/10.1111/cobi.12389">https://doi.org/10.1111/cobi.12389</a></p>
+<p>Colwell, R. K. (2022). EstimateS: Statistical Estimation of Species Richness and Shared Species from Samples. Version 9.1. <a class="reference external" href="https://www.robertkcolwell.org/pages/1407">https://www.robertkcolwell.org/pages/1407</a></p>
+<p>Gerhart-Barley, L., M. (n.d.). <em>2.2: Measuring Species Diversity</em> <a class="reference external" href="https://bio.libretexts.org/Courses/University_of_California_Davis/BIS_2B%3A_Introduction_to_Biology_-_Ecology_and_Evolution/02%3A_Biodiversity/2.02%3A_Measuring_Species_Diversity">https://bio.libretexts.org/Courses/University_of_California_Davis/BIS_2B%3A_Introduction_to_Biology_-_Ecology_and_Evolution/02%3A_Biodiversity/2.02%3A_Measuring_Species_Diversity</a></p>
+<p>Gotelli, N., &amp; Colwell, R. (2001). Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. <em>Ecology Letters, 4</em>, 379–391. <a class="reference external" href="https://doi.org/10.1046/j.1461-0248.2001.00230.x">https://doi.org/10.1046/j.1461-0248.2001.00230.x</a></p>
+<p>Gotelli, N., &amp; Colwell, R. (2011). Estimating species richness. In <em>Biological Diversity: Frontiers in Measurement and Assessment</em> (eds. Magurran, A., &amp; McGill, B.). Oxford University Press. Oxford, pp. 39–54. <a class="reference external" href="https://www.researchgate.net/publication/236734446_Estimating_species_richness">https://www.researchgate.net/publication/236734446_Estimating_species_richness</a></p>
+<p>Hsieh, T. C., Ma, K. H., &amp; Chao, A. (2015). <em>iNEXT: Interpolation and Extrapolation for Species Diversity</em>. R package Version 2.6-6.1. <a class="reference external" href="https://doi.org/10.32614/CRAN.package.iNEXT">https://doi.org/10.32614/CRAN.package.iNEXT</a></p>
+<p>Iknayan, K. J., Tingley, M. W., Furnas, B. J., &amp; Beissinger, S. R. (2014). Detecting Diversity: Emerging Methods to Estimate Species Diversity. <em>Trends in Ecology &amp; Evolution, 29</em>(2), 97–106. <a class="reference external" href="https://doi.org/10.1016/j.tree.2013.10.012">https://doi.org/10.1016/j.tree.2013.10.012</a></p>
+<p>Kinnaird, M. F., &amp; O’Brien, T. G. (2011). Density estimation of sympatric carnivores using spatially explicit capture–recapture methods and standard trapping grid. <em>Ecological Applications, 21</em>(8), 2908–2916. <a class="reference external" href="https://www.jstor.org/stable/41417102">https://www.jstor.org/stable/41417102</a></p>
+<p>Kitamura, S., Thong-Aree, S., Madsri, S., &amp; Poonswad, P. (2010). Mammal diversity and conservation in a small isolated forest of southern Thailand. <em>Raffles Bulletin of Zoology, 58</em>(1), 145–156. <a class="reference external" href="https://www.pangolinsg.org/wp-content/uploads/sites/4/2018/06/Kitamura-et-al._2010_Mammal-diversity-in-small-forest-of-Southern-Thailand.pdf">https://www.pangolinsg.org/wp-content/uploads/sites/4/2018/06/Kitamura-et-al._2010_Mammal-diversity-in-small-forest-of-Southern-Thailand.pdf</a></p>
+<p>MacKenzie, D. I., Nichols, J. D., Royle, J. A., Pollock, K. H., Bailey, L. L., &amp; Hines, J. E. (2006). <em>Occupancy Estimation and Modeling: Inferring Patterns and Dynamics of Species Occurrence</em>. Academic Press, USA. <a class="reference external" href="https://www.sciencedirect.com/book/9780124071971/occupancy-estimation-and-modeling">https://www.sciencedirect.com/book/9780124071971/occupancy-estimation-and-modeling</a></p>
+<p>mecks100 (2018, Feb 7). <em>Species accumulation and rarefaction curves</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=4gcmAUpo9TU">https://www.youtube.com/watch?v=4gcmAUpo9TU</a></p>
+<p>Oksanen, J., Simpson, G. L., Blanchet, F. G., Kindt, R., Legendre, P., Minchin, P. R., O’Hara, R. B., Solymos, P., Stevens, M. H. H., Szoecs, E., Wagner, H., Barbour, M., Bedward, M., Bolker, B., Borcard, D., Carvalho, G., Chirico, M., De Caceres, M., Durand, S., … Weedon, J. (2024). <em>vegan: Community Ecology Package</em>. R package Version 2.6-6.1. &lt;<a class="reference external" href="https://doi.org/10.32614/CRAN.package.vegan">https://doi.org/10.32614/CRAN.package.vegan</a></p>
+<p>Pettorelli, N., Lobora, A. L., Msuha, M. J., Foley, C., &amp; Durant, S. M. (2010). Carnivore biodiversity in Tanzania: Revealing the distribution patterns of secretive mammals using camera traps. <em>Animal Conservation, 13</em>(2), 131–139. <a class="reference external" href="https://doi.org/10.1111/j.1469-1795.2009.00309.x">https://doi.org/10.1111/j.1469-1795.2009.00309.x</a></p>
+<p>Project Dragonfly. (2019, Jan 24). <em>Abundance, species richness, and diversity</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=ghhZClDRK_g&amp;amp;source_ve_path=OTY3MTQbqI">https://www.youtube.com/watch?v=ghhZClDRK_g&amp;source_ve_path=OTY3MTQbqI</a></p>
+<p>Pyron, M. (2010) Characterizing Communities. <em>Nature Education Knowledge, 3</em>(10):39. <a class="reference external" href="https://www.nature.com/scitable/knowledge/library/characterizing-communities-13241173/">https://www.nature.com/scitable/knowledge/library/characterizing-communities-13241173/</a></p>
+<p>Riffomonas Project (2022b, Mar 24). <em>Generating a rarefaction curve from collector’s curves in R within the tidyverse (CC198)</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=ywHVb0Q-qsM">https://www.youtube.com/watch?v=ywHVb0Q-qsM</a></p>
+<p>Samejima, H., Ong, R., Lagan, P. &amp; Kitayama, K. (2012). Camera-trapping rates of mammals and birds in a Bornean tropical rainforest under sustainable forest management. <em>Forest Ecology and Management, 270</em>, 248–256. <a class="reference external" href="https://doi.org/10.1016/j.foreco.2012.01.013">https://doi.org/10.1016/j.foreco.2012.01.013</a></p>
+<p>Styring, A. (2020a, May 4). <em>Field Ecology - Diversity Metrics in R.</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=KBByV3kR3IA">https://www.youtube.com/watch?v=KBByV3kR3IA</a></p>
+<p>Tobler, M. W., Pitman, R. L., Mares, R. &amp; Powell, G. (2008). An Evaluation of Camera Traps for Inventorying Large- and Medium-Sized Terrestrial Rainforest Mammals. <em>Animal Conservation, 11</em>, 169–178. <a class="reference external" href="https://doi.org/10.1111/j.1469-1795.2008.00169.x">https://doi.org/10.1111/j.1469-1795.2008.00169.x</a></p>
+<p>VSN International (2022, Jul 13). <em>Species abundance tools in Genstat</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=wBx7f4PP8RE">https://www.youtube.com/watch?v=wBx7f4PP8RE</a></p>
+<p>Wearn, O. R., Carbone, C., Rowcliffe, J. M., Bernard, H. &amp; Ewers, R. M. (2016). Grain-dependent responses of mammalian diversity to land-use and the implications for conservation set-aside. <em>Ecological Applications, 26</em>(5), 1409–1420. <a class="reference external" href="https://doi.org/10.1890/15-1363">https://doi.org/10.1890/15-1363</a></p>
+<p>WildCo Lab (2021b). <em>WildCo: Reproducible camera trap data exploration and analysis examples in R</em>. University of British Columbia. <a class="reference external" href="https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/#what-this-guide-is">https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/#what-this-guide-is</a></p>
+<p>Yue, S., Brodie, J. F., Zipkin, E. F., &amp; Bernard, H. (2015). Oil palm plantations fail to support mammal diversity. <em>Ecological Applications, 25</em>(8), 2285–2292. <a class="reference external" href="https://doi.org/10.1890/14-1928.1">https://doi.org/10.1890/14-1928.1</a></p>
+</div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02_dialog-boxes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
