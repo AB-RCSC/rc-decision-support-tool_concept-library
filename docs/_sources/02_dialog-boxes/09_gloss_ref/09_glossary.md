@@ -22,7 +22,6 @@ editor_options:
 test
 
 (#access_method)=
-
 **\*Access Method**
 : The method used to reach the camera location (e.g., on "Foot," "ATV," "Helicopter," etc.).
 
@@ -812,15 +811,11 @@ Study area
 **Subadult - Young of Year**
 : Animals less than one year old; born in the previous year's spring, but has not yet lived through a winter season; between "Juvenile" and "Yearling."
 
-<!--. 
--->
 (#survey)=
 
 Survey
 : A unique deployment period (temporal extent) within a project (recorded as "Survey Name").
 
-<!--. 
--->
 (#survey_design)=
 
 **Survey Design**

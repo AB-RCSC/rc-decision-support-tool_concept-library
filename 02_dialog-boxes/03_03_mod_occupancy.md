@@ -59,25 +59,25 @@ Add some info here
 ::::::{tab-item} Advanced
 
 Occupancy models describe spatial patterns of animal occurrence (Sollmann, 2018) and have been proposed as a proxy for abundance (Noon et al., 2012). They ask: what proportion of a study area is inhabited by a population – that is, at how many camera sites do one or more individuals of a species occur (MacKenzie et al., 2017)? The basic equation for occupancy is: 
-<br/>
+<br>
 
 ```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_occupancy1.png
 :align: center
+:scale: 60%
 ```
 
-where *𝜓* is the probability a site is occupied, 𝑥̂ is the estimated number of occupied sites (i.e., the count of sites where animals were detected, corrected for detection probability) and 𝑠 is the total number of sites surveyed (MacKenzie et al., 2017). Unlike simple measures of presence-absence, occupancy models account for imperfect detection (Sollmann, 2018). They attempt to differentiate between absence – animals truly not present – and nondetection – animals present but not detected – by repeatedly sampling sites over time. The central assumption of basic occupancy models is that repeated samples occur during a period in which the site is closed to changes in occupancy (i.e., occupancy status – present or absent – does not change during the sampling period). Thus if a species is detected during one of three sampling occasions, it is assumed that it was present during all three occasions but undetected during two. <br/>
-<br/>
-In theory, occupancy and abundance share a predictable relationship. As population size increases, the number of sites occupied by members of that population should also increase (until all sites are occupied); likewise, a decrease in population size should lead to a decrease in the number of sites used (Gaston et al. 2000, Royle & Dorazio,, 2008). This is called an occupancy-abundance relationship, and – because of it – occupancy can be used as an index of abundance. <br/>
-<br/>
-Advantages of occupancy as an index of abundance include: <br/>
-<br/>
+where *𝜓* is the probability a site is occupied, 𝑥̂ is the estimated number of occupied sites (i.e., the count of sites where animals were detected, corrected for detection probability) and 𝑠 is the total number of sites surveyed (MacKenzie et al., 2017). Unlike simple measures of presence-absence, occupancy models account for imperfect detection (Sollmann, 2018). They attempt to differentiate between absence – animals truly not present – and nondetection – animals present but not detected – by repeatedly sampling sites over time. The central assumption of basic occupancy models is that repeated samples occur during a period in which the site is closed to changes in occupancy (i.e., occupancy status – present or absent – does not change during the sampling period). Thus if a species is detected during one of three sampling occasions, it is assumed that it was present during all three occasions but undetected during two. <br>
+<br>
+In theory, occupancy and abundance share a predictable relationship. As population size increases, the number of sites occupied by members of that population should also increase (until all sites are occupied); likewise, a decrease in population size should lead to a decrease in the number of sites used (Gaston et al. 2000, Royle & Dorazio,, 2008). This is called an occupancy-abundance relationship, and – because of it – occupancy can be used as an index of abundance. <br>
+<br>
+Advantages of occupancy as an index of abundance include: <br>
 - Occupancy studies may be easier to implement than some abundance or density estimators (Noon et al., 2012, Sollmann, 2018). 
 - Occupancy-abundance relationships appear to be robust to territoriality, grouptravelling behaviour and other biological traits (Steenweg et al. 2018). 
 - Occupancy can be modelled as a function of site- and sampling-specific covariates to better understand which factors predict animal occurrence (Sollmann, 2018).
-<br/>
+<br>
 
-However, many researchers have cautioned against the use occupancy as an index. As with relative abundance (RA; see above), there is no consistent, long-term relationship between occupancy and abundance (Efford & Dawson, 2012). Occupancy can change with abundance, but also with survey duration, species home range size, animal movement, etc., muddling occupancy-abundance relationships and thus inferences about population size (Neilson et al. 2018, Steenweg et al. 2018). While occupancy is a powerful stand-alone metric, Sollmann (2018) says it should not be “misinterpreted” as an index of abundance. <br/>
-<br/>
+However, many researchers have cautioned against the use occupancy as an index. As with relative abundance (RA; see above), there is no consistent, long-term relationship between occupancy and abundance (Efford & Dawson, 2012). Occupancy can change with abundance, but also with survey duration, species home range size, animal movement, etc., muddling occupancy-abundance relationships and thus inferences about population size (Neilson et al. 2018, Steenweg et al. 2018). While occupancy is a powerful stand-alone metric, Sollmann (2018) says it should not be “misinterpreted” as an index of abundance. <br>
+<br>
 Despite its widespread use, occupancy may be particularly problematic for camera trap studies due to the violation of the closure assumption. Burton et al (2015) highlighted that many camera trap studies using occupancy do not explicitly define the “site,” although is often implicitly given as some larger area around a camera trap. Since camera trap studies typically target mammal species with relatively large home ranges, the site closure assumption is almost certainly violated in most cases. Many camera trappers therefore assume that “occupancy” is in fact “use” of a site (i.e., the site is not closed), and that detection probability also includes availability for detection. Mackenzie et al. (2017) suggested that estimates should be unbiased if movements in and out of a site are random, but this assumption is rarely tested. And where occupancy estimates have been tested using realistic mammal movements, they have generally performed poorly (Neilson et al 2018, Stewart et al. 2018). 
 
 ::::::
@@ -88,7 +88,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} **{{ ref_intext_murray_et_al_2021  }}**
+::::{grid-item-card} {{ ref_intext_murray_et_al_2021 }}
 ```{figure} ../03_images/03_image_files/murray_et_al_2021.jpg
 :width: 300px
 :align: center

@@ -12,7 +12,7 @@ kernelspec:
   name: python3
 editor_options: 
   markdown: 
-    wrap: none
+  wrap: none
 --- 
 (i_mod_divers_rich)=
 # {{ name_mod_divers_rich }}
@@ -86,7 +86,10 @@ editor_options:
 
 ::::::{tab-item} Overview
 
-**{{ term_mod_divers_rich }}**: {{ term_def_mod_divers_rich }}
+**{{ term_mod_divers_rich_rich }}**: {{ term_def_mod_divers_rich_rich }}
+
+**{{ term_mod_divers_divers }}**: {{ term_def_mod_divers_rich_divers }}
+
 <br>
 “Species richness is simply the number of species in a community. 
 
@@ -118,7 +121,9 @@ The **two principal ways of estimating species richness from camera trap dat ** 
 - non-parametric estimators ({{ ref_intext_gotelli_chao_2013 }}), which use information about the rarest species in the sample to provide a minimum estimate of the number of true species (e.g. {{ ref_intext_tobler_et_al_2008 }}), 
 - or 2) occupancy models ({{ ref_intext_mackenzie_et_al_2006 }})
 ::::::
+
 ::::::{tab-item} Visual resources
+
 :::::{grid} 3
 :gutter: 1
 :padding: 0
@@ -293,13 +298,11 @@ shiny_caption
 </iframe>
 
 :::::
-
 ::::::
 
-
-`````
 ::::::{tab-item} Analytical tools & resources
-Error! Not a valid filename.
+| Type | Name | Note | URL | Reference |
+|:----------------|:---------------------------------------|:-----------------------------------------------|:-----------------------------------------------|:----------------------------------------------|
 | R package | Chapter 9 Community composition | \- | <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/composition.html#estimated-richnes> | {{ ref_bib_wildco_lab_2021b }} |
 | R package | R package “vegan | \- | <https://cran.r-project.org/web/packages/vegan/index.html> | {{ ref_bib_oksanen_et_al_2024 }} |
 | Program | EstimateS | Dedicated software for estimating diversity, using asymptotic or rarefaction methods. Mac version available | <https://www.robertkcolwell.org/pages/1407> | {{ ref_bib_colwell_2022 }} |
@@ -311,6 +314,7 @@ Error! Not a valid filename.
 
 ::::::{tab-item} References
 <font size="3">
+
 {{ ref_bib_ahumada_et_al_2011 }}
 
 {{ ref_bib_baylor_tutoring_center_2021 }}

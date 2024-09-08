@@ -5,135 +5,152 @@
 
 format: jb-book
 root: index
-parts:
-  - caption: Testing 123
-    maxdepth: 1
-    titlesonly: False
-    chapters:
-    - file: 02_dialog-boxes/00_template_master_test.md
-    - file: 02_dialog-boxes/00_00_welcome.md
-####  - caption: Question Info - DEMO
-####    maxdepth: 1
+chapters:
+#### parts:
+########  - caption: Testing 123
+####    maxdepth: 0
 ####    titlesonly: False
 ####    chapters:
-  - caption: Objectives & Resources
-    maxdepth: 1
-    titlesonly: False
-    chapters:
-#####     - file: 02_dialog-boxes/01_01_user_entry.md
-    - file: 02_dialog-boxes/01_02_objective.md
-    - file: 02_dialog-boxes/01_03_num_cams.md
-  - caption: Study area & Site selection constraints
-    maxdepth: 1
-    titlesonly: False
-    chapters:
-#####    - file: 02_dialog-boxes/01_04_study_area_mult.md
-#####    - file: 02_dialog-boxes/01_05_cam_dens_gradient.md
-    - file: 02_dialog-boxes/01_06_cam_strat_covar.md
-#####    - file: 02_dialog-boxes/01_07_cam_high_dens.md
-  - caption: Duration & Timing
-    maxdepth: 1
-    titlesonly: False
-    chapters:
-    - file: 02_dialog-boxes/01_08_surv_dur_min_max.md
-#####    - file: 02_dialog-boxes/01_09_survey_dur_mth.md
-    - file: 02_dialog-boxes/01_10_sp_asymptote.md
-#####    - file: 02_dialog-boxes/01_11_study_season_num.md
-  - caption: Target species
-    maxdepth: 1
-    titlesonly: False
-    chapters:
+####- file: 02_dialog-boxes/00_template_master_test.md
+####- file: 02_dialog-boxes/00_00_welcome.md
+########  - caption: Question Info - DEMO
+####    maxdepth: 0
+####    titlesonly: False
+####    chapters:
+########  - caption: Objectives & Resources
+####    maxdepth: 0
+####    titlesonly: False
+####    chapters:
+- file: 02_dialog-boxes/00_01_objective_resources.md
+#####- file: 02_dialog-boxes/01_01_user_entry.md
+- file: 02_dialog-boxes/01_02_objective.md
+- file: 02_dialog-boxes/01_03_num_cams.md
+####  - caption: Study area & Site selection
+####    maxdepth: 0
+####    titlesonly: False
+####    chapters:
+- file: 02_dialog-boxes/00_02_study_area_site_selection_constraints.md
+####      sections:
+#####- file: 02_dialog-boxes/01_04_study_area_mult.md
+#####- file: 02_dialog-boxes/01_05_cam_dens_gradient.md
+- file: 02_dialog-boxes/01_06_cam_strat_covar.md
+#####- file: 02_dialog-boxes/01_07_cam_high_dens.md
+####  - caption: Duration & Timing
+####    maxdepth: 0
+####    titlesonly: False
+####    chapters:
+- file: 02_dialog-boxes/00_03_duration_timing.md
+####      sections:
+- file: 02_dialog-boxes/01_08_surv_dur_min_max.md
+#####- file: 02_dialog-boxes/01_09_survey_dur_mth.md
+- file: 02_dialog-boxes/01_10_sp_asymptote.md
+#####- file: 02_dialog-boxes/01_11_study_season_num.md
+####  - caption: Target species
+####    maxdepth: 0
+####    titlesonly: False
+####    chapters:
+- file: 02_dialog-boxes/00_04_target_species.md
+####      sections:
 ##### Target species (Single)
-#####    - file: 02_dialog-boxes/01_12_obj_targ_sp.md
-    - file: 02_dialog-boxes/01_13_sp_info.md
-    - file: 02_dialog-boxes/01_14_sp_type.md
-#####    - file: 02_dialog-boxes/01_15_sp_dens_low.md 
-    - file: 02_dialog-boxes/01_16_sp_occ_restr.md
-    - file: 02_dialog-boxes/01_17_sp_hr_size.md
-    - file: 02_dialog-boxes/01_18_sp_size.md
-    - file: 02_dialog-boxes/01_19_sp_rarity.md
-    - file: 02_dialog-boxes/01_20_sp_detprob_cat.md
-#####    - file: 02_dialog-boxes/01_21_sp_behav.md
-#####    - file: 02_dialog-boxes/01_22_sp_behav_season.md
-#####    - file: 02_dialog-boxes/01_23_marking_code.md
-#####    - file: 02_dialog-boxes/01_24_marking_allsub.md
-#####    - file: 02_dialog-boxes/01_25_3ormore_cat_ids.md
-#####    - file: 02_dialog-boxes/01_26_auxillary_info.md
-#####    - file: 02_dialog-boxes/01_27_aux_count_possible.md
-#####    - file: 02_dialog-boxes/01_28_focalarea_calc.md
-#####    - file: 02_dialog-boxes/01_29_cam_high_dens.md
-#####    - file: 02_dialog-boxes/01_30_sp_common_pop_lg.md
+#####- file: 02_dialog-boxes/01_12_obj_targ_sp.md
+- file: 02_dialog-boxes/01_13_sp_info.md
+- file: 02_dialog-boxes/01_14_sp_type.md
+#####- file: 02_dialog-boxes/01_15_sp_dens_low.md 
+- file: 02_dialog-boxes/01_16_sp_occ_restr.md
+- file: 02_dialog-boxes/01_17_sp_hr_size.md
+- file: 02_dialog-boxes/01_18_sp_size.md
+- file: 02_dialog-boxes/01_19_sp_rarity.md
+- file: 02_dialog-boxes/01_20_sp_detprob_cat.md
+#####- file: 02_dialog-boxes/01_21_sp_behav.md
+#####- file: 02_dialog-boxes/01_22_sp_behav_season.md
+#####- file: 02_dialog-boxes/01_23_marking_code.md
+#####- file: 02_dialog-boxes/01_24_marking_allsub.md
+#####- file: 02_dialog-boxes/01_25_3ormore_cat_ids.md
+#####- file: 02_dialog-boxes/01_26_auxillary_info.md
+#####- file: 02_dialog-boxes/01_27_aux_count_possible.md
+#####- file: 02_dialog-boxes/01_28_focalarea_calc.md
+#####- file: 02_dialog-boxes/01_29_cam_high_dens.md
+#####- file: 02_dialog-boxes/01_30_sp_common_pop_lg.md
 ##### Target species (Multiple)
-#####    - file: 02_dialog-boxes/01_31_sp_size_multi.md
-#####    - file: 02_dialog-boxes/01_32_sp_behav_multi.md
-#####    - file: 02_dialog-boxes/01_33_sp_rarity_multi.md
-#####    - file: 02_dialog-boxes/01_36_sp_detprob_cat_multi.md
-#####  - caption: Equipment & Deployment
-#####    maxdepth: 1
+#####- file: 02_dialog-boxes/01_31_sp_size_multi.md
+#####- file: 02_dialog-boxes/01_32_sp_behav_multi.md
+#####- file: 02_dialog-boxes/01_33_sp_rarity_multi.md
+#####- file: 02_dialog-boxes/01_36_sp_detprob_cat_multi.md
+#########  - caption: Equipment & Deployment
+#####    maxdepth: 0
 #####    titlesonly: False
 #####    chapters:
-#####    - file: 02_dialog-boxes/01_39_cam_makemod_same.md
-#####    - file: 02_dialog-boxes/01_40_cam_settings_mult.md
-#####    - file: 02_dialog-boxes/01_41_cam_protocol_ht_angle.md
-#####    - file: 02_dialog-boxes/01_42_cam_direction_ds.md
-#####    - file: 02_dialog-boxes/01_43_bait_lure.md
-#####    - file: 02_dialog-boxes/01_44_bait_lure_cams.md
-#####    - file: 02_dialog-boxes/01_45_targ_feature.md
-#####    - file: 02_dialog-boxes/01_46_targ_feature_same.md
-  - caption: Data & Analysis
-    maxdepth: 1
-    titlesonly: False
-    chapters:
-    - file: 02_dialog-boxes/01_47_cam_independent.md   
-####    - file: 02_dialog-boxes/01_48_multisamp_per_loc.md
-####    - file: 02_dialog-boxes/01_49_modmixed.md
-####    - file: 02_dialog-boxes/01_50_num_det.md
-####    - file: 02_dialog-boxes/01_51_num_det_individ.md
-####    - file: 02_dialog-boxes/01_52_num_recap.md
-####    - file: 02_dialog-boxes/01_53_overdispersion.md
-####    - file: 02_dialog-boxes/01_54_zeroinflation.md
-####    - file: 02_dialog-boxes/01_55_zi_overdispersed.md
-####    - file: 02_dialog-boxes/01_56_modmixed.md
-####    - file: 02_dialog-boxes/01_57_zi_re_overdispersed.md
-####    - file: 02_dialog-boxes/01_58_zi_process.md
-  - caption: Recommendations - Modelling Approaches
-    maxdepth: 1
-    titlesonly: False
-    chapters:
-    - file: 02_dialog-boxes/03_01_mod_inventory.md 
-    - file: 02_dialog-boxes/03_02_mod_divers_rich.md
-    - file: 02_dialog-boxes/03_03_mod_occupancy.md
-##### ERR HERE   - file: 02_dialog-boxes/03_04_mod_rai.md
-#####   - file: 02_dialog-boxes/03_24_mod_behaviour.md  
-#####  - caption: Modelling Approaches - Post-DEMO
-#####    maxdepth: 1
+#####- file: 02_dialog-boxes/01_39_cam_makemod_same.md
+#####- file: 02_dialog-boxes/01_40_cam_settings_mult.md
+#####- file: 02_dialog-boxes/01_41_cam_protocol_ht_angle.md
+#####- file: 02_dialog-boxes/01_42_cam_direction_ds.md
+#####- file: 02_dialog-boxes/01_43_bait_lure.md
+#####- file: 02_dialog-boxes/01_44_bait_lure_cams.md
+#####- file: 02_dialog-boxes/01_45_targ_feature.md
+#####- file: 02_dialog-boxes/01_46_targ_feature_same.md
+####  - caption: Data & Analysis
+####    maxdepth: 0
+####    titlesonly: False
+####    chapters:
+- file: 02_dialog-boxes/00_06_data_analysis.md
+####      sections:
+- file: 02_dialog-boxes/01_47_cam_independent.md   
+####- file: 02_dialog-boxes/01_48_multisamp_per_loc.md
+####- file: 02_dialog-boxes/01_49_modmixed.md
+####- file: 02_dialog-boxes/01_50_num_det.md
+####- file: 02_dialog-boxes/01_51_num_det_individ.md
+####- file: 02_dialog-boxes/01_52_num_recap.md
+####- file: 02_dialog-boxes/01_53_overdispersion.md
+####- file: 02_dialog-boxes/01_54_zeroinflation.md
+####- file: 02_dialog-boxes/01_55_zi_overdispersed.md
+####- file: 02_dialog-boxes/01_56_modmixed.md
+####- file: 02_dialog-boxes/01_57_zi_re_overdispersed.md
+####- file: 02_dialog-boxes/01_58_zi_process.md
+####  - caption: Recommendations - Modelling Approaches
+####    maxdepth: 0
+####    titlesonly: False
+####    chapters:
+- file: 02_dialog-boxes/00_07_rec_approach.md
+####      sections:
+- file: 02_dialog-boxes/03_01_mod_inventory.md
+#####- file: 02_dialog-boxes/03_02_mod_divers_rich_old.md
+#####- file: 02_dialog-boxes/03_02_mod_divers_rich_new.md
+#####- file: 02_dialog-boxes/03_03_mod_occupancy.md
+##### ERR HERE - file: 02_dialog-boxes/03_04_mod_rai.md
+##### - file: 02_dialog-boxes/03_24_mod_behaviour.md  
+#########  - caption: Modelling Approaches - Post-DEMO
+#####    maxdepth: 0
 #####    titlesonly: False
 #####    chapters:
-#####    - file: 02_dialog-boxes/03_05_mod_rai_poisson.md
-#####    - file: 02_dialog-boxes/03_06_mod_rai_zip.md
-#####    - file: 02_dialog-boxes/03_07_mod_rai_nb.md
-#####    - file: 02_dialog-boxes/03_08_mod_rai_zinb.md
-#####    - file: 02_dialog-boxes/03_09_mod_rai_hurdle.md
-#####    - file: 02_dialog-boxes/03_11_mod_cr_cmr.ipynb
-#####    - file: 02_dialog-boxes/03_10_mod_cr_cmr.md
-#####    - file: 02_dialog-boxes/03_11_mod_scr_secr.ipynb
-#####    - file: 02_dialog-boxes/03_11_mod_scr_secr.md
-#####    - file: 02_dialog-boxes/03_13_mod_smr.ipynb
-#####     - file: 02_dialog-boxes/03_13_mod_smr.md
-#####    - file: 02_dialog-boxes/03_12_mod_mr.md
-#####    - file: 02_dialog-boxes/03_14_mod_sc.md
-#####    - file: 02_dialog-boxes/03_15_mod_catspim.md
-#####    - file: 02_dialog-boxes/03_16_mod_2flankspim.md
-#####   - file: 02_dialog-boxes/03_17_mod_rem.md
-#####    - file: 02_dialog-boxes/03_18_mod_rest.md
-#####    - file: 02_dialog-boxes/03_19_mod_tifc.md
-#####    - file: 02_dialog-boxes/03_20_mod_ds.md
-#####    - file: 02_dialog-boxes/03_21_mod_tte.md
-#####    - file: 02_dialog-boxes/03_22_mod_ste.md
-#####    - file: 02_dialog-boxes/03_23_mod_is.md
-  - caption: Glossary
-    maxdepth: 1
-    titlesonly: False
-    chapters:
-    - file: 02_dialog-boxes/09_gloss_ref/09_glossary.md
-#####    - file: 02_dialog-boxes/08_image_library.md
+#####- file: 02_dialog-boxes/03_05_mod_rai_poisson.md
+#####- file: 02_dialog-boxes/03_06_mod_rai_zip.md
+#####- file: 02_dialog-boxes/03_07_mod_rai_nb.md
+#####- file: 02_dialog-boxes/03_08_mod_rai_zinb.md
+#####- file: 02_dialog-boxes/03_09_mod_rai_hurdle.md
+#####- file: 02_dialog-boxes/03_11_mod_cr_cmr.ipynb
+#####- file: 02_dialog-boxes/03_10_mod_cr_cmr.md
+#####- file: 02_dialog-boxes/03_11_mod_scr_secr.ipynb
+#####- file: 02_dialog-boxes/03_11_mod_scr_secr.md
+#####- file: 02_dialog-boxes/03_13_mod_smr.ipynb
+##### - file: 02_dialog-boxes/03_13_mod_smr.md
+#####- file: 02_dialog-boxes/03_12_mod_mr.md
+#####- file: 02_dialog-boxes/03_14_mod_sc.md
+#####- file: 02_dialog-boxes/03_15_mod_catspim.md
+#####- file: 02_dialog-boxes/03_16_mod_2flankspim.md
+##### - file: 02_dialog-boxes/03_17_mod_rem.md
+#####- file: 02_dialog-boxes/03_18_mod_rest.md
+#####- file: 02_dialog-boxes/03_19_mod_tifc.md
+#####- file: 02_dialog-boxes/03_20_mod_ds.md
+#####- file: 02_dialog-boxes/03_21_mod_tte.md
+#####- file: 02_dialog-boxes/03_22_mod_ste.md
+#####- file: 02_dialog-boxes/03_23_mod_is.md
+####  - caption: References
+####    maxdepth: 0
+####    titlesonly: False
+####    chapters:
+- file: 02_dialog-boxes/09_gloss_ref/08_references.md
+####  - caption: Glossary
+####    maxdepth: 0
+####    titlesonly: False
+####    chapters:  
+- file: 02_dialog-boxes/09_gloss_ref/09_glossary.md
