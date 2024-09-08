@@ -11,12 +11,8 @@
             "id": "8cb006d098b0067f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -148,11 +140,51 @@
   },
   "active": "8cb006d098b0067f",
   "lastOpenFiles": [
-    "02_dialog-boxes/word_entry/word_entry_DEMO_CASS/~$try_03_02_mod_divers_rich.docx",
-    "02_dialog-boxes/00_for-later/03_19_mod_tifc.md",
-    "02_dialog-boxes/00_for-later/03_22_mod_is.md",
-    "02_dialog-boxes/00_for-later/03_11_mod_scr_secr.md",
-    "02_dialog-boxes/00_00_welcome.md",
-    "_build/html/_sources/02_dialog-boxes/00_00_welcome.md"
+    "docs/_images/vandooren_2016_fig1.png",
+    "docs/_images/southwell_et_al_2019_fig1.png",
+    "docs/_images/tourani_et_al_2020_fig1.png",
+    "docs/_images/rcsc_et_al_2024_detection_probability_2023_05_04.png",
+    "docs/_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png",
+    "docs/_images/pyron_2010_fig1_clipped.png",
+    "docs/_images/pyron_2010_fig1.png",
+    "docs/_images/murray_et_al_2021.jpg",
+    "docs/_images/molloy_2018_fig9.png",
+    "docs/_images/meek_et_al_2014_fig11.png",
+    "docs/_images/mccomb_et_al_2010_fig4_3_clipped.png",
+    "docs/_images",
+    "docs/searchindex.js",
+    "docs/search.html",
+    "docs/objects.inv",
+    "docs/index.html",
+    "docs/genindex.html",
+    "docs/02_dialog-boxes/09_gloss_ref/08_references.html",
+    "docs/02_dialog-boxes/09_gloss_ref/09_glossary.html",
+    "docs/02_dialog-boxes/09_gloss_ref",
+    "docs/02_dialog-boxes/03_03_mod_occupancy.html",
+    "docs/_sources/02_dialog-boxes/09_gloss_ref/09_glossary.md",
+    "docs/_sources/02_dialog-boxes/09_gloss_ref/08_references.md",
+    "docs/_sources/02_dialog-boxes/03_02_mod_divers_rich_old.md",
+    "docs/_sources/02_dialog-boxes/03_03_mod_occupancy.md",
+    "docs/_sources/02_dialog-boxes/03_02_mod_divers_rich_new.md",
+    "docs/_sources/02_dialog-boxes/03_01_mod_inventory.md",
+    "docs/_sources/02_dialog-boxes/01_47_cam_independent.md",
+    "docs/_sources/02_dialog-boxes/01_21_sp_behav.md",
+    "docs/_sources/02_dialog-boxes/01_20_sp_detprob_cat.md",
+    "docs/_sources/02_dialog-boxes/01_19_sp_rarity.md",
+    "docs/_sources/02_dialog-boxes/01_18_sp_size.md",
+    "docs/_sources/02_dialog-boxes/01_17_sp_hr_size.md",
+    "docs/_sources/02_dialog-boxes/01_14_sp_type.md",
+    "docs/_sources/02_dialog-boxes/01_16_sp_occ_restr.md",
+    "docs/_sources/02_dialog-boxes/01_15_sp_dens_low.md",
+    "docs/_sources/02_dialog-boxes/01_13_sp_info.md",
+    "docs/_sources/02_dialog-boxes/01_10_sp_asymptote.md",
+    "docs/_sources/02_dialog-boxes/01_06_cam_strat_covar.md",
+    "docs/_sources/02_dialog-boxes/01_08_surv_dur_min_max.md",
+    "docs/_sources/02_dialog-boxes/01_02_objective.md",
+    "docs/_sources/02_dialog-boxes/01_03_num_cams.md",
+    "docs/_sources/02_dialog-boxes/00_template_master_test.md",
+    "docs/_sources/02_dialog-boxes/00_07_rec_approach.md",
+    "docs/_sources/02_dialog-boxes/00_06_data_analysis.md",
+    "docs/_sources/02_dialog-boxes/00_04_target_species.md"
   ]
 }

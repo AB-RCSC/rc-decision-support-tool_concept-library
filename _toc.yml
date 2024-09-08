@@ -22,7 +22,7 @@ parts:
       sections:
 #      - file: 02_dialog-boxes/01_01_user_entry.md
       - file: 02_dialog-boxes/01_02_objective.md
-#      - file: 02_dialog-boxes/01_03_num_cams.md
+      - file: 02_dialog-boxes/01_03_num_cams.md
 ### Study area & Site selection
   - caption: Study area & Site selection
     maxdepth: 1

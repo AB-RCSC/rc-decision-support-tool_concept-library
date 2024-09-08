@@ -1698,34 +1698,6 @@ sphinx:
   config:
     html_theme: pydata_sphinx_theme
     html_show_sourcelink: False
-    html_theme_options:
-      nosidebar: true
-      navbar_start: []
-      navbar_center: []
-      navbar_end: []
-      navbar_persistent: []
-      show_nav_level: 0
-      navigation_depth: 0
-      collapse_navigation: true
-#      sidebar-primary: []
-      sidebar-primary: false
-      sidebar_includehidden: false
-      primary_sidebar_end: false
-#      primary_sidebar_end: []
-#      secondary_sidebar: []
-      secondary_sidebar: false
-      secondary_sidebar_items: []  ##hide right-side sidebar
-#      navbar_start: ["navbar-logo"]
-      content_footer_items: []
-      content_footer_items: false
-      footer_start: []
-      footer_end: []
-      footer_center: []
-#      section_nav: []
-      sidebars: []
-      article_footer_items: []
-      show_prev_next: False ##hide previous and next buttons
-      navbar_align: left
 ## https://jupyterbook.org/en/stable/structure/toc.html
 
 
