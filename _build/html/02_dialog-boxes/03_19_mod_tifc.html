@@ -1,0 +1,684 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>&lt;no title&gt; &#8212; Remote Camera Decision Support Tool - Concept Library</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/03_19_mod_tifc';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="References" href="09_gloss_ref/08_references.html" />
+    <link rel="prev" title="Occupancy" href="03_03_mod_occupancy.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_01_objective_resources.html">
+    Objectives & Resources
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_02_study_area_site_selection_constraints.html">
+    Study area & Site selection
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_03_duration_timing.html">
+    Duration & Timing
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_04_target_species.html">
+    Target species
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_06_data_analysis.html">
+    Data & Analysis
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" current active">
+  <a class="nav-link dropdown-item nav-internal" href="00_07_rec_approach.html">
+    Modelling Approaches
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="09_gloss_ref/08_references.html">
+    References
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="09_gloss_ref/09_glossary.html">
+    Glossary
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+  </div>
+  
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_01_objective_resources.html">
+    Objectives & Resources
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_02_study_area_site_selection_constraints.html">
+    Study area & Site selection
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_03_duration_timing.html">
+    Duration & Timing
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_04_target_species.html">
+    Target species
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="00_06_data_analysis.html">
+    Data & Analysis
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="00_07_rec_approach.html">
+    Modelling Approaches
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="09_gloss_ref/08_references.html">
+    References
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="09_gloss_ref/09_glossary.html">
+    Glossary
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="00_07_rec_approach.html" class="nav-link">Modelling Approaches</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">&lt;no title&gt;</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <style>
+  h1 {
+    font-size: 1.5rem;font-weight: bold;
+  }
+(i_mod_tifc)=
+# {{ name_mod_tifc }}
+
+:::::::::{div} full-width
+
+::::::{dropdown} Assumptions, Pros, Cons
+:::::{grid}
+
+::::{grid-item-card} Assumptions
+- {{ mod_tifc_assump_01 }}
+- {{ mod_tifc_assump_02 }}
+- {{ mod_tifc_assump_03 }}
+::::
+::::{grid-item-card} Pros
+- {{ mod_tifc_pro_01 }}
+- {{ mod_tifc_pro_02 }}
+::::
+::::{grid-item-card} Cons
+- {{ mod_tifc_con_01 }}
+- {{ mod_tifc_con_02 }}
+- {{ mod_tifc_con_03 }}
+::::
+:::::
+::::::
+
+:::::::{tab-set}
+
+::::::{tab-item} Overview
+
+**{{ term_mod_tifc }}**: {{ term_def_mod_tifc  }}
+<br>
+
+
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tifc1.png
+:width: 80px
+:align: center
+```  
+<br>
+
+
+::::::
+
+::::::{tab-item} Advanced
+<p>The time in front of the camera (TIFC) model is based on quadrat sampling. Typically, quadrats are used to sample slow- or non-moving organisms at a moment in time; as a simple example, a researcher lays a quadrat on the ground, counts the number of mussels in it and divides the count by the quadrat area. TIFC treats the camera viewshed like a vertical quadrat ({{ ref_intext_becker_et_al_2022 }}; {{ ref_intext_dickie_2022 }}). Unlike a conventional quadrat, however, the camera viewshed samples highly mobile organisms in a relatively small sliver of space and over long periods time ({{ ref_intext_becker_et_al_2022 }}; {{ ref_intext_dickie_2022 }}). The count of animals in the camera viewshed “quadrat,” then, can be thought of in “animal time” and the area covered by the quadrat in “area-time,” such that: </p><br>
+
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tifc1.png
+:width: 80px
+:align: center
+```  
+
+**Clarke et al. (2023) – Fig. 8**: A) Still from 中島啓裕’s (2021) video series. Example of overlaying a video recording of an animal on a reference image of the focal area (faint triangle) to determine staying time *T*. B) Still from Appendix S2 from Palencia et al. (2021). Example of superimposing the focal area on an image capture.
+<br>
+<p>where the numerator, animal-time, is the number of animals *N* multiplied by the time those animals spend in the viewshed *T<sub>O</sub>*, summed over all detections; and the denominator, area-time, is the area of the viewshed *A<sub>V</sub>* multiplied by the total camera operating time *T<sub>O</sub>* ({{ ref_intext_becker_et_al_2022 }}). Using this equation, density must be calculated for each species at each camera station, then averaged across the camera network. 
+
+To calculate *A<sub>V</sub>*: in the field, markers (e.g., poles) must be placed at known distances from the camera to divide the viewshed into distance bins; during analysis, the proportion of detections in each bin is determined ({{ ref_intext_becker_et_al_2022 }}). The camera angle of view – which varies with make and model – is also needed to solve for *A<sub>V</sub>*. In most cases, *T<sub>O</sub>* will be the time from initial camera deployment to final camera collection ({{ ref_intext_becker_et_al_2022 }}). In case of displacement, damage or failure, cameras should be programmed to take time-lapse images, so end-of-operation time can be traced back to a specific day or hour ({{ ref_intext_becker_et_al_2022 }}).</p></br>
+
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_fig9_clipped.png
+:width: 80px
+:align: center
+```  
+<br>
+*Clarke et al. (2023) – Fig. 9*. Examples of behaviours that increase time in the viewshed (*𝑇~𝑣~*). A) A mule deer inspects a camera trap. &copy Cole Burton, Wildlife Coexistence Lab. B) A black bear pulls on the lock securing a camera trap to a tree. &copy Michael Procko, Wildlife Coexistence Lab. 
+<br>
+
+## Simulations and Field Experiments (Clarke et al., 2023) 
+
+</p>The TIFC model has been field-tested on several different species. For moose, TIFC produced similar density estimates as aerial distance sampling (DS) after TIFC-derived estimates were corrected for the time animals spent investigating equipment (camera and 5 m pole; {{ ref_intext_becker_et_al_2022 }})). This study used image data collected in Alberta at 2,990 camera stations over the course of 6 years; despite the large sample size and long study duration, estimates were not very precise.<br>
+<br>
+A study of five ungulate species (moose, bison, elk, mule and white-tailed deer) in two enclosed parks in Alberta found that TIFC- and aerial survey-derived density estimates were similar for moose and bison, but that TIFC significantly overestimated elk density compared with aerial surveys ({{ ref_intext_foca_2021 }}). Two potential reasons for the discrepancy in elk density are: 1) that aerial surveys underestimated density, since elk in the study area occupy forested habitats, do not form large herds during the survey period, and estimates were not corrected for sightability; and 2) cameras may have been disproportionately set in areas elk prefer ({{ ref_intext_foca_2021 }}). Group travelling behaviour may also have affected elk TIFC estimates, since detection probability and time in the viewshed (*T<sub>V</sub>*) can change with group size ({{ ref_intext_foca_2021 }}). Estimates of mule and white-tailed deer densities could not be compared with aerial survey results, since deer are not surveyed by air in this area. Foca’s (2021) TIFC analyses produced the first density estimates for deer in both parks.<br>
+<br>
+
+In Uganda, TIFC-derived estimates of antelope were comparable to results from camera trap spatial capture-recapture (SCR; {{ ref_intext_brownlee_et_al_2022 }}; {{ ref_intext_warbington_boyce 2020 }}). The model performed inconsistently for black bears, caribou, white-tailed deer and other species, however, compared to camera-based spatial count (SC), DNA markre capture and aerial survey methods (Fisher et al. in review).</p><br>
+
+::::::
+
+::::::{tab-item} Visual resources
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tifc1.png
+:height: 300px
+:align: center
+```
+
+**Clarke et al. (2023) – Fig. 8**: A) Still from 中島啓裕’s (2021) video series. Example of overlaying a video recording of an animal on a reference image of the focal area (faint triangle) to determine staying time *T*. B) Still from Appendix S2 from Palencia et al. (2021). Example of superimposing the focal area on an image capture. 
+::::
+
+::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
+```{figure} ../03_images/03_image_files/clarke_et_al_2023_fig9_clipped.png 
+:width: 300px
+:align: center
+```
+**Clarke et al. (2023) - Fig. 9**: Examples of behaviours that increase time in the viewshed (*𝑇~𝑣~*). A) A mule deer inspects a camera trap. &copy Cole Burton, Wildlife Coexistence Lab. B) A black bear pulls on the lock securing a camera trap to a tree. &copy Michael Procko, Wildlife Coexistence Lab. 
+::::
+
+::::{grid-item-card} {{ ref_intext_becker_2024 }}
+```{figure} ../03_images/03_image_files/becker_2024_slide8.png 
+:width: 300px
+:align: center
+```
+[FROM MARCUS PPT SLIDE 8; NEED PERMISSION]
+::::
+
+:::::
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext_becker_2024 }}
+```{figure} ../03_images/03_image_files/becker_2024_slide9a.png 
+:width: 300px
+:align: center
+```
+FROM MARCUS PPT SLIDE 9; NEED PERMISSION
+
+::::
+
+::::{grid-item-card} {{ ref_intext_becker_2024 }}
+```{figure} ../03_images/03_image_files/becker_2024_slide12.png 
+:width: 300px
+:align: center
+```
+FROM MARCUS PPT SLIDE 12; NEED PERMISSION
+::::
+
+::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
+```{figure} ../03_images/03_image_files/figure6_filename.png
+:width: 300px
+:align: center
+```
+figure6_caption
+::::
+:::::
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext vid3_ref_id }}
+<iframe 
+    width="300"
+    height="200"
+    src="<center>
+<iframe src="https://drive.google.com/file/d/1IdxQScbzkHd2griu-dEYM4FTFjaXalKe/preview" width="640" height="480" allow="autoplay"></iframe>
+</center>"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+How to estimate density using TIFC; 
+Video clip from presentation titled “Comparisons between moose densities with aerial surveys and integrated camera projects”
+
+FROM MARCUS PPT; NEED PERMISSION
+::::
+
+::::{grid-item-card} {{ ref_intext vid2_ref_id }} 
+<iframe 
+    width="300"
+    height="200"
+    src="vid2_url"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+vid2_caption
+::::
+
+::::{grid-item-card} {{ ref_intext vid3_ref_id }}
+<iframe 
+    width="300"
+    height="200"
+    src="vid3_url"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+vid3_caption
+::::
+:::::
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext vid4_ref_id }} 
+
+<iframe 
+    width="300"
+    height="200"
+    src="vid4_url"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+vid4_caption 
+::::
+
+::::{grid-item-card} {{ ref_intext_vid5_ref_id }}
+
+<iframe 
+    width="300"
+    height="200"
+    src="vid5_url"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+vid5_caption
+::::
+
+::::{grid-item-card} {{ ref_intext vid6_ref_id }}
+<iframe 
+    width="300"
+    height="200"
+    src="vid6_url"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+vid6_caption
+::::
+
+:::::
+
+::::::
+
+::::::{tab-item} Shiny apps/Widgets
+Check back in the future!
+<!—-
+:::::{card}
+**shiny_name **
+
+shiny_caption
+
+<iframe 
+    width="100%"
+    height="900"
+    src="shiny_url"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+:::::
+-->
+
+::::::
+
+::::::{tab-item} Analytical tools & resources
+| Type | Name | Note | URL |Reference |
+|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
+| Tutorial | Estimating animal density using TIFC (Time In Front of Camera) | Created by author of TIFC method.  | <https://github.com/mabecker89/tifc-method> | {{ ref_bib_becker_et_al_2021 }} |
+| Tutorial  | Animal Density from Camera Data: Time in the camera field of view | resource2_note | <https://mabecker89.github.io/abmi.camera.extras/articles/fov.html> | {{ ref_bib_resource2_ref_id }} |
+| resource3_type | Animal Density from Camera Data:  | resource3_note | resource3_url | {{ ref_bib_resource3_ref_id }} |
+| resource4_type | resource4_name | resource4_note | resource4_url | {{ ref_bib_resource4_ref_id }} |
+| resource5_type | resource5_name | resource5_note | resource5_url | {{ ref_bib_resource5_ref_id }} |
+| resource6_type | resource6_name | resource6_note | resource6_url | {{ ref_bib_resource6_ref_id }} |
+| resource7_type | resource7_name | resource7_note | resource7_note | {{ ref_bib_resource7_ref_id }} |
+::::::
+
+::::::{tab-item} References
+<font size="3">
+{{ ref_bib_becker_et_al_2022 }}
+
+{{ ref_bib_foca_2021 }}
+
+</font>
+::::::
+
+:::::::
+
+::::::::
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02_dialog-boxes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

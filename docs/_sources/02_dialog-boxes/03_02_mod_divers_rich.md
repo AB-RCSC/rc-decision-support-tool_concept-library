@@ -96,23 +96,17 @@ editor_options:
 **{{ term_mod_divers_rich_divers }}**: {{ term_def_mod_divers_rich_divers }}
 
 Note that there are multiple “levels” to Species diversity & richness, these include:
-
-    - **{{ term_mod_divers_rich_alpha }}**: {{ term_def_mod_divers_rich_alpha }}
-
-    - **{{ term_mod_divers_rich_beta }}**: {{ term_def_mod_divers_rich_beta }}
-
-    - **{{ term_mod_divers_rich_gamma }}**: {{ term_def_mod_divers_rich_gamma }}
+- **{{ term_mod_divers_rich_alpha }}**: {{ term_def_mod_divers_rich_alpha }}
+- **{{ term_mod_divers_rich_beta }}**: {{ term_def_mod_divers_rich_beta }}
+- **{{ term_mod_divers_rich_gamma }}**: {{ term_def_mod_divers_rich_gamma }}
 
 <br>
 “Species richness** is simply “the total number of species in an assemblage or a sample” ({{ ref_intext_gotelli_chao_2013 }}.
 
 Species richness in an assemblage is difficult to estimate reliably from sample data because it is very sensitive to the number of individuals and the number of samples collected. Species richness is a diversity of order 0 (which means it is completely insensitive to species abundances).
 
-
-
-
 Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon's Index H'.” {{ ref_intext_pyron_2010 }}
-```{figure} ../03_images/03_image_files/pyron_2010_fig1.png
+```{figure} ../03_images/03_image_files/pyron_2010_fig1_clipped.png
 :align: center
 :scale: 60%
 ```
@@ -296,12 +290,11 @@ Generating a rarefaction curve from collector's curves in R within the tidyverse
 
 ::::::
 
-
 ::::::{tab-item} Shiny apps/Widgets
 :::::{card}
 **iNext Online**
 
- Software for interpolation and extrapolation of species diversity Rarefied Species Accumulation Curves (the simple way) tutoriall
+ Software for interpolation and extrapolation of species diversity.
 
 <iframe 
     width="100%"
@@ -345,7 +338,7 @@ Generating a rarefaction curve from collector's curves in R within the tidyverse
 
 {{ ref_bib_gerhartbarley_nd }}
 
-{{ ref_gotelli_chao_2013 }}
+{{ ref_bib_gotelli_chao_2013 }}
 
 {{ ref_bib_gotelli_colwell_2001 }}
 

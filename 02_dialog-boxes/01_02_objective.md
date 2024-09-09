@@ -29,7 +29,7 @@ editor_options:
 ::::::{tab-item} Overview
 One of the first choices you will make when designing your study, is what it is that you plan to measure (or your “state variable”; a formal measure that summarizes the state of a community or population at a particular time (Wearn & Glover Kapfer, 2017))
 
-Since this concept might be easy to confuse with Survey Objective(s)](./glossary_ref/09_glossary.md#survey_objectives) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:
+Since this concept might be easy to confuse with [Survey Objective(s)](./glossary_ref/09_glossary.md#survey_objectives) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:
 
 :::::{dropdown} Objective *vs.* State Variable
 

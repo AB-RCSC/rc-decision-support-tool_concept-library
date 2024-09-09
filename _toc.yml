@@ -62,7 +62,7 @@ parts:
       - file: 02_dialog-boxes/01_18_sp_size.md
       - file: 02_dialog-boxes/01_19_sp_rarity.md
       - file: 02_dialog-boxes/01_20_sp_detprob_cat.md
-      - file: 02_dialog-boxes/01_21_sp_behav.md
+#      - file: 02_dialog-boxes/01_21_sp_behav.md
 #       - file: 02_dialog-boxes/01_22_sp_behav_season.md
 #       - file: 02_dialog-boxes/01_23_marking_code.md
 #       - file: 02_dialog-boxes/01_24_marking_allsub.md
@@ -141,7 +141,7 @@ parts:
 #       - file: 02_dialog-boxes/03_16_mod_2flankspim.md
 #       - file: 02_dialog-boxes/03_17_mod_rem.md
 #       - file: 02_dialog-boxes/03_18_mod_rest.md
-#       - file: 02_dialog-boxes/03_19_mod_tifc.md
+      - file: 02_dialog-boxes/03_19_mod_tifc.md
 #       - file: 02_dialog-boxes/03_20_mod_ds.md
 #       - file: 02_dialog-boxes/03_21_mod_tte.md
 #       - file: 02_dialog-boxes/03_22_mod_ste.md
