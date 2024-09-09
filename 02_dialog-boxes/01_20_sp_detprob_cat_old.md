@@ -28,7 +28,6 @@ editor_options:
 
 ::::::{tab-item} Overview
 
-**{{ term_mod_divers_rich }}**: {{ term_def_mod_divers_rich }}
 <br>**Detection probability categories are defined as follows:**
 
 - **Low**:
@@ -341,57 +340,3 @@ Related documents: <https://zenodo.org/records/13120206>
 | resource6_type | resource6_name | resource6_note | resource6_url | {{ ref_bib_resource6_ref_id }} |
 | resource7_type | resource7_name | resource7_note | resource7_note | {{ ref_bib_resource7_ref_id }} |
 ::::::
-
-::::::{tab-item} References
-<font size="3">
-
-{{  ref_bib_rcsc_et_al_2024 }} 
-
-{{ ref_bib_hofmeester_et_al_2019 }}
-
-{{ ref_bib_burton_et_al_2015 }}
-
-{{ ref_bib_caravaggi_et_al_2020 }}
-
-{{ ref_bib_chatterjee_et_al_2021 }}
-
-{{ ref_bib_denes_et_al_2015 }}
-
-{{ ref_bib_findlay_et_al_2020 }}
-
-{{ ref_bib_hofmeester_et_al_2019 }}
-
-{{ ref_bib_iknayan_et_al_2014 }}
-
-{{ ref_bib_jennelle_et_al_2002 }}
-
-{{ ref_bib_kays_et_al_2021 }}
-
-{{ ref_bib_mackenzie_kendall_2002 }}).
-
-{{ ref_bib_mackenzie_royle_2005 }}
-
-{{ ref_bib_mackenzie_et_al_2004 }}
-
-{{ ref_bib_martin_et_al_2005 }}
-
-{{ ref_bib_mikkela_2024 }}
-
-{{ ref_bib_moeller_et_al_2023 }}
-
-{{ ref_bib_obrien_et_al_2011 }}
-
-{{ ref_bib_rowcliffe_et_al_2011 }}
-
-{{ ref_bib_shannon_et_al_2014 }}
-
-{{ ref_bib_solymos_et_al_2024 }}
-
-{{ ref_bib_tobler_powell, 2013 }}
-
-{{ ref_bib_tourani_et_al_2020 }}</font>
-::::::
-
-:::::::
-
-:::::::::
