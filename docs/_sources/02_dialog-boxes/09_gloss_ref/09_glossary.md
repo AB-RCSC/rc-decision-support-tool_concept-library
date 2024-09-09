@@ -12,14 +12,11 @@ kernelspec:
   name: python3
 editor_options: 
   markdown: 
-    wrap: none
+  wrap: none
 ---
 (#glossary)=
 
 # Glossary
-
-(#test)=
-test
 
 (#access_method)=
 **\*Access Method**
@@ -983,7 +980,7 @@ Walktest
 
 **Walktest Height (m)**
 : The vertical distance from the camera at which the crew performs the walktest (metres; to the nearest 0.05 m). Leave blank if not applicable.
-
+  
 (#mods_zinb)=
 
 Zero-inflated negative binomial (ZINB) regression (McCullagh & Nelder, 1989)

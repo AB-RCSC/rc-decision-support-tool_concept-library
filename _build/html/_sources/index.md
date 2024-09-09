@@ -31,7 +31,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_01_user_entry.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_01_user_entry.html
 :img-background: ./03_images/01_ui/background_orangelight.png
 :padding: 1
 :text-align: center
@@ -40,7 +40,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_02_objective.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_objective.html
 :img-background: ./03_images/01_ui/background_orangelight.png
 :padding: 1
 :text-align: center
@@ -49,7 +49,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_03_num_cams.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_03_num_cams.html
 :img-background: ./03_images/01_ui/background_orangelight.png
 :padding: 1
 :text-align: center
@@ -68,7 +68,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_04_study_area_mult.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_04_study_area_mult.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -77,7 +77,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_05_cam_dens_gradient.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_05_cam_dens_gradient.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -86,7 +86,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_06_cam_strat_covar.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_06_cam_strat_covar.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -97,7 +97,7 @@ jupyter-book build ./
 
 ::::{grid} 3
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_07_cam_high_dens.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_07_cam_high_dens.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -116,7 +116,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_08_surv_dur_min_max.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_08_surv_dur_min_max.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -125,7 +125,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_10_sp_asymptote.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_10_sp_asymptote.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -134,7 +134,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_11_study_season_num.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_11_study_season_num.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -156,7 +156,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_12_obj_targ_sp.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_12_obj_targ_sp.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -165,7 +165,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_13_sp_info.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_13_sp_info.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -174,7 +174,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_14_sp_type.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_14_sp_type.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -187,7 +187,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_15_sp_dens_low.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_15_sp_dens_low.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -196,7 +196,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_16_sp_occ_restr.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_16_sp_occ_restr.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -205,7 +205,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_17_sp_hr_size.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_17_sp_hr_size.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -218,7 +218,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_18_sp_size.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_18_sp_size.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -227,7 +227,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_19_sp_rarity.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_19_sp_rarity.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -237,7 +237,7 @@ jupyter-book build ./
 
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_20_sp_detprob_cat.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_20_sp_detprob_cat.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -250,7 +250,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_21_sp_behav.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_21_sp_behav.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -259,7 +259,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_22_sp_behav_season.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_22_sp_behav_season.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -268,7 +268,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_23_marking_code.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_23_marking_code.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -281,7 +281,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_24_marking_allsub.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_24_marking_allsub.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -290,7 +290,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_25_3ormore_cat_ids.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_25_3ormore_cat_ids.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -299,7 +299,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_26_auxillary_info.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_26_auxillary_info.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -312,7 +312,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_27_aux_count_possible.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_27_aux_count_possible.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -321,7 +321,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_28_focalarea_calc.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_28_focalarea_calc.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -330,7 +330,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_29_cam_high_dens.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_29_cam_high_dens.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -343,7 +343,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_30_sp_common_pop_lg.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_30_sp_common_pop_lg.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -358,7 +358,7 @@ jupyter-book build ./
 
 ::::{grid} 3
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_31_sp_size_multi.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_31_sp_size_multi.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -367,7 +367,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_32_sp_behav__multi.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_32_sp_behav__multi.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -376,7 +376,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_33_sp_rarity_multi.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_33_sp_rarity_multi.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -389,7 +389,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_36_sp_detprob_cat_multi.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_36_sp_detprob_cat_multi.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -408,7 +408,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_39_cam_makemod_same.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_39_cam_makemod_same.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -417,7 +417,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_40_cam_settings_mult.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_40_cam_settings_mult.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -426,7 +426,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_41_cam_protocol_ht_angle_dir.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_41_cam_protocol_ht_angle_dir.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -439,7 +439,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_43_bait_lure.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_43_bait_lure.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -448,7 +448,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_45_targ_feature.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_45_targ_feature.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -465,7 +465,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_47_cam_independent.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_47_cam_independent.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -474,7 +474,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_48_multisamp_per_loc.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_48_multisamp_per_loc.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -483,7 +483,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_49_modmixed.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_49_modmixed.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -496,7 +496,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_50_num_det.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_50_num_det.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -505,7 +505,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_02_mod_divers_rich.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_mod_divers_rich.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -514,7 +514,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_52_num_recap.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_52_num_recap.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -527,7 +527,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/01_51_num_det_individ.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_51_num_det_individ.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -547,7 +547,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_01_mod_inventory.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_01_mod_inventory.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -556,7 +556,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_02_mod_divers_rich.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_02_mod_divers_rich.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -565,7 +565,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_03_mod_occupancy.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_03_mod_occupancy.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -578,7 +578,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_04_mod_rai.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_04_mod_rai.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -587,7 +587,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_11_mod_cr_cmr.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_11_mod_cr_cmr.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -596,7 +596,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_12_mod_scr_secr.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_12_mod_scr_secr.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -610,7 +610,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_13_mod_smr.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_13_mod_smr.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -619,7 +619,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_14_mod_sc.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_14_mod_sc.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -628,7 +628,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_15_mod_catspim.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_15_mod_catspim.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -641,7 +641,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_16_mod_2flankspim.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_16_mod_2flankspim.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -650,7 +650,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_17_mod_rem.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_17_mod_rem.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -659,7 +659,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_18_mod_rest.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_18_mod_rest.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -672,7 +672,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_19_mod_tifc.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_19_mod_tifc.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -681,7 +681,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_20_mod_ds.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_20_mod_ds.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -689,7 +689,7 @@ jupyter-book build ./
 *<font color='grey'><font size='3'>{{ name_mod_ds }}</font></font>*
 :::
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_21_mod_tte.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_21_mod_tte.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -702,7 +702,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_22_mod_ste.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_22_mod_ste.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -711,7 +711,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_23_mod_is.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_23_mod_is.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -720,7 +720,7 @@ jupyter-book build ./
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/03_24_mod_behaviour.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_24_mod_behaviour.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center

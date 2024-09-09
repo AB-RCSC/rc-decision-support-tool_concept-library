@@ -25,7 +25,7 @@ editor_options:
   }
 </style>
 (study-area-site-selection-constraints)=
-# Study area & Site selection constraints
+# Study area & Site selection
 
 ::::{grid} 3
 :gutter: 3

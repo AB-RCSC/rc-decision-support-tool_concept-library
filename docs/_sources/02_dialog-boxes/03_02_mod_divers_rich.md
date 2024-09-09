@@ -12,7 +12,7 @@ kernelspec:
   name: python3
 editor_options: 
   markdown: 
-  wrap: none
+    wrap: none
 --- 
 <style>
   h1 {
@@ -20,7 +20,7 @@ editor_options:
   }
 </style>
 (i_mod_divers_rich)=
-# {{ name_mod_divers_rich }}
+# {{ title_i_mod_divers_rich }}
 
 :::::::::{div} full-width
 
@@ -91,57 +91,58 @@ editor_options:
 
 ::::::{tab-item} Overview
 
-**{{ term_mod_divers_rich_rich }}**: {{ term_def_mod_divers_rich_rich }}
-
-**{{ term_mod_divers_divers }}**: {{ term_def_mod_divers_rich_divers }}
-
+**{{ term_mod_divers_rich }}**: {{ term_def_mod_divers_rich }}
 <br>
-“Species richness is simply the number of species in a community. 
+“Species richness is simply the number of species in an area ({{ ref_intext_wearn_gloverkapfer_2017 }})
 
 Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon's Index H'.” {{ ref_intext_pyron_2010 }}
-
 ```{figure} ../03_images/03_image_files/pyron_2010_fig1.png
 :align: center
 :scale: 60%
 ```
 
+:::{note}
+This section is still in progress
+:::
+
 ::::::
 
 ::::::{tab-item} Advanced
+:::{note}
+This section is still in progress
+:::
 
 Parameters:
-- **α-richness (alpha richness)**: species richness at the level of an individual camera location
+- **α-richness (alpha richness)**: species richness at the level of an individual camera location {{ ref_intext_wearn_gloverkapfer_2019 }}
 -  **γ-richness (gamma richness)**: species richness across a whole study area {{ ref_intext_wearn_gloverkapfer_2019 }}
-- **β-diversity (betadiversity)**: the differences between the communities or, more formally, the variance among the communities
+- **β-diversity (betadiversity)**: the differences between the communities or, more formally, the variance among the communities {{ ref_intext_wearn_gloverkapfer_2019 }}
 <br>
 
 **Observed *vs* estimated species richness** (from {{ ref_intext_wearn_gloverkapfer_2019 }}):
 - **Observed species richness**: the sum of the number of species seen (e.g. {{ ref_intext_kitamura_et_al_2010 }}; {{ ref_intext_pettorelli_et_al_2010 }}; {{ ref_intext_ahumada_et_al_2011 }}; {{ ref_intext_samejima_et_al_2012 }})
-- Observed species richness will not, in general, be a reliable index of actual species richness because, even if sampling effort is strictly controlled, the detectability of species will vary across samples
--  **Estimated species richness** (e.g. {{ ref_intext_tobler_et_al_2008 }}; {{ ref_intext_kinnaird-&-obrien-2012 }}; {{ ref_intext_brodie_et_al_2015 }}; {{ ref_intext_yue_et_al_2015 }}; {{ ref_intext_wearn_et_al_2016 }})
-  -   Species richness estimation involves attempting to correct for “imperfect detection”, i.e. the fact that some species in a given sample may have been missed (Box 6-1).
-<br>
+    -  Observed species richness will not, in general, be a reliable index of actual species richness because, even if sampling effort is strictly controlled, the detectability of species will vary across samples
 
-The **two principal ways of estimating species richness from camera trap dat ** are (from {{ ref_intext_wearn_gloverkapfer_2019 }}):<br> 
-- non-parametric estimators ({{ ref_intext_gotelli_chao_2013 }}), which use information about the rarest species in the sample to provide a minimum estimate of the number of true species (e.g. {{ ref_intext_tobler_et_al_2008 }}), 
-- or 2) occupancy models ({{ ref_intext_mackenzie_et_al_2006 }})
+-  **Estimated species richness**: when the “sum of the number of species seen” is adjusted based on corrections for “imperfect detection” (i.e. the fact that some species in a given sample may have been missed)
+    -  (e.g. {{ ref_intext_tobler_et_al_2008 }}; {{ ref_intext_kinnaird-&-obrien-2012 }}; {{ ref_intext_brodie_et_al_2015 }}; {{ ref_intext_yue_et_al_2015 }}; {{ ref_intext_wearn_et_al_2016 }})
+    -  The **two principal ways of estimating species richness from remote camera data ** are (from {{ ref_intext_wearn_gloverkapfer_2019 }}):<br> 
+        -   non-parametric estimators ({{ ref_intext_gotelli_chao_2013 }}), which use information about the rarest species in the sample to provide a minimum estimate of the number of true species (e.g. {{ ref_intext_tobler_et_al_2008 }}), 
+        -   or 2) occupancy models ({{ ref_intext_mackenzie_et_al_2006 }})
 ::::::
 
 ::::::{tab-item} Visual resources
-
 :::::{grid} 3
 :gutter: 1
 :padding: 0
 :margin: 0
 
 ::::{grid-item-card} {{ ref_intext_pyron_2010 }}
-```{figure} ../03_images/03_image_files/pyron_2010_fig1.png
+```{figure} ../03_images/03_image_files/pyron_2010_fig1_clipped.png
 :height: 300px
 :align: center
 ```
 
-<p>{{ **Figure 1: Species evenness and species richness for animalcule communities**<br>
-Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. }}<p/>
+**Pyron (2010) - Figure 1**: Species evenness and species richness for animalcule communities
+<!-- Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. -->
 ::::
 
 ::::{grid-item-card} {{ ref_intext_gotelli_colwell_2011 }}
@@ -149,7 +150,7 @@ Both communities contain five species of animalcules. Species richness is the sa
 :width: 300px
 :align: center
 ```
-<p>{{ NULL }}<p/>
+NULL
 ::::
 
 ::::{grid-item-card} {{ ref_intext_vandooren_2016 }}
@@ -157,7 +158,7 @@ Both communities contain five species of animalcules. Species richness is the sa
 :width: 300px
 :align: center
 ```
-<p>{{ NULL}}<p/>
+**Vandooren (2016) – Figure 1**: Species accumulation curves. Species richness is the asymptote of a species accumulation curve, which expresses the dependence on sampling effort of the number of species sampled from an assemblage….
 ::::
 
 :::::
@@ -172,15 +173,15 @@ Both communities contain five species of animalcules. Species richness is the sa
 :width: 300px
 :align: center
 ```
-<p>{{ NULL }}<p/>
+NULL
 ::::
 
 ::::{grid-item-card} {{ ref_intext_loreau_2010 }}
-```{figure} ../03_images/03_image_files/loreau_2010_fig4_clipped.png 
+```{figure} ../03_images/03_image_files/loreau_2010_fig4.png 
 :width: 300px
 :align: center
 ```
-<p>{{ **Loreau et al. (2010) – Figure 4.** Species accumulation and rarefaction curves. Species accumulation curves show the number of species obtained by successively censusing either individual organisms (individual-based accumulation curves) or samples (sample-based accumulation curves). Smoothed species rarefaction curves represent the statistical expectation of the corresponding accumulation curves. Credit: Rob Colwell, after Gotelli and Colwell (2001) }}<p/>
+**Loreau et al. (2010) – Figure 4.** Species accumulation and rarefaction curves. Species accumulation curves show the number of species obtained by successively censusing either individual organisms (individual-based accumulation curves) or samples (sample-based accumulation curves). Smoothed species rarefaction curves represent the statistical expectation of the corresponding accumulation curves. Credit: Rob Colwell, after Gotelli and Colwell (2001)
 ::::
 
 ::::{grid-item-card} {{ ref_intext_loreau_2010 }}
@@ -188,8 +189,8 @@ Both communities contain five species of animalcules. Species richness is the sa
 :width: 300px
 :align: center
 ```
-<p>{{ **Loreau et al. (2010) – Figure 3.** The various levels of organisation and components that define the multiple facets
-of biodiversity }}<p/>
+**Loreau et al. (2010) – Figure 3.** The various levels of organisation and components that define the multiple facets
+of biodiversity
 ::::
 :::::
 :::::{grid} 3
@@ -207,7 +208,7 @@ of biodiversity }}<p/>
     allowfullscreen>
 </iframe>
 
-<p> Abundance, species richness, and diversity <p/>
+Abundance, species richness, and diversity
 ::::
 
 ::::{grid-item-card} {{ ref_intext mecks100_2018 }} 
@@ -220,7 +221,7 @@ of biodiversity }}<p/>
     allowfullscreen>
 </iframe>
 
-<p>{{ Species accumulation and rarefaction curves }}<p/>
+Species accumulation and rarefaction curves
 ::::
 
 ::::{grid-item-card} {{ ref_intext riffomonas_project_2022a }}
@@ -233,7 +234,7 @@ of biodiversity }}<p/>
     allowfullscreen>
 </iframe>
 
-<p>{{ Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC196) }}<p/>
+Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC196)
 ::::
 :::::
 
@@ -253,10 +254,11 @@ of biodiversity }}<p/>
     allowfullscreen>
 </iframe>
 
-<p>{{ Species abundance tools in Genstat }}<p/>
+Species abundance tools in Genstat 
 ::::
 
 ::::{grid-item-card} {{ ref_intext_baylor_tutoring_center_2021 }}
+
 <iframe 
     width="300"
     height="200"
@@ -266,7 +268,7 @@ of biodiversity }}<p/>
     allowfullscreen>
 </iframe>
 
-<p>{{ Species Diversity and Species Richness }}<p/>
+Species Diversity and Species Richness
 ::::
 
 ::::{grid-item-card} {{ ref_intext styring_2020 }}
@@ -279,7 +281,29 @@ of biodiversity }}<p/>
     allowfullscreen>
 </iframe>
 
-<p>{{ Field Ecology - Diversity Metrics in R }}<p/>
+Field Ecology - Diversity Metrics in R
+::::
+
+:::::
+
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+::::{grid-item-card} {{ ref_intext_riffomonas_project_2022b}} 
+
+<iframe 
+    width="300"
+    height="200"
+    src="https://www.youtube.com/embed/ywHVb0Q-qsM?si=_xJ5jbFc6MDEQlAh "
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+Generating a rarefaction curve from collector's curves in R within the tidyverse (CC198)
 ::::
 
 :::::
@@ -289,9 +313,9 @@ of biodiversity }}<p/>
 
 ::::::{tab-item} Shiny apps/Widgets
 :::::{card}
-** iNEXTOnline **
+**iNext Online**
 
-shiny_caption
+ Software for interpolation and extrapolation of species diversity Rarefied Species Accumulation Curves (the simple way) tutoriall
 
 <iframe 
     width="100%"
@@ -303,15 +327,17 @@ shiny_caption
 </iframe>
 
 :::::
+
 ::::::
 
 ::::::{tab-item} Analytical tools & resources
-| Type | Name | Note | URL | Reference |
-|:----------------|:---------------------------------------|:-----------------------------------------------|:-----------------------------------------------|:----------------------------------------------|
+
+| Type | Name | Note | URL |Reference |
+|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
 | R package | Chapter 9 Community composition | \- | <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/composition.html#estimated-richnes> | {{ ref_bib_wildco_lab_2021b }} |
 | R package | R package “vegan | \- | <https://cran.r-project.org/web/packages/vegan/index.html> | {{ ref_bib_oksanen_et_al_2024 }} |
 | Program | EstimateS | Dedicated software for estimating diversity, using asymptotic or rarefaction methods. Mac version available | <https://www.robertkcolwell.org/pages/1407> | {{ ref_bib_colwell_2022 }} |
-| R package | Package ‘iNEXT’ - Interpolation and Extrapolation for Species Diversity | The iNext package (INterpolation and EXTrapolation of species richness) - is both easy to use and rapid to compute. It also comes with a wealth of plotting functions - see the iNext Quick Introduction for a great walk through tutorial. Its core functionality is based on: Chao, Anne, et al. “Rarefaction and extrapolation with Hill numbers: a framework for sampling and estimation in species diversity studies.” Ecological monographs 84.1 (2014): 45-67. | >https://cran.r-project.org/web/packages/iNEXT/iNEXT.pdf> | {{ ref_bib_hsieh_et_al_2015 }} |
+| R package | Package ‘iNEXT’ - Interpolation and Extrapolation for Species Diversity | The iNext package (INterpolation and EXTrapolation of species richness) - is both easy to use and rapid to compute. It also comes with a wealth of plotting functions - see the iNext Quick Introduction for a great walk through tutorial. Its core functionality is based on: Chao, Anne, et al. “Rarefaction and extrapolation with Hill numbers: a framework for sampling and estimation in species diversity studies.” Ecological monographs 84.1 (2014): 45-67. | <https://cran.r-project.org/web/packages/iNEXT/iNEXT.pdf> | {{ ref_bib_chao_et_al_2016 }} |
 | Exercise/Tutorial | 2.2: Measuring Species Diversity | Easy to interpet explanation of species richness vs evenness, species area curves, rarefaction, and how to calculate diversity | <https://bio.libretexts.org/Courses/University_of_California_Davis/BIS_2B%3A_Introduction_to_Biology_-_Ecology_and_Evolution/02%3A_Biodiversity/2.02%3A_Measuring_Species_Diversity> | {{ ref_bib_gerhartbarley_nd }} |
 | R package / Tutorial | Species Accumulation Curves with vegan, BiodiversityR and ggplot2 | Software for interpolation and extrapolation of species diversityRarefied Species Accumulation Curves (the simple way) | <https://rpubs.com/Roeland-KINDT/694021> | {{ ref_bib_resource6_ref_id }} |
 | resource7_type | resource7_name | resource7_note | resource7_note | {{ ref_bib_resource7_ref_id }} |
@@ -326,9 +352,9 @@ shiny_caption
 
 {{ ref_bib_brodie_et_al_2015 }}
 
-{{ chao_et_al_2016 }}
+{{ ref_bib_chao_et_al_2016 }}
 
-{{ chao_et_al_2014 }}
+{{ ref_bib_chao_et_al_2014 }}
 
 {{ ref_bib_colwell_2022 }}
 
@@ -373,7 +399,7 @@ shiny_caption
 {{ ref_bib_wildco_lab_2021b }}
 
 {{ ref_bib_yue_et_al_2015 }}
-</font>\
+</font>
 ::::::
 
 :::::::

@@ -19,10 +19,10 @@ editor_options:
     font-size: 1.5rem;font-weight: bold;
   }
 </style>
-(i_objective)=
+((i_objective)=
 # {{ title_i_objective }}
 
-::::::::{div} full-width
+:::::::::{div} full-width
 
 :::::::{tab-set}
 
@@ -39,7 +39,14 @@ Since this concept might be easy to confuse with Survey Objective(s)](./glossary
 :align: center
 ```
 
+<!-- **{{ term_survey_objectives }}**: {{ term_def_survey_objectives }}
+The specific objectives of the study, including the Target Species, the state variables (e.g., occupancy, density), and proposed modelling approach(es). Objectives should be specific, measurable, achievable, relevant, and time bound (i.e., SMART).
+
+**{{ term_state_variable }}**: {{ term_def_state_variable }}
+a formal measure that summarizes the state of a community or population at a particular time (Wearn & Glover Kapfer, 2017), e.g., species richness or population abundance). -->
 :::::
+
+***
 
 The following sections include definitions for each option, with a few additional notes:
 
@@ -61,7 +68,7 @@ The following sections include definitions for each option, with a few additiona
 
 - **{{ name_obj_occupancy  }}**: {{ name_def_obj_occupancy }}
 
-- **Abundance (Relative vs. Absolute)**
+- **Abundance (Relative vs. Absolute)**:…..
 
     - **{{ name_obj_abundance }}**: {{ name_def_obj_abundance }}
   
@@ -71,7 +78,7 @@ The following sections include definitions for each option, with a few additiona
 
 - **{{ name_obj_vital_rate }}**: {{ name_def_obj_vital_rate }}
 
-- **{{ name_obj_behaviour }}**: {{ name_def_ obj_behaviour }}
+- **{{ name_obj_behaviour }}**: {{ name_def_obj_behaviour }}
 
 ::::::
 
@@ -81,12 +88,20 @@ The following sections include definitions for each option, with a few additiona
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} {{ ref_intext_mccomb_et_al_2010 }}
-```{figure} ../03_images/03_image_files/mccomb_et_al_2010_fig4_3_clipped.png
-:width: 300px
+::::{grid-item-card} {{ ref_intext_rcsc_2014b }}
+```{figure} ../03_images/03_image_files/00_FIG_obj_state_var.png
+:height: 300px
 :align: center
 ```
 
+::::
+
+::::{grid-item-card} {{ ref_intext_mccomb_et_al_2010 }}
+```{figure} ../03_images/03_image_files/mccomb_et_al_2010_fig4_3_clipped.png
+ 
+:width: 300px
+:align: center
+```
 **McComb et al. (2010) – Fig 4.3**: The components of a monitoring objective.
 ::::
 :::::
@@ -94,13 +109,15 @@ The following sections include definitions for each option, with a few additiona
 
 ::::::{tab-item} References
 <font size="3">
-{{ reb_bib_mccomb_et_al_2010 }}
 
-{{ reb_bib_wearn_gloverkapfer_2017 }}
+ {{ ref_bib_mccomb_et_al_2010 }}
+
+{{ ref_bib_wearn_gloverkapfer_2017 }}
+
 
 </font>
 ::::::
 
 :::::::
 
-::::::::
+:::::::::
