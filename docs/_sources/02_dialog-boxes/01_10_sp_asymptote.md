@@ -13,7 +13,7 @@ kernelspec:
 editor_options: 
   markdown: 
   wrap: none
----
+--- 
 <style>
   h1 {
     font-size: 1.5rem;font-weight: bold;
@@ -57,6 +57,14 @@ It will also impact the available modelling approaches since it not always neces
 :padding: 0
 :margin: 0
 
+::::{grid-item-card} {{ ref_intext_gotelli_chao_2013 }}
+```{figure} ../03_images/03_image_files/gotelli_chao_2013_fig4_clipped.png 
+:width: 300px
+:align: center
+```
+<font size="2">**Gotelli & Chao (2013) – Fig. 4** Standardized comparison of species richness for two individual-based rarefaction curves. The data represent summary counts of carabid beetles that were pitfall-trapped from a set of young pine plantations (o20 years old; upper curve) and a set of old pine plantations (20–60 years old; lower curve). The solid lines are the rarefaction curves, calculated from eqn [2], and the shaded polygons are the 95% confidence intervals, calculated from the unconditional variance eqn [5]. The young plantation samples contained 243 individuals representing 31 species, and the old plantation samples contained 63 individuals representing nine species. The dashed and dotted vertical line illustrates a species richness comparison standardized to 63 individuals, which was the observed abundance in the smaller of the two data sets. Data from Niemel ̈a J, Haila Y, Halme E, et al. (1988) The distribution of carabid beetles in fragments of old coniferous taiga and adjacent managed forest. Annales Zoologici Fennici 25: 107–199.</font>
+::::
+
 ::::{grid-item-card} {{ ref_intext_gotelli_colwell_2011 }}
 ```{figure} ../03_images/03_image_files/gotelli_and_colwell_2011_fig4_1_clipped.png
 :height: 300px
@@ -75,13 +83,6 @@ It will also impact the available modelling approaches since it not always neces
 
 ::::
 
-::::{grid-item-card} {{ ref_intext_loreau_2010 }}
-```{figure} ../03_images/03_image_files/loreau_2010_fig4_clipped.png 
-:width: 300px
-:align: center
-```
-<font size="2">**Loreau (2010) – Fig. 4** - Species accumulation and rarefaction curves. Species accumulation curves show the number of species obtained by successively censusing either individual organisms (individual-based accumulation curves) or samples (sample-based accumulation curves). Smoothed species rarefaction curves represent the statistical expectation of the corresponding accumulation curves. Credit: Rob Colwell, after Gotelli and Colwell (2001)</font>
-::::
 
 :::::
 
@@ -91,12 +92,11 @@ It will also impact the available modelling approaches since it not always neces
 :margin: 0
 
 ::::{grid-item-card} {{ ref_intext_loreau_2010 }}
-```{figure} ../03_images/03_image_files/loreau_2010_fig3.png 
+```{figure} ../03_images/03_image_files/loreau_2010_fig4_clipped.png 
 :width: 300px
 :align: center
 ```
-<font size="2">**Loreau (2010) – Fig. 3** The various levels of organisation and components that define the multiple facets
-of biodiversity</font>
+<font size="2">**Loreau (2010) – Fig. 4** - Species accumulation and rarefaction curves. Species accumulation curves show the number of species obtained by successively censusing either individual organisms (individual-based accumulation curves) or samples (sample-based accumulation curves). Smoothed species rarefaction curves represent the statistical expectation of the corresponding accumulation curves. Credit: Rob Colwell, after Gotelli and Colwell (2001)</font>
 ::::
 
 ::::{grid-item-card} {{ ref_intext_molloy_2018 }}
@@ -115,13 +115,12 @@ of biodiversity</font>
 <font size="2">**Rovero & Tobler (2010) - Fig. 4.** Raw (dashed line) and rarefied (continuous line) species accumulation curves for camera-trap inventory data from the Peruvian Amazon.</font>
 ::::
 :::::
-
 :::::{grid} 3
 :gutter: 1
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} {{ ref_intext wildlifedegree_2022 }}
+::::{grid-item-card} {{ ref_intext_rk_stats_2018 }}
 <iframe 
     width="300"
     height="200"
@@ -134,7 +133,7 @@ of biodiversity</font>
 <font size="2">Species Accumulation Curves (11 minutes)</font>
 ::::
 
-::::{grid-item-card} {{ ref_intext styring_2020b }} 
+::::{grid-item-card} {{ ref_intext_styring_2020b }}
 <iframe 
     width="300"
     height="200"

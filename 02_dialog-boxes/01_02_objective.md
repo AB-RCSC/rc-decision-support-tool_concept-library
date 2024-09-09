@@ -29,8 +29,7 @@ editor_options:
 ::::::{tab-item} Overview
 One of the first choices you will make when designing your study, is what it is that you plan to measure (or your “state variable”; a formal measure that summarizes the state of a community or population at a particular time (Wearn & Glover Kapfer, 2017))
 
-Since this concept might be easy to confuse with Survey Objective(s)](./glossary_ref/09_glossary.md#survey_objectives)
-) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:
+Since this concept might be easy to confuse with Survey Objective(s)](./glossary_ref/09_glossary.md#survey_objectives) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:
 
 :::::{dropdown} Objective *vs.* State Variable
 
@@ -66,9 +65,9 @@ The following sections include definitions for each option, with a few additiona
 
         -   **{{ term_mod_divers_rich_gamma }}**: {{ term_def_mod_divers_rich_gamma }}
 
-- **{{ name_obj_occupancy  }}**: {{ name_def_obj_occupancy }}
+- **{{ name_obj_occupancy }}**: {{ name_def_obj_occupancy }}
 
-- **Abundance (Relative vs. Absolute)**:…..
+- **Abundance (Relative vs. Absolute)**:..
 
     - **{{ name_obj_abundance }}**: {{ name_def_obj_abundance }}
   
@@ -110,7 +109,7 @@ The following sections include definitions for each option, with a few additiona
 ::::::{tab-item} References
 <font size="3">
 
- {{ ref_bib_mccomb_et_al_2010 }}
+{{ ref_bib_mccomb_et_al_2010 }}
 
 {{ ref_bib_wearn_gloverkapfer_2017 }}
 
