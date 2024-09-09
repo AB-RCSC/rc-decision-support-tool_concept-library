@@ -103,7 +103,7 @@ It will also impact the available modelling approaches since it not always neces
 :width: 300px
 :align: center
 :::
-<font size="2">**Molloy (2018) – Fig. 9** Species accumulation curve for camera trap data collected in Dryandra Woodland.  Sourced from Thomas & Cowan (2016)
+<font size="2">**Molloy (2018) – Fig. 9** Species accumulation curve for camera trap data collected in Dryandra Woodland.  Sourced from Thomas & Cowan (2016)</font>
 ::::
 
 ::::{grid-item-card} {{ ref_intext_rovero_et_al_2010 }}
@@ -158,7 +158,6 @@ It will also impact the available modelling approaches since it not always neces
 
 <font size="2">Rarefied Species Accumulation Curves (the simple way) tutorial: How to create beautiful rarefied species accumulation curves with species richness, shannon wiener or the simpson index with abundance data, or species richness with incidence data using the iNext Online interface (which runs the iNext R package in the background.</font>
 ::::
-
 :::::
 
 ::::::

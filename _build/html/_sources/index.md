@@ -36,7 +36,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_user_entry }}</font></font>*</font>
+*<font color='grey'><font size='3'>{{ title_i_user_entry }}</font></font>*
 :::
 
 :::{grid-item-card}

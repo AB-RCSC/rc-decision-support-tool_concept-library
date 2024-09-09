@@ -18,6 +18,7 @@ editor_options:
   h1 {
     font-size: 1.5rem;font-weight: bold;
   }
+</style>
 (i_mod_tifc)=
 # {{ name_mod_tifc }}
 

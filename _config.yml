@@ -82,6 +82,7 @@ extensions:
     - sphinx_design
     - myst_nb
     - sphinxext-rediraffe
+    - nbsphinx
 
 #######################################################################################
 # Launch button settings
@@ -108,10 +109,10 @@ repository:
 html:
   home_page_in_navbar: false          # https://stackoverflow.com/questions/74370793/how-to-hide-intro-index-page-in-toc-of-jupyterbook
 #  favicon                   : ""     # A path to a favicon image
-  use_issues_button: true            # Whether to add a link to your repository button
-  use_repository_button: true        # Whether to add a link to your repository button
+#  use_issues_button: true            # Whether to add a link to your repository button
+#  use_repository_button: true        # Whether to add a link to your repository button
 #  use_issues_button: true           # Whether to add an "open an issue" button
-  use_edit_page_button: true         # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
+#  use_edit_page_button: true         # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   google_analytics_id       : G-PJDP7DQ9Q0  # A GA id that can be used to track book views.#  use_multitoc_numbering    : true   # Continuous numbering across parts/chapters
   analytics:
       google_analytics_id: G-PJDP7DQ9Q0
@@ -122,48 +123,50 @@ sphinx:
   config:
     html_theme: pydata_sphinx_theme
     html_show_sourcelink: False
+#    html_sidebars: {
+#        "**": ["sidebar-nav-bs"]
+#    }
     html_theme_options:
 #      sidebars: false
-#      primary_sidebar_end: false
       nosidebar: true
 #      primary_sidebar: false
 #      primary_sidebar_end: false
-      globaltoc_includehidden: false
-      body_min_width: 90%
-      body_max_width: 90%
-      secondary_sidebar_items: false
+#      globaltoc_includehidden: false
+#      body_min_width: 90%
+#      body_max_width: 90%
+#      secondary_sidebar_items: false
       secondary_sidebar_items: []##hide right-side sidebar
-      sidebar_includehidden: false
-#      show_nav_level: 0
+#      sidebar_includehidden: false
+      show_nav_level: 0
       collapse_navigation: True
-      navbar_start: false
-      navbar_start: []
+#      navbar_start: false
+#      navbar_start: []
 #      navbar_center: ["navbar-logo"]
 #      navbar_center: []
-      navbar_end: false
-      navbar_end: []
-      navbar_persistent: false
-      navbar_persistent: []
-      content_footer_items: false
-      content_footer_items: []
-      article_footer_items: false
-      article_footer_items: []
+#      navbar_end: false
+#      navbar_end: []
+#      navbar_persistent: false
+#      navbar_persistent: []
+#      content_footer_items: false
+#      content_footer_items: []
+#      article_footer_items: false
+#      article_footer_items: []
       footer_start: false
       footer_end: false
       footer_start: []
-      footer_end: []
-#      footer_center: []
+#      footer_end: []
+##      footer_center: []
       show_prev_next: False ##hide previous and next buttons
-#      navbar_end: false
+##      navbar_end: false
+##      navbar_align: content
+##      #navigation_depth: 0
+##      sidebar-primary: []
+##      sidebar-primary: false
+##      primary_sidebar_end: false
+##      primary_sidebar_end: []
+##      section_nav: []
+##      sidebars: []
 #      navbar_align: content
-#      #navigation_depth: 0
-#      sidebar-primary: []
-#      sidebar-primary: false
-#      primary_sidebar_end: false
-#      primary_sidebar_end: []
-#      section_nav: []
-#      sidebars: []
-      navbar_align: content
 
 # https://jupyterbook.org/en/stable/structure/toc.html
 
