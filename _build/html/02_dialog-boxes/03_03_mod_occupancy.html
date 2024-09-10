@@ -204,14 +204,14 @@
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="09_gloss_ref/08_references.html">
+  <a class="nav-link dropdown-item nav-internal" href="08_references.html">
     References
   </a>
 </li>
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="09_gloss_ref/09_glossary.html">
+  <a class="nav-link dropdown-item nav-internal" href="09_glossary.html">
     Glossary
   </a>
 </li>
@@ -284,7 +284,9 @@ document.write(`
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -342,14 +344,14 @@ document.write(`
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="09_gloss_ref/08_references.html">
+  <a class="nav-link nav-internal" href="08_references.html">
     References
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="09_gloss_ref/09_glossary.html">
+  <a class="nav-link nav-internal" href="09_glossary.html">
     Glossary
   </a>
 </li>
@@ -379,21 +381,6 @@ document.write(`
       </div>
     
   </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<nav class="bd-docs-nav bd-links"
-     aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="03_01_mod_inventory.html">Species inventory</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_02_mod_divers_rich.html">Species diversity &amp; richness</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Occupancy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="03_19_mod_tifc.html">Time in front of the camera (TIFC)</a></li>
-</ul>
-</div>
-</nav></div>
-    </div>
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
@@ -466,10 +453,10 @@ document.write(`
 <div class="sd-card-title sd-font-weight-bold docutils">
 Assumptions</div>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#occupancy"><span class="std std-ref">Occupancy</span></a> is constant (MacKenzie et al., 2002) (abundance is constant) (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_location"><span class="std std-ref">Camera locations</span></a> are independent (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">Detections are <a class="reference internal" href="09_gloss_ref/09_glossary.html#independent_detections"><span class="std std-ref">independent</span></a> (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">The probability of <a class="reference internal" href="09_gloss_ref/09_glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> and detection are constant across all <a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_location"><span class="std std-ref">camera locations</span></a> within a stratum or can be modelled using covariates (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">Occupancy</span></a> is constant (MacKenzie et al., 2002) (abundance is constant) (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#camera_location"><span class="std std-ref">Camera locations</span></a> are independent (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text">Detections are <a class="reference internal" href="09_glossary.html#independent_detections"><span class="std std-ref">independent</span></a> (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text">The probability of <a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> and detection are constant across all <a class="reference internal" href="09_glossary.html#camera_location"><span class="std std-ref">camera locations</span></a> within a stratum or can be modelled using covariates (MacKenzie et al., 2006)</p></li>
 <li><p class="sd-card-text">Species are not misidentified (MacKenzie et al., 2006)</p></li>
 </ul>
 </div>
@@ -485,7 +472,7 @@ Pros</div>
 <li><p class="sd-card-text">Only requires detection*/non-detection data for each site (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Relatively easy-to-use software exists for fitting models (PRESENCE, MARK, and the ‘unmarked’ R package) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Open models exist that allow for the estimation of site colonization and extinction rates (MacKenzie et al., 2006; Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Multi-species <a class="reference internal" href="09_gloss_ref/09_glossary.html#mods_occupancy"><span class="std std-ref">occupancy models</span></a> (MacKenzie et al., 2002) allow the inclusion of interactions among species while controlling for <a class="reference internal" href="09_gloss_ref/09_glossary.html#imperfect_detection"><span class="std std-ref">imperfect detection</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Multi-species <a class="reference internal" href="09_glossary.html#mods_occupancy"><span class="std std-ref">occupancy models</span></a> (MacKenzie et al., 2002) allow the inclusion of interactions among species while controlling for <a class="reference internal" href="09_glossary.html#imperfect_detection"><span class="std std-ref">imperfect detection</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 </ul>
 </div>
 </div>
@@ -496,8 +483,8 @@ Pros</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Cons</div>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="09_gloss_ref/09_glossary.html#occupancy"><span class="std std-ref">Occupancy</span></a> (MacKenzie et al., 2002) only measures distribution; it may be a misleading indicator of changes in abundance (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Interpretation*/communication of results may not be straightforward (if the scale of movement is much larger than the <a class="reference internal" href="09_gloss_ref/09_glossary.html#camera_spacing"><span class="std std-ref">camera spacing</span></a> the results should be interpreted as ‘probability of use’ rather than <a class="reference internal" href="09_gloss_ref/09_glossary.html#occupancy"><span class="std std-ref">occupancy</span></a>) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">Occupancy</span></a> (MacKenzie et al., 2002) only measures distribution; it may be a misleading indicator of changes in abundance (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Interpretation*/communication of results may not be straightforward (if the scale of movement is much larger than the <a class="reference internal" href="09_glossary.html#camera_spacing"><span class="std std-ref">camera spacing</span></a> the results should be interpreted as ‘probability of use’ rather than <a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">occupancy</span></a>) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 </ul>
 </div>
 </div>
@@ -509,34 +496,31 @@ Cons</div>
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Overview</label><div class="sd-tab-content docutils">
-<p><strong>Occupancy model (MacKenzie et al., 2002)</strong>: The probability a site is occupied by the species MacKenzie et al., 2002
-<br>
-Add some info here</p>
+<p><strong>Occupancy model (MacKenzie et al., 2002)</strong>: A modelling approach used to account for imperfect detection by first evaluating the detection probability of a species via detection histories (i.e., present or absent) to determine the probability of the true presence or absence of a species at a site (MacKenzie et al., 2002).
+<br>Add some info here</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Advanced</label><div class="sd-tab-content docutils">
-<p>&lt;!—refs checked; need fix sollman 2018 –&gt;</p>
-<p>Occupancy models describe spatial patterns of animal occurrence (Sollmann et al., 2018) and have been proposed as a proxy for abundance ( Noon et al., 2012). They ask: what proportion of a study area is inhabited by a population – that is, at how many camera sites do one or more individuals of a species occur ( MacKenzie et al., 2017)? The basic equation for occupancy is:</p>
-<br>
-```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_occupancy1.png
-:align: center
-```
-<p>where <em>𝜓</em> is the probability a site is occupied, <em>𝑥</em> is the estimated number of occupied sites (i.e., the count of sites where animals were detected, corrected for detection probability) and 𝑠 is the total number of sites surveyed ( MacKenzie et al., 2017). Unlike simple measures of presence-absence, occupancy models account for imperfect detection ( Sollmann et al., 2018). They attempt to differentiate between absence – animals truly not present – and nondetection – animals present but not detected – by repeatedly sampling sites over time. The central assumption of basic occupancy models is that repeated samples occur during a period in which the site is closed to changes in occupancy (i.e., occupancy status – present or absent – does not change during the sampling period). Thus if a species is detected during one of three sampling occasions, it is assumed that it was present during all three occasions but undetected during two. <br>
+<p>Occupancy models describe spatial patterns of animal occurrence (Sollmann et al., 2018) and have been proposed as a proxy for abundance (Noon et al., 2012). They ask: what proportion of a study area is inhabited by a population – that is, at how many camera sites do one or more individuals of a species occur (MacKenzie et al., 2017)? The basic equation for occupancy is: <br><br></p>
+<figure class="align-center">
+<img alt="../_images/clarke_et_al_2023_eqn_occupancy1.png" src="../_images/clarke_et_al_2023_eqn_occupancy1.png" />
+</figure>
+<p>where <em>𝜓</em> is the probability a site is occupied, <em>𝑥̂</em> is the estimated number of occupied sites (i.e., the count of sites where animals were detected, corrected for detection probability) and 𝑠 is the total number of sites surveyed (MacKenzie et al., 2017). Unlike simple measures of presence-absence, occupancy models account for imperfect detection (Sollmann et al., 2018). They attempt to differentiate between absence – animals truly not present – and nondetection – animals present but not detected – by repeatedly sampling sites over time. The central assumption of basic occupancy models is that repeated samples occur during a period in which the site is closed to changes in occupancy (i.e., occupancy status – present or absent – does not change during the sampling period). Thus if a species is detected during one of three sampling occasions, it is assumed that it was present during all three occasions but undetected during two. <br>
 <br>
 In theory, occupancy and abundance share a predictable relationship. As population size increases, the number of sites occupied by members of that population should also increase (until all sites are occupied); likewise, a decrease in population size should lead to a decrease in the number of sites used (;  ). This is called an occupancy-abundance relationship, and – because of it – occupancy can be used as an index of abundance. <br>
 <br>
 Advantages of occupancy as an index of abundance include: <br>
 <br></p>
 <ul class="simple">
-<li><p>Occupancy studies may be easier to implement than some abundance or density estimators  (Noon et al., 2012;  Sollmann et al., 2018).</p></li>
-<li><p>Occupancy-abundance relationships appear to be robust to territoriality, grouptravelling behaviour and other biological traits (
+<li><p>Occupancy studies may be easier to implement than some abundance or density estimators (Noon et al., 2012;  Sollmann et al., 2018).</p></li>
+<li><p>Occupancy-abundance relationships appear to be robust to territoriality, group travelling behaviour and other biological traits (
 Steenweg et al., 2018).</p></li>
-<li><p>Occupancy can be modelled as a function of site- and sampling-specific covariates to better understand which factors predict animal occurrence ( Sollmann et al., 2018).<br>
+<li><p>Occupancy can be modelled as a function of site- and sampling-specific covariates to better understand which factors predict animal occurrence (Sollmann et al., 2018). <br>
 <br>
-However, many researchers have cautioned against the use occupancy as an index. As with relative abundance (RA; see above), there is no consistent, long-term relationship between occupancy and abundance ( ). Occupancy can change with abundance, but also with survey duration, species home range size, animal movement, etc., muddling occupancy-abundance relationships and thus inferences about population size (Neilson et al., 2018; Steenweg et al., 2018). While occupancy is a powerful stand-alone metric, Sollmann (2018) says it should not be “misinterpreted” as an index of abundance. <br>
+However, many researchers have cautioned against the use occupancy as an index. As with relative abundance (RA; see above), there is no consistent, long-term relationship between occupancy and abundance (Efford &amp; Dawson, 2012). Occupancy can change with abundance, but also with survey duration, species home range size, animal movement, etc., muddling occupancy-abundance relationships and thus inferences about population size (Neilson et al., 2018;  Steenweg et al., 2018). While occupancy is a powerful stand-alone metric, Sollmann (2018) says it should not be “misinterpreted” as an index of abundance. <br>
 <br>
-Despite its widespread use, occupancy may be particularly problematic for camera trap studies due to the violation of the closure assumption. Burton et al (2015) highlighted that many camera trap studies using occupancy do not explicitly define the “site,” although is often implicitly given as some larger area around a camera trap. Since camera trap studies typically target mammal species with relatively large home ranges, the site closure assumption is almost certainly violated in most cases. Many camera trappers therefore assume that “occupancy” is in fact “use” of a site (i.e., the site is not closed), and that detection probability also includes availability for detection. Mackenzie et al. (2017) suggested that estimates should be unbiased if movements in and out of a site are random, but this assumption is rarely tested. And where occupancy estimates have been tested using realistic mammal movements, they have generally performed poorly ( Neilson et al., 2018; ).</p></li>
+Despite its widespread use, occupancy may be particularly problematic for camera trap studies due to the violation of the closure assumption. Burton et al. (2015) highlighted that many camera trap studies using occupancy do not explicitly define the “site,” although is often implicitly given as some larger area around a camera trap. Since camera trap studies typically target mammal species with relatively large home ranges, the site closure assumption is almost certainly violated in most cases. Many camera trappers therefore assume that “occupancy” is in fact “use” of a site (i.e., the site is not closed), and that detection probability also includes availability for detection. Mackenzie et al. (2017) suggested that estimates should be unbiased if movements in and out of a site are random, but this assumption is rarely tested. And where occupancy estimates have been tested using realistic mammal movements, they have generally performed poorly (Neilson et al., 2018;  Stewart et al., 2018).</p></li>
 </ul>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
@@ -552,7 +536,7 @@ Murray et al., 2021</div>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/murray_et_al_2021.jpg"><img alt="../_images/murray_et_al_2021.jpg" src="../_images/murray_et_al_2021.jpg" style="height: 300px;" /></a>
 </figure>
-<p class="sd-card-text">figure1_caption</p>
+<p class="sd-card-text"><font size="2"><strong>Murray et al. (2021) - Fig. 1.</strong> Schematic of our multi- state occupancy model to estimate the occurrence of coyotes and mange. We used images of coyotes collected along transects following an urban gradient in the Chicago metro area in a standard single-species multi-season model with a stacked design. Following the coyote occupancy model, our mange model estimates the distribution of coyote with sarcoptic mange conditional on the distribution of coyote, mangy or otherwise, using by-image variation in the presence of mange signs and the quality of the image</font></p>
 </div>
 </div>
 </div>
@@ -562,9 +546,9 @@ Murray et al., 2021</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Southwell et al., 2019</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/southwell_et_al_2019_fig1.png"><img alt="../_images/southwell_et_al_2019_fig1.png" src="../_images/southwell_et_al_2019_fig1.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/southwell_et_al_2019_fig1_clipped.png"><img alt="../_images/southwell_et_al_2019_fig1_clipped.png" src="../_images/southwell_et_al_2019_fig1_clipped.png" style="width: 300px;" /></a>
 </figure>
-<p class="sd-card-text">NULL</p>
+<p class="sd-card-text"><font size="2"><strong>Southwell et al. (2019) - Fig. 1.</strong> Structure of the spatially explicit power analysis framework for multiple species in dynamic landscapes.</font></p>
 </div>
 </div>
 </div>
@@ -576,7 +560,87 @@ Clarke et al., 2023</div>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/clarke_et_al_2023_eqn_occupancy1.png"><img alt="../_images/clarke_et_al_2023_eqn_occupancy1.png" src="../_images/clarke_et_al_2023_eqn_occupancy1.png" style="width: 300px;" /></a>
 </figure>
-<p class="sd-card-text">figure4_caption</p>
+<p class="sd-card-text"><font size="2">   </font></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Chatterjee et al., 2021</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/chatterjee_et_al_2021_table2_clipped.png"><img alt="../_images/chatterjee_et_al_2021_table2_clipped.png" src="../_images/chatterjee_et_al_2021_table2_clipped.png" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text"><font size="2"><strong>Chatterjee et al. (2021) - Table 2.</strong> Broad classifications of mammals based on occupancy and detection probabilities.</font></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figure5_filename.png"><img alt="../_images/figure5_filename.png" src="../_images/figure5_filename.png" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text"><font size="2">figure5_caption</font></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/figure6_filename.png"><img alt="../_images/figure6_filename.png" src="../_images/figure6_filename.png" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text"><font size="2">figure6_caption</font></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+In-text ref here</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="03_images/03_image_files/figure7_filename.png"><img alt="03_images/03_image_files/figure7_filename.png" src="03_images/03_image_files/figure7_filename.png" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text"><font size="2">figure7_caption</font></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="03_images/03_image_files/figure8_filename.png"><img alt="03_images/03_image_files/figure8_filename.png" src="03_images/03_image_files/figure8_filename.png" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text"><font size="2">figure8_caption</font></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+</div>
+<figure class="align-center">
+<a class="reference internal image-reference" href="03_images/03_image_files/figure9_filename.png"><img alt="03_images/03_image_files/figure9_filename.png" src="03_images/03_image_files/figure9_filename.png" style="width: 300px;" /></a>
+</figure>
+<p class="sd-card-text"><font size="2">figure9_caption</font></p>
 </div>
 </div>
 </div>
@@ -590,9 +654,9 @@ Clarke et al., 2023</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 </div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/chatterhee_et_al_2021_table2.png"><img alt="../_images/chatterhee_et_al_2021_table2.png" src="../_images/chatterhee_et_al_2021_table2.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="03_images/03_image_files/figure10_filename.png"><img alt="03_images/03_image_files/figure10_filename.png" src="03_images/03_image_files/figure10_filename.png" style="width: 300px;" /></a>
 </figure>
-<p class="sd-card-text">figure4_caption</p>
+<p class="sd-card-text"><font size="2">figure10_caption</font></p>
 </div>
 </div>
 </div>
@@ -600,11 +664,11 @@ Clarke et al., 2023</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
+</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="03_images/03_image_files/c……..h"><img alt="03_images/03_image_files/c……..h" src="03_images/03_image_files/c……..h" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="03_images/03_image_files/figure11_filename.png"><img alt="03_images/03_image_files/figure11_filename.png" src="03_images/03_image_files/figure11_filename.png" style="width: 300px;" /></a>
 </figure>
-<p class="sd-card-text">figure5_caption</p>
+<p class="sd-card-text"><font size="2">figure11_caption</font></p>
 </div>
 </div>
 </div>
@@ -612,11 +676,11 @@ In-text ref here</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
+</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure6_filename.png"><img alt="../_images/figure6_filename.png" src="../_images/figure6_filename.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="03_images/03_image_files/figure12_filename.png"><img alt="03_images/03_image_files/figure12_filename.png" src="03_images/03_image_files/figure12_filename.png" style="width: 300px;" /></a>
 </figure>
-<p class="sd-card-text">figure6_caption</p>
+<p class="sd-card-text"><font size="2">figure12_caption</font></p>
 </div>
 </div>
 </div>
@@ -637,7 +701,7 @@ In-text ref here</div>
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy Modeling Video 1 – Sampling Techniques for Mammals</p>
+<p class="sd-card-text"><font size="2">Occupancy Modeling Video 1 – Sampling Techniques for Mammals</font></p>
 </div>
 </div>
 </div>
@@ -654,7 +718,7 @@ In-text ref here</div>
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy Modeling Video 2 – Introductory Statistical Review</p>
+<p class="sd-card-text"><font size="2">Occupancy Modeling Video 2 – Introductory Statistical Review</font></p>
 </div>
 </div>
 </div>
@@ -671,7 +735,7 @@ In-text ref here</div>
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy Modeling Video 3 – What are Occupancy Models and What are the Applications?</p>
+<p class="sd-card-text"><font size="2">Occupancy Modeling Video 3 – What are Occupancy Models and What are the Applications?</font></p>
 </div>
 </div>
 </div>
@@ -692,7 +756,7 @@ In-text ref here</div>
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy Modeling Video 4 – How to Run and Interpret the Models in PRESENCE</p>
+<p class="sd-card-text"><font size="2">Occupancy Modeling Video 4 – How to Run and Interpret the Models in PRESENCE</font></p>
 </div>
 </div>
 </div>
@@ -709,7 +773,7 @@ In-text ref here</div>
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy modelling - more than species presence/absence! (Darryl MacKenzie)</p>
+<p class="sd-card-text"><font size="2">Occupancy modelling - more than species presence/absence! (Darryl MacKenzie)</font></p>
 </div>
 </div>
 </div>
@@ -717,16 +781,16 @@ In-text ref here</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Proteus, 2019a</div>
+In-text ref here</div>
 <iframe 
     width="300"
     height="200"
-    src="https://www.youtube.com/embed/zKQFY8W4ceU?si=ibziVu2KyWro5IUx"
+    src="vid6_url"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy modelling - the difference between probability and proportion of units occupied</p>
+<p class="sd-card-text"><font size="2">vid6_caption</font></p>
 </div>
 </div>
 </div>
@@ -736,12 +800,13 @@ Proteus, 2019a</div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
 Shiny apps/Widgets</label><div class="sd-tab-content docutils">
-<p>Check back in the future!
-&lt;!—-</p>
-<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<p class="sd-card-text">**shiny_name **</p>
-<p class="sd-card-text">shiny_caption</p>
+<p>Check back in the future!</p>
+<!--
+:::::{card}
+**shiny_name **
+
+shiny_caption
+
 <iframe 
     width="100%"
     height="900"
@@ -750,27 +815,134 @@ Shiny apps/Widgets</label><div class="sd-tab-content docutils">
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-</div>
-</div>
-<p>–&gt;</p>
+:::::-->
+<!--ALT-->
+<!--
+:::::{card}
+::::{dropdown} shiny_name 
+
+shiny_caption
+
+<iframe 
+    width="100%"
+    height="900"
+    src="shiny_url"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+::::
+
+::::{dropdown} shiny_name2
+
+shiny_caption2
+
+<iframe shiny_url2
+    width="100%"
+    height="900"
+    src=""
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+::::
+:::::-->
 </div>
 <input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-4">
 Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
-<p>Error! Not a valid filename.
-| rJAGS/R code | mfidino/multi-state-occupancy-models | Mason Fidino’s GitHub | <a class="github reference external" href="https://github.com/mfidino/multi-state-occupancy-models">mfidino/multi-state-occupancy-models</a> | Full ref here |
-| JAGS/R code | mfidino/integrated-occupancy-model” | Mason Fidino’s GitHub | <a class="github reference external" href="https://github.com/mfidino/integrated-occupancy-models">mfidino/integrated-occupancy-models</a>l | Full ref here |
-| JAGS code | mfidino/auto-logistic-occupancy | Mason Fidino’s GitHub | <a class="github reference external" href="https://github.com/mfidino/auto-logistic-occupancy">mfidino/auto-logistic-occupancy</a> | Full ref here |
-| R package | R package - “autoOcc” | An R package for fitting autologistic occupancy models | <a class="github reference external" href="https://github.com/mfidino/autoOcc">mfidino/autoOcc</a> | Full ref here |
-| R code | mfidino/periodicity | Using Fourier series to predict periodic patterns in dynamic occupancy models | <a class="github reference external" href="https://github.com/mfidino/periodicity">mfidino/periodicity</a> | Full ref here |
-| R shiny | Simulated Occupancy Model Shiny App | could incorporate mammal data fairly easily to provide information on occupancy and detection probability | <a class="reference external" href="https://drive.google.com/drive/folders/1B-h1yGYgfxz5ki-O4Q8R_-1Ts__SnpIM">https://drive.google.com/drive/folders/1B-h1yGYgfxz5ki-O4Q8R_-1Ts__SnpIM</a> | Full ref here |
-| R code/Tutorial | “An Introduction to Camera Trap Data Management and Analysis in R &gt; Chapter 11 Occupancy” |     |     | Full ref here |</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Type</p></th>
+<th class="head text-left"><p>Name</p></th>
+<th class="head text-left"><p>Note</p></th>
+<th class="head text-left"><p>URL</p></th>
+<th class="head text-left"><p>Reference</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>rJAGS/R code</p></td>
+<td class="text-left"><p>mfidino/multi-state-occupancy-models</p></td>
+<td class="text-left"><p>Mason Fidino’s GitHub</p></td>
+<td class="text-left"><p><a class="github reference external" href="https://github.com/mfidino/multi-state-occupancy-models">mfidino/multi-state-occupancy-models</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>JAGS/R code</p></td>
+<td class="text-left"><p>mfidino/integrated-occupancy-model”</p></td>
+<td class="text-left"><p>Mason Fidino’s GitHub</p></td>
+<td class="text-left"><p><a class="github reference external" href="https://github.com/mfidino/integrated-occupancy-models">mfidino/integrated-occupancy-models</a>l</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>JAGS code</p></td>
+<td class="text-left"><p>mfidino/auto-logistic-occupancy</p></td>
+<td class="text-left"><p>Mason Fidino’s GitHub</p></td>
+<td class="text-left"><p><a class="github reference external" href="https://github.com/mfidino/auto-logistic-occupancy">mfidino/auto-logistic-occupancy</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>R package</p></td>
+<td class="text-left"><p>R package - “autoOcc”</p></td>
+<td class="text-left"><p>An R package for fitting autologistic occupancy models</p></td>
+<td class="text-left"><p><a class="github reference external" href="https://github.com/mfidino/autoOcc">mfidino/autoOcc</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>R code</p></td>
+<td class="text-left"><p>mfidino/periodicity</p></td>
+<td class="text-left"><p>Using Fourier series to predict periodic patterns in dynamic occupancy models</p></td>
+<td class="text-left"><p><a class="github reference external" href="https://github.com/mfidino/periodicity">mfidino/periodicity</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>R shiny</p></td>
+<td class="text-left"><p>Simulated Occupancy Model Shiny App</p></td>
+<td class="text-left"><p>could incorporate mammal data fairly easily to provide information on occupancy and detection probability</p></td>
+<td class="text-left"><p><a class="reference external" href="https://drive.google.com/drive/folders/1B-h1yGYgfxz5ki-O4Q8R_-1Ts__SnpIM">https://drive.google.com/drive/folders/1B-h1yGYgfxz5ki-O4Q8R_-1Ts__SnpIM</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>R code/Tutorial</p></td>
+<td class="text-left"><p>“An Introduction to Camera Trap Data Management and Analysis in R &gt; Chapter 11 Occupancy”</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p><a class="reference external" href="https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html">https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Program</p></td>
+<td class="text-left"><p>“PRESENCE”</p></td>
+<td class="text-left"><p>“Relatively simple, but comprehensive, software dedicated to occupancy estimation. Linux version available. Can also be used for occupancy-based species richness estimation.” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
+<td class="text-left"><p><strong>Software</strong>: &lt;<a class="reference external" href="http://www.mbr-pwrc.usgs.gov/">www.mbr-pwrc.usgs.gov/</a> software/presence.html&gt;;<br><strong>Help forum</strong>: &lt;<a class="reference external" href="http://www.phidot.org">www.phidot.org</a>&gt;</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>R package</p></td>
+<td class="text-left"><p>R package - “RPresence”</p></td>
+<td class="text-left"><p>“The R counterpart to Presence. Cross-platform (Windows, Mac and Linux).” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
+<td class="text-left"><p><a class="reference external" href="https://www.mbr-pwrc.usgs.gov/software/presence.shtml">https://www.mbr-pwrc.usgs.gov/software/presence.shtml</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>R package</p></td>
+<td class="text-left"><p>R package “unmarked”</p></td>
+<td class="text-left"><p>“Implements a wide variety of occupancy and count-based abundance models (the latter are mostly not appropriate for camera-trapping). Actively being developed and supported by a community of users. Cross-platform (Windows, Mac and Linux).” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
+<td class="text-left"><p><a class="reference external" href="https://cran.r-project.org/web/packages/unmarked/index.html">https://cran.r-project.org/web/packages/unmarked/index.html</a>;<br><a class="reference external" href="https://groups.google.com/g/unmarked">https://groups.google.com/g/unmarked</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>R code/Tutorial</p></td>
+<td class="text-left"><p>“Multi-season Occupancy Models”</p></td>
+<td class="text-left"><p>Mason Fidino’s GitHub</p></td>
+<td class="text-left"><p><a class="reference external" href="https://darinjmcneil.weebly.com/multi-season-occupancy.html">https://darinjmcneil.weebly.com/multi-season-occupancy.html</a></p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>R package</p></td>
+<td class="text-left"><p>R package for analyzing wildlife data with detection error</p></td>
+<td class="text-left"><p>resource12_note</p></td>
+<td class="text-left"><p>resource12_url</p></td>
+<td class="text-left"><p>Full ref here</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-5">
 References</label><div class="sd-tab-content docutils">
 <font size="3">
-<p>Burton, A. C., Neilson, E., Moreira, D., Ladle, A., Steenweg, R., Fisher, J. T., Bayne, E., Boutin, S., &amp; Stephens, P. (2015). Camera trap Trapping: A Review and Recommendations for Linking Surveys to Ecological Processes. <em>Journal of Applied Ecology</em>, <em>52</em>(3), 675–685. <a class="reference external" href="https://doi.org/10.1111/1365-2664.12432">https://doi.org/10.1111/1365-2664.12432</a></p>
+{{ ref_bib_burton_et_al_2015 }}
 <p>MacKenzie, D. I., Nichols, J. D., Royle, J. A., Pollock, K. H., Bailey, L. L., &amp; Hines, J. E. (2017). <em>Occupancy Estimation and Modeling: Inferring Patterns and Dynamics of Species Occurrence</em>. 2nd ed. Academic Press, San Diego. <a class="reference external" href="https://www.sciencedirect.com/book/9780124071971/occupancy-estimation-and-modeling">https://www.sciencedirect.com/book/9780124071971/occupancy-estimation-and-modeling</a>.</p>
 <p>Murray, M. H., Fidino, M., Lehrer, E. W., Simonis, J. L., &amp; Magle, S. B. (2021). A multi-state occupancy model to non-invasively monitor visible signs of wildlife health with camera traps that accounts for image quality. <em>Journal of Animal Ecology, 90</em>(8), 1973–1984. <a class="reference external" href="https://doi.org/10.1111/1365-2656.13515">https://doi.org/10.1111/1365-2656.13515</a></p>
 <p>Neilson, E. W., Avgar, T., Burton, A. C., Broadley, K., &amp; Boutin, S. (2018). Animal movement affects interpretation of occupancy models from camera‐trap Surveys of unmarked animals. <em>Ecosphere, 9</em>(1). <a class="reference external" href="https://doi.org/10.1002/ecs2.2092">https://doi.org/10.1002/ecs2.2092</a></p>
@@ -778,7 +950,8 @@ References</label><div class="sd-tab-content docutils">
 <p>Sollmann, R. (2018). A gentle introduction to camera‐trap data analysis. <em>African Journal of Ecology,</em> 56, 740–749. <a class="reference external" href="https://doi.org/10.1111/aje.12557">https://doi.org/10.1111/aje.12557</a></p>
 <p>Southwell, D. M., Einoder, L. D., Lahoz‐Monfort, J. J., Fisher, A., Gillespie, G. R., &amp; Wintle, B. A. (2019). Spatially explicit power analysis for detecting occupancy trends for multiple species. <em>Ecological Applications, 29</em>, e01950. <a class="reference external" href="https://doi.org/10.1002/eap.1950">https://doi.org/10.1002/eap.1950</a></p>
 <p>Steenweg, R., Hebblewhite, M., Whittington, J., Lukacs, P., &amp; McKelvey, K. (2018). Sampling scales define occupancy and underlying occupancy–abundance relationships in animals. <em>Ecology</em>, <em>99</em>(1), 172–183. <a class="reference external" href="https://doi.org/10.1002/ecy.2054">https://doi.org/10.1002/ecy.2054</a></p>
-</font>
+<p>Stewart, F. E. C., Fisher, J. T., Burton, A. C., &amp; Volpe, J. P. (2018). Species occurrence data reflect the magnitude of animal movements better than the proximity of animal space use. <em>Ecosphere, 9</em>(2), e02112. <a class="reference external" href="https://doi.org/10.1002/ecs2.2112">https://doi.org/10.1002/ecs2.2112</a></p>
+</font>	
 </div>
 </div>
 </div>

@@ -92,7 +92,6 @@ editor_options:
 ::::::{tab-item} Overview
 
 **{{ term_mod_divers_rich_rich }}**: {{ term_def_mod_divers_rich_rich }}
-
 **{{ term_mod_divers_rich_divers }}**: {{ term_def_mod_divers_rich_divers }}
 
 Note that there are multiple “levels” to Species diversity & richness, these include:
@@ -106,6 +105,7 @@ Note that there are multiple “levels” to Species diversity & richness, these
 Species richness in an assemblage is difficult to estimate reliably from sample data because it is very sensitive to the number of individuals and the number of samples collected. Species richness is a diversity of order 0 (which means it is completely insensitive to species abundances).
 
 Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon's Index H'.” {{ ref_intext_pyron_2010 }}
+
 ```{figure} ../03_images/03_image_files/pyron_2010_fig1_clipped.png
 :align: center
 :scale: 60%

@@ -31,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -204,14 +204,14 @@
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="09_gloss_ref/08_references.html">
+  <a class="nav-link dropdown-item nav-internal" href="08_references.html">
     References
   </a>
 </li>
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="09_gloss_ref/09_glossary.html">
+  <a class="nav-link dropdown-item nav-internal" href="09_glossary.html">
     Glossary
   </a>
 </li>
@@ -284,7 +284,9 @@ document.write(`
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -342,14 +344,14 @@ document.write(`
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="09_gloss_ref/08_references.html">
+  <a class="nav-link nav-internal" href="08_references.html">
     References
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="09_gloss_ref/09_glossary.html">
+  <a class="nav-link nav-internal" href="09_glossary.html">
     Glossary
   </a>
 </li>
@@ -379,25 +381,6 @@ document.write(`
       </div>
     
   </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<nav class="bd-docs-nav bd-links"
-     aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="01_13_sp_info.html">Ecology of species (well known <em>vs.</em> poorly known)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_14_sp_type.html">Carnivore / ungulate</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_15_sp_dens_low.html">Low density species</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_16_sp_occ_restr.html">Occurrence restricted</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_17_sp_hr_size.html">Home range size</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_18_sp_size.html">Body size</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_19_sp_rarity.html">Rarity</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Detection probability</a></li>
-</ul>
-</div>
-</nav></div>
-    </div>
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
@@ -483,64 +466,89 @@ Overview</label><div class="sd-tab-content docutils">
 <li><p>&gt; 0.5 (Mackenzie &amp; Royle, 2005)</p></li>
 </ul>
 </li>
-<li><p><strong>Unknown</strong>: select this option if you’re not sure of the detection probability of your Target Species (single or multiple species)</p></li>
-<li><p><strong>Multiple</strong>: select this option if your study include multiple Target Species.</p></li>
+<li><p><strong>Unknown</strong>: select this option if you’re not sure of the detection probability of your <a class="reference internal" href="09_glossary.html#target_species"><span class="std std-ref">Target Species</span></a> (single or multiple species)</p></li>
+<li><p><strong>Multiple</strong>: select this option if your study include multiple <a class="reference internal" href="09_glossary.html#target_species"><span class="std std-ref">Target Species</span></a>.</p></li>
 </ul>
-<blockquote>
-<div><p>Select “Unknown” if you’re not sure.</p>
-</div></blockquote>
-<div class="tip admonition">
-<p class="admonition-title">How this relates to survey design</p>
-<p>Detection probability (aka detectability)**: The probability (likelihood) that an individual of the population of interest is included in the count at time or location <em>i</em>.</p>
-<p>We use this information to adjust the recommended <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_days_per_camera_location"><span class="xref myst">camera days per camera location</span></a> and <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#total_number_of_camera_days"><span class="xref myst">total number of camera days</span></a>. For example, if the species is hard to detect, you may have to deploy cameras for longer to ensure you’ve sampled long enough to say that the species truly was not there (<em>vs.</em> it was there, but you did not detect it; “missed detections”, e.g., high cover of shrubs impeding your ability to see the species).</p>
-<p>You may need to consult previous studies to get a sense of which category is the most appropriate for your</p>
-</div>
-<p><strong>How does that work?</strong></p>
-<p>Individuals and/or species are not always detected when they are present (i.e., detected “imperfectly”; MacKenzie et al., 2004). Missed detections occur or many reasons, including due characteristics of the environment (e.g., due to cover of vegetation), the time period (e.g., seasons), characteristics of the species (e.g., cryptic nature or small size), etc. <strong>The question here is asking about detection probability as it relates to the characteristIcs of the species (not the species in a particular habitat type or during a specific season).</strong></p>
-<a class="reference internal image-reference" href="../_images/det.gif"><img alt="../_images/det.gif" class="align-center" src="../_images/det.gif" style="width: 400px;" /></a>
-<p><strong>Why do we care?</strong></p>
-<p>We care about this because when you fail to detect an individual/species that was, in fact, present, this is called a “false absence”, which may lead to incorrect conclusions from the data. Understanding and correcting for sources of this type of error is often thought of in terms of probabilities (i.e., “detection probability” aka detectability).</p>
-<div class="warning admonition">
-<p class="admonition-title">It’s not an exact science</p>
-<p>Since detectability is affected by many other processes, detectability is best incorporated from models that use your data since this will result in the best suited infromation to inform your design; however, when you are first designing your study, this is not possible…..[[insert more here]]</p>
-</div>
-<div class="seealso admonition">
-<p class="admonition-title">Analysis aside</p>
 <p><br />
-Many sources of detection error can be accounted for in analysis; this is done by assessing the relationships between the characteristics of the environment that we might expect to affect detection (e.g., cover of shrubs in front of the camera), and information on where (and when) the species was and was not detected. For example, there were consistently fewer detections on cameras placed in high shrub cover.</p>
-<p>By assessing the relationships at locations repeatedly sampled over time, we begin to unravel the relationship between the environmental characteristics and missed detections on your cameras. We can then use this information to determine if we have sampled long enough (i.e., do we have enough information to differentiate between missed detections and true absences) and/or correct for this error in analysis by incorporating these effects in our models.</p>
+<strong><font size="4"><span style="color:#2F5496">How this relates to study design</font></span></strong></p>
+<p><strong>Detection probability (aka detectability)</strong>: The probability (likelihood) that an individual of the population of interest is included in the count at time or location <em>i</em>.</p>
+<p>We use this information to adjust the recommended <a class="reference internal" href="09_glossary.html#camera_days_per_camera_location"><span class="std std-ref">camera days per camera location</span></a> and <a class="reference internal" href="09_glossary.html#total_number_of_camera_days"><span class="std std-ref">total number of camera days</span></a>. For example, if the species is hard to detect, you may have to deploy cameras for longer to ensure you’ve sampled long enough to say that the species truly was not there (<em>vs.</em> it was there, but you did not detect it; “missed detections”, e.g., high cover of shrubs impeding your ability to see the species).</p>
+<p>You may need to consult previous studies to get a sense of which category is the most appropriate for your study and Target Species.</p>
+<blockquote>
+<div><p><strong>Select “Unknown” if you’re not sure.</strong></p>
+</div></blockquote>
+<p><br />
+<strong><font size="4"><span style="color:#2F5496">How does that work?</font></span></strong></p>
+<p>Individuals and/or species are not always detected when they are present (i.e., detected “imperfectly”; (MacKenzie et al., 2004). Missed detections occur or many reasons, including due characteristics of the environment (e.g., due to cover of vegetation), the time period (e.g., seasons), characteristics of the species (e.g., cryptic nature or small size), etc. <strong>The question here is asking about detection probability as it relates to the characteristics of the species (not the species in a particular habitat type or during a specific season).</strong></p>
+<p><strong><font size="4"><span style="color:#2F5496">Why do we care?</font></span></strong></p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 docutils">
+<p>When you fail to detect an individual/species that was, in fact, present, this is called a “false absence”, which may lead to incorrect conclusions from the data. Understanding and correcting for sources of this type of error is often thought of in terms of probabilities (i.e., “detection probability” aka detectability).</p>
+<p><strong>Note! It’s not an exact science</strong> - Since detectability is affected by many other processes, it’s best incorporated in models (using your data) since this will result in the best suited information to inform your design.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 docutils">
+<a class="reference internal image-reference" href="../_images/det.gif"><img alt="../_images/det.gif" class="align-right" src="../_images/det.gif" style="width: 250px;" /></a>
 </div>
 </div>
+</div>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Analysis aside</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Many sources of detection error can be accounted for in analysis; this is done by assessing the relationships between the characteristics of the environment that we might expect to affect detection (e.g., cover of shrubs in front of the camera), and information on where (and when) the species was and was not detected. For example, there were consistently fewer detections on cameras placed in high shrub cover.</p>
+<p class="sd-card-text">By assessing the relationships at locations repeatedly sampled over time, we begin to unravel the relationship between the environmental characteristics and missed detections on your cameras. We can then use this information to determine if we have sampled long enough (i.e., do we have enough information to differentiate between missed detections and true absences) and/or correct for this error in analysis by incorporating these effects in our models.</p>
+</div>
+</details></div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 Advanced</label><div class="sd-tab-content docutils">
-<p><br />
-Before study design choices are made, there is one critical concept to understand in remote camera research, which may impact study design choices at all levels of the data hierarchy. Reliable use of remote cameras to detect wildlife species hinges on the <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#mods_modelling_assumption"><span class="xref myst">assumption</span></a> that what is captured on the cameras accurately reflects what is present on the landscape. However, species are often detected “imperfectly,” meaning that they are not always detected when they are present (i.e., <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#imperfect_detection"><span class="xref myst">imperfect detection</span></a>; e.g., due to cover of vegetation, cryptic nature or small size) (MacKenzie et al., 2004). <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#imperfect_detection"><span class="xref myst">Imperfect detection</span></a> can occur because the camera failed to capture an individual present at the site or because the animal was simply not present during the <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#survey"><span class="xref myst">survey</span></a> period (Martin et al., 2005).</p>
-<p><a class="reference internal" href="#../09_gloss_ref/09_glossary.md#imperfect_detection"><span class="xref myst">Imperfect detection</span></a> results in “false absences” and may lead to incorrect conclusions from the data. Understanding and correcting for sources of “false absences” is often thought of in terms of probabilities. <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">Detection probability</span></a> is the probability (likelihood) that an individual from the population of interest is included in the count at time or location <em>i</em> (MacKenzie &amp; Kendall, 2002). <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">Detection probability</span></a> can be influenced through multiple processes and at multiple scales. Understanding the sources of “false absences” and factors that affect <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probabilities</span></a> is an essential step when designing a study, deploying cameras and analyzing camera data.</p>
-<p>The detection probability of an animal by a camera depends on three <strong>conditional probabilities (Pr) of detection</strong> that may operate alone or potentially in combination (<a class="reference internal" href="#toc-surv-guidelines-fig-1"><span class="std std-ref">Figure 1</span></a>).</p>
+<p>Before study design choices are made, there is one critical concept to understand in remote camera research, which may impact study design choices at all levels of the data hierarchy. Reliable use of remote cameras to detect wildlife species hinges on the <a class="reference internal" href="09_glossary.html#mods_modelling_assumption"><span class="std std-ref">assumption</span></a> that what is captured on the cameras accurately reflects what is present on the landscape. However, species are often detected “imperfectly,” meaning that they are not always detected when they are present (i.e., <a class="reference internal" href="09_glossary.html#imperfect_detection"><span class="std std-ref">imperfect detection</span></a>; e.g., due to cover of vegetation, cryptic nature or small size) (MacKenzie et al., 2004). <a class="reference internal" href="09_glossary.html#imperfect_detection"><span class="std std-ref">Imperfect detection</span></a> can occur because the camera failed to capture an individual present at the site or because the animal was simply not present during the <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">survey</span></a> period (Martin et al., 2005).</p>
+<p><a class="reference internal" href="09_glossary.html#imperfect_detection"><span class="std std-ref">Imperfect detection</span></a> results in “false absences” and may lead to incorrect conclusions from the data. Understanding and correcting for sources of “false absences” is often thought of in terms of probabilities. <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">Detection probability</span></a> is the probability (likelihood) that an individual from the population of interest is included in the count at time or location <em>i</em> (MacKenzie &amp; Kendall, 2002). <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">Detection probability</span></a> can be influenced through multiple processes and at multiple scales. Understanding the sources of “false absences” and factors that affect <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probabilities</span></a> is an essential step when designing a study, deploying cameras and analyzing camera data.</p>
+<p>The <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> of an animal by a camera depends on three <strong>conditional probabilities (Pr) of detection</strong> that may operate alone or potentially in combination (<a class="reference internal" href="#toc-surv-guidelines-fig-1"><span class="std std-ref">Figure 1</span></a>).</p>
 <figure class="align-center" id="toc-surv-guidelines-fig-1">
-<a class="reference internal image-reference" href="../_images/rcsc_et_al_2024_detection_probability_2023_05_04.png"><img alt="../_images/rcsc_et_al_2024_detection_probability_2023_05_04.png" src="../_images/rcsc_et_al_2024_detection_probability_2023_05_04.png" style="height: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/rcsc_et_al_2024_detection_probability_2023_05_04_clipped.jpg"><img alt="../_images/rcsc_et_al_2024_detection_probability_2023_05_04_clipped.jpg" src="../_images/rcsc_et_al_2024_detection_probability_2023_05_04_clipped.jpg" style="height: 500px;" /></a>
 </figure>
-<figure class="align-center">
-<a class="reference internal image-reference" href="02_dialog-boxes/03_images/03_image_files/rcsc_et_al_2024_detection-probability-2023-05-04.png"><img alt="02_dialog-boxes/03_images/03_image_files/rcsc_et_al_2024_detection-probability-2023-05-04.png" src="02_dialog-boxes/03_images/03_image_files/rcsc_et_al_2024_detection-probability-2023-05-04.png" style="height: 700px;" /></a>
-</figure>
-<p><strong>Figure 1.</strong> Three conditional probabilities (Pr) of detection that may impact the <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probability</span></a> of an animal (or species) by a camera (adapted from Moeller et al. [2023], Hofmeester et al. [2019], and Findlay et al. [2020]).</p>
-<p>Detection probability can be affected by species-specific characteristics, <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_model"><span class="xref myst">Camera Model</span></a> specifications and set-up, and environmental variables (Hofmeester et al., 2019). For example, <strong>species-specific characteristics</strong> (individuals or populations), such as body size (e.g., O’Brien et al., 2011), behaviour (e.g., Caravaggi et al., 2020; Rowcliffe et al., 2011), and rarity can influence <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probability</span></a>, with larger, bolder and more common species generally having higher <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_rate"><span class="xref myst">detection rates</span></a>. <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_model"><span class="xref myst"><strong>Camera Model</strong></span></a>, specifications and set-up, such as the <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#settings_trigger_sensitivity"><span class="xref myst">Trigger Sensitivity</span></a>, <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_height"><span class="xref myst"><strong>Camera Height</strong></span></a>, or <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_angle"><span class="xref myst"><strong>angle</strong></span></a> may affect <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probability</span></a> in that smaller species might not be detected or identifiable if the <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#settings_trigger_sensitivity"><span class="xref myst">Trigger Sensitivity</span></a> is low, or the <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_height"><span class="xref myst">Camera Height</span></a> or <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_angle"><span class="xref myst">angle</span></a> is too high. The <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_direction"><span class="xref myst"><strong>Camera Direction</strong></span></a> could impact the probability of an animal triggering a camera if it is directed towards an object that impedes the <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#field_of_view"><span class="xref myst">Field of View (FOV)</span></a> or image quality (e.g. due to sun glare). <strong>Environmental factors</strong> (e.g., vegetation cover, snow depth) may affect <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probability</span></a> and occurrence (e.g., Becker et al., 2022; Hofmeester et al., 2019; Iknayan et al., 2014; Steenweg et al., 2019). For example, a low number of detections in a densely vegetated site might be because of poor camera visibility or avoidance of this habitat by the species of interest.</p>
-<p>Hofmeester et al. (2019) suggested there are <strong>six scales (orders) that may impact <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probability</span></a></strong> and that should be considered within an explicit time period (adapted from Hofmeester et al. [2019]; <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#TOC_surv_guidelines_fig_2"><span class="xref myst">Figure 2</span></a>):</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 docutils">
+<p><span style="color:white">…</font></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><font size="2"><strong>RCSC et al. (2024) - Fig. 1.</strong> Three conditional probabilities (Pr) of detection that may impact the <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> of an animal (or species) by a camera (adapted from Moeller et al. [2023], Hofmeester et al. [2019], and Findlay et al. [2020]).</font></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 docutils">
+<p><span style="color:white">…</font></p>
+</div>
+</div>
+</div>
+<p><a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">Detection probability</span></a> can be affected by species-specific characteristics, <a class="reference internal" href="09_glossary.html#camera_model"><span class="std std-ref">Camera Model</span></a> specifications and set-up, and environmental variables (Hofmeester et al., 2019). For example, <strong>species-specific characteristics</strong> (individuals or populations), such as body size (e.g., O’Brien et al., 2011), behaviour (e.g., Caravaggi et al., 2020; Rowcliffe et al., 2011), and rarity can influence <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a>, with larger, bolder and more common species generally having higher <a class="reference internal" href="09_glossary.html#detection_rate"><span class="std std-ref">detection rates</span></a>. <a class="reference internal" href="09_glossary.html#camera_model"><span class="std std-ref"><strong>Camera Model</strong></span></a> <strong>specifications and set-up</strong>, such as the <a class="reference internal" href="09_glossary.html#settings_trigger_sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a>, <a class="reference internal" href="09_glossary.html#camera_height"><span class="std std-ref">Camera Height</span></a>, or <a class="reference internal" href="09_glossary.html#camera_angle"><span class="std std-ref">angle</span></a> may affect <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> in that smaller species might not be detected or identifiable if the <a class="reference internal" href="09_glossary.html#settings_trigger_sensitivity"><span class="std std-ref">Trigger Sensitivity</span></a> is low, or the <a class="reference internal" href="09_glossary.html#camera_height"><span class="std std-ref">Camera Height</span></a> or <a class="reference internal" href="09_glossary.html#camera_angle"><span class="std std-ref">angle</span></a> is too high. The <a class="reference internal" href="09_glossary.html#camera_direction"><span class="std std-ref">Camera Direction</span></a> could impact the probability of an animal triggering a camera if it is directed towards an object that impedes the <a class="reference internal" href="09_glossary.html#field_of_view"><span class="std std-ref">Field of View (FOV)</span></a> or image quality (e.g. due to sun glare). <strong>Environmental factors</strong> (e.g., vegetation cover, snow depth) may affect <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> and occurrence (e.g., Becker et al., 2022; Hofmeester et al., 2019; Iknayan et al., 2014; Steenweg et al., 2019). For example, a low number of detections in a densely vegetated site might be because of poor camera visibility or avoidance of this habitat by the species of interest.</p>
+<p>Hofmeester et al. (2019) suggested there are <strong>six scales (orders) that may impact</strong> <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> and that should be considered within an explicit time period (adapted from Hofmeester et al. [2019]; <a class="reference internal" href="#toc-surv-guidelines-fig-2"><span class="std std-ref">Figure 2</span></a>):</p>
 <ol class="arabic simple">
 <li><p><strong>Distribution range</strong> (1st order; i.e., the physical or geographical range of a species)</p></li>
 <li><p><strong>Landscape</strong> (2nd order; i.e., the location of an individual’s home range within the geographic range)</p></li>
 <li><p><strong>Habitat patch</strong> (3rd order; i.e., usage of habitat components within an individual’s home range)</p></li>
 <li><p><strong>Microsite</strong> (4th order; usage of microhabitats such as food items/feeding patches/nest sites/movement trails, etc. within a habitat)</p></li>
-<li><p><strong>Camera specification / set-up</strong> (5th order; i.e., factors that affect the probability that an animal <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#trigger_event"><span class="xref myst">triggers</span></a> the camera if present)</p></li>
+<li><p><strong>Camera specification / set-up</strong> (5th order; i.e., factors that affect the probability that an animal <a class="reference internal" href="09_glossary.html#trigger_event"><span class="std std-ref">triggers</span></a> the camera if present)</p></li>
 <li><p><strong>Image</strong> (6th order; i.e., factors that affect correct identification of animals or individuals)</p></li>
 </ol>
 <figure class="align-center" id="toc-surv-guidelines-fig-2">
-<a class="reference internal image-reference" href="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png"><img alt="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png" src="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png" style="width: 627.9px; height: 540.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1_clipped.png"><img alt="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1_clipped.png" src="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1_clipped.png" style="width: 600px;" /></a>
 </figure>
-<p><strong>Figure 2.</strong> Spatial scales (1-6) and processes that determine the <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probability</span></a> (Hofmeester et al., 2019; abbreviated figure caption).</p>
-<p>It is important to consider how all these factors and scales will impact study design. Unmeasured variation in <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probability</span></a> can result in the inability to differentiate the effects of <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probability</span></a> <em>vs.</em> habitat preference (Jennelle et al., 2002) and, in turn, cause erroneous estimates of occurrence and abundance (Burton et al., 2015; Dénes et al., 2015; Kays et al., 2021).</p>
-<p>Factors that influence <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#detection_probability"><span class="xref myst">detection probability</span></a> at the microsite and camera specification / set-up scales are likely to result in the largest biases and thus warrant the most consideration (see Hofmeester et al. [2019] for details). Therefore, it is particularly important to consider <em>how</em> to place cameras to avoid such biases. Deploying cameras in a consistent fashion (e.g., carefully ensuring that cameras are always set at the same <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_height"><span class="xref myst">Camera Height</span></a>, orientation (<a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_direction"><span class="xref myst">direction</span></a>), and <a class="reference internal" href="#../09_gloss_ref/09_glossary.md#camera_angle"><span class="xref myst">angle</span></a> is essential.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 docutils">
+<p><span style="color:white">…</font></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-10 sd-col-xs-10 sd-col-sm-10 sd-col-md-10 sd-col-lg-10 docutils">
+<p><font size="2"><strong>Figure 2.</strong> Spatial scales (1-6) and processes that determine the <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> (Hofmeester et al., 2019; abbreviated figure caption).</font></p>
+</div>
+<div class="sd-col sd-d-flex-column sd-col-1 sd-col-xs-1 sd-col-sm-1 sd-col-md-1 sd-col-lg-1 docutils">
+<p><span style="color:white">…</font></p>
+</div>
+</div>
+</div>
+<p>It is important to consider how all these factors and scales will impact study design. Unmeasured variation in <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> can result in the inability to differentiate the effects of <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> <em>vs.</em> habitat preference (Jennelle et al., 2002) and, in turn, cause erroneous estimates of occurrence and abundance (Burton et al., 2015; Dénes et al., 2015; Kays et al., 2021).</p>
+<p>Factors that influence <a class="reference internal" href="09_glossary.html#detection_probability"><span class="std std-ref">detection probability</span></a> at the microsite and camera specification / set-up scales are likely to result in the largest biases and thus warrant the most consideration (see Hofmeester et al. [2019] for details). Therefore, it is particularly important to consider <em>how</em> to place cameras to avoid such biases. Deploying cameras in a consistent fashion (e.g., carefully ensuring that cameras are always set at the same <a class="reference internal" href="09_glossary.html#camera_height"><span class="std std-ref">Camera Height</span></a>, orientation (<a class="reference internal" href="09_glossary.html#camera_direction"><span class="std std-ref">direction</span></a>), and <a class="reference internal" href="09_glossary.html#camera_angle"><span class="std std-ref">angle</span></a> is essential.</p>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-2">
@@ -553,8 +561,9 @@ Visual resources</label><div class="sd-tab-content docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Alberta Remote Camera Steering Committee [RCSC] et al., 2024</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/rcsc_et_al_2024_detection_probability_2023_05_04.png"><img alt="../_images/rcsc_et_al_2024_detection_probability_2023_05_04.png" src="../_images/rcsc_et_al_2024_detection_probability_2023_05_04.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/rcsc_et_al_2024_detection_probability_2023_05_04_clipped.jpg"><img alt="../_images/rcsc_et_al_2024_detection_probability_2023_05_04_clipped.jpg" src="../_images/rcsc_et_al_2024_detection_probability_2023_05_04_clipped.jpg" style="height: 300px;" /></a>
 </figure>
+<p class="sd-card-text"><font size="2"><strong>RCSC et al. (2024) - Fig. 1.</strong> Three conditional probabilities (Pr) of detection that may impact the detection probability of an animal (or species) by a camera (adapted from Moeller et al. [2023], Hofmeester et al. [2019], and Findlay et al. [2020]).</font></p>
 </div>
 </div>
 </div>
@@ -564,8 +573,9 @@ Alberta Remote Camera Steering Committee [RCSC] et al., 2024</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Alberta Remote Camera Steering Committee [RCSC] et al., 2024</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png"><img alt="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png" src="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1_clipped.png"><img alt="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1_clipped.png" src="../_images/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1_clipped.png" style="width: 300px;" /></a>
 </figure>
+<p class="sd-card-text"><font size="2"><strong>RCSC et al. (2024) - Fig. 2.</strong> Spatial scales (1-6) and processes that determine the detection probability (Hofmeester et al., 2019; abbreviated figure caption).</font></p>
 </div>
 </div>
 </div>
@@ -575,9 +585,9 @@ Alberta Remote Camera Steering Committee [RCSC] et al., 2024</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Tourani et al., 2020</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/tourani_et_al_2020_fig1.png"><img alt="../_images/tourani_et_al_2020_fig1.png" src="../_images/tourani_et_al_2020_fig1.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/tourani_et_al_2020_fig1_clipped.png"><img alt="../_images/tourani_et_al_2020_fig1_clipped.png" src="../_images/tourani_et_al_2020_fig1_clipped.png" style="width: 300px;" /></a>
 </figure>
-<p>NULL <p/>
+<p class="sd-card-text"><font size="2"><strong>Tourani et al., (2020) - Fig. 1</strong> Conceptual diagram showing different aspects of detectability during camera trap surveys and the modulating effect of biological characteristics. In addition to direct impacts on detectability, a longer visit and a closer image of focal species increase the chance of identifying the visitor, thereby increasing detectability. Colour figure can be viewed at &lt;<a class="reference external" href="http://zslpublications.onlinelibrary.wiley.com">zslpublications.onlinelibrary.wiley.com</a>&gt;.</font></p>
 </div>
 </div>
 </div>
@@ -591,9 +601,9 @@ Tourani et al., 2020</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Iknayan et al., 2014</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/iknayan_et_al_2014_fig2.png"><img alt="../_images/iknayan_et_al_2014_fig2.png" src="../_images/iknayan_et_al_2014_fig2.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/iknayan_et_al_2014_fig2_clipped.png"><img alt="../_images/iknayan_et_al_2014_fig2_clipped.png" src="../_images/iknayan_et_al_2014_fig2_clipped.png" style="width: 300px;" /></a>
 </figure>
-<p>figure5_caption <p/>
+<p class="sd-card-text"><font size="2"><strong>Iknayan et al., (2020) - Fig. 2</strong> - Categories of species at surveyed sites resulting from imperfect detection and how they change with different temporal and spatial sampling strategies. (A) The true (unknown) species pool of a metacommunity represented at a site comprises species that have been detected there (green bin), those that have not yet been detected at the site but have been detected at other surveyed sites (yellow bin), and those that have not yet been detected at this or any site but occur in the region (white bin). (B) As temporal and spatial replication (i.e., sampling effort) increases, knowledge of the species pool changes for both the site (green bins) and the metacommunity (green + yellow + white bins). When a site is surveyed few times, the relative size of each bin depends on the factors affecting detectability (Figure 1). If there are few sites and few surveys per site, a large portion of the metacommunity may not be detected (white bin of upper left rectangle), either at the site or at other sites. As the number of surveys per site increases (temporal replication) but not the number of sites surveyed (i.e., little spatial replication), the total number of species detected per site increases (green bin in upper right rectangle), mostly as a result of detecting species that are likely to occur at other sites (yellow bin). When the total number of sites surveyed increases (spatial replication) but not the number of surveys (i.e., little temporal replication), the number of species undetected in the region decreases (white bin in lower left rectangle), but the number of species detected per site remains the same (green bin). As both the number of surveys per site and the number of sites surveyed increase, a greater proportion of species in the metacommunity will be known (green + yellow bins in lower right rectangle), either from being directly detected at the site (green bin) or by being detected at other sites (yellow bin).</font></p>
 </div>
 </div>
 </div>
@@ -601,11 +611,11 @@ Iknayan et al., 2014</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
+O’Connell et al., 2011</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure5_filename.png"><img alt="../_images/figure5_filename.png" src="../_images/figure5_filename.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/oconnell_et_al_2011_fig6_1_clipped.png"><img alt="../_images/oconnell_et_al_2011_fig6_1_clipped.png" src="../_images/oconnell_et_al_2011_fig6_1_clipped.png" style="width: 300px;" /></a>
 </figure>
-<p>figure5_caption<p/>
+<p class="sd-card-text"><font size="2"><strong>O’Connell et al. (2011) - Fig. 6.1</strong> The cumulative likelihood of capturing an individual with a Pr(detection) per sampling occasion = <em>p</em> over <em>K</em> = 1 … 30 sampling occasions. As <em>p</em> and <em>K</em> increase, the likelihood of detection approaches 1.</font></p>
 </div>
 </div>
 </div>
@@ -613,11 +623,11 @@ In-text ref here</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
+Findlay et al., 2020</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure6_filename.png"><img alt="../_images/figure6_filename.png" src="../_images/figure6_filename.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/findlay_et_al_2020_fig1_clipped.png"><img alt="../_images/findlay_et_al_2020_fig1_clipped.png" src="../_images/findlay_et_al_2020_fig1_clipped.png" style="width: 300px;" /></a>
 </figure>
-<p>figure6_caption <p/>
+<p class="sd-card-text"><font size="2"><strong>Findlay et al. (2020) - Fig. 1</strong> The sequential processes required to detect an animal on a cameratrap given that it is present. Failure of any of these processes leads to a false-negative; therefore, detection success requires a positive outcome from all the component processes. Specific terminology we use in this study to quantify these processes is also shown. ‘Detection probability’ can thus be considered the product of a series of conditional probabilities representing each of these processes.</font></p>
 </div>
 </div>
 </div>
@@ -629,105 +639,16 @@ In-text ref here</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
+Turlapaty, 2014</div>
 <iframe 
     width="300"
     height="200"
-    src="vid1_url"
+    src="https://www.youtube.com/embed/WBgWOQBlNoI?si=h16_LVMHmwT0ntPd"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p>vid1_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<iframe 
-    width="300"
-    height="200"
-    src="vid2_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-<p>vid2_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<iframe 
-    width="300"
-    height="200"
-    src="vid3_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-<p>vid3_caption<p/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<iframe 
-    width="300"
-    height="200"
-    src="vid4_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-<p>vid4_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<iframe 
-    width="300"
-    height="200"
-    src="vid5_url"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-<p>vid5_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-In-text ref here</div>
-<iframe 
-    width="300"
-    height="200"
-    src="vid6_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid6_caption<p/>
+<p class="sd-card-text">Probability of Detection: Eg 01</font></p>
 </div>
 </div>
 </div>
@@ -737,7 +658,38 @@ In-text ref here</div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
 Shiny apps/Widgets</label><div class="sd-tab-content docutils">
-<p>Check back in the future!</p>
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Probabilistic detection calculator (online application)</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Online application used as an aid in sampling planning; calculates the probability of detecting disease (or other similar feature) with the given within-group prevalence and sample size for both finite and infinite group sizes. The detection means that at least one of the samples is detected positive. The sensitivity of the testing method can also be taken into account in the case of an imperfect test. <br><br> Additional information can be found here: <a class="reference external" href="https://zenodo.org/records/13120206">https://zenodo.org/records/13120206</a><br><br>
+(Mikkelä, 2024)</p>
+<iframe 
+    width="100%"
+    height="900"
+    src="https://detcal-shiny.2.rahtiapp.fi/"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">smsPOMDP</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">A Shiny r app to solve the problem of when to stop managing  or surveying species under imperfect detection. <br><br> Additional information can be found here: <a class="github reference external" href="https://github.com/conservation-decisions/smsPOMDP">conservation-decisions/smsPOMDP</a> or <a class="reference external" href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13501">https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13501</a><br><br>
+()</p>
+<iframe https://conservation-decisions.shinyapps.io/smsPOMDP/
+    width="100%"
+    height="900"
+    src=""
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+</div>
+</details></div>
+</div>
 </div>
 <input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-4">
@@ -752,71 +704,17 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>resource1_type</p></td>
-<td class="text-left"><p>resource1_name</p></td>
-<td class="text-left"><p>R package for analyzing wildlife data with detection error</p></td>
-<td class="text-left"><p><a class="github reference external" href="https://github.com/psolymos/detect">psolymos/detect</a><br><a class="reference external" href="https://peter.solymos.org/detect">https://peter.solymos.org/detect</a></p></td>
-<td class="text-left"><p>Full ref here</p></td>
+<tr class="row-even"><td class="text-left"><p>R package</p></td>
+<td class="text-left"><p>detect: analyzing wildlife data with detection error</p></td>
+<td class="text-left"><p>The R package implements models to analyze site occupancy and count data models with detection error. The package development was supported by the Alberta Biodiversity Monitoring Institute and the Boreal Avian Modelling (BAM) Project.</p></td>
+<td class="text-left"><p><a class="github reference external" href="https://github.com/psolymos/detect">psolymos/detect</a>;<br><a class="reference external" href="https://peter.solymos.org/detect">https://peter.solymos.org/detect</a></p></td>
+<td class="text-left"><p>Solymos, P., Moreno M., &amp; Lele, S. R. (2024). <em>detect: Analyzing Wildlife Data with Detection Error</em>. R package version 0.5-0, <a class="github reference external" href="https://github.com/psolymos/detect">psolymos/detect</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>resource3_type</p></td>
-<td class="text-left"><p>resource2_name</p></td>
-<td class="text-left"><p>resource3_note</p></td>
-<td class="text-left"><p>resource3_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource3_type</p></td>
-<td class="text-left"><p>resource3_name</p></td>
-<td class="text-left"><p>resource3_note</p></td>
-<td class="text-left"><p>resource3_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource4_type</p></td>
-<td class="text-left"><p>resource4_name</p></td>
-<td class="text-left"><p>resource4_note</p></td>
-<td class="text-left"><p>resource4_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource5_type</p></td>
-<td class="text-left"><p>resource5_name</p></td>
-<td class="text-left"><p>resource5_note</p></td>
-<td class="text-left"><p>resource5_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource6_type</p></td>
-<td class="text-left"><p>resource6_name</p></td>
-<td class="text-left"><p>resource6_note</p></td>
-<td class="text-left"><p>resource6_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource7_type</p></td>
-<td class="text-left"><p>resource7_name</p></td>
-<td class="text-left"><p>resource7_note</p></td>
-<td class="text-left"><p>resource7_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource8_type</p></td>
-<td class="text-left"><p>resource8_name</p></td>
-<td class="text-left"><p>resource8_note</p></td>
-<td class="text-left"><p>resource8_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource9_type</p></td>
-<td class="text-left"><p>resource9_name</p></td>
-<td class="text-left"><p>resource9_note</p></td>
-<td class="text-left"><p>resource9_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource10_type</p></td>
-<td class="text-left"><p>resource10_name</p></td>
-<td class="text-left"><p>resource10_note</p></td>
-<td class="text-left"><p>resource10_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource11_type</p></td>
-<td class="text-left"><p>resource11_name</p></td>
-<td class="text-left"><p>resource11_note</p></td>
-<td class="text-left"><p>resource11_url</p></td>
-<td class="text-left"><p>Full ref here</p></td>
+<tr class="row-odd"><td class="text-left"><p>R Shiny app</p></td>
+<td class="text-left"><p>Probabilistic detection calculator (online application)</p></td>
+<td class="text-left"><p>Online application used as an aid in sampling planning; calculates the probability of detecting disease (or other similar feature) with the given within-group prevalence and sample size for both finite and infinite group sizes.<br><br> Additional information can be found here: <a class="reference external" href="https://zenodo.org/records/13120206">https://zenodo.org/records/13120206</a>.</p></td>
+<td class="text-left"><p>Shiny app: <a class="reference external" href="https://detcal-shiny.2.rahtiapp.fi/">https://detcal-shiny.2.rahtiapp.fi/</a>;<br>Related documents: <a class="reference external" href="https://zenodo.org/records/13120206">https://zenodo.org/records/13120206</a></p></td>
+<td class="text-left"><p>Mikkelä, A. (2024). <em>Probabilistic detection calculator (online application).</em> R shiny version v2. <a class="reference external" href="https://detcal-shiny.2.rahtiapp.fi/">https://detcal-shiny.2.rahtiapp.fi/</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -825,14 +723,30 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-5">
 References</label><div class="sd-tab-content docutils">
+<font size="3">
 <p>Alberta Remote Camera Steering Committee [RCSC], Stevenson, C., Hubbs, A., &amp; Wildlife Cameras for Adaptive Management (WildCAM). (2024). Remote Camera Survey Guidelines: Guidelines for Western Canada. Version 3.0. Edmonton, Alberta. <a class="reference external" href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/1_Survey-guidelines/1_0.1_Citation-and-Info.html">https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/1_Survey-guidelines/1_0.1_Citation-and-Info.html</a></p>
+<p>Hofmeester, T. R., Cromsigt, J. P. G. M., Odden, J., Andrén, H., Kindberg, J., &amp; Linnell, J. D. C. (2019). Framing Pictures: A Conceptual Framework to Identify and Correct for Biases in Detection Probability of Camera Traps Enabling Multi-Species Comparison. <em>Ecology and Evolution, 9</em>(4), 2320–2336. <a class="reference external" href="https://doi.org/10.1002/ece3.4878">https://doi.org/10.1002/ece3.4878</a></p>
+<p>Burton, A. C., Neilson, E., Moreira, D., Ladle, A., Steenweg, R., Fisher, J. T., Bayne, E., Boutin, S., &amp; Stephens, P. (2015). Camera trap Trapping: A Review and Recommendations for Linking Surveys to Ecological Processes. <em>Journal of Applied Ecology</em>, <em>52</em>(3), 675–685. <a class="reference external" href="https://doi.org/10.1111/1365-2664.12432">https://doi.org/10.1111/1365-2664.12432</a></p>
+<p>Caravaggi, A., Burton, A. C., Clark, D. A., Fisher, J. T., Grass, A., Green, S., Hobaiter, C., Hofmeester, T. R., Kalan, A. K., Rabaiotti, D., &amp; Rivet, D. (2020). A Review of Factors To Consider When Using Camera Traps To Study Animal Behavior To Inform Wildlife Ecology And Conservation. <em>Conservation Science and Practice, 2</em>(8). <a class="reference external" href="https://doi.org/10.1111/csp2.239">https://doi.org/10.1111/csp2.239</a></p>
 <p>Chatterjee, N., Schuttler, T. G., Nigam, P., &amp; Habib, B. (2021). Deciphering the rarity–detectability continuum: optimizing Survey design for terrestrial mammalian community. <em>Ecosphere 12</em>(9), e03748. <a class="reference external" href="https://doi.org/10.1002/ecs2.3748">https://doi.org/10.1002/ecs2.3748</a></p>
+<p>Dénes, F. V., Silveira, L. F., Beissinger, S. R., &amp; Isaac, N. (2015). Estimating Abundance of Unmarked Animal Populations: Accounting for Imperfect Detection and Other Sources of Zero Inflation. <em>Methods in Ecology and Evolution, 6</em>(5), 543–556. <a class="reference external" href="https://doi.org/10.1111/2041-210x.12333">https://doi.org/10.1111/2041-210x.12333</a></p>
+<p>Findlay, M. A., Briers, R. A., &amp; White, P. J. C. (2020). Component processes of detection probability in camera-trap studies: understanding the occurrence of false-negatives. <em>Mammal Research, 65</em>, 167–180. <a class="reference external" href="https://doi.org/10.1007/s13364-020-00478-y">https://doi.org/10.1007/s13364-020-00478-y</a></p>
+<p>Hofmeester, T. R., Cromsigt, J. P. G. M., Odden, J., Andrén, H., Kindberg, J., &amp; Linnell, J. D. C. (2019). Framing Pictures: A Conceptual Framework to Identify and Correct for Biases in Detection Probability of Camera Traps Enabling Multi-Species Comparison. <em>Ecology and Evolution, 9</em>(4), 2320–2336. <a class="reference external" href="https://doi.org/10.1002/ece3.4878">https://doi.org/10.1002/ece3.4878</a></p>
+<p>Iknayan, K. J., Tingley, M. W., Furnas, B. J., &amp; Beissinger, S. R. (2014). Detecting Diversity: Emerging Methods to Estimate Species Diversity. <em>Trends in Ecology &amp; Evolution, 29</em>(2), 97–106. <a class="reference external" href="https://doi.org/10.1016/j.tree.2013.10.012">https://doi.org/10.1016/j.tree.2013.10.012</a></p>
+<p>Jennelle, C. S., Runge, M. C., &amp; MacKenzie, D. I. (2002). The Use of Photographic Rates to Estimate Densities of Tigers and Other Cryptic Mammals: A Comment on Misleading Conclusions. <em>Animal Conservation, 5</em>(2), 119–120. <a class="reference external" href="https://doi.org/10.1017/s1367943002002160">https://doi.org/10.1017/s1367943002002160</a></p>
+<p>Kays, R., Hody, A., Jachowski, D. S., &amp; Parsons, A. W. (2021). Empirical Evaluation of the Spatial Scale and Detection Process of Camera Trap Surveys. <em>Movement Ecology, 9</em>, 41. <a class="reference external" href="https://doi.org/10.1186/s40462-021-00277-3.">https://doi.org/10.1186/s40462-021-00277-3.</a></p>
 <p>MacKenzie, D. I., &amp; Kendall, W. L. (2002) How Should Detection Probability Be Incorporated into Estimates of Relative Abundance? <em>Ecology, 83</em>(9), 2387–93. <a class="reference external" href="https://doi.org/10.1890/0012-9658(2002)083%5B2387:HSDPBI%5D2.0.CO;2">https://doi.org/10.1890/0012-9658(2002)083[2387:HSDPBI]2.0.CO;2</a></p>
 <p>Mackenzie, D. I., &amp; Royle, J. A. (2005). Designing occupancy studies: general advice and allocating Survey effort. <em>Journal of Applied Ecology, 42</em>, 1105–1114. <a class="reference external" href="https://doi.org/10.1111/j.1365-2664.2005.01098.x">https://doi.org/10.1111/j.1365-2664.2005.01098.x</a></p>
+<p>MacKenzie, D. I., Bailey, L. L., &amp; Nichols, J. D. (2004). Investigating Species Co-Occurrence Patterns When Species Are Detected Imperfectly. <em>Journal of Animal Ecology, 73</em>(3), 546–555. <a class="reference external" href="https://doi.org/10.1111/j.0021-8790.2004.00828.x">https://doi.org/10.1111/j.0021-8790.2004.00828.x</a></p>
+<p>Martin, T. G., Wintle, B. A., Rhodes, J. R., Kuhnert, P. M., Field, S. A., Low-Choy, S. J., Tyre, A. J., &amp; Possingham, H. P. (2005). Zero Tolerance Ecology: Improving Ecological Inference by Modelling the Source of Zero Observations. <em>Ecology Letters, 8</em>(11), 1235-1246. <a class="reference external" href="https://doi.org/10.1111/j.1461-0248.2005.00826.x">https://doi.org/10.1111/j.1461-0248.2005.00826.x</a></p>
+<p>Mikkelä, A. (2024). <em>Probabilistic detection calculator (online application).</em> R shiny version v2. <a class="reference external" href="https://detcal-shiny.2.rahtiapp.fi/">https://detcal-shiny.2.rahtiapp.fi/</a></p>
+<p>Moeller, A. K., Waller, S. J., DeCesare, N. J., Chitwood, M. C., &amp; Lukacs, P. M. (2023). Best practices to account for capture probability and viewable area in camera‐based abundance estimation. <em>Remote Sensing in Ecology and Conservation.</em> <a class="reference external" href="https://doi.org/10.1002/rse2.300">https://doi.org/10.1002/rse2.300</a></p>
+<p>O’Brien, T. G., Kinnaird, M. F., &amp; Wibisono, H. T. (2003). Crouching tigers, hidden prey: Sumatran tiger and prey populations in a tropical forest landscape. <em>Animal Conservation, 6</em>(2), 131-139. <a class="reference external" href="https://doi.org/10.1017/s1367943003003172">https://doi.org/10.1017/s1367943003003172</a></p>
+<p>Rowcliffe, M. J., Carbone, C., Jansen, P. A., Kays, R., &amp; Kranstauber, B. (2011). Quantifying the sensitivity of camera traps: an adapted distance sampling approach. <em>Methods in Ecology and Evolution, 2</em>(5), 464–476. <a class="reference external" href="https://doi.org/10.1111/j.2041-210X.2011.00094.x">https://doi.org/10.1111/j.2041-210X.2011.00094.x</a></p>
 <p>Shannon, G., Lewis, J. S. &amp; Gerber, B. D. (2014). Recommended Survey Designs for Occupancy Modelling using Motion-activated Cameras: Insights from Empirical Wildlife Data. <em>PeerJ, 2</em>, e532. <a class="reference external" href="https://doi.org/10.7717/peerj.532">https://doi.org/10.7717/peerj.532</a></p>
-<p>(Undefined, 2013)</p>
-<p>MacKenzie, D. I., &amp; Kendall, W. L. (2002) How Should Detection Probability Be Incorporated into Estimates of Relative Abundance? <em>Ecology, 83</em>(9), 2387–93. <a class="reference external" href="https://doi.org/10.1890/0012-9658(2002)083%5B2387:HSDPBI%5D2.0.CO;2">https://doi.org/10.1890/0012-9658(2002)083[2387:HSDPBI]2.0.CO;2</a></p>
-<p>Mackenzie, D. I., &amp; Royle, J. A. (2005). Designing occupancy studies: general advice and allocating Survey effort. <em>Journal of Applied Ecology, 42</em>, 1105–1114. <a class="reference external" href="https://doi.org/10.1111/j.1365-2664.2005.01098.x">https://doi.org/10.1111/j.1365-2664.2005.01098.x</a></p>
+<p>Solymos, P., Moreno M., &amp; Lele, S. R. (2024). <em>detect: Analyzing Wildlife Data with Detection Error</em>. R package version 0.5-0, <a class="github reference external" href="https://github.com/psolymos/detect">psolymos/detect</a></p>
+<p>Tobler, M. W. &amp; Powell, G. V. N. (2013). Estimating jaguar densities with camera traps: problems with current designs and recommendations for future studies. <em>Biological Conservation, 159</em>, 109–118. <a class="reference external" href="https://doi.org/10.1016/j.biocon.2012.12.009">https://doi.org/10.1016/j.biocon.2012.12.009</a></p>
+<p>Tourani, M., Brøste, E. N., Bakken, S., Odden, J., Bischof, R., &amp; Hayward, M. (2020). Sooner, closer, or longer: Detectability of mesocarnivores at camera traps. <em>Journal of Zoology, 312</em>(4), 259–270. <a class="reference external" href="https://doi.org/10.1111/jzo.12828">https://doi.org/10.1111/jzo.12828</a></font></p>
 </div>
 </div>
 </div>

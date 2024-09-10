@@ -21,17 +21,18 @@
 ## https://mystmd.org/guide/cross-references
 ## https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#definition-lists
 
+# https://jupyterbook.org/en/stable/structure/toc.html
 
 #######################################################################################
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title                       : Remote Camera Decision Support Tool - Concept Library
-author                      : Alberta Remote Camera Steering Committee (RCSC)
-copyright                   : "2024"  # Copyright year to be placed in the footer
-logo                        : logo.png # A path to the book logo
+title: Remote Camera Decision Support Tool - Concept Library
+author: Alberta Remote Camera Steering Committee (RCSC)
+copyright: "2024"  # Copyright year to be placed in the footer
+logo: logo.png # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-exclude_patterns            : [rc-tool_welcome, .files,.obsidian,_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "**.xls", "**.csv", "**.docx","**.999_cassie_scratch","**.00_for-later","**.00_archive"]
+exclude_patterns: [rc-tool_welcome, .files,.obsidian,_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "**.xls", "**.csv", "**.docx","**.999_cassie_scratch","**.00_for-later","**.00_archive"]
 # Auto-exclude files not in the toc
 only_build_toc_files: true
 
@@ -82,7 +83,7 @@ extensions:
     - sphinx_design
     - myst_nb
     - sphinxext-rediraffe
-    - nbsphinx
+#    - sphinx.ext.intersphinx
 
 #######################################################################################
 # Launch button settings
@@ -131,12 +132,12 @@ sphinx:
       nosidebar: true
 #      primary_sidebar: false
 #      primary_sidebar_end: false
-#      globaltoc_includehidden: false
+      globaltoc_includehidden: false
 #      body_min_width: 90%
 #      body_max_width: 90%
-#      secondary_sidebar_items: false
+      secondary_sidebar_items: false
       secondary_sidebar_items: []##hide right-side sidebar
-#      sidebar_includehidden: false
+      sidebar_includehidden: false
       show_nav_level: 0
       collapse_navigation: True
 #      navbar_start: false
@@ -147,10 +148,10 @@ sphinx:
 #      navbar_end: []
 #      navbar_persistent: false
 #      navbar_persistent: []
-#      content_footer_items: false
-#      content_footer_items: []
-#      article_footer_items: false
-#      article_footer_items: []
+      content_footer_items: false
+      content_footer_items: []
+      article_footer_items: false
+      article_footer_items: []
       footer_start: false
       footer_end: false
       footer_start: []
@@ -167,8 +168,6 @@ sphinx:
 ##      section_nav: []
 ##      sidebars: []
 #      navbar_align: content
-
-# https://jupyterbook.org/en/stable/structure/toc.html
 
 
 #   comments:
@@ -199,11 +198,10 @@ sphinx:
 #
 
 parse:
-  myst_url_schemes: [mailto, http, https]
   myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
     # - amsmath
     - colon_fence
-    - deflist
+    #- deflist
     - dollarmath
     #- html_admonition
     # - html_image
@@ -212,12 +210,19 @@ parse:
     - smartquotes
     - substitution
     - tasklist
-  myst:
-    myst_heading_anchors = 4
+#  myst:
+#    myst_heading_anchors = 1
+#  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
 #    myst_linkify_fuzzy_links: TRUE
+#  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
   myst_substitutions:
     key3: |
       ```{figure} ./03_images/03_image_files/rcsc_et_al_2024_detection-probability-2023-05-04.png
+      :height: 700px
+      :align: center
+      ```
+    key2: |
+      ```{figure} ../03_images/03_image_files/rcsc_et_al_2024_detection-probability-2023-05-04.png
       :height: 700px
       :align: center
       ```
@@ -270,6 +275,9 @@ parse:
     ref_bib_resource11_ref_id: "Full ref here"
     ref_bib_resource12_ref_id: "Full ref here"
     ref_bib_resource13_ref_id: "Full ref here"
+    ref_bib_resource14_ref_id: "Full ref here"
+    ref_bib_resource15_ref_id: "Full ref here"
+    ref_bib_resource16_ref_id: "Full ref here"
     name_mod_name: "Model name"
     term_mod_name: "Model name here (with ref)"
     prog_1_text: "Objectives & Resources"
@@ -681,6 +689,14 @@ parse:
     ref_intext_zuur_et_al_2007: "Zuur et al., 2007"
     ref_intext_mackenzie_et_al_2017: "MacKenzie et al., 2017"
     ref_intext_wildlifedegree_2022: "The Wildlife Degree (2022)"
+    ref_intext_stewart_et_al_2019a: "Stewart et al., 2019a"
+    ref_intext_stewart_et_al_2018: "Stewart et al., 2018"
+    ref_intext_efford_dawson_2012: "Efford & Dawson, 2012"
+    ref_intext_stewart_et_al_2019b: "Stewart et al., 2019b"
+    ref_bib_stewart_et_al_2019a: "Stewart, F. E. C., Volpe, J. P., Eaton, B. R., Hood, G. A., Vujnovic, D., & Fisher, J. T. (2019b). Protected areas alone rarely predict mammalian biodiversity across spatial scales in an Albertan working landscape. *Biological Conservation, 240*, 108252. <https://doi.org/10.1016/j.biocon.2019.108252>"
+    ref_bib_stewart_et_al_2018: "Stewart, F. E. C., Fisher, J. T., Burton, A. C., & Volpe, J. P. (2018). Species occurrence data reflect the magnitude of animal movements better than the proximity of animal space use. *Ecosphere, 9*(2), e02112. <https://doi.org/10.1002/ecs2.2112>"
+    ref_bib_efford_dawson_2012: "Efford, M. G., & Dawson, D. K. (2012). Occupancy in continuous habitat. *Ecosphere, 3*(4). Article 32. <https://doi.org/10.1890/es11-00308.1>"
+    ref_bib_stewart_et_al_2019b: "Stewart, F. E. C., Volpe, J. P., & Fisher, J. T. (2019b). The Debate About Bait: A Red Herring in Wildlife Research. *The Journal of Wildlife Management, 83*(4), 985–992. <https://doi.org/10.1002/jwmg.21657>"
     ref_bib_mackenzie_et_al_2017: "MacKenzie, D. I., Nichols, J. D., Royle, J. A., Pollock, K. H., Bailey, L. L., & Hines, J. E. (2017). *Occupancy Estimation and Modeling: Inferring Patterns and Dynamics of Species Occurrence*. 2nd ed. Academic Press, San Diego. <https://www.sciencedirect.com/book/9780124071971/occupancy-estimation-and-modeling>."
     ref_bib_abmi_2021: "Alberta Biodiversity Monitoring Institute [ABMI] (2021). *Terrestrial ARU and Remote Camera Trap Protocols.* Edmonton, Alberta. <https://abmi.ca/home/publications/551-600/599>"
     ref_bib_abolaffio_et_al_2019: "Abolaffio, M., Focardi, S., & Santini, G. (2019). Avoiding misleading messages: Population assessment using camera trapping is not a simple task. *Journal of Animal Ecology, 88*(12), 2011–2016. Medline. <https://doi.org/10.1111/1365-2656.13085>"
@@ -1019,9 +1035,9 @@ parse:
     mod_2flankspim_assump_01: "Same as SCR ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_2flankspim_assump_02: "Capture processes for left-side, right-side and both-side images are independent ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_2flankspim_con_01: "Computationally intensive ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_2flankspim_con_02: "Increased precision is less pronounced in high-[density](./09_gloss_ref/09_glossary.md#density) populations ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_2flankspim_con_02: "Increased precision is less pronounced in high-[density](./09_glossary.md#density) populations ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_2flankspim_pro_01: "Same as SCR ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_2flankspim_pro_02: "Improved precision of [density](./09_gloss_ref/09_glossary.md#density) estimates relative to SCR ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_davis_et_al_2021 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_2flankspim_pro_02: "Improved precision of [density](./09_glossary.md#density) estimates relative to SCR ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_davis_et_al_2021 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_2flankspim_pro_03: "Many study designs can be used (paired sample stations, single camera locations, and hybrids of both paired- and single camera locations ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_davis_et_al_2021 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_2flankspim_pro_04: "Can be used with single-camera and hybrid sampling designs, and therefore requires fewer cameras (or sample more area) than SCR ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_2flankspim_pro_05: "May be more robust to non-independence than SC ({{ ref_intext_augustine_et_al_2018 }}; {{ ref_intext_clarke_et_al_2023 }})"
@@ -1038,17 +1054,17 @@ parse:
     mod_catspim_assump_02: "Camera must be close enough together that animals are detected at multiple cameras ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_catspim_assump_03: "Demographic closure (i.e., no births or deaths) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_catspim_assump_04: "Geographic closure (i.e., no immigration or emigration) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_catspim_assump_05: "Detections are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_catspim_assump_05: "Detections are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_catspim_assump_06: "Activity centres are randomly dispersed ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_catspim_assump_07: "Activity centres are stationary ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_catspim_assump_08: "Each categorical identifier (e.g., male*/female, collared**/not collared, etc) has fixed number of possibilities ({{ ref_intext_sun_et_al_2022 }})"
     mod_catspim_assump_09: "All possible values of categorical identifiers occur in the population with probabilities that can be estimated ({{ ref_intext_augustine_et_al_2019 }}; {{ ref_intext_sun_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_catspim_assump_10: "Every individual is assigned 'full categorical identity' (i.e., 'set of traits given all categorical identifiers and possibilities') ({{ ref_intext_augustine_et_al_2019 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_catspim_assump_11: "Individuals' identifying traits do not change during the [survey](./09_gloss_ref/09_glossary.md#survey) (e.g., antlers present*/absent) ({{ ref_intext_augustine_et_al_2019 }})"
+    mod_catspim_assump_11: "Individuals' identifying traits do not change during the [survey](./09_glossary.md#survey) (e.g., antlers present*/absent) ({{ ref_intext_augustine_et_al_2019 }})"
     mod_catspim_con_01: "Sensitive to non-independent movement (e.g., group-travel); can cause over-dispersion and bias estimates ({{ ref_intext_sun_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }}); may limit application to solitary species only ({{ ref_intext_sun_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_catspim_con_02: "May produce be less reliable*/accurate estimates for high-[density](./09_gloss_ref/09_glossary.md#density) populations ({{ ref_intext_sun_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_catspim_con_03: "Too few categorical identifiers*/ possibilities can result in mis-assignments and overestimating [density](./09_gloss_ref/09_glossary.md#density) ({{ ref_intext_augustine_et_al_2019 }}; {{ ref_intext_parmenter_et_al_2003 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_catspim_pro_01: "May produce more precise and less biased [density](./09_gloss_ref/09_glossary.md#density) estimates than SC with less information ({{ ref_intext_sun_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_catspim_con_02: "May produce be less reliable*/accurate estimates for high-[density](./09_glossary.md#density) populations ({{ ref_intext_sun_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_catspim_con_03: "Too few categorical identifiers*/ possibilities can result in mis-assignments and overestimating [density](./09_glossary.md#density) ({{ ref_intext_augustine_et_al_2019 }}; {{ ref_intext_parmenter_et_al_2003 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_catspim_pro_01: "May produce more precise and less biased [density](./09_glossary.md#density) estimates than SC with less information ({{ ref_intext_sun_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_cr_cmr_assump_01: "Demographic closure (i.e., no births or deaths) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_cr_cmr_assump_02: "Geographic closure (i.e., no immigration or emigration) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_cr_cmr_assump_03: "All individuals have at least some probability of being detected ({{ ref_intext_rovero_et_al_2013 }})"
@@ -1056,27 +1072,27 @@ parse:
     mod_cr_cmr_assump_05: "Activity centres are randomly dispersed ({{ ref_intext_clarke_et_al_2023 }})"
     mod_cr_cmr_assump_06: "Activity centres are stationary ({{ ref_intext_clarke_et_al_2023 }})"
     mod_cr_cmr_con_01: "Requires that individuals are distinguishable ({{ ref_intext_wearn_gloverkapfer_2017 }}). However, CR (Sollmann, 2018; {{ ref_intext_rovero_et_al_2013 }}; {{ ref_intext_karanth_nichols_1998 }}) has also been used to estimate abundance of species that lack natural markers but that have phenotypic and*/or environment-induced characteristics ({{ ref_intext_noss_et_al_2003 }}; {{ ref_intext_kelly_et_al_2008 }}; {{ ref_intext_rovero_et_al_2013 }})"
-    mod_cr_cmr_con_02: "When the sample size is large enough to reliably estimate [density](./09_gloss_ref/09_glossary.md#density) with CR, ({{ ref_intext_karanth_1995 }}; {{ ref_intext_karanth_nichols_1998 }}) individuals are unlikely to have a unique marker ({{ ref_intext_noss_et_al_2003 }}; {{ ref_intext_kelly_et_al_2008 }}; {{ ref_intext_rovero_et_al_2013 }})"
+    mod_cr_cmr_con_02: "When the sample size is large enough to reliably estimate [density](./09_glossary.md#density) with CR, ({{ ref_intext_karanth_1995 }}; {{ ref_intext_karanth_nichols_1998 }}) individuals are unlikely to have a unique marker ({{ ref_intext_noss_et_al_2003 }}; {{ ref_intext_kelly_et_al_2008 }}; {{ ref_intext_rovero_et_al_2013 }})"
     mod_cr_cmr_con_03: "Dependent on the surveyed area, which is difficult to track and calculate ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_cr_cmr_con_06: "Requires a minimum number of captures and recaptures ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_cr_cmr_con_07: "Relatively stringent requirements for study design (e.g., no 'holes' in the trapping grid) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_cr_cmr_con_08: "Geographic closure at the plot level, which is often unrealistic ({{ ref_intext_wearn_gloverkapfer_2017 }}) has also been used to estimate abundance of species that lack natural markers but that have phenotypic and*/or environment-induced characteristics ({{ ref_intext_noss_et_al_2003 }}; {{ ref_intext_kelly_et_al_2008 }}; {{ ref_intext_rovero_et_al_2013 }})"
     mod_cr_cmr_con_10: "Assumes a specific relationship between abundance and detection ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_cr_cmr_con_11: "[Density](./09_gloss_ref/09_glossary.md#density) cannot be explicitly estimated because the true area animals occupy is never measured (only approximated) ({{ ref_intext_chandler_royle_2013 }})"
+    mod_cr_cmr_con_11: "[Density](./09_glossary.md#density) cannot be explicitly estimated because the true area animals occupy is never measured (only approximated) ({{ ref_intext_chandler_royle_2013 }})"
     mod_cr_cmr_pro_01: "May be used as a relative abundance index that controls for imperfect detection ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_cr_cmr_pro_02: "Easy-to-use software exists to implement (e.g., CAPTURE){{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_cr_cmr_pro_03: "Can use the robust design with 'open' models to obtain recruitment and survival rate estimates ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_divers_rich_alpha_assump_01: "[Camera locations](./09_gloss_ref/09_glossary.md#camera_location) are [randomly placed](./09_gloss_ref/09_glossary.md#sampledesign_random) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_divers_rich_alpha_assump_02: "[Camera locations](./09_gloss_ref/09_glossary.md#camera_location) are independent ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_divers_rich_alpha_assump_03: "[Detection probability](./09_gloss_ref/09_glossary.md#detection_probability) of different species remains the same ({{ ref_intext_wearn_gloverkapfer_2017 }}) ('true' species richness estimation involves attempting to correct for '[imperfect detection](./09_gloss_ref/09_glossary.md#imperfect_detection)' ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_divers_rich_alpha_assump_04: "Sampling effort is comparable between [camera locations](./09_gloss_ref/09_glossary.md#camera_location) ({{ ref_intext_royle_nichols_2003 }})"
+    mod_divers_rich_alpha_assump_01: "[Camera locations](./09_glossary.md#camera_location) are [randomly placed](./09_glossary.md#sampledesign_random) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_divers_rich_alpha_assump_02: "[Camera locations](./09_glossary.md#camera_location) are independent ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_divers_rich_alpha_assump_03: "[Detection probability](./09_glossary.md#detection_probability) of different species remains the same ({{ ref_intext_wearn_gloverkapfer_2017 }}) ('true' species richness estimation involves attempting to correct for '[imperfect detection](./09_glossary.md#imperfect_detection)' ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_divers_rich_alpha_assump_04: "Sampling effort is comparable between [camera locations](./09_glossary.md#camera_location) ({{ ref_intext_royle_nichols_2003 }})"
     mod_divers_rich_alpha_con_01: "Dependent on the scale (as captured in the species-area relationship) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_alpha_con_02: "All species have equal weight in calculations, and community evenness is disregarded ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_alpha_con_03: "Insensitive to changes in abundance, community structure and community composition ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_alpha_pro_01: "Fundamental to ecological theory and often a key metric used in management ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_alpha_pro_02: "Simple to analyze, interpret and communicate ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_alpha_pro_03: "Models exist to estimate asymptotic species richness, including unseen species (simple versions of these models - 'EstimateS' and the 'vegan' R-packages) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_divers_rich_beta_assump_01: "[Camera locations](./09_gloss_ref/09_glossary.md#camera_location) are [randomly placed](./09_gloss_ref/09_glossary.md#sampledesign_random) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_divers_rich_beta_assump_01: "[Camera locations](./09_glossary.md#camera_location) are [randomly placed](./09_glossary.md#sampledesign_random) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_beta_assump_02: "Randomness and independence ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_beta_assump_03: "Samples are assumed to have been taken at random from the broader population of sites ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_beta_con_01: "No single best measure for all purposes ({{ ref_intext_wearn_gloverkapfer_2017 }})"
@@ -1085,9 +1101,9 @@ parse:
     mod_divers_rich_beta_pro_01: "Can be used to track changes in community composition ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_beta_pro_02: "Plays a critical role in effective conservation prioritization (e.g., designing reserve networks) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_beta_pro_03: "Important for detecting changes in the fundamental processes ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_divers_rich_gamma_assump_01: "[Camera locations](./09_gloss_ref/09_glossary.md#camera_location) are [randomly placed](./09_gloss_ref/09_glossary.md#sampledesign_random) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_divers_rich_gamma_assump_02: "[Camera locations](./09_gloss_ref/09_glossary.md#camera_location) are independent ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_divers_rich_gamma_assump_03: "[Detection probability](./09_gloss_ref/09_glossary.md#detection_probability) of different species remains the same ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_divers_rich_gamma_assump_01: "[Camera locations](./09_glossary.md#camera_location) are [randomly placed](./09_glossary.md#sampledesign_random) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_divers_rich_gamma_assump_02: "[Camera locations](./09_glossary.md#camera_location) are independent ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_divers_rich_gamma_assump_03: "[Detection probability](./09_glossary.md#detection_probability) of different species remains the same ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_gamma_con_01: "Many indices exist, and it can be difficult to choose the most appropriate ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_gamma_con_02: "Comparing measures across space, time and studies can be very difficult ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_divers_rich_gamma_con_03: "Insensitive to changes in community composition ({{ ref_intext_wearn_gloverkapfer_2017 }}) (however, this may be conditional on study design)"
@@ -1096,56 +1112,56 @@ parse:
     mod_ds_assump_01: "Random or systematic random placements (consistent with the assumption that points are placed independently of animal locations) ({{ ref_intext_howe_et_al_2017 }})"
     mod_ds_assump_02: "Camera locations are randomly placed relative to animal movement ({{ ref_intext_palencia_et_al_2021 }})"
     mod_ds_assump_03: "Detection is perfect (detection probability '*p*' =  1) at focal area */ distance 0 ({{ ref_intext_palencia_et_al_2021 }})"
-    mod_ds_assump_04: "Demographic closure (i.e., no births or deaths) and geographic closure (i.e., no immigration or emigration) (animal [density](./09_gloss_ref/09_glossary.md#density) is constant during the [survey](./09_gloss_ref/09_glossary.md#survey)) ({{ ref_intext_palencia_et_al_2021 }})"
+    mod_ds_assump_04: "Demographic closure (i.e., no births or deaths) and geographic closure (i.e., no immigration or emigration) (animal [density](./09_glossary.md#density) is constant during the [survey](./09_glossary.md#survey)) ({{ ref_intext_palencia_et_al_2021 }})"
     mod_ds_assump_05: "Animal movement and behaviour are unaffected by the cameras ({{ ref_intext_palencia_et_al_2021 }})"
     mod_ds_assump_06: "Animals are detected at initial locations (e.g., they do not change course in response to the camera prior to detection) ({{ ref_intext_palencia_et_al_2021 }})"
     mod_ds_assump_07: "Distances are measured exactly (however if the data from different distances will be grouped ('binned') for analysis later, an accuracy of +*/- 1m may suffice) ({{ ref_intext_palencia_et_al_2021 }})"
-    mod_ds_assump_08: "Detections are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_palencia_et_al_2021 }})"
+    mod_ds_assump_08: "Detections are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_palencia_et_al_2021 }})"
     mod_ds_assump_09: "Snapshot moments selected independently of animal locations ({{ ref_intext_palencia_et_al_2021 }})"
     mod_ds_con_01: "May require discarding a portion of the dataset (when the best fitting model truncates the dataset) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_ds_con_02: "Biased by movement speed ({{ ref_intext_palencia_et_al_2021 }})"
     mod_ds_con_03: "Best suited to larger animals; the smaller the focal species, the lower remote cameras must be set, which reduces the depth of the viewshed, and thus sampling size and the flexibility of the model' ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_clarke_et_al_2023 }})."
     mod_ds_con_04: "Does not permit inference about spatial variation in abundance (unless using hierarchical distance which can model spatial variation as a function of covariates) ({{ ref_intext_gilbert_et_al_2021 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_ds_con_05: "Calculating camera-animal distances can be labour-intensive and time-consuming (However, recently developed techniques (e.g., Johanns et al., 2022) show promise for simplifying and automating the process) ({{ ref_intext_clarke_et_al_2023 }})"
-    mod_ds_con_06: "Requires a good understanding of the focal populations’ activity patterns; [density](./09_gloss_ref/09_glossary.md#density) estimates can be biased (e.g., under-estimated) when regular periods of inactivity are not accounted for (using detection times to infer periods of activity may help overcome this limitation)' ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_palencia_et_al_2021 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_ds_con_07: "Tends to underestimate [density](./09_gloss_ref/09_glossary.md#density) ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_twining_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_ds_con_08: "Low population [density](./09_gloss_ref/09_glossary.md#density) and reactivity to cameras may be major sources of bias' ({{ ref_intext_bessone_et_al_2020 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_ds_con_06: "Requires a good understanding of the focal populations’ activity patterns; [density](./09_glossary.md#density) estimates can be biased (e.g., under-estimated) when regular periods of inactivity are not accounted for (using detection times to infer periods of activity may help overcome this limitation)' ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_palencia_et_al_2021 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_ds_con_07: "Tends to underestimate [density](./09_glossary.md#density) ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_twining_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_ds_con_08: "Low population [density](./09_glossary.md#density) and reactivity to cameras may be major sources of bias' ({{ ref_intext_bessone_et_al_2020 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_ds_pro_01: "A shortcut to controlling for variation in detection distances by only counting individuals within a short distance with an unobstructed view, and well sampled across cameras and species ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_ds_pro_02: "[Density](./09_gloss_ref/09_glossary.md#density) estimates are unbiased by animal movement 'since camera-animal distance is measured at a certain instant in time (intervals of duration *t* apart)' ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_ds_pro_03: "Can be applied to low-[density](./09_gloss_ref/09_glossary.md#density) populations ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_ds_pro_02: "[Density](./09_glossary.md#density) estimates are unbiased by animal movement 'since camera-animal distance is measured at a certain instant in time (intervals of duration *t* apart)' ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_ds_pro_03: "Can be applied to low-[density](./09_glossary.md#density) populations ({{ ref_intext_howe_et_al_2017 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_ds_pro_04: "Does not require individual identification ({{ ref_intext_howe_et_al_2017 }})"
-    mod_inventory_assump_01: "No formal [assumptions](./09_gloss_ref/09_glossary.md#mods_modelling_assumption) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_inventory_assump_01: "No formal [assumptions](./09_glossary.md#mods_modelling_assumption) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_inventory_con_01: "Not reliable estimates for inference ('considered as unfinished, working drafts') ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_inventory_pro_01: "Maximum flexibility for study design (e.g., [camera days per camera location](./09_gloss_ref/09_glossary.md#camera_days_per_camera_location) or use of [lure](./09_gloss_ref/09_glossary.md#baitlure_lure) ({{ ref_intext_rovero_et_al_2013 }})) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_inventory_pro_01: "Maximum flexibility for study design (e.g., [camera days per camera location](./09_glossary.md#camera_days_per_camera_location) or use of [lure](./09_glossary.md#baitlure_lure) ({{ ref_intext_rovero_et_al_2013 }})) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_is_assump_01: "Demographic closure (i.e., no births or deaths) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_is_assump_02: "Geographic closure (i.e., no immigration or emigration) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_is_assump_03: "Camera locations are randomly placed ({{ ref_intext_moeller_et_al_2018 }})"
-    mod_is_assump_04: "Detections are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_moeller_et_al_2018 }})"
+    mod_is_assump_04: "Detections are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_is_assump_05: "Detection is perfect (detection probability '*p*' = 1) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_is_con_01: "Requires accurate counts of animals ({{ ref_intext_moeller_et_al_2018 }})"
     mod_is_con_02: "Assumes that perfect (detection probability '*p*' = 1) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_is_con_03: "Reduced precision ({{ ref_intext_moeller_et_al_2018 }})"
     mod_is_pro_01: "Can be efficient for estimating abundance of common species (with a lot of images) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_is_pro_02: "Flexible assumption of animals’ distribution ({{ ref_intext_moeller_et_al_2018 }})"
-    mod_occupancy_assump_01: "[Occupancy](./09_gloss_ref/09_glossary.md#occupancy) is constant ({{ ref_intext_mackenzie_et_al_2002 }}) (abundance is constant) ({{ ref_intext_mackenzie_et_al_2006 }})"
-    mod_occupancy_assump_02: "[Camera locations](./09_gloss_ref/09_glossary.md#camera_location) are independent ({{ ref_intext_mackenzie_et_al_2006 }})"
-    mod_occupancy_assump_03: "Detections are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_mackenzie_et_al_2006 }})"
-    mod_occupancy_assump_04: "The probability of [occupancy](./09_gloss_ref/09_glossary.md#occupancy) and detection are constant across all [camera locations](./09_gloss_ref/09_glossary.md#camera_location) within a stratum or can be modelled using covariates ({{ ref_intext_mackenzie_et_al_2006 }})"
+    mod_occupancy_assump_01: "[Occupancy](./09_glossary.md#occupancy) is constant ({{ ref_intext_mackenzie_et_al_2002 }}) (abundance is constant) ({{ ref_intext_mackenzie_et_al_2006 }})"
+    mod_occupancy_assump_02: "[Camera locations](./09_glossary.md#camera_location) are independent ({{ ref_intext_mackenzie_et_al_2006 }})"
+    mod_occupancy_assump_03: "Detections are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_mackenzie_et_al_2006 }})"
+    mod_occupancy_assump_04: "The probability of [occupancy](./09_glossary.md#occupancy) and detection are constant across all [camera locations](./09_glossary.md#camera_location) within a stratum or can be modelled using covariates ({{ ref_intext_mackenzie_et_al_2006 }})"
     mod_occupancy_assump_05: "Species are not misidentified ({{ ref_intext_mackenzie_et_al_2006 }})"
-    mod_occupancy_con_01: "[Occupancy](./09_gloss_ref/09_glossary.md#occupancy) ({{ ref_intext_mackenzie_et_al_2002 }}) only measures distribution; it may be a misleading indicator of changes in abundance ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_occupancy_con_02: "Interpretation*/communication of results may not be straightforward (if the scale of movement is much larger than the [camera spacing](./09_gloss_ref/09_glossary.md#camera_spacing) the results should be interpreted as 'probability of use' rather than [occupancy](./09_gloss_ref/09_glossary.md#occupancy)) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_occupancy_con_01: "[Occupancy](./09_glossary.md#occupancy) ({{ ref_intext_mackenzie_et_al_2002 }}) only measures distribution; it may be a misleading indicator of changes in abundance ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_occupancy_con_02: "Interpretation*/communication of results may not be straightforward (if the scale of movement is much larger than the [camera spacing](./09_glossary.md#camera_spacing) the results should be interpreted as 'probability of use' rather than [occupancy](./09_glossary.md#occupancy)) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_occupancy_pro_01: "Does not require individual identification ({{ ref_intext_mackenzie_et_al_2006 }})"
     mod_occupancy_pro_02: "Only requires detection*/non-detection data for each site ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_occupancy_pro_03: "Relatively easy-to-use software exists for fitting models (PRESENCE, MARK, and the 'unmarked' R package) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_occupancy_pro_04: "Open models exist that allow for the estimation of site colonization and extinction rates ({{ ref_intext_mackenzie_et_al_2006 }}; {{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_occupancy_pro_05: "Multi-species [occupancy models](./09_gloss_ref/09_glossary.md#mods_occupancy) ({{ ref_intext_mackenzie_et_al_2002 }}) allow the inclusion of interactions among species while controlling for [imperfect detection](./09_gloss_ref/09_glossary.md#imperfect_detection) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_rai_poisson_assump_01: "Many [assumption](./09_gloss_ref/09_glossary.md#mods_modelling_assumption)s exist (since used for many approaches) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_rai_poisson_con_01: "Difficult to draw inferences (a large number of [assumptions](./09_gloss_ref/09_glossary.md#mods_modelling_assumption)); comparisons across space, time, species, and studies are difficult ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_occupancy_pro_05: "Multi-species [occupancy models](./09_glossary.md#mods_occupancy) ({{ ref_intext_mackenzie_et_al_2002 }}) allow the inclusion of interactions among species while controlling for [imperfect detection](./09_glossary.md#imperfect_detection) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_rai_poisson_assump_01: "Many [assumption](./09_glossary.md#mods_modelling_assumption)s exist (since used for many approaches) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_rai_poisson_con_01: "Difficult to draw inferences (a large number of [assumptions](./09_glossary.md#mods_modelling_assumption)); comparisons across space, time, species, and studies are difficult ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_rai_poisson_con_02: "Requires stringent study design (e.g., random sampling, standardized methods) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_rai_poisson_con_03: "Detection rates from remote cameras cannot be used as an index to compare relative abundance across species ({{ ref_intext_rowcliffe-carbone_2008 }})"
     mod_rai_poisson_pro_01: "Simple to calculate and technically possible (even with small sample sizes when robust methods might fail) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_rai_poisson_pro_02: "[Relative abundance indices](./09_gloss_ref/09_glossary.md#mods_relative_abundance) often do correlate with abundance ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_rai_poisson_pro_03: "Calibration with independent [density](./09_gloss_ref/09_glossary.md#density) estimates is possible ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_rai_poisson_pro_02: "[Relative abundance indices](./09_glossary.md#mods_relative_abundance) often do correlate with abundance ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_rai_poisson_pro_03: "Calibration with independent [density](./09_glossary.md#density) estimates is possible ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_rem_assump_01: "Demographic closure ({{ ref_intext_rowcliffe_et_al_2008 }}; {{ ref_intext_doran_myers_2018 }}) (i.e., no births or deaths)"
     mod_rem_assump_02: "Geographic closure ({{ ref_intext_rowcliffe_et_al_2008 }}; {{ ref_intext_doran_myers_2018 }}) (i.e., no immigration or emigration) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_rem_assump_03: "Camera locations are randomly placed relative to animal movement ({{ ref_intext_wearn_gloverkapfer_2017 }}; {{ ref_intext_rowcliffe_et_al_2008 }})"
@@ -1162,90 +1178,90 @@ parse:
     mod_rem_con_05: "Possible sources of error include inaccurate measurement of detection zone and movement rate ({{ ref_intext_rowcliffe_et_al_2013 }}; {{ ref_intext_cusack_et_al_2015 }})"
     mod_rem_pro_01: "Flexible study design (e.g., 'holes' in grids allowed, camera spacing less important) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_rem_pro_02: "Can be applied to unmarked species ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_rem_pro_03: "Allows community-wide [density](./09_gloss_ref/09_glossary.md#density) estimation ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_rem_pro_03: "Allows community-wide [density](./09_glossary.md#density) estimation ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_rem_pro_04: "Outputs also include informative parameter estimates (i.e., animal speed and activity levels, and detection zone parameters) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_rem_pro_05: "Comparable estimates to SECR [({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_rem_pro_07: "Does not require marked animals or identification of individuals ({{ ref_intext_rowcliffe_et_al_2008 }}; {{ ref_intext_doran_myers_2018 }})"
     mod_rem_pro_08: "Can use camera spacing without regard to population home range size ({{ ref_intext_rowcliffe_et_al_2008 }}; {{ ref_intext_doran_myers_2018 }})"
-    mod_rem_pro_09: "Direct estimation of [density](./09_gloss_ref/09_glossary.md#density); avoids ad-hoc definitions of study area ({{ ref_intext_rowcliffe_et_al_2008 }})"
-    mod_rest_assump_01: "Demographic closure (i.e., no births or deaths) and geographic closure (i.e., no immigration or emigration) (animal [density](./09_gloss_ref/09_glossary.md#density) is constant during the [survey](./09_gloss_ref/09_glossary.md#survey)) ({{ ref_intext_rowcliffe_et_al_2008 }})"
+    mod_rem_pro_09: "Direct estimation of [density](./09_glossary.md#density); avoids ad-hoc definitions of study area ({{ ref_intext_rowcliffe_et_al_2008 }})"
+    mod_rest_assump_01: "Demographic closure (i.e., no births or deaths) and geographic closure (i.e., no immigration or emigration) (animal [density](./09_glossary.md#density) is constant during the [survey](./09_glossary.md#survey)) ({{ ref_intext_rowcliffe_et_al_2008 }})"
     mod_rest_assump_02: "Detection is perfect ({{ ref_intext_wearn_gloverkapfer_2017 }}) (detection probability '*p*' = 1) unless otherwise modelled ({{ ref_intext_nakashima_et_al_2018 }})"
     mod_rest_assump_03: "Camera locations are representative of the available habitat ({{ ref_intext_nakashima_et_al_2018 }})"
     mod_rest_assump_04: "Camera locations are randomly placed relative to the spatial distribution of animals ({{ ref_intext_nakashima_et_al_2018 }})"
     mod_rest_assump_05: "Animal movement and behaviour are not affected by cameras ({{ ref_intext_nakashima_et_al_2018 }})"
-    mod_rest_assump_06: "Detections are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_nakashima_et_al_2018 }})"
+    mod_rest_assump_06: "Detections are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_nakashima_et_al_2018 }})"
     mod_rest_assump_07: "The observed distribution of staying time in the focal area fits the distribution of movement ({{ ref_intext_nakashima_et_al_2018 }})"
     mod_rest_assump_08: "The observed staying time must follow a given parametric distribution ({{ ref_intext_nakashima_et_al_2018 }})"
-    mod_rest_con_01: "Attraction or aversion to cameras is exhibited in some species ({{ ref_intext_meek_et_al_2016 }}) and could affect the time within the detection zone and subsequently affect estimates of [density](./09_gloss_ref/09_glossary.md#density) ({{ ref_intext_doran_myers_2018 }})"
+    mod_rest_con_01: "Attraction or aversion to cameras is exhibited in some species ({{ ref_intext_meek_et_al_2016 }}) and could affect the time within the detection zone and subsequently affect estimates of [density](./09_glossary.md#density) ({{ ref_intext_doran_myers_2018 }})"
     mod_rest_con_02: "Requires accurate measurements of the area of the camera detection zone, which has been a challenge in previous studies ({{ ref_intext_rowcliffe_et_al_2011 }}; {{ ref_intext_cusack_et_al_2015 }}; {{ ref_intext_anile-devillard_2016 }}; {{ ref_intext_doran_myers_2018 }}; {{ ref_intext_nakashima_et_al_2018 }})"
     mod_rest_con_03: "Mathematically challenging ({{ ref_intext_cusack_et_al_2015 }})"
-    mod_rest_pro_01: "Provides unbiased estimates of animal [density](./09_gloss_ref/09_glossary.md#density), even when animal movement speed varies, and animals travel in pairs ({{ ref_intext_nakashima_et_al_2018 }})"
+    mod_rest_pro_01: "Provides unbiased estimates of animal [density](./09_glossary.md#density), even when animal movement speed varies, and animals travel in pairs ({{ ref_intext_nakashima_et_al_2018 }})"
     mod_sc_assump_01: "Camera locations are close enough together that animals are detected at multiple cameras ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_sc_assump_02: "Demographic closure (i.e., no births or deaths) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_sc_assump_03: "Geographic closure (i.e., no immigration or emigration) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_sc_assump_04: "Detections are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_sc_assump_04: "Detections are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_sc_assump_05: "Animals’ activity centres are randomly dispersed ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_sc_assump_06: "Animals’ activity centres are stationary ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_sc_con_01: "Produces imprecise estimates even under ideal circumstances unless supplemented with auxiliary data (e.g., telemetry) ({{ ref_intext_doran_myers_2018 }}; {{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_sollmann_et_al_2013a }}; {{ ref_intext_sollmann_et_al_2013b }})"
     mod_sc_con_02: "Precision decreases with an increasing number of individuals detected at a camera' ({{ ref_intext_morin_et_al_2022 }}) (as overlap of individuals’ home ranges increases) ({{ ref_intext_augustine_et_al_2019 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_sc_con_03: "Not appropriate for low [density](./09_gloss_ref/09_glossary.md#density) or elusive species when recaptures too few to confidently infer the number and location of activity centres' ({{ ref_intext_clarke_et_al_2023 }}; {{ ref_intext_burgar_et_al_2018 }})"
-    mod_sc_con_04: "Not appropriate for high-[density](./09_gloss_ref/09_glossary.md#density) populations with evenly spaced activity centres (camera[-specific] counts will be too similar and impair activity centre inference)' ({{ ref_intext_clarke_et_al_2023 }})"
+    mod_sc_con_03: "Not appropriate for low [density](./09_glossary.md#density) or elusive species when recaptures too few to confidently infer the number and location of activity centres' ({{ ref_intext_clarke_et_al_2023 }}; {{ ref_intext_burgar_et_al_2018 }})"
+    mod_sc_con_04: "Not appropriate for high-[density](./09_glossary.md#density) populations with evenly spaced activity centres (camera[-specific] counts will be too similar and impair activity centre inference)' ({{ ref_intext_clarke_et_al_2023 }})"
     mod_sc_con_05: "Ill-suited to populations that exhibit group-travelling behaviour' ({{ ref_intext_sun_et_al_2022 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_sc_con_06: "Study design (camera arrangement) can dramatically affect the accuracy and precision of [density](./09_gloss_ref/09_glossary.md#density) estimates' ({{ ref_intext_clarke_et_al_2023 }}; {{Sollmann, 2018}})"
+    mod_sc_con_06: "Study design (camera arrangement) can dramatically affect the accuracy and precision of [density](./09_glossary.md#density) estimates' ({{ ref_intext_clarke_et_al_2023 }}; {{Sollmann, 2018}})"
     mod_sc_con_07: "Cameras must be close enough that animals are detected at multiple camera locations (may be challenging at large scales as many cameras are needed)' ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_sc_pro_01: "Does not require individual identification ({{ ref_intext_clarke_et_al_2023 }})"
     mod_scr_secr_assump_01: "Demographic closure (i.e., no births or deaths) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_assump_02: "Detection probability of different individuals is equal ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_assump_03: "or, for SECR, individuals have equal detection probability at a given distance from the centre of their home range ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_scr_secr_assump_04: "Detections of different individuals are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_scr_secr_assump_04: "Detections of different individuals are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_assump_05: "Behaviour is unaffected by cameras and marking ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_assump_06: "Individuals do not lose marks ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_assump_07: "Individuals are not misidentified ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_scr_secr_assump_08: "[Surveys](./09_gloss_ref/09_glossary.md#survey) are independent ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_scr_secr_assump_08: "[Surveys](./09_glossary.md#survey) are independent ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_assump_09: "For conventional models, geographic closure (i.e., no immigration or emigration) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_assump_10: "Spatially explicit models have further assumptions about animal movement ({{ ref_intext_wearn_gloverkapfer_2017 }}; {{ ref_intext_rowcliffe_et_al_2008 }}; {{ ref_intext_royle_et_al_2009 }}; {{ ref_intext_obrien_et_al_2011 }}); these include:"
     mod_scr_secr_assump_11: "Home ranges are stable ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_assump_12: "Movement is unaffected by cameras ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_scr_secr_assump_13: "[Camera locations](./09_gloss_ref/09_glossary.md#camera_location) are randomly placed with respect to the distribution and orientation of home ranges ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_scr_secr_assump_13: "[Camera locations](./09_glossary.md#camera_location) are randomly placed with respect to the distribution and orientation of home ranges ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_assump_14: "Distribution of home range centres follows a defined distribution (Poisson, or other, e.g., negative binomial) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_con_01: "Requires that individuals are identifiable ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_con_02: "Requires that a minimum number of individuals are trapped (each recaptured multiple times ideally) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_con_03: "Requires that each individual is captured at a number of camera locations ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_scr_secr_con_04: "Multiple cameras per station may be required to identify individuals; difficult to implement at large spatial scales as it requires a high [density](./09_gloss_ref/09_glossary.md#density) of cameras ({{ ref_intext_morin_et_al_2022 }})"
+    mod_scr_secr_con_04: "Multiple cameras per station may be required to identify individuals; difficult to implement at large spatial scales as it requires a high [density](./09_glossary.md#density) of cameras ({{ ref_intext_morin_et_al_2022 }})"
     mod_scr_secr_con_05: "May not be precise enough for long-term monitoring ({{ ref_intext_green_et_al_2020 }})"
     mod_scr_secr_con_06: "Cameras must be close enough that animals are detected at multiple camera locations ({{ ref_intext_wearn_gloverkapfer_2017 }}) (may be challenging to implement at large scales as many cameras are needed)' ({{ ref_intext_chandler_royle_2013 }})"
-    mod_scr_secr_con_07: "½ MMDM (Mean Maximum Distance Moved) will usually lead to an underestimation of home range size and thus overestimation of [density](./09_gloss_ref/09_glossary.md#density) ({{ ref_intext_parmenter_et_al_2003 }}; {{ ref_intext_noss_et_al_2012 }}; {{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_scr_secr_pro_01: "Produces direct estimates of [density](./09_gloss_ref/09_glossary.md#density) or population size for explicit spatial regions ({{ ref_intext_chandler_royle_2013 }})"
+    mod_scr_secr_con_07: "½ MMDM (Mean Maximum Distance Moved) will usually lead to an underestimation of home range size and thus overestimation of [density](./09_glossary.md#density) ({{ ref_intext_parmenter_et_al_2003 }}; {{ ref_intext_noss_et_al_2012 }}; {{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_scr_secr_pro_01: "Produces direct estimates of [density](./09_glossary.md#density) or population size for explicit spatial regions ({{ ref_intext_chandler_royle_2013 }})"
     mod_scr_secr_pro_02: "Allows researchers to mark a subset of the population / to take advantage of natural markings ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_pro_03: "Estimates are fully comparable across space, time, species and studies ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_scr_secr_pro_04: "[Density](./09_gloss_ref/09_glossary.md#density) estimates obtained in a single model, fully incorporate spatial information of locations and individuals ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_scr_secr_pro_04: "[Density](./09_glossary.md#density) estimates obtained in a single model, fully incorporate spatial information of locations and individuals ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_pro_05: "Both likelihood-based and Bayesian versions of the model have been implemented in relatively easy-to-use software DENSITY and SPACECAP, respectively, as well as associated R packages) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_pro_06: "Flexibility in study design (e.g., 'holes' in the trapping grid) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_pro_07: "Open SECR ({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) models exist that allow for estimation of recruitment and survival rates ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_scr_secr_pro_08: "Avoid ad-hoc definitions of study area and edge effects ({{ ref_intext_doran_myers_2018 }})"
-    mod_scr_secr_pro_09: "SECR ({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) accounts for variation in individual [detection probability](/9_glossary#detection_probability); can produce spatial variation in [density](./09_gloss_ref/09_glossary.md#density); SECR ({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) more sensitive to detect moderate-to-major populations changes (+/-20-80%) ({{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }})"
+    mod_scr_secr_pro_09: "SECR ({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) accounts for variation in individual [detection probability](/9_glossary#detection_probability); can produce spatial variation in [density](./09_glossary.md#density); SECR ({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) more sensitive to detect moderate-to-major populations changes (+/-20-80%) ({{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }})"
     mod_smr_assump_01: "Demographic closure (i.e., no births or deaths) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_smr_assump_02: "Geographic closure (i.e., no immigration or emigration) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_smr_assump_03: "Individuals do not lose marks ({{ ref_intext_wearn_gloverkapfer_2017 }}) (for maximum precision), but SMR ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_sollmann_et_al_2013a }}; {{ ref_intext_sollmann_et_al_2013b }})) does allow for inclusion of marked but unidentified resighting detections ({{ ref_intext_sollmann_et_al_2013b }}; {{ ref_intext_rich_et_al_2014 }})"
     mod_smr_assump_04: "Individuals are not misidentified ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_assump_05: "Failure to identify marked individuals is random ({{ ref_intext_whittington_et_al_2018 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_smr_assump_06: "Marked animals are a random sample of the population with home ranges located inside the state space ({{ ref_intext_sollmann_et_al_2013a }}; {{ ref_intext_rich_et_al_2014 }})"
-    mod_smr_assump_07: "Detections are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
+    mod_smr_assump_07: "Detections are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_smr_assump_08: "Individuals have equal detection probability at a given distance from the centre of their home range ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_smr_assump_09: "Detections of different individuals are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_smr_assump_09: "Detections of different individuals are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_assump_10: "Movement is unaffected by cameras ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_assump_11: "Behaviour is unaffected by cameras and marking ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_assump_12: "Camera locations are randomly placed relative to the distribution and orientation of home ranges ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_assump_13: "Camera locations are close enough together that animals are detected at multiple cameras ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
-    mod_smr_assump_14: "[Surveys](./09_gloss_ref/09_glossary.md#survey) are independent ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_smr_assump_14: "[Surveys](./09_glossary.md#survey) are independent ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_assump_15: "Home ranges are stable ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_assump_16: "Distribution of home range centres follows a defined distribution (Poisson, or other, e.g., negative binomial) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_assump_17: "Animals’ activity centres are randomly dispersed ({{ ref_intext_chandler_royle_2013 }}; {{ ref_intext_clarke_et_al_2023 }})"
     mod_smr_con_01: "Animals may have to be physically captured and marked if natural marks do not exist on enough individuals ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_con_02: "All individuals must be identifiable ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_smr_con_03: "Allows for [density](./09_gloss_ref/09_glossary.md#density) estimation for a unmarked population, but the precision of the [density](./09_gloss_ref/09_glossary.md#density) estimates are likely to be very low value ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_smr_con_03: "Allows for [density](./09_glossary.md#density) estimation for a unmarked population, but the precision of the [density](./09_glossary.md#density) estimates are likely to be very low value ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_con_04: "Remains poorly tested with camera data, although it offers promise ({{ ref_intext_wearn_gloverkapfer_2017 }})"
-    mod_smr_con_05: "[Density](./09_gloss_ref/09_glossary.md#density) estimates are likely less precise than with SECR ({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) or REM, unless a large proportion of the population have marks  ({{ ref_intext_wearn_gloverkapfer_2017 }})"
+    mod_smr_con_05: "[Density](./09_glossary.md#density) estimates are likely less precise than with SECR ({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) or REM, unless a large proportion of the population have marks  ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_con_06: "Requires sampling points to be close enough that individuals encounter multiple cameras ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_pro_01: "Estimates are fully comparable to SECR ({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) of marked species ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     mod_smr_pro_02: "Can be applied to a broader range of species than SECR [({{ ref_intext_efford_2004 }}; {{ ref_intext_borchers_efford_2008 }}; {{ ref_intext_royle_young_2008 }}; {{ ref_intext_royle_et_al_2009 }}) ({{ ref_intext_wearn_gloverkapfer_2017 }})"
@@ -1254,7 +1270,7 @@ parse:
     mod_ste_assump_01: "Demographic closure (i.e., no births or deaths) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_ste_assump_02: "Geographic closure (i.e., no immigration or emigration) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_ste_assump_03: "Camera locations are randomly placed ({{ ref_intext_moeller_et_al_2018 }})"
-    mod_ste_assump_04: "Detections are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_moeller_et_al_2018 }})"
+    mod_ste_assump_04: "Detections are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_ste_assump_05: "Spatial counts of animals in a small area (or counts in equal subsets of the landscape) are Poisson-distributed ({{ ref_intext_loonam_et_al_2021 }})"
     mod_ste_assump_06: "Detection is perfect (detection probability '*p*' = 1) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_ste_con_01: "Assumes that detection probability is 1 ({{ ref_intext_moeller_et_al_2018 }})"
@@ -1272,7 +1288,7 @@ parse:
     mod_tte_assump_02: "Geographic closure (i.e., no immigration or emigration) at the level of the sampling frame (area of interest); this assumption does not apply at the plot-level (area sampled by the camera) ({{ ref_intext_moeller_et_al_2018 }}; {{ ref_intext_loonam_et_al_2021 }})"
     mod_tte_assump_03: "Animal movement and behaviour are unaffected by the cameras ({{ ref_intext_palencia_et_al_2021 }})"
     mod_tte_assump_04: "Camera locations placement is random, systematic, or systematic random ({{ ref_intext_moeller_et_al_2018 }})"
-    mod_tte_assump_05: "Detections are [independent](./09_gloss_ref/09_glossary.md#independent_detections) ({{ ref_intext_moeller_et_al_2018 }})"
+    mod_tte_assump_05: "Detections are [independent](./09_glossary.md#independent_detections) ({{ ref_intext_moeller_et_al_2018 }})"
     mod_tte_assump_06: "Spatial counts of animals (or counts in equal subsets of the landscape) are Poisson-distributed ({{ ref_intext_loonam_et_al_2021 }})"
     mod_tte_assump_07: "Accurate estimate of movement speed ({{ ref_intext_loonam_et_al_2021 }})"
     mod_tte_assump_08: "Detection is perfect (detection probability '*p*' =  1) ({{ ref_intext_moeller_et_al_2018 }})"
@@ -1573,7 +1589,7 @@ parse:
     field_def_deployment_crew: "The first and last names of the individuals who collected data during the deployment visit."
     field_def_deployment_end_date_time: "The date and time that the data was retrieved for a specific deployment (e.g., 27-Jan-2019 23:00:00). The Deployment End Date Time may not coincide with when the last image or video was collected (i.e., the Image Set End Date Time). Recording this field allows users to account for deployments where no images were captured and to confirm the last date and time that the camera was active."
     field_def_deployment_image_count: "The total number of images collected during the deployment, including false triggers (i.e., empty images with no wildlife or human present species) and those triggered by a time-lapse setting (if applicable)."
-    field_def_deployment_name: "A unique alphanumeric identifier for a unique camera deployed during a specific [survey](./09_gloss_ref/09_glossary.md#survey) period (ideally recorded as: 'Camera Location Name'_'Deployment Start Date' (or …_'Deployment End Date') (e.g., 'bh1_17-Jul-2018' or 'bh1_17-Jul-2018_21-Jan-2019'). <br> <br> Alternative naming conventions may be used, but the goal should be to minimize duplicate Image Names."
+    field_def_deployment_name: "A unique alphanumeric identifier for a unique camera deployed during a specific [survey](./09_glossary.md#survey) period (ideally recorded as: 'Camera Location Name'_'Deployment Start Date' (or …_'Deployment End Date') (e.g., 'bh1_17-Jul-2018' or 'bh1_17-Jul-2018_21-Jan-2019'). <br> <br> Alternative naming conventions may be used, but the goal should be to minimize duplicate Image Names."
     field_def_deployment_start_date_time: "The date and time that a camera was placed for a specific deployment (e.g., 17-Jan-2018 10:34:22). <br><br>The Deployment Start Date Time may not coincide with when the first image or video was collected (i.e., the Image Set Start Date Time). Recording this field allows users to account for deployments where no images were captured and to confirm the first date and time a camera was active."
     field_def_easting_camera_location: "The easting UTM coordinate of the camera location (e.g., '337875'). Record using the NAD83 datum. Leave blank if recording the Longitude instead."
     field_def_event_type: "Whether detections were reported as an individual image captured by the camera ('Image'), a 'Sequence,' or 'Tag.'"
@@ -1619,13 +1635,13 @@ parse:
     field_def_species: "The capitalized common name of the species being categorized ('tagged')."
     field_def_stake_distance: "The distance from the camera to a stake (in metres to the nearest 0.05 m). Leave blank if not applicable."
     field_def_study_area_description: "A description for each unique research or monitoring area including its location, the habitat type(s), land use(s) and habitat disturbances (where applicable)."
-    field_def_study_area_name: "A unique alphanumeric identifier for each study area (e.g.,'oilsands_ref1'). If only one area was [survey](./09_gloss_ref/09_glossary.md#survey)ed, the Project Name and Study Area Name should be the same."
-    field_def_survey_design: "The spatial arrangement of remote cameras within the study area for an individual [survey](./09_gloss_ref/09_glossary.md#survey). If 'Hierarchical (multiple)*/*,' include additional details in the [survey](./09_gloss_ref/09_glossary.md#survey) Design Description. <br> <br> Note that we refer to different configurations of cameras more generally as study design and sampling design; however, the term '[survey](./09_gloss_ref/09_glossary.md#survey) Design' refers to study design as it applies to an individual [survey](./09_gloss_ref/09_glossary.md#survey). There may be multiple [survey](./09_gloss_ref/09_glossary.md#survey) Designs for [survey](./09_gloss_ref/09_glossary.md#survey)s within a project; if this occurs, the [survey](./09_gloss_ref/09_glossary.md#survey) Design should be reported separately for each [survey](./09_gloss_ref/09_glossary.md#survey)."
-    field_def_survey_design_description: "A description of any additional details about the [survey](./09_gloss_ref/09_glossary.md#survey) Design."
-    field_def_survey_name: "A unique alphanumeric identifier for each [survey](./09_gloss_ref/09_glossary.md#survey) period (e.g., 'fortmc_001')."
-    field_def_survey_objectives: "The specific objectives of each [survey](./09_gloss_ref/09_glossary.md#survey) within a project, including the [Target Species](./09_gloss_ref/09_glossary.md#target_species), the state variables (e.g., occupancy, [density](./09_gloss_ref/09_glossary.md#density)), and proposed modelling approach(es). Survey Objectives should be specific, measurable, achievable, relevant, and time-bound (i.e., SMART)."
+    field_def_study_area_name: "A unique alphanumeric identifier for each study area (e.g.,'oilsands_ref1'). If only one area was [survey](./09_glossary.md#survey)ed, the Project Name and Study Area Name should be the same."
+    field_def_survey_design: "The spatial arrangement of remote cameras within the study area for an individual [survey](./09_glossary.md#survey). If 'Hierarchical (multiple)*/*,' include additional details in the [survey](./09_glossary.md#survey) Design Description. <br> <br> Note that we refer to different configurations of cameras more generally as study design and sampling design; however, the term '[survey](./09_glossary.md#survey) Design' refers to study design as it applies to an individual [survey](./09_glossary.md#survey). There may be multiple [survey](./09_glossary.md#survey) Designs for [survey](./09_glossary.md#survey)s within a project; if this occurs, the [survey](./09_glossary.md#survey) Design should be reported separately for each [survey](./09_glossary.md#survey)."
+    field_def_survey_design_description: "A description of any additional details about the [survey](./09_glossary.md#survey) Design."
+    field_def_survey_name: "A unique alphanumeric identifier for each [survey](./09_glossary.md#survey) period (e.g., 'fortmc_001')."
+    field_def_survey_objectives: "The specific objectives of each [survey](./09_glossary.md#survey) within a project, including the [Target Species](./09_glossary.md#target_species), the state variables (e.g., occupancy, [density](./09_glossary.md#density)), and proposed modelling approach(es). Survey Objectives should be specific, measurable, achievable, relevant, and time-bound (i.e., SMART)."
     field_def_tag: "When individuals, or groups of individuals, are categorized within an image, regardless of whether the information applies to all of the individuals in the image. A single tag is applied to categorize one or more individuals with the same combination of characteristics (e.g., Adult Males displaying the same Behaviour). Conversely, multiple tags are applied when individuals in an image differ in their characteristics (e.g., an Adult and a Juvenile, all else remaining equal, are tagged separately). This could also occur for Age Class, Behaviour, Human Transport Mode*/Activity, etc. Since multiple tags can occur for a single image, there may be multiple data rows for the same image (if the Event Type is at the 'Tag' level)."
-    field_def_target_species: "The common name(s) of the species that the [survey](./09_gloss_ref/09_glossary.md#survey) was designed to detect."
+    field_def_target_species: "The common name(s) of the species that the [survey](./09_glossary.md#survey) was designed to detect."
     field_def_test_image_taken: "Whether a test image (i.e., an image taken from a camera after it has been set up to provide a permanent record of the visit metadata) was taken. Arm the camera, from ~5 m in front, walk towards the camera while holding the Test Image Sheet."
     field_def_utm_zone_camera_location: "The number corresponding to the Universal Transverse Mercator (UTM) grid zone where the camera was placed (e.g., '12'). UTM is a coordinate system that divides the earth into grid zones that are identified with a number (representing a width of latitude) and letter (representing the hemisphere). <br> <br>In Alberta the UTM zones are either 11, 12, or TTM. Enter all other UTM zones in the Camera Location Comments field (e.g., zones 7-10 for British Columbia), or use Latitude and Longitude instead of UTM coordinates. <br> <br>"
     field_def_visit_comments: "Comments describing additional details about the deployment and*/or Service*/Retrieval visits."
@@ -1704,9 +1720,9 @@ parse:
     term_def_camera_angle: "The degree at which the camera is pointed toward the FOV Target Feature relative to the horizontal ground surface (with respect to slope, if applicable)."
     term_def_camera_days_per_camera_location: "The number of days each camera was active and functioning during the period it was deployed (e.g., 24-hour periods or the difference in days between the Deployment Start Date Time and the Deployment End Date Time if there were no interruptions)."
     term_def_camera_location: "The location where a single camera was placed (recorded as 'Camera Location Name')."
-    term_def_camera_spacing: "The distance between cameras (i.e., also referred to as 'inter-trap distance'). This will be influenced by the chosen sampling design, the [survey](./09_gloss_ref/09_glossary.md#survey) Objectives, the Target Species and data analysis."
+    term_def_camera_spacing: "The distance between cameras (i.e., also referred to as 'inter-trap distance'). This will be influenced by the chosen sampling design, the [survey](./09_glossary.md#survey) Objectives, the Target Species and data analysis."
     term_def_crew: "The first and last names of all the individuals who collected data during the deployment visit ('Deployment Crew') and Service*/Retrieval visit ('Service*/Retrieval Crew')."
-    term_def_cumulative_det_probability: "The probability of detecting a species at least once during the entire [survey](./09_gloss_ref/09_glossary.md#survey) (Steenweg et al., 2019)."
+    term_def_cumulative_det_probability: "The probability of detecting a species at least once during the entire [survey](./09_glossary.md#survey) (Steenweg et al., 2019)."
     term_def_density: "The number of individuals per unit area ({{ ref_intext_wearn_gloverkapfer_2017 }})"
     term_def_deployment: "A unique placement of a camera in space and time (recorded as 'Deployment Name'). There may be multiple deployments for one camera location. Deployments are often considered as the time between visits (i.e., deployment to service, service to service, and service to retrieval). Any change to camera location, sampling period, camera equipment (e.g., Trigger Sensitivity setting, becomes non-functioning), and*/or conditions (e.g., not baited then baited later; camera SD card replaced) should be documented as a unique deployment."
     term_def_deployment_area_photos: "Photos of the area around the camera location, collected as a permanent, visual record of the FOV Target Features, Camera Location Characteristics, environmental conditions (e.g., vegetation, ecosite, weather) or other variables of interest. The recommendation includes collecting four photos taken from the centre of the target detection zone (Figure 5), facing each of the four cardinal directions. The documentation of the collection of these photos is recorded as 'Deployment Area Photos Taken' (Y*/N)."
@@ -1722,7 +1738,7 @@ parse:
     term_def_field_of_view: "The extent of a scene that is visible in an image (Figure 5); a large FOV is obtained by 'zooming out' from a scene, whilst 'zooming in' will result in a smaller FOV ({{ ref_intext_wearn_gloverkapfer_2017 }})."
     term_def_fov_registration_area: "The area in which an animal entering has at least some probability of being captured on the image."
     term_def_fov_viewshed: "The area visible to the camera as determined by its lens angle (in degrees) and trigger distance (Moeller et al., 2023)."
-    term_def_fov_viewshed_density_estimators: "Methods used to estimate the abundance of unmarked populations from observations of animals that relate animal observations to the space directly sampled by each camera’s viewshed (Moeller et al., 2023); they result in viewshed [density](./09_gloss_ref/09_glossary.md#density) estimates that can be extrapolated to abundance within broader sampling frames (Gilbert et al., 2020; Moeller et al., 2023)."
+    term_def_fov_viewshed_density_estimators: "Methods used to estimate the abundance of unmarked populations from observations of animals that relate animal observations to the space directly sampled by each camera’s viewshed (Moeller et al., 2023); they result in viewshed [density](./09_glossary.md#density) estimates that can be extrapolated to abundance within broader sampling frames (Gilbert et al., 2020; Moeller et al., 2023)."
     term_def_image: "An individual image captured by a camera, which may be part of a multi-image sequence (recorded as 'Image Name')."
     term_def_image_classification: "The process of assigning class labels to an image according to the wildlife species, other entities (e.g., human, vehicle), or conditions within the image. Image classification can be performed manually or automatically by an artificial intelligence (AI) algorithm. Image classification is sometimes used interchangeably with 'image tagging.'"
     term_def_image_classification_confidence: "The likelihood of an image containing an object of a certain class (Fennell et al., 2022)."
@@ -1732,21 +1748,21 @@ parse:
     term_def_imperfect_detection: "Species are often detected 'imperfectly,' meaning that they are not always detected when they are present (e.g., due to cover of vegetation, cryptic nature or small size) (MacKenzie et al., 2004)."
     term_def_independent_detections: "Detections that are deemed to be independent based on a user-defined threshold (e.g., 30 minutes)."
     term_def_intensity_of_use: "The expected number of use events of a specific resource unit during a unit of time… [which characterizes] how frequently a particular resource unit is used' (Keim et al., 2019). The intensity of use differs from the probability of use (which characterizes 'the probability of at least one use event of that resource unit during a unit of time'; Keim et al., 2019)."
-    term_def_inter_detection_interval: "A user-defined threshold used to define a single 'detection event' (i.e., independent 'events') for group of images or video clips (e.g., 30 minutes or 1 hour). The threshold should be recorded in the [survey](./09_gloss_ref/09_glossary.md#survey) Design Description."
+    term_def_inter_detection_interval: "A user-defined threshold used to define a single 'detection event' (i.e., independent 'events') for group of images or video clips (e.g., 30 minutes or 1 hour). The threshold should be recorded in the [survey](./09_glossary.md#survey) Design Description."
     term_def_kernel_density_estimator: "The probability of 'utilization' (Jennrich & Turner, 1969); describes the relative probability of use (Powell & Mitchell, 2012)."
     term_def_metadata: "Data that provides information about other data (e.g., the number of images on an SD card)."
-    term_def_mod_2flankspim: "A method used to estimate the [density](./09_gloss_ref/09_glossary.md#density) of partially marked populations in which the 'spatial locations of where partial identity samples are captured to probabilistically resolve their complete identities' (Augustine et al., 2018). Paired sampling design is commonly used to capture both the right and left flanks of an animal to resolve individual identities (Augustine et al., 2018). 2-flank SPIM is an extension of the SCR model (Borchers & Efford, 2008; Efford, 2004; Royle & Young, 2008; Royle et al., 2009)."
-    term_def_mod_catspim: "A method used to estimate the [density](./09_gloss_ref/09_glossary.md#density) of partially marked populations in which the 'spatial locations of where partial identity samples are captured to probabilistically resolve their complete identities' (Augustine et al., 2018, 2019). catSPIM models use partial identity traits (e.g., sex class, antler points) to help infer individual identities (Augustine et al., 2019; Sun et al., 2022). catSPIM is an extension of the SC model (Chandler & Royle, 2013)."
-    term_def_mod_cr_cmr: "A method of estimating the abundance or [density](./09_gloss_ref/09_glossary.md#density) of marked populations using the number of animals detected and the likelihood animals will be detected (detection probability). CR (Karanth, 1995; Karanth & Nichols, 1998) can be used to estimate vital rates where all newly detected unmarked animals become marked and are distinguishable in future (Efford, 2022). Spatially explicit capture-recapture (SECR; Borchers & Efford, 2008; Efford, 2004; Royle & Young, 2008) models have largely replaced CR and CMR models and provide more accurate [density](./09_gloss_ref/09_glossary.md#density) estimates (Blanc et al., 2013, Obbard et al., 2010, Sollmann et al., 2011)."
-    term_def_mod_distance_sampling: "A method to estimate abundance by using distances at which animals are detected (from [survey](./09_gloss_ref/09_glossary.md#survey) lines or points) to model abundance as a function of decreasing detection probability with animal distance from the camera (using a decay function) (Cappelle et al., 2021; Howe et al., 2017)."
+    term_def_mod_2flankspim: "A method used to estimate the [density](./09_glossary.md#density) of partially marked populations in which the 'spatial locations of where partial identity samples are captured to probabilistically resolve their complete identities' (Augustine et al., 2018). Paired sampling design is commonly used to capture both the right and left flanks of an animal to resolve individual identities (Augustine et al., 2018). 2-flank SPIM is an extension of the SCR model (Borchers & Efford, 2008; Efford, 2004; Royle & Young, 2008; Royle et al., 2009)."
+    term_def_mod_catspim: "A method used to estimate the [density](./09_glossary.md#density) of partially marked populations in which the 'spatial locations of where partial identity samples are captured to probabilistically resolve their complete identities' (Augustine et al., 2018, 2019). catSPIM models use partial identity traits (e.g., sex class, antler points) to help infer individual identities (Augustine et al., 2019; Sun et al., 2022). catSPIM is an extension of the SC model (Chandler & Royle, 2013)."
+    term_def_mod_cr_cmr: "A method of estimating the abundance or [density](./09_glossary.md#density) of marked populations using the number of animals detected and the likelihood animals will be detected (detection probability). CR (Karanth, 1995; Karanth & Nichols, 1998) can be used to estimate vital rates where all newly detected unmarked animals become marked and are distinguishable in future (Efford, 2022). Spatially explicit capture-recapture (SECR; Borchers & Efford, 2008; Efford, 2004; Royle & Young, 2008) models have largely replaced CR and CMR models and provide more accurate [density](./09_glossary.md#density) estimates (Blanc et al., 2013, Obbard et al., 2010, Sollmann et al., 2011)."
+    term_def_mod_distance_sampling: "A method to estimate abundance by using distances at which animals are detected (from [survey](./09_glossary.md#survey) lines or points) to model abundance as a function of decreasing detection probability with animal distance from the camera (using a decay function) (Cappelle et al., 2021; Howe et al., 2017)."
     term_def_mod_divers_rich_alpha: "The number of species at the level of an individual camera location {{ ref_intext_wearn_gloverkapfer_2017 }}"
     term_def_mod_divers_rich_beta: "The differences between the communities or, more formally, the variance among the communities {{ ref_intext_wearn_gloverkapfer_2017 }}"
     term_def_mod_divers_rich_divers: "Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon's Index H'.” {{ ref_intext_pyron_2010 }}"
     term_def_mod_divers_rich_gamma: "The number of species across a whole study area {{ ref_intext_wearn_gloverkapfer_2017 }}"
     term_def_mod_divers_rich_rich: "The number of species found in the community/area measured {{ ref_intext_pyron_2020 }}"
-    term_def_mod_instantaneous_sampling: "A method used to estimate abundance or [density](./09_gloss_ref/09_glossary.md#density) from time-lapse images from randomly deployed cameras; the number of unique individuals (the count) is needed (Moeller et al., 2018)."
-    term_def_mod_inventory: "Rapid assessment [survey](./09_gloss_ref/09_glossary.md#survey)s to determine what species are present in a given area at a given point in time; there is no attempt made to quantify aspects of communities or populations ({{ ref_intext_wearn_gloverkapfer_2017 }})."
-    term_def_mod_modelling_approach: "The method used to analyze the camera data, which should depend on the state variable, e.g., occupancy models [MacKenzie et al., 2002], spatially explicit capture recapture (SECR) for [density](./09_gloss_ref/09_glossary.md#density) estimation [Chandler and Royle, 2013], etc. and the Target Species."
+    term_def_mod_instantaneous_sampling: "A method used to estimate abundance or [density](./09_glossary.md#density) from time-lapse images from randomly deployed cameras; the number of unique individuals (the count) is needed (Moeller et al., 2018)."
+    term_def_mod_inventory: "Rapid assessment [survey](./09_glossary.md#survey)s to determine what species are present in a given area at a given point in time; there is no attempt made to quantify aspects of communities or populations ({{ ref_intext_wearn_gloverkapfer_2017 }})."
+    term_def_mod_modelling_approach: "The method used to analyze the camera data, which should depend on the state variable, e.g., occupancy models [MacKenzie et al., 2002], spatially explicit capture recapture (SECR) for [density](./09_glossary.md#density) estimation [Chandler and Royle, 2013], etc. and the Target Species."
     term_def_mod_modelling_assumption: "Explicitly stated (or implicitly premised) conventions, choices and other specifications (e.g., about the data, wildlife ecology*/behaviour, the relationships between variables, etc.) on which a particular modelling approach is based that allows the model to provide valid inference."
     term_def_mod_mr: "A method used to estimate the abundance of partially marked populations using the number of marked individuals, the number of unmarked individuals, and the detection probability from marked animals ({{ ref_intext_wearn_gloverkapfer_2017 }}). MR is similar to capture-recapture (CR; Karanth, 1995; Karanth & Nichols, 1998) models, except only a portion of animals are individually identified."
     term_def_mod_n_mixture: "A class of models for estimating absolute abundance using replicated counts of animals from several different sites; site-specific counts are treated as independent random variables to estimate the number of animals available for capture at each site; detection is imperfect (Royle 2004). N-mixture models are a type of site-structured model (i.e., that 'treat each camera as though it samples... [a] distinct population within a larger meta-population' [Clarke et al., 2023])."
@@ -1758,15 +1774,15 @@ parse:
     term_def_mod_rai_poisson: "A regression model for count data used when data are not overdispersed or zero-inflated (Lambert, 1992). [relative abundance indices]"
     term_def_mod_rai_zinb: "A regression model used in the setting of excess zeros (zero-inflation) and overdispersion. This approach is a two-part model, where the zero-inflation is modelled separately from the counts and assumes that the count (abundance) is 'conditional' on the zero-inflation model (occurrence) model. [relative abundance indices]"
     term_def_mod_rai_zip: "A regression model for count data that both follows the Poisson distribution and contains excess zeros (Lambert, 1992). ZIP models are only appropriate for data for which the overdispersion is not solely due to zero-inflation. [relative abundance indices]"
-    term_def_mod_rem: "A method used to estimate the [density](./09_gloss_ref/09_glossary.md#density) of unmarked populations; uses the rate of independent captures, an estimate of movement rate, average group size, and the area sampled by the remote camera."
+    term_def_mod_rem: "A method used to estimate the [density](./09_glossary.md#density) of unmarked populations; uses the rate of independent captures, an estimate of movement rate, average group size, and the area sampled by the remote camera."
     term_def_mod_rest: "A recent modification of the REM (Nakashima et al., 2018) that substitutes staying time (i.e., the cumulative time in the cameras' detection zone) for movement speed (staying time and movement speed are inversely proportional) (Cappelle et al., 2021)."
-    term_def_mod_royle_nichols: "A method used to estimate population abundance or [density](./09_gloss_ref/09_glossary.md#density), which assumes that individuals are counted only once per sampling occasion (Royle, 2004), but that does not require all individuals to be marked. Royle-Nichols models are a type of site-structured model (i.e., that 'treat each camera as though it samples... [a] distinct population within a larger meta-population' [Clarke et al., 2023])."
-    term_def_mod_sc: "A method used to estimate the [density](./09_gloss_ref/09_glossary.md#density) of unmarked populations; similar to SECR (Borchers & Efford, 2008; Efford, 2004; Royle & Young, 2008; Royle et al., 2009); however, SC models account for individuals' unknown identities using the spatial pattern of detections (Chandler & Royle, 2013; Sun et al., 2022). SC uses trap-specific counts to estimate the location and number of activity centres to estimate [density](./09_gloss_ref/09_glossary.md#density)."
-    term_def_mod_scr_secr: "The SECR (or SCR) method is used to estimate the [density](./09_gloss_ref/09_glossary.md#density) of marked populations; an extension of traditional capture-recapture (CR; Karanth, 1995; Karanth & Nichols, 1998) models (Karanth, 1995; Karanth & Nichols, 1998) that explicitly accounts for camera location and animal movement (Burgar et al., 2018). SECR models use spatially referenced individual capture histories to infer where animals' home range centres are, assuming that detection probability decreases with increasing distance between cameras and home range centres (Clarke et al., 2023). SECR models can be implemented using different statistical frameworks, including Bayesian estimation (Royle and Young, 2008; Morin et al., 2022)."
-    term_def_mod_smr: "A method used to estimate the [density](./09_gloss_ref/09_glossary.md#density) of 'partially marked populations by combining... [detection] histories of marked [individuals] and counts of unmarked [individuals]' (Doran-Myers, 2018) over several occasions (Sollman et al., 2013a; Rich et al., 2014; Whittington et al., 2018). SMR models can be implemented using different statistical frameworks, including Bayesian estimation (Royle and Young, 2008; Morin et al., 2022)."
-    term_def_mod_ste: "A method used to estimate abundance or [density](./09_gloss_ref/09_glossary.md#density) that accounts for variable detection probability through the use of time-lapse images and is unaffected by animal movement rates (collapses sampling intervals to an instant in time, and thus estimates are unaffected by animal movement rates) (Moeller et al., 2018)."
-    term_def_mod_tifc: "A method used to estimate [density](./09_gloss_ref/09_glossary.md#density) that treats camera image data as quadrat samples (Becker et al., 2022)."
-    term_def_mod_tte: "A method used to estimate abundance or [density](./09_gloss_ref/09_glossary.md#density) from the detection rate while accounting for animal movement rates (Moeller et al., 2018). The TTE model assumes perfect detection (though there is a model extension to account for imperfect detection that requires further testing)."
+    term_def_mod_royle_nichols: "A method used to estimate population abundance or [density](./09_glossary.md#density), which assumes that individuals are counted only once per sampling occasion (Royle, 2004), but that does not require all individuals to be marked. Royle-Nichols models are a type of site-structured model (i.e., that 'treat each camera as though it samples... [a] distinct population within a larger meta-population' [Clarke et al., 2023])."
+    term_def_mod_sc: "A method used to estimate the [density](./09_glossary.md#density) of unmarked populations; similar to SECR (Borchers & Efford, 2008; Efford, 2004; Royle & Young, 2008; Royle et al., 2009); however, SC models account for individuals' unknown identities using the spatial pattern of detections (Chandler & Royle, 2013; Sun et al., 2022). SC uses trap-specific counts to estimate the location and number of activity centres to estimate [density](./09_glossary.md#density)."
+    term_def_mod_scr_secr: "The SECR (or SCR) method is used to estimate the [density](./09_glossary.md#density) of marked populations; an extension of traditional capture-recapture (CR; Karanth, 1995; Karanth & Nichols, 1998) models (Karanth, 1995; Karanth & Nichols, 1998) that explicitly accounts for camera location and animal movement (Burgar et al., 2018). SECR models use spatially referenced individual capture histories to infer where animals' home range centres are, assuming that detection probability decreases with increasing distance between cameras and home range centres (Clarke et al., 2023). SECR models can be implemented using different statistical frameworks, including Bayesian estimation (Royle and Young, 2008; Morin et al., 2022)."
+    term_def_mod_smr: "A method used to estimate the [density](./09_glossary.md#density) of 'partially marked populations by combining... [detection] histories of marked [individuals] and counts of unmarked [individuals]' (Doran-Myers, 2018) over several occasions (Sollman et al., 2013a; Rich et al., 2014; Whittington et al., 2018). SMR models can be implemented using different statistical frameworks, including Bayesian estimation (Royle and Young, 2008; Morin et al., 2022)."
+    term_def_mod_ste: "A method used to estimate abundance or [density](./09_glossary.md#density) that accounts for variable detection probability through the use of time-lapse images and is unaffected by animal movement rates (collapses sampling intervals to an instant in time, and thus estimates are unaffected by animal movement rates) (Moeller et al., 2018)."
+    term_def_mod_tifc: "A method used to estimate [density](./09_glossary.md#density) that treats camera image data as quadrat samples (Becker et al., 2022)."
+    term_def_mod_tte: "A method used to estimate abundance or [density](./09_glossary.md#density) from the detection rate while accounting for animal movement rates (Moeller et al., 2018). The TTE model assumes perfect detection (though there is a model extension to account for imperfect detection that requires further testing)."
     term_def_mod_zero_inflation: "An excess of zeros that is 'so large that those expected in standard distributions (e.g., normal, Poisson, binomial, negative binomial and beta)' (Heilbron, 1994) violate the assumptions of such distributions (Martin et al., 2005). Excess zeroes can be a result of ecological effects ('true' zeros) or due to sampling or observer error ('false zeros') (Martin et al., 2005). Excess zeroes contribute to overdispersion, but they don't necessarily account for all excess variability (Blasco-Moreno et al., 2019)."
     term_def_occupancy: "The probability a site is occupied by the species {{ ref_intext_mackenzie_et_al_2002 }}"
     term_def_project: "A scientific study, inventory or monitoring program that has a certain objective, defined methods, and a defined boundary in space and time (recorded as 'Project Name')."
@@ -1782,7 +1798,7 @@ parse:
     term_def_sampledesign_systematic: "Camera locations occur in a regular pattern (e.g., a grid pattern) across the study area."
     term_def_sampledesign_systematic_random: "Camera locations are selected using a two-stage approach. Firstly, girds are selected systematically (to occur within a regular pattern) across the study area. The location of the camera within each grid is then selected randomly."
     term_def_sampledesign_targeted: "Camera locations or sample stations are placed in areas that are known or suspected to have higher activity levels (e.g., game trails, mineral licks)."
-    term_def_sequence: "A user-defined group of images or video clips considered as a single 'detection event' (recorded as 'Sequence Name'); often users choose a certain time threshold (or 'inter-detection interval') to define independent 'events'; e.g., 30 minutes or 1 hour. The threshold should be recorded in the [survey](./09_gloss_ref/09_glossary.md#survey) Design Description)."
+    term_def_sequence: "A user-defined group of images or video clips considered as a single 'detection event' (recorded as 'Sequence Name'); often users choose a certain time threshold (or 'inter-detection interval') to define independent 'events'; e.g., 30 minutes or 1 hour. The threshold should be recorded in the [survey](./09_glossary.md#survey) Design Description)."
     term_def_service_retrieval: "When a crew has gone to a location to service or retrieve a remote camera."
     term_def_service_retrieval_metadata: "Metadata that should be collected each time a camera location is visited to Service*/Retrieval Field Datasheet."
     term_def_service_retrieval_visit: "When a crew has gone to a location to service or retrieve a remote camera."
@@ -1792,12 +1808,11 @@ parse:
     term_def_spatial_autocorrelation: "The tendency for locations that are closer together to be more similar."
     term_def_state_variable: "A formal measure that summarizes the state of a community or population at a particular time ({{ ref_intext_wearn_gloverkapfer_2017 }}), (e.g., species richness or population abundance)."
     term_def_study_area: "A unique research, inventory or monitoring area (spatial boundary) within a project (there may be multiple study areas within a single project) (recorded as 'Study Area Name')."
-    term_def_survey: "A unique deployment period (temporal extent) within a project (recorded as '[survey](./09_gloss_ref/09_glossary.md#survey) Name')."
+    term_def_survey: "A unique deployment period (temporal extent) within a project (recorded as '[survey](./09_glossary.md#survey) Name')."
     term_def_test_image: "An image taken from a camera after it has been set up to provide a permanent record of the visit metadata (e.g., Sample Station Name, Camera Location Name, Deployment Name, Crew, and Deployment Start Date Time [DD-MMM-YYYY HH:MM:SS]). <br><br>Taking a test image can be useful to compare the information from the image to that of which was collected on the Camera Service*/Retrieval Field Datasheet after retrieval and can help in reducing recording errors."
-    term_def_timelapse_image: "Images that are taken at regular intervals (e.g., hourly or daily, on the hour). It is critical to take a minimum of one time-lapse image per day at a consistent time (e.g., 12:00 pm [noon]) to create a record of camera functionality and local environmental conditions (e.g., snow cover, plant growth, etc.). Time-lapse images may always be useful for modelling approaches that require estimation of the 'viewshed' ('viewshed [density](./09_gloss_ref/09_glossary.md#density) estimators' such as REM or time-to-event (TTE) models; see Moeller et al., [2018] for advantages and disadvantages)."
-    term_def_total_number_of_camera_days: "The number of days that all cameras were active during the [survey](./09_gloss_ref/09_glossary.md#survey)."
+    term_def_timelapse_image: "Images that are taken at regular intervals (e.g., hourly or daily, on the hour). It is critical to take a minimum of one time-lapse image per day at a consistent time (e.g., 12:00 pm [noon]) to create a record of camera functionality and local environmental conditions (e.g., snow cover, plant growth, etc.). Time-lapse images may always be useful for modelling approaches that require estimation of the 'viewshed' ('viewshed [density](./09_glossary.md#density) estimators' such as REM or time-to-event (TTE) models; see Moeller et al., [2018] for advantages and disadvantages)."
+    term_def_total_number_of_camera_days: "The number of days that all cameras were active during the [survey](./09_glossary.md#survey)."
     term_def_trigger_event: "An activation of the camera detector(s) that initiates the capture of a single or multiple images, or the recording of video."
-    term_def_trigger_speed: "The time delay necessary for the camera to shoot a photo once an animal has interrupted the infrared beam within the camera's detection zone (Trolliet et al., 2014). Trigger speed differs from Motion Image Interval (a camera setting specified by the user) in that the trigger speed is inherent to the Camera Make and Camera Model (e.g., two different cameras, models both with a Motion Image Interval set to 'no delay,' may not be able to capture images at the same speed)."
     term_def_typeid_marked: "Individuals, populations, or species (varies with modelling approach and context) that can be identified using natural or artificial markings (e.g., coat patterns, scars, tags, collars)."
     term_def_typeid_partially_marked: "Individuals, populations, or species (varies with modelling approach and context) that have a suite of partially identifying traits (e.g., antler points, sex class, age class). For populations*/species, those in which a proportion of individuals carry marks or in which individuals themselves are partially marked."
     term_def_typeid_unmarked: "Individuals, populations, or species (varies with modelling approach and context) that cannot be identified using natural or artificial markings (e.g., coat patterns, scars, tags, collars). Unmarked population models rely on supplementary data (e.g., animal movement speed) and*/or assumptions as a surrogate for individual identification; that is, to distinguish between multiple detections of the same individual from detections of multiple individuals when individuals do not have unique features (Gilbert et al., 2020; Morin et al., 2022)."

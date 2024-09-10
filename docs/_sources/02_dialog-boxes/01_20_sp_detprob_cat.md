@@ -13,9 +13,6 @@ kernelspec:
 editor_options: 
   markdown: 
   wrap: none
-myst:
-  substitutions:
-    glossary: "https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/09_gloss_ref/09_glossary.html"
 ---
 <style>
   h1 {
@@ -25,15 +22,14 @@ myst:
 (i_sp_det_prob_cat)=
 # {{ title_i_sp_detprob_cat }}
 
-::::::::{div} full-width
+:::::::::{div} full-width
 
 :::::::{tab-set}
 
 ::::::{tab-item} Overview
-
 **Detection probability categories are defined as follows:**
 
-- **Low**: 
+- **Low**:
     - < 0.1 ({{ ref_intext_tobler_powell_2013 }})
     - < 0.05 ({{ ref_intext_shannon_et_al_2014 }})
     - 0–0.37 ({{ ref_intext_chatterjee_et_al_2021 }})
@@ -45,73 +41,91 @@ myst:
     - 0.67–1 ({{ ref_intext_chatterjee_et_al_2021 }})
     - \> 0.5 ({{ ref_intext_mackenzie_royle_2005 }})
 
-- **Unknown**: select this option if you’re not sure of the detection probability of your Target Species (single or multiple species)
+- **Unknown**: select this option if you’re not sure of the detection probability of your [Target Species](./09_glossary.md#target_species) (single or multiple species)
 
-- **Multiple**: select this option if your study include multiple Target Species.
+- **Multiple**: select this option if your study include multiple [Target Species](./09_glossary.md#target_species).
 
->Select “Unknown” if you’re not sure.
+\
+**<font size="4"><span style="color:#2F5496">How this relates to study design</font></span>**
 
-:::{admonition} How this relates to survey design
-:class: tip
+**{{ term_detection_probability }}**: {{ term_def_detection_probability }}
 
-{{ term_detection_probability }}**: {{ term_def_detection_probability }}
+We use this information to adjust the recommended [camera days per camera location](./09_glossary.md#camera_days_per_camera_location) and [total number of camera days](./09_glossary.md#total_number_of_camera_days). For example, if the species is hard to detect, you may have to deploy cameras for longer to ensure you’ve sampled long enough to say that the species truly was not there (*vs.* it was there, but you did not detect it; “missed detections”, e.g., high cover of shrubs impeding your ability to see the species).
 
-We use this information to adjust the recommended [camera days per camera location](../09_gloss_ref/09_glossary.md#camera_days_per_camera_location) and [total number of camera days](../09_gloss_ref/09_glossary.md#total_number_of_camera_days). For example, if the species is hard to detect, you may have to deploy cameras for longer to ensure you’ve sampled long enough to say that the species truly was not there (*vs.* it was there, but you did not detect it; “missed detections”, e.g., high cover of shrubs impeding your ability to see the species).
+You may need to consult previous studies to get a sense of which category is the most appropriate for your study and Target Species.
 
-You may need to consult previous studies to get a sense of which category is the most appropriate for your  
-:::
+> **Select “Unknown” if you’re not sure.**
 
-**How does that work?** 
+\
+**<font size="4"><span style="color:#2F5496">How does that work?</font></span>**
 
-Individuals and/or species are not always detected when they are present (i.e., detected "imperfectly”; MacKenzie et al., 2004). Missed detections occur or many reasons, including due characteristics of the environment (e.g., due to cover of vegetation), the time period (e.g., seasons), characteristics of the species (e.g., cryptic nature or small size), etc. **The question here is asking about detection probability as it relates to the characteristIcs of the species (not the species in a particular habitat type or during a specific season).**
+Individuals and/or species are not always detected when they are present (i.e., detected "imperfectly”; ({{ ref_intext_mackenzie_et_al_2004 }}). Missed detections occur or many reasons, including due characteristics of the environment (e.g., due to cover of vegetation), the time period (e.g., seasons), characteristics of the species (e.g., cryptic nature or small size), etc. **The question here is asking about detection probability as it relates to the characteristics of the species (not the species in a particular habitat type or during a specific season).**
+
+**<font size="4"><span style="color:#2F5496">Why do we care?</font></span>**
+:::::{grid} 2
+
+::::{grid-item}
+:columns: 8
+When you fail to detect an individual/species that was, in fact, present, this is called a “false absence”, which may lead to incorrect conclusions from the data. Understanding and correcting for sources of this type of error is often thought of in terms of probabilities (i.e., "detection probability" aka detectability).
+
+**Note! It’s not an exact science** - Since detectability is affected by many other processes, it's best incorporated in models (using your data) since this will result in the best suited information to inform your design.
+::::
+
+::::{grid-item}
+:columns: 4
 
 :::{image} ../03_images/03_image_files/det.gif
-:width: 400px
-:align: center
+:width: 250px
+:align: right
 :::
-
-**Why do we care?**
-
-We care about this because when you fail to detect an individual/species that was, in fact, present, this is called a “false absence”, which may lead to incorrect conclusions from the data. Understanding and correcting for sources of this type of error is often thought of in terms of probabilities (i.e., "detection probability" aka detectability).
-
-:::{admonition} It’s not an exact science
-:class: warning
-
-Since detectability is affected by many other processes, detectability is best incorporated from models that use your data since this will result in the best suited infromation to inform your design; however, when you are first designing your study, this is not possible…..\[\[insert more here\]\]
-:::
-
-:::{admonition} Analysis aside
+::::
+:::::
+:::::{dropdown} Analysis aside
 :class: seealso
-\
+
 Many sources of detection error can be accounted for in analysis; this is done by assessing the relationships between the characteristics of the environment that we might expect to affect detection (e.g., cover of shrubs in front of the camera), and information on where (and when) the species was and was not detected. For example, there were consistently fewer detections on cameras placed in high shrub cover. 
 
-By assessing the relationships at locations repeatedly sampled over time, we begin to unravel the relationship between the environmental characteristics and missed detections on your cameras. We can then use this information to determine if we have sampled long enough (i.e., do we have enough information to differentiate between missed detections and true absences) and/or correct for this error in analysis by incorporating these effects in our models. 
-:::
-
+By assessing the relationships at locations repeatedly sampled over time, we begin to unravel the relationship between the environmental characteristics and missed detections on your cameras. We can then use this information to determine if we have sampled long enough (i.e., do we have enough information to differentiate between missed detections and true absences) and/or correct for this error in analysis by incorporating these effects in our models.
+:::::
 ::::::
 
 ::::::{tab-item} Advanced
-\
-Before study design choices are made, there is one critical concept to understand in remote camera research, which may impact study design choices at all levels of the data hierarchy. Reliable use of remote cameras to detect wildlife species hinges on the [assumption](../09_gloss_ref/09_glossary.md#mods_modelling_assumption) that what is captured on the cameras accurately reflects what is present on the landscape. However, species are often detected "imperfectly," meaning that they are not always detected when they are present (i.e., [imperfect detection](../09_gloss_ref/09_glossary.md#imperfect_detection); e.g., due to cover of vegetation, cryptic nature or small size) (MacKenzie et al., 2004). [Imperfect detection](../09_gloss_ref/09_glossary.md#imperfect_detection) can occur because the camera failed to capture an individual present at the site or because the animal was simply not present during the [survey](../09_gloss_ref/09_glossary.md#survey) period (Martin et al., 2005).
+Before study design choices are made, there is one critical concept to understand in remote camera research, which may impact study design choices at all levels of the data hierarchy. Reliable use of remote cameras to detect wildlife species hinges on the [assumption](./09_glossary.md#mods_modelling_assumption) that what is captured on the cameras accurately reflects what is present on the landscape. However, species are often detected "imperfectly," meaning that they are not always detected when they are present (i.e., [imperfect detection](./09_glossary.md#imperfect_detection); e.g., due to cover of vegetation, cryptic nature or small size) ({{ ref_intext_mackenzie_et_al_2004 }}). [Imperfect detection](./09_glossary.md#imperfect_detection) can occur because the camera failed to capture an individual present at the site or because the animal was simply not present during the [survey](./09_glossary.md#survey) period ({{ ref_intext_martin_et_al_2005 }}).
 
-[Imperfect detection](../09_gloss_ref/09_glossary.md#imperfect_detection) results in “false absences” and may lead to incorrect conclusions from the data. Understanding and correcting for sources of “false absences” is often thought of in terms of probabilities. [Detection probability](../09_gloss_ref/09_glossary.md#detection_probability) is the probability (likelihood) that an individual from the population of interest is included in the count at time or location *i* (MacKenzie & Kendall, 2002). [Detection probability](../09_gloss_ref/09_glossary.md#detection_probability) can be influenced through multiple processes and at multiple scales. Understanding the sources of “false absences” and factors that affect [detection probabilities](../09_gloss_ref/09_glossary.md#detection_probability) is an essential step when designing a study, deploying cameras and analyzing camera data.
+[Imperfect detection](./09_glossary.md#imperfect_detection) results in “false absences” and may lead to incorrect conclusions from the data. Understanding and correcting for sources of “false absences” is often thought of in terms of probabilities. [Detection probability](./09_glossary.md#detection_probability) is the probability (likelihood) that an individual from the population of interest is included in the count at time or location *i* ({{ ref_intext_mackenzie_kendall_2002 }}). [Detection probability](./09_glossary.md#detection_probability) can be influenced through multiple processes and at multiple scales. Understanding the sources of “false absences” and factors that affect [detection probabilities](./09_glossary.md#detection_probability) is an essential step when designing a study, deploying cameras and analyzing camera data.
 
-The detection probability of an animal by a camera depends on three **conditional probabilities (Pr) of detection** that may operate alone or potentially in combination ([Figure 1](#TOC_surv_guidelines_fig_1)).
+The [detection probability](./09_glossary.md#detection_probability) of an animal by a camera depends on three **conditional probabilities (Pr) of detection** that may operate alone or potentially in combination ([Figure 1](#TOC_surv_guidelines_fig_1)).
 
 (TOC_surv_guidelines_fig_1)=
 
-:::{figure} ../03_images/03_image_files/rcsc_et_al_2024_detection_probability_2023_05_04.png
-:height: 700px
+```{figure} ../03_images/03_image_files/rcsc_et_al_2024_detection_probability_2023_05_04_clipped.jpg
+:height: 500px
 :align: center
+```
+
+::::{grid} 3
+
+:::{grid-item}
+:columns: 1
+
+<span style="color:white">...</font>
 :::
 
-{{ key3 }}
+:::{grid-item}
+:columns: 10
+<font size="2">**RCSC et al. (2024) - Fig. 1.** Three conditional probabilities (Pr) of detection that may impact the [detection probability](./09_glossary.md#detection_probability) of an animal (or species) by a camera (adapted from Moeller et al. \[2023\], Hofmeester et al. \[2019\], and Findlay et al. \[2020\]).</font>
+:::
 
-**Figure 1.** Three conditional probabilities (Pr) of detection that may impact the [detection probability](../09_gloss_ref/09_glossary.md#detection_probability) of an animal (or species) by a camera (adapted from Moeller et al. \[2023\], Hofmeester et al. \[2019\], and Findlay et al. \[2020\]).
+:::{grid-item}
+:columns: 1
 
-Detection probability can be affected by species-specific characteristics, [Camera Model](../09_gloss_ref/09_glossary.md#camera_model) specifications and set-up, and environmental variables (Hofmeester et al., 2019). For example, **species-specific characteristics** (individuals or populations), such as body size (e.g., O'Brien et al., 2011), behaviour (e.g., Caravaggi et al., 2020; Rowcliffe et al., 2011), and rarity can influence [detection probability](../09_gloss_ref/09_glossary.md#detection_probability), with larger, bolder and more common species generally having higher [detection rates](../09_gloss_ref/09_glossary.md#detection_rate). [**Camera Model**](../09_gloss_ref/09_glossary.md#camera_model), specifications and set-up, such as the [Trigger Sensitivity](../09_gloss_ref/09_glossary.md#settings_trigger_sensitivity), [**Camera Height**](../09_gloss_ref/09_glossary.md#camera_height), or [**angle**](../09_gloss_ref/09_glossary.md#camera_angle) may affect [detection probability](../09_gloss_ref/09_glossary.md#detection_probability) in that smaller species might not be detected or identifiable if the [Trigger Sensitivity](../09_gloss_ref/09_glossary.md#settings_trigger_sensitivity) is low, or the [Camera Height](../09_gloss_ref/09_glossary.md#camera_height) or [angle](../09_gloss_ref/09_glossary.md#camera_angle) is too high. The [**Camera Direction**](../09_gloss_ref/09_glossary.md#camera_direction) could impact the probability of an animal triggering a camera if it is directed towards an object that impedes the [Field of View (FOV)](../09_gloss_ref/09_glossary.md#field_of_view) or image quality (e.g. due to sun glare). **Environmental factors** (e.g., vegetation cover, snow depth) may affect [detection probability](../09_gloss_ref/09_glossary.md#detection_probability) and occurrence (e.g., Becker et al., 2022; Hofmeester et al., 2019; Iknayan et al., 2014; Steenweg et al., 2019). For example, a low number of detections in a densely vegetated site might be because of poor camera visibility or avoidance of this habitat by the species of interest.
+<span style="color:white">...</font>
+:::
+::::
 
-Hofmeester et al. (2019) suggested there are **six scales (orders) that may impact [detection probability](../09_gloss_ref/09_glossary.md#detection_probability)** and that should be considered within an explicit time period (adapted from Hofmeester et al. \[2019\]; [Figure 2](../09_gloss_ref/09_glossary.md#TOC_surv_guidelines_fig_2)):
+[Detection probability](./09_glossary.md#detection_probability) can be affected by species-specific characteristics, [Camera Model](./09_glossary.md#camera_model) specifications and set-up, and environmental variables ({{ ref_intext_hofmeester_et_al_2019 }}). For example, **species-specific characteristics** (individuals or populations), such as body size (e.g., {{ ref_intext_obrien_et_al_2011 }}), behaviour (e.g., {{ ref_intext_caravaggi_et_al_2020 }}; {{ ref_intext_rowcliffe_et_al_2011 }}), and rarity can influence [detection probability](./09_glossary.md#detection_probability), with larger, bolder and more common species generally having higher [detection rates](./09_glossary.md#detection_rate). [**Camera Model**](./09_glossary.md#camera_model) **specifications and set-up**, such as the [Trigger Sensitivity](./09_glossary.md#settings_trigger_sensitivity), [Camera Height](./09_glossary.md#camera_height), or [angle](./09_glossary.md#camera_angle) may affect [detection probability](./09_glossary.md#detection_probability) in that smaller species might not be detected or identifiable if the [Trigger Sensitivity](./09_glossary.md#settings_trigger_sensitivity) is low, or the [Camera Height](./09_glossary.md#camera_height) or [angle](./09_glossary.md#camera_angle) is too high. The [Camera Direction](./09_glossary.md#camera_direction) could impact the probability of an animal triggering a camera if it is directed towards an object that impedes the [Field of View (FOV)](./09_glossary.md#field_of_view) or image quality (e.g. due to sun glare). **Environmental factors** (e.g., vegetation cover, snow depth) may affect [detection probability](./09_glossary.md#detection_probability) and occurrence (e.g., {{ ref_intext_becker_et_al_2022 }}; {{ ref_intext_hofmeester_et_al_2019 }}; {{ ref_intext_iknayan_et_al_2014 }}; {{ ref_intext_steenweg_et_al_2019 }}). For example, a low number of detections in a densely vegetated site might be because of poor camera visibility or avoidance of this habitat by the species of interest.
+
+Hofmeester et al. (2019) suggested there are **six scales (orders) that may impact** [detection probability](./09_glossary.md#detection_probability) and that should be considered within an explicit time period (adapted from Hofmeester et al. \[2019\]; [Figure 2](#TOC_surv_guidelines_fig_2)):
 
 1)  **Distribution range** (1st order; i.e., the physical or geographical range of a species)
 
@@ -121,23 +135,40 @@ Hofmeester et al. (2019) suggested there are **six scales (orders) that may impa
 
 4)  **Microsite** (4th order; usage of microhabitats such as food items/feeding patches/nest sites/movement trails, etc. within a habitat)
 
-5)  **Camera specification / set-up** (5th order; i.e., factors that affect the probability that an animal [triggers](../09_gloss_ref/09_glossary.md#trigger_event) the camera if present)
+5)  **Camera specification / set-up** (5th order; i.e., factors that affect the probability that an animal [triggers](./09_glossary.md#trigger_event) the camera if present)
 
 6)  **Image** (6th order; i.e., factors that affect correct identification of animals or individuals)
 
 (TOC_surv_guidelines_fig_2)=
 
-```{figure} ../03_images/03_image_files/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png
-:scale: 70%
+```{figure} ../03_images/03_image_files/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1_clipped.png
+:width: 600px
 :align: center
-```  
+```
 
-**Figure 2.** Spatial scales (1-6) and processes that determine the [detection probability](../09_gloss_ref/09_glossary.md#detection_probability) (Hofmeester et al., 2019; abbreviated figure caption).
+::::{grid} 3
 
-It is important to consider how all these factors and scales will impact study design. Unmeasured variation in [detection probability](../09_gloss_ref/09_glossary.md#detection_probability) can result in the inability to differentiate the effects of [detection probability](../09_gloss_ref/09_glossary.md#detection_probability) *vs.* habitat preference (Jennelle et al., 2002) and, in turn, cause erroneous estimates of occurrence and abundance (Burton et al., 2015; Dénes et al., 2015; Kays et al., 2021).
+:::{grid-item}
+:columns: 1
 
-Factors that influence [detection probability](../09_gloss_ref/09_glossary.md#detection_probability) at the microsite and camera specification / set-up scales are likely to result in the largest biases and thus warrant the most consideration (see Hofmeester et al. \[2019\] for details). Therefore, it is particularly important to consider *how* to place cameras to avoid such biases. Deploying cameras in a consistent fashion (e.g., carefully ensuring that cameras are always set at the same [Camera Height](../09_gloss_ref/09_glossary.md#camera_height), orientation ([direction](../09_gloss_ref/09_glossary.md#camera_direction)), and [angle](../09_gloss_ref/09_glossary.md#camera_angle) is essential.
+<span style="color:white">...</font>
+:::
 
+:::{grid-item}
+:columns: 10
+<font size="2">**Figure 2.** Spatial scales (1-6) and processes that determine the [detection probability](./09_glossary.md#detection_probability) ({{ ref_intext_hofmeester_et_al_2019 }}; abbreviated figure caption).</font>
+:::
+
+:::{grid-item}
+:columns: 1
+
+<span style="color:white">...</font>
+:::
+::::
+
+It is important to consider how all these factors and scales will impact study design. Unmeasured variation in [detection probability](./09_glossary.md#detection_probability) can result in the inability to differentiate the effects of [detection probability](./09_glossary.md#detection_probability) *vs.* habitat preference ({{ ref_intext_jennelle_et_al_2002 }}) and, in turn, cause erroneous estimates of occurrence and abundance ({{ ref_intext_burton_et_al_2015 }}; {{ ref_intext_denes_et_al_2015 }}; {{ ref_intext_kays_et_al_2021 }}).
+
+Factors that influence [detection probability](./09_glossary.md#detection_probability) at the microsite and camera specification / set-up scales are likely to result in the largest biases and thus warrant the most consideration (see Hofmeester et al. [2019] for details). Therefore, it is particularly important to consider *how* to place cameras to avoid such biases. Deploying cameras in a consistent fashion (e.g., carefully ensuring that cameras are always set at the same [Camera Height](./09_glossary.md#camera_height), orientation ([direction](./09_glossary.md#camera_direction)), and [angle](./09_glossary.md#camera_angle) is essential.
 ::::::
 
 ::::::{tab-item} Visual resources
@@ -147,29 +178,30 @@ Factors that influence [detection probability](../09_gloss_ref/09_glossary.md#de
 :margin: 0
 
 ::::{grid-item-card} {{ ref_intext_rcsc_et_al_2024 }}
-```{figure} ../03_images/03_image_files/rcsc_et_al_2024_detection_probability_2023_05_04.png
-:width: 300px
+```{figure} ../03_images/03_image_files/rcsc_et_al_2024_detection_probability_2023_05_04_clipped.jpg
+:height: 300px
 :align: center
 ```
 
+<font size="2">**RCSC et al. (2024) - Fig. 1.** Three conditional probabilities (Pr) of detection that may impact the detection probability of an animal (or species) by a camera (adapted from Moeller et al. [2023], Hofmeester et al. [2019], and Findlay et al. [2020]).</font>
 ::::
 
 ::::{grid-item-card} {{ ref_intext_rcsc_et_al_2024 }}
-```{figure} ../03_images/03_image_files/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1.png
+```{figure} ../03_images/03_image_files/rcsc_et_al_2024_detectionprob_hofmeester_et_al_2019_fig1_clipped.png
 :width: 300px
 :align: center
 ```
-
+<font size="2">**RCSC et al. (2024) - Fig. 2.** Spatial scales (1-6) and processes that determine the detection probability (Hofmeester et al., 2019; abbreviated figure caption).</font>
 ::::
 
 ::::{grid-item-card} {{ ref_intext_tourani_et_al_2020 }}
-```{figure} ../03_images/03_image_files/tourani_et_al_2020_fig1.png
+```{figure} ../03_images/03_image_files/tourani_et_al_2020_fig1_clipped.png 
 :width: 300px
 :align: center
 ```
-
-<p>NULL <p/>
+<font size="2">**Tourani et al., (2020) - Fig. 1** Conceptual diagram showing different aspects of detectability during camera trap surveys and the modulating effect of biological characteristics. In addition to direct impacts on detectability, a longer visit and a closer image of focal species increase the chance of identifying the visitor, thereby increasing detectability. Colour figure can be viewed at <zslpublications.onlinelibrary.wiley.com>.</font>
 ::::
+
 :::::
 
 :::::{grid} 3
@@ -178,168 +210,146 @@ Factors that influence [detection probability](../09_gloss_ref/09_glossary.md#de
 :margin: 0
 
 ::::{grid-item-card} {{ ref_intext_iknayan_et_al_2014 }}
-```{figure} ../03_images/03_image_files/iknayan_et_al_2014_fig2.png
+```{figure} ../03_images/03_image_files/iknayan_et_al_2014_fig2_clipped.png 
 :width: 300px
 :align: center
 ```
-
-<p>figure5_caption <p/>
+<font size="2">**Iknayan et al., (2020) - Fig. 2** - Categories of species at surveyed sites resulting from imperfect detection and how they change with different temporal and spatial sampling strategies. (A) The true (unknown) species pool of a metacommunity represented at a site comprises species that have been detected there (green bin), those that have not yet been detected at the site but have been detected at other surveyed sites (yellow bin), and those that have not yet been detected at this or any site but occur in the region (white bin). (B) As temporal and spatial replication (i.e., sampling effort) increases, knowledge of the species pool changes for both the site (green bins) and the metacommunity (green + yellow + white bins). When a site is surveyed few times, the relative size of each bin depends on the factors affecting detectability (Figure 1). If there are few sites and few surveys per site, a large portion of the metacommunity may not be detected (white bin of upper left rectangle), either at the site or at other sites. As the number of surveys per site increases (temporal replication) but not the number of sites surveyed (i.e., little spatial replication), the total number of species detected per site increases (green bin in upper right rectangle), mostly as a result of detecting species that are likely to occur at other sites (yellow bin). When the total number of sites surveyed increases (spatial replication) but not the number of surveys (i.e., little temporal replication), the number of species undetected in the region decreases (white bin in lower left rectangle), but the number of species detected per site remains the same (green bin). As both the number of surveys per site and the number of sites surveyed increase, a greater proportion of species in the metacommunity will be known (green + yellow bins in lower right rectangle), either from being directly detected at the site (green bin) or by being detected at other sites (yellow bin).</font>
 ::::
 
-::::{grid-item-card} {{ ref_intext_figure5_ref_id }}
-```{figure} ../03_images/03_image_files/figure5_filename.png
+::::{grid-item-card} {{ ref_intext_oconnell_et_al_2011 }}
+```{figure} ../03_images/03_image_files/oconnell_et_al_2011_fig6_1_clipped.png 
 :width: 300px
 :align: center
 ```
-<p>figure5_caption<p/>
+<font size="2">**O’Connell et al. (2011) - Fig. 6.1** The cumulative likelihood of capturing an individual with a Pr(detection) per sampling occasion = *p* over *K* = 1 ... 30 sampling occasions. As *p* and *K* increase, the likelihood of detection approaches 1.</font>
 ::::
 
-::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
-```{figure} ../03_images/03_image_files/figure6_filename.png
+::::{grid-item-card} {{ ref_intext_findlay_et_al_2020 }}
+```{figure} ../03_images/03_image_files/findlay_et_al_2020_fig1_clipped.png
 :width: 300px
 :align: center
 ```
-<p>figure6_caption <p/>
+<font size="2">**Findlay et al. (2020) - Fig. 1** The sequential processes required to detect an animal on a cameratrap given that it is present. Failure of any of these processes leads to a false-negative; therefore, detection success requires a positive outcome from all the component processes. Specific terminology we use in this study to quantify these processes is also shown. ‘Detection probability’ can thus be considered the product of a series of conditional probabilities representing each of these processes.</font>
 ::::
 :::::
-
 :::::{grid} 3
 :gutter: 1
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} {{ ref_intext_vid1_ref_id }}
-
+::::{grid-item-card} {{ ref_intext_turlapaty_2014 }}
 <iframe 
     width="300"
     height="200"
-    src="vid1_url"
+    src="https://www.youtube.com/embed/WBgWOQBlNoI?si=h16_LVMHmwT0ntPd"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
 
-<p>vid1_caption<p/>
+Probability of Detection: Eg 01</font>
 ::::
 
-::::{grid-item-card} {{ ref_intext_vid2_ref_id }}
-
-<iframe 
-    width="300"
-    height="200"
-    src="vid2_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
-<p>vid2_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid3_ref_id }}
-
-<iframe 
-    width="300"
-    height="200"
-    src="vid3_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
-<p>vid3_caption<p/>
-::::
 :::::
 
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
+::::::
 
-::::{grid-item-card} {{ ref_intext_vid4_ref_id }}
 
-<iframe 
-    width="300"
-    height="200"
-    src="vid4_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
+::::::{tab-item} Shiny apps/Widgets
+:::::{card}
+::::{dropdown} Probabilistic detection calculator (online application) 
 
-<p>vid4_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid5_ref_id }}
+Online application used as an aid in sampling planning; calculates the probability of detecting disease (or other similar feature) with the given within-group prevalence and sample size for both finite and infinite group sizes. The detection means that at least one of the samples is detected positive. The sensitivity of the testing method can also be taken into account in the case of an imperfect test. <br><br> Additional information can be found here: <https://zenodo.org/records/13120206><br><br> 
+({{ ref_intext_mikkela_2024 }})
 
 <iframe 
-    width="300"
-    height="200"
-    src="vid5_url"
+    width="100%"
+    height="900"
+    src="https://detcal-shiny.2.rahtiapp.fi/"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
 
-<p>vid5_caption<p/>
 ::::
 
-::::{grid-item-card} {{ ref_intext_vid6_ref_id }}
+::::{dropdown} smsPOMDP
 
-<iframe 
-    width="300"
-    height="200"
-    src="vid6_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+A Shiny r app to solve the problem of when to stop managing  or surveying species under imperfect detection. <br><br> Additional information can be found here: <https://github.com/conservation-decisions/smsPOMDP> or <https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13501><br><br> 
+({{ ref_intext_pascal_et_al_2020 }})
+
+<iframe https://conservation-decisions.shinyapps.io/smsPOMDP/
+    width="100%"
+    height="900"
+    src=""
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-
-<p>vid6_caption<p/>
 ::::
-
 :::::
-
-::::::
-
-::::::{tab-item} Shiny apps/Widgets
-Check back in the future!
 ::::::
 
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
-|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
-| resource1_type | resource1_name | R package for analyzing wildlife data with detection error | <https://github.com/psolymos/detect><br><https://peter.solymos.org/detect> | {{ ref_bib_resource1_ref_id }} |
-| resource3_type | resource2_name | resource3_note | resource3_url | {{ ref_bib_resource2_ref_id }} |
-| resource3_type | resource3_name | resource3_note | resource3_url | {{ ref_bib_resource3_ref_id }} |
-| resource4_type | resource4_name | resource4_note | resource4_url | {{ ref_bib_resource4_ref_id }} |
-| resource5_type | resource5_name | resource5_note | resource5_url | {{ ref_bib_resource5_ref_id }} |
-| resource6_type | resource6_name | resource6_note | resource6_url | {{ ref_bib_resource6_ref_id }} |
-| resource7_type | resource7_name | resource7_note | resource7_url | {{ ref_bib_resource7_ref_id }} |
-| resource8_type | resource8_name | resource8_note | resource8_url | {{ ref_bib_resource8_ref_id }} |
-| resource9_type | resource9_name | resource9_note | resource9_url | {{ ref_bib_resource9_ref_id }} |
-| resource10_type | resource10_name | resource10_note | resource10_url | {{ ref_bib_resource10_ref_id }} |
-| resource11_type | resource11_name | resource11_note | resource11_url | {{ ref_bib_resource11_ref_id }} |
+|:---------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
+| R package | detect: analyzing wildlife data with detection error  | The R package implements models to analyze site occupancy and count data models with detection error. The package development was supported by the Alberta Biodiversity Monitoring Institute and the Boreal Avian Modelling (BAM) Project. | <https://github.com/psolymos/detect>;<br><https://peter.solymos.org/detect> | {{ ref_bib_solymos_et_al_2024 }} |
+| R Shiny app | Probabilistic detection calculator (online application) | Online application used as an aid in sampling planning; calculates the probability of detecting disease (or other similar feature) with the given within-group prevalence and sample size for both finite and infinite group sizes.<br><br> Additional information can be found here: <https://zenodo.org/records/13120206>.  | Shiny app: <https://detcal-shiny.2.rahtiapp.fi/>;<br>Related documents: <https://zenodo.org/records/13120206> | {{ ref_bib_mikkela_2024 }} |
 ::::::
 
 ::::::{tab-item} References
-{{ ref_bib_rcsc_et_al_2024 }} 
+<font size="3">
+
+{{  ref_bib_rcsc_et_al_2024 }} 
+
+{{ ref_bib_hofmeester_et_al_2019 }}
+
+{{ ref_bib_burton_et_al_2015 }}
+
+{{ ref_bib_caravaggi_et_al_2020 }}
 
 {{ ref_bib_chatterjee_et_al_2021 }}
+
+{{ ref_bib_denes_et_al_2015 }}
+
+{{ ref_bib_findlay_et_al_2020 }}
+
+{{ ref_bib_hofmeester_et_al_2019 }}
+
+{{ ref_bib_iknayan_et_al_2014 }}
+
+{{ ref_bib_jennelle_et_al_2002 }}
+
+{{ ref_bib_kays_et_al_2021 }}
 
 {{ ref_bib_mackenzie_kendall_2002 }}
 
 {{ ref_bib_mackenzie_royle_2005 }}
 
+{{ ref_bib_mackenzie_et_al_2004 }}
+
+{{ ref_bib_martin_et_al_2005 }}
+
+{{ ref_bib_mikkela_2024 }}
+
+{{ ref_bib_moeller_et_al_2023 }}
+
+{{ ref_bib_obrien_et_al_2011 }}
+
+{{ ref_bib_pascal_et_al_2020 }}
+
+{{ ref_bib_rowcliffe_et_al_2011 }}
+
 {{ ref_bib_shannon_et_al_2014 }}
 
-{{ ref_bib_tobler_powell, 2013 }}
+{{ ref_bib_solymos_et_al_2024 }}
 
-{{ ref_bib_mackenzie_kendall_2002 }}
+{{ ref_bib_tobler_powell_2013 }}
 
-{{ ref_bib_mackenzie_royle_2005 }} 
+{{ ref_bib_tourani_et_al_2020 }}</font>
 ::::::
 
 :::::::
 
-::::::::
+:::::::::

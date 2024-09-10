@@ -150,9 +150,11 @@ parts:
     maxdepth: 1
     titlesonly: False
     chapters:
-    - file: 02_dialog-boxes/09_gloss_ref/08_references.md
+#    - file: 02_dialog-boxes/09_gloss_ref/08_references.md
+    - file: 02_dialog-boxes/08_references.md
   - caption: Glossary
     maxdepth: 1
     titlesonly: False
     chapters:  
-    - file: 02_dialog-boxes/09_gloss_ref/09_glossary.md
+#    - file: 02_dialog-boxes/09_gloss_ref/09_glossary.md
+    - file: 02_dialog-boxes/09_glossary.md
