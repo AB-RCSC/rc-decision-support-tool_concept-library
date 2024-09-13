@@ -14,11 +14,6 @@ editor_options:
   markdown: 
   wrap: none
 ---
-<style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
-  }
-</style>
 (i_objective)=
 # {{ title_i_objective }}
 
@@ -83,7 +78,7 @@ The following sections include definitions for each option, with a few additiona
 
 ::::{grid-item-card} {{ ref_intext_mccomb_et_al_2010 }}
 ```{figure} ../03_images/03_image_files/mccomb_et_al_2010_fig4_3_clipped.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 

@@ -1,24 +1,3 @@
----
-jupytext:
-  formats: md:myst
-  text_representation:
-    extension: .md
-    format_name: myst
-    format_version: '1.16'
-    jupytext_version: 1.16.1
-kernelspec:
-  display_name: Python 3
-  language: python
-  name: python3
-editor_options: 
-  markdown: 
-  wrap: none
---- 
-<style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
-  }
-</style>
 (i_mod_divers_rich)=
 # {{ name_mod_divers_rich }}
 
@@ -90,8 +69,8 @@ editor_options:
 :::::::{tab-set}
 
 ::::::{tab-item} Overview
-
 **{{ term_mod_divers_rich_rich }}**: {{ term_def_mod_divers_rich_rich }}
+
 **{{ term_mod_divers_rich_divers }}**: {{ term_def_mod_divers_rich_divers }}
 
 Note that there are multiple “levels” to Species diversity & richness, these include:
@@ -99,14 +78,14 @@ Note that there are multiple “levels” to Species diversity & richness, these
 - **{{ term_mod_divers_rich_beta }}**: {{ term_def_mod_divers_rich_beta }}
 - **{{ term_mod_divers_rich_gamma }}**: {{ term_def_mod_divers_rich_gamma }}
 
-<br>
 “Species richness** is simply “the total number of species in an assemblage or a sample” ({{ ref_intext_gotelli_chao_2013 }}.
 
-Species richness in an assemblage is difficult to estimate reliably from sample data because it is very sensitive to the number of individuals and the number of samples collected. Species richness is a diversity of order 0 (which means it is completely insensitive to species abundances).
+Species richness in an assemblage is difficult to estimate reliably from sample data because it is very sensitive to the number of individuals and the number of samples collected. Species richness is a diversity of order 0 (which means it is completely insensitive to species abundances). ({{ ref_intext_gotelli_chao_2013 }}.
 
 Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon's Index H'.” {{ ref_intext_pyron_2010 }}
 
-```{figure} ../03_images/03_image_files/pyron_2010_fig1_clipped.png
+
+```{figure} ../03_images/03_image_files/pyron_2010_fig1.png
 :align: center
 :scale: 60%
 ```
@@ -150,25 +129,24 @@ Parameters:
 :height: 300px
 :align: center
 ```
-
-**Pyron (2010) – Fig. 1**: Species evenness and species richness for animalcule communities
-<!-- Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. -->
+<font size="2">**Pyron (2010) – Fig. 1**: Species evenness and species richness for animalcule communities
+<!-- Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. --></font>
 ::::
 
 ::::{grid-item-card} {{ ref_intext_gotelli_chao_2013 }}
 ```{figure} ../03_images/03_image_files/gotelli_chao_2013_fig1_clipped.png 
-:width: 300px
+:width: 100%
 :align: center
 ```
-**Gotelli & Chao (2013) – Fig. 1** Species richness sampling in a hypothetical walk through the woods. Each different symbol represents one of 20 distinct species, and each row contains 20 characters, representing the first 20 individual trees that might be encountered in a random sample. Community A is maximally even, with each of the 20 species comprising 5% of the total abundance. In this assemblage, the two samples of 20 individual trees yielded 15 and 13 species, respectively. Community B is highly uneven, with one species (the open circle) representing 81% of the total abundance, and the remaining 19 species contributing only 1% each. In this assemblage, the two samples of 20 individual trees yielded only three and four species, respectively.
+<font size="2">**Gotelli & Chao (2013) – Fig. 1** Species richness sampling in a hypothetical walk through the woods. Each different symbol represents one of 20 distinct species, and each row contains 20 characters, representing the first 20 individual trees that might be encountered in a random sample. Community A is maximally even, with each of the 20 species comprising 5% of the total abundance. In this assemblage, the two samples of 20 individual trees yielded 15 and 13 species, respectively. Community B is highly uneven, with one species (the open circle) representing 81% of the total abundance, and the remaining 19 species contributing only 1% each. In this assemblage, the two samples of 20 individual trees yielded only three and four species, respectively.</font>
 ::::
 
 ::::{grid-item-card} {{ ref_intext_gotelli_chao_2013 }}
 ```{figure} ../03_images/03_image_files/gotelli_chao_2013_fig6_clipped.png 
-:width: 300px
+:width: 100%
 :align: center
 ```
-**Gotelli & Chao (2013) – Fig. 6** Diversity profile for assemblages of differing evenness. The x-axis is the order *q* in the Hill number (eqn [23a]), and is illustrated for values of *q* from 0 to 5. The y-axis is the calculated Hill number (the equivalent number of equally abundant species). Each of the four assemblages has exactly 100 species and 500 individuals, but they differ in their relative evenness: (1) completely even assemblage (black solid line): each species is represented by five individuals; (2) slightly uneven assemblage (red dashed line): 50 species each represented by seven individuals and 50 species each represented by three individuals (this structure is denoted as {50 x 7, 50 x 3}); (3) moderately uneven assemblage (green dotted line): {22 x 10, 28 x 5, 40 x 3, 10 x 2}; (4) highly uneven assemblage (blue dash–dot line): {1 x 120, 1 x 80, 1 x 70, 1 x 50, 3 x 20, 3 x 10, 90 x 1}. For *q*=0, the Hill number is species richness, which is equal to 100 for all assemblages. Because Hill numbers represent the equivalent number of equally abundant species, the curve for the perfectly even assemblage (black solid line) does not change as q is increased. Larger values of q place progressively more weight on common species, so the equivalent number of equally abundant species is much lower for the more uneven assemblages than for more even assemblages.
+<font size="2">**Gotelli & Chao (2013) – Fig. 6** Diversity profile for assemblages of differing evenness. The x-axis is the order *q* in the Hill number (eqn [23a]), and is illustrated for values of *q* from 0 to 5. The y-axis is the calculated Hill number (the equivalent number of equally abundant species). Each of the four assemblages has exactly 100 species and 500 individuals, but they differ in their relative evenness: (1) completely even assemblage (black solid line): each species is represented by five individuals; (2) slightly uneven assemblage (red dashed line): 50 species each represented by seven individuals and 50 species each represented by three individuals (this structure is denoted as {50 x 7, 50 x 3}); (3) moderately uneven assemblage (green dotted line): {22 x 10, 28 x 5, 40 x 3, 10 x 2}; (4) highly uneven assemblage (blue dash–dot line): {1 x 120, 1 x 80, 1 x 70, 1 x 50, 3 x 20, 3 x 10, 90 x 1}. For *q*=0, the Hill number is species richness, which is equal to 100 for all assemblages. Because Hill numbers represent the equivalent number of equally abundant species, the curve for the perfectly even assemblage (black solid line) does not change as q is increased. Larger values of q place progressively more weight on common species, so the equivalent number of equally abundant species is much lower for the more uneven assemblages than for more even assemblages.</font>
 ::::
 
 :::::
@@ -177,6 +155,15 @@ Parameters:
 :gutter: 1
 :padding: 0
 :margin: 0
+
+::::{grid-item-card} {{ ref_intext_loreau_2010 }}
+```{figure} ../03_images/03_image_files/loreau_2010_fig3.png 
+:width: 100%
+:align: center
+```
+<font size="2">**Loreau et al. (2010) – Fig. 3.** The various levels of organisation and components that define the multiple facets
+of biodiversity</font>
+::::
 
 ::::{grid-item-card} {{ ref_intext_project_dragonfly_2019 }}
 <iframe 
@@ -188,7 +175,7 @@ Parameters:
     allowfullscreen>
 </iframe>
 
-Abundance, species richness, and diversity
+<font size="2">Abundance, species richness, and diversity</font>
 ::::
 
 ::::{grid-item-card} {{ ref_intext_mecks100_2018 }} 
@@ -201,8 +188,15 @@ Abundance, species richness, and diversity
     allowfullscreen>
 </iframe>
 
-Species accumulation and rarefaction curves
+<font size="2">Species accumulation and rarefaction curves</font>
 ::::
+
+:::::
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
 
 ::::{grid-item-card} {{ ref_intext_riffomonas_project_2022a }}
 <iframe 
@@ -214,14 +208,8 @@ Species accumulation and rarefaction curves
     allowfullscreen>
 </iframe>
 
-Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC196)
+<font size="2">Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC196)</font>
 ::::
-:::::
-
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
 
 ::::{grid-item-card} {{ ref_intext_vsn_international_2022 }} 
 
@@ -234,7 +222,7 @@ Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC19
     allowfullscreen>
 </iframe>
 
-Species abundance tools in Genstat 
+<font size="2">Species abundance tools in Genstat</font>
 ::::
 
 ::::{grid-item-card} {{ ref_intext_baylor_tutoring_center_2021 }}
@@ -248,8 +236,14 @@ Species abundance tools in Genstat
     allowfullscreen>
 </iframe>
 
-Species Diversity and Species Richness
+<font size="2">Species Diversity and Species Richness</font>
 ::::
+:::::
+
+:::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
 
 ::::{grid-item-card} {{ ref_intext_styring_2020a }}
 <iframe 
@@ -261,29 +255,7 @@ Species Diversity and Species Richness
     allowfullscreen>
 </iframe>
 
-Field Ecology - Diversity Metrics in R
-::::
-
-:::::
-
-
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_riffomonas_project_2022b }} 
-
-<iframe 
-    width="300"
-    height="200"
-    src="https://www.youtube.com/embed/ywHVb0Q-qsM?si=_xJ5jbFc6MDEQlAh "
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
-Generating a rarefaction curve from collector's curves in R within the tidyverse (CC198)
+<font size="2">Field Ecology - Diversity Metrics in R</font>
 ::::
 
 :::::
@@ -292,9 +264,9 @@ Generating a rarefaction curve from collector's curves in R within the tidyverse
 
 ::::::{tab-item} Shiny apps/Widgets
 :::::{card}
-**iNext Online**
+::::{dropdown} iNext Online 
 
- Software for interpolation and extrapolation of species diversity.
+ Software for interpolation and extrapolation of species diversity 
 
 <iframe 
     width="100%"
@@ -304,17 +276,28 @@ Generating a rarefaction curve from collector's curves in R within the tidyverse
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
+::::
 
+::::{dropdown} Visualizing Biodiversity in \[U.S.\] National Parks
+
+<iframe https://abenedetti.shinyapps.io/bioNPS/
+    width="100%"
+    height="900"
+    src=""
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+::::
 :::::
-
 ::::::
 
-::::::{tab-item} Analytical tools & resources
 
+::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
-| R package | Chapter 9 Community composition | \- | <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/composition.html#estimated-richnes> | {{ ref_bib_wildco_lab_2021b }} |
-| R package | R package “vegan | \- | <https://cran.r-project.org/web/packages/vegan/index.html> | {{ ref_bib_oksanen_et_al_2024 }} |
+| R package | Chapter 9 Community composition |     | <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/composition.html#estimated-richnes> | {{ ref_bib_wildco_lab_2021b }} |
+| R package | R package “vegan |     | <https://cran.r-project.org/web/packages/vegan/index.html> | {{ ref_bib_oksanen_et_al_2024 }} |
 | Program | EstimateS | Dedicated software for estimating diversity, using asymptotic or rarefaction methods. Mac version available | <https://www.robertkcolwell.org/pages/1407> | {{ ref_bib_colwell_2022 }} |
 | R package | Package ‘iNEXT’ - Interpolation and Extrapolation for Species Diversity | The iNext package (INterpolation and EXTrapolation of species richness) - is both easy to use and rapid to compute. It also comes with a wealth of plotting functions - see the iNext Quick Introduction for a great walk through tutorial. Its core functionality is based on: Chao, Anne, et al. “Rarefaction and extrapolation with Hill numbers: a framework for sampling and estimation in species diversity studies.” Ecological monographs 84.1 (2014): 45-67. | <https://cran.r-project.org/web/packages/iNEXT/iNEXT.pdf> | {{ ref_bib_chao_et_al_2016 }} |
 | Exercise/Tutorial | 2.2: Measuring Species Diversity | Easy to interpet explanation of species richness vs evenness, species area curves, rarefaction, and how to calculate diversity | <https://bio.libretexts.org/Courses/University_of_California_Davis/BIS_2B%3A_Introduction_to_Biology_-_Ecology_and_Evolution/02%3A_Biodiversity/2.02%3A_Measuring_Species_Diversity> | {{ ref_bib_gerhartbarley_nd }} |
@@ -323,7 +306,6 @@ Generating a rarefaction curve from collector's curves in R within the tidyverse
 
 ::::::{tab-item} References
 <font size="3">
-
 {{ ref_bib_ahumada_et_al_2011 }}
 
 {{ ref_bib_baylor_tutoring_center_2021 }}
@@ -339,10 +321,6 @@ Generating a rarefaction curve from collector's curves in R within the tidyverse
 {{ ref_bib_gerhartbarley_nd }}
 
 {{ ref_bib_gotelli_chao_2013 }}
-
-{{ ref_bib_gotelli_colwell_2001 }}
-
-{{ ref_bib_gotelli_colwell_2010 }}
 
 {{ ref_bib_hsieh_et_al_2015 }}
 
@@ -383,7 +361,7 @@ Generating a rarefaction curve from collector's curves in R within the tidyverse
 {{ ref_bib_wildco_lab_2021b }}
 
 {{ ref_bib_yue_et_al_2015 }}
-</font>
+</font>	
 ::::::
 
 :::::::

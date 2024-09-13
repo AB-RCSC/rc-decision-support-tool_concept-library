@@ -14,11 +14,6 @@ editor_options:
   markdown: 
   wrap: none
 ---
-<style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
-  }
-</style>
 (i_mod_behaviour)=
 # {{ name_mod_behaviour }}
 <!--**{{ name_mod_behaviour }}**
@@ -60,7 +55,7 @@ editor_options:
 **{{ term_mod_behaviour }}**: {{ term_def_mod_behaviour }}
 
 ```{figure} ../03_images/03_image_files/00_coming_soon.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 ::::::
@@ -77,7 +72,7 @@ Add some info here
 
 ::::{grid-item-card} {{ ref_intext_figure1_ref_id  }}
 ```{figure} ../03_images/03_image_files/figure1_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -86,7 +81,7 @@ Add some info here
 
 ::::{grid-item-card} {{ ref_intext_figure2_ref_id }}
 ```{figure} ../03_images/03_image_files/figure2_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -95,7 +90,7 @@ Add some info here
 
 ::::{grid-item-card} {{ ref_intext_figure3_ref_id }}
 ```{figure} ../03_images/03_image_files/figure3_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -111,7 +106,7 @@ Add some info here
 
 ::::{grid-item-card} {{ ref_intext_figure4_ref_id }}
 ```{figure} ../03_images/03_image_files/figure4_filename.png 
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -120,7 +115,7 @@ Add some info here
 
 ::::{grid-item-card} {{ ref_intext_figure5_ref_id }}
 ```{figure} ../03_images/03_image_files/figure5_filename.png 
-:width: 300px
+:width: 100%
 :align: center
 ```
 <p>figure5_caption <p/>
@@ -128,7 +123,7 @@ Add some info here
 
 ::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
 ```{figure} ../03_images/03_image_files/figure6_filename.png 
-:width: 300px
+:width: 100%
 :align: center
 ```
 <p>figure6_caption <p/>

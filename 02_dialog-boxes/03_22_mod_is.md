@@ -14,11 +14,6 @@ editor_options:
   markdown: 
   wrap: none
 ---
-<style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
-  }
-</style>
 (i_mod_is)=
 # {{ name_mod_is }}
 
@@ -104,7 +99,7 @@ In Uganda, TIFC-derived estimates of antelope were comparable to results from ca
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023  }}
 ```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tifc1.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -113,7 +108,7 @@ In Uganda, TIFC-derived estimates of antelope were comparable to results from ca
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
 ```{figure} ../03_images/03_image_files/clarke_et_al_2023_fig9_clipped.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -122,7 +117,7 @@ In Uganda, TIFC-derived estimates of antelope were comparable to results from ca
 
 ::::{grid-item-card} {{ ref_intext_becker_2024 }}
 ```{figure} ../03_images/03_image_files/becker_2024_slide8.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -137,7 +132,7 @@ In Uganda, TIFC-derived estimates of antelope were comparable to results from ca
 
 ::::{grid-item-card} {{ ref_intext_becker_2024 }}
 ```{figure} ../03_images/03_image_files/becker_2024_slide9a.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -146,7 +141,7 @@ In Uganda, TIFC-derived estimates of antelope were comparable to results from ca
 
 ::::{grid-item-card} {{ ref_intext_becker_2024 }}
 ```{figure} ../03_images/03_image_files/becker_2024_slide12.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <p>FROM MARCUS PPT SLIDE 12; NEED PERMISSION<p/>
@@ -154,7 +149,7 @@ In Uganda, TIFC-derived estimates of antelope were comparable to results from ca
 
 ::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
 ```{figure} ../03_images/03_image_files/figure6_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <p>figure6_caption <p/>

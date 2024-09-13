@@ -14,11 +14,6 @@ editor_options:
   markdown: 
   wrap: none
 ---
-<style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
-  }
-</style>
 (i_mod_scr_secr)=
 # {{ name_mod_scr_secr }}
 
@@ -132,7 +127,7 @@ Another aspect of sampling design practitioners must consider is the number and 
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
 ```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_scr1.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -141,7 +136,7 @@ Another aspect of sampling design practitioners must consider is the number and 
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
 ```{figure} ../03_images/03_image_files/clarke_et_al_2023_fig4_clipped.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -150,7 +145,7 @@ Another aspect of sampling design practitioners must consider is the number and 
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023  }}
 ```{figure} ../03_images/03_image_files/clarke_et_al_2023_fig4_clipped.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -165,7 +160,7 @@ Another aspect of sampling design practitioners must consider is the number and 
 
 ::::{grid-item-card} {{ ref_intext_efford_2011 }}
 ```{figure} ../03_images/03_image_files/efford_2011_fig1.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -174,7 +169,7 @@ Another aspect of sampling design practitioners must consider is the number and 
 
 ::::{grid-item-card} {{ ref_intext_efford_2023 }}
 ```{figure} ../03_images/03_image_files/efford_2023_fig1.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <p>figure5_caption<p/>
@@ -182,7 +177,7 @@ Another aspect of sampling design practitioners must consider is the number and 
 
 ::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
 ```{figure} ../03_images/03_image_files/secr_creemmural_org_secr.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <p>figure6_caption <p/>

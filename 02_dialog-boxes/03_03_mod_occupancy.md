@@ -14,11 +14,6 @@ editor_options:
   markdown: 
     wrap: none
 --- 
-<style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
-  }
-</style>
 (i_mod_occupancy)=
 # {{ name_mod_occupancy }}
 :::::::::{div} full-width
@@ -95,7 +90,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_southwell_et_al_2019 }}
 ```{figure} ../03_images/03_image_files/southwell_et_al_2019_fig1_clipped.png 
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">**Southwell et al. (2019) - Fig. 1.** Structure of the spatially explicit power analysis framework for multiple species in dynamic landscapes.</font>
@@ -103,7 +98,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_clarke_et_al_2023 }}
 ```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_occupancy1.png 
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">   </font>
@@ -118,7 +113,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_chatterjee_et_al_2021 }}
 ```{figure} ../03_images/03_image_files/chatterjee_et_al_2021_table2_clipped.png 
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">**Chatterjee et al. (2021) - Table 2.** Broad classifications of mammals based on occupancy and detection probabilities.</font>
@@ -126,7 +121,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_figure5_ref_id }}
 ```{figure} ../03_images/03_image_files/figure5_filename.png 
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">figure5_caption</font>
@@ -134,7 +129,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
 ```{figure} ../03_images/03_image_files/figure6_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">figure6_caption</font>
@@ -148,7 +143,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_figure7_ref_id }}
 ```{figure} ../03_images/03_image_files/figure7_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">figure7_caption</font>
@@ -156,7 +151,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_figure8_ref_id }}
 ```{figure} ../03_images/03_image_files/figure8_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">figure8_caption</font>
@@ -164,7 +159,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_figure9_ref_id }}
 ```{figure} ../03_images/03_image_files/figure9_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">figure9_caption</font>
@@ -178,7 +173,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_figure10_ref_id }}
 ```{figure} ../03_images/03_image_files/figure10_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">figure10_caption</font>
@@ -186,7 +181,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_figure11_ref_id }}
 ```{figure} ../03_images/03_image_files/figure11_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">figure11_caption</font>
@@ -194,7 +189,7 @@ Despite its widespread use, occupancy may be particularly problematic for camera
 
 ::::{grid-item-card} {{ ref_intext_figure12_ref_id }}
 ```{figure} ../03_images/03_image_files/figure12_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <font size="2">figure12_caption</font>
@@ -369,27 +364,27 @@ shiny_caption2
 <font size="3">
 {{ ref_bib_burton_et_al_2015 }}
 
- {{ ref_bib_efford & dawson_2012 }}
+{{ ref_bib_efford_dawson_2012 }}
 
- {{ ref_bib_gaston_et_al_2000 }}
+{{ ref_bib_gaston_et_al_2000 }}
 
- {{ ref_bib_mackenzie_et_al_2017 }}
+{{ ref_bib_mackenzie_et_al_2017 }}
 
- {{ ref_bib_murray_et_al_2021 }}
+{{ ref_bib_murray_et_al_2021 }}
 
- {{ ref_bib_neilson_et_al_2018 }}
+{{ ref_bib_neilson_et_al_2018 }}
 
- {{ ref_bib_noon_et_al_2012 }}
+{{ ref_bib_noon_et_al_2012 }}
 
- {{ ref_bib_royle_dorazio_2008 }}
+{{ ref_bib_royle_dorazio_2008 }}
 
- {{ ref_bib_sollmann_et_al_2018 }}
+{{ ref_bib_sollmann_et_al_2018 }}
 
- {{ ref_bib_southwell_et_al_2019 }}
+{{ ref_bib_southwell_et_al_2019 }}
 
- {{ ref_bib_steenweg_et_al_2018 }}
+{{ ref_bib_steenweg_et_al_2018 }}
 
- {{ ref_bib_stewart_et_al_2018 }}
+{{ ref_bib_stewart_et_al_2018 }}
 </font>	
 ::::::
 

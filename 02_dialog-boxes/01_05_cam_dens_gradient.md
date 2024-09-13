@@ -14,15 +14,10 @@ editor_options:
   markdown: 
   wrap: none
 ---
-<style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
-  }
-</style>
 (i_cam_dens_gradient)=
 # {{ title_i_cam_dens_gradient }}
 
 ```{figure} ../03_images/03_image_files/00_coming_soon.png
-:width: 300px
+:width: 100%
 :align: center
 ```

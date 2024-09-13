@@ -109,7 +109,6 @@ jupyter-book build ./
 ***
 
 (toc_duration_timing)=
-
 ## Duration & Timing
 
 ::::{grid} 3
@@ -149,8 +148,9 @@ jupyter-book build ./
 (toc_target_species)=
 ## Target species
 
-(#toc_target_species_single)=
-**<font size="4"><span style="color:#2F5496">Target species (single)</font></span>**
+(toc_target_species_single)=
+### Target species (single)
+<br>
 
 ::::{grid} 3
 :gutter: 3
@@ -353,8 +353,9 @@ jupyter-book build ./
 
 ::::
 
-(#toc_target_species_multiple)=
-**<font size="4"><span style="color:#2F5496">Target species (multiple)</font></span>**
+(toc_target_species_multiple)=
+### Target species (multiple)
+<br>
 
 ::::{grid} 3
 :::{grid-item-card}
@@ -541,7 +542,8 @@ jupyter-book build ./
 ## Recommendations
 
 (toc_recommendations_modelling_approach)=
-**<font size="4"><span style="color:#2F5496">Modelling Approaches</font></span>**
+### Modelling Approaches
+<br>
 
 ::::{grid} 3
 :gutter: 3

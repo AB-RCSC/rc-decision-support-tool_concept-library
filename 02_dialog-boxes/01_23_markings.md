@@ -14,15 +14,10 @@ editor_options:
   markdown: 
   wrap: none
 ---
-<style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
-  }
-</style>
 (i_markings)=
 # {{ title_i_markings }}
 
 ```{figure} ../03_images/03_image_files/00_coming_soon.png
-:width: 300px
+:width: 100%
 :align: center
 ```

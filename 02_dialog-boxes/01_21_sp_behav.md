@@ -14,11 +14,6 @@ editor_options:
   markdown: 
   wrap: none
 ---
-<style>
-  h1 {
-    font-size: 1.5rem;font-weight: bold;
-  }
-</style>
 (i_sp_behav)=
 # {{ title_i_sp_behav }}
 
@@ -61,7 +56,7 @@ Notes for later
 
 ::::{grid-item-card} {{ ref_intext_meek_et_al_2014b }}
 ```{figure} ../03_images/03_image_files/meek_et_al_2014_fig11.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -70,7 +65,7 @@ Notes for later
 
 ::::{grid-item-card} {{ ref_intext_becker_et_al_2022 }}
 ```{figure} ../03_images/03_image_files/becker_et_al_2022_fig4.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -79,7 +74,7 @@ Notes for later
 
 ::::{grid-item-card} {{ ref_intext_figure3_ref_id }}
 ```{figure} ../03_images/03_image_files/figure3_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -94,7 +89,7 @@ Notes for later
 
 ::::{grid-item-card} {{ ref_intext_figure4_ref_id }}
 ```{figure} ../03_images/03_image_files/figure4_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 
@@ -103,7 +98,7 @@ Notes for later
 
 ::::{grid-item-card} {{ ref_intext_figure5_ref_id }}
 ```{figure} ../03_images/03_image_files/figure5_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <p>figure5_caption<p/>
@@ -111,7 +106,7 @@ Notes for later
 
 ::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
 ```{figure} ../03_images/03_image_files/figure6_filename.png
-:width: 300px
+:width: 100%
 :align: center
 ```
 <p>figure6_caption <p/>
