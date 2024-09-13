@@ -19,6 +19,6 @@ editor_options:
 # {{ title_i_3ormore_cat_ids }}
 
 ```{figure} ../03_images/03_image_files/00_coming_soon.png
-:width: 100%
+:width: 300px
 :align: center
 ```

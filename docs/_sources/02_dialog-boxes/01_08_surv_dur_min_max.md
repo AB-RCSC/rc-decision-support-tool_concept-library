@@ -19,7 +19,7 @@ editor_options:
 :::::::::{div} full-width
 
 ```{figure} ../03_images/03_image_files/00_coming_soon.png
-:width: 100%
+:width: 300px
 :align: center
 ```
 
