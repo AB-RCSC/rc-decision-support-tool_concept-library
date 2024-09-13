@@ -23,26 +23,6 @@ editor_options:
 
 ::::::{tab-item} Overview
 
-One of the first choices you will make when designing your study, is what it is that you plan to measure (or your “state variable”; a formal measure that summarizes the state of a community or population at a particular time (Wearn & Glover Kapfer, 2017))
-
-Since this concept might be easy to confuse with [Survey Objective(s)](/glossary_ref/09_glossary.md#survey_objectives) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:
-
-:::::{dropdown} Objective *vs.* State Variable
-
-```{figure} ../03_images/03_image_files/00_FIG_obj_state_var.png
-:width: 800px
-:align: center
-```
-
-<!-- **{{ term_survey_objectives }}**: {{ term_def_survey_objectives }}
-The specific objectives of the study, including the Target Species, the state variables (e.g., occupancy, density), and proposed modelling approach(es). Objectives should be specific, measurable, achievable, relevant, and time bound (i.e., SMART).
-
-**{{ term_state_variable }}**: {{ term_def_state_variable }}
-a formal measure that summarizes the state of a community or population at a particular time (Wearn & Glover Kapfer, 2017), e.g., species richness or population abundance). -->
-:::::
-
-***
-
 The following sections include definitions for each option, with a few additional notes:
 
 - **{{ name_mod_inventory }}**: {{ term_def_mod_inventory }}
@@ -75,6 +55,21 @@ The following sections include definitions for each option, with a few additiona
 
 - **{{ name_obj_behaviour }}**: {{ name_def_obj_behaviour }}
 
+***
+
+One of the first choices you will make when designing your study, is what it is that you plan to measure (or your “state variable”; a formal measure that summarizes the state of a community or population at a particular time (Wearn & Glover Kapfer, 2017))
+
+Since this concept might be easy to confuse with [Survey Objective(s)](/glossary_ref/09_glossary.md#survey_objectives) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:
+
+**<font size="4"><span style="color:#2F5496">Objective *vs.* State Variable</font></span>**
+
+```{figure} ../03_images/03_image_files/00_FIG_obj_state_var.png
+:width: 900px
+:align: center
+```
+
+:::::
+
 ::::::
 
 ::::::{tab-item} Visual resources
@@ -102,7 +97,7 @@ The following sections include definitions for each option, with a few additiona
 ::::::
 
 ::::::{tab-item} References
-<font size="3">
+
 {{ ref_bib_caravaggi_et_al_2020 }}
 
 {{ ref_bib_caughley_1977 }}
@@ -116,7 +111,6 @@ The following sections include definitions for each option, with a few additiona
 {{ ref_bib_pyron_2020 }
 
 {{ ref_bib_wearn_gloverkapfer_2017 }}
-</font>
 ::::::
 
 :::::::
