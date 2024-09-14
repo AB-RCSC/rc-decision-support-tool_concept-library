@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: '1.16'
-    jupytext_version: 1.16.1
+    jupytext_version: 1.16.2
 kernelspec:
   display_name: Python 3
   language: python
@@ -16,6 +16,11 @@ editor_options:
 ---
 (i_objective)=
 # {{ title_i_objective }}
+
+{ref}`A reference to my paragraph <./09_gloss_ref/09_glossary_blocktest.mdtest_access_method>`
+
+{term}`test_access_method`
+
 
 :::::::::{div} full-width
 
@@ -59,7 +64,7 @@ The following sections include definitions for each option, with a few additiona
 
 One of the first choices you will make when designing your study, is what it is that you plan to measure (or your “state variable”; a formal measure that summarizes the state of a community or population at a particular time (Wearn & Glover Kapfer, 2017))
 
-Since this concept might be easy to confuse with [Survey Objective(s)](/glossary_ref/09_glossary.md#survey_objectives) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:
+Since this concept might be easy to confuse with [Survey Objective(s)](./glossary_ref/09_glossary.md#survey-objectives) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:
 
 **<font size="4"><span style="color:#2F5496">Objective *vs.* State Variable</font></span>**
 

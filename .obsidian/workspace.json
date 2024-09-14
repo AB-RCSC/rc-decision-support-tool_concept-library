@@ -13,9 +13,9 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_dialog-boxes/literal_include.md",
+                "file": "02_dialog-boxes/00_00_template_master_test.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_dialog-boxes/literal_include.md",
+                "file": "02_dialog-boxes/00_00_template_master_test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_dialog-boxes/literal_include.md",
+                "file": "02_dialog-boxes/00_00_template_master_test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_dialog-boxes/literal_include.md"
+                "file": "02_dialog-boxes/00_00_template_master_test.md"
               }
             }
           }
@@ -148,11 +148,14 @@
   },
   "active": "da52fe182c1689c3",
   "lastOpenFiles": [
-    "_build/html/_sources/02_dialog-boxes/01_18_sp_size.md",
-    "_build/html/_sources/02_dialog-boxes/01_19_sp_rarity.md",
-    "02_dialog-boxes/00_00_template_master_test.md",
+    "02_dialog-boxes/00_01_toc_objective_resources.md",
+    "02_dialog-boxes/00_02_toc_study_area_site_selection_constraints.md",
+    "02_dialog-boxes/00_03_toc_duration_timing.md",
+    "02_dialog-boxes/00_04_toc_target_species.md",
+    "02_dialog-boxes/00_05_toc_equipment_deployment.md",
+    "02_dialog-boxes/00_06_toc_data_analysis.md",
+    "02_dialog-boxes/00_07_toc_rec_approach.md",
     "02_dialog-boxes/01_02_objective.md",
-    "02_dialog-boxes/01_02_objective_old.md",
     "02_dialog-boxes/01_03_num_cams.md",
     "02_dialog-boxes/01_05_cam_dens_gradient.md",
     "02_dialog-boxes/01_06_cam_strat_covar.md",
@@ -165,14 +168,11 @@
     "02_dialog-boxes/01_17_sp_hr_size.md",
     "02_dialog-boxes/01_18_sp_size.md",
     "02_dialog-boxes/01_19_sp_rarity.md",
+    "02_dialog-boxes/01_20_sp_detprob_cat.md",
     "02_dialog-boxes/01_21_sp_behav.md",
     "02_dialog-boxes/01_23_markings.md",
     "02_dialog-boxes/01_25_3ormore_cat_ids.md",
     "02_dialog-boxes/01_47_cam_independent.md",
-    "02_dialog-boxes/03_01_mod_inventory.md",
-    "02_dialog-boxes/03_02_mod_divers_rich.md",
-    "02_dialog-boxes/03_03_mod_occupancy.md",
-    "02_dialog-boxes/03_11_mod_scr_secr.md",
-    "02_dialog-boxes/03_19_mod_tifc.md"
+    "02_dialog-boxes/03_01_mod_inventory.md"
   ]
 }

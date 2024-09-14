@@ -14,32 +14,33 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=eca01c1c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0d76871c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -61,7 +62,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Number of cameras available" href="01_03_num_cams.html" />
-    <link rel="prev" title="Objectives &amp; Resources" href="00_01_toc_objective_resources.html" />
+    <link rel="prev" title="Objectives &amp; Resources" href="../01_toc_pages/00_01_toc_objective_resources.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -71,23 +72,27 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -109,13 +114,8 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
     </header>
   
 
@@ -124,21 +124,19 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -147,7 +145,7 @@
 
 
 
-<nav aria-label="Breadcrumb" class="d-print-none">
+<nav aria-label="Breadcrumb">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -156,7 +154,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="00_01_toc_objective_resources.html" class="nav-link">Objectives &amp; Resources</a></li>
+    <li class="breadcrumb-item"><a href="../01_toc_pages/00_01_toc_objective_resources.html" class="nav-link">Objectives &amp; Resources</a></li>
     
     <li class="breadcrumb-item active" aria-current="page">State...</li>
   </ul>
@@ -177,6 +175,8 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="state-variable-vs-objective">
 <span id="i-objective"></span><h1>State Variable <em>vs.</em> Objective<a class="headerlink" href="#state-variable-vs-objective" title="Link to this heading">#</a></h1>
+<p><span class="xref std std-ref">A reference to my paragraph</span></p>
+<p><a class="reference internal" href="../09_gloss_ref/09_glossary_blocktest.html#term-test_access_method"><span class="xref std std-term">test_access_method</span></a></p>
 <div class="full-width docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
@@ -187,31 +187,31 @@ Overview</label><div class="sd-tab-content docutils">
 <li><p><strong>Species inventory</strong>: Rapid assessment <a class="reference internal" href="#./09_gloss_ref/09_glossary.md#survey"><span class="xref myst">surveys</span></a> to determine what species are present in a given area at a given point in time; there is no attempt made to quantify aspects of communities or populations (Wearn &amp; Glover-Kapfer, 2017).</p></li>
 <li><p><strong>Species diversity &amp; richness</strong></p>
 <ul>
-<li><p><strong>Species richness</strong>: The number of species found in the community/area measured </p></li>
-<li><p><strong>Species diversity</strong>: Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon’s Index H’.” Pyron, 2010</p></li>
+<li><p><strong>Species richness</strong>: the total number of species in an assemblage or a sample” (Gotelli &amp; Chao, 2013.</p></li>
+<li><p><strong>Species diversity</strong>: ‘A measure of diversity that incorporates both the number of species in an assemblage and some measure of their relative abundances.’ (Gotelli &amp; Chao, 2013)</p></li>
 <li><p>Note that there are multiple “levels” to Species diversity &amp; richness, these include:</p>
 <ul>
-<li><p><strong>Alpha richness (&amp;alpha)</strong>: The number of species at the level of an individual camera location Wearn &amp; Glover-Kapfer, 2017</p></li>
-<li><p><strong>Beta-diversity (&amp;beta)</strong>: The differences between the communities or, more formally, the variance among the communities Wearn &amp; Glover-Kapfer, 2017</p></li>
-<li><p><strong>Gamma richness (&amp;gamma)</strong>: The number of species across a whole study area Wearn &amp; Glover-Kapfer, 2017</p></li>
+<li><p><strong>Alpha richness (α)</strong>: The number of species at the level of an individual camera location (Wearn &amp; Glover-Kapfer, 2017).</p></li>
+<li><p><strong>Beta-diversity (β)</strong>: The differences between the communities or, more formally, the variance among the communities (Wearn &amp; Glover-Kapfer, 2017).</p></li>
+<li><p><strong>Gamma richness (γ)</strong>: The number of species across a whole study area (Wearn &amp; Glover-Kapfer, 2017).</p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><strong>Occupancy</strong>: The probability a site is occupied by the species MacKenzie et al., 2002. Occupancy is also highly suitable for evaluating broad-scale patterns of species distribution Wearn &amp; Glover-Kapfer, 2017.</p></li>
+<li><p><strong>Occupancy</strong>: The probability a site is occupied by the species (MacKenzie et al., 2002). Occupancy is also highly suitable for evaluating broad-scale patterns of species distribution (Wearn &amp; Glover-Kapfer, 2017).</p></li>
 <li><p><strong>Abundance (Relative vs. Absolute)</strong>:..</p>
 <ul>
-<li><p><strong>Absolute abundance / Population size</strong>: The number of individuals in a population Wearn &amp; Glover-Kapfer, 2017.</p></li>
-<li><p><strong>Relative abundance</strong>: An index of relative abundance. When observational data is converted to a detection rate (i.e., the frequency [count] of independent detections of a species within a distinct time period). An index can be a count of animals or any sign that is expected to vary with population size (Caughley, 1977; O’Brien, 2011).</p></li>
+<li><p><strong>Absolute abundance / Population size</strong>: The number of individuals in a population (Wearn &amp; Glover-Kapfer, 2017).</p></li>
+<li><p><strong>Relative abundance</strong>: </p></li>
 </ul>
 </li>
 <li><p><strong>Density</strong>: The number of individuals per unit area (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p><strong>Vital rates</strong>: (e.g., survival probabilities and recruitment rates)</p></li>
-<li><p><strong>Behaviour</strong>: behaviour focused objectives vary greatly; they may be qualitative or quantitative (e.g., diel activity patterns, mating, boldness, predation, foraging, activity patterns, vigilance, parental care [Caravaggi et al., 2020; Wearn &amp; Glover-Kapfer, 2017]).</p></li>
+<li><p><strong>Behaviour</strong>: behaviour focused objectives vary greatly; they may be qualitative or quantitative (e.g., diel activity patterns, mating, boldness, predation, foraging, activity patterns, vigilance, parental care (Caravaggi et al., 2020; Wearn &amp; Glover-Kapfer, 2017).</p></li>
 </ul>
 <hr class="docutils" />
 <p>One of the first choices you will make when designing your study, is what it is that you plan to measure (or your “state variable”; a formal measure that summarizes the state of a community or population at a particular time (Wearn &amp; Glover Kapfer, 2017))</p>
-<p>Since this concept might be easy to confuse with <a class="reference internal" href="#/glossary_ref/09_glossary.md#survey_objectives"><span class="xref myst">Survey Objective(s)</span></a> (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:</p>
+<p>Since this concept might be easy to confuse with <a class="reference internal" href="#./glossary_ref/09_glossary.md#survey-objectives"><span class="xref myst">Survey Objective(s)</span></a> (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:</p>
 <p><strong><font size="4"><span style="color:#2F5496">Objective <em>vs.</em> State Variable</font></span></strong></p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/00_FIG_obj_state_var.png"><img alt="../_images/00_FIG_obj_state_var.png" src="../_images/00_FIG_obj_state_var.png" style="width: 900px;" /></a>
@@ -228,7 +228,7 @@ Visual resources</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-</div>
+RCSC, 2024, personal communications</div>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/00_FIG_obj_state_var.png"><img alt="../_images/00_FIG_obj_state_var.png" src="../_images/00_FIG_obj_state_var.png" style="height: 300px;" /></a>
 </figure>
@@ -306,8 +306,8 @@ References</label><div class="sd-tab-content docutils">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

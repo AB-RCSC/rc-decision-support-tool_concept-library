@@ -14,32 +14,33 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=32062c0a" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0d76871c" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -71,23 +72,27 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -109,13 +114,8 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
-
-  <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
-</div>
-
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
     </header>
   
 
@@ -124,21 +124,19 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
 
       </div>
       
-      <main id="main-content" class="bd-main" role="main">
+      <main id="main-content" class="bd-main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
+              <div class="bd-header-article">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -147,7 +145,7 @@
 
 
 
-<nav aria-label="Breadcrumb" class="d-print-none">
+<nav aria-label="Breadcrumb">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -156,7 +154,7 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="00_07_toc_rec_approach.html" class="nav-link">Modelling Approaches</a></li>
+    <li class="breadcrumb-item"><a href="../01_toc_pages/00_07_toc_rec_approach.html" class="nav-link">Modelling Approaches</a></li>
     
     <li class="breadcrumb-item active" aria-current="page">Species...</li>
   </ul>
@@ -177,7 +175,6 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="species-diversity-richness">
 <span id="i-mod-divers-rich"></span><h1>Species diversity &amp; richness<a class="headerlink" href="#species-diversity-richness" title="Link to this heading">#</a></h1>
-<div class="full-width docutils">
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Assumptions, Pros, Cons</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -327,20 +324,21 @@ Cons</div>
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Overview</label><div class="sd-tab-content docutils">
-<p><strong>Species richness</strong>: The number of species found in the community/area measured </p>
-<p><strong>Species diversity</strong>: Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon’s Index H’.” Pyron, 2010</p>
+<p><strong>Species richness</strong>: the total number of species in an assemblage or a sample” (Gotelli &amp; Chao, 2013.</p>
+<p><strong>Species diversity</strong>: ‘A measure of diversity that incorporates both the number of species in an assemblage and some measure of their relative abundances.’ (Gotelli &amp; Chao, 2013)</p>
 <p>Note that there are multiple “levels” to Species diversity &amp; richness, these include:</p>
 <ul class="simple">
-<li><p><strong>Alpha richness (&amp;alpha)</strong>: The number of species at the level of an individual camera location Wearn &amp; Glover-Kapfer, 2017</p></li>
-<li><p><strong>Beta-diversity (&amp;beta)</strong>: The differences between the communities or, more formally, the variance among the communities Wearn &amp; Glover-Kapfer, 2017</p></li>
-<li><p><strong>Gamma richness (&amp;gamma)</strong>: The number of species across a whole study area Wearn &amp; Glover-Kapfer, 2017</p></li>
+<li><p><strong>Alpha richness (α)</strong>: The number of species at the level of an individual camera location (Wearn &amp; Glover-Kapfer, 2017).</p></li>
+<li><p><strong>Beta-diversity (β)</strong>: The differences between the communities or, more formally, the variance among the communities (Wearn &amp; Glover-Kapfer, 2017).</p></li>
+<li><p><strong>Gamma richness (γ)</strong>: The number of species across a whole study area (Wearn &amp; Glover-Kapfer, 2017).</p></li>
 </ul>
 <p>“Species richness** is simply “the total number of species in an assemblage or a sample” (Gotelli &amp; Chao, 2013.</p>
 <p>Species richness in an assemblage is difficult to estimate reliably from sample data because it is very sensitive to the number of individuals and the number of samples collected. Species richness is a diversity of order 0 (which means it is completely insensitive to species abundances). (Gotelli &amp; Chao, 2013.</p>
-<p>Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon’s Index H’.” Pyron, 2010</p>
+<p>Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon’s Index H’.” Pyron, 2010)</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/pyron_2010_fig1.png"><img alt="../_images/pyron_2010_fig1.png" src="../_images/pyron_2010_fig1.png" style="width: 400.8px; height: 209.4px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyron_2010_fig1_clipped.png"><img alt="../_images/pyron_2010_fig1_clipped.png" src="../_images/pyron_2010_fig1_clipped.png" style="width: 658.0px; height: 228.0px;" /></a>
 </figure>
+<p><strong>Pyron (2010) – Fig. 1</strong>: Species evenness and species richness for animalcule communities. Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This section is still in progress</p>
@@ -353,32 +351,6 @@ Advanced</label><div class="sd-tab-content docutils">
 <p class="admonition-title">Note</p>
 <p>This section is still in progress</p>
 </div>
-<p>Parameters:</p>
-<ul class="simple">
-<li><p><strong>α-richness (alpha richness)</strong>: species richness at the level of an individual camera location Wearn &amp; Glover-Kapfer, 2019</p></li>
-<li><p><strong>γ-richness (gamma richness)</strong>: species richness across a whole study area Wearn &amp; Glover-Kapfer, 2019</p></li>
-<li><p><strong>β-diversity (betadiversity)</strong>: the differences between the communities or, more formally, the variance among the communities Wearn &amp; Glover-Kapfer, 2019
-<br></p></li>
-</ul>
-<p><strong>Observed <em>vs</em> estimated species richness</strong> (from Wearn &amp; Glover-Kapfer, 2019):</p>
-<ul class="simple">
-<li><p><strong>Observed species richness</strong>: the sum of the number of species seen (e.g. Kitamura et al., 2010; Pettorelli et al., 2010; Ahumada et al., 2011; Samejima et al., 2012)</p>
-<ul>
-<li><p>Observed species richness will not, in general, be a reliable index of actual species richness because, even if sampling effort is strictly controlled, the detectability of species will vary across samples</p></li>
-</ul>
-</li>
-<li><p><strong>Estimated species richness</strong>: when the “sum of the number of species seen” is adjusted based on corrections for “imperfect detection” (i.e. the fact that some species in a given sample may have been missed)</p>
-<ul>
-<li><p>(e.g. Tobler et al., 2008; ; Brodie et al., 2015; Yue et al., 2015; Wearn et al., 2016)</p></li>
-<li><p>The **two principal ways of estimating species richness from remote camera data ** are (from Wearn &amp; Glover-Kapfer, 2019):<br></p>
-<ul>
-<li><p>non-parametric estimators (Gotelli &amp; Chao, 2013), which use information about the rarest species in the sample to provide a minimum estimate of the number of true species (e.g. Tobler et al., 2008),</p></li>
-<li><p>or 2) occupancy models (MacKenzie et al., 2006)</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-2">
@@ -391,11 +363,15 @@ Visual resources</label><div class="sd-tab-content docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Pyron, 2010</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/pyron_2010_fig1_clipped.png"><img alt="../_images/pyron_2010_fig1_clipped.png" src="../_images/pyron_2010_fig1_clipped.png" style="height: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyron_2010_fig1_clipped.png"><img alt="../_images/pyron_2010_fig1_clipped.png" src="../_images/pyron_2010_fig1_clipped.png" style="width: 100%;" /></a>
 </figure>
-<p class="sd-card-text"><font size="2"><strong>Pyron (2010) – Fig. 1</strong>: Species evenness and species richness for animalcule communities</p>
-<!-- Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. --></font>
+<p class="sd-card-text"><strong>Pyron (2010) – Fig. 1</strong>: Species evenness and species richness for animalcule communities</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher.</p>
 </div>
+</details></div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
@@ -403,11 +379,16 @@ Pyron, 2010</div>
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Gotelli &amp; Chao, 2013</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/gotelli_chao_2013_fig1_clipped.png"><img alt="../_images/gotelli_chao_2013_fig1_clipped.png" src="../_images/gotelli_chao_2013_fig1_clipped.png" style="width: 100%;" /></a>
+<figure class="align-default">
+<img alt="../_images/gotelli_chao_2013_fig1_clipped.png" class="img-grid" src="../_images/gotelli_chao_2013_fig1_clipped.png" />
 </figure>
-<p class="sd-card-text"><font size="2"><strong>Gotelli &amp; Chao (2013) – Fig. 1</strong> Species richness sampling in a hypothetical walk through the woods. Each different symbol represents one of 20 distinct species, and each row contains 20 characters, representing the first 20 individual trees that might be encountered in a random sample. Community A is maximally even, with each of the 20 species comprising 5% of the total abundance. In this assemblage, the two samples of 20 individual trees yielded 15 and 13 species, respectively. Community B is highly uneven, with one species (the open circle) representing 81% of the total abundance, and the remaining 19 species contributing only 1% each. In this assemblage, the two samples of 20 individual trees yielded only three and four species, respectively.</font></p>
+<p class="sd-card-text"><strong>Gotelli &amp; Chao (2013) – Fig. 1</strong> Species richness sampling in a hypothetical walk through the woods. Each different symbol represents one of 20 distinct species, and each row contains 20 characters, representing the first 20 individual trees that might be encountered in a random sample.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Community A is maximally even, with each of the 20 species comprising 5% of the total abundance. In this assemblage, the two samples of 20 individual trees yielded 15 and 13 species, respectively. Community B is highly uneven, with one species (the open circle) representing 81% of the total abundance, and the remaining 19 species contributing only 1% each. In this assemblage, the two samples of 20 individual trees yielded only three and four species, respectively.</font></p>
 </div>
+</details></div>
 </div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
@@ -415,11 +396,16 @@ Gotelli &amp; Chao, 2013</div>
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Gotelli &amp; Chao, 2013</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/gotelli_chao_2013_fig6_clipped.png"><img alt="../_images/gotelli_chao_2013_fig6_clipped.png" src="../_images/gotelli_chao_2013_fig6_clipped.png" style="width: 100%;" /></a>
+<figure class="align-default">
+<img alt="../_images/gotelli_chao_2013_fig6_clipped.png" class="img-grid" src="../_images/gotelli_chao_2013_fig6_clipped.png" />
 </figure>
-<p class="sd-card-text"><font size="2"><strong>Gotelli &amp; Chao (2013) – Fig. 6</strong> Diversity profile for assemblages of differing evenness. The x-axis is the order <em>q</em> in the Hill number (eqn [23a]), and is illustrated for values of <em>q</em> from 0 to 5. The y-axis is the calculated Hill number (the equivalent number of equally abundant species). Each of the four assemblages has exactly 100 species and 500 individuals, but they differ in their relative evenness: (1) completely even assemblage (black solid line): each species is represented by five individuals; (2) slightly uneven assemblage (red dashed line): 50 species each represented by seven individuals and 50 species each represented by three individuals (this structure is denoted as {50 x 7, 50 x 3}); (3) moderately uneven assemblage (green dotted line): {22 x 10, 28 x 5, 40 x 3, 10 x 2}; (4) highly uneven assemblage (blue dash–dot line): {1 x 120, 1 x 80, 1 x 70, 1 x 50, 3 x 20, 3 x 10, 90 x 1}. For <em>q</em>=0, the Hill number is species richness, which is equal to 100 for all assemblages. Because Hill numbers represent the equivalent number of equally abundant species, the curve for the perfectly even assemblage (black solid line) does not change as q is increased. Larger values of q place progressively more weight on common species, so the equivalent number of equally abundant species is much lower for the more uneven assemblages than for more even assemblages.</font></p>
+<p class="sd-card-text"><strong>Gotelli &amp; Chao (2013) – Fig. 6</strong> Diversity profile for assemblages of differing evenness. The x-axis is the order <em>q</em> in the Hill number (eqn [23a]), and is illustrated for values of <em>q</em> from 0 to 5. The y-axis is the calculated Hill number (the equivalent number of equally abundant species).</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal no-title" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14a2 2 0 1 1-.001-3.999A2 2 0 0 1 20 14ZM6 12a2 2 0 1 1-3.999.001A2 2 0 0 1 6 12Zm8 0a2 2 0 1 1-3.999.001A2 2 0 0 1 14 12Z"></path></svg></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">Each of the four assemblages has exactly 100 species and 500 individuals, but they differ in their relative evenness: (1) completely even assemblage (black solid line): each species is represented by five individuals; (2) slightly uneven assemblage (red dashed line): 50 species each represented by seven individuals and 50 species each represented by three individuals (this structure is denoted as {50 x 7, 50 x 3}); (3) moderately uneven assemblage (green dotted line): {22 x 10, 28 x 5, 40 x 3, 10 x 2}; (4) highly uneven assemblage (blue dash–dot line): {1 x 120, 1 x 80, 1 x 70, 1 x 50, 3 x 20, 3 x 10, 90 x 1}. For <em>q</em>=0, the Hill number is species richness, which is equal to 100 for all assemblages. Because Hill numbers represent the equivalent number of equally abundant species, the curve for the perfectly even assemblage (black solid line) does not change as q is increased. Larger values of q place progressively more weight on common species, so the equivalent number of equally abundant species is much lower for the more uneven assemblages than for more even assemblages.</p>
 </div>
+</details></div>
 </div>
 </div>
 </div>
@@ -434,8 +420,8 @@ Loreau, 2010</div>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/loreau_2010_fig3.png"><img alt="../_images/loreau_2010_fig3.png" src="../_images/loreau_2010_fig3.png" style="width: 100%;" /></a>
 </figure>
-<p class="sd-card-text"><font size="2"><strong>Loreau et al. (2010) – Fig. 3.</strong> The various levels of organisation and components that define the multiple facets
-of biodiversity</font></p>
+<p class="sd-card-text"><strong>Loreau et al. (2010) – Fig. 3.</strong> The various levels of organisation and components that define the multiple facets
+of biodiversity</p>
 </div>
 </div>
 </div>
@@ -445,14 +431,14 @@ of biodiversity</font></p>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Project Dragonfly, 2019</div>
 <iframe 
-    width="300"
-    height="200"
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/ghhZClDRK_g?si=khprL1u5NJrFduTb"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text"><font size="2">Abundance, species richness, and diversity</font></p>
+<p class="sd-card-text">Abundance, species richness, and diversity</p>
 </div>
 </div>
 </div>
@@ -462,14 +448,14 @@ Project Dragonfly, 2019</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 mecks100, 2018</div>
 <iframe 
-    width="300"
-    height="200"
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/4gcmAUpo9TU?si=_S-JYDDskR8QbHs5"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text"><font size="2">Species accumulation and rarefaction curves</font></p>
+<p class="sd-card-text">Species accumulation and rarefaction curves</p>
 </div>
 </div>
 </div>
@@ -483,14 +469,14 @@ mecks100, 2018</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Riffomonas Project, 2022a</div>
 <iframe 
-    width="300"
-    height="200"
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/wq1SXGQYgCs?si=Re5tglERblfkCNhDl"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text"><font size="2">Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC196)</font></p>
+<p class="sd-card-text">Using vegan to calculate alpha diversity metrics within the tidyverse in R (CC196)</p>
 </div>
 </div>
 </div>
@@ -500,14 +486,14 @@ Riffomonas Project, 2022a</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 VSN International, 2022</div>
 <iframe 
-    width="300"
-    height="200"
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/wBx7f4PP8RE?si=D6mtAMNMLlk3aH8H"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text"><font size="2">Species abundance tools in Genstat</font></p>
+<p class="sd-card-text">Species abundance tools in Genstat</p>
 </div>
 </div>
 </div>
@@ -517,20 +503,20 @@ VSN International, 2022</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Baylor Tutoring Center, 2021</div>
 <iframe 
-    width="300"
-    height="200"
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/UXJ0r4hjbqI?si=gYR6rOmIMgyibyvR"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text"><font size="2">Species Diversity and Species Richness</font></p>
+<p class="sd-card-text">Species Diversity and Species Richness</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-1 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
@@ -538,14 +524,14 @@ Baylor Tutoring Center, 2021</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Styring, 2020a</div>
 <iframe 
-    width="300"
-    height="200"
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/KBByV3kR3IA?si=RPcG1lFQ-v0Shwaw"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text"><font size="2">Field Ecology - Diversity Metrics in R</font></p>
+<p class="sd-card-text">Field Ecology - Diversity Metrics in R</p>
 </div>
 </div>
 </div>
@@ -560,7 +546,6 @@ Shiny apps/Widgets</label><div class="sd-tab-content docutils">
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">iNext Online</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
-<p class="sd-card-text">Software for interpolation and extrapolation of species diversity</p>
 <iframe 
     width="100%"
     height="900"
@@ -588,7 +573,7 @@ Shiny apps/Widgets</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-4">
 Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
-<div class="pst-scrollable-table-container"><table class="table">
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Type</p></th>
 <th class="head text-left"><p>Name</p></th>
@@ -637,12 +622,10 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 </tbody>
 </table>
 </div>
-</div>
 <input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-5">
 References</label><div class="sd-tab-content docutils">
-<font size="3">
-{{ ref_bib_ahumada_et_al_2011 }}
+<p>Ahumada, J. A., Silva, C. E. F., Gajapersad, K., Hallam, C., Hurtado, J., Martin, E., McWilliam, A., Mugerwa, B., O’Brien, T., Rovero, F., Sheil, D., Spironello, W. R., Winarni, N., &amp; Andelman, S. J. (2011). Community Structure and Diversity of Tropical Forest Mammals: Data from a Global Camera Trap Network. <em>Philosophical Transactions: Biological Sciences, 366</em>(1578), 2703–2711. <a class="reference external" href="https://doi.org/10.1098/rstb.2011.0115">https://doi.org/10.1098/rstb.2011.0115</a></p>
 <p>Baylor Tutoring Center. (2021, July 31). <em>Species Diversity and Species Richness</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=UXJ0r4hjbqI">https://www.youtube.com/watch?v=UXJ0r4hjbqI</a></p>
 <p>Brodie, J. F., Giordano, A. J., Zipkin, E. F., Bernard, H., Mohd‐Azlan, J., &amp; Ambu, L. (2015). Correlation and persistence of hunting and logging impacts on tropical rainforest mammals. <em>Conservation Biology, 29</em>(1), 110–121. <a class="reference external" href="https://doi.org/10.1111/cobi.12389">https://doi.org/10.1111/cobi.12389</a></p>
 <p>Chao, A., Ma, K. H., &amp; Hsieh, T. C. (2016). <em>iNEXT Online: Software for Interpolation and Extrapolation of Species Diversity.</em> Program and User’s Guide published at <a class="reference external" href="http://chao.stat.nthu.edu.tw/wordpress/software_download/inextonline/">http://chao.stat.nthu.edu.tw/wordpress/software_download/inextonline/</a></p>
@@ -670,8 +653,6 @@ References</label><div class="sd-tab-content docutils">
 <p>Wearn, O. R., Carbone, C., Rowcliffe, J. M., Bernard, H. &amp; Ewers, R. M. (2016). Grain-dependent responses of mammalian diversity to land-use and the implications for conservation set-aside. <em>Ecological Applications, 26</em>(5), 1409–1420. <a class="reference external" href="https://doi.org/10.1890/15-1363">https://doi.org/10.1890/15-1363</a></p>
 <p>WildCo Lab (2021b). <em>WildCo: Reproducible camera trap data exploration and analysis examples in R</em>. University of British Columbia. <a class="reference external" href="https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/#what-this-guide-is">https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/#what-this-guide-is</a></p>
 <p>Yue, S., Brodie, J. F., Zipkin, E. F., &amp; Bernard, H. (2015). Oil palm plantations fail to support mammal diversity. <em>Ecological Applications, 25</em>(8), 2285–2292. <a class="reference external" href="https://doi.org/10.1890/14-1928.1">https://doi.org/10.1890/14-1928.1</a></p>
-</font>	
-</div>
 </div>
 </div>
 </section>
@@ -717,8 +698,8 @@ References</label><div class="sd-tab-content docutils">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

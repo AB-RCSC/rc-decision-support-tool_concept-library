@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: '1.16'
-    jupytext_version: 1.16.1
+    jupytext_version: 1.16.2
 kernelspec:
   display_name: Python 3
   language: python
@@ -14,9 +14,22 @@ editor_options:
   markdown:
     wrap: none
 ---
-::::::::{div} full-width
+<style>
+    .bd-page-width {
+    max-width: 85%;  /* default is 88rem */
+}
+    .bd-main .bd-content .bd-article-container {
+    max-width: 100%;  /* default is 60em */
+  }
+    h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    }
+}
+</style>
 (toc_concept_lib)=
-# Concept Library
+# Remote Camera Decision Support Tool - Concept Library
 
 <!-- 
 conda activate rclib
@@ -26,38 +39,36 @@ jupyter-book build ./
 
 (toc_objective_resources)=
 ## Objectives & Resources
-
-::::{grid} 3
+:::::{grid} 3
 :gutter: 3
 
-:::{grid-item-card}
+::::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_01_user_entry.html
 :img-background: ./03_images/01_ui/background_orangelight.png
 :padding: 1
 :text-align: center
 
 *<font color='grey'><font size='3'>{{ title_i_user_entry }}</font></font>*
-:::
+::::
 
-:::{grid-item-card}
+::::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_02_objective.html
 :img-background: ./03_images/01_ui/background_orangelight.png
 :padding: 1
 :text-align: center
-
 **<font size='3'>{{ title_i_objective }}</font></font>**
-:::
+::::
 
-:::{grid-item-card}
+::::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_03_num_cams.html
 :img-background: ./03_images/01_ui/background_orangelight.png
 :padding: 1
 :text-align: center
 
 **<font size='3'>{{ title_i_num_cams }}</font></font>**
-:::
-
 ::::
+
+:::::
 
 ***
 
@@ -731,5 +742,3 @@ jupyter-book build ./
 :::
 
 ::::
-
-::::::::
