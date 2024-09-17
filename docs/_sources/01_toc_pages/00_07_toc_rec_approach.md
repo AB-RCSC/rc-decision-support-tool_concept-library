@@ -4,8 +4,8 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: '1.16'
-    jupytext_version: 1.16.2
+    format_version: 0.13
+    jupytext_version: 1.16.4
 kernelspec:
   display_name: Python 3
   language: python
@@ -26,7 +26,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_inventory }}</font></font>**
+**<font size='4'>{{ name_mod_inventory }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -35,7 +35,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_divers_rich }}</font></font>**
+**<font size='4'>{{ name_mod_divers_rich }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -44,7 +44,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_occupancy }}</font></font>**
+**<font size='4'>{{ name_mod_occupancy }}</font></font>**
 :::
 ::::
 
@@ -57,7 +57,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_rai }}</font></font>**
+**<font size='4'>{{ name_mod_rai }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -66,7 +66,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_cr_cmr }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_cr_cmr }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -75,7 +75,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_scr_secr }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_scr_secr }}</font></font>*
 :::
 
 ::::
@@ -89,7 +89,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_smr }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_smr }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -98,7 +98,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_sc }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_sc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -107,7 +107,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_catspim }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_catspim }}</font></font>*
 :::
 ::::
 
@@ -120,7 +120,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_2flankspim }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_2flankspim }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -129,7 +129,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_rem }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_rem }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -138,7 +138,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_rest }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_rest }}</font></font>*
 :::
 ::::
 
@@ -151,7 +151,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_tifc }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_tifc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -160,7 +160,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_ds }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_ds }}</font></font>*
 :::
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_21_mod_tte.html
@@ -168,7 +168,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_tte }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_tte }}</font></font>*
 :::
 ::::
 
@@ -181,7 +181,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_ste }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_ste }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -190,7 +190,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_is }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_is }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -199,7 +199,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_behaviour }}</font></font>**
+**<font size='4'>{{ name_mod_behaviour }}</font></font>**
 :::
 
 ::::

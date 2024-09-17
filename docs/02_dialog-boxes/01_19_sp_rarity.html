@@ -14,33 +14,33 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0d76871c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=fcd2f693" />
     <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -72,27 +72,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -114,8 +110,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -130,13 +131,13 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -145,7 +146,7 @@
 
 
 
-<nav aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -175,34 +176,36 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="rarity">
 <span id="i-sp-rarity"></span><h1>Rarity<a class="headerlink" href="#rarity" title="Link to this heading">#</a></h1>
-<div class="full-width docutils">
-<!--**{{ title_i_sp_rarity }}**-->
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_10_sp_asymptote.html"><span>Species-accumulation curves</span></a>
+<a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_02_mod_divers_rich.html"><span>Species diversity &amp; richness</span></a></p>
+</div>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Overview</label><div class="sd-tab-content docutils">
-<p><strong>Species rarity categories are defined as follows</strong>:</p>
+<p><strong>Species rarity</strong> describes how many individuals present of the species, relative to the total number of individuals of all species (or how “represented” is the species when considering the total number of individuals of all species). Generally, species rarity can be thought of as the probability that the species occupies the site, for a given species (or study area, depending on the scale of interest) Kays et al., 2020.</p>
+<p>While technically “how rare” a species is will be fairly dynamic from place to place (e.g., will depend on geographic range, habitat specificity, local abundance, etc.; Crisfield et al., 2024), for the purposes of informing study design recommendations, the <strong>species rarity categories are defined as follows</strong>:</p>
 <ul class="simple">
 <li><p><strong>Common</strong>:  probability of occupancy &gt; ~0.75-0.8  (&gt; 0.75 [Kinnaird &amp; O’Brien, 2012; Kays et al., 2020]; &gt; 0.8 [Shannon et al., 2014; Wearn &amp; Glover-Kapfer, 2017])</p></li>
-<li><p><strong>Less common</strong>: probability of occupancy 0.25 - 0.75</p></li>
+<li><p><strong>Less common</strong>: 0.25-0.75</p></li>
 <li><p><strong>Rare</strong>: probability of occupancy &lt; 0.25 Kays et al., 2020</p></li>
 <li><p><strong>Very-rare</strong>: probability of occupancy &lt; 0.001 (Wearn &amp; Glover-Kapfer, 2017; Rowcliffe et al., 2008; O’Brien, 2010)</p></li>
 <li><p><strong>Unknown</strong>: select this option if you’re not sure of the rarity of your Target Species (single or multiple species)</p></li>
 <li><p><strong>Multiple</strong>: select this option if your study includes multiple Target Species that vary in rarity.</p></li>
 </ul>
-<p><strong>Species rarity</strong> describes how many individuals present of the species, relative to the total number of individuals of all species (or how “represented” is the species when considering the total number of individuals of all species). Generally, species rarity can be thought of as the probability that the species occupies the site, for a given species (or study area, depending on the scale of interest) Kays et al., 2020.</p>
-<p>While technically “how rare” a species is will be fairly dynamic from place to place (e.g., will depend on geographic range, habitat specificity, local abundance, etc.; Crisfield et al., 2024), for the purposes of informing study design recommendations, ……..</p>
-<blockquote>
-<div><p>Species rarity can be generally thought of as a species characteristic, however, “not in the same sense that hair colour or wing venation… it’ an emergent trait of a species’ population and its environment rather than a trait of an individual organism” Kunin, 1997</p>
-</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Species rarity can be generally thought of as a species characteristic, however, “not in the same sense that hair colour or wing venation… it’ an emergent trait of a species’ population and its environment rather than a trait of an individual organism” Kunin, 1997</p>
+</div>
+<p><strong><font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span></strong></p>
+<p>**Species’ rarity can influence the ideal camera arrangement. ** For example, when monitoring rare or cryptic species that are unlikely to be detected with other designs, it may be appropriate to use a <em>Targeted design</em> where cameras are placed in areas that are known or suspected to have higher activity levels (e.g., game trails, mineral licks, etc.).</p>
+<p><strong>Species’ rarity can influence the ideal number of cameras and <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">survey</span></a> length</strong> (Chatterjee et al., 2021). Low <a class="reference internal" href="09_glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> of rare or cryptic species can result in imprecise estimates if there are too few cameras or if cameras are not deployed for long enough (e.g., Steenweg et al. 2019). Chatterjee et al. (2021) suggested that for <a class="reference internal" href="09_glossary.html#mods-occupancy"><span class="std std-ref">occupancy models</span></a> (MacKenzie et al., 2002) of common species, to survey a minimum of 50 sites for 15–20 days. For rare, elusive species, they recommended surveying 100 sites at a minimum for 20–30 days (Chatterjee et al., 2021).</p>
+<p><strong>Species’ rarity can influence the appropriate modelling approach.</strong> For measures of species richness or diversity, it is presumed that a camera is active long enough to detect rare species that may occur at a specific location (Wearn &amp; Glover-Kapfer, 2017). If this is not the case, the results will indicate that the species was not present when it was (i.e., a “false negative”).</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
-Advanced</label><div class="sd-tab-content docutils">
-<p>Add some info here</p>
-</div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
 Visual resources</label><div class="sd-tab-content docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
@@ -210,11 +213,11 @@ Visual resources</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure1_ref_id</div>
+Leroy, 2024</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure1_filename.png"><img alt="../_images/figure1_filename.png" src="../_images/figure1_filename.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/leroy_2024_Rarity_cutoff-point.png"><img alt="../_images/leroy_2024_Rarity_cutoff-point.png" src="../_images/leroy_2024_Rarity_cutoff-point.png" style="width: 100%;" /></a>
 </figure>
-<p>figure1_caption <p/>
+<p class="sd-card-text"><strong>Leroy (2024)</strong> The rarity cut-off point is here defined as the threshold of occurrence below which species are considered rare.</p>
 </div>
 </div>
 </div>
@@ -222,11 +225,11 @@ ref_intext_figure1_ref_id</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure2_ref_id</div>
+Leroy, 2024</div>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure2_filename.png"><img alt="../_images/figure2_filename.png" src="../_images/figure2_filename.png" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../_images/leroy_2024_Weight_assignation-curve.png"><img alt="../_images/leroy_2024_Weight_assignation-curve.png" src="../_images/leroy_2024_Weight_assignation-curve.png" style="width: 100%;" /></a>
 </figure>
-<p>figure2_caption <p/>
+<p class="sd-card-text"><strong>Leroy (2024)</strong> Weight assignation curve adjusted to an arbitrary rarity cut-off.</p>
 </div>
 </div>
 </div>
@@ -234,106 +237,16 @@ ref_intext_figure2_ref_id</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure3_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure3_filename.png"><img alt="../_images/figure3_filename.png" src="../_images/figure3_filename.png" style="width: 100%;" /></a>
-</figure>
-<p>figure4_caption <p/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure4_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure4_filename.png"><img alt="../_images/figure4_filename.png" src="../_images/figure4_filename.png" style="width: 100%;" /></a>
-</figure>
-<p>figure5_caption <p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure5_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure5_filename.png"><img alt="../_images/figure5_filename.png" src="../_images/figure5_filename.png" style="width: 100%;" /></a>
-</figure>
-<p>figure5_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure6_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure6_filename.png"><img alt="../_images/figure6_filename.png" src="../_images/figure6_filename.png" style="width: 100%;" /></a>
-</figure>
-<p>figure6_caption <p/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid1_ref_id</div>
+mecks100, 2018</div>
 <iframe 
-    width="300"
-    height="200"
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/4gcmAUpo9TU?si=_S-JYDDskR8QbHs5"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p>Species accumulation and rarefaction curves<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid2_ref_id</div>
-<iframe 
-    width="300"
-    height="200"
-    src="vid2_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-<p>vid2_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid3_ref_id</div>
-<iframe 
-    width="300"
-    height="200"
-    src="vid3_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-<p>vid3_caption<p/>
+<p class="sd-card-text">Species accumulation and rarefaction curves</p>
 </div>
 </div>
 </div>
@@ -345,133 +258,29 @@ ref_intext_vid3_ref_id</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid4_ref_id</div>
+Riffomonas Project, 2022b</div>
 <iframe 
-    width="300"
-    height="200"
-    src="vid4_url"
+    width="100%"
+    height="300"
+    src="https://www.youtube.com/embed/ywHVb0Q-qsM?si=_xJ5jbFc6MDEQlAh "
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p>vid4_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid5_ref_id</div>
-<iframe 
-    width="300"
-    height="200"
-    src="vid5_url"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-<p>vid5_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid6_ref_id</div>
-<iframe 
-    width="300"
-    height="200"
-    src="vid6_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid6_caption<p/>
+<p class="sd-card-text">Generating a rarefaction curve from collector’s curves in R within the tidyverse (CC198)</p>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-3">
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
 Shiny apps/Widgets</label><div class="sd-tab-content docutils">
 <p>Check back in the future!</p>
 </div>
-<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
-Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Type</p></th>
-<th class="head text-left"><p>Name</p></th>
-<th class="head text-left"><p>Note</p></th>
-<th class="head text-left"><p>Reference</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>resource1_type</p></td>
-<td class="text-left"><p>resource1_name</p></td>
-<td class="text-left"><p>resource1_note</p></td>
-<td class="text-left"><p>ref_bib_resource1_ref_id</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource3_type</p></td>
-<td class="text-left"><p>resource2_name</p></td>
-<td class="text-left"><p>resource3_note</p></td>
-<td class="text-left"><p>ref_bib_resource2_ref_id</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource3_type</p></td>
-<td class="text-left"><p>resource3_name</p></td>
-<td class="text-left"><p>resource3_note</p></td>
-<td class="text-left"><p>ref_bib_resource3_ref_id</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource4_type</p></td>
-<td class="text-left"><p>resource4_name</p></td>
-<td class="text-left"><p>resource4_note</p></td>
-<td class="text-left"><p>ref_bib_resource4_ref_id</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource5_type</p></td>
-<td class="text-left"><p>resource5_name</p></td>
-<td class="text-left"><p>resource5_note</p></td>
-<td class="text-left"><p>ref_bib_resource5_ref_id</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource6_type</p></td>
-<td class="text-left"><p>resource6_name</p></td>
-<td class="text-left"><p>resource6_note</p></td>
-<td class="text-left"><p>ref_bib_resource6_ref_id</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource7_type</p></td>
-<td class="text-left"><p>resource7_name</p></td>
-<td class="text-left"><p>resource7_note</p></td>
-<td class="text-left"><p>ref_bib_resource7_ref_id</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource8_type</p></td>
-<td class="text-left"><p>resource8_name</p></td>
-<td class="text-left"><p>resource8_note</p></td>
-<td class="text-left"><p>ref_bib_resource8_ref_id</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource9_type</p></td>
-<td class="text-left"><p>resource9_name</p></td>
-<td class="text-left"><p>resource9_note</p></td>
-<td class="text-left"><p>ref_bib_resource9_ref_id</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource10_type</p></td>
-<td class="text-left"><p>resource10_name</p></td>
-<td class="text-left"><p>resource10_note</p></td>
-<td class="text-left"><p>ref_bib_resource10_ref_id</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource11_type</p></td>
-<td class="text-left"><p>resource11_name</p></td>
-<td class="text-left"><p>resource11_note</p></td>
-<td class="text-left"><p>ref_bib_resource11_ref_id</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
 References</label><div class="sd-tab-content docutils">
 <p>Chatterjee, N., Schuttler, T. G., Nigam, P., &amp; Habib, B. (2021). Deciphering the rarity–detectability continuum: optimizing Survey design for terrestrial mammalian community. <em>Ecosphere 12</em>(9), e03748. <a class="reference external" href="https://doi.org/10.1002/ecs2.3748">https://doi.org/10.1002/ecs2.3748</a></p>
 <p>Kinnaird, M. F., &amp; O’Brien, T. G. (2011). Density estimation of sympatric carnivores using spatially explicit capture–recapture methods and standard trapping grid. <em>Ecological Applications, 21</em>(8), 2908–2916. <a class="reference external" href="https://www.jstor.org/stable/41417102">https://www.jstor.org/stable/41417102</a></p>
@@ -484,6 +293,7 @@ References</label><div class="sd-tab-content docutils">
 <p>Kunin, W. K. (1997). Introduction: on the causes and consequences of rare-common differences. In Kunin, W. K., &amp; Kevin, J. G. (Eds) *The Biology of Rarity. * (pp. 3-4). Chapman &amp; Hall. <a class="reference external" href="https://link.springer.com/book/10.1007/978-94-011-5874-9">https://link.springer.com/book/10.1007/978-94-011-5874-9</a></p>
 </div>
 </div>
+<div class="docutils">
 </div>
 </section>
 
@@ -528,8 +338,8 @@ References</label><div class="sd-tab-content docutils">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

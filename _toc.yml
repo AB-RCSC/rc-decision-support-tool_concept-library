@@ -15,6 +15,7 @@ parts:
   - file: 01_toc_pages/00_01_toc_objective_resources.md
     title: Objectives & Resources
     sections:
+#    - file: 02_dialog-boxes/00_test_cross_ref.md
 #    - file: 02_dialog-boxes/01_01_user_entry.md
     - file: 02_dialog-boxes/01_02_objective.md
     - file: 02_dialog-boxes/01_03_num_cams.md
@@ -22,6 +23,8 @@ parts:
   - file: 01_toc_pages/00_02_toc_study_area_site_selection_constraints.md
     title: Study area & Site selection
     sections:
+    - file: 02_dialog-boxes/02_01_study_area.md
+    - file: 02_dialog-boxes/02_02_camera_arrangement.md
 #    - file: 02_dialog-boxes/01_04_study_area_mult.md
 #    - file: 02_dialog-boxes/01_05_cam_dens_gradient.md
     - file: 02_dialog-boxes/01_06_cam_strat_covar.md
@@ -30,7 +33,7 @@ parts:
   - file: 01_toc_pages/00_03_toc_duration_timing.md
     title: Duration & Timing
     sections:
-    - file: 02_dialog-boxes/01_08_surv_dur_min_max.md
+#    - file: 02_dialog-boxes/01_08_surv_dur_min_max.md
 #    - file: 02_dialog-boxes/01_09_survey_dur_mth.md
     - file: 02_dialog-boxes/01_10_sp_asymptote.md
 #    - file: 02_dialog-boxes/01_11_study_season_num.md
@@ -40,10 +43,10 @@ parts:
     sections:
 ##### Target species (Single)
 #    - file: 02_dialog-boxes/01_12_obj_targ_sp.md
-    - file: 02_dialog-boxes/01_13_sp_info.md
-    - file: 02_dialog-boxes/01_14_sp_type.md
-    - file: 02_dialog-boxes/01_15_sp_dens_low.md 
-    - file: 02_dialog-boxes/01_16_sp_occ_restr.md
+#    - file: 02_dialog-boxes/01_13_sp_info.md
+#    - file: 02_dialog-boxes/01_14_sp_type.md
+#    - file: 02_dialog-boxes/01_15_sp_dens_low.md 
+#    - file: 02_dialog-boxes/01_16_sp_occ_restr.md
     - file: 02_dialog-boxes/01_17_sp_hr_size.md
     - file: 02_dialog-boxes/01_18_sp_size.md
     - file: 02_dialog-boxes/01_19_sp_rarity.md
@@ -76,10 +79,10 @@ parts:
 #    - file: 02_dialog-boxes/01_45_targ_feature.md
 #    - file: 02_dialog-boxes/01_46_targ_feature_same.md
 ##### Data & Analysis
-#  - file: 01_toc_pages/00_06_toc_data_analysis.md
-#    title: Data & Analysis
-#    sections:
-#    - file: 02_dialog-boxes/01_47_cam_independent.md   
+  - file: 01_toc_pages/00_06_toc_data_analysis.md
+    title: Data & Analysis
+    sections:
+    - file: 02_dialog-boxes/01_47_cam_independent.md   
 #    - file: file: 02_dialog-boxes/01_48_multisamp_per_loc.md
 #    - file: 02_dialog-boxes01_49_modmixed.md
 #    - file: 02_dialog-boxes01_50_num_det.md
@@ -96,7 +99,6 @@ parts:
     title: Recommendations - Modelling Approaches
     sections:
     - file: 02_dialog-boxes/03_01_mod_inventory.md
-#    - file: 02_dialog-boxes/03_02_mod_divers_rich_old.md
     - file: 02_dialog-boxes/03_02_mod_divers_rich.md
     - file: 02_dialog-boxes/03_03_mod_occupancy.md
 #err    - file: 02_dialog-boxes/03_04_mod_rai.md
@@ -128,11 +130,10 @@ parts:
   maxdepth: 1
   titlesonly: False
   chapters:
-  - file: 09_gloss_ref/08_references.md
+  - file: 02_dialog-boxes/08_references.md
 ##### Glossary
 - caption: Glossary
   maxdepth: 1
   titlesonly: False
   chapters:
-  - file: 09_gloss_ref/09_glossary.md
-  - file: 09_gloss_ref/09_glossary_blocktest.md
+  - file: 02_dialog-boxes/09_glossary.md

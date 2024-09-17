@@ -4,8 +4,8 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: '1.16'
-    jupytext_version: 1.16.2
+    format_version: 0.17.2 <!--0.13-->
+    jupytext_version: 6.5.4 <!-- 1.16.4-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -16,22 +16,35 @@ editor_options:
 ---
 (i_sp_size)=
 # {{ title_i_sp_size }}
+:::{note}
+Unsure about the size of your Target Species? Check out the “Shiny Apps/Widgets” tab to see if information for your Target Species is available for in our “Species home range / body size lookup.”
+:::
 
-:::::::::{div} full-width
-
-<!-- **{{ title_i_sp_size }}**-->
 :::::::{tab-set}
 
 ::::::{tab-item} Overview
+Here are a few examples of comparable species for each body size options:
+- **Small**: rodents and similarly sized species in the “Mustelidae” family [i.e., weasels, badgers, otters, martens, wolverine, etc.])
+- **Medium**:  small and mid-sized species, ~< 33 lbs (or 15 kilograms), such as meso-carnivores (i.e., Red, fox, Coyote) (Roemer et al., 2009)
+- **Large**:  bears or ungulates (i.e., large mammals with hooves, such as White-tailed deer, Elk, Moose, etc)
+- **Multiple** - *select this option if your study includes multiple Target Species that vary in body size.*
 
-```{figure} ../03_images/03_image_files/00_coming_soon.png
-:width: 300px
+**<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
+
+Body size affects the detection process (O’Brien et al., 2011). Species with a larger body size are more likely to be detected; and therefore may require lower sampling effort than smaller species ({{ ref_intext_chatterhee_et_al_2021 }}). Larger species moving through the camera’s detection zone are more likely to trigger the camera ({{ ref_intext_chatterhee_et_al_2021 }}; {{ ref_intext_rowcliffe_et_al_2011 }}; {{ ref_intext_hofmeester_et_al_2017 }}); they can also be detected farther away or occur at wider angles ({{ ref_intext_rowcliffe_et_al_2011 }}; {{ ref_intext_hofmeester_et_al_2017 }}). Whereas, small mammals are often undetected due to their small size (O’Brien,  Kinnaird, and Wibisono 2011; Anile and Devillard 2016) and because “small species which routinely move at fast speeds, such as stoats and weasels, are likely to have especially small detection zones” (Glen et al., 2013).
+
+```{figure} ../03_images/03_image_files/kays_et_al_2021_fig6_clipped.png
 :align: center
+:width: 700px
 ```
-::::::
+**Kays et al. (2021) - Fig. 6**: Relationship between trigger probability and body mass for four focal species (ascending order by weight: gray fox, raccoon, coyote, white-tailed deer). Error bars show standard deviation. Body mass values come from North Carolina animals in the mammal collections of the NC Museum of Natural Sciences
 
-::::::{tab-item} Advanced
-Add some info here
+When thinking beyond the camera's FOV, larger species generally also have larger home ranges (Garland, 1983) and daily movement distances, making them more likely to be detected at multiple cameras {{ ref_intext_chatterhee_et_al_2021 }}, therefore there are also implications for which models may be appropriate (due to assumptions of “site closure” / “independent locations”).
+
+:::{note}
+This is an especially important consideration when targetting multiple species of varying sizes.
+:::
+
 ::::::
 
 ::::::{tab-item} Visual resources
@@ -40,31 +53,23 @@ Add some info here
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} {{ ref_intext_figure1_ref_id  }}
-```{figure} ../03_images/03_image_files/figure1_filename.png
-:width: 100%
-:align: center
+::::{grid-item-card} {{ ref_intext_kays_et_al_2021 }}
+```{figure} ../03_images/03_image_files/kays_et_al_2021_fig6_clipped.png
+:class: img_grid
 ```
-
-<p>figure1_caption<p/>
+**Kays et al. (2021) - Fig. 6**: Relationship between trigger probability and body mass for four focal species (ascending order by weight: gray fox, raccoon, coyote, white-tailed deer). Error bars show standard deviation. Body mass values come from North Carolina animals in the mammal collections of the NC Museum of Natural Sciences
 ::::
 
-::::{grid-item-card} {{ ref_intext_figure2_ref_id }}
-```{figure} ../03_images/03_image_files/figure2_filename.png
-:width: 100%
-:align: center
+::::{grid-item-card} {{ ref_intext_anile_devillard_ }}
+```{figure} ../03_images/03_image_files/anile_devillard_2016_fig2.jpg
+:class: img_grid
 ```
-
-<p>figure2_caption <p/>
 ::::
 
-::::{grid-item-card} {{ ref_intext_figure3_ref_id }}
-```{figure} ../03_images/03_image_files/figure3_filename.png
-:width: 100%
-:align: center
+::::{grid-item-card} {{ ref_intext_anile_devillard_2016 }}
+```{figure} ../03_images/03_image_files/anile_devillard_2016_fig3.png
+:class: img_grid
 ```
-
-<p>figure4_caption <p/>
 ::::
 
 :::::
@@ -74,151 +79,53 @@ Add some info here
 :padding: 0
 :margin: 0
 
-::::{grid-item-card} {{ ref_intext_figure4_ref_id }}
-```{figure} ../03_images/03_image_files/figure4_filename.png 
-:width: 100%
-:align: center
+::::{grid-item-card} {{ ref_intext_bodysize_movement.png }}
+```{figure} ../03_images/03_image_files/no_ref/bodysize_movement.png 
+:class: img_grid
 ```
-
-<p>figure5_caption <p/>
 ::::
 
-::::{grid-item-card} {{ ref_intext_figure5_ref_id }}
-```{figure} ../03_images/03_image_files/figure5_filename.png 
-:width: 100%
-:align: center
+::::{grid-item-card} {{ ref_intext_fisher_et_al_2011 }}
+```{figure} ../03_images/03_image_files/fisher_et_al_2011_fig6.png 
+:class: img_grid
 ```
-<p>figure5_caption <p/>
 ::::
 
-::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
-```{figure} ../03_images/03_image_files/figure6_filename.png 
-:width: 100%
-:align: center
+::::{grid-item-card} {{ ref_intext_chatterjee_et_al_2021 }}
+```{figure} ../03_images/03_image_files/chatterjee_et_al_2021_table2.png
+:class: img_grid
 ```
-<p>figure6_caption <p/>
 ::::
 :::::
-
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_vid1_ref_id }}
-
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid1_url " 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid1_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid2_ref_id }}
-
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid2_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid2_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid3_ref_id }}
-
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid3_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid3_caption<p/>
-::::
-:::::
-
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_vid4_ref_id }}
-
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid4_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid4_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid5_ref_id }}
- 
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid5_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid5_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid6_ref_id }}
-
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid6_url " 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid6_caption<p/>
-::::
-
-:::::
-
 ::::::
 
 ::::::{tab-item} Shiny apps/Widgets
-Check back in the future!
-::::::
 
-::::::{tab-item} Analytical tools & resources
-| Type | Name | Note | URL |Reference |
-|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
-| resource1_type | resource1_name | resource1_note | resource1_url | {{ ref_bib_resource1_ref_id }} |
-| resource3_type | resource2_name | resource3_note | resource3_url | {{ ref_bib_resource2_ref_id }} |
-| resource3_type | resource3_name | resource3_note | resource3_url | {{ ref_bib_resource3_ref_id }} |
-| resource4_type | resource4_name | resource4_note | resource4_url | {{ ref_bib_resource4_ref_id }} |
-| resource5_type | resource5_name | resource5_note | resource5_url | {{ ref_bib_resource5_ref_id }} |
-| resource6_type | resource6_name | resource6_note | resource6_url | {{ ref_bib_resource6_ref_id }} |
-| resource7_type | resource7_name | resource7_note | resource7_url | {{ ref_bib_resource7_ref_id }} |
+:::::{card}
+A R Shiny widget created for the RC Decision Support Tool (RCSC, 2024b) to lookup information on species home range size / body size; information pulled directly from the following sources:
+- Burton et al. (2015) supplementary material “S2. Average body mass and home range size for a sample of species and studies among the reviewed set of camera trap publications”
+- PanTHERIA database (Jones et al., 2009) “a species-level database of life history, ecology,and geography of extant and recently extinct mammals
+- HomeRange: A global database of mammalian home ranges (Broekman et al., 2022)
+
+<iframe 
+    width="100%"
+    height="900"
+    src="https://7e2l38-cassondra-stevenson.shinyapps.io/lu_species_homerange/"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+:::::
 ::::::
 
 ::::::{tab-item} References
-refs here
+{{ ref_bib_chatterjee_et_al_2021 }}
+
+{{ ref_bib_fisher_et_al_2011 }}
+
+{{ ref_bib_roemer_et_al_2009 }}
+
+{{ ref_bib_labarbera_et_al_2009 }}
 ::::::
 
 :::::::
-
-:::::::::

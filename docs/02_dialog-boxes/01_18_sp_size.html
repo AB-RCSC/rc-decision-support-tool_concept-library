@@ -14,33 +14,33 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0d76871c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=fcd2f693" />
     <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -72,27 +72,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -114,8 +110,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -130,13 +131,13 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -145,7 +146,7 @@
 
 
 
-<nav aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -175,23 +176,35 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="body-size">
 <span id="i-sp-size"></span><h1>Body size<a class="headerlink" href="#body-size" title="Link to this heading">#</a></h1>
-<div class="full-width docutils">
-<!-- **{{ title_i_sp_size }}**-->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Unsure about the size of your Target Species? Check out the “Shiny Apps/Widgets” tab to see if information for your Target Species is available for in our “Species home range / body size lookup.”</p>
+</div>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Overview</label><div class="sd-tab-content docutils">
+<p>Here are a few examples of comparable species for each body size options:</p>
+<ul class="simple">
+<li><p><strong>Small</strong>: rodents and similarly sized species in the “Mustelidae” family [i.e., weasels, badgers, otters, martens, wolverine, etc.])</p></li>
+<li><p><strong>Medium</strong>:  small and mid-sized species, ~&lt; 33 lbs (or 15 kilograms), such as meso-carnivores (i.e., Red, fox, Coyote) (Roemer et al., 2009)</p></li>
+<li><p><strong>Large</strong>:  bears or ungulates (i.e., large mammals with hooves, such as White-tailed deer, Elk, Moose, etc)</p></li>
+<li><p><strong>Multiple</strong> - <em>select this option if your study includes multiple Target Species that vary in body size.</em></p></li>
+</ul>
+<p><strong><font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span></strong></p>
+<p>Body size affects the detection process (O’Brien et al., 2011). Species with a larger body size are more likely to be detected; and therefore may require lower sampling effort than smaller species (). Larger species moving through the camera’s detection zone are more likely to trigger the camera (; Rowcliffe et al., 2011; Hofmeester et al., 2017); they can also be detected farther away or occur at wider angles (Rowcliffe et al., 2011; Hofmeester et al., 2017). Whereas, small mammals are often undetected due to their small size (O’Brien,  Kinnaird, and Wibisono 2011; Anile and Devillard 2016) and because “small species which routinely move at fast speeds, such as stoats and weasels, are likely to have especially small detection zones” (Glen et al., 2013).</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/00_coming_soon.png"><img alt="../_images/00_coming_soon.png" src="../_images/00_coming_soon.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/kays_et_al_2021_fig6_clipped.png"><img alt="../_images/kays_et_al_2021_fig6_clipped.png" src="../_images/kays_et_al_2021_fig6_clipped.png" style="width: 700px;" /></a>
 </figure>
+<p><strong>Kays et al. (2021) - Fig. 6</strong>: Relationship between trigger probability and body mass for four focal species (ascending order by weight: gray fox, raccoon, coyote, white-tailed deer). Error bars show standard deviation. Body mass values come from North Carolina animals in the mammal collections of the NC Museum of Natural Sciences</p>
+<p>When thinking beyond the camera’s FOV, larger species generally also have larger home ranges (Garland, 1983) and daily movement distances, making them more likely to be detected at multiple cameras , therefore there are also implications for which models may be appropriate (due to assumptions of “site closure” / “independent locations”).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is an especially important consideration when targetting multiple species of varying sizes.</p>
+</div>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
-Advanced</label><div class="sd-tab-content docutils">
-<p>Add some info here</p>
-</div>
-<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-2">
 Visual resources</label><div class="sd-tab-content docutils">
 <div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
 <div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
@@ -199,11 +212,11 @@ Visual resources</label><div class="sd-tab-content docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure1_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure1_filename.png"><img alt="../_images/figure1_filename.png" src="../_images/figure1_filename.png" style="width: 100%;" /></a>
+Kays et al., 2021</div>
+<figure class="align-default">
+<img alt="../_images/kays_et_al_2021_fig6_clipped.png" class="img-grid" src="../_images/kays_et_al_2021_fig6_clipped.png" />
 </figure>
-<p>figure1_caption<p/>
+<p class="sd-card-text"><strong>Kays et al. (2021) - Fig. 6</strong>: Relationship between trigger probability and body mass for four focal species (ascending order by weight: gray fox, raccoon, coyote, white-tailed deer). Error bars show standard deviation. Body mass values come from North Carolina animals in the mammal collections of the NC Museum of Natural Sciences</p>
 </div>
 </div>
 </div>
@@ -211,11 +224,10 @@ ref_intext_figure1_ref_id</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure2_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure2_filename.png"><img alt="../_images/figure2_filename.png" src="../_images/figure2_filename.png" style="width: 100%;" /></a>
+</div>
+<figure class="align-default">
+<img alt="../_images/anile_devillard_2016_fig2.jpg" class="img-grid" src="../_images/anile_devillard_2016_fig2.jpg" />
 </figure>
-<p>figure2_caption <p/>
 </div>
 </div>
 </div>
@@ -223,11 +235,10 @@ ref_intext_figure2_ref_id</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure3_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure3_filename.png"><img alt="../_images/figure3_filename.png" src="../_images/figure3_filename.png" style="width: 100%;" /></a>
+Anile &amp; Devillard, 2016</div>
+<figure class="align-default">
+<img alt="../_images/anile_devillard_2016_fig3.png" class="img-grid" src="../_images/anile_devillard_2016_fig3.png" />
 </figure>
-<p>figure4_caption <p/>
 </div>
 </div>
 </div>
@@ -239,11 +250,10 @@ ref_intext_figure3_ref_id</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure4_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure4_filename.png"><img alt="../_images/figure4_filename.png" src="../_images/figure4_filename.png" style="width: 100%;" /></a>
+</div>
+<figure class="align-default">
+<img alt="../_images/bodysize_movement.png" class="img-grid" src="../_images/bodysize_movement.png" />
 </figure>
-<p>figure5_caption <p/>
 </div>
 </div>
 </div>
@@ -251,11 +261,10 @@ ref_intext_figure4_ref_id</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure5_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure5_filename.png"><img alt="../_images/figure5_filename.png" src="../_images/figure5_filename.png" style="width: 100%;" /></a>
+Fisher et al., 2011</div>
+<figure class="align-default">
+<img alt="../_images/fisher_et_al_2011_fig6.png" class="img-grid" src="../_images/fisher_et_al_2011_fig6.png" />
 </figure>
-<p>figure5_caption <p/>
 </div>
 </div>
 </div>
@@ -263,195 +272,44 @@ ref_intext_figure5_ref_id</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_figure6_ref_id</div>
-<figure class="align-center">
-<a class="reference internal image-reference" href="../_images/figure6_filename.png"><img alt="../_images/figure6_filename.png" src="../_images/figure6_filename.png" style="width: 100%;" /></a>
+Chatterjee et al., 2021</div>
+<figure class="align-default">
+<img alt="../_images/chatterjee_et_al_2021_table2.png" class="img-grid" src="../_images/chatterjee_et_al_2021_table2.png" />
 </figure>
-<p>figure6_caption <p/>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Shiny apps/Widgets</label><div class="sd-tab-content docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid1_ref_id</div>
+<p class="sd-card-text">A R Shiny widget created for the RC Decision Support Tool (RCSC, 2024b) to lookup information on species home range size / body size; information pulled directly from the following sources:</p>
+<ul class="simple">
+<li><p class="sd-card-text">Burton et al. (2015) supplementary material “S2. Average body mass and home range size for a sample of species and studies among the reviewed set of camera trap publications”</p></li>
+<li><p class="sd-card-text">PanTHERIA database (Jones et al., 2009) “a species-level database of life history, ecology,and geography of extant and recently extinct mammals</p></li>
+<li><p class="sd-card-text">HomeRange: A global database of mammalian home ranges (Broekman et al., 2022)</p></li>
+</ul>
 <iframe 
-    width="300" 
-    height="200" 
-    src="vid1_url " 
+    width="100%"
+    height="900"
+    src="https://7e2l38-cassondra-stevenson.shinyapps.io/lu_species_homerange/"
     frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p>vid1_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid2_ref_id</div>
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid2_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid2_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid3_ref_id</div>
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid3_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid3_caption<p/>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid4_ref_id</div>
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid4_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid4_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid5_ref_id</div>
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid5_url" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid5_caption<p/>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-ref_intext_vid6_ref_id</div>
-<iframe 
-    width="300" 
-    height="200" 
-    src="vid6_url " 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-<p>vid6_caption<p/>
-</div>
-</div>
-</div>
 </div>
 </div>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
-Shiny apps/Widgets</label><div class="sd-tab-content docutils">
-<p>Check back in the future!</p>
-</div>
-<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
-Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
-<table class="table">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Type</p></th>
-<th class="head text-left"><p>Name</p></th>
-<th class="head text-left"><p>Note</p></th>
-<th class="head text-left"><p>URL</p></th>
-<th class="head text-left"><p>Reference</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>resource1_type</p></td>
-<td class="text-left"><p>resource1_name</p></td>
-<td class="text-left"><p>resource1_note</p></td>
-<td class="text-left"><p>resource1_url</p></td>
-<td class="text-left"><p>ref_bib_resource1_ref_id</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource3_type</p></td>
-<td class="text-left"><p>resource2_name</p></td>
-<td class="text-left"><p>resource3_note</p></td>
-<td class="text-left"><p>resource3_url</p></td>
-<td class="text-left"><p>ref_bib_resource2_ref_id</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource3_type</p></td>
-<td class="text-left"><p>resource3_name</p></td>
-<td class="text-left"><p>resource3_note</p></td>
-<td class="text-left"><p>resource3_url</p></td>
-<td class="text-left"><p>ref_bib_resource3_ref_id</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource4_type</p></td>
-<td class="text-left"><p>resource4_name</p></td>
-<td class="text-left"><p>resource4_note</p></td>
-<td class="text-left"><p>resource4_url</p></td>
-<td class="text-left"><p>ref_bib_resource4_ref_id</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource5_type</p></td>
-<td class="text-left"><p>resource5_name</p></td>
-<td class="text-left"><p>resource5_note</p></td>
-<td class="text-left"><p>resource5_url</p></td>
-<td class="text-left"><p>ref_bib_resource5_ref_id</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>resource6_type</p></td>
-<td class="text-left"><p>resource6_name</p></td>
-<td class="text-left"><p>resource6_note</p></td>
-<td class="text-left"><p>resource6_url</p></td>
-<td class="text-left"><p>ref_bib_resource6_ref_id</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>resource7_type</p></td>
-<td class="text-left"><p>resource7_name</p></td>
-<td class="text-left"><p>resource7_note</p></td>
-<td class="text-left"><p>resource7_url</p></td>
-<td class="text-left"><p>ref_bib_resource7_ref_id</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-5">
 References</label><div class="sd-tab-content docutils">
-<p>refs here</p>
-</div>
+<p>Chatterjee, N., Schuttler, T. G., Nigam, P., &amp; Habib, B. (2021). Deciphering the rarity–detectability continuum: optimizing Survey design for terrestrial mammalian community. <em>Ecosphere 12</em>(9), e03748. <a class="reference external" href="https://doi.org/10.1002/ecs2.3748">https://doi.org/10.1002/ecs2.3748</a></p>
+<p>Fisher, J. T., Anholt, B., &amp; Volpe, J. P. (2011). Body Mass Explains Characteristic Scales of Habitat Selection in Terrestrial Mammals. <em>Ecology and Evolution</em>, <em>1</em>(4), 517–528. <a class="reference external" href="https://doi.org/10.1002/ece3.45">https://doi.org/10.1002/ece3.45</a></p>
+<p>Roemer, G. W., Gompper, M. E., &amp; Van Valkenburgh, B. (2009). The Ecological Role of the Mammalian Mesocarnivore. <em>BioScience</em>, <em>59</em>(2), 165–173. <a class="reference external" href="https://doi.org/10.1525/bio.2009.59.2.9">https://doi.org/10.1525/bio.2009.59.2.9</a></p>
 </div>
 </div>
 </section>
@@ -497,8 +355,8 @@ References</label><div class="sd-tab-content docutils">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

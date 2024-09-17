@@ -4,8 +4,8 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: 0.13
-    jupytext_version: 1.16.4
+    format_version: 0.17.2 <!--0.13-->
+    jupytext_version: 6.5.4 <!-- 1.16.4-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -87,24 +87,19 @@ editor_options:
 
 **{{ term_mod_divers_rich_divers }}**: {{ term_def_mod_divers_rich_divers }}
 
-Note that there are multiple “levels” to Species diversity & richness, these include:
+Note that there are multiple parameters corresponding to different scales and incorporating of evenness; these include:
 - **{{ term_mod_divers_rich_alpha }}**: {{ term_def_mod_divers_rich_alpha }}
 - **{{ term_mod_divers_rich_beta }}**: {{ term_def_mod_divers_rich_beta }}
 - **{{ term_mod_divers_rich_gamma }}**: {{ term_def_mod_divers_rich_gamma }}
 
-“Species richness** is simply “the total number of species in an assemblage or a sample” ({{ ref_intext_gotelli_chao_2013 }}.
+You can refer to the “Assumptions, Pros, Cons” dropdown above to see relevant information for all three.
 
-Species richness in an assemblage is difficult to estimate reliably from sample data because it is very sensitive to the number of individuals and the number of samples collected. Species richness is a diversity of order 0 (which means it is completely insensitive to species abundances). ({{ ref_intext_gotelli_chao_2013 }}.
-
-Species diversity is more complex, and includes a measure of the number of species in a community, and a measure of the abundance of each species. Species diversity is usually described by an index, such as Shannon's Index H'.” {{ ref_intext_pyron_2010 }})
-
-```{figure} ../03_images/03_image_files/pyron_2010_fig1_clipped.png
+```{figure} ../03_images/03_image_files/pyron_2010_fig1.png
 :align: center
-:scale: 100%
+:scale: 60%
 ```
-
 **Pyron (2010) – Fig. 1**: Species evenness and species richness for animalcule communities. Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. 
-
+:::
 
 :::{note}
 This section is still in progress
@@ -116,6 +111,39 @@ This section is still in progress
 :::{note}
 This section is still in progress
 :::
+
+**{{ term_mod_divers_rich_rich }}**: {{ term_def_mod_divers_rich_rich }}
+
+**{{ term_mod_divers_rich_divers }}**: {{ term_def_mod_divers_rich_divers }}
+
+## Study design
+### Number of cameras
+
+The optimal number of cameras required will be influenced by factors such as landscape heterogeneity, [survey](#survey) duration and spatial scale, species rarity and desired level of precision ({{ ref_intext_colyn_et_al_2018 }}; {{ ref_intext_rovero_et_al_2013 }}). For example, Kays et al. (2020) found that 25–35 cameras were needed for precise estimates of species richness, depending on the spatial scale of the [survey](#survey) and landscape diversity. In general, deploying more cameras and/or for longer durations always results in more precise estimates; however, users can consider rotating cameras across multiple sites for shorter durations (if feasible).
+
+### Duration - Camera days per camera location
+
+For measures of species richness or diversity, it is presumed that a camera is active long enough to detect rare species that may occur at a specific location ({{ ref_intext_wearn_gloverkapfer_2017 }}). If this is not the case, the results will indicate that the species was not present when it was (i.e., a “false negative”). False negatives may also be problematic for other measures, such as [**relative abundance indices**](#mods_relative_abundance) (count data, with or without [zero-inflation](#mods_zero_inflation) and/or [overdispersion](#mods_overdispersion)), even if the model type used can account for [imperfect detection](#imperfect_detection) explicitly (e.g., combined occurrence/[relative abundance](#mods_relative_abundance); [N-mixture models](#mods_n_mixture)).
+
+### Number of cameras vs. Camera days per camera location
+
+If a user must choose between more cameras *vs.* fewer cameras with longer [surveys](#survey), Chatterjee et al. (2021) suggested that for rare species, the optimal precision can be obtained by increasing the number of sites, whereas for common species, increasing the number of samples is more effective. For measuring species richness, Si et al. (2014) found that rotating cameras to new sites was more efficient than leaving cameras at fewer sites for longer periods. O'Connor et al. (2017) also recommended utilizing more cameras *vs*. increasing study length to increase [detection probabilities](#detection_probability). In general, regardless of species and [objective](#survey_objectives), increasing the number of [survey](#survey) locations or the [survey](#survey) length improved precision ({{ ref_intext_chatterjee_et_al_2021 }}). 
+Analysis
+
+Note that there are multiple parameters corresponding to different scales and incorporating of evenness; these include:
+- **{{ term_mod_divers_rich_alpha }}**: {{ term_def_mod_divers_rich_alpha }}
+- **{{ term_mod_divers_rich_beta }}**: {{ term_def_mod_divers_rich_beta }}
+- **{{ term_mod_divers_rich_gamma }}**: {{ term_def_mod_divers_rich_gamma }}
+
+Its important to note the difference in **Observed *vs* estimated species richness** (from {{ ref_intext_wearn_gloverkapfer_2019 }}):
+- **Observed species richness**: the sum of the number of species seen (e.g. {{ ref_intext_kitamura_et_al_2010 }}; {{ ref_intext_pettorelli_et_al_2010 }}; {{ ref_intext_ahumada_et_al_2011 }}; {{ ref_intext_samejima_et_al_2012 }})
+    -  Observed species richness will not, in general, be a reliable index of actual species richness because, even if sampling effort is strictly controlled, the detectability of species will vary across samples
+-  **Estimated species richness**: when the “sum of the number of species seen” is adjusted based on corrections for “imperfect detection” (i.e. the fact that some species in a given sample may have been missed)
+    -  (e.g. {{ ref_intext_tobler_et_al_2008 }}; {{ ref_intext_kinnaird-&-obrien-2012 }}; {{ ref_intext_brodie_et_al_2015 }}; {{ ref_intext_yue_et_al_2015 }}; {{ ref_intext_wearn_et_al_2016 }})
+
+The **two principal ways of estimating species richness from remote camera data** are (from {{ ref_intext_wearn_gloverkapfer_2019 }}):<br> 
+-  non-parametric estimators ({{ ref_intext_gotelli_chao_2013 }}), which use information about the rarest species in the sample to provide a minimum estimate of the number of true species (e.g. {{ ref_intext_tobler_et_al_2008 }}), 
+-   or 2) occupancy models ({{ ref_intext_mackenzie_et_al_2006 }})
 ::::::
 
 ::::::{tab-item} Visual resources
@@ -263,6 +291,19 @@ Species Diversity and Species Richness
 </iframe>
 
 Field Ecology - Diversity Metrics in R
+::::
+
+::::{grid-item-card} {{ ref_intext_riffomonas_project_2022b }}
+<iframe 
+    width="100%"
+    height="300"
+    src="https://www.youtube.com/embed/ywHVb0Q-qsM?si=_xJ5jbFc6MDEQlAh"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+Generating a rarefaction curve from collector's curves in R within the tidyverse (CC198)
 ::::
 
 :::::

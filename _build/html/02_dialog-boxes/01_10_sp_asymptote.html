@@ -8,39 +8,39 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Species-accumulation asymptote &#8212; Remote Camera Decision Support Tool - Concept Library</title>
+    <title>Species-accumulation curves &#8212; Remote Camera Decision Support Tool - Concept Library</title>
   
   
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0d76871c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=fcd2f693" />
     <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -62,7 +62,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Target species" href="../01_toc_pages/00_04_toc_target_species.html" />
-    <link rel="prev" title="Duration (minimum &amp; maximum)" href="01_08_surv_dur_min_max.html" />
+    <link rel="prev" title="Duration &amp; Timing" href="../01_toc_pages/00_03_toc_duration_timing.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -72,27 +72,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -114,8 +110,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -130,13 +131,13 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -145,7 +146,7 @@
 
 
 
-<nav aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -173,8 +174,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="species-accumulation-asymptote">
-<span id="i-sp-asymptote"></span><h1>Species-accumulation asymptote<a class="headerlink" href="#species-accumulation-asymptote" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="species-accumulation-curves">
+<span id="i-sp-asymptote"></span><h1>Species-accumulation curves<a class="headerlink" href="#species-accumulation-curves" title="Link to this heading">#</a></h1>
 <div class="full-width docutils">
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
@@ -183,13 +184,12 @@ Overview</label><div class="sd-tab-content docutils">
 <p>To understand what we mean when we say, “species-accumulation asymptote”, we must first explain species accumulation curves. A <strong>species accumulation curve</strong> shows you the relationship between the number of species detected and sampling effort (Deng et al., 2015)  (e.g., how you might expect to “accumulate” detections of new species as cameras are deployed for longer). Species accumulation curves are used “to assess and compare diversity across populations, or to evaluate the benefits of additional sampling” (Van Dooren, 2016). The <strong>species-accumulation <em>asymptote</em></strong> refers to the point on the curve where you’ve sampled long enough to observe <em>most</em> of the species present.</p>
 <p>Consider the figure below. You can see that as the “number of records” (on the x-axis) increases, at first (where the line is the steepest), you detect new species quickly. This is because many species that are easy to detect and/or common, and thus you’re more likely to encounter them in less time. As time goes on (you collect more samples), the rate at which you detect <em>new</em> species starts to slow down (fewer and fewer new species detected over the same amount of time). This is because, in general, rare species, occurring much less often, may be missed if sampling is not long enough to detect it (or to be sure that they will not be detected). The curve starts to level off as after you’ve detected most (or all) of the easily detectable/common species and are slowly detecting those that are less detectable and/or rarer. As this line flattens out, eventually, barely any new species are detected (if any).</p>
 <figure class="align-center">
-<a class="reference internal image-reference" href="../_images/loreau_2010_fig4_clipped.png"><img alt="../_images/loreau_2010_fig4_clipped.png" src="../_images/loreau_2010_fig4_clipped.png" style="width: 500px;" /></a>
+<a class="reference internal image-reference" href="../_images/loreau_2010_fig4_clipped.png"><img alt="../_images/loreau_2010_fig4_clipped.png" src="../_images/loreau_2010_fig4_clipped.png" style="width: 700px;" /></a>
 </figure>
 <p><strong>Loreau (2010) - Fig 4</strong> - “Species accumulation and rarefaction curves. Species accumulation curves show the number of species obtained by successively censusing either individual organisms (individual-based accumulation curves) or samples (sample-based accumulation curves)…. Credit: Rob Colwell, after Gotelli and Colwell (2001)”</p>
-<p><strong>How this relates to study design</strong></p>
+<p><strong><font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span></strong></p>
 <p>This question is related to the state variable “Species Diversity &amp; Richness”</p>
-<p>Whether or not you choose to sample long enough to ensure to reach the species-accumulation asymptote will impact the number of cameras recommended; published species-accumulation curves for remote camera data seem to suggest that species level off between 20 and 100 locations (Ahumada et al., 2011; Li et al., 2012; Wearn et al., 2016).</p>
-<p>It will also impact the available modelling approaches since it not always necessary; some non-parametric methods are thought to estimate asymptotic richness fairly well “even when extrapolating to double or triple the size of the sample” (Colwell et al., 2012; Wearn &amp; Glover-Kapfer, 2017).</p>
+<p>Whether or not you choose to sample long enough to ensure to reach the species-accumulation asymptote will impact the number of cameras recommended; published species-accumulation curves for remote camera data seem to suggest that species level off between 20 and 100 locations (Ahumada et al., 2011; Li et al., 2012; Wearn et al., 2016). It will also impact the available modelling approaches since it not always necessary; some non-parametric methods are thought to estimate asymptotic richness fairly well “even when extrapolating to double or triple the size of the sample” (Colwell et al., 2012; Wearn &amp; Glover-Kapfer, 2017).</p>
 <blockquote>
 <div><p><strong>If you’re not sure, select the conservative answer of “Yes”</strong></p>
 </div></blockquote>
@@ -289,7 +289,7 @@ Molloy, 2018</div>
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
-Rovero et al., 2010</div>
+</div>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/rovero_tobler_2010_fig4.png"><img alt="../_images/rovero_tobler_2010_fig4.png" src="../_images/rovero_tobler_2010_fig4.png" style="width: 100%;" /></a>
 </figure>
@@ -374,7 +374,7 @@ Shiny apps/Widgets</label><div class="sd-tab-content docutils">
 <input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-4">
 Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
-<table class="table">
+<div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Type</p></th>
 <th class="head text-left"><p>Name</p></th>
@@ -417,6 +417,7 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 </tbody>
 </table>
 </div>
+</div>
 <input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-5">
 References</label><div class="sd-tab-content docutils">
@@ -431,7 +432,6 @@ References</label><div class="sd-tab-content docutils">
 <p>Molloy, S. W. (2018). <em>A Practical Guide to Using Camera Traps for Wildlife Monitoring in Natural Resource Management Projects</em>. <a class="reference external" href="https://doi.org/10.13140/RG.2.2.28025.57449">https://doi.org/10.13140/RG.2.2.28025.57449</a></p>
 <p>Roeland Kindt, R. (2020). <em>Species Accumulation Curves with vegan, BiodiversityR and ggplot2.</em> <a class="reference external" href="https://rpubs.com/Roeland-KINDT/694021">https://rpubs.com/Roeland-KINDT/694021</a></p>
 <p>Rob K Statistics (2018, Oct 16). <em>Species Accumulation Curves</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=Jj7LYrU_6RA&amp;amp;t=3s">https://www.youtube.com/watch?v=Jj7LYrU_6RA&amp;t=3s</a></p>
-<p>Rovero, F., Tobler, M., &amp; Sanderson, J. (2010). Camera trapping for inventorying terrestrial vertebrates. <em>Manual on Field Recording Techniques and Protocols for All Taxa Biodiversity Inventories and Monitoring</em>. <a class="reference external" href="https://www.researchgate.net/publication/229057405_Camera_trapping_for_inventorying_terrestrial_vertebrates">https://www.researchgate.net/publication/229057405_Camera_trapping_for_inventorying_terrestrial_vertebrates</a></p>
 <p>Si, X., Kays, R., &amp; Ding, P. (2014). How long is enough to detect terrestrial animals? Estimating the minimum trapping effort on camera traps. <em>PeerJ, 2</em>, e374. <a class="reference external" href="https://doi.org/10.7717/peerj.374">https://doi.org/10.7717/peerj.374</a></p>
 <p>Styring, A. (2020b, Jun 22). <em>Generating a species accumulation plot in excel for BBS data.</em>  [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?reload=9&amp;amp;app=desktop&amp;amp;v=OEWdPm3zg9I">https://www.youtube.com/watch?reload=9&amp;app=desktop&amp;v=OEWdPm3zg9I</a></p>
 <p>Van Dooren, T. J. M. (2016). Pollinator species richness: Are the declines slowing down? <em>Nature Conservation</em>, <em>15</em>, 11–22. <a class="reference external" href="https://doi.org/10.3897/natureconservation.15.9616">https://doi.org/10.3897/natureconservation.15.9616</a></p>
@@ -484,8 +484,8 @@ References</label><div class="sd-tab-content docutils">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

@@ -1,0 +1,43 @@
+sphinx:
+  config:
+    html_theme: pydata_sphinx_theme
+    html_show_sourcelink: False
+#    html_sidebars: {
+#        "**": ["sidebar-nav-bs"]
+#    }
+    html_theme_options:
+#      sidebars: false
+      nosidebar: true
+#      primary_sidebar: false
+      primary_sidebar_end: false## CANT USE
+      primary_sidebar_end: []
+      globaltoc_includehidden: false
+#      secondary_sidebar_items: false
+      secondary_sidebar_items: []##hide right-side sidebar
+      sidebar_includehidden: false
+      show_nav_level: 0
+      collapse_navigation: True
+      navbar_start: false
+#      navbar_start: []
+#      navbar_center: ["navbar-logo"]
+      navbar_center: []
+#      navbar_end: false     ## CANT USE
+      navbar_end: []
+      navbar_persistent: false ## CANT USE
+      navbar_persistent: []
+#      content_footer_items: false
+#      content_footer_items: []
+#      article_footer_items: false
+#      article_footer_items: []
+#      footer_start: false
+#      footer_end: false
+      footer_start: ["copyright"]
+      footer_end: ["author"]  
+      footer_center: []
+      show_prev_next: False ##hide previous and next buttons
+##      navbar_align: content
+##      #navigation_depth: 0
+##      sidebar-primary: []
+##      sidebar-primary: false
+##      section_nav: []
+##      sidebars: []

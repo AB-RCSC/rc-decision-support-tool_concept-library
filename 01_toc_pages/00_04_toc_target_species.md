@@ -4,8 +4,8 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: '1.16'
-    jupytext_version: 1.16.2
+    format_version: 0.13
+    jupytext_version: 1.16.4
 kernelspec:
   display_name: Python 3
   language: python
@@ -14,7 +14,7 @@ editor_options:
   markdown: 
   wrap: none
 ---
-(target-species)=
+  display_name: Python 3 (ipykernel)(target-species)=
 # Target species
 
 (i_target_species_single)=
@@ -29,7 +29,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_obj_targ_sp }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_obj_targ_sp }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -38,7 +38,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_info }}</font></font>**
+**<font size='4'>{{ title_i_sp_info }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -47,7 +47,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_type }}</font></font>**
+**<font size='4'>{{ title_i_sp_type }}</font></font>**
 :::
 ::::
 
@@ -60,7 +60,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_dens_low }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_dens_low }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -69,7 +69,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_occ_restr }}</font></font>**
+**<font size='4'>{{ title_i_sp_occ_restr }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -78,7 +78,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_hr_size }}</font></font>**
+**<font size='4'>{{ title_i_sp_hr_size }}</font></font>**
 :::
 ::::
 
@@ -91,7 +91,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_size }}</font></font>**
+**<font size='4'>{{ title_i_sp_size }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -100,7 +100,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_rarity }}</font></font>**
+**<font size='4'>{{ title_i_sp_rarity }}</font></font>**
 :::
 
 
@@ -110,7 +110,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_detprob_cat }}</font></font>**
+**<font size='4'>{{ title_i_sp_detprob_cat }}</font></font>**
 :::
 ::::
 
@@ -123,7 +123,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_behav }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_behav }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -132,7 +132,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_behav_season }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_behav_season }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -141,7 +141,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_marking_code }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_marking_code }}</font></font>*
 :::
 ::::
 
@@ -154,7 +154,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_marking_allsub }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_marking_allsub }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -163,7 +163,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_3ormore_cat_ids }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_3ormore_cat_ids }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -172,7 +172,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_auxillary_info }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_auxillary_info }}</font></font>*
 :::
 ::::
 
@@ -185,7 +185,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_aux_count_possible }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_aux_count_possible }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -194,7 +194,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_focalarea_calc }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_focalarea_calc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -203,7 +203,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_high_dens }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_high_dens }}</font></font>*
 :::
 ::::
 
@@ -216,7 +216,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_common_pop_lg }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_common_pop_lg }}</font></font>*
 :::
 
 ::::
@@ -231,7 +231,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_size_multi }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_size_multi }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -240,7 +240,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_behav_mult }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_behav_mult }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -249,7 +249,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_rarity_multi }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_rarity_multi }}</font></font>*
 :::
 ::::
 
@@ -262,7 +262,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_detprob_cat_multi }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_detprob_cat_multi }}</font></font>*
 :::
 
 ::::

@@ -4,8 +4,8 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: '1.16'
-    jupytext_version: 1.16.2
+    format_version: 0.13
+    jupytext_version: 1.16.4
 kernelspec:
   display_name: Python 3
   language: python
@@ -26,7 +26,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_makemod_same }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_makemod_same }}</font></font>*
 :::
 
 :::{grid-item-card} 
@@ -35,7 +35,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_settings_mult }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_settings_mult }}</font></font>*
 :::
 
 :::{grid-item-card} 
@@ -44,7 +44,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_protocol_ht_angle_dir }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_protocol_ht_angle_dir }}</font></font>*
 :::
 ::::
 
@@ -57,7 +57,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_bait_lure }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_bait_lure }}</font></font>*
 :::
 
 :::{grid-item-card} 
@@ -66,7 +66,7 @@ editor_options:
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_targ_feature }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_targ_feature }}</font></font>*
 :::
 
 ::::

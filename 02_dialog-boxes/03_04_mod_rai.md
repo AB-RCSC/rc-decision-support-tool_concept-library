@@ -4,16 +4,16 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: '1.16'
-    jupytext_version: 1.16.2
+    format_version: 0.17.2 <!--0.13-->
+    jupytext_version: 6.5.4 <!-- 1.16.4-->
 kernelspec:
   display_name: Python 3
   language: python
   name: python3
 editor_options: 
   markdown: 
-    wrap: none
---- 
+  wrap: none
+---
 (i_mod_rai)=
 # {{ name_mod_rai }}
 <!--**{{ name_mod_rai }}**
@@ -62,7 +62,6 @@ To the second point: consider the canonical equation,<br>
 :width: 80px
 :align: center
 ```  
-<br>
 
 where *𝑁* is population size, *𝐶* is the count of animals or signs and *𝑝* is detection probability (Anderson 2001, Brennan 2019). This equation underlies many estimators of abundance, including capture-recapture (CR; see *2.1.1 Capture-Recapture*) and distance sampling (DS; see *2.2.2 Distance Sampling*) methods (O’Brien 2011). RA comparisons assume that detection probability 𝑝 is constant across space, time or species, and can therefore be ignored (Anderson 2001, O’Brien 2011, Sollmann et al. 2013b), such that: 
 
@@ -70,9 +69,9 @@ where *𝑁* is population size, *𝐶* is the count of animals or signs and *�
 :width: 80px
 :align: center
 ```  
-<br>
-so count essentially becomes a surrogate for population size. <br>
-<br>
+
+so count essentially becomes a surrogate for population size.
+
 Assuming constant detection probability *𝑝* is problematic, since the likelihood an animal or sign is counted during a survey will vary with observational, environmental, and habitat- and species-specific factors, which in turn can vary with time (Anderson, 2001). For example: at site A, animals may be difficult to spot in dense vegetation, while at site B, animals may be easy to spot in open grassland; and the effects of vegetation on observability may differ seasonally. If the effects of vegetation on detectability are not accounted for, how can we be sure that differences in animal counts at site A and B are due to true differences in abundance, and not simply artefacts of detection bias (Sollmann et al., 2013b)? 
 In a camera trapping context, RA is the comparison of detection rates across space, time or species – where detection rates are typically reported as the number of images per 100 trap days, but can also be reported in terms of the total number of detections, other units of effort (e.g., camera trap hours), proportion of stations with detections, etc. (Burton et al., 2015). As with other kinds of RA surveys, comparisons of camera trap detection rates can confound abundance with animal behaviour and observability (Anderson 2001, Burton et al. 2015). <br>
 <br>

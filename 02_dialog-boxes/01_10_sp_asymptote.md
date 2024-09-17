@@ -4,8 +4,8 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: '1.16'
-    jupytext_version: 1.16.2
+    format_version: 0.17.2 <!--0.13-->
+    jupytext_version: 6.5.4 <!-- 1.16.4-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -13,7 +13,7 @@ kernelspec:
 editor_options: 
   markdown: 
   wrap: none
---- 
+---
 (i_sp_asymptote)=
 # {{ title_i_sp_asymptote }}
 
@@ -27,19 +27,17 @@ To understand what we mean when we say, “species-accumulation asymptote”, we
 Consider the figure below. You can see that as the “number of records” (on the x-axis) increases, at first (where the line is the steepest), you detect new species quickly. This is because many species that are easy to detect and/or common, and thus you’re more likely to encounter them in less time. As time goes on (you collect more samples), the rate at which you detect *new* species starts to slow down (fewer and fewer new species detected over the same amount of time). This is because, in general, rare species, occurring much less often, may be missed if sampling is not long enough to detect it (or to be sure that they will not be detected). The curve starts to level off as after you’ve detected most (or all) of the easily detectable/common species and are slowly detecting those that are less detectable and/or rarer. As this line flattens out, eventually, barely any new species are detected (if any).
 
 ```{figure} ../03_images/03_image_files/loreau_2010_fig4_clipped.png
-:width: 500px
+:width: 700px
 :align: center
 ```
 
 **Loreau (2010) - Fig 4** - “Species accumulation and rarefaction curves. Species accumulation curves show the number of species obtained by successively censusing either individual organisms (individual-based accumulation curves) or samples (sample-based accumulation curves).... Credit: Rob Colwell, after Gotelli and Colwell (2001)”
 
-**How this relates to study design**
+**<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
 
 This question is related to the state variable “Species Diversity & Richness”
 
-Whether or not you choose to sample long enough to ensure to reach the species-accumulation asymptote will impact the number of cameras recommended; published species-accumulation curves for remote camera data seem to suggest that species level off between 20 and 100 locations ({{ ref_intext_ahumada_et_al_2011 }}; {{ ref_intext_li_et_al_2012 }}; {{ ref_intext_wearn_et_al_2016 }}). 
-
-It will also impact the available modelling approaches since it not always necessary; some non-parametric methods are thought to estimate asymptotic richness fairly well “even when extrapolating to double or triple the size of the sample” ({{ ref_intext_colwell_et_al_2012 }}; {{ ref_intext_wearn_gloverkapfer_2017 }}). 
+Whether or not you choose to sample long enough to ensure to reach the species-accumulation asymptote will impact the number of cameras recommended; published species-accumulation curves for remote camera data seem to suggest that species level off between 20 and 100 locations ({{ ref_intext_ahumada_et_al_2011 }}; {{ ref_intext_li_et_al_2012 }}; {{ ref_intext_wearn_et_al_2016 }}). It will also impact the available modelling approaches since it not always necessary; some non-parametric methods are thought to estimate asymptotic richness fairly well “even when extrapolating to double or triple the size of the sample” ({{ ref_intext_colwell_et_al_2012 }}; {{ ref_intext_wearn_gloverkapfer_2017 }}). 
 
 > **If you’re not sure, select the conservative answer of “Yes”**
 
@@ -192,7 +190,7 @@ Rarefied Species Accumulation Curves (the simple way) tutorial: How to create be
 
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
-|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
+|:------------------|:--------------------------|:-----------------------------------------------|:-----------------------------------------------|:-----------------------------------------------|
 | R package / Tutorial | Species Accumulation Curves |      | <https://www.pisces-conservation.com/sdrhelp/index.html?specaccum.html> | {{ ref_bib_chao_et_al_2016 }} |
 | R package / Tutorial | Species Accumulation Curves with vegan, BiodiversityR and ggplot2 |      | <https://rpubs.com/Roeland-KINDT/694021> | {{ ref_bib_roeland_2020 }} |
 | R Shiny App | iNext Online |      | <https://chao.shinyapps.io/iNEXTOnline> | {{ ref_bib_chao_et_al_2016 }} |

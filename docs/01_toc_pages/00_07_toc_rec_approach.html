@@ -14,33 +14,33 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=0d76871c" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=fcd2f693" />
     <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
-  <script src="../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -62,7 +62,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Species inventory" href="../02_dialog-boxes/03_01_mod_inventory.html" />
-    <link rel="prev" title="Detection probability" href="../02_dialog-boxes/01_20_sp_detprob_cat.html" />
+    <link rel="prev" title="Camera location independence" href="../02_dialog-boxes/01_47_cam_independent.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -72,27 +72,23 @@
 
   
   
-  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
   <input type="checkbox"
           class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
   <div class="search-button__wrapper">
     <div class="search-button__overlay"></div>
@@ -114,8 +110,13 @@
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
 </form></div>
   </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -159,13 +160,13 @@
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
@@ -174,7 +175,7 @@
 
 
 
-<nav aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -208,7 +209,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><strong><font size='3'>Species inventory</font></font></strong></p>
+<p class="sd-card-text"><strong><font size='4'>Species inventory</font></font></strong></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_01_mod_inventory.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_01_mod_inventory.html</span></a></div>
 </div>
@@ -218,7 +219,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><strong><font size='3'>Species diversity &amp; richness</font></font></strong></p>
+<p class="sd-card-text"><strong><font size='4'>Species diversity &amp; richness</font></font></strong></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_02_mod_divers_rich.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_02_mod_divers_rich.html</span></a></div>
 </div>
@@ -228,7 +229,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><strong><font size='3'>Occupancy</font></font></strong></p>
+<p class="sd-card-text"><strong><font size='4'>Occupancy</font></font></strong></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_03_mod_occupancy.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_03_mod_occupancy.html</span></a></div>
 </div>
@@ -242,7 +243,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><strong><font size='3'>Relative abundance indices</font></font></strong></p>
+<p class="sd-card-text"><strong><font size='4'>Relative abundance indices</font></font></strong></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_04_mod_rai.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_04_mod_rai.html</span></a></div>
 </div>
@@ -252,7 +253,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Capture-recapture (CR) / Capture-mark-recapture (CMR)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Capture-recapture (CR) / Capture-mark-recapture (CMR)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_11_mod_cr_cmr.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_11_mod_cr_cmr.html</span></a></div>
 </div>
@@ -262,7 +263,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Spatial capture-recapture (SCR) / Spatially explicit capture recapture (SECR)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial capture-recapture (SCR) / Spatially explicit capture recapture (SECR)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_12_mod_scr_secr.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_12_mod_scr_secr.html</span></a></div>
 </div>
@@ -276,7 +277,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Spatial mark-resight </font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial mark-resight </font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_13_mod_smr.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_13_mod_smr.html</span></a></div>
 </div>
@@ -286,7 +287,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Spatial count (SC) model / Unmarked spatial capture-recapture</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial count (SC) model / Unmarked spatial capture-recapture</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_14_mod_sc.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_14_mod_sc.html</span></a></div>
 </div>
@@ -296,7 +297,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Spatial Partial Identity Model (Categorical SPIM; catSPIM)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial Partial Identity Model (Categorical SPIM; catSPIM)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_15_mod_catspim.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_15_mod_catspim.html</span></a></div>
 </div>
@@ -310,7 +311,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Spatial Partial Identity Model (2-flank SPIM)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Spatial Partial Identity Model (2-flank SPIM)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_16_mod_2flankspim.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_16_mod_2flankspim.html</span></a></div>
 </div>
@@ -320,7 +321,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Random encounter model (REM)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Random encounter model (REM)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_17_mod_rem.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_17_mod_rem.html</span></a></div>
 </div>
@@ -330,7 +331,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Random encounter and staying time (REST)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Random encounter and staying time (REST)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_18_mod_rest.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_18_mod_rest.html</span></a></div>
 </div>
@@ -344,7 +345,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Time in front of the camera (TIFC)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Time in front of the camera (TIFC)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_19_mod_tifc.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_19_mod_tifc.html</span></a></div>
 </div>
@@ -354,7 +355,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Distance sampling (DS)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Distance sampling (DS)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_20_mod_ds.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_20_mod_ds.html</span></a></div>
 </div>
@@ -364,7 +365,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Time-to-event (TTE)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Time-to-event (TTE)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_21_mod_tte.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_21_mod_tte.html</span></a></div>
 </div>
@@ -378,7 +379,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Space-to-event (STE)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Space-to-event (STE)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_22_mod_ste.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_22_mod_ste.html</span></a></div>
 </div>
@@ -388,7 +389,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><em><font color='grey'><font size='3'>Instantaneous sampling (IS)</font></font></em></p>
+<p class="sd-card-text"><em><font color='grey'><font size='4'>Instantaneous sampling (IS)</font></font></em></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_23_mod_is.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_23_mod_is.html</span></a></div>
 </div>
@@ -398,7 +399,7 @@
 <img alt="" class="sd-card-img" src="../_images/background_green.png" />
 <div class="sd-card-img-overlay docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text"><strong><font size='3'>Behaviour</font></font></strong></p>
+<p class="sd-card-text"><strong><font size='4'>Behaviour</font></font></strong></p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_24_mod_behaviour.html"><span>https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_24_mod_behaviour.html</span></a></div>
 </div>
@@ -450,8 +451,8 @@
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">

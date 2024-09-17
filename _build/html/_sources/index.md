@@ -4,15 +4,15 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
-    format_version: '1.16'
-    jupytext_version: 1.16.2
+    format_version: 0.17.2 <!--0.13-->
+    jupytext_version: 6.5.4 <!-- 1.16.4-->
 kernelspec:
   display_name: Python 3
   language: python
   name: python3
-editor_options:
-  markdown:
-    wrap: none
+editor_options: 
+  markdown: 
+  wrap: none
 ---
 <style>
     .bd-page-width {
@@ -48,7 +48,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_user_entry }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_user_entry }}</font></font>*
 ::::
 
 ::::{grid-item-card}
@@ -56,7 +56,7 @@ jupyter-book build ./
 :img-background: ./03_images/01_ui/background_orangelight.png
 :padding: 1
 :text-align: center
-**<font size='3'>{{ title_i_objective }}</font></font>**
+**<font size='4'>{{ title_i_objective }}</font></font>**
 ::::
 
 ::::{grid-item-card}
@@ -65,7 +65,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_num_cams }}</font></font>**
+**<font size='4'>{{ title_i_num_cams }}</font></font>**
 ::::
 
 :::::
@@ -84,7 +84,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_study_area_mult }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_study_area_mult }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -93,7 +93,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_dens_gradient }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_dens_gradient }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -102,7 +102,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_cam_strat_covar }}</font></font>**
+**<font size='4'>{{ title_i_cam_strat_covar }}</font></font>**
 :::
 ::::
 
@@ -113,7 +113,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_high_dens }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_high_dens }}</font></font>*
 :::
 ::::
 
@@ -131,7 +131,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_surv_dur_min_max }}</font></font>**
+**<font size='4'>{{ title_i_surv_dur_min_max }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -140,7 +140,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_asymptote }}</font></font>**
+**<font size='4'>{{ title_i_sp_asymptote }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -149,7 +149,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_study_season_num }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_study_season_num }}</font></font>*
 :::
 
 ::::
@@ -172,7 +172,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_obj_targ_sp }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_obj_targ_sp }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -181,7 +181,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_info }}</font></font>**
+**<font size='4'>{{ title_i_sp_info }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -190,7 +190,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_type }}</font></font>**
+**<font size='4'>{{ title_i_sp_type }}</font></font>**
 :::
 ::::
 
@@ -203,7 +203,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_dens_low }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_dens_low }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -212,7 +212,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_occ_restr }}</font></font>**
+**<font size='4'>{{ title_i_sp_occ_restr }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -221,7 +221,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_hr_size }}</font></font>**
+**<font size='4'>{{ title_i_sp_hr_size }}</font></font>**
 :::
 ::::
 
@@ -234,7 +234,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_size }}</font></font>**
+**<font size='4'>{{ title_i_sp_size }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -243,7 +243,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_rarity }}</font></font>**
+**<font size='4'>{{ title_i_sp_rarity }}</font></font>**
 :::
 
 
@@ -253,7 +253,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_sp_detprob_cat }}</font></font>**
+**<font size='4'>{{ title_i_sp_detprob_cat }}</font></font>**
 :::
 ::::
 
@@ -266,7 +266,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_behav }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_behav }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -275,7 +275,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_behav_season }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_behav_season }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -284,7 +284,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_marking_code }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_marking_code }}</font></font>*
 :::
 ::::
 
@@ -297,7 +297,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_marking_allsub }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_marking_allsub }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -306,7 +306,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_3ormore_cat_ids }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_3ormore_cat_ids }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -315,7 +315,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_auxillary_info }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_auxillary_info }}</font></font>*
 :::
 ::::
 
@@ -328,7 +328,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_aux_count_possible }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_aux_count_possible }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -337,7 +337,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_focalarea_calc }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_focalarea_calc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -346,7 +346,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_high_dens }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_high_dens }}</font></font>*
 :::
 ::::
 
@@ -359,7 +359,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_common_pop_lg }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_common_pop_lg }}</font></font>*
 :::
 
 ::::
@@ -375,7 +375,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_size_multi }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_size_multi }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -384,7 +384,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_behav_mult }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_behav_mult }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -393,7 +393,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_rarity_multi }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_rarity_multi }}</font></font>*
 :::
 ::::
 
@@ -406,7 +406,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_sp_detprob_cat_multi }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_sp_detprob_cat_multi }}</font></font>*
 :::
 
 ::::
@@ -425,7 +425,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_makemod_same }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_makemod_same }}</font></font>*
 :::
 
 :::{grid-item-card} 
@@ -434,7 +434,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_settings_mult }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_settings_mult }}</font></font>*
 :::
 
 :::{grid-item-card} 
@@ -443,7 +443,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_cam_protocol_ht_angle_dir }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_cam_protocol_ht_angle_dir }}</font></font>*
 :::
 ::::
 
@@ -456,7 +456,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_bait_lure }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_bait_lure }}</font></font>*
 :::
 
 :::{grid-item-card} 
@@ -465,7 +465,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_targ_feature }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_targ_feature }}</font></font>*
 :::
 
 ::::
@@ -482,7 +482,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ title_i_cam_independent }}</font></font>**
+**<font size='4'>{{ title_i_cam_independent }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -491,7 +491,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_multisamp_per_loc }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_multisamp_per_loc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -500,7 +500,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_modmixed }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_modmixed }}</font></font>*
 :::
 ::::
 
@@ -513,7 +513,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_num_det }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_num_det }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -522,7 +522,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_num_det_individ }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_num_det_individ }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -531,7 +531,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_num_recap }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_num_recap }}</font></font>*
 :::
 ::::
 
@@ -544,7 +544,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ title_i_overdispersion }}</font></font>* / *<font color='grey'><font size='3'>{{ title_i_zeroinflation }}</font></font>*
+*<font color='grey'><font size='4'>{{ title_i_overdispersion }}</font></font>* / *<font color='grey'><font size='4'>{{ title_i_zeroinflation }}</font></font>*
 
 :::
 ::::
@@ -565,7 +565,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_inventory }}</font></font>**
+**<font size='4'>{{ name_mod_inventory }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -574,7 +574,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_divers_rich }}</font></font>**
+**<font size='4'>{{ name_mod_divers_rich }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -583,7 +583,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_occupancy }}</font></font>**
+**<font size='4'>{{ name_mod_occupancy }}</font></font>**
 :::
 ::::
 
@@ -596,7 +596,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_rai }}</font></font>**
+**<font size='4'>{{ name_mod_rai }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -605,7 +605,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_cr_cmr }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_cr_cmr }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -614,7 +614,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_scr_secr }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_scr_secr }}</font></font>*
 :::
 
 ::::
@@ -628,7 +628,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_smr }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_smr }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -637,7 +637,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_sc }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_sc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -646,7 +646,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_catspim }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_catspim }}</font></font>*
 :::
 ::::
 
@@ -659,7 +659,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_2flankspim }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_2flankspim }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -668,7 +668,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_rem }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_rem }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -677,7 +677,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_rest }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_rest }}</font></font>*
 :::
 ::::
 
@@ -690,7 +690,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_tifc }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_tifc }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -699,7 +699,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_ds }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_ds }}</font></font>*
 :::
 :::{grid-item-card}
 :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_21_mod_tte.html
@@ -707,7 +707,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_tte }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_tte }}</font></font>*
 :::
 ::::
 
@@ -720,7 +720,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_ste }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_ste }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -729,7 +729,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='3'>{{ name_mod_is }}</font></font>*
+*<font color='grey'><font size='4'>{{ name_mod_is }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -738,7 +738,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='3'>{{ name_mod_behaviour }}</font></font>**
+**<font size='4'>{{ name_mod_behaviour }}</font></font>**
 :::
 
 ::::
