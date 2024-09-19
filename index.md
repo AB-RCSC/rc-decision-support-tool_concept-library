@@ -180,7 +180,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_sp_info }}</font></font>**
+*<font color='grey'><font size='4'>{{ title_i_sp_info }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -189,7 +189,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_sp_type }}</font></font>**
+*<font color='grey'><font size='4'>{{ title_i_sp_type }}</font></font>*
 :::
 ::::
 
@@ -211,7 +211,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_sp_occ_restr }}</font></font>**
+*<font color='grey'><font size='4'>{{ title_i_sp_occ_restr }}</font></font>*
 :::
 
 :::{grid-item-card}
@@ -601,7 +601,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>>{{ name_mod_rai }}</font></font>**
+*<font color='grey'><font size='4'>{{ name_mod_rai }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -690,7 +690,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-<!-- :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_19_mod_tifc.html -->
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_19_mod_tifc.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
