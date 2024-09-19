@@ -53,7 +53,7 @@ There are no specific guidelines for species inventories regarding camera featur
 Number of Cameras and Survey Duration
 For species with a high probability of detection (e.g., small home range), deployment times can be short (e.g., 1-2 weeks) and moving cameras between locations can allow more sites to be sampled ({{ ref_intext_wearn_gloverkapfer_2017 }}). In contrast, cameras should be deployed longer in a location (e.g., 2-6 weeks; {{ ref_intext_wearn_gloverkapfer_2017 }}) for species with low probability of detection.  
 
-When the target species biology is poorly known, a general rule of thumb is to use a minimum of 20 single cameras per location within the study area, spaced 1-2 km apart, for ideally a minimum of 30 days per camera location and 1,000 overall camera days ({{ ref_intext_colyn_et_al_2018 }}; {{ ref_intext_rovero_et_al_2013 }}; {{ ref_intext_rovero_tobler_2010 }}; {{ ref_intext_tobler_et_al_2008 }}; {{ ref_intext_wearn_et_al _2013 }}; {{ ref_intext_wearn_gloverkapfer_2017 }}). The more cameras deployed and/or locations sampled, generally the shorter the time needed to inventory an area. If fewer cameras are used, the cameras could be moved every 15 days, if feasible, to sample a larger area and avoid any biases associated with the camera locations ({{ ref_intext_rovero_et_al_2013 }}). In many areas, 1000-2000 camera days is sufficient to detect 60-70% of the species in the area ({{ ref_intext_ahumada_et_al_2011 }}; {{ ref_intext_tobler_et_al_2008 }}).  
+When the target species biology is poorly known, a general rule of thumb is to use a minimum of 20 single cameras per location within the study area, spaced 1-2 km apart, for ideally a minimum of 30 days per camera location and 1,000 overall camera days ({{ ref_intext_colyn_et_al_2018 }}; {{ ref_intext_rovero_et_al_2013 }}; {{ ref_intext_rovero_tobler_2010 }}; {{ ref_intext_tobler_et_al_2008 }}; {{ ref_intext_wearn_et_al_2013 }}; {{ ref_intext_wearn_gloverkapfer_2017 }}). The more cameras deployed and/or locations sampled, generally the shorter the time needed to inventory an area. If fewer cameras are used, the cameras could be moved every 15 days, if feasible, to sample a larger area and avoid any biases associated with the camera locations ({{ ref_intext_rovero_et_al_2013 }}). In many areas, 1000-2000 camera days is sufficient to detect 60-70% of the species in the area ({{ ref_intext_ahumada_et_al_2011 }}; {{ ref_intext_tobler_et_al_2008 }}).  
 
 **<font size="4"><span style="color:#2F5496"> Analysis</font></span>**
 
@@ -100,6 +100,8 @@ Check back in the future!
 | Program | Program “PRESENCE |  This package allow users to simulate the required sample size for a desired level of precision in species richness. | **Software**: <www.mbr-pwrc.usgs.gov/ software/presence.html>;<br>**Help forum**: <www.phidot.org> | {{ ref_bib_hines_2006 }} |
 | Program | GENPRES | This package allow users to simulate the required sample size for a desired level of precision in species richness. |  | {{ ref_bib_bailey_et_al_2007 }} |
 | R function | specaccum: Species Accumulation Curve | The specaccum function finds species accumulation curves or the number of species for a certain number of sampled sites or individuals. | <https://rdrr.io/rforge/vegan/man/specaccum.html> | {{ ref_bib_oksanen_et_al_2024 }} |
+| R package | PresenceAbsence: An R package for presence absence analysis | The PresenceAbsence package for R provides a set of functions useful when evaluating
+the results of presence-absence analysis. | <https://research.fs.usda.gov/treesearch/29484> | {{ ref_bib_freeman_gretchen_2008 }} |
 ::::::
 
 ::::::{tab-item} References
@@ -110,6 +112,8 @@ Check back in the future!
 {{ ref_bib_colwell_coddington_1994 }}
 
 {{ ref_bib_colwell_et_al_2004 }}
+
+{{ ref_bib_freeman_gretchen_2008 }}
 
 {{ ref_bib_rcsc_et_al_2024 }}
 

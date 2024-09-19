@@ -61,8 +61,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/03_03_mod_occupancy';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Time in front of the camera (TIFC)" href="03_19_mod_tifc.html" />
-    <link rel="prev" title="Species diversity &amp; richness" href="03_02_mod_divers_rich.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,6 +123,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
@@ -154,9 +154,6 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    
-    <li class="breadcrumb-item"><a href="../01_toc_pages/00_07_toc_rec_approach.html" class="nav-link">Modelling Approaches</a></li>
-    
     <li class="breadcrumb-item active" aria-current="page">Occupancy</li>
   </ul>
 </nav>
@@ -247,17 +244,19 @@ Advanced</label><div class="sd-tab-content docutils">
 <figure class="align-center">
 <img alt="../_images/clarke_et_al_2023_eqn_occupancy1.png" src="../_images/clarke_et_al_2023_eqn_occupancy1.png" />
 </figure>
-<p>where <em>𝜓</em> is the probability a site is occupied, <em>𝑥̂</em> is the estimated number of occupied sites (i.e., the count of sites where animals were detected, corrected for detection probability) and 𝑠 is the total number of sites surveyed (MacKenzie et al., 2017). Unlike simple measures of presence-absence, occupancy models account for imperfect detection (Sollmann et al., 2018). They attempt to differentiate between absence – animals truly not present – and nondetection – animals present but not detected – by repeatedly sampling sites over time. The central assumption of basic occupancy models is that repeated samples occur during a period in which the site is closed to changes in occupancy (i.e., occupancy status – present or absent – does not change during the sampling period). Thus if a species is detected during one of three sampling occasions, it is assumed that it was present during all three occasions but undetected during two.
+<p>where <em>𝜓</em> is the probability a site is occupied, <em>𝑥̂</em> is the estimated number of occupied sites (i.e., the count of sites where animals were detected, corrected for detection probability) and 𝑠 is the total number of sites surveyed (MacKenzie et al., 2017). Unlike simple measures of presence-absence, occupancy models account for imperfect detection (Sollmann et al., 2018). They attempt to differentiate between absence – animals truly not present – and nondetection – animals present but not detected – by repeatedly sampling sites over time. The central assumption of basic occupancy models is that repeated samples occur during a period in which the site is closed to changes in occupancy (i.e., occupancy status – present or absent – does not change during the sampling period). Thus if a species is detected during one of three sampling occasions, it is assumed that it was present during all three occasions but undetected during two. <br>
 <br>
-In theory, occupancy and abundance share a predictable relationship. As population size increases, the number of sites occupied by members of that population should also increase (until all sites are occupied); likewise, a decrease in population size should lead to a decrease in the number of sites used (Gaston et al., 2000; Royle &amp; Dorazio, 2008). This is called an occupancy-abundance relationship, and – because of it – occupancy can be used as an index of abundance.</p>
+In theory, occupancy and abundance share a predictable relationship. As population size increases, the number of sites occupied by members of that population should also increase (until all sites are occupied); likewise, a decrease in population size should lead to a decrease in the number of sites used (Gaston et al., 2000;  Royle &amp; Dorazio, 2008). This is called an occupancy-abundance relationship, and – because of it – occupancy can be used as an index of abundance.</p>
 <p>Advantages of occupancy as an index of abundance include:</p>
 <ul class="simple">
-<li><p>Occupancy studies may be easier to implement than some abundance or density estimators (Noon et al., 2012; Sollmann et al., 2018).</p></li>
-<li><p>Occupancy-abundance relationships appear to be robust to territoriality, group travelling behaviour and other biological traits (Steenweg et al., 2018).</p></li>
+<li><p>Occupancy studies may be easier to implement than some abundance or density estimators (Noon et al., 2012;  Sollmann et al., 2018).</p></li>
+<li><p>Occupancy-abundance relationships appear to be robust to territoriality, group travelling behaviour and other biological traits (
+Steenweg et al., 2018).</p></li>
 <li><p>Occupancy can be modelled as a function of site- and sampling-specific covariates to better understand which factors predict animal occurrence (Sollmann et al., 2018).</p></li>
 </ul>
-<p>However, many researchers have cautioned against the use occupancy as an index. As with relative abundance (RA; see above), there is no consistent, long-term relationship between occupancy and abundance (Efford &amp; Dawson, 2012). Occupancy can change with abundance, but also with survey duration, species home range size, animal movement, etc., muddling occupancy-abundance relationships and thus inferences about population size (Neilson et al., 2018; Steenweg et al., 2018). While occupancy is a powerful stand-alone metric, Sollmann (2018) says it should not be “misinterpreted” as an index of abundance</p>
-<p>Despite its widespread use, occupancy may be particularly problematic for camera trap studies due to the violation of the closure assumption. Burton et al. (2015) highlighted that many camera trap studies using occupancy do not explicitly define the “site,” although is often implicitly given as some larger area around a camera trap. Since camera trap studies typically target mammal species with relatively large home ranges, the site closure assumption is almost certainly violated in most cases. Many camera trappers therefore assume that “occupancy” is in fact “use” of a site (i.e., the site is not closed), and that detection probability also includes availability for detection. Mackenzie et al. (2017) suggested that estimates should be unbiased if movements in and out of a site are random, but this assumption is rarely tested. And where occupancy estimates have been tested using realistic mammal movements, they have generally performed poorly (Neilson et al., 2018; Stewart et al., 2018).</p>
+<p>However, many researchers have cautioned against the use occupancy as an index. As with relative abundance (RA; see above), there is no consistent, long-term relationship between occupancy and abundance (Efford &amp; Dawson, 2012). Occupancy can change with abundance, but also with survey duration, species home range size, animal movement, etc., muddling occupancy-abundance relationships and thus inferences about population size (Neilson et al., 2018;  Steenweg et al., 2018). While occupancy is a powerful stand-alone metric, Sollmann (2018) says it should not be “misinterpreted” as an index of abundance. <br>
+<br>
+Despite its widespread use, occupancy may be particularly problematic for camera trap studies due to the violation of the closure assumption. Burton et al. (2015) highlighted that many camera trap studies using occupancy do not explicitly define the “site,” although is often implicitly given as some larger area around a camera trap. Since camera trap studies typically target mammal species with relatively large home ranges, the site closure assumption is almost certainly violated in most cases. Many camera trappers therefore assume that “occupancy” is in fact “use” of a site (i.e., the site is not closed), and that detection probability also includes availability for detection. Mackenzie et al. (2017) suggested that estimates should be unbiased if movements in and out of a site are random, but this assumption is rarely tested. And where occupancy estimates have been tested using realistic mammal movements, they have generally performed poorly (Neilson et al., 2018;  Stewart et al., 2018).</p>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-2">
@@ -289,7 +288,7 @@ Southwell et al., 2019</div>
 <figure class="align-default">
 <img alt="../_images/southwell_et_al_2019_fig1_clipped.png" class="img-grid" src="../_images/southwell_et_al_2019_fig1_clipped.png" />
 </figure>
-<p class="sd-card-text"><strong>Southwell et al. (2019) - Fig. 1</strong> Structure of the spatially explicit power analysis framework for multiple species in dynamic landscapes.</p>
+<p class="sd-card-text"><strong>Southwell et al. (2019) - Fig. 1.</strong> Structure of the spatially explicit power analysis framework for multiple species in dynamic landscapes.</p>
 </div>
 </div>
 </div>
@@ -320,10 +319,6 @@ Chatterjee et al., 2021</div>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -337,7 +332,7 @@ Cove, 2020a</div>
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy Modeling Video 1 - Sampling Techniques for Mammals</p>
+<p class="sd-card-text">Occupancy Modeling Video 1 – Sampling Techniques for Mammals</p>
 </div>
 </div>
 </div>
@@ -354,10 +349,14 @@ Cove, 2020b</div>
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy Modeling Video 2 - Introductory Statistical Review</p>
+<p class="sd-card-text">Occupancy Modeling Video 2 – Introductory Statistical Review</p>
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -371,14 +370,10 @@ Cove, 2020c</div>
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy Modeling Video 3 - What are Occupancy Models and What are the Applications?</p>
+<p class="sd-card-text">Occupancy Modeling Video 3 – What are Occupancy Models and What are the Applications?</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -392,7 +387,7 @@ Cove, 2020d</div>
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
-<p class="sd-card-text">Occupancy Modeling Video 4 - How to Run and Interpret the Models in PRESENCE</p>
+<p class="sd-card-text">Occupancy Modeling Video 4 – How to Run and Interpret the Models in PRESENCE</p>
 </div>
 </div>
 </div>
@@ -413,6 +408,10 @@ Proteus, 2018</div>
 </div>
 </div>
 </div>
+</div>
+</div>
+<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
 <div class="sd-card-body docutils">
@@ -437,6 +436,11 @@ Proteus, 2019a</div>
 <label class="sd-tab-label" for="sd-tab-item-3">
 Shiny apps/Widgets</label><div class="sd-tab-content docutils">
 <p>Check back in the future!</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/00_coming_soon.png"><img alt="../_images/00_coming_soon.png" src="../_images/00_coming_soon.png" style="width: 300px;" /></a>
+</figure>
+<div class="docutils">
+</div>
 </div>
 <input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-4">
@@ -466,86 +470,74 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <tr class="row-even"><td class="text-left"><p>JAGS code/Tutorial</p></td>
 <td class="text-left"><p>So, you don’t have enough data to fit a dynamic occupancy model? An introduction to auto-logistic occupancy models; <br>auto-logistic-occupancy</p></td>
 <td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><a class="reference external" href="https://masonfidino.com/autologistic_occupancy_model/">https://masonfidino.com/autologistic_occupancy_model/</a>;<br><a class="github reference external" href="https://github.com/mfidino/auto-logistic-occupancy">mfidino/auto-logistic-occupancy</a></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
+<td class="text-left"><p><a class="reference external" href="https://masonfidino.com/autologistic_occupancy_model/">https://masonfidino.com/autologistic_occupancy_model/</a>;<br><a class="github reference external" href="https://github.com/mfidino/auto-logistic-occupancy">mfidino/auto-logistic-occupancy</a></p></td>
 <td class="text-left"><p></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>R package</p></td>
+<tr class="row-odd"><td class="text-left"><p>R package</p></td>
 <td class="text-left"><p>Package “autoOcc”</p></td>
 <td class="text-left"><p>An R package for fitting autologistic occupancy models</p></td>
 <td class="text-left"><p><a class="github reference external" href="https://github.com/mfidino/autoOcc">mfidino/autoOcc</a></p></td>
-<td class="text-left"><p></p></td>
+<td class="text-left"><p>Fidino, M. (2023) <em>autoOcc: An R package for fitting autologistic occupancy models.</em> R package version 0.1.1, <a class="github reference external" href="https://github.com/mfidino/autoOcc">mfidino/autoOcc</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>R code</p></td>
+<tr class="row-even"><td class="text-left"><p>R code</p></td>
 <td class="text-left"><p>mfidino/periodicity</p></td>
 <td class="text-left"><p>Using Fourier series to predict periodic patterns in dynamic occupancy models</p></td>
 <td class="text-left"><p><a class="github reference external" href="https://github.com/mfidino/periodicity">mfidino/periodicity</a></p></td>
 <td class="text-left"><p>Fidino, M., &amp; Magle, S. B. (2017). Using Fourier series to predict periodic patterns in dynamic occupancy models. <em>Ecosphere,8</em>(9) , e01944. <a class="reference external" href="https://doi.org/10.1002/ecs2.1944">https://doi.org/10.1002/ecs2.1944</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>R code/Tutorial</p></td>
+<tr class="row-odd"><td class="text-left"><p>R code/Tutorial</p></td>
 <td class="text-left"><p>“An Introduction to Camera Trap Data Management and Analysis in R &gt; Chapter 11 Occupancy”</p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p><a class="reference external" href="https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html">https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html</a></p></td>
 <td class="text-left"><p>WildCo Lab (2021c). <em>Chapter 11 Occupancy</em>. <a class="reference external" href="https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html">https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Program</p></td>
+<tr class="row-even"><td class="text-left"><p>Program</p></td>
 <td class="text-left"><p>Program “PRESENCE”</p></td>
 <td class="text-left"><p>“Relatively simple, but comprehensive, software dedicated to occupancy estimation. Linux version available. Can also be used for occupancy-based species richness estimation.” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
 <td class="text-left"><p><strong>Software</strong>: &lt;<a class="reference external" href="http://www.mbr-pwrc.usgs.gov/">www.mbr-pwrc.usgs.gov/</a> software/presence.html&gt;;<br><strong>Help forum</strong>: &lt;<a class="reference external" href="http://www.phidot.org">www.phidot.org</a>&gt;</p></td>
 <td class="text-left"><p>Hines, J. E. (2006). <em>PRESENCE - Software to estimate patch occupancy and related parameters.</em> <a class="reference external" href="https://www.mbr-pwrc.usgs.gov/software/presence.html">https://www.mbr-pwrc.usgs.gov/software/presence.html</a>.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>R package</p></td>
-<td class="text-left"><p>R package - “RPresence”</p></td>
+<tr class="row-odd"><td class="text-left"><p>R package</p></td>
+<td class="text-left"><p>Package “RPresence”</p></td>
 <td class="text-left"><p>“The R counterpart to Presence. Cross-platform (Windows, Mac and Linux).” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
 <td class="text-left"><p><a class="reference external" href="https://www.mbr-pwrc.usgs.gov/software/presence.shtml">https://www.mbr-pwrc.usgs.gov/software/presence.shtml</a></p></td>
-<td class="text-left"><p>ref_bib_resource9_ref_id</p></td>
+<td class="text-left"><p>Hines, J. E. (2006). <em>PRESENCE - Software to estimate patch occupancy and related parameters.</em> <a class="reference external" href="https://www.mbr-pwrc.usgs.gov/software/presence.html">https://www.mbr-pwrc.usgs.gov/software/presence.html</a>.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>R package</p></td>
+<tr class="row-even"><td class="text-left"><p>R package</p></td>
 <td class="text-left"><p>R package “unmarked”</p></td>
 <td class="text-left"><p>“Implements a wide variety of occupancy and count-based abundance models (the latter are mostly not appropriate for camera-trapping). Actively being developed and supported by a community of users. Cross-platform (Windows, Mac and Linux).” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
-<td class="text-left"><p><a class="reference external" href="https://cran.r-project.org/web/packages/unmarked/index.html">https://cran.r-project.org/web/packages/unmarked/index.html</a>;<br><a class="reference external" href="https://groups.google.com/g/unmarked">https://groups.google.com/g/unmarked</a></p></td>
-<td class="text-left"><p>ref_bib_resource10_ref_id</p></td>
+<td class="text-left"><p><a class="reference external" href="https://cran.r-project.org/web/packages/unmarked/index.html">https://cran.r-project.org/web/packages/unmarked/index.html</a>;<br><a class="reference external" href="https://groups.google.com/d/forum/unmarked,">https://groups.google.com/d/forum/unmarked,</a>;<br><a class="reference external" href="https://hmecology.github.io/unmarked">https://hmecology.github.io/unmarked</a>&gt;</p></td>
+<td class="text-left"><p>Fiske, I. &amp; Chandler, R. (2011). unmarked: An R Package for Fitting Hierarchical Models of Wildlife Occurrence and Abundance. <em>Journal of Statistical Software, 43</em> (10), 1–23. <a class="reference external" href="https://www.jstatsoft.org/v43/i10">https://www.jstatsoft.org/v43/i10</a>; Kellner, K. F., Smith, A. D., Royle, J. A., Kery, M, Belant, J. L., &amp; Chandler, R. B. (2023). The unmarked R package: Twelve years of advances in occurrence and abundance modelling in ecology. <em>Methods in Ecology and Evolution, 14</em> (6), 1408–1415. <a class="reference external" href="https://www.jstatsoft.org/v43/i10/">https://www.jstatsoft.org/v43/i10/</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>R code/Tutorial</p></td>
-<td class="text-left"><p>“Multi-season Occupancy Models”</p></td>
-<td class="text-left"><p>Mason Fidino’s GitHub</p></td>
+<tr class="row-odd"><td class="text-left"><p>R code/Tutorial</p></td>
+<td class="text-left"><p>Multi-season Occupancy Models</p></td>
+<td class="text-left"><p></p></td>
 <td class="text-left"><p><a class="reference external" href="https://darinjmcneil.weebly.com/multi-season-occupancy.html">https://darinjmcneil.weebly.com/multi-season-occupancy.html</a></p></td>
-<td class="text-left"><p>ref_bib_resource11_ref_id</p></td>
+<td class="text-left"><p>McNeil, D. (n.d.). Multi-season Occupancy Models. <a class="reference external" href="https://darinjmcneil.weebly.com/multi-season-occupancy.html">https://darinjmcneil.weebly.com/multi-season-occupancy.html</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>R package</p></td>
+<tr class="row-even"><td class="text-left"><p>R package</p></td>
 <td class="text-left"><p>Package “detect”</p></td>
 <td class="text-left"><p>R package for analyzing wildlife data with detection error</p></td>
 <td class="text-left"><p><a class="github reference external" href="https://github.com/psolymos/detect">psolymos/detect</a></p></td>
 <td class="text-left"><p>Solymos, P. (2023). <em>Package ‘detect’: Analyzing Wildlife Data with Detection Error.</em> R package version 0.4-6. <a class="reference external" href="https://cran.r-project.org/web/packages/detect/detect.pdf">https://cran.r-project.org/web/packages/detect/detect.pdf</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>resource13_type</p></td>
+<tr class="row-odd"><td class="text-left"><p>Spreadsheet</p></td>
 <td class="text-left"><p>OccPower.xlsx</p></td>
 <td class="text-left"><p>Spreadsheet to compute power to detect difference in 2 independent occupancy estimates using asymptotic approximations described in Guillera-Arroita et. al. (2012).</p></td>
 <td class="text-left"><p><a class="reference internal" href="#./00_downloads/OccPower.xlsx"><span class="xref myst">Download the XLS</span></a></p></td>
 <td class="text-left"><p>Guillera-Arroita, G., &amp; Lahoz-Monfort, J. J. (2012). Designing studies to detect differences in species occupancy: Power analysis under imperfect detection. <em>Methods in Ecology and Evolution, 3</em>(5), 860–869. <a class="reference external" href="https://doi.org/10.1111/j.2041-210X.2012.00225.x">https://doi.org/10.1111/j.2041-210X.2012.00225.x</a></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Tutorial</p></td>
+<tr class="row-even"><td class="text-left"><p>Tutorial</p></td>
 <td class="text-left"><p>occupancyTuts: Occupancy modelling tutorials with RPresence</p></td>
 <td class="text-left"><p>Occupancy modelling tutorials with RPresence</p></td>
 <td class="text-left"><p><a class="reference external" href="https://doi.org/10.1111/2041-210X.14285">https://doi.org/10.1111/2041-210X.14285</a></p></td>
 <td class="text-left"><p>Donovan, T., Hines, J., &amp; MacKenzie, D. (2024). OCCUPANCYTUTS: Occupancy modelling tutorials with RPRESENCE. <em>Methods in Ecology and Evolution, 15</em>(3), 477–483. <a class="reference external" href="https://doi.org/10.1111/2041-210X.14285">https://doi.org/10.1111/2041-210X.14285</a></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>R code/Tutorial</p></td>
+<tr class="row-odd"><td class="text-left"><p>R code/Tutorial</p></td>
 <td class="text-left"><p>Implicit dynamics occupancy models in R</p></td>
-<td class="text-left"><p>Implicit dynamics occupancy models with the R package RPresence. These models estimate occupancy probability when it changes through time without estimating colonization and extinction parameters.<br></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>The code and sample data from this tutorial are available on GitHub; <a class="github reference external" href="https://github.com/jamesepaterson/occupancyworkshop">jamesepaterson/occupancyworkshop</a></p></td>
+<td class="text-left"><p>Implicit dynamics occupancy models with the R package RPresence. These models estimate occupancy probability when it changes through time without estimating colonization and extinction parameters.<br>The code and sample data from this tutorial are available on GitHub; &lt; <a class="github reference external" href="https://github.com/jamesepaterson/occupancyworkshop">jamesepaterson/occupancyworkshop</a>&gt;.</p></td>
 <td class="text-left"><p><a class="reference external" href="https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html">https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html</a></p></td>
 <td class="text-left"><p>Paterson, J. (2024). <em>Implicit dynamics occupancy models in R.</em> <a class="reference external" href="https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html">https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html</a></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -566,10 +558,16 @@ References</label><div class="sd-tab-content docutils">
 <p>Fidino, M. (2021b) <em>A gentle introduction to an integrated occupancy model that combines presence-only and detection/non-detection data, and how to fit it in JAGS</em> <a class="reference external" href="https://masonfidino.com/bayesian_integrated_model">https://masonfidino.com/bayesian_integrated_model</a></p>
 <p>Fidino, M. (2021c) <em>integrated-occupancy-models</em> <a class="github reference external" href="https://github.com/mfidino/integrated-occupancy-model">mfidino/integrated-occupancy-model</a></p>
 <p>Fidino, M. (2021e) <em>auto-logistic-occupancy.</em> <a class="github reference external" href="https://github.com/mfidino/auto-logistic-occupancy">mfidino/auto-logistic-occupancy</a></p>
+<p>Fidino, M. (2023) <em>autoOcc: An R package for fitting autologistic occupancy models.</em> R package version 0.1.1, <a class="github reference external" href="https://github.com/mfidino/autoOcc">mfidino/autoOcc</a></p>
 <p>Fidino, M., &amp; Magle, S. B. (2017). Using Fourier series to predict periodic patterns in dynamic occupancy models. <em>Ecosphere,8</em>(9) , e01944. <a class="reference external" href="https://doi.org/10.1002/ecs2.1944">https://doi.org/10.1002/ecs2.1944</a></p>
+<p>Kellner, K. F., Smith, A. D., Royle, J. A., Kery, M, Belant, J. L., &amp; Chandler, R. B. (2023). The unmarked R package: Twelve years of advances in occurrence and abundance modelling in ecology. <em>Methods in Ecology and Evolution, 14</em> (6), 1408–1415. <a class="reference external" href="https://www.jstatsoft.org/v43/i10/">https://www.jstatsoft.org/v43/i10/</a></p>
 <p>Gaston, K. J., Blackburn, T. M., Greenwood, J. J. D., Gregory, R. D., Quinn, R. M., &amp; Lawton, J. H. (2000). Abundance-Occupancy Relationships. <em>The Journal of Applied Ecology, 37</em>(s1), 39–59. <a class="reference external" href="https://doi.org/10.1046/j.1365-2664.2000.00485.x">https://doi.org/10.1046/j.1365-2664.2000.00485.x</a></p>
 <p>Gimenez, O. (2023, May 16). <em>Workshop on estimating (wolf) occupancy with R</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=rpjVrFI_dr8">https://www.youtube.com/watch?v=rpjVrFI_dr8</a></p>
+<p>Guillera-Arroita, G., &amp; Lahoz-Monfort, J. J. (2012). Designing studies to detect differences in species occupancy: Power analysis under imperfect detection. <em>Methods in Ecology and Evolution, 3</em>(5), 860–869. <a class="reference external" href="https://doi.org/10.1111/j.2041-210X.2012.00225.x">https://doi.org/10.1111/j.2041-210X.2012.00225.x</a></p>
+<p>Hines, J. E. (2006). <em>PRESENCE - Software to estimate patch occupancy and related parameters.</em> <a class="reference external" href="https://www.mbr-pwrc.usgs.gov/software/presence.html">https://www.mbr-pwrc.usgs.gov/software/presence.html</a>.</p>
+<p>Fiske, I. &amp; Chandler, R. (2011). unmarked: An R Package for Fitting Hierarchical Models of Wildlife Occurrence and Abundance. <em>Journal of Statistical Software, 43</em> (10), 1–23. <a class="reference external" href="https://www.jstatsoft.org/v43/i10">https://www.jstatsoft.org/v43/i10</a></p>
 <p>MacKenzie, D. I., Nichols, J. D., Royle, J. A., Pollock, K. H., Bailey, L. L., &amp; Hines, J. E. (2017). <em>Occupancy Estimation and Modeling: Inferring Patterns and Dynamics of Species Occurrence</em>. 2nd ed. Academic Press, San Diego. <a class="reference external" href="https://www.sciencedirect.com/book/9780124071971/occupancy-estimation-and-modeling">https://www.sciencedirect.com/book/9780124071971/occupancy-estimation-and-modeling</a>.</p>
+<p>McNeil, D. (n.d.). Multi-season Occupancy Models. <a class="reference external" href="https://darinjmcneil.weebly.com/multi-season-occupancy.html">https://darinjmcneil.weebly.com/multi-season-occupancy.html</a></p>
 <p>Murray, M. H., Fidino, M., Lehrer, E. W., Simonis, J. L., &amp; Magle, S. B. (2021). A multi-state occupancy model to non-invasively monitor visible signs of wildlife health with camera traps that accounts for image quality. <em>Journal of Animal Ecology, 90</em>(8), 1973–1984. <a class="reference external" href="https://doi.org/10.1111/1365-2656.13515">https://doi.org/10.1111/1365-2656.13515</a></p>
 <p>Neilson, E. W., Avgar, T., Burton, A. C., Broadley, K., &amp; Boutin, S. (2018). Animal movement affects interpretation of occupancy models from camera‐trap Surveys of unmarked animals. <em>Ecosphere, 9</em>(1). <a class="reference external" href="https://doi.org/10.1002/ecs2.2092">https://doi.org/10.1002/ecs2.2092</a></p>
 <p>Noon, B. R., Bailey, L. L., Sisk, T. D., &amp; McKelvey, K. S. (2012). Efficient Species-Level Monitoring at the Landscape Scale. <em>Conservation Biology, 26</em>(3), 432–41. <a class="reference external" href="https://doi.org/10.1111/j.1523-1739.2012.01855.x.">https://doi.org/10.1111/j.1523-1739.2012.01855.x.</a></p>
@@ -583,6 +581,8 @@ References</label><div class="sd-tab-content docutils">
 <p>Southwell, D. M., Einoder, L. D., Lahoz‐Monfort, J. J., Fisher, A., Gillespie, G. R., &amp; Wintle, B. A. (2019). Spatially explicit power analysis for detecting occupancy trends for multiple species. <em>Ecological Applications, 29</em>, e01950. <a class="reference external" href="https://doi.org/10.1002/eap.1950">https://doi.org/10.1002/eap.1950</a></p>
 <p>Steenweg, R., Hebblewhite, M., Whittington, J., Lukacs, P., &amp; McKelvey, K. (2018). Sampling scales define occupancy and underlying occupancy–abundance relationships in animals. <em>Ecology</em>, <em>99</em>(1), 172–183. <a class="reference external" href="https://doi.org/10.1002/ecy.2054">https://doi.org/10.1002/ecy.2054</a></p>
 <p>Stewart, F. E. C., Fisher, J. T., Burton, A. C., &amp; Volpe, J. P. (2018). Species occurrence data reflect the magnitude of animal movements better than the proximity of animal space use. <em>Ecosphere, 9</em>(2), e02112. <a class="reference external" href="https://doi.org/10.1002/ecs2.2112">https://doi.org/10.1002/ecs2.2112</a></p>
+<p>weecology (2020, Oct 30). <em>Introduction to Species Distribution Modeling Using R.</em> [Video]. YouTube. <a class="reference external" href="https://www.youtube.com/watch?v=0VObf2rMrI8">https://www.youtube.com/watch?v=0VObf2rMrI8</a></p>
+<p>WildCo Lab (2021c). <em>Chapter 11 Occupancy</em>. <a class="reference external" href="https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html">https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/occupancy.html</a></p>
 </div>
 </div>
 </section>

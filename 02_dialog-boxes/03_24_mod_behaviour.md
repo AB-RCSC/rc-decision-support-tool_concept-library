@@ -41,8 +41,8 @@ editor_options:
 :::::::{tab-set}
 
 ::::::{tab-item} Overview
-
 **{{ term_mod_behaviour }}**: {{ term_def_mod_behaviour }}
+This section will be available soon!
 
 ```{figure} ../03_images/03_image_files/00_coming_soon.png
 :width: 300px
@@ -51,6 +51,8 @@ editor_options:
 ::::::
 
 ::::::{tab-item} Advanced
+This section will be available soon!
+
 ```{figure} ../03_images/03_image_files/00_coming_soon.png
 :width: 300px
 :align: center
@@ -79,7 +81,7 @@ editor_options:
 ```
 **Caravaggi et al. (2020) - Fig 1.** Examples of mammals detecting camera traps and/or olfactory cues associated with camera traps.
 
-:::dropdown{
+:::{dropdown}
 (a) Chimpanzee, *Pan troglodytes*; (b) African elephant, *Loxodonta africana*; (c) sitatunga, *Tragelaphus spekii*; (d) moose, *Alces alces*; (e) Eurasian lynx, *Lynx lynx*; (f) polar bear, *Ursus maritimus*; (g) roe deer, *Capreolus capreolus*; (h) African leopard, *Panthera pardus*; (i) mountain gorilla, *Gorilla beringei*; (j) red fox, *Vulpes vulpes*; (k) wolverine, *Gulo gulo*; (l) grizzly bear, *Ursus arctos*; (m) spotted hyena, *Crocuta crocuta*; (n) red deer, *Cervus elaphus*; (o) grey wolf, *Canis lupus*. Images provided by Ammie K. Kalan (a–c,i), T. R. H. (d,e), D. R. (f,o), S. G. (g,n), A. C. (h,j), J. T. F. (k,l), A. G. (m). Visit <https://doi.org/10.6084/m9.figshare.c.4593902.v1> for selected source video.
 :::
 ::::
@@ -87,7 +89,6 @@ editor_options:
 :::::
 
 ::::::
-
 
 ::::::{tab-item} Shiny apps/Widgets
 :::::{card}

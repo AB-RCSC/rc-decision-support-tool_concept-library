@@ -38,7 +38,7 @@ It may not always be possible to address biases of confounding variables in the 
 ::::::
 
 ::::::{tab-item} References
-{{ ref_bib_esteveo _et_al_2017 }}
+{{ ref_bib_esteveo_et_al_2017 }}
 
 {{ ref_bib_gilbert_et_al_2020 }}
 

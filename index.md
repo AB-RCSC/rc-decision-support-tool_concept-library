@@ -28,16 +28,15 @@ editor_options:
     }
 }
 </style>
-(toc_concept_lib)=
+(toc1_concept_lib)=
 # Remote Camera Decision Support Tool - Concept Library
-
 <!-- 
 conda activate rclib
 cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
 jupyter-book build ./
 -->
 
-(toc_objective_resources)=
+(objectives-resources)=
 ## Objectives & Resources
 :::::{grid} 3
 :gutter: 3
@@ -72,7 +71,7 @@ jupyter-book build ./
 
 ***
 
-(toc_study_area_site_selection_constraints)=
+(study-area-site-selection-constraints)=
 ## Study area & Site selection constraints
 
 ::::{grid} 3
@@ -119,7 +118,7 @@ jupyter-book build ./
 
 ***
 
-(toc_duration_timing)=
+(duration-timing)=
 ## Duration & Timing
 
 ::::{grid} 3
@@ -156,10 +155,10 @@ jupyter-book build ./
 
 ***
 
-(toc_target_species)=
+(target-species)=
 ## Target species
 
-(toc_target_species_single)=
+(target-species-single)=
 ### Target species (single)
 <br>
 
@@ -364,7 +363,9 @@ jupyter-book build ./
 
 ::::
 
-(toc_target_species_multiple)=
+***
+
+(target-species-multiple)=
 ### Target species (multiple)
 <br>
 
@@ -413,7 +414,7 @@ jupyter-book build ./
 
 ***
 
-(toc_equipment_deployment)=
+(equipment-deployment)=
 ## Equipment & Deployment
 
 ::::{grid} 3
@@ -470,7 +471,9 @@ jupyter-book build ./
 
 ::::
 
-(toc_data_analysis)=
+***
+
+(data-analysis)=
 ## Data & Analysis
 
 ::::{grid} 3
@@ -549,10 +552,12 @@ jupyter-book build ./
 :::
 ::::
 
-(toc_recommendations)=
+***
+
+(recommendations)=
 ## Recommendations
 
-(toc_recommendations_modelling_approach)=
+(modelling-approaches)=
 ### Modelling Approaches
 <br>
 
@@ -596,7 +601,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ name_mod_rai }}</font></font>**
+*<font color='grey'><font size='4'>>{{ name_mod_rai }}</font></font>**
 :::
 
 :::{grid-item-card}
@@ -685,7 +690,7 @@ jupyter-book build ./
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_19_mod_tifc.html
+<!-- :link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_19_mod_tifc.html -->
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -738,7 +743,9 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ name_mod_behaviour }}</font></font>**
+*<font color='grey'><font size='4'>{{ name_mod_behaviour }}</font></font>**
 :::
 
 ::::
+
+***

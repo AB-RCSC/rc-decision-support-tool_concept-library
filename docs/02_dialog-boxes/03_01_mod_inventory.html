@@ -31,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=fcd2f693" />
@@ -61,8 +61,6 @@
     <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/03_01_mod_inventory';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Species diversity &amp; richness" href="03_02_mod_divers_rich.html" />
-    <link rel="prev" title="Modelling Approaches" href="../01_toc_pages/00_07_toc_rec_approach.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,6 +123,8 @@
       
       
       
+        
+      
       <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
@@ -154,9 +154,6 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    
-    <li class="breadcrumb-item"><a href="../01_toc_pages/00_07_toc_rec_approach.html" class="nav-link">Modelling Approaches</a></li>
-    
     <li class="breadcrumb-item active" aria-current="page">Species inventory</li>
   </ul>
 </nav>
@@ -231,7 +228,7 @@ Species inventories are used to determine what species are present in an area du
 <p>There are no specific guidelines for species inventories regarding camera features or deployment (e.g., number of cameras, camera days per location etc.). However, a camera model with a white flash, high sensitivity, large detection zone, and fast trigger speed may improve species detection (Rovero et al., 2013; Wearn &amp; Glover-Kapfer, 2017).</p>
 <p>Number of Cameras and Survey Duration
 For species with a high probability of detection (e.g., small home range), deployment times can be short (e.g., 1-2 weeks) and moving cameras between locations can allow more sites to be sampled (Wearn &amp; Glover-Kapfer, 2017). In contrast, cameras should be deployed longer in a location (e.g., 2-6 weeks; Wearn &amp; Glover-Kapfer, 2017) for species with low probability of detection.</p>
-<p>When the target species biology is poorly known, a general rule of thumb is to use a minimum of 20 single cameras per location within the study area, spaced 1-2 km apart, for ideally a minimum of 30 days per camera location and 1,000 overall camera days (Colyn et al., 2018; Rovero et al., 2013; Rovero &amp; Tobler, 2010; Tobler et al., 2008; ; Wearn &amp; Glover-Kapfer, 2017). The more cameras deployed and/or locations sampled, generally the shorter the time needed to inventory an area. If fewer cameras are used, the cameras could be moved every 15 days, if feasible, to sample a larger area and avoid any biases associated with the camera locations (Rovero et al., 2013). In many areas, 1000-2000 camera days is sufficient to detect 60-70% of the species in the area (Ahumada et al., 2011; Tobler et al., 2008).</p>
+<p>When the target species biology is poorly known, a general rule of thumb is to use a minimum of 20 single cameras per location within the study area, spaced 1-2 km apart, for ideally a minimum of 30 days per camera location and 1,000 overall camera days (Colyn et al., 2018; Rovero et al., 2013; Rovero &amp; Tobler, 2010; Tobler et al., 2008; Wearn et al., 2013; Wearn &amp; Glover-Kapfer, 2017). The more cameras deployed and/or locations sampled, generally the shorter the time needed to inventory an area. If fewer cameras are used, the cameras could be moved every 15 days, if feasible, to sample a larger area and avoid any biases associated with the camera locations (Rovero et al., 2013). In many areas, 1000-2000 camera days is sufficient to detect 60-70% of the species in the area (Ahumada et al., 2011; Tobler et al., 2008).</p>
 <p><strong><font size="4"><span style="color:#2F5496"> Analysis</font></span></strong></p>
 <p>Caution should be exercised in comparing the results of species inventories from different times of year within the same study area, or between study areas. The amount of sampling effort will need to be accounted for when examining any results.</p>
 </div>
@@ -308,6 +305,18 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <td class="text-left"><p>The specaccum function finds species accumulation curves or the number of species for a certain number of sampled sites or individuals.</p></td>
 <td class="text-left"><p><a class="reference external" href="https://rdrr.io/rforge/vegan/man/specaccum.html">https://rdrr.io/rforge/vegan/man/specaccum.html</a></p></td>
 <td class="text-left"><p>Oksanen, J., Simpson, G. L., Blanchet, F. G., Kindt, R., Legendre, P., Minchin, P. R., O’Hara, R. B., Solymos, P., Stevens, M. H. H., Szoecs, E., Wagner, H., Barbour, M., Bedward, M., Bolker, B., Borcard, D., Carvalho, G., Chirico, M., De Caceres, M., Durand, S., … Weedon, J. (2024). <em>vegan: Community Ecology Package</em>. R package Version 2.6-6.1. &lt;<a class="reference external" href="https://doi.org/10.32614/CRAN.package.vegan">https://doi.org/10.32614/CRAN.package.vegan</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>R package</p></td>
+<td class="text-left"><p>PresenceAbsence: An R package for presence absence analysis</p></td>
+<td class="text-left"><p>The PresenceAbsence package for R provides a set of functions useful when evaluating</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>the results of presence-absence analysis.</p></td>
+<td class="text-left"><p><a class="reference external" href="https://research.fs.usda.gov/treesearch/29484">https://research.fs.usda.gov/treesearch/29484</a></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>

@@ -25,9 +25,9 @@ Dont have information on home range size? Check out the “Shiny Apps/Widgets”
 ::::::{tab-item} Overview
 **<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
 
-Many aspect of site selection and study duration are often linked to the home range size of the [Target Species](#target_species); this is because many [modelling approaches](#mods_modelling_approach) (e.g. [occupancy models](#mods_occupancy) [{ ref_intext_mackenzie_et_al_2004 }}] assume “site closure” (i.e., that there is no change in state (e.g. species presence/ absence, immigration/ emigration, births/deaths) during the [survey](#survey) period ({{ ref_intext_mackenzie_et_al_2004 }}). For some approaches, violation of the site closure [assumption](#mods_modelling_assumption) can result in an underestimate of [detection probabilities](#detection_probability) and, in turn, over-estimate [density](#density) (e.g., with spatial recapture models) or result in simply averaging detections over the sampling period (e.g., [REM](#mods_rem) [{{ ref_intext_rowcliffe_et_al_2008 }}, 2013], [REST](#mods_rest) [{{ ref_intext_nakashima_et_al_2018 }}] models). To meet the “site closure” [assumption](#mods_modelling_assumption), the study design might include spacing cameras far enough apart that the same individual is not detected at multiple sites (e.g., larger than the species' home range size); this is often referred to as “independent camera locations”. 
+Many aspect of site selection and study duration are often linked to the home range size of the [Target Species](#target_species); this is because many [modelling approaches](#mods_modelling_approach) (e.g. [occupancy models](#mods_occupancy) [{{ ref_intext_mackenzie_et_al_2004 }}] assume “site closure” (i.e., that there is no change in state (e.g. species presence/ absence, immigration/ emigration, births/deaths) during the [survey](#survey) period ({{ ref_intext_mackenzie_et_al_2004 }}). For some approaches, violation of the site closure [assumption](#mods_modelling_assumption) can result in an underestimate of [detection probabilities](#detection_probability) and, in turn, over-estimate [density](#density) (e.g., with spatial recapture models) or result in simply averaging detections over the sampling period (e.g., [REM](#mods_rem) [{{ ref_intext_rowcliffe_et_al_2008 }}; {{ ref_intext_rowcliffe_et_al_2023 }}], [REST](#mods_rest) [{{ ref_intext_nakashima_et_al_2018 }}] models). To meet the “site closure” [assumption](#mods_modelling_assumption), the study design might include spacing cameras far enough apart that the same individual is not detected at multiple sites (e.g., larger than the species' home range size); this is often referred to as “independent camera locations”. 
 
-The [survey](#survey) duration must also be short enough that the probability of [occupancy](#occupancy) does not change (i.e., not confounded by other processes, e.g., by changes in the population) (O'Connell & Bailey, 2011). 
+The [survey](#survey) duration must also be short enough that the probability of [occupancy](#occupancy) does not change (i.e., not confounded by other processes, e.g., by changes in the population) ({{ ref_intext_oconnell_et_al_2011 }}). 
 :::{note}
 Home range size information should, ideally, be chosen to reflect the conditions of your study (as closely as possible). For example, using data on home range size from a study that only reported home range size for one season (e.g., summer home range size) might bias placement if your study aims to evaluate occupancy over the entire year of a species whose movement highly varies between seasons (e.g., moves more in summer).
 :::
@@ -53,10 +53,10 @@ Home range size information should, ideally, be chosen to reflect the conditions
 ::::::{tab-item} Shiny apps/Widgets
 
 :::::{card}
-A R Shiny widget created for the RC Decision Support Tool (RCSC, 2024b) to lookup information on species home range size / body size; information pulled directly from the following sources:
+A R Shiny app created for the RC Decision Support Tool to lookup information on species home range size / body size; information pulled directly from the following sources:
 - Burton et al. (2015) supplementary material “S2. Average body mass and home range size for a sample of species and studies among the reviewed set of camera trap publications”
-- PanTHERIA database (Jones et al., 2009) “a species-level database of life history, ecology,and geography of extant and recently extinct mammals
-- HomeRange: A global database of mammalian home ranges (Broekman et al., 2022)
+- PanTHERIA database ({{ ref_intext_jones_et_al_2009 }}) “a species-level database of life history, ecology,and geography of extant and recently extinct mammals
+- HomeRange: A global database of mammalian home ranges ({{ ref_intext_broekman_et_al_2022 }})
 
 <iframe 
     width="100%"
@@ -84,6 +84,16 @@ A R Shiny widget created for the RC Decision Support Tool (RCSC, 2024b) to looku
 {{ ref_bib_burton_et_al_2015 }}
 
 {{ ref_bib_jones_et_al_2009 }}
+
+{{ ref_bib_mackenzie_et_al_2004 }}
+
+{{ ref_bib_nakashima_et_al_2018 }}
+
+{{ ref_bib_oconnell_et_al_2011 }}
+
+{{ ref_bib_rowcliffe_et_al_2008 }}
+
+{{ ref_bib_rowcliffe_et_al_2013 }}
 ::::::
 
 :::::::
