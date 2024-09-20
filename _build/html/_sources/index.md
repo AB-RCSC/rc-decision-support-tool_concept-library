@@ -35,6 +35,9 @@ conda activate rclib
 cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
 jupyter-book build ./
 -->
+:::{note}
+Items in grey/italics are not yet available.
+:::
 
 (objectives-resources)=
 ## Objectives & Resources
@@ -130,7 +133,7 @@ jupyter-book build ./
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_surv_dur_min_max }}</font></font>**
+*<font color='grey'><font size='4'>{{ title_i_surv_dur_min_max }}</font></font>*
 :::
 
 :::{grid-item-card}
