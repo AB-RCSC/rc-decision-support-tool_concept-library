@@ -53,7 +53,125 @@ Definitions for each option are as follows (with a few additional notes):
 
 ::::::
 
-::::::{tab-item} Advanced
+::::::{tab-item} Overview 2
+## A few definitions
+Definitions for each option are as follows (with a few additional notes):
+:::::{card}
+### **{{ name_mod_divers_rich }}**
+
+:::{note}
+This tool currently provides one set of recommendations for **{{ name_mod_divers_rich }}**; we hope to expand this in the future to provide recommendations more fine-tuned to Richness vs. Diversity as well as the as multiple “levels” described below. 
+:::
+
+**Richness** ***vs*** **Diversity**
+
+::::{grid} 2
+:gutter: 1
+:padding: 0
+:margin: 0
+
+:::{grid-item}
+**{{ term_mod_divers_rich_rich }}**
+
+{{ term_def_mod_divers_rich_rich }}
+:::
+
+:::{grid-item}
+**{{ term_mod_divers_rich_divers }}**
+
+{{ term_def_mod_divers_rich_divers }}
+:::
+
+::::
+
+```{figure} ../03_images/03_image_files/pyron_2010_fig1_clipped.png
+:align: center
+:scale: 60%
+```
+**Pyron (2010) – Fig. 1**: Species evenness and species richness for animalcule communities. Both communities contain five species of animalcules. Species richness is the same. The community on the left is dominated by one of the species. The community on the right has equal proportions of each species. Evenness is higher when species are present in similar proportions. Thus the community on the left has higher species diversity, because evenness is higher. 
+
+Note that there are multiple “levels” to Species diversity & richness, these include:
+
+- **{{ term_mod_divers_rich_alpha }}**: {{ term_def_mod_divers_rich_alpha }}
+
+- **{{ term_mod_divers_rich_beta }}**: {{ term_def_mod_divers_rich_beta }}
+
+- **{{ term_mod_divers_rich_gamma }}**: {{ term_def_mod_divers_rich_gamma }}
+
+:::::
+
+:::::{card}
+### **Presence/absence** ***vs.*** **Occupancy**
+
+::::{grid} 2
+:gutter: 1
+:padding: 0
+:margin: 0
+
+:::{grid-item}
+**{{ name_mod_inventory }}**
+
+{{ term_def_mod_inventory }}
+:::
+
+:::{grid-item}
+**{{ name_obj_occupancy }}**
+
+{{ name_def_obj_occupancy }}
+:::
+
+::::
+
+:::::
+
+:::::{card}
+### **Absolute abundance** ***vs.*** **Relative abundance** ***vs.*** **Density**
+
+::::{grid} 3
+:gutter: 1
+:padding: 0
+:margin: 0
+
+:::{grid-item}
+**{{ name_obj_abundance }}**
+
+{{ name_def_obj_abundance }}
+
+```{figure} ../03_images/03_image_files/dubey_nd_abundance_clipped.png
+:class: img_grid
+```
+:::
+
+:::{grid-item}
+**{{ name_obj_rel_abund }}**
+
+{{ name_def_obj_rel_abund }}
+
+```{figure} ../03_images/03_image_files/gilbert_et_al_2019_fig3_cliprai.png
+:class: img_grid
+```
+:::
+
+:::{grid-item}
+**{{ name_obj_density }}**
+
+{{ name_def_obj_density }}
+:::
+
+::::
+
+:::::
+:::::{card}
+**{{ name_obj_vital_rate }}**: {{ name_def_obj_vital_rate }}
+:::::
+:::::{card}
+**{{ name_obj_behaviour }}**: {{ name_def_obj_behaviour }}
+:::::
+
+::::::
+
+
+::::::{tab-item} {{ tab2 }}
 **<font size="4"><span style="color:#2F5496">Objective *vs.* State Variable</font></span>**
 
 One of the first choices you will make when designing your study, is what it is that you plan to measure (or your “state variable”; a formal measure that summarizes the state of a community or population at a particular time \[{{ ref_intext_wearn_gloverkapfer_2017 }}\]). Since this concept might be easy to confuse with [Survey Objective(s)](#survey_objectives) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:
