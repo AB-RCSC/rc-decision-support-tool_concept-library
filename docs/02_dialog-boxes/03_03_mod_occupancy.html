@@ -28,14 +28,14 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b76e3c8a" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=24a4c381" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/.ipynb_checkpoints/custom-checkpoint.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=dc1d04a3" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -137,33 +137,7 @@
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article d-print-none">
-<div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item">
-
-
-
-<nav aria-label="Breadcrumb" class="d-print-none">
-  <ul class="bd-breadcrumbs">
-    
-    <li class="breadcrumb-item breadcrumb-home">
-      <a href="../index.html" class="nav-link" aria-label="Home">
-        <i class="fa-solid fa-home"></i>
-      </a>
-    </li>
-    <li class="breadcrumb-item active" aria-current="page">Occupancy</li>
-  </ul>
-</nav>
-</div>
-      
-    </div>
-  
-  
-</div>
-</div>
+              <div class="bd-header-article d-print-none"></div>
               
               
               
@@ -184,10 +158,10 @@
 <div class="sd-card-title sd-font-weight-bold docutils">
 Assumptions</div>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="##occupancy"><span class="xref myst">Occupancy</span></a> is constant (MacKenzie et al., 2002) (abundance is constant) (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text"><a class="reference internal" href="##camera_location"><span class="xref myst">Camera locations</span></a> are independent (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">Detections are <a class="reference internal" href="##independent_detections"><span class="xref myst">independent</span></a> (MacKenzie et al., 2006)</p></li>
-<li><p class="sd-card-text">The probability of <a class="reference internal" href="##occupancy"><span class="xref myst">occupancy</span></a> and detection are constant across all <a class="reference internal" href="##camera_location"><span class="xref myst">camera locations</span></a> within a stratum or can be modelled using covariates (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">Occupancy</span></a> is constant (MacKenzie et al., 2002) (abundance is constant) (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#camera-location"><span class="std std-ref">Camera locations</span></a> are independent (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text">Detections are <a class="reference internal" href="09_glossary.html#independent-detections"><span class="std std-ref">independent</span></a> (MacKenzie et al., 2006)</p></li>
+<li><p class="sd-card-text">The probability of <a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> and detection are constant across all <a class="reference internal" href="09_glossary.html#camera-location"><span class="std std-ref">camera locations</span></a> within a stratum or can be modelled using covariates (MacKenzie et al., 2006)</p></li>
 <li><p class="sd-card-text">Species are not misidentified (MacKenzie et al., 2006)</p></li>
 </ul>
 </div>
@@ -203,7 +177,7 @@ Pros</div>
 <li><p class="sd-card-text">Only requires detection*/non-detection data for each site (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Relatively easy-to-use software exists for fitting models (PRESENCE, MARK, and the ‘unmarked’ R package) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 <li><p class="sd-card-text">Open models exist that allow for the estimation of site colonization and extinction rates (MacKenzie et al., 2006; Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Multi-species <a class="reference internal" href="##mods_occupancy"><span class="xref myst">occupancy models</span></a> (MacKenzie et al., 2002) allow the inclusion of interactions among species while controlling for <a class="reference internal" href="##imperfect_detection"><span class="xref myst">imperfect detection</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Multi-species <a class="reference internal" href="09_glossary.html#mods-occupancy"><span class="std std-ref">occupancy models</span></a> (MacKenzie et al., 2002) allow the inclusion of interactions among species while controlling for <a class="reference internal" href="09_glossary.html#imperfect-detection"><span class="std std-ref">imperfect detection</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 </ul>
 </div>
 </div>
@@ -214,8 +188,8 @@ Pros</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Cons</div>
 <ul class="simple">
-<li><p class="sd-card-text"><a class="reference internal" href="##occupancy"><span class="xref myst">Occupancy</span></a> (MacKenzie et al., 2002) only measures distribution; it may be a misleading indicator of changes in abundance (Wearn &amp; Glover-Kapfer, 2017)</p></li>
-<li><p class="sd-card-text">Interpretation*/communication of results may not be straightforward (if the scale of movement is much larger than the <a class="reference internal" href="##camera_spacing"><span class="xref myst">camera spacing</span></a> the results should be interpreted as ‘probability of use’ rather than <a class="reference internal" href="##occupancy"><span class="xref myst">occupancy</span></a>) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text"><a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">Occupancy</span></a> (MacKenzie et al., 2002) only measures distribution; it may be a misleading indicator of changes in abundance (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Interpretation*/communication of results may not be straightforward (if the scale of movement is much larger than the <a class="reference internal" href="09_glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a> the results should be interpreted as ‘probability of use’ rather than <a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">occupancy</span></a>) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
 </ul>
 </div>
 </div>
@@ -238,7 +212,7 @@ This section will be available soon! In the meantime, check out the information 
 Advanced</label><div class="sd-tab-content docutils">
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>This content was adapted from</strong>: The Density Handbook, “<a class="reference external" href="https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers">Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers</a>” (Clarke et al.. 2024)</p>
+<p><strong>This content was adapted from</strong>: The Density Handbook, “<a class="reference external" href="https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers">Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers</a>” (Clarke et al., 2024)</p>
 </div>
 <p>Occupancy models describe spatial patterns of animal occurrence (Sollmann et al., 2018) and have been proposed as a proxy for abundance (Noon et al., 2012). They ask: what proportion of a study area is inhabited by a population – that is, at how many camera sites do one or more individuals of a species occur (MacKenzie et al., 2017)? The basic equation for occupancy is: <br><br></p>
 <figure class="align-center">
@@ -325,8 +299,8 @@ Chatterjee et al., 2021</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Cove, 2020a</div>
 <iframe 
-    width="100%"
-    height="300"
+  width="100%"
+  height="300"
     src="https://www.youtube.com/embed/n21Ugw0lYcY?si=RUCD7WjcLPJdHR00"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -464,14 +438,14 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <tr class="row-odd"><td class="text-left"><p>JAGS/R code</p></td>
 <td class="text-left"><p>A gentle introduction to an integrated occupancy model that combines presence-only and detection/non-detection data, and how to fit it in JAGS; <br>integrated-occupancy-model”</p></td>
 <td class="text-left"><p></p></td>
-<td class="text-left"><p><a class="reference external" href="https://masonfidino.com/bayesian_integrated_model/">https://masonfidino.com/bayesian_integrated_model/</a>;<br><a class="github reference external" href="https://github.com/mfidino/integrated-occupancy-model">mfidino/integrated-occupancy-model</a></p></td>
-<td class="text-left"><p></p></td>
+<td class="text-left"><p><a class="reference external" href="https://masonfidino.com/bayesian_integrated_model">https://masonfidino.com/bayesian_integrated_model</a>;<br><a class="github reference external" href="https://github.com/mfidino/integrated-occupancy-model">mfidino/integrated-occupancy-model</a></p></td>
+<td class="text-left"><p>Fidino, M. (2021b) <em>A gentle introduction to an integrated occupancy model that combines presence-only and detection/non-detection data, and how to fit it in JAGS</em> <a class="reference external" href="https://masonfidino.com/bayesian_integrated_model">https://masonfidino.com/bayesian_integrated_model</a>;<br><br>Fidino, M. (2021c) <em>integrated-occupancy-models</em> <a class="github reference external" href="https://github.com/mfidino/integrated-occupancy-model">mfidino/integrated-occupancy-model</a></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>JAGS code/Tutorial</p></td>
 <td class="text-left"><p>So, you don’t have enough data to fit a dynamic occupancy model? An introduction to auto-logistic occupancy models; <br>auto-logistic-occupancy</p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p><a class="reference external" href="https://masonfidino.com/autologistic_occupancy_model/">https://masonfidino.com/autologistic_occupancy_model/</a>;<br><a class="github reference external" href="https://github.com/mfidino/auto-logistic-occupancy">mfidino/auto-logistic-occupancy</a></p></td>
-<td class="text-left"><p></p></td>
+<td class="text-left"><p>Fidino, M. (2021d) <em>So, you don’t have enough data to fit a dynamic occupancy model? An introduction to auto-logistic occupancy models.</em> <a class="reference external" href="https://masonfidino.com/autologistic_occupancy_model">https://masonfidino.com/autologistic_occupancy_model</a>;<br><br>Fidino, M. (2021e) <em>auto-logistic-occupancy.</em> <a class="github reference external" href="https://github.com/mfidino/auto-logistic-occupancy">mfidino/auto-logistic-occupancy</a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>R package</p></td>
 <td class="text-left"><p>Package “autoOcc”</p></td>
@@ -494,7 +468,7 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <tr class="row-even"><td class="text-left"><p>Program</p></td>
 <td class="text-left"><p>Program “PRESENCE”</p></td>
 <td class="text-left"><p>“Relatively simple, but comprehensive, software dedicated to occupancy estimation. Linux version available. Can also be used for occupancy-based species richness estimation.” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
-<td class="text-left"><p><strong>Software</strong>: &lt;<a class="reference external" href="http://www.mbr-pwrc.usgs.gov/">www.mbr-pwrc.usgs.gov/</a> software/presence.html&gt;;<br><strong>Help forum</strong>: &lt;<a class="reference external" href="http://www.phidot.org">www.phidot.org</a>&gt;</p></td>
+<td class="text-left"><p><strong>Software</strong>: &lt;<a class="reference external" href="http://www.mbr-pwrc.usgs.gov/software/presence.html">www.mbr-pwrc.usgs.gov/software/presence.html</a>&gt;;<br><strong>Help forum</strong>: &lt;<a class="reference external" href="http://www.phidot.org">www.phidot.org</a>&gt;</p></td>
 <td class="text-left"><p>Hines, J. E. (2006). <em>PRESENCE - Software to estimate patch occupancy and related parameters.</em> <a class="reference external" href="https://www.mbr-pwrc.usgs.gov/software/presence.html">https://www.mbr-pwrc.usgs.gov/software/presence.html</a>.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>R package</p></td>
@@ -506,8 +480,8 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <tr class="row-even"><td class="text-left"><p>R package</p></td>
 <td class="text-left"><p>R package “unmarked”</p></td>
 <td class="text-left"><p>“Implements a wide variety of occupancy and count-based abundance models (the latter are mostly not appropriate for camera-trapping). Actively being developed and supported by a community of users. Cross-platform (Windows, Mac and Linux).” (Wearn &amp; Glover-Kapfer, 2017)</p></td>
-<td class="text-left"><p><a class="reference external" href="https://cran.r-project.org/web/packages/unmarked/index.html">https://cran.r-project.org/web/packages/unmarked/index.html</a>;<br><a class="reference external" href="https://groups.google.com/d/forum/unmarked,">https://groups.google.com/d/forum/unmarked,</a>;<br><a class="reference external" href="https://hmecology.github.io/unmarked">https://hmecology.github.io/unmarked</a>&gt;</p></td>
-<td class="text-left"><p>Fiske, I. &amp; Chandler, R. (2011). unmarked: An R Package for Fitting Hierarchical Models of Wildlife Occurrence and Abundance. <em>Journal of Statistical Software, 43</em> (10), 1–23. <a class="reference external" href="https://www.jstatsoft.org/v43/i10">https://www.jstatsoft.org/v43/i10</a>; Kellner, K. F., Smith, A. D., Royle, J. A., Kery, M, Belant, J. L., &amp; Chandler, R. B. (2023). The unmarked R package: Twelve years of advances in occurrence and abundance modelling in ecology. <em>Methods in Ecology and Evolution, 14</em> (6), 1408–1415. <a class="reference external" href="https://www.jstatsoft.org/v43/i10/">https://www.jstatsoft.org/v43/i10/</a></p></td>
+<td class="text-left"><p><a class="reference external" href="https://cran.r-project.org/web/packages/unmarked/index.html">https://cran.r-project.org/web/packages/unmarked/index.html</a>;<br><a class="reference external" href="https://groups.google.com/d/forum/unmarked">https://groups.google.com/d/forum/unmarked</a>;<br><a class="reference external" href="https://hmecology.github.io/unmarked">https://hmecology.github.io/unmarked</a>&gt;</p></td>
+<td class="text-left"><p>Fiske, I. &amp; Chandler, R. (2011). unmarked: An R Package for Fitting Hierarchical Models of Wildlife Occurrence and Abundance. <em>Journal of Statistical Software, 43</em> (10), 1–23. <a class="reference external" href="https://www.jstatsoft.org/v43/i10">https://www.jstatsoft.org/v43/i10</a>;<br><br>Kellner, K. F., Smith, A. D., Royle, J. A., Kery, M, Belant, J. L., &amp; Chandler, R. B. (2023). The unmarked R package: Twelve years of advances in occurrence and abundance modelling in ecology. <em>Methods in Ecology and Evolution, 14</em> (6), 1408–1415. <a class="reference external" href="https://www.jstatsoft.org/v43/i10/">https://www.jstatsoft.org/v43/i10/</a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>R code/Tutorial</p></td>
 <td class="text-left"><p>Multi-season Occupancy Models</p></td>
@@ -524,7 +498,7 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 <tr class="row-odd"><td class="text-left"><p>Spreadsheet</p></td>
 <td class="text-left"><p>OccPower.xlsx</p></td>
 <td class="text-left"><p>Spreadsheet to compute power to detect difference in 2 independent occupancy estimates using asymptotic approximations described in Guillera-Arroita et. al. (2012).</p></td>
-<td class="text-left"><p><a class="reference internal" href="#./00_downloads/OccPower.xlsx"><span class="xref myst">Download the XLS</span></a></p></td>
+<td class="text-left"><p><a class="reference download internal" download="" href="../_downloads/f11d39dd9879beae2ce8774aecd6096e/OccPower.xlsx"><span class="xref download myst">Download the XLS</span></a></p></td>
 <td class="text-left"><p>Guillera-Arroita, G., &amp; Lahoz-Monfort, J. J. (2012). Designing studies to detect differences in species occupancy: Power analysis under imperfect detection. <em>Methods in Ecology and Evolution, 3</em>(5), 860–869. <a class="reference external" href="https://doi.org/10.1111/j.2041-210X.2012.00225.x">https://doi.org/10.1111/j.2041-210X.2012.00225.x</a></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Tutorial</p></td>
@@ -535,7 +509,7 @@ Analytical tools &amp; resources</label><div class="sd-tab-content docutils">
 </tr>
 <tr class="row-odd"><td class="text-left"><p>R code/Tutorial</p></td>
 <td class="text-left"><p>Implicit dynamics occupancy models in R</p></td>
-<td class="text-left"><p>Implicit dynamics occupancy models with the R package RPresence. These models estimate occupancy probability when it changes through time without estimating colonization and extinction parameters.<br>The code and sample data from this tutorial are available on GitHub; &lt; <a class="github reference external" href="https://github.com/jamesepaterson/occupancyworkshop">jamesepaterson/occupancyworkshop</a>&gt;.</p></td>
+<td class="text-left"><p>Implicit dynamics occupancy models with the R package RPresence. These models estimate occupancy probability when it changes through time without estimating colonization and extinction parameters.<br>The code and sample data from this tutorial are available on GitHub; <a class="github reference external" href="https://github.com/jamesepaterson/occupancyworkshop">jamesepaterson/occupancyworkshop</a></p></td>
 <td class="text-left"><p><a class="reference external" href="https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html">https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html</a></p></td>
 <td class="text-left"><p>Paterson, J. (2024). <em>Implicit dynamics occupancy models in R.</em> <a class="reference external" href="https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html">https://jamesepaterson.github.io/jamespatersonblog/2024-06-02_implicitdynamicsoccupancy.html</a></p></td>
 </tr>

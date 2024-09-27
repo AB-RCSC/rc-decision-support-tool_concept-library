@@ -16,7 +16,7 @@ editor_options:
 ---
 <style>
     .bd-page-width {
-    max-width: 85%;  /* default is 88rem */
+    max-width: 80%;  /* default is 88rem */
 }
     .bd-main .bd-content .bd-article-container {
     max-width: 100%;  /* default is 60em */
@@ -45,7 +45,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 ::::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_01_user_entry.html
 :img-background: ./03_images/01_ui/background_orangelight.png
 :padding: 1
 :text-align: center
@@ -58,7 +57,7 @@ Items in grey/italics are not yet available.
 :img-background: ./03_images/01_ui/background_orangelight.png
 :padding: 1
 :text-align: center
-**<font size='4'>{{ title_i_objective }}</font></font>**
+**<font size='4'>{{ title_i_objective }}</font>**
 ::::
 
 ::::{grid-item-card}
@@ -67,7 +66,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_num_cams }}</font></font>**
+**<font size='4'>{{ title_i_num_cams }}</font>**
 ::::
 
 :::::
@@ -81,7 +80,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_04_study_area_mult.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -90,7 +88,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_05_cam_dens_gradient.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -104,13 +101,12 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_cam_strat_covar }}</font></font>**
+**<font size='4'>{{ title_i_cam_strat_covar }}</font>**
 :::
 ::::
 
 ::::{grid} 3
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_07_cam_high_dens.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -128,7 +124,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_08_surv_dur_min_max.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -142,11 +137,10 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_sp_asymptote }}</font></font>**
+**<font size='4'>{{ title_i_sp_asymptote }}</font>**
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_11_study_season_num.html
 :img-background: ./03_images/01_ui/background_orange.png
 :padding: 1
 :text-align: center
@@ -169,7 +163,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_12_obj_targ_sp.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -178,7 +171,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_13_sp_info.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -187,7 +179,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_14_sp_type.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -200,7 +191,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_15_sp_dens_low.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -209,7 +199,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_16_sp_occ_restr.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -223,7 +212,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_sp_hr_size }}</font></font>**
+**<font size='4'>{{ title_i_sp_hr_size }}</font>**
 :::
 ::::
 
@@ -236,7 +225,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_sp_size }}</font></font>**
+**<font size='4'>{{ title_i_sp_size }}</font>**
 :::
 
 :::{grid-item-card}
@@ -245,7 +234,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_sp_rarity }}</font></font>**
+**<font size='4'>{{ title_i_sp_rarity }}</font>**
 :::
 
 
@@ -255,7 +244,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_sp_detprob_cat }}</font></font>**
+**<font size='4'>{{ title_i_sp_detprob_cat }}</font>**
 :::
 ::::
 
@@ -263,7 +252,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_21_sp_behav.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -272,7 +260,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_22_sp_behav_season.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -281,7 +268,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_23_marking_code.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -294,7 +280,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_24_marking_allsub.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -303,7 +288,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_25_3ormore_cat_ids.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -312,7 +296,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_26_auxillary_info.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -325,7 +308,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_27_aux_count_possible.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -334,7 +316,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_28_focalarea_calc.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -343,7 +324,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_29_cam_high_dens.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -356,7 +336,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_30_sp_common_pop_lg.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -374,7 +353,6 @@ Items in grey/italics are not yet available.
 
 ::::{grid} 3
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_31_sp_size_multi.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -383,7 +361,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_32_sp_behav__multi.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -392,7 +369,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_33_sp_rarity_multi.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -405,7 +381,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_36_sp_detprob_cat_multi.html
 :img-background: ./03_images/01_ui/background_purple.png
 :padding: 1
 :text-align: center
@@ -424,7 +399,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_39_cam_makemod_same.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -433,7 +407,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_40_cam_settings_mult.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -442,7 +415,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_41_cam_protocol_ht_angle_dir.html
 :img-background: ./03_images/01_ui/background_yellow2.png
 :padding: 1
 :text-align: center
@@ -488,7 +460,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ title_i_cam_independent }}</font></font>**
+**<font size='4'>{{ title_i_cam_independent }}</font>**
 :::
 
 :::{grid-item-card}
@@ -545,7 +517,7 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card} 
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_51_num_det_individ.html
+:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_55_zi_overdispersed.html
 :img-background: ./03_images/01_ui/background_blue2.png
 :padding: 1
 :text-align: center
@@ -573,7 +545,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ name_mod_inventory }}</font></font>**
+**<font size='4'>{{ name_mod_inventory }}</font>**
 :::
 
 :::{grid-item-card}
@@ -582,7 +554,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ name_mod_divers_rich }}</font></font>**
+**<font size='4'>{{ name_mod_divers_rich }}</font>**
 :::
 
 :::{grid-item-card}
@@ -591,7 +563,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-**<font size='4'>{{ name_mod_occupancy }}</font></font>**
+**<font size='4'>{{ name_mod_occupancy }}</font>**
 :::
 ::::
 
@@ -599,16 +571,14 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_04_mod_rai.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_rai }}</font></font>**
+*<font color='grey'><font size='4'>{{ name_mod_rai }}</font></font>*
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_11_mod_cr_cmr.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -617,7 +587,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_12_mod_scr_secr.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -631,7 +600,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_13_mod_smr.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -640,7 +608,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_14_mod_sc.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -649,7 +616,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_15_mod_catspim.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -662,7 +628,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_16_mod_2flankspim.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -671,7 +636,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_17_mod_rem.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -680,7 +644,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_18_mod_rest.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -693,7 +656,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_19_mod_tifc.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -702,7 +664,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_20_mod_ds.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -710,7 +671,6 @@ Items in grey/italics are not yet available.
 *<font color='grey'><font size='4'>{{ name_mod_ds }}</font></font>*
 :::
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_21_mod_tte.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -723,7 +683,6 @@ Items in grey/italics are not yet available.
 :gutter: 3
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_22_mod_ste.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -732,7 +691,6 @@ Items in grey/italics are not yet available.
 :::
 
 :::{grid-item-card}
-:link: https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/03_23_mod_is.html
 :img-background: ./03_images/01_ui/background_green.png
 :padding: 1
 :text-align: center
@@ -746,7 +704,7 @@ Items in grey/italics are not yet available.
 :padding: 1
 :text-align: center
 
-*<font color='grey'><font size='4'>{{ name_mod_behaviour }}</font></font>**
+*<font color='grey'><font size='4'>{{ name_mod_behaviour }}</font></font>*
 :::
 
 ::::

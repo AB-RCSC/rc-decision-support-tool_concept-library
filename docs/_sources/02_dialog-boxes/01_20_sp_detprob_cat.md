@@ -224,9 +224,8 @@ Probability of Detection: Eg 01
 
 ::::::{tab-item} Shiny apps/Widgets
 :::::{card}
-::::{dropdown} Probabilistic detection calculator (online application) 
-Online application used as an aid in sampling planning; calculates the probability of detecting disease (or other similar feature) with the given within-group prevalence and sample size for both finite and infinite group sizes. The detection means that at least one of the samples is detected positive. The sensitivity of the testing method can also be taken into account in the case of an imperfect test.<br>Additional information can be found here: <https://zenodo.org/records/13120206><br>
-({{ ref_intext_mikkela_2024 }})
+::::{dropdown} Probabilistic detection calculator ({{ ref_intext_mikkela_2024 }})
+Online application used as an aid in sampling planning; calculates the probability of detecting disease (or other similar feature) with the given within-group prevalence and sample size for both finite and infinite group sizes. The detection means that at least one of the samples is detected positive. The sensitivity of the testing method can also be taken into account in the case of an imperfect test.<br>Additional information can be found here: <https://zenodo.org/records/13120206>
 
 <iframe 
     width="100%"
@@ -239,9 +238,8 @@ Online application used as an aid in sampling planning; calculates the probabili
 
 ::::
 
-::::{dropdown} smsPOMDP
-A Shiny r app to solve the problem of when to stop managing  or surveying species under imperfect detection.<br>Additional information can be found here: <https://github.com/conservation-decisions/smsPOMDP> or <https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13501><br>
-({{ ref_intext_pascal_et_al_2020 }})
+::::{dropdown} smsPOMDP ({{ ref_intext_pascal_et_al_2020 }})
+A Shiny r app to solve the problem of when to stop managing  or surveying species under imperfect detection.<br>Additional information can be found here: <https://github.com/conservation-decisions/smsPOMDP> and <https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13501>
 
 <iframe 
     width="100%"
@@ -260,7 +258,7 @@ A Shiny r app to solve the problem of when to stop managing  or surveying specie
 | Type | Name | Note | URL |Reference |
 |:---------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
 | R package | detect: analyzing wildlife data with detection error  | The R package implements models to analyze site occupancy and count data models with detection error. The package development was supported by the Alberta Biodiversity Monitoring Institute and the Boreal Avian Modelling (BAM) Project. | <https://github.com/psolymos/detect>;<br><https://peter.solymos.org/detect> | {{ ref_bib_solymos_et_al_2024 }} |
-| R Shiny app | Probabilistic detection calculator (online application) | Online application used as an aid in sampling planning; calculates the probability of detecting disease (or other similar feature) with the given within-group prevalence and sample size for both finite and infinite group sizes.<br><br> Additional information can be found here: <https://zenodo.org/records/13120206>.  | Shiny app: <https://detcal-shiny.2.rahtiapp.fi/>;<br>Related documents: <https://zenodo.org/records/13120206> | {{ ref_bib_mikkela_2024 }} |
+| R Shiny app | Probabilistic detection calculator (online application) | Online application used as an aid in sampling planning; calculates the probability of detecting disease (or other similar feature) with the given within-group prevalence and sample size for both finite and infinite group sizes.<br>Additional information can be found here: <https://zenodo.org/records/13120206>.  | Shiny app: <https://detcal-shiny.2.rahtiapp.fi/>;<br>Related documents: <https://zenodo.org/records/13120206> | {{ ref_bib_mikkela_2024 }} |
 ::::::
 
 ::::::{tab-item} References

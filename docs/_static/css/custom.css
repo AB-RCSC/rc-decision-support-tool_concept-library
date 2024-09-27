@@ -10,15 +10,15 @@
 /*Block quoteshttps://jupyter-notebook.readthedocs.io/en/stable/custom_css.html*/
 /*    font-family: Helvetica Neue;/*
 /*    font-style: italic;/*
-/*set the article content max width to the same width as the top navigation bar.*/
 
+/*If you’d like the article content to take up more width than its default, use the max-width CSS property with the following selectors*/
 .bd-main .bd-content .bd-article-container {
-    max-width: 98%;  /* default is 60em */
+    max-width: 120%;  /* default is 60em */
   }
 
 /*This will affect both the article content and the top navigation bar.*/
 .bd-page-width {
-    max-width: 85%;  /* default is 88rem */
+    max-width: 80%;  /* default is 88rem */
 }
 
 h1 {
@@ -44,13 +44,17 @@ div.b {
 }
 
 html {
-  pst-header-height: 1rem;
+  ---pst-header-height: 1rem;
 }
 
+root {
+  ---pst-sidebar-font-size: 2em;
+}
 div.img_grid {
   :width: 100%;
   :align: center;
 }
+
 
 /* Block Quotes
 blockquote {
@@ -59,3 +63,17 @@ blockquote {
   background-color: white;
   padding: 20px;
 }*/
+
+div.admonition.admonition-youtube {
+  border-color: hsl(0deg 100% 50%); /* YouTube red */
+}
+
+div.admonition.admonition-youtube > .admonition-title {
+  background-color: hsl(0deg 99% 18%);
+  color: white;
+}
+
+div.admonition.admonition-youtube > .admonition-title::after {
+  color: hsl(0deg 100% 50%);
+  content: "\f26c"; /* fa-solid fa-tv */
+}

@@ -6,17 +6,21 @@
 format: jb-book
 root: index
 #    - file: 02_dialog-boxes/00_00_template_master_test.md
+
 parts:
 - caption: Concept Library
   maxdepth: 6
   titlesonly: False
   chapters:
+  - file: index_links_all.md
 ##### Objectives & Resources
   - file: 01_toc_pages/00_01_toc_objective_resources.md
     title: Objectives & Resources
     sections:
+#    - file: 02_dialog-boxes/Untitled.ipynb
 #    - file: 02_dialog-boxes/00_test_cross_ref.md
 #    - file: 02_dialog-boxes/01_01_user_entry.md
+#    - file: 02_dialog-boxes/00_test_embed.md
     - file: 02_dialog-boxes/01_02_objective.md
     - file: 02_dialog-boxes/01_03_num_cams.md
 ##### Study area & Site selection
@@ -84,16 +88,16 @@ parts:
     sections:
     - file: 02_dialog-boxes/01_47_cam_independent.md   
 #    - file: file: 02_dialog-boxes/01_48_multisamp_per_loc.md
-#    - file: 02_dialog-boxes01_49_modmixed.md
-#    - file: 02_dialog-boxes01_50_num_det.md
-#    - file: 02_dialog-boxes01_51_num_det_individ.md
-#    - file: 02_dialog-boxes01_52_num_recap.md
-#    - file: 02_dialog-boxes01_53_overdispersion.md
-#    - file: 02_dialog-boxes01_54_zeroinflation.md
-#    - file: 02_dialog-boxes01_55_zi_overdispersed.md
-#    - file: 02_dialog-boxes01_56_modmixed.md
-#    - file: 02_dialog-boxes01_57_zi_re_overdispersed.md
-#    - file: 02_dialog-boxes01_58_zi_process.md
+#    - file: 02_dialog-boxes/01_49_modmixed.md
+#    - file: 02_dialog-boxes/01_50_num_det.md
+#    - file: 02_dialog-boxes/01_51_num_det_individ.md
+#    - file: 02_dialog-boxes/01_52_num_recap.md
+#    - file: 02_dialog-boxes/01_53_overdispersion.md
+#    - file: 02_dialog-boxes/01_54_zeroinflation.md
+#    - file: 02_dialog-boxes/01_55_zi_overdispersed.md
+#    - file: 02_dialog-boxes/01_56_modmixed.md
+#    - file: 02_dialog-boxes/01_57_zi_re_overdispersed.md
+#    - file: 02_dialog-boxes/01_58_zi_process.md
 ##### Recommendations - Modelling Approaches
   - file: 01_toc_pages/00_07_toc_rec_approach.md
     title: Recommendations - Modelling Approaches
@@ -101,39 +105,22 @@ parts:
     - file: 02_dialog-boxes/03_01_mod_inventory.md
     - file: 02_dialog-boxes/03_02_mod_divers_rich.md
     - file: 02_dialog-boxes/03_03_mod_occupancy.md
-#err    - file: 02_dialog-boxes/03_04_mod_rai.md
-#err    - file: 02_dialog-boxes/03_24_mod_behaviour.md  
-#    - file: 02_dialog-boxes03_05_mod_rai_poisson.md
-#    - file: 02_dialog-boxes03_06_mod_rai_zip.md
-#    - file: 02_dialog-boxes03_07_mod_rai_nb.md
-#    - file: 02_dialog-boxes03_08_mod_rai_zinb.md
-#    - file: 02_dialog-boxes03_09_mod_rai_hurdle.md
-#    - file: 02_dialog-boxes03_11_mod_cr_cmr.ipynb
-#    - file: 02_dialog-boxes03_10_mod_cr_cmr.md
-#    - file: 02_dialog-boxes03_11_mod_scr_secr.ipynb
-#    - file: 02_dialog-boxes03_11_mod_scr_secr.md
-#    - file: 02_dialog-boxes03_13_mod_smr.ipynb
-#    - file: 02_dialog-boxes03_13_mod_smr.md
-#    - file: 02_dialog-boxes03_12_mod_mr.md
-#    - file: 02_dialog-boxes03_14_mod_sc.md
-#    - file: 02_dialog-boxes03_15_mod_catspim.md
-#    - file: 02_dialog-boxes03_16_mod_2flankspim.md
-#    - file: 02_dialog-boxes03_17_mod_rem.md
-#    - file: 02_dialog-boxes03_18_mod_rest.md
+    - file: 02_dialog-boxes/03_04_mod_rai.md
+    - file: 02_dialog-boxes/03_10_mod_cr_cmr.md
+    - file: 02_dialog-boxes/03_11_mod_scr_secr.md
+    - file: 02_dialog-boxes/03_13_mod_smr.md
+    - file: 02_dialog-boxes/03_14_mod_sc.md
+    - file: 02_dialog-boxes/03_15_mod_catspim.md
+    - file: 02_dialog-boxes/03_16_mod_2flankspim.md
+    - file: 02_dialog-boxes/03_17_mod_rem.md
+    - file: 02_dialog-boxes/03_18_mod_rest.md
     - file: 02_dialog-boxes/03_19_mod_tifc.md
-#    - file: 02_dialog-boxes/03_20_mod_ds.md
-#    - file: 02_dialog-boxes03_21_mod_tte.md
-#    - file: 02_dialog-boxes03_22_mod_ste.md
-#    - file: 02_dialog-boxes03_23_mod_is.md
-##### References
-- caption: References
-  maxdepth: 1
-  titlesonly: False
-  chapters:
+    - file: 02_dialog-boxes/03_20_mod_ds.md
+    - file: 02_dialog-boxes/03_21_mod_tte.md
+    - file: 02_dialog-boxes/03_22_mod_ste.md
+    - file: 02_dialog-boxes/03_23_mod_is.md
+    - file: 02_dialog-boxes/03_24_mod_behaviour.md
   - file: 02_dialog-boxes/08_references.md
-##### Glossary
-- caption: Glossary
-  maxdepth: 1
-  titlesonly: False
-  chapters:
+    title: References
   - file: 02_dialog-boxes/09_glossary.md
+    title: Glossary

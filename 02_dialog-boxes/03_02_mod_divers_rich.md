@@ -94,7 +94,7 @@ Note that there are multiple parameters corresponding to different scales and in
 
 You can refer to the “Assumptions, Pros, Cons” dropdown above to see relevant information for all three.
 
-```{figure} ../03_images/03_image_files/pyron_2010_fig1.png
+```{figure} ../03_images/03_image_files/pyron_2010_fig1_clipped.png
 :align: center
 :scale: 60%
 ```
@@ -340,7 +340,7 @@ Generating a rarefaction curve from collector's curves in R within the tidyverse
 
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
-|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
+|:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | R package | Chapter 9 Community composition |     | <https://bookdown.org/c_w_beirne/wildCo-Data-Analysis/composition.html#estimated-richnes> | {{ ref_bib_wildco_lab_2021b }} |
 | R package | R package “vegan |     | <https://cran.r-project.org/web/packages/vegan/index.html> | {{ ref_bib_oksanen_et_al_2024 }} |
 | Program | EstimateS | Dedicated software for estimating diversity, using asymptotic or rarefaction methods. Mac version available | <https://www.robertkcolwell.org/pages/1407> | {{ ref_bib_colwell_2022 }} |

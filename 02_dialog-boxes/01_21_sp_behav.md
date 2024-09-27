@@ -18,12 +18,12 @@ editor_options:
 # {{ title_i_sp_behav }}
 
 :::::::::{div} full-width
-<!--**{{ title_i_sp_behav }}**-->
+
 :::::::{tab-set}
 
 ::::::{tab-item} Overview
-<br>
-It's important to consider how your Target Species may react to the camera being placed.<br>
+It's important to consider how your Target Species may react to the camera being placed.
+
 While remote cameras are fairly non-invasive survey method, their presence on the landscape, in and of itself, can alter the behaviour of the species you aim to measure (potential attraction to, or avoidance of, the camera), ultimately interfering with detection rates / detection probability ({{ ref_intext_meek_et_al_2014) (e.g., “trap-shy” tigers are thought to avoid cameras due to the white flash emitted ({{ ref_intext_wegge_et_al_2004 }}; {{ ref_intext_sharma_et_al_2010 }}).
 
 Examples of comparable species that can be used to select the most appropriate option:
@@ -56,166 +56,25 @@ Notes for later
 
 ::::{grid-item-card} {{ ref_intext_meek_et_al_2014b }}
 ```{figure} ../03_images/03_image_files/meek_et_al_2014_fig11.png
-:width: 100%
-:align: center
+:class: img_grid
 ```
 
-<p>**Figure 11.** Comparison of the predicted hearing range of the red fox in relation to the outputs of HC600 camera traps and as a function of frequency <p/>
+**Meek et al. (2014b) - Fig. 11** Comparison of the predicted hearing range of the red fox in relation to the outputs of HC600 camera traps and as a function of frequency.
 ::::
 
 ::::{grid-item-card} {{ ref_intext_becker_et_al_2022 }}
 ```{figure} ../03_images/03_image_files/becker_et_al_2022_fig4.png
-:width: 100%
-:align: center
+:class: img_grid
 ```
-
-<p>NULL <p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_figure3_ref_id }}
-```{figure} ../03_images/03_image_files/figure3_filename.png
-:width: 100%
-:align: center
-```
-
-<p>figure4_caption <p/>
-::::
-:::::
-
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_figure4_ref_id }}
-```{figure} ../03_images/03_image_files/figure4_filename.png
-:width: 100%
-:align: center
-```
-
-<p>figure5_caption <p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_figure5_ref_id }}
-```{figure} ../03_images/03_image_files/figure5_filename.png
-:width: 100%
-:align: center
-```
-<p>figure5_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_figure6_ref_id }}
-```{figure} ../03_images/03_image_files/figure6_filename.png
-:width: 100%
-:align: center
-```
-<p>figure6_caption <p/>
-::::
-:::::
-
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_vid1_ref_id }}
-
-<iframe 
-    width="300"
-    height="200"
-    src="vid1_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
-<p>vid1_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid2_ref_id }}
-
-
-<iframe 
-    width="300"
-    height="200"
-    src="vid2_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
-<p>vid2_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid3_ref_id }}
-
-<iframe 
-    width="300"
-    height="200"
-    src="vid3_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
-<p>vid3_caption<p/>
-::::
-:::::
-
-:::::{grid} 3
-:gutter: 1
-:padding: 0
-:margin: 0
-
-::::{grid-item-card} {{ ref_intext_vid4_ref_id }}
-
- 
-<iframe 
-    width="300"
-    height="200"
-    src="vid4_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
-<p>vid4_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid5_ref_id }}
- 
-<iframe 
-    width="300"
-    height="200"
-    src="vid5_url"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
-
-<p>vid5_caption<p/>
-::::
-
-::::{grid-item-card} {{ ref_intext_vid6_ref_id }}
-
-<iframe 
-    width="300"
-    height="200"
-    src="vid6_url"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-</iframe>
-
-<p>vid6_caption<p/>
 ::::
 
 :::::
 
 ::::::
+
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
-|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
+|:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | Correction factors (Marcus) | resource1_name | resource1_note | resource1_url | {{ ref_bib_resource1_ref_id }} |
 | resource3_type | resource2_name | resource3_note | resource3_url | {{ ref_bib_resource2_ref_id }} |
 | resource3_type | resource3_name | resource3_note | resource3_url | {{ ref_bib_resource3_ref_id }} |
@@ -234,15 +93,11 @@ Check back in the future!
 ::::::
 
 ::::::{tab-item} References
-  
 {{ ref_bib_meek_et_al_2014 }}
 
 {{ ref_bib_sharma_et_al_2010 }}
 
 {{ ref_bib_wegge_et_al_2004 }}
-
-
- 
 ::::::
 :::::::
 

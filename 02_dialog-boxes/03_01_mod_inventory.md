@@ -96,12 +96,11 @@ Check back in the future!
 
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
-|:----------------|:---------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|:----------------------------------------------------------------|
+|:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | Program | Program “PRESENCE |  This package allow users to simulate the required sample size for a desired level of precision in species richness. | **Software**: <www.mbr-pwrc.usgs.gov/ software/presence.html>;<br>**Help forum**: <www.phidot.org> | {{ ref_bib_hines_2006 }} |
 | Program | GENPRES | This package allow users to simulate the required sample size for a desired level of precision in species richness. |  | {{ ref_bib_bailey_et_al_2007 }} |
 | R function | specaccum: Species Accumulation Curve | The specaccum function finds species accumulation curves or the number of species for a certain number of sampled sites or individuals. | <https://rdrr.io/rforge/vegan/man/specaccum.html> | {{ ref_bib_oksanen_et_al_2024 }} |
-| R package | PresenceAbsence: An R package for presence absence analysis | The PresenceAbsence package for R provides a set of functions useful when evaluating
-the results of presence-absence analysis. | <https://research.fs.usda.gov/treesearch/29484> | {{ ref_bib_freeman_gretchen_2008 }} |
+| R package | PresenceAbsence: An R package for presence absence analysis | The PresenceAbsence package for R provides a set of functions useful when evaluating the results of presence-absence analysis. | <https://research.fs.usda.gov/treesearch/29484> | {{ ref_bib_freeman_gretchen_2008 }} |
 ::::::
 
 ::::::{tab-item} References

@@ -62,7 +62,6 @@ Whether or not you choose to sample long enough to ensure to reach the species-a
 :align: center
 ```
 **Gotelli & Chao (2013) – Fig. 4** Standardized comparison of species richness for two individual-based rarefaction curves. 
-
 :::{dropdown}
 The data represent summary counts of carabid beetles that were pitfall-trapped from a set of young pine plantations (o20 years old; upper curve) and a set of old pine plantations (20–60 years old; lower curve). The solid lines are the rarefaction curves, calculated from eqn [2], and the shaded polygons are the 95% confidence intervals, calculated from the unconditional variance eqn [5]. The young plantation samples contained 243 individuals representing 31 species, and the old plantation samples contained 63 individuals representing nine species. The dashed and dotted vertical line illustrates a species richness comparison standardized to 63 individuals, which was the observed abundance in the smaller of the two data sets. Data from Niemel ̈a J, Haila Y, Halme E, et al. (1988) The distribution of carabid beetles in fragments of old coniferous taiga and adjacent managed forest. Annales Zoologici Fennici 25: 107–199.
 :::
@@ -75,7 +74,6 @@ The data represent summary counts of carabid beetles that were pitfall-trapped f
 ```
 
 **Gotelli & Colwell (2011) - Fig. 4.1** Species accumulation and rarefaction curves.
-
 :::{dropdown}
 The jagged line is the species accumulation curve for one of many possible orderings of 121 soil seedbank samples, yielding a total of 952 individual tree seedlings, from an intensive census of a plot of Costa Rican rainforest (Butler & Chazdon 1998). The cumulative number of tree species (y-axis) is plotted as a function of the cumulative number of samples (upper x-axis), pooled in random order. The smooth, solid line is the sample-based rarefaction curve for the same data set, showing the mean number of species for all possible combinations of 1, 2, . . . , m∗, . . . , 121 actual samples from the dataset—this curve plots the statistical expectation of the (sample-based) species accumulation curve. The dashed line is the individual-based rarefaction curve for the same data set—the expected number of species for (m∗) (952/121) individuals, randomly chosen from all 952 individuals (lower x-axis). The black dot indicates the total richness for all samples (or all individuals) pooled. The sample-based rarefaction curve lies below the individual-based rarefaction curve because of spatial aggregation within species. This is a very typical pattern for empirical comparisons of sample-based and individual-based rarefaction curves.
 :::
@@ -88,7 +86,6 @@ The jagged line is the species accumulation curve for one of many possible order
 :align: center
 ```
 **Van Dooren (2015) – Fig. 1** “Species accumulation curves. Species richness is the asymptote of a species accumulation curve, which expresses the dependence on sampling effort of the number of species sampled from an assemblage.
-
 :::{dropdown}
 In CA2013, sampling effort is given by the number of records from which the number of species is calculated. For illustrative purposes, an example with three arbitrary samples (for 10000, 5000 and 2000 records, labeled from one to three) is drawn. For sample one, a predicted species accumulation curve is added that gradually increases from one species sampled to the predicted species richness for that assemblage (full line). Such curves are constructed on the basis of interpolation and extrapolation. For samples two and three only segments of extrapolated curves are drawn (dotted lines). For sample two, a curve that crosses the species accumulation curve of sample one is sketched. For samples one and three species accumulation curves are more or less proportional. The way in which the species richness differences between samples are assessed in CA2013 is illustrated by indicating on the species accumulation curves at which numbers of records pairwise comparisons would be made between two sample pairs (1 vs. 2 and 1 vs. 3). The number of species of the sample with the smallest number of records is extrapolated to the number expected at three times the number of records. When the number of records of the other sample is still larger than that, the number of species of the second sample is interpolated (rarefied), otherwise it is extrapolated as well.
 :::
@@ -117,8 +114,8 @@ In CA2013, sampling effort is given by the number of records from which the numb
 **Molloy (2018) – Fig. 9** Species accumulation curve for camera trap data collected in Dryandra Woodland. Sourced from Thomas & Cowan (2016) 
 ::::
 
-::::{grid-item-card} {{ ref_intext_rovero_et_al_2010 }}
-```{figure} ../03_images/03_image_files/rovero_tobler_2010 _fig4.png
+::::{grid-item-card} {{ ref_intext_rovero_tobler_2010 }}
+```{figure} ../03_images/03_image_files/rovero_tobler_2010_fig4.png
 :width: 100%
 :align: center
 ```
@@ -133,9 +130,10 @@ In CA2013, sampling effort is given by the number of records from which the numb
 
 ::::{grid-item-card} {{ ref_intext_rk_stats_2018 }}
 <iframe 
-    width=“100%”
-    height=“100%”
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/Jj7LYrU_6RA?si=odfIIBoC2w9h3_CU"
+    loading="lazy
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -146,9 +144,10 @@ Species Accumulation Curves (11 minutes)
 
 ::::{grid-item-card} {{ ref_intext_styring_2020b }} 
 <iframe 
-    width=“100%”
-    height=“100%”
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/OEWdPm3zg9I?si=2RG41LmTRvWfMiEr"
+    loading="lazy"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -159,15 +158,16 @@ Generating a species accumulation plot in excel for BBS data
 
 ::::{grid-item-card} {{ ref_intext_wildlifedegree_2022 }}
 <iframe 
-    width=“100%”
-    height=“100%”
+    width="100%"
+    height="300"
     src="https://www.youtube.com/embed/h3MLWK9IJ4A?si=qOKB8jyALD3cwgAe"
+    loading="lazy"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
 </iframe>
 
-Rarefied Species Accumulation Curves (the simple way) tutorial: How to create beautiful rarefied species accumulation curves with species richness, shannon wiener or the simpson index with abundance data, or species richness with incidence data using the iNext Online interface (which runs the iNext R package in the backgroundl
+Rarefied Species Accumulation Curves (the simple way) tutorial: How to create beautiful rarefied species accumulation curves with species richness, shannon wiener or the simpson index with abundance data, or species richness with incidence data using the iNext Online interface (which runs the iNext R package in the background)
 ::::
 :::::
 
@@ -179,6 +179,7 @@ Rarefied Species Accumulation Curves (the simple way) tutorial: How to create be
     width="100%"
     height="900"
     src="https://chao.shinyapps.io/iNEXTOnline"
+    loading="lazy"
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
@@ -190,7 +191,7 @@ Rarefied Species Accumulation Curves (the simple way) tutorial: How to create be
 
 ::::::{tab-item} Analytical tools & resources
 | Type | Name | Note | URL |Reference |
-|:------------------|:--------------------------|:-----------------------------------------------|:-----------------------------------------------|:-----------------------------------------------|
+|:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | R package / Tutorial | Species Accumulation Curves |      | <https://www.pisces-conservation.com/sdrhelp/index.html?specaccum.html> | {{ ref_bib_chao_et_al_2016 }} |
 | R package / Tutorial | Species Accumulation Curves with vegan, BiodiversityR and ggplot2 |      | <https://rpubs.com/Roeland-KINDT/694021> | {{ ref_bib_roeland_2020 }} |
 | R Shiny App | iNext Online |      | <https://chao.shinyapps.io/iNEXTOnline> | {{ ref_bib_chao_et_al_2016 }} |
@@ -221,7 +222,7 @@ Rarefied Species Accumulation Curves (the simple way) tutorial: How to create be
 
 {{ ref_bib_rk_stats_2018 }}
 
-{{ ref_bib_rovero_et_al_2010 }}
+{{ ref_bib_rovero_tobler_2010 }}
 
 {{ ref_bib_si_et_al_2014 }}
 

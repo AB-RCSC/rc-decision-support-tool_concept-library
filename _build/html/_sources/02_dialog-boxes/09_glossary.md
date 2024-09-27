@@ -14,9 +14,8 @@ editor_options:
   markdown: 
   wrap: none
 ---
-(glossary3)=
-# Glossary2
-
+(glossary)=
+# Glossary
 <!-- https://mystmd.org/guide/glossaries-and-terms -->
 
 Bold indicates a metadata field in either the [AB Metadata Standards](https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html) (RCSC, 2024) or [Remote Camera Survey Guidelines](https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/1_survey-guidelines/1_0.1_Citation-and-Info.html) (RCSC et al., 2024).<br>
@@ -536,7 +535,7 @@ An asterisk (*) indicates the field is optional and not required by the AB Metad
 [Total number of camera days]{#total_number_of_camera_days}
   The number of days that all cameras were active during the survey.
 
-[Trigger "event”(trigger_event}
+[Trigger "event”]{#trigger_event}
   An activation of the camera detector(s) that initiates the capture of a single or multiple images, or the recording of video.
 
 [*Trigger Mode(s)* (camera settings)]{#settings_trigger_modes}
