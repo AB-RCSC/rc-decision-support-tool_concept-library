@@ -35,9 +35,22 @@ conda activate rclib
 cd C:\Users\cassi\Documents\GitHub_AB-RCSC\rc-tool_concept-library
 jupyter-book build ./
 -->
-:::{note}
+:::::{note}
+::::{grid} 2
+:gutter: 3
+
+:::{grid-item}
+:columns: 11
 Items in grey/italics are not yet available.
 :::
+
+:::{grid-item}
+:columns: 1
+
+{bdg-link-primary-line}`Secrets<https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/index_links_all.html>`
+:::
+::::
+:::::
 
 (objectives-resources)=
 ## Objectives & Resources

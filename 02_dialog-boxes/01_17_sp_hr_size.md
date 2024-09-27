@@ -17,7 +17,9 @@ editor_options:
 (i_sp_hr_size)=
 # {{ title_i_sp_hr_size }}
 
-**Home range**: the area within which an animal normally lives and finds what it needs to survive and reproduce.
+::::::{note}
+Dont have information on home range size? Check out the “Shiny Apps/Widgets” tab to see if information for your Target Species is available for in our “Species home range / body size lookup.”
+::::::
 
 :::::::{tab-set}
 
@@ -26,7 +28,10 @@ Home range size will not be exactly the same for every animal of a certain speci
 
 ```{figure} ../03_images/03_image_files/00_home_range.jpg
 :align: center
+:width: 300px
 ```
+
+**Home range**: the area within which an animal normally lives and finds what it needs to survive and reproduce.
 
 **<font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span>**
 
