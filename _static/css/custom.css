@@ -18,7 +18,7 @@
 
 /*This will affect both the article content and the top navigation bar.*/
 .bd-page-width {
-    max-width: 80%;  /* default is 88rem */
+    max-width: 90%;  /* default is 88rem */
 }
 
 h1 {
