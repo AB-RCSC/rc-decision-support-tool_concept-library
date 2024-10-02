@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>00_test_embed ——————————————————————– &#8212; Remote Camera Decision Support Tool - Concept Library</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=6423beaa" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/00_test_keep';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="test-embed">
+<h1>00_test_embed ——————————————————————–<a class="headerlink" href="#test-embed" title="Link to this heading">#</a></h1>
+<p>this one</p>
+<figure class="align-default" id="id1">
+<a class="img-grid reference internal image-reference" href="../_images/clarke_et_al_2023_fig7_clipped.png"><img alt="../_images/clarke_et_al_2023_fig7_clipped.png" class="img-grid" src="../_images/clarke_et_al_2023_fig7_clipped.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Clarke et al. (2023) - Fig. 7</strong> Measuring <em>𝑟</em> and <em>𝜃</em> by field trial. The perimeter of the detection zone is determined by approaching the camera from different angles and at different speeds, and noting where the camera’s sensor (red flash) detects motion (red dots).</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
+<a class="img-grid reference internal image-reference" href="../_images/00_home_range.jpg"><img alt="../_images/00_home_range.jpg" class="img-grid" src="../_images/00_home_range.jpg" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">This is a home range….</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<blockquote>
+<div><p>This is a home range….</p>
+</div></blockquote>
+<p>this one</p>
+<figure class="align-default" id="id3">
+<a class="img-grid reference internal image-reference" href="../_images/clarke_et_al_2023_fig7_clipped.png"><img alt="../_images/clarke_et_al_2023_fig7_clipped.png" class="img-grid" src="../_images/clarke_et_al_2023_fig7_clipped.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text"><strong>Clarke et al. (2023) - Fig. 7</strong> Measuring <em>𝑟</em> and <em>𝜃</em> by field trial. The perimeter of the detection zone is determined by approaching the camera from different angles and at different speeds, and noting where the camera’s sensor (red flash) detects motion (red dots).</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id4">
+<a class="img-grid reference internal image-reference" href="../_images/00_home_range.jpg"><img alt="../_images/00_home_range.jpg" class="img-grid" src="../_images/00_home_range.jpg" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">This is a home range….</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<blockquote>
+<div><p>This is a home range….</p>
+</div></blockquote>
+<hr class="docutils" />
+<p><span class="xref std std-ref">*Access Method</span></p>
+<p>1</p>
+<p>2</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p>
+<figure class="align-default">
+<img alt="../_images/clarke_et_al_2023_fig7_clipped.png" class="img-grid" src="../_images/clarke_et_al_2023_fig7_clipped.png" />
+</figure>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tooltip">
+<h1>00_tooltip ——————————————————————–<a class="headerlink" href="#tooltip" title="Link to this heading">#</a></h1>
+<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<p><a class="sd-sphinx-override sd-badge sd-bg-white sd-bg-text-white reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library"><span>explicit title</span></a></p>
+<p class="sd-text-center"><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-shadow-sm reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library" title="I am a tooltip"><span>Concept library</span></a></p>
+<p><span class='underline example'>underline</span></p>
+<button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+  Tooltip on top
+</button>
+<button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+  Tooltip on right
+</button>
+<button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
+  Tooltip on bottom
+</button>
+<button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">
+  Tooltip on left
+</button>
+<br>
+<br>
+<p><a class="reference internal" href="09_glossary.html#access-method"><span class="std std-ref"><button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+<span style="color:#2F5496"><u>Access Method</u></span></button></span></a></p>
+<br>
+jjjjjj
+<p>Here is some text <a class="reference internal" href="09_glossary.html#access-method"><span class="std std-ref"><button type="button" class="btn btn-secondary btn-sm" btn-border-width= "1px" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><span class='underline'>Access Method</span></button></span></a> and more text</p>
+<p><span class='underline'>Access Method</span></p>
+<br>
+<p>Here is some text <button type="button" class="btn btn-link btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...)."><a class="reference internal" href="09_glossary.html#access-method"><span class="std std-ref">Access Method</span></a></button> and more text</p>
+<br>
+<p>Here is some text <button type="button" class="btn btn-link btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...)."><a class="reference internal" href="09_glossary.html#access-method"><span class="std std-ref">Access Method</span></a></button> and more text</p>
+<br>
+<button type="button" class="btn btn-secondary btn-sm" btn-border-width= "0px" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><span class='underline'>Access Method</span></button>
+<p><button type="button" class="btn btn-secondary btn-sm input-btn-padding-y-sm input-btn-padding-x-sm input-btn-font-size-sm" btn-border-width= "1px" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><span class='underline'>Access Method</span></button></p>
+<p><a class="sd-sphinx-override sd-badge sd-bg-white sd-bg-text-white reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library"><span>explicit title</span></a></p>
+<p>Here is some text <a class="reference internal" href="09_glossary.html#access-method"><span class="std std-ref"><span class='underline'>Access Method</span></span></a> Here is some text</p>
+<button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
+  Species Inventory
+</button>
+<p><a class="sd-sphinx-override sd-badge sd-bg-white sd-bg-text-white reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library"><span>explicit title</span></a></p>
+<button type="button" class="btn btn-secondary position-relative">
+  Inbox
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+    i
+    <span class="visually-hidden">info</span>
+  </span>
+</button>
+<p><br><br></p>
+<button type="button" class="btn btn-secondary position-relative">
+  Species Inventory
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+    i
+    <span class="visually-hidden">info</span>
+  </span>
+</button>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary position-relative" type="button">Button</button>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+      i
+      <span class="visually-hidden">info</span>
+    </span>
+  <button class="btn btn-primary position-relative" type="button">Button</button>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="test-cross-ref">
+<h1>00_test_cross_ref ——————————————————————–<a class="headerlink" href="#test-cross-ref" title="Link to this heading">#</a></h1>
+<iframe 
+    width="100%"
+    height="900"
+    src="https://www.rc-decision-support-tool.ca/voila/render/objective.ipynb?"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+</iframe>
+<p><span class="xref std std-ref">*Access Method</span>  <!-- https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#block-attributes--></p>
+<p><span class="xref std std-ref">your text here</span></p>
+<p><span class="xref std std-ref">your text here</span></p>
+<!-- worked to 09_glossary_blocktest.md-->
+<p><a class="reference internal" href="09_glossary.html#term-Access-Method"><span class="xref std std-term">*Access Method</span></a><!-- worked--></p>
+<p><a class="reference internal" href="09_glossary.html#term-Access-Method"><span class="xref std std-term">term test</span></a><!-- worked--></p>
+<p><a class="reference internal" href="09_glossary.html#access-method"><span class="std std-ref">ref text here</span></a></p>
+<p><a class="reference internal" href="09_glossary.html#access-method"><span class="std std-ref">test</span></a>  goes to page but not ref</p>
+<p><code class="docutils literal notranslate"><span class="pre">/09_glossary2.md#access_method</span></code></p>
+<p>[]{mods_zero_inflation}</p>
+<p>‘{‘#access_method’}’</p>
+<p>{#age_class_adult}</p>
+<p>{age_class}</p>
+<section id="heading">
+<span id="heading-target"></span><h2>Heading<a class="headerlink" href="#heading" title="Link to this heading">#</a></h2>
+<p>.
+.
+.
+.
+.
+.</p>
+<p>{#paragraph-target}=
+This is a paragraph, with an <code class="docutils literal notranslate"><span class="pre">id</span></code> attribute.</p>
+<p>.
+.
+.
+.
+.
+.</p>
+<p>This is a <span id="span-target">span with an <code class="docutils literal notranslate"><span class="pre">id</span></code> attribute</span>
+.
+.
+.
+.
+.
+.
+.
+.</p>
+<div class="admonition note" id="directive-target">
+<p class="admonition-title">Note</p>
+<p>This is a directive with a <code class="docutils literal notranslate"><span class="pre">name</span></code> option</p>
+</div>
+<p>.
+.
+.
+.
+.
+.
+.</p>
+<p><a class="reference internal" href="#heading-target">heading link</a>, <a class="reference internal" href="#paragraph-target"><span class="xref myst">paragraph link</span></a>,
+<a class="reference internal" href="#span-target">span link</a>, <a class="reference internal" href="#directive-target">directive link</a></p>
+<!-- https://myst-parser.readthedocs.io/en/latest/syntax/cross-referencing.html--> 
+<!-- https://pydata-sphinx-theme.readthedocs.io/en/stable/examples/kitchen-sink/generic.html#inline-hyperlink-targets--> 
+<!-- https://docs.readthedocs.io/en/stable/guides/cross-referencing-with-sphinx.html#finding-the-reference-name--> 
+<!-- WITH myst_heading_anchors: 3--> 
+<!-- SAME WITH NO myst_heading_anchors: 3--> 
+<!-- this is with target immediatiely after the id)--> 
+<!-- (access_method)=
+**\*Access Method--> 
+<p><a class="reference internal" href="09_glossary.html#access-method"><span class="std std-ref">test</span></a>  ## goes to page but not ref</p>
+<p><a class="reference internal" href="09_glossary.html#access-method"><span class="std std-ref">test</span></a> ## goes NOWHERE</p>
+<p><a class="reference internal" href="#/09_glossary2.md#access_method"><span class="xref myst">test</span></a>  ## unsure</p>
+<p><a class="reference internal" href="#./09_glossary2.md#access_method"><span class="xref myst">test</span></a> ## WORKS</p>
+<p><a class="reference internal" href="#../09_glossary.md#access_method"><span class="xref myst">test</span></a> ## goes to page but not ref</p>
+<!-- (#age_class_adult)=
+**Adult**--> 
+<p><a class="reference internal" href="#/09_glossary.md#age_class_adult"><span class="xref myst">test</span></a> ## goes to page but not ref</p>
+<p><a class="reference internal" href="09_glossary.html#age_class_adult"><span class="std std-ref">test</span></a>## goes NOWHERE</p>
+<p><a class="reference internal" href="#../09_glossary.md#age_class_adult"><span class="xref myst">test</span></a> ## goes to page but not ref</p>
+<!-- now try with space no difference-->
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="goes-nowhere">
+<h1>goes NOWHERE<a class="headerlink" href="#goes-nowhere" title="Link to this heading">#</a></h1>
+<p>[test]{/09_glossary.md#deployment_comments}</p>
+<p>[test]{./09_glossary.md#deployment_comments}</p>
+<p>[test]{../09_glossary.md#deployment_comments}</p>
+<p>[test]{/09_glossary.md#deployment_crew}</p>
+<p>[test]{./09_glossary.md#deployment_crew}</p>
+<p>[test]{../09_glossary.md#deployment_crew}</p>
+<!-- now try with space no difference--></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02_dialog-boxes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="component-author">
+By Alberta Remote Camera Steering Committee (RCSC)
+</p>
+</div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

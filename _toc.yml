@@ -5,22 +5,24 @@
 
 format: jb-book
 root: index
-#    - file: 02_dialog-boxes/00_00_template_master_test.md
 
 parts:
 - caption: Concept Library
   maxdepth: 6
   titlesonly: False
   chapters:
-  - file: index_links_all.md
+  - file: index_links_all_internal_2024-10-02.md
+  - file: 02_dialog-boxes/00_master_test.md
 ##### Objectives & Resources
   - file: 01_toc_pages/00_01_toc_objective_resources.md
     title: Objectives & Resources
     sections:
-#    - file: 02_dialog-boxes/Untitled.ipynb
+    - file: 02_dialog-boxes/00_test_keep.md
+    - file: 02_dialog-boxes/00_test_image.md
+#    - file: 02_dialog-boxes/00_tooltip.md
 #    - file: 02_dialog-boxes/00_test_cross_ref.md
-#    - file: 02_dialog-boxes/01_01_user_entry.md
 #    - file: 02_dialog-boxes/00_test_embed.md
+    - file: 02_dialog-boxes/01_01_user_entry.md
     - file: 02_dialog-boxes/01_02_objective.md
     - file: 02_dialog-boxes/01_03_num_cams.md
 ##### Study area & Site selection

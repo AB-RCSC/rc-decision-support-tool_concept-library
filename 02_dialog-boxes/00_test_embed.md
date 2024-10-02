@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.17.2 <!--0.13-->
-    jupytext_version: 6.5.4 <!-- 1.16.4-->
+    jupytext_version: 1.16.4  <!--6.5.2-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -16,6 +16,12 @@ editor_options:
 ---
 (i_objective)=
 # {{ title_i_objective }}
+
+this one
+```{include} include/00_test_image.md
+```
+
+***
 
 {ref}`*Access Method`
 
@@ -39,16 +45,16 @@ editor_options:
 
 
 4
-```{embed} 10_images.md#myLabel
+```{embed} 00_test_image.md#myLabel
 ```
 
 5
-```{literalinclude} 10_images.md#myLabel
+```{literalinclude} 00_test_image.md#myLabel
 ```
 
 
 6
-```{include}} 10_images.md#myLabel
+```{include}} 00_test_image.md#myLabel
 ```
 
 
@@ -57,7 +63,6 @@ editor_options:
 
 :::{figure} ../03_images/03_image_files/clarke_et_al_2023_fig7_clipped.png 
 :class: img_grid
-:label: myLabel
 
-**Clarke et al. (2023) - Fig. 7** Measuring *𝑟* and *𝜃* by field trial. The perimeter of the detection zone is determined by approaching the camera from different angles and at different speeds, and noting where the camera’s sensor (red flash) detects motion (red dots).
+> **Clarke et al. (2023) - Fig. 7** Measuring *𝑟* and *𝜃* by field trial. The perimeter of the detection zone is determined by approaching the camera from different angles and at different speeds, and noting where the camera’s sensor (red flash) detects motion (red dots).
 :::

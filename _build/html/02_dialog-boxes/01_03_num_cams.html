@@ -35,7 +35,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=cf5192f4" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=6423beaa" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
@@ -146,31 +146,45 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="number-of-cameras-available">
-<span id="i-num-cam"></span><h1>Number of cameras available<a class="headerlink" href="#number-of-cameras-available" title="Link to this heading">#</a></h1>
+<span id="i-num-cams"></span><h1>Number of cameras available<a class="headerlink" href="#number-of-cameras-available" title="Link to this heading">#</a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you only have a set number of cameras to deploy (e.g., 30), select “Yes” and enter the number of cameras in the numeric field.</p>
+<p>If you aren’t limited by a certain number of cameras, select “No” and leave the numeric field blank.</p>
+<p>If you’re unsure about how many cameras you have or you would like to see all of the options (irrelevant of the number of cameras; e.g., to be gauge your options and/or to determine the number of cameras you need), you can also select “No.”</p>
+</div>
 <div class="sd-tab-set docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Overview</label><div class="sd-tab-content docutils">
-<p>If you only have a set number of cameras to deploy (e.g., 30), select “Yes” and enter the number of cameras in the numeric field.</p>
-<p>If you aren’t limited by a certain number of cameras, select “No” and leave the numeric field blank. If you’re unsure about how many cameras you have or if you would like to see all of the options irrelevant of the number of cameras (e.g., to be gauge your options and/or to determine the number of cameras you need), you can also select “No.” This will allow you to see all of the potential options.</p>
 <p><strong><font size="4"><span style="color:#2F5496">How does this relate to study design?</font></span></strong></p>
-<p>The number of cameras available will impact the appropriate modelling approaches, and depend other aspects of your study, such as the rarity of your <a class="reference internal" href="09_glossary.html#target-species"><span class="std std-ref">Target Species</span></a>.<br>
-<br>
-“The optimal number of cameras required will be influenced by factors such as landscape heterogeneity, <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">survey</span></a> duration and spatial scale, species rarity and desired level of precision (Colyn et al., 2018; Rovero et al., 2013). For example, Kays et al. (2020) found that 25–35 cameras were needed for precise estimates of species richness, depending on the spatial scale of the <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">survey</span></a> and landscape diversity. The number of cameras required for precise estimates of <a class="reference internal" href="09_glossary.html#occupancy"><span class="std std-ref">occupancy</span></a> was highly sensitive to the occurrence rate of species, with &lt;20 cameras required for common species and &gt;150 cameras required for rare species (Kays et al., 2020). In general, deploying more cameras and/or for longer durations always results in more precise estimates; however, users can consider rotating cameras across multiple sites for shorter durations (if feasible). There are several useful references and applications available to help determine the optimal number of cameras for a <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">survey</span></a> (e.g., Efford &amp; Boulanger, 2019).<br><br></p>
-<p>When the <a class="reference internal" href="09_glossary.html#survey-objectives"><span class="std std-ref">objectives</span></a> and <a class="reference internal" href="09_glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approach</span></a> warrant, placing multiple cameras at a site (either on the same attachment point or nearby) can significantly increase the <a class="reference internal" href="09_glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> of less common species (more than increasing the number of <a class="reference internal" href="09_glossary.html#camera-days-per-camera-location"><span class="std std-ref">camera days per camera location</span></a>; O’Connor et al., 2017; Pease et al., 2016; Stokeld et al., 2016) or be useful for individual identification.”<br>
-— RCSC et al. (2024)</p>
+<p>The number of cameras available will impact the appropriate modelling approaches (in combination with other aspects of your study, such as the detectability and/or rarity of your <a class="reference internal" href="09_glossary.html#target-species"><span class="std std-ref">Target Species</span></a>) or the number of covariates you hope to include in your models.</p>
+<p>For example, 30 cameras may be enough to evaluate “occupancy” if your <a class="reference internal" href="09_glossary.html#target-species"><span class="std std-ref">Target Species</span></a>) is relatively common, however, if your target species is rare, more sites will be required in order for your estimates to be reasonably precise (Shannon et al., 2014; Kays et al., 2020; Wearn &amp; Glover-Kapfer, 2017). More sites will be needed if covariates on occupancy or detection probability are to be added into models (Wearn &amp; Glover-Kapfer, 2017).</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
 <p>You can refer to <a class="reference external" href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/1_survey-guidelines/1_10.1_AppendixA-Tables.html">Appendix A - Table A2</a> to get a sense of the required number of cameras for each of the modelling approaches and according to the <a class="reference internal" href="09_glossary.html#survey-objectives"><span class="std std-ref">Survey Objectives</span></a>.</p>
 <p><strong>RCSC et al. (2024) - Appendix A - Table A2.</strong> Summary of appropriate <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">study design</span></a>, <a class="reference internal" href="09_glossary.html#camera-spacing"><span class="std std-ref">camera spacing</span></a>, and <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">survey</span></a> effort (adapted from Wearn &amp; Glover-Kapfer [2017] with additional references included) for various <a class="reference internal" href="09_glossary.html#mods-modelling-approach"><span class="std std-ref">modelling approaches</span></a>. <strong>Note:</strong> these guidelines use the best available information, however, there is uncertainty associated with each approach. To address this, the table contains ‘minimum,’ ‘ideal’ and ‘often’ used values, as well as qualifiers.</p>
-<object data="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/a2c4924f22f971faa27c706b8bb6dd0a/Surv_Guidelines_AppendixA-Table-A2_v2.pdf" type="application/pdf" width="1120px" height="880px">
-    <embed src="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/a2c4924f22f971faa27c706b8bb6dd0a/Surv_Guidelines_AppendixA-Table-A2_v2.pdf">
-        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/a2c4924f22f971faa27c706b8bb6dd0a/Surv_Guidelines_AppendixA-Table-A2_v2.pdf">Download PDF</a>.</p>
-    </embed>
-</object>  
-<p><em>Download the PDF</em>
-<a class="reference external" href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/a2c4924f22f971faa27c706b8bb6dd0a/Surv_Guidelines_AppendixA-Table-A2_v2.pdf">Remote Camera Survey Guidelines: Appendix A - Table A2</a></p>
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src=" https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/a2c4924f22f971faa27c706b8bb6dd0a/Surv_Guidelines_AppendixA-Table-A2_v2.pdf" loading="lazy" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
+<p><a class="reference external" href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/_downloads/a2c4924f22f971faa27c706b8bb6dd0a/Surv_Guidelines_AppendixA-Table-A2_v2.pdf"><em>Download the PDF</em></a></p>
+</div>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
+In-depth</label><div class="sd-tab-content docutils">
+<p>This section will be available soon! In the meantime, check out the information in the other tabs!</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/00_coming_soon.png"><img alt="../_images/00_coming_soon.png" src="../_images/00_coming_soon.png" style="width: 300px;" /></a>
+</figure>
+<div class="docutils">
+</div>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
 References</label><div class="sd-tab-content docutils">
 <p>Colyn, R. B., Radloff, F., &amp; O’Riain, M. J. (2018). Camera trapping mammals in the scrubland’s of the cape floristic kingdom - the importance of effort, spacing and trap placement. <em>Biodiversity and Conservation, 27</em>(2), 503–520. <a class="reference external" href="https://doi.org/10.1007/s10531-017-1448-z">https://doi.org/10.1007/s10531-017-1448-z</a></p>
 <p>Efford, M. G., &amp; Boulanger, J. (2019). Fast Evaluation of Study Designs for Spatially Explicit Capture–Recapture. <em>Methods in Ecology and Evolution</em>, 10(9), 1529–1535. <a class="reference external" href="https://doi.org/10.1111/2041-210X.13239">https://doi.org/10.1111/2041-210X.13239</a></p>
@@ -231,20 +245,6 @@ References</label><div class="sd-tab-content docutils">
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
-  
-    <div class="footer-items__start">
-      
-        <div class="footer-item">
-
-  <p class="copyright">
-    
-      © Copyright 2024.
-      <br/>
-    
-  </p>
-</div>
-      
-    </div>
   
   
   

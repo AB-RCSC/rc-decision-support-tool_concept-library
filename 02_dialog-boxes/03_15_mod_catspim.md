@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.17.2 <!--0.13-->
-    jupytext_version: 6.5.4 <!-- 1.16.4-->
+    jupytext_version: 1.16.4  <!--6.5.2-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -57,7 +57,8 @@ This section will be available soon! In the meantime, check out the information 
 ```
 ::::::
 
-::::::{tab-item} Advanced:::{note}
+::::::{tab-item} In-depth
+:::{note}
 **This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2024)
 :::
 
@@ -94,7 +95,7 @@ Check back in the future!
 Check back in the future!
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | R package/function | SPIMswith the ‘SPIM’ package | Can be used to assess model fit: 2-flank SPIM, categorical SPIM, categorical conventional and generalized Spatial Mark Resight | <https://rdrr.io/github/benaug/SPIM> | {{ ref_bib_augustine_et_al_2019 }} |

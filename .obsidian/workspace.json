@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "88813f372ff966d8",
+        "id": "fcb5353c584f73c8",
         "type": "tabs",
         "children": [
           {
-            "id": "7aea0db145f3bba5",
+            "id": "aca09181560562c9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_dialog-boxes/01_17_sp_hr_size.md",
+                "file": "02_dialog-boxes/01_03_num_cams.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "02_dialog-boxes/01_17_sp_hr_size.md",
+                "file": "02_dialog-boxes/01_03_num_cams.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "02_dialog-boxes/01_17_sp_hr_size.md",
+                "file": "02_dialog-boxes/01_03_num_cams.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02_dialog-boxes/01_17_sp_hr_size.md"
+                "file": "02_dialog-boxes/01_03_num_cams.md"
               }
             }
           }
@@ -146,34 +146,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7aea0db145f3bba5",
+  "active": "aca09181560562c9",
   "lastOpenFiles": [
-    "02_dialog-boxes/01_21_sp_behav.md",
+    "02_dialog-boxes/01_17_sp_hr_size.md",
+    "02_dialog-boxes/01_20_sp_detprob_cat.md",
+    "02_dialog-boxes/03_01_mod_inventory.md",
+    "02_dialog-boxes/03_03_mod_occupancy.md",
     "02_dialog-boxes/03_04_mod_rai.md",
-    "02_dialog-boxes/03_10_mod_cr_cmr.md",
     "02_dialog-boxes/03_11_mod_scr_secr.md",
-    "02_dialog-boxes/03_13_mod_smr.md",
-    "02_dialog-boxes/03_14_mod_sc.md",
-    "02_dialog-boxes/03_15_mod_catspim.md",
-    "02_dialog-boxes/03_16_mod_2flankspim.md",
-    "02_dialog-boxes/03_17_mod_rem.md",
-    "02_dialog-boxes/03_18_mod_rest.md",
-    "02_dialog-boxes/03_19_mod_tifc.md",
-    "02_dialog-boxes/03_20_mod_ds.md",
     "02_dialog-boxes/03_21_mod_tte.md",
-    "02_dialog-boxes/03_22_mod_ste.md",
-    "02_dialog-boxes/03_24_mod_behaviour.md",
-    "02_dialog-boxes/03_23_mod_is.md",
-    "_build/html/_sources/02_dialog-boxes/01_17_sp_hr_size.md",
-    "_build/html/_sources/02_dialog-boxes/03_04_mod_rai.md",
-    "_build/html/_sources/02_dialog-boxes/03_10_mod_cr_cmr.md",
-    "_build/html/_sources/02_dialog-boxes/03_13_mod_smr.md",
+    "docs/_sources/02_dialog-boxes/01_03_num_cams.md",
+    "docs/_sources/02_dialog-boxes/01_17_sp_hr_size.md",
+    "docs/_sources/02_dialog-boxes/03_01_mod_inventory.md",
+    "docs/_sources/02_dialog-boxes/03_04_mod_rai.md",
+    "docs/_sources/02_dialog-boxes/03_03_mod_occupancy.md",
+    "docs/_sources/02_dialog-boxes/03_11_mod_scr_secr.md",
+    "docs/_sources/02_dialog-boxes/03_21_mod_tte.md",
+    "docs/_sources/02_dialog-boxes/01_20_sp_detprob_cat.md",
     "_build/html/_sources/02_dialog-boxes/03_11_mod_scr_secr.md",
-    "_build/html/_sources/02_dialog-boxes/03_14_mod_sc.md",
-    "_build/html/_sources/02_dialog-boxes/03_15_mod_catspim.md",
-    "_build/html/_sources/02_dialog-boxes/03_16_mod_2flankspim.md",
-    "_build/html/_sources/02_dialog-boxes/03_17_mod_rem.md",
-    "_build/html/_sources/02_dialog-boxes/03_18_mod_rest.md",
-    "logo.png"
+    "_build/html/_sources/02_dialog-boxes/03_21_mod_tte.md",
+    "_build/html/_sources/02_dialog-boxes",
+    "_build/html/_sources",
+    "_build/html",
+    "_build",
+    "02_dialog-boxes/03_22_mod_ste.md",
+    "02_dialog-boxes/03_23_mod_is.md",
+    "_build/html/_sources/02_dialog-boxes/03_22_mod_ste.md",
+    "_build/html/_sources/02_dialog-boxes/03_23_mod_is.md",
+    "02_dialog-boxes/08_references.md",
+    "_build/html/_sources/02_dialog-boxes/08_references.md",
+    "02_dialog-boxes/02_02_camera_arrangement.md",
+    "02_dialog-boxes/~$_17_mod_rem.docx",
+    "02_dialog-boxes/~$_16_mod_2flankspim.docx",
+    "02_dialog-boxes/~$_15_mod_catspim.docx",
+    "02_dialog-boxes/~$_14_mod_sc.docx",
+    "02_dialog-boxes/~$_18_mod_rest.docx",
+    "02_dialog-boxes/~WRL2810.tmp",
+    "_build/html/_sources/02_dialog-boxes/01_18_sp_size.md",
+    "_build/html/_sources/02_dialog-boxes/01_17_sp_hr_size.md",
+    "_build/html/_static/logo.png",
+    "_build/html/_static/play-solid.svg",
+    "_build/html/_static/copy-button.svg",
+    "_build/html/_static/check-solid.svg",
+    "_build/html/_static/plus.png",
+    "_build/html/_static/minus.png",
+    "_build/html/_static/file.png",
+    "03_images/03_image_files/moeller_et_al_2018_fig7_clipped.png",
+    "03_images/03_image_files/moeller_et_al_2018_fig4_clipped.png",
+    "03_images/03_image_files/moeller_et_al_2018_fig3_clipped.png"
   ]
 }

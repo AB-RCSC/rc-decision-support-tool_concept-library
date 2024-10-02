@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.17.2 <!--0.13-->
-    jupytext_version: 6.5.4 <!-- 1.16.4-->
+    jupytext_version: 1.16.4  <!--6.5.2-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -27,20 +27,15 @@ It's important to consider how your Target Species may react to the camera being
 While remote cameras are fairly non-invasive survey method, their presence on the landscape, in and of itself, can alter the behaviour of the species you aim to measure (potential attraction to, or avoidance of, the camera), ultimately interfering with detection rates / detection probability ({{ ref_intext_meek_et_al_2014) (e.g., “trap-shy” tigers are thought to avoid cameras due to the white flash emitted ({{ ref_intext_wegge_et_al_2004 }}; {{ ref_intext_sharma_et_al_2010 }}).
 
 Examples of comparable species that can be used to select the most appropriate option:
-
 - **Exploratory**: (e.g., moose, coyote)
-
 - **Neutral**: [INSERT HERE]
-
 - **Avoidant**: (e.g., lynx)
-
 - **I'm not sure**: select this option if you’re not sure of the investigative behaviour of your Target Species (single or multiple species)
-
 - **Variable**: select this option if you’re targeting multiple species and you expect that the investigative behaviour of these species is variable (e.g., you’re targeting coyote and lynx).
 
 ::::::
 
-::::::{tab-item} Advanced
+::::::{tab-item} In-depth
 
 Notes for later
 - How much sound and illumination (or flash) is emitted will depend on the users’ settings, and the camera make and model (type of flash available; xenon light, white LED or infrared LED illumination). However, the extent to which the camera interferes with behaviour will also depend upon the physical and behavioural characteristics of the species (e.g., perceptive range of hearing, boldness, etc.).
@@ -72,7 +67,7 @@ Notes for later
 
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | Correction factors (Marcus) | resource1_name | resource1_note | resource1_url | {{ ref_bib_resource1_ref_id }} |
@@ -88,7 +83,7 @@ Notes for later
 | resource11_type | resource11_name | resource11_note | resource11_url | {{ ref_bib_resource11_ref_id }} |
 ::::::
 
-::::::{tab-item} *Shiny
+::::::{tab-item} Shiny
 Check back in the future!
 ::::::
 

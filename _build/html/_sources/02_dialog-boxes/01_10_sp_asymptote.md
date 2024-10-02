@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.17.2 <!--0.13-->
-    jupytext_version: 6.5.4 <!-- 1.16.4-->
+    jupytext_version: 1.16.4  <!--6.5.2-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -43,7 +43,7 @@ Whether or not you choose to sample long enough to ensure to reach the species-a
 
 ::::::
 
-::::::{tab-item} Advanced
+::::::{tab-item} In-depth
 ```{figure} ../03_images/03_image_files/00_coming_soon.png
 :width: 300px
 :align: center
@@ -189,7 +189,7 @@ Rarefied Species Accumulation Curves (the simple way) tutorial: How to create be
 
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
 | R package / Tutorial | Species Accumulation Curves |      | <https://www.pisces-conservation.com/sdrhelp/index.html?specaccum.html> | {{ ref_bib_chao_et_al_2016 }} |

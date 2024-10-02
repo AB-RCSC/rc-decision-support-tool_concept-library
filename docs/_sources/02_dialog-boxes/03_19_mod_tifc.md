@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.17.2 <!--0.13-->
-    jupytext_version: 6.5.4 <!-- 1.16.4-->
+    jupytext_version: 1.16.4 <!--6.5.2-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -44,23 +44,23 @@ editor_options:
 ::::::{tab-item} Overview
 This section will be available soon! In the meantime, check out the information in the other tabs!
 
-```{figure} ../03_images/03_image_files/00_coming_soon.png
+:::{figure} ../03_images/03_image_files/00_coming_soon.png
 :width: 300px
 :align: center
-```
+:::
 ::::::
 
-::::::{tab-item} Advanced
+::::::{tab-item} In-depth
 :::{note}
 **This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2024)
 :::
 
 The time in front of the camera (TIFC) model is based on quadrat sampling. Typically, quadrats are used to sample slow- or non-moving organisms at a moment in time; as a simple example, a researcher lays a quadrat on the ground, counts the number of mussels in it and divides the count by the quadrat area. TIFC treats the camera viewshed like a vertical quadrat ({{ ref_intext_becker_et_al_2022 }}; {{ ref_intext_dickie_2022 }}). Unlike a conventional quadrat, however, the camera viewshed samples highly mobile organisms in a relatively small sliver of space and over long periods time ({{ ref_intext_becker_et_al_2022 }}; {{ ref_intext_dickie_2022 }}). The count of animals in the camera viewshed “quadrat,” then, can be thought of in “animal time” and the area covered by the quadrat in “area-time,” such that:
 
-```{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tifc1.png
+:::{figure} ../03_images/03_image_files/clarke_et_al_2023_eqn_tifc1.png
 :width: 200px
 :align: center
-```  
+:::
 
 **Clarke et al. (2023) – Fig. 8** A) Still from 中島啓裕’s (2021) video series. Example of overlaying a video recording of an animal on a reference image of the focal area (faint triangle) to determine staying time *T*. B) Still from Appendix S2 from Palencia et al. (2021). Example of superimposing the focal area on an image capture.
 
@@ -133,14 +133,13 @@ In Uganda, TIFC-derived estimates of antelope were comparable to results from ca
 ::::
 
 ::::{grid-item-card} {{ ref_intext_becker_2024 }}
-<iframe 
-    width="100%"
-    height="300"
-    src="https://drive.google.com/file/d/1IdxQScbzkHd2griu-dEYM4FTFjaXalKe/preview"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-</iframe>
+<div>
+  <div style="position:relative;padding-top:56.25%;">
+    <iframe src="https://drive.google.com/file/d/1IdxQScbzkHd2griu-dEYM4FTFjaXalKe/preview" loading="lazy" frameborder="0" allowfullscreen
+      style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+  </div>
+</div>
+
 
 How to estimate density using TIFC; 
 Video clip from presentation titled “Comparisons between moose densities with aerial surveys and integrated camera projects”
@@ -155,7 +154,7 @@ Check back in the future!
 
 ::::::
 
-::::::{tab-item} Analytical tools & resources
+::::::{tab-item} Analytical tools & Resources
 
 | Type | Name | Note | URL |Reference |
 |:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|

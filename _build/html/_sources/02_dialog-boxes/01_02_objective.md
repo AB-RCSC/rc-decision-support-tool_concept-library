@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.17.2 <!--0.13-->
-    jupytext_version: 6.5.4 <!-- 1.16.4-->
+    jupytext_version: 1.16.4  <!--6.5.2-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -53,7 +53,7 @@ Definitions for each option are as follows (with a few additional notes):
 
 ::::::
 
-::::::{tab-item} Advanced
+::::::{tab-item} In-depth
 **<font size="4"><span style="color:#2F5496">Objective *vs.* State Variable</font></span>**
 
 One of the first choices you will make when designing your study, is what it is that you plan to measure (or your “state variable”; a formal measure that summarizes the state of a community or population at a particular time \[{{ ref_intext_wearn_gloverkapfer_2017 }}\]). Since this concept might be easy to confuse with [Survey Objective(s)](#survey_objectives) (and since “objective” is often referred to interchangeably with “state variable”), consider the following figure:

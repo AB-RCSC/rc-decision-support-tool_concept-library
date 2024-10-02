@@ -5,7 +5,7 @@ jupytext:
     extension: .md
     format_name: myst
     format_version: 0.17.2 <!--0.13-->
-    jupytext_version: 6.5.4 <!-- 1.16.4-->
+    jupytext_version: 1.16.4  <!--6.5.2-->
 kernelspec:
   display_name: Python 3
   language: python
@@ -27,7 +27,7 @@ In a stratified design, the study area is divided into smaller strata according 
 The number (and selection of) strata appropriate for a given study area will depend on the [study objectives](#survey_objectives), landscape diversity, spatial scale, [Target Species](#target_species), and available resources. For example, a study estimating abundance of a species that is wide-ranging and patchily distributed across a study area with a diversity of habitat types will typically have more strata than that for the same species in a simpler landscape or species distribution. Sampling effort (e.g., number of cameras, camera days) will increase with the number of strata. Wearn & Glover-Kapfer (2017) recommended at least 20 camera locations, and ideally 50 locations, per strata for reasonably precise estimates of species diversity, richness, relative abundance, and behaviours. 
 ::::::
 
-::::::{tab-item} Advanced
+::::::{tab-item} In-depth
 Camera locations and their spatial arrangements are integral components of any study design and strongly influence detection probability and likelihood of species occurrence.
 
 In a stratified non-random study design, more cameras may be strategically placed in strata known or suspected to have higher activity, that are more common, and/or that have higher expected variance within a stratum. By allocating sampling effort in strata that have higher likelihood of detection, are larger, and/or more variable, overall effort may be reduced and precision of estimates improved. However, there are several important disadvantages to using a non-random study design, including the possibility of missing individuals/species/behaviours entirely, and the inability to make inferences to the entire study area.

@@ -40,7 +40,7 @@ h3 {
 }
 
 div.b {
-      line-height: 1.15;
+    line-height: 1.15;
 }
 
 html {
@@ -50,11 +50,22 @@ html {
 root {
   ---pst-sidebar-font-size: 2em;
 }
+
 div.img_grid {
   :width: 100%;
   :align: center;
 }
 
+div.h_bold {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2F5496;
+}
+
+span.underline {
+    text-decoration: underline;
+    color: #2F5496;
+}
 
 /* Block Quotes
 blockquote {
@@ -63,6 +74,18 @@ blockquote {
   background-color: white;
   padding: 20px;
 }*/
+
+div.indent {
+  color: white;
+  border-left: 8px solid  white;
+  background-color: white;
+  padding: 20px;
+}
+
+div.hanging {
+padding-left: 2em
+text-indent: -2em
+}
 
 div.admonition.admonition-youtube {
   border-color: hsl(0deg 100% 50%); /* YouTube red */
