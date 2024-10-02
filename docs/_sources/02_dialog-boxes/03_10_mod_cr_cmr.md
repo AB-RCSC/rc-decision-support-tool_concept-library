@@ -62,7 +62,7 @@ This section will be available soon! In the meantime, check out the information 
 
 ::::::{tab-item} In-depth
 :::{note}
-**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2024)
+**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2023)
 :::
 
 Of all the modelling frameworks discussed in this document, capture-recapture (CR) also called capture-mark-recapture or mark-recapture – is perhaps the most wellknown. Since the 19th century, CR has been used to measure population size by  capturing, marking, releasing and recapturing individuals ({{ ref_intext_lecren_1965 }}, {{ ref_intext_otis_et_al_1978 }}). For species or populations that are challenging to physically trap and mark, CR  can also be applied to DNA, acoustic and camera trap data ({{ ref_intext_royle_et_al_2014 }}). Here,  we will discuss camera trap CR.

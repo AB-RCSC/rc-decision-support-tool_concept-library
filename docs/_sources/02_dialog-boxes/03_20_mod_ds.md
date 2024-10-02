@@ -65,7 +65,7 @@ This section will be available soon! In the meantime, check out the information 
 
 ::::::{tab-item} In-depth
 :::{note}
-**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2024)
+**This content was adapted from**: The Density Handbook, "[Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers](https://www.researchgate.net/publication/368601884_Using_Camera_Traps_to_Estimate_Medium_and_Large_Mammal_Density_Comparison_of_Methods_and_Recommendations_for_Wildlife_Managers)" (Clarke et al., 2023)
 :::
 
 Distance sampling (DS) theory was developed in the early 1990s to estimate density from line- or point-transect surveys, including aerial surveys (e.g., {{ ref_bib_aep_2016 }}; {{ ref_intext_buckland_et_al_1993 }}). The novelty of the DS approach is in its capacity to correct for imperfect detection (i.e., not observing animals that are present) by measuring the distance between survey lines or points and animals ({{ ref_intext_morin_et_al_2022 }}; {{ ref_intext_buckland_et_al_2015 }}; {{ ref_intext_gilbert_et_al_2021 }}).
