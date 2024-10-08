@@ -16,7 +16,7 @@ editor_options:
 ---
 # test2
 
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
+<button type="button" class="btn btn-secondary mt-0" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
   Tooltip on top
 </button>
 

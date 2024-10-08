@@ -14,75 +14,103 @@ editor_options:
   markdown: 
   wrap: none
 ---
-# 00_test_embed --------------------------------------------------------------------
+# Colour blind-friendly
+:::::{grid} 4
+:gutter: 3
 
-this one
-```{include} include/00_test_image.md
-```
+::::{grid-item-card}
+:class-card: class-pale-red
+**<font size='4'>pale-red</font>**
+::::
+::::{grid-item-card}
+:class-card: class-orange
+**<font size='4'>orange</font>**
+::::
+::::{grid-item-card}
+:class-card: class-pale-yellow
+**<font size='4'>pale-yellow</font>**
+::::
+::::{grid-item-card}
+:class-card: class-sand
+**<font size='4'>sand</font>**
+::::
+:::::
 
-this one
-```{include} include/00_test_image.md
-```
+:::::{grid} 4
+::::{grid-item-card}
+:class-card: class-light-yellow
+**<font size='4'>light-yellow</font>**
+::::
+::::{grid-item-card}
+:class-card: class-yellow
+**<font size='4'>yellow</font>**
+::::
+::::{grid-item-card}
+:class-card: class-pale-green
+**<font size='4'>pale-green</font>**
+::::
+::::{grid-item-card}
+:class-card: class-pear
+**<font size='4'>pear</font>**
+::::
+:::::
 
-***
+:::::{grid} 4
+::::{grid-item-card}
+:class-card: class-olive
+**<font size='4'>olive</font>**
+::::
+::::{grid-item-card}
+:class-card: class-mint
+**<font size='4'>mint</font>**
+::::
+::::{grid-item-card}
+:class-card: class-pale-cyan
+**<font size='4'>pale-cyan</font>**
+::::
+::::{grid-item-card}
+:class-card: class-pale-blue
+**<font size='4'>pale-blue</font>**
+::::
+:::::
 
-{ref}`*Access Method`
-
-
-```{embed} #myLabel
-```
-
-1
-```{embed} #myLabel
-```
-
-
-2
-```{literalinclude} #myLabel
-```
-
-
-3
-```{include}} #myLabel
-```
-
-
-4
-```{embed} include/00_test_image.md#myLabel
-```
-
-5
-```{literalinclude} include/00_test_image.md#myLabel
-```
+:::::{grid} 4
+::::{grid-item-card}
+:class-card: class-pale-grey
+**<font size='4'>pale-grey</font>**
+::::
+:::::
 
 
-6
-```{include}} 00_test_image.md#myLabel
-```
-
-:::{figure} ../03_images/03_image_files/clarke_et_al_2023_fig7_clipped.png 
-:class: img_grid
-
-> **Clarke et al. (2023) - Fig. 7** Measuring *𝑟* and *𝜃* by field trial. The perimeter of the detection zone is determined by approaching the camera from different angles and at different speeds, and noting where the camera’s sensor (red flash) detects motion (red dots).
-:::
 
 # 00_tooltip --------------------------------------------------------------------
-<button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-  Tooltip on top
-</button>
+this is a sub {{ test_bdg }}
 
 
-{bdg-link-white}`explicit title <https://ab-rcsc.github.io/rc-decision-support-tool_concept-library>`
+not sub
+test <button type="button" class="btn btn-link btn-bd-text btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...).">[Access Method](#access_method)</button> and more text
+
+<span class="align-middle">align-middle<button type="button" class="btn btn-link btn-bd-text btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...).">[Access Method](#access_method)</button> and more text</span>
+
+<span class="align-baseline">align-baseline <button type="button" class="btn btn-link btn-bd-text btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...).">[Access Method](#access_method)</button> and more text</span>
+
+<span class="align-top"> align-top<button type="button" class="btn btn-link btn-bd-text btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...).">[Access Method](#access_method)</button> and more text</span>
+
+<span class="align-bottom">align-bottom<button type="button" class="btn btn-link btn-bd-text btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...).">[Access Method](#access_method)</button> and more text</span>
+
+<span class="align-text-top">text-top<button type="button" class="btn btn-link btn-bd-text btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...).">[Access Method](#access_method)</button> and more text</span>
+
+<span class="align-text-bottom">text-bottom<button type="button" class="btn btn-link btn-bd-text btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...).">[Access Method](#access_method)</button> and more text</span>
+
+<span class="align-baseline">baseline</span>
+<span class="align-top">top</span>
+<span class="align-middle">middle</span>
+<span class="align-bottom">bottom</span>
+<span class="align-text-top">text-top</span>
+<span class="align-text-bottom">
 
 
-```{button-link} https://ab-rcsc.github.io/rc-decision-support-tool_concept-library
-:color: primary
-:shadow:
-:align: center
-:tooltip: I am a tooltip
-Concept library
-```
-
+# old
 <span class='underline example'>underline</span>
 
 <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
@@ -100,38 +128,23 @@ Concept library
 <br>
 
 
-<br>
+```{button-link} https://ab-rcsc.github.io/rc-decision-support-tool_concept-library
+:color: primary
+:shadow:
+:align: center
+:tooltip: I am a tooltip
+Concept library
+```
 
 [<button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
 <span style="color:#2F5496"><u>Access Method</u></span></button>](#access_method)
-
-<br>
-jjjjjj
-
-Here is some text [<button type="button" class="btn btn-secondary btn-sm" btn-border-width= "1px" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><span class='underline'>Access Method</span></button>](#access_method) and more text
-
-<span class='underline'>Access Method</span>
-
-<br>
-
-Here is some text <button type="button" class="btn btn-link btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...).">[Access Method](#access_method)</button> and more text
-
-<br>
 
 Here is some text <button type="button" class="btn btn-link btn-sm" data-bs-toggle="tooltip" data-bs-placement="top" title="The method used to reach the camera location (e.g., on...).">[Access Method](#access_method)</button> and more text
 
 <br>
 <button type="button" class="btn btn-secondary btn-sm" btn-border-width= "0px" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><span class='underline'>Access Method</span></button>
 
-
-
 <button type="button" class="btn btn-secondary btn-sm input-btn-padding-y-sm input-btn-padding-x-sm input-btn-font-size-sm" btn-border-width= "1px" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"><span class='underline'>Access Method</span></button>
-
-
-{bdg-link-white}`explicit title <https://ab-rcsc.github.io/rc-decision-support-tool_concept-library>`
-
-
-Here is some text [<span class='underline'>Access Method</span>](#access_method) Here is some text 
 
 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="tooltip" data-bs-placement="right" title="Tooltip on right">
   Species Inventory
@@ -170,7 +183,39 @@ Here is some text [<span class='underline'>Access Method</span>](#access_method)
   <button class="btn btn-primary position-relative" type="button">Button</button>
 </div>
 
+# 00_test_embed --------------------------------------------------------------------
 
+this one
+```{include} include/00_test_image.md
+```
+
+this one
+```{include} include/00_test_image.md
+```
+
+***
+
+```{embed} #myLabel
+```
+
+1
+```{embed} #myLabel
+```
+2
+```{literalinclude} #myLabel
+```
+3
+```{include}} #myLabel
+```
+4
+```{embed} include/00_test_image.md#myLabel
+```
+5
+```{literalinclude} include/00_test_image.md#myLabel
+```
+6
+```{include}} 00_test_image.md#myLabel
+```
 
 
 # 00_test_cross_ref --------------------------------------------------------------------
@@ -184,85 +229,35 @@ Here is some text [<span class='underline'>Access Method</span>](#access_method)
 </iframe>
 
 {ref}`*Access Method`  <!-- https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#block-attributes-->
-
 {ref}`your text here </09_glossary.md#deployment_comments>`
-
 {ref}`your text here </09_glossary2.md#deployment_comments>`
 
-
 <!-- worked to 09_glossary_blocktest.md-->
-
 {term}`*Access Method`<!-- worked-->
-
 {term}`term test<*Access Method>`<!-- worked-->
-
 {ref}`ref text here<access_method>`
-
 [test](access_method)  goes to page but not ref
-
-
 `/09_glossary2.md#access_method`
-
-
 []{mods_zero_inflation}
-
 '{'#access_method'}'
-
 {#age_class_adult}
-
 {age_class}
 
-
-
-(heading-target)=
+<!-- (heading-target)=
 ### Heading
-
-
-.
-.
-.
-.
-.
-.
-
-
-
 {#paragraph-target}=
 This is a paragraph, with an `id` attribute.
-
-.
-.
-.
-.
-.
-.
-
 This is a [span with an `id` attribute]{#span-target}
-.
-.
-.
-.
-.
-.
-.
-.
 
 :::{note}
 :name: directive-target
 
 This is a directive with a `name` option
 :::
-.
-.
-.
-.
-.
-.
-.
 
 [heading link](#heading-target), [paragraph link](#paragraph-target),
 [span link](#span-target), [directive link](#directive-target)
-
+-->
 <!-- https://myst-parser.readthedocs.io/en/latest/syntax/cross-referencing.html--> 
 <!-- https://pydata-sphinx-theme.readthedocs.io/en/stable/examples/kitchen-sink/generic.html#inline-hyperlink-targets--> 
 <!-- https://docs.readthedocs.io/en/stable/guides/cross-referencing-with-sphinx.html#finding-the-reference-name--> 
@@ -272,46 +267,26 @@ This is a directive with a `name` option
 <!-- this is with target immediatiely after the id)--> 
 
 <!-- (access_method)=
-**\*Access Method--> 
-
-
+ **\*Access Method 
 [test](access_method)  ## goes to page but not ref
-
 [test](#access_method) ## goes NOWHERE
-
-
-
 [test](/09_glossary2.md#access_method)  ## unsure
-
 [test](./09_glossary2.md#access_method) ## WORKS
 
-
-
 [test](../09_glossary.md#access_method) ## goes to page but not ref
-
-<!-- (#age_class_adult)=
-**Adult**--> 
+(#age_class_adult)=
+**Adult**
 [test](/09_glossary.md#age_class_adult) ## goes to page but not ref
-
 [test](./09_glossary.md#age_class_adult)## goes NOWHERE
-
 [test](../09_glossary.md#age_class_adult) ## goes to page but not ref
-
+-->
 <!-- now try with space no difference-->
-
-# goes NOWHERE
- 
+<!-- # goes NOWHERE
 [test]{/09_glossary.md#deployment_comments} 
-
 [test]{./09_glossary.md#deployment_comments}
-
 [test]{../09_glossary.md#deployment_comments}
-
-
 [test]{/09_glossary.md#deployment_crew}
-
 [test]{./09_glossary.md#deployment_crew}
-
 [test]{../09_glossary.md#deployment_crew}
-
+-->
 <!-- now try with space no difference-->

@@ -283,6 +283,7 @@ parse:
     tab3: "Shiny apps/Widgets"
     tab3: "Analytical tools & resources"
     tab3: "References"
+    test_bdg: "<button type=\"button\" class=\"btn btn-link btn-bd-text btn-sm\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" title=\"The method used to reach the camera location (e.g., on...).\">[Access Method](#access_method)</button>"
     ref_bib_figure1_ref_id: "ref_bib_figure1_ref_id"
     ref_bib_figure10_ref_id: "ref_bib_figure10_ref_id"
     ref_bib_figure11_ref_id: "ref_bib_figure11_ref_id"

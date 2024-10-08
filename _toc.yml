@@ -13,12 +13,13 @@ parts:
   chapters:
   - file: index_links_all_internal_2024-10-02.md
   - file: 02_dialog-boxes/00_master_test.md
+  - file: itables_references.ipynb
 ##### Objectives & Resources
   - file: 01_toc_pages/00_01_toc_objective_resources.md
     title: Objectives & Resources
     sections:
     - file: 02_dialog-boxes/00_test_keep.md
-    - file: 02_dialog-boxes/00_test_image.md
+#    - file: 02_dialog-boxes/00_test_image.md
 #    - file: 02_dialog-boxes/00_tooltip.md
 #    - file: 02_dialog-boxes/00_test_cross_ref.md
 #    - file: 02_dialog-boxes/00_test_embed.md
