@@ -17,9 +17,16 @@ editor_options:
 (i_objective)=
 # {{ title_i_objective }}
 
+:::{hint}
+**State variable**: A formal measure that summarizes the state of a community or population at a particular time ({{ ref_intext_wearn_gloverkapfer_2017 }}), (e.g., species richness or population abundance).
+- Hover over each term to see its definition
+- Refer to the "overview" tab of the concept infobox for the full definition list (with figures!)
+- Refer to the "advanced" tab of the concept infobox if you would like to understand more about how a "state variable" differs from an "objective."
+:::
+
 :::::::{tab-set}
 
-::::::{tab-item} Overview 2
+::::::{tab-item} Overview
 ## A few definitions
 Definitions for each option are as follows (with a few additional notes):
 :::::{card}

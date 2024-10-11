@@ -16,7 +16,7 @@ editor_options:
 ---
 (i_objective)=
 # {{ title_i_objective }}
-
+::::::::{dropdown}
 :::::::{tab-set}
 
 ::::::{tab-item} Overview
@@ -119,3 +119,5 @@ The [Survey Objective](#survey_objectives) will determine the appropriate [study
 ::::::
 
 :::::::
+
+::::::::
