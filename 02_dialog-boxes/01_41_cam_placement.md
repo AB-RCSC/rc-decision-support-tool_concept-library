@@ -1,0 +1,266 @@
+﻿---
+jupytext:
+  formats: md:myst
+  text_representation:
+    extension: .md
+    format_name: myst
+kernelspec:
+  display_name: Python 3
+  language: python
+  name: python3
+editor_options:
+  markdown:
+    wrap: none
+---
+(i_cam_placement)=
+# {{ title_i_cam_placement }}
+::::::::{hint}
+**{{ name_cam_height }}**: {{ def_cam_height }}
+**{{ name_cam_direction }}**: {{ def_cam_direction }}
+**{{ name_cam_angle }}**: {{ def_cam_angle }}
+```{admonition} See also
+:class: sidebar tip
+{{ link_bdg_targ_feature }}
+```
+::::::::
+
+```{include} pro_con_assump/cam_placement_apc.md
+```
+::::::::{tab-set}
+
+:::::::{tab-item} Overview
+## Camera placement
+### Camera Height
+
+The **[Camera Height](#camera_height)** is the height from the ground (below snow) to the bottom of the lens (metres; to the nearest 0.05 m). Cameras should be positioned and secured to an attachment point at **\~0.5–1 m height** (from the ground to the bottom of the lens; Meek et al., 2014). The most appropriate [Camera Height](#camera_height) will be influenced by the terrain (e.g., slope), the angle of the tree, as well as the [Target Species](#target_species). Cameras placed closer to the ground reduce the probability that large animals (e.g., moose) will be fully in the frame in the photos. Similarly, if the camera is placed too high, only larger animals will activate the motion detector, and smaller species may be missed (e.g., hares, squirrels, marten) (Meek et al., 2016). The user should ensure that the [Camera Height](#camera_height) adequately detects motion at a specified [Walktest Distance (m)](#walktest_distance) and [Walktest Height (m)](#walktest_height). If snow is a consideration, users may need to place cameras higher or plan to revisit seasonally to adjust as needed, being sure to record adjustments that could affect [detection probability](#detection_probability).
+
+(TOC_surv_guidelines_camera_angle)=
+### Camera angle
+
+The **[camera angle](#camera_angle)** is the degree to which the camera is pointed towards the [FOV Target Feature](#fov_target) relative to the horizontal ground surface (with respect to slope, if applicable). The [camera angle](#camera_angle) differs from the camera [viewshed](#fov_viewshed) angle, which is the area visible to the camera as determined by its camera lens angle and trigger distance (Moeller et al., 2023).
+
+Cameras should be **angled slightly downward**, such that they should be able to detect both small and large species at a target distance of approximately **3–5 m** from the camera and/or the user ensures that the [angle](#camera_angle) adequately detects motion at a specified [Walktest Distance (m)](#walktest_distance) and [Walktest Height (m)](#walktest_height). Cameras should not be angled upwards, as upward facing angles will result in fewer detections, especially of smaller species (Glen et al., 2013). If snow is a consideration, users may need to angle cameras higher or plan to revisit seasonally to adjust as needed, being sure to record adjustments that could affect [detection probability](#detection_probability).
+
+(TOC_surv_guidelines_camera_direction)=
+### Camera Direction
+
+The **[Camera Direction](#camera_direction)** is the cardinal direction that a camera faces. Cameras are usually positioned to maximize detections of the [Target Species](#target_species) (except when [random](#sampledesign_random) placement is required).
+
+The direction a camera faces is an important consideration because it affects the amount of light that reaches the area, which has implications for both [detection probability](#detection_probability) and image quality (reduced quality via sun glare). Ideally, cameras should face north (N, i.e. “0” degrees), or south (S; i.e. “180” degrees) if north is not possible. Sun glare is the most problematic for cameras that face east or west by causing [false triggers](#false_trigger) unless there is thick tree cover blocking the sun (standing water may also produce similar problems with sun glare).
+
+The camera direction should be chosen to ensure the field of view (FOV) is of the original FOV target feature. Generally, cameras should be placed **perpendicular to the expected direction of animal travel** (e.g., along a game or human trail). Since there is a delay between when an animal enters the camera’s [detection zone](#detection_zone) and when it captures an image, placing the camera perpendicular to the trail increases the likelihood that an animal will be in the frame when the camera [triggers](#trigger_event) (Apps & McNutt, 2018). The delay is typically \< 1 s, depending on the [trigger speed](#trigger_speed) for a particular camera and the settings applied. The size of the [detection zone](#detection_zone) will depend on the [Camera Make](#camera_make) and [Camera Model](#camera_model).
+
+(TOC_surv_guidelines_fov_and_walktest)=
+### Field of View (FOV) and Walktest
+
+It is important to try to ensure an unobstructed [Field of View (FOV)](#field_of_view) from the camera to avoid impairing the [detection rates](#detection_rate) of wildlife (or humans). Moll et al. (2019) reported decreased [detection rates](#detection_rate) with increasing obstruction for most mammals in their study and two- to three-fold decreases in detections per week per camera. They concluded that it was critical to account for [viewshed](#fov_viewshed) obstruction when interpreting [detection rates](#detection_rate) as indices of abundance and habitat use.
+
+To determine a camera’s [FOV](#field_of_view), a [walktest](#walktest) should be performed every time a camera is deployed or re-positioned. See the camera’s user manual for instructions on how to perform the [walktest](#walktest) for your particular [Camera Make](#camera_make) and [Camera Model](#camera_model) (see also [Appendix A - Table A5](/1_survey-guidelines/1_10.1_AppendixA-Tables.md#TOC_surv_guidelines_table_a5)).
+
+An **unobstructed** [**FOV**](#field_of_view) **of at least 5 m wide and 10 m long** is ideal for capturing wildlife images in most cases. To achieve this desired [FOV](#field_of_view), ensure that the camera is detecting motion 5 m in front of the camera, at both 0 m and 0.5–1 m heights ([Figure 7](#TOC_surv_guidelines_fig_7)).
+
+This may require repositioning the camera to avoid large objects (e.g., rocks, logs) and/or trimming or removing vegetation that interferes with the visibility of the target area (or is likely to in the future). These objects may block areas within the camera’s [FOV](#field_of_view) and reflect the flash, making it more difficult to detect animals at night. Trimming or removing vegetation will also minimize the likelihood of [false triggers](#false_trigger) (i.e., blank images (no wildlife or human present) that can occur because of blowing vegetation). [False triggers](#false_trigger) will drain batteries and fill SD cards and increase the time to process images.
+
+Important considerations with respect to [FOV](#field_of_view) include:
+
+- Situations (e.g., open habitats) where animals in background my be viewable but would not trigger the detector (sensor),
+- how animals in the distance should be treated (i.e., at what distance is an animal captured in an image no longer considered a detection)
+
+Placing a stake in front of the camera at a specified distance (i.e., the “stake distance”) is one method used to standardize the [FOV](#field_of_view). Applying a standardized reference distance can help with interpretation and analysis (ABMI, 2021).
+
+```{figure} ../0_figures/Survey-guidelines_walktest-height.png
+:align: center
+:scale: 70%
+:name: TOC_surv_guidelines_fig_7
+```
+
+**Figure 7.** The [**Walktest Distance**](#walktest_distance) and [**Walktest Height**](#walktest_height) are the horizontal and vertical distances from the camera, respectively, at which the user performs the walk test. A [walktest](#walktest) should be performed 5 m away from the camera, at both 0 m (ground) and 0.5–1 m height.
+
+(TOC_surv_guidelines_test_image)=
+### Test image
+
+A [**test image**](#test_image) is an image taken from a camera after it has been set up to provide a permanent record of the [visit metadata](#visit_metadata). Taking a [test image](#test_image) can be useful to compare the information from the [test image](#test_image) to that which was collected on the [Camera Service/Retrieval Field Datasheet](/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md#TOC_surv_guidelines_datasheet_service_retrieval) after retrieval, which can help in reducing recording errors.
+
+A [**test image**](#test_image) should include a [Test Image Sheet](/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md#TOC_surv_guidelines_datasheet_test_image_sheet) or whiteboard with information on the [Sample Station Name](#sample_station_name), [Camera Location Name](#camera_location), Crew, and [Deployment Start Date Time (DD-MMM-YYYY HH:MM:SS)](#deployment_start_date_time). See [Appendix A - Table A5](/1_survey-guidelines/1_10.1_AppendixA-Tables.md#TOC_surv_guidelines_table_a5) for details on how to capture a [test image](#test_image), and for the provided [Test Image Sheet](/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md#TOC_surv_guidelines_datasheet_test_image_sheet).
+
+(TOC_surv_guidelines_deployment_area_photos)=
+### Deployment Area Photos (optional)
+
+It is useful to collect photos of the area around the [camera location](#camera_location) (i.e., [**deployment area photos**](#deployment_area_photos)) as a permanent, visual record of the [FOV Target Features](#fov_target), [Camera Location Characteristics](#camera_location_characteristics), environmental conditions (e.g., vegetation, ecosite, or weather), or other variables of interest.
+
+Take [deployment area photos](#deployment_area_photos) with a handheld digital camera or phone at each [camera location](#camera_location) at deployment, service and retrieval. The recommendation includes collecting four photos taken from the centre of the target detection zone ([Figure 5](#TOC_surv_guidelines_fig_5)), facing each of the four cardinal directions. The documentation of the collection of these photos is recorded as "deployment area photos taken" (Y/N).
+
+Record the image numbers (e.g., DSC100; “[Deployment Area Photo Numbers](#deployment_area_photo_numbers)“) for each set of camera [deployment area photos](#deployment_area_photos) on a [Camera Deployment Field Datasheet](/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md#FILES_surv_guidelines_datasheet_deployment)).
+
+(TOC_surv_guidelines_camera_location_characteristics)=
+### Camera Location Characteristics
+
+**Camera Location Characteristics** are any significant features around the camera at the time of the visit. This may include for example, manmade or natural linear features (e.g., trails), habitat types (e.g., wetlands), wildlife structure (e.g., beaver dam). [Camera Location Characteristics](#camera_location_characteristics) differ from [FOV Target Features](#fov_target) in that [Camera Location Characteristics](#camera_location_characteristics) could include those not in the camera's Field of View.
+
+Researchers typically record information about the environment at [camera locations](#camera_location) to better understand how this might affect animal occurrence or behaviour. It is recommended to record all [Camera Location Characteristics](#camera_location_characteristics) and upload these to a digital data-collection platform with private or open settings like [Epicollect](https://five.epicollect.net/), using the template provided. Alternatively, you may choose to upload these photos using species identification models to an open-source platform like [inaturalist](https://inaturalist.ca), [WildTrax](https://ualbertaca-my.sharepoint.com/personal/cjsteven_ualberta_ca/Documents/RCSC_RC-Survey-Guidelines_AB-Metadata-Standards/WildTrax) and/or [FWMIS](https://www.alberta.ca/fisheries-and-wildlife-management-information-system-overview.aspx).
+
+(TOC_surv_guidelines_field_equipment)=
+### Field equipment
+
+Refer to [Appendix A - Table A4](/1_survey-guidelines/1_10.1_AppendixA-Tables.md#TOC_surv_guidelines_table_a4) for a recommended list of field equipment for remote camera studies.
+
+(TOC_surv_guidelines_metadata)=
+## 7.5 Metadata
+
+[Metadata](#metadata) (i.e., data that provides information about other data) is critical to any scientific study or monitoring program. It helps to ensure that data are consistent and accurate and facilitates data sharing across [projects](#project). Alberta and British Columbia have established [metadata](#metadata) standards ([AB Metadata Standards](https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html) [RCSC, 2024] and the [B.C. Metadata Standards](https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/wcmp_v1.pdf) [RISC, 2019]) that all camera [projects](#project) in the provinces should follow. In these guidelines, we focus on the metadata fields that pertain to the deployment of cameras, which should be collected when the user “visits” the location.
+::: {note}
+These guidelines do not describe all fields relevant to/required by the [AB Metadata Standards](https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html) (RCSC, 2024) and [B.C. Metadata Standards](https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/wcmp_v1.pdf) (RISC, 2019). Similarly, there may be additional/alternative fields required by the Alberta Government’s [FWMIS loadform](https://www.alberta.ca/wildlife-loadforms.aspx) (https://www.alberta.ca/wildlife-loadforms.aspx) for camera studies compared to those within these guidelines or the [AB Metadata Standards](https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html) (RCSC, 2024). Every effort has been made to align the various sources where possible.
+:::
+
+:::::::
+
+:::::::{tab-item} In-depth
+```{include} include/00_coming_soon.md
+```
+:::::::
+
+:::::::{tab-item} Visual resources
+::::::{grid} 3
+:gutter: 3
+:class-container: wrapper
+
+:::::{grid-item-card} {{ rtxt_figure1_ref_id }}
+<img src="../03_images/03_image_files/figure1_filename.png" class="img_grid"><br><br>
+figure1_caption
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure2_ref_id }}
+<img src="../03_images/03_image_files/figure2_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure3_ref_id }}
+<img src="../03_images/03_image_files/figure3_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure4_ref_id }}
+<img src="../03_images/03_image_files/figure4_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure5_ref_id }}
+<img src="../03_images/03_image_files/figure5_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure6_ref_id }}
+<img src="../03_images/03_image_files/figure6_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure7_ref_id }}
+<img src="../03_images/03_image_files/figure7_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure8_ref_id }}
+<img src="../03_images/03_image_files/figure8_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure9_ref_id }}
+<img src="../03_images/03_image_files/figure9_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure10_ref_id }}
+<img src="../03_images/03_image_files/figure10_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure11_ref_id }}
+<img src="../03_images/03_image_files/figure11_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_figure12_ref_id }}
+<img src="../03_images/03_image_files/figure12_filename.png" class="img_grid"><br><br>
+:::::
+
+:::::{grid-item-card} {{ rtxt_vid1_ref_id }}
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid1_url"></iframe></div>
+
+:::::
+
+:::::{grid-item-card} {{ rtxt_vid2_ref_id }}
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid2_url"></iframe></div>
+
+:::::
+
+:::::{grid-item-card} {{ rtxt_vid3_ref_id }}
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid3_url"></iframe></div>
+
+:::::
+
+:::::{grid-item-card} {{ rtxt_vid4_ref_id }}
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid4_url"></iframe></div>
+
+:::::
+
+:::::{grid-item-card} {{ rtxt_vid5_ref_id }}
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid5_url"></iframe></div>
+
+:::::
+
+:::::{grid-item-card} {{ rtxt_vid6_ref_id }}
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid6_url"></iframe></div>
+
+:::::
+
+:::::{grid-item-card} {{ rtxt_vid7_ref_id }}
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid7_url"></iframe></div>
+
+:::::
+
+:::::{grid-item-card} {{ rtxt_vid8_ref_id }}
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid8_url"></iframe></div>
+
+:::::
+
+:::::{grid-item-card} {{ rtxt_vid9_ref_id }}
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid9_url"></iframe></div>
+
+:::::
+
+::::::
+
+:::::::
+
+:::::::{tab-item} Shiny apps/Widgets
+Check back in the future!
+:::::::
+
+:::::::{tab-item} Shiny apps/Widgets
+::::::{card} shiny_name
+shiny_caption
+
+<div class="iframe-container-shiny"><iframe class="iframe-responsive-shiny" src="shiny_url"></iframe></div>
+::::::
+
+:::::::
+
+:::::::{tab-item} Shiny apps/Widgets
+::::::{card}
+:::::{dropdown} shiny_name
+shiny_caption
+
+<div class="iframe-container-shiny"><iframe class="iframe-responsive-shiny" src="shiny_url"></iframe></div>
+:::::
+
+:::::{dropdown} shiny_name2
+shiny_caption2
+
+<div class="iframe-container-shiny"><iframe class="iframe-responsive-shiny" src="shiny_url2"></iframe></div>
+:::::
+
+::::::
+
+:::::::
+
+:::::::{tab-item} Analytical tools & Resources
+| Type | Name | Note | URL | Reference |
+|:----------------|:-------------------------------|:----------------------------------------------------------------|:----------------------|:----------------------------------------|
+|
+:::::::
+
+:::::::{tab-item} References
+{{ rbib_clarke_et_al_2023 }}
+:::::::
+
+::::::::

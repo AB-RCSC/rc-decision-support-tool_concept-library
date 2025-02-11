@@ -1,0 +1,805 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Camera height, angle, direction &#8212; Remote Camera Decision Support Tool - Concept Library</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=49218bc3" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/01_41_cam_placement';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Remote Camera Decision Support Tool - Concept Library - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Remote Camera Decision Support Tool - Concept Library - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool">
+    <b>Home</b> 
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/">
+    Concept library
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/08_references.html">
+    References
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/09_glossary.html">
+    Glossary
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/10_other_resource_lib.html">
+    Other resources
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/AB-RCSC/rc-decision-support-tool" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/" title="Survey Guidelines / Metadata Standards" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_survguide_metadata.png" class="icon-link-image" alt="Survey Guidelines / Metadata Standards"/></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/02_dialog-boxes/01_41_cam_placement.md"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool">
+    <b>Home</b> 
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/">
+    Concept library
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/08_references.html">
+    References
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/09_glossary.html">
+    Glossary
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/10_other_resource_lib.html">
+    Other resources
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/AB-RCSC/rc-decision-support-tool" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/" title="Survey Guidelines / Metadata Standards" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_survguide_metadata.png" class="icon-link-image" alt="Survey Guidelines / Metadata Standards"/></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/02_dialog-boxes/01_41_cam_placement.md"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none"></div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="camera-height-angle-direction">
+<span id="i-cam-placement"></span><h1>Camera height, angle, direction<a class="headerlink" href="#camera-height-angle-direction" title="Link to this heading">#</a></h1>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong></strong>: The height from the ground (below snow) to the bottom of the lens (metres; to the nearest 0.05 m).
+<strong></strong>: The cardinal direction that a camera faces. Ideally, cameras should face north (N; i.e. ‘0’ degrees), or south (S; i.e. ‘180’ degrees) if north is not possible. The Camera Direction should be chosen to ensure the field of view (FOV) is of the original FOV target feature.
+<strong></strong>: The degree at which the camera is pointed toward the FOV Target Feature relative to the horizontal ground surface (with respect to slope, if applicable).</p>
+<div class="sidebar tip admonition">
+<p class="admonition-title">See also</p>
+</div>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-0">
+Overview</label><div class="sd-tab-content docutils">
+<h2 class="rubric" id="camera-placement">Camera placement</h2>
+<h3 class="rubric" id="camera-height">Camera Height</h3>
+<p>The <strong><a class="reference internal" href="#camera_height"><span class="xref myst">Camera Height</span></a></strong> is the height from the ground (below snow) to the bottom of the lens (metres; to the nearest 0.05 m). Cameras should be positioned and secured to an attachment point at <strong>~0.5–1 m height</strong> (from the ground to the bottom of the lens; Meek et al., 2014). The most appropriate <a class="reference internal" href="#camera_height"><span class="xref myst">Camera Height</span></a> will be influenced by the terrain (e.g., slope), the angle of the tree, as well as the <a class="reference internal" href="09_glossary.html#target-species"><span class="std std-ref">Target Species</span></a>. Cameras placed closer to the ground reduce the probability that large animals (e.g., moose) will be fully in the frame in the photos. Similarly, if the camera is placed too high, only larger animals will activate the motion detector, and smaller species may be missed (e.g., hares, squirrels, marten) (Meek et al., 2016). The user should ensure that the <a class="reference internal" href="#camera_height"><span class="xref myst">Camera Height</span></a> adequately detects motion at a specified <a class="reference internal" href="09_glossary.html#walktest-distance"><span class="std std-ref">Walktest Distance (m)</span></a> and <a class="reference internal" href="09_glossary.html#walktest-height"><span class="std std-ref">Walktest Height (m)</span></a>. If snow is a consideration, users may need to place cameras higher or plan to revisit seasonally to adjust as needed, being sure to record adjustments that could affect <a class="reference internal" href="09_glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a>.</p>
+<h3 class="rubric" id="camera-angle"><span id="toc-surv-guidelines-camera-angle"></span>Camera angle</h3>
+<p>The <strong><a class="reference internal" href="#camera_angle"><span class="xref myst">camera angle</span></a></strong> is the degree to which the camera is pointed towards the <a class="reference internal" href="09_glossary.html#fov-target"><span class="std std-ref">FOV Target Feature</span></a> relative to the horizontal ground surface (with respect to slope, if applicable). The <a class="reference internal" href="#camera_angle"><span class="xref myst">camera angle</span></a> differs from the camera <a class="reference internal" href="09_glossary.html#fov-viewshed"><span class="std std-ref">viewshed</span></a> angle, which is the area visible to the camera as determined by its camera lens angle and trigger distance (Moeller et al., 2023).</p>
+<p>Cameras should be <strong>angled slightly downward</strong>, such that they should be able to detect both small and large species at a target distance of approximately <strong>3–5 m</strong> from the camera and/or the user ensures that the <a class="reference internal" href="#camera_angle"><span class="xref myst">angle</span></a> adequately detects motion at a specified <a class="reference internal" href="09_glossary.html#walktest-distance"><span class="std std-ref">Walktest Distance (m)</span></a> and <a class="reference internal" href="09_glossary.html#walktest-height"><span class="std std-ref">Walktest Height (m)</span></a>. Cameras should not be angled upwards, as upward facing angles will result in fewer detections, especially of smaller species (Glen et al., 2013). If snow is a consideration, users may need to angle cameras higher or plan to revisit seasonally to adjust as needed, being sure to record adjustments that could affect <a class="reference internal" href="09_glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a>.</p>
+<h3 class="rubric" id="camera-direction"><span id="toc-surv-guidelines-camera-direction"></span>Camera Direction</h3>
+<p>The <strong><a class="reference internal" href="#camera_direction"><span class="xref myst">Camera Direction</span></a></strong> is the cardinal direction that a camera faces. Cameras are usually positioned to maximize detections of the <a class="reference internal" href="09_glossary.html#target-species"><span class="std std-ref">Target Species</span></a> (except when <a class="reference internal" href="09_glossary.html#sampledesign-random"><span class="std std-ref">random</span></a> placement is required).</p>
+<p>The direction a camera faces is an important consideration because it affects the amount of light that reaches the area, which has implications for both <a class="reference internal" href="09_glossary.html#detection-probability"><span class="std std-ref">detection probability</span></a> and image quality (reduced quality via sun glare). Ideally, cameras should face north (N, i.e. “0” degrees), or south (S; i.e. “180” degrees) if north is not possible. Sun glare is the most problematic for cameras that face east or west by causing <a class="reference internal" href="09_glossary.html#false-trigger"><span class="std std-ref">false triggers</span></a> unless there is thick tree cover blocking the sun (standing water may also produce similar problems with sun glare).</p>
+<p>The camera direction should be chosen to ensure the field of view (FOV) is of the original FOV target feature. Generally, cameras should be placed <strong>perpendicular to the expected direction of animal travel</strong> (e.g., along a game or human trail). Since there is a delay between when an animal enters the camera’s <a class="reference internal" href="09_glossary.html#detection-zone"><span class="std std-ref">detection zone</span></a> and when it captures an image, placing the camera perpendicular to the trail increases the likelihood that an animal will be in the frame when the camera <a class="reference internal" href="09_glossary.html#trigger-event"><span class="std std-ref">triggers</span></a> (Apps &amp; McNutt, 2018). The delay is typically &lt; 1 s, depending on the <a class="reference internal" href="09_glossary.html#trigger-speed"><span class="std std-ref">trigger speed</span></a> for a particular camera and the settings applied. The size of the <a class="reference internal" href="09_glossary.html#detection-zone"><span class="std std-ref">detection zone</span></a> will depend on the <a class="reference internal" href="#camera_make"><span class="xref myst">Camera Make</span></a> and <a class="reference internal" href="#camera_model"><span class="xref myst">Camera Model</span></a>.</p>
+<h3 class="rubric" id="field-of-view-fov-and-walktest"><span id="toc-surv-guidelines-fov-and-walktest"></span>Field of View (FOV) and Walktest</h3>
+<p>It is important to try to ensure an unobstructed <a class="reference internal" href="09_glossary.html#field-of-view"><span class="std std-ref">Field of View (FOV)</span></a> from the camera to avoid impairing the <a class="reference internal" href="09_glossary.html#detection-rate"><span class="std std-ref">detection rates</span></a> of wildlife (or humans). Moll et al. (2019) reported decreased <a class="reference internal" href="09_glossary.html#detection-rate"><span class="std std-ref">detection rates</span></a> with increasing obstruction for most mammals in their study and two- to three-fold decreases in detections per week per camera. They concluded that it was critical to account for <a class="reference internal" href="09_glossary.html#fov-viewshed"><span class="std std-ref">viewshed</span></a> obstruction when interpreting <a class="reference internal" href="09_glossary.html#detection-rate"><span class="std std-ref">detection rates</span></a> as indices of abundance and habitat use.</p>
+<p>To determine a camera’s <a class="reference internal" href="09_glossary.html#field-of-view"><span class="std std-ref">FOV</span></a>, a <a class="reference internal" href="09_glossary.html#walktest"><span class="std std-ref">walktest</span></a> should be performed every time a camera is deployed or re-positioned. See the camera’s user manual for instructions on how to perform the <a class="reference internal" href="09_glossary.html#walktest"><span class="std std-ref">walktest</span></a> for your particular <a class="reference internal" href="#camera_make"><span class="xref myst">Camera Make</span></a> and <a class="reference internal" href="#camera_model"><span class="xref myst">Camera Model</span></a> (see also <a class="reference internal" href="#/1_survey-guidelines/1_10.1_AppendixA-Tables.md#TOC_surv_guidelines_table_a5"><span class="xref myst">Appendix A - Table A5</span></a>).</p>
+<p>An <strong>unobstructed</strong> <a class="reference internal" href="09_glossary.html#field-of-view"><span class="std std-ref"><strong>FOV</strong></span></a> <strong>of at least 5 m wide and 10 m long</strong> is ideal for capturing wildlife images in most cases. To achieve this desired <a class="reference internal" href="09_glossary.html#field-of-view"><span class="std std-ref">FOV</span></a>, ensure that the camera is detecting motion 5 m in front of the camera, at both 0 m and 0.5–1 m heights (<a class="reference internal" href="#toc-surv-guidelines-fig-7"><span class="std std-ref">Figure 7</span></a>).</p>
+<p>This may require repositioning the camera to avoid large objects (e.g., rocks, logs) and/or trimming or removing vegetation that interferes with the visibility of the target area (or is likely to in the future). These objects may block areas within the camera’s <a class="reference internal" href="09_glossary.html#field-of-view"><span class="std std-ref">FOV</span></a> and reflect the flash, making it more difficult to detect animals at night. Trimming or removing vegetation will also minimize the likelihood of <a class="reference internal" href="09_glossary.html#false-trigger"><span class="std std-ref">false triggers</span></a> (i.e., blank images (no wildlife or human present) that can occur because of blowing vegetation). <a class="reference internal" href="09_glossary.html#false-trigger"><span class="std std-ref">False triggers</span></a> will drain batteries and fill SD cards and increase the time to process images.</p>
+<p>Important considerations with respect to <a class="reference internal" href="09_glossary.html#field-of-view"><span class="std std-ref">FOV</span></a> include:</p>
+<ul class="simple">
+<li><p>Situations (e.g., open habitats) where animals in background my be viewable but would not trigger the detector (sensor),</p></li>
+<li><p>how animals in the distance should be treated (i.e., at what distance is an animal captured in an image no longer considered a detection)</p></li>
+</ul>
+<p>Placing a stake in front of the camera at a specified distance (i.e., the “stake distance”) is one method used to standardize the <a class="reference internal" href="09_glossary.html#field-of-view"><span class="std std-ref">FOV</span></a>. Applying a standardized reference distance can help with interpretation and analysis (ABMI, 2021).</p>
+<figure class="align-center" id="toc-surv-guidelines-fig-7">
+<a class="reference internal image-reference" href="0_figures/Survey-guidelines_walktest-height.png"><img alt="0_figures/Survey-guidelines_walktest-height.png" src="0_figures/Survey-guidelines_walktest-height.png" /></a>
+</figure>
+<p><strong>Figure 7.</strong> The <a class="reference internal" href="09_glossary.html#walktest-distance"><span class="std std-ref"><strong>Walktest Distance</strong></span></a> and <a class="reference internal" href="09_glossary.html#walktest-height"><span class="std std-ref"><strong>Walktest Height</strong></span></a> are the horizontal and vertical distances from the camera, respectively, at which the user performs the walk test. A <a class="reference internal" href="09_glossary.html#walktest"><span class="std std-ref">walktest</span></a> should be performed 5 m away from the camera, at both 0 m (ground) and 0.5–1 m height.</p>
+<h3 class="rubric" id="test-image"><span id="toc-surv-guidelines-test-image"></span>Test image</h3>
+<p>A <a class="reference internal" href="09_glossary.html#test-image"><span class="std std-ref"><strong>test image</strong></span></a> is an image taken from a camera after it has been set up to provide a permanent record of the <a class="reference internal" href="09_glossary.html#visit-metadata"><span class="std std-ref">visit metadata</span></a>. Taking a <a class="reference internal" href="09_glossary.html#test-image"><span class="std std-ref">test image</span></a> can be useful to compare the information from the <a class="reference internal" href="09_glossary.html#test-image"><span class="std std-ref">test image</span></a> to that which was collected on the <a class="reference internal" href="#/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md#TOC_surv_guidelines_datasheet_service_retrieval"><span class="xref myst">Camera Service/Retrieval Field Datasheet</span></a> after retrieval, which can help in reducing recording errors.</p>
+<p>A <a class="reference internal" href="09_glossary.html#test-image"><span class="std std-ref"><strong>test image</strong></span></a> should include a <a class="reference internal" href="#/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md#TOC_surv_guidelines_datasheet_test_image_sheet"><span class="xref myst">Test Image Sheet</span></a> or whiteboard with information on the <a class="reference internal" href="09_glossary.html#sample-station-name"><span class="std std-ref">Sample Station Name</span></a>, <a class="reference internal" href="#camera_location"><span class="xref myst">Camera Location Name</span></a>, Crew, and <a class="reference internal" href="09_glossary.html#deployment-start-date-time"><span class="std std-ref">Deployment Start Date Time (DD-MMM-YYYY HH:MM:SS)</span></a>. See <a class="reference internal" href="#/1_survey-guidelines/1_10.1_AppendixA-Tables.md#TOC_surv_guidelines_table_a5"><span class="xref myst">Appendix A - Table A5</span></a> for details on how to capture a <a class="reference internal" href="09_glossary.html#test-image"><span class="std std-ref">test image</span></a>, and for the provided <a class="reference internal" href="#/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md#TOC_surv_guidelines_datasheet_test_image_sheet"><span class="xref myst">Test Image Sheet</span></a>.</p>
+<h3 class="rubric" id="deployment-area-photos-optional"><span id="toc-surv-guidelines-deployment-area-photos"></span>Deployment Area Photos (optional)</h3>
+<p>It is useful to collect photos of the area around the <a class="reference internal" href="#camera_location"><span class="xref myst">camera location</span></a> (i.e., <a class="reference internal" href="09_glossary.html#deployment-area-photos"><span class="std std-ref"><strong>deployment area photos</strong></span></a>) as a permanent, visual record of the <a class="reference internal" href="09_glossary.html#fov-target"><span class="std std-ref">FOV Target Features</span></a>, <a class="reference internal" href="#camera_location_characteristics"><span class="xref myst">Camera Location Characteristics</span></a>, environmental conditions (e.g., vegetation, ecosite, or weather), or other variables of interest.</p>
+<p>Take <a class="reference internal" href="09_glossary.html#deployment-area-photos"><span class="std std-ref">deployment area photos</span></a> with a handheld digital camera or phone at each <a class="reference internal" href="#camera_location"><span class="xref myst">camera location</span></a> at deployment, service and retrieval. The recommendation includes collecting four photos taken from the centre of the target detection zone (<a class="reference internal" href="01_39_cam_equipment.html#toc-surv-guidelines-fig-5"><span class="std std-ref">Figure 5</span></a>), facing each of the four cardinal directions. The documentation of the collection of these photos is recorded as “deployment area photos taken” (Y/N).</p>
+<p>Record the image numbers (e.g., DSC100; “<a class="reference internal" href="09_glossary.html#deployment-area-photo-numbers"><span class="std std-ref">Deployment Area Photo Numbers</span></a>“) for each set of camera <a class="reference internal" href="09_glossary.html#deployment-area-photos"><span class="std std-ref">deployment area photos</span></a> on a <a class="reference internal" href="#/1_survey-guidelines/1_10.2_AppendixA-Field-Datasheets.md#FILES_surv_guidelines_datasheet_deployment"><span class="xref myst">Camera Deployment Field Datasheet</span></a>).</p>
+<h3 class="rubric" id="camera-location-characteristics"><span id="toc-surv-guidelines-camera-location-characteristics"></span>Camera Location Characteristics</h3>
+<p><strong>Camera Location Characteristics</strong> are any significant features around the camera at the time of the visit. This may include for example, manmade or natural linear features (e.g., trails), habitat types (e.g., wetlands), wildlife structure (e.g., beaver dam). <a class="reference internal" href="#camera_location_characteristics"><span class="xref myst">Camera Location Characteristics</span></a> differ from <a class="reference internal" href="09_glossary.html#fov-target"><span class="std std-ref">FOV Target Features</span></a> in that <a class="reference internal" href="#camera_location_characteristics"><span class="xref myst">Camera Location Characteristics</span></a> could include those not in the camera’s Field of View.</p>
+<p>Researchers typically record information about the environment at <a class="reference internal" href="#camera_location"><span class="xref myst">camera locations</span></a> to better understand how this might affect animal occurrence or behaviour. It is recommended to record all <a class="reference internal" href="#camera_location_characteristics"><span class="xref myst">Camera Location Characteristics</span></a> and upload these to a digital data-collection platform with private or open settings like <a class="reference external" href="https://five.epicollect.net/">Epicollect</a>, using the template provided. Alternatively, you may choose to upload these photos using species identification models to an open-source platform like <a class="reference external" href="https://inaturalist.ca">inaturalist</a>, <a class="reference external" href="https://ualbertaca-my.sharepoint.com/personal/cjsteven_ualberta_ca/Documents/RCSC_RC-Survey-Guidelines_AB-Metadata-Standards/WildTrax">WildTrax</a> and/or <a class="reference external" href="https://www.alberta.ca/fisheries-and-wildlife-management-information-system-overview.aspx">FWMIS</a>.</p>
+<h3 class="rubric" id="field-equipment"><span id="toc-surv-guidelines-field-equipment"></span>Field equipment</h3>
+<p>Refer to <a class="reference internal" href="#/1_survey-guidelines/1_10.1_AppendixA-Tables.md#TOC_surv_guidelines_table_a4"><span class="xref myst">Appendix A - Table A4</span></a> for a recommended list of field equipment for remote camera studies.</p>
+<h2 class="rubric" id="metadata"><span id="toc-surv-guidelines-metadata"></span>7.5 Metadata</h2>
+<p><a class="reference internal" href="09_glossary.html#metadata"><span class="std std-ref">Metadata</span></a> (i.e., data that provides information about other data) is critical to any scientific study or monitoring program. It helps to ensure that data are consistent and accurate and facilitates data sharing across <a class="reference internal" href="09_glossary.html#project"><span class="std std-ref">projects</span></a>. Alberta and British Columbia have established <a class="reference internal" href="09_glossary.html#metadata"><span class="std std-ref">metadata</span></a> standards (<a class="reference external" href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html">AB Metadata Standards</a> [RCSC, 2024] and the <a class="reference external" href="https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/wcmp_v1.pdf">B.C. Metadata Standards</a> [RISC, 2019]) that all camera <a class="reference internal" href="09_glossary.html#project"><span class="std std-ref">projects</span></a> in the provinces should follow. In these guidelines, we focus on the metadata fields that pertain to the deployment of cameras, which should be collected when the user “visits” the location.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These guidelines do not describe all fields relevant to/required by the <a class="reference external" href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html">AB Metadata Standards</a> (RCSC, 2024) and <a class="reference external" href="https://www2.gov.bc.ca/assets/gov/environment/natural-resource-stewardship/nr-laws-policy/risc/wcmp_v1.pdf">B.C. Metadata Standards</a> (RISC, 2019). Similarly, there may be additional/alternative fields required by the Alberta Government’s <a class="reference external" href="https://www.alberta.ca/wildlife-loadforms.aspx">FWMIS loadform</a> (<a class="reference external" href="https://www.alberta.ca/wildlife-loadforms.aspx">https://www.alberta.ca/wildlife-loadforms.aspx</a>) for camera studies compared to those within these guidelines or the <a class="reference external" href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/2_metadata-standards/2_0.1_Citation-and-Info.html">AB Metadata Standards</a> (RCSC, 2024). Every effort has been made to align the various sources where possible.</p>
+</div>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-1">
+In-depth</label><div class="sd-tab-content docutils">
+<p>This section will be available soon! In the meantime, check out the information in the other tabs!</p>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/00_coming_soon.png"><img alt="../_images/00_coming_soon.png" src="../_images/00_coming_soon.png" style="width: 300px;" /></a>
+</figure>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-2">
+Visual resources</label><div class="sd-tab-content docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 wrapper docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure1_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure1_filename.png" class="img-grid" src="../_images/figure1_filename.png" /><br><br>
+figure1_caption</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure2_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure2_filename.png" class="img-grid" src="../_images/figure2_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure3_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure3_filename.png" class="img-grid" src="../_images/figure3_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure4_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure4_filename.png" class="img-grid" src="../_images/figure4_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure5_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure5_filename.png" class="img-grid" src="../_images/figure5_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure6_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure6_filename.png" class="img-grid" src="../_images/figure6_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure7_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure7_filename.png" class="img-grid" src="../_images/figure7_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure8_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure8_filename.png" class="img-grid" src="../_images/figure8_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure9_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure9_filename.png" class="img-grid" src="../_images/figure9_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure10_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure10_filename.png" class="img-grid" src="../_images/figure10_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure11_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure11_filename.png" class="img-grid" src="../_images/figure11_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure12_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure12_filename.png" class="img-grid" src="../_images/figure12_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid1_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid1_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid2_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid2_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid3_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid3_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid4_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid4_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid5_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid5_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid6_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid6_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid7_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid7_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid8_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid8_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid9_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid9_url"></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-3">
+Shiny apps/Widgets</label><div class="sd-tab-content docutils">
+<p>Check back in the future!</p>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
+Shiny apps/Widgets</label><div class="sd-tab-content docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+shiny_name</div>
+<p class="sd-card-text">shiny_caption</p>
+<div class="iframe-container-shiny"><iframe class="iframe-responsive-shiny" src="shiny_url"></iframe></div>
+</div>
+</div>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
+Shiny apps/Widgets</label><div class="sd-tab-content docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">shiny_name</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">shiny_caption</p>
+<div class="iframe-container-shiny"><iframe class="iframe-responsive-shiny" src="shiny_url"></iframe></div>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">shiny_name2</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">shiny_caption2</p>
+<div class="iframe-container-shiny"><iframe class="iframe-responsive-shiny" src="shiny_url2"></iframe></div>
+</div>
+</details></div>
+</div>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-6">
+Analytical tools &amp; Resources</label><div class="sd-tab-content docutils">
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Type</p></th>
+<th class="head text-left"><p>Name</p></th>
+<th class="head text-left"><p>Note</p></th>
+<th class="head text-left"><p>URL</p></th>
+<th class="head text-left"><p>Reference</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<input id="sd-tab-item-7" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-7">
+References</label><div class="sd-tab-content docutils">
+<div class="hanging">Clarke, J., Bohm, H., Burton, C., Constantinou, A. (2023). <i>Using Camera Traps to Estimate Medium and Large Mammal Density: Comparison of Methods and Recommendations for Wildlife Managers</i>. <a href="https://doi.org/10.13140/RG.2.2.18364.72320" target="_blank">https://doi.org/10.13140/RG.2.2.18364.72320</a></div>
+</div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./02_dialog-boxes"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+              
+              
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="component-author">
+By Alberta Remote Camera Steering Committee (RCSC)
+</p>
+</div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

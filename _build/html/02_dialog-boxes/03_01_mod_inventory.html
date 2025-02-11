@@ -16,31 +16,33 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-  
-  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
-
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../_static/tippy.css?v=7a364cf7" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/custom.css?v=703e16d2" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=49218bc3" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
-  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -54,28 +56,16 @@
     <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-PJDP7DQ9Q0"></script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-PJDP7DQ9Q0');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){ dataLayer.push(arguments); }
-                gtag('js', new Date());
-                gtag('config', 'G-PJDP7DQ9Q0');
-            </script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = '02_dialog-boxes/03_01_mod_inventory';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -91,19 +81,8 @@
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-primary-sidebar-checkbox"/>
-  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          id="pst-secondary-sidebar-checkbox"/>
-  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -111,7 +90,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search..."
          aria-label="Search..."
          autocomplete="off"
@@ -119,8 +97,8 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
@@ -128,6 +106,154 @@
 
   
     <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Remote Camera Decision Support Tool - Concept Library - Home"/>
+    <img src="../_static/logo.png" class="logo__image only-dark pst-js-only" alt="Remote Camera Decision Support Tool - Concept Library - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool">
+    <b>Home</b> 
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/">
+    Concept library
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/08_references.html">
+    References
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/09_glossary.html">
+    Glossary
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/10_other_resource_lib.html">
+    Other resources
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/AB-RCSC/rc-decision-support-tool" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/" title="Survey Guidelines / Metadata Standards" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_survguide_metadata.png" class="icon-link-image" alt="Survey Guidelines / Metadata Standards"/></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/02_dialog-boxes/03_01_mod_inventory.md"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
     </header>
   
 
@@ -138,8 +264,116 @@
       
         
       
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool">
+    <b>Home</b> 
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/">
+    Concept library
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/08_references.html">
+    References
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/09_glossary.html">
+    Glossary
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/10_other_resource_lib.html">
+    Other resources
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/AB-RCSC/rc-decision-support-tool" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/" title="Survey Guidelines / Metadata Standards" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><img src="../_static/logo_survguide_metadata.png" class="icon-link-image" alt="Survey Guidelines / Metadata Standards"/></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/02_dialog-boxes/03_01_mod_inventory.md"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
 
 
       </div>
@@ -161,11 +395,10 @@
   <section class="tex2jax_ignore mathjax_ignore" id="species-inventory">
 <span id="i-mod-inventory"></span><h1>Species inventory<a class="headerlink" href="#species-inventory" title="Link to this heading">#</a></h1>
 <!--
-:::{note}
+:::{hint}
 replace me with text
 :::
 -->
-<p><strong>Inventory</strong>: Rapid assessment <a class="reference internal" href="09_glossary.html#survey"><span class="std std-ref">surveys</span></a> to determine what species are present in a given area at a given point in time; there is no attempt made to quantify aspects of communities or populations (Wearn &amp; Glover-Kapfer, 2017).</p>
 <details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
 <summary class="sd-summary-title sd-card-header">
 <span class="sd-summary-text">Assumptions, Pros, Cons</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
@@ -177,7 +410,7 @@ replace me with text
 <div class="sd-card-title sd-font-weight-bold docutils">
 Assumptions</div>
 <ul class="simple">
-<li><p class="sd-card-text">No formal <a class="reference internal" href="09_glossary.html#mods-modelling-assumption"><span class="std std-ref">assumptions</span></a> (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">No formal <a href="09_glossary.html#mod_assumption" target="_blank" data-bs-toggle="tooltip" data-bs-title="Model assumption: Explicitly stated (or implicitly premised) conventions, choices and other specifications (e.g., about the data, wildlife ecology*/behaviour, the relationships between variables, etc.) on which a particular modelling approach is based that allows the model to provide valid inference.">assumptions<button type="button" class="btn btn-bd-tip-info-hidden btn-sm position-relative">.<span class="position-absolute top-0 start-100 translate-middle"><svg version="4.0.0.63c5cb3" width="10.0px" height="10.0px" class="sd-material-icon sd-material-icon-info sd-text-primary" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span></button></a> (<a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a>)</p></li>
 </ul>
 </div>
 </div>
@@ -188,7 +421,7 @@ Assumptions</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Pros</div>
 <ul class="simple">
-<li><p class="sd-card-text">Maximum flexibility for study design (e.g., <a class="reference internal" href="09_glossary.html#camera-days-per-camera-location"><span class="std std-ref">camera days per camera location</span></a> or use of <a class="reference internal" href="09_glossary.html#baitlure-lure"><span class="std std-ref">lure</span></a> (Rovero et al., 2013)) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Maximum flexibility for study design (e.g., <a href="09_glossary.html#cam_days_per_cam_location" target="_blank" data-bs-toggle="tooltip" data-bs-title="Camera days per camera location: The number of days each camera was active and functioning during the period it was deployed (e.g., 24-hour periods or the difference in days between the Deployment Start Date Time and the Deployment End Date Time if there were no interruptions).">camera days per camera location<button type="button" class="btn btn-bd-tip-info-hidden btn-sm position-relative">.<span class="position-absolute top-0 start-100 translate-middle"><svg version="4.0.0.63c5cb3" width="10.0px" height="10.0px" class="sd-material-icon sd-material-icon-info sd-text-primary" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span></button></a> or use of <a href="09_glossary.html#baitlure_lure" target="_blank" data-bs-toggle="tooltip" data-bs-title="Lure: Any substance that draws animals closer; lures include scent (olfactory) lure, visual lure and audible lure (Schlexer, 2008).">lure<button type="button" class="btn btn-bd-tip-info-hidden btn-sm position-relative">.<span class="position-absolute top-0 start-100 translate-middle"><svg version="4.0.0.63c5cb3" width="10.0px" height="10.0px" class="sd-material-icon sd-material-icon-info sd-text-primary" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span></button></a> (<a href="/08_references.html#rovero_et_al_2013" target="_blank">Rovero et al., 2013</a>)) (<a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a>)</p></li>
 </ul>
 </div>
 </div>
@@ -199,7 +432,7 @@ Pros</div>
 <div class="sd-card-title sd-font-weight-bold docutils">
 Cons</div>
 <ul class="simple">
-<li><p class="sd-card-text">Not reliable estimates for inference (‘considered as unfinished, working drafts’) (Wearn &amp; Glover-Kapfer, 2017)</p></li>
+<li><p class="sd-card-text">Not reliable estimates for inference (‘considered as unfinished, working drafts’) (<a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a>)</p></li>
 </ul>
 </div>
 </div>
@@ -211,62 +444,94 @@ Cons</div>
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
 Overview</label><div class="sd-tab-content docutils">
-<p>Species inventories are used to determine what species are present in an area during a given time period (Wearn &amp; Glover-Kapfer, 2017). Inventories can be considered as a “checklist”, “minimum count”, or rapid assessment survey. The goal is to detect as many species as possible. With adequate sampling effort, species inventories may be help delineate species distribution, inform habitat associations, and provide an index of common species in an area. This assumes however that species can be reliably detected with sufficient effort, which may not be the case even for common or conspicuous species as many factors may influence species detection (e.g., sampling protocols, weather, observer experience etc.). Thus, only species presence (not absence) can be reliably determined. There are no attempts to quantify aspects of communities or populations, and no formal modeling approach are used.</p>
+<p>Species inventories are used to determine what species are present in an area during a given time period (<a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a>). Inventories can be considered as a “checklist”, “minimum count”, or rapid assessment survey. The goal is to detect as many species as possible. With adequate sampling effort, species inventories may be help delineate species distribution, inform habitat associations, and provide an index of common species in an area. This assumes however that species can be reliably detected with sufficient effort, which may not be the case even for common or conspicuous species as many factors may influence species detection (e.g., sampling protocols, weather, observer experience etc.). Thus, only species presence (not absence) can be reliably determined. There are no attempts to quantify aspects of communities or populations, and no formal modeling approach are used.</p>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-1">
 In-depth</label><div class="sd-tab-content docutils">
-<p>Species accumulation curves can be used to determine if the survey effort is sufficient to estimate the number of species in an area. These curves plot the survey effort per unit time (x-axis) against the cumulative number of species detected (y-axis). The survey effort per unit time is the number of camera days (i.e., number of cameras multiplied by the number of days the cameras are operating) or survey days. The optimal survey effort occurs when the accumulation curve reaches an asymptote. This leveling of the curve indicates that very few, if any, new species are detected despite increasing survey effort. Refer to “<a class="reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_10_sp_asymptote.html">https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_10_sp_asymptote.html</a> for more information on species accumulation curves, and Tobler et al. (2008) for additional examples of species accumulation curves.</p>
-<p>Various methods are available to assess the completeness of species inventories and to estimate the true species number in incomplete surveys (e.g., Colwell &amp; Coddington, 1994; Colwell et al., 2004; Soberón &amp; Llorente, 1993). These non-parametric and species richness estimators (Colwell &amp; Coddington, 1994), with the former generally performing better in comparative studies (Walther &amp; Moore, 2005).</p>
+<p>Species accumulation curves can be used to determine if the survey effort is sufficient to estimate the number of species in an area. These curves plot the survey effort per unit time (x-axis) against the cumulative number of species detected (y-axis). The survey effort per unit time is the number of camera days (i.e., number of cameras multiplied by the number of days the cameras are operating) or survey days. The optimal survey effort occurs when the accumulation curve reaches an asymptote. This leveling of the curve indicates that very few, if any, new species are detected despite increasing survey effort. Refer to <a class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary reference external" href="https://ab-rcsc.github.io/rc-decision-support-tool_concept-library/02_dialog-boxes/01_10_sp_asymptote.html"><span>Species-accumulation curves</span></a> for more information on species accumulation curves, and Tobler et al. (2008) for additional examples of species accumulation curves.</p>
+<p>Various methods are available to assess the completeness of species inventories and to estimate the true species number in incomplete surveys (e.g., <a href="/08_references.html#colwell_coddington_1994" target="_blank">Colwell &amp; Coddington, 1994</a>; <a href="/08_references.html#colwell_et_al_2004" target="_blank">Colwell et al., 2004</a>; <a href="/08_references.html#soberon_lorente_1993" target="_blank">Soberón &amp; Llorente, 1993</a>). These non-parametric and species richness estimators (<a href="/08_references.html#colwell_coddington_1994" target="_blank">Colwell &amp; Coddington, 1994</a>), with the former generally performing better in comparative studies (<a href="/08_references.html#walther_moore_2005" target="_blank">Walther &amp; Moore, 2005</a>).</p>
 <p><strong><font size="4"><span style="color:#2F5496">Study design</font></span></strong></p>
-<p>The study design (e.g., camera arrangement) of species inventories is very flexible. However, if you’re targeting a single species the design should ideally still be informed by the species’ biology to maximize the likelihood of detecting individuals that are present. Information on preferred habitats, travel routes, or high activity areas (e.g., mineral licks, burrows) can be especially useful in determining where to strategically place cameras. When the species biology is <strong>well known</strong>, putting cameras at these targeted (non-random) locations may be beneficial. Alternatively, such as when the species biology is <strong>poorly known</strong>, randomly placing cameras across the study area may be the best approach to help ensures that all habitats are sampled in proportion to their availability (Wearn &amp; Glover-Kapfer, 2017). The area sampled should in these cases be representative of the entire study area. Interestingly, in these cases, the area covered by cameras may have little effect on the number of species detected (Tobler et al., 2008).</p>
+<p>The study design (e.g., camera arrangement) of species inventories is very flexible. However, if you’re targeting a single species the design should ideally still be informed by the species’ biology to maximize the likelihood of detecting individuals that are present. Information on preferred habitats, travel routes, or high activity areas (e.g., mineral licks, burrows) can be especially useful in determining where to strategically place cameras. When the species biology is <strong>well known</strong>, putting cameras at these targeted (non-random) locations may be beneficial. Alternatively, such as when the species biology is <strong>poorly known</strong>, randomly placing cameras across the study area may be the best approach to help ensures that all habitats are sampled in proportion to their availability (<a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a>). The area sampled should in these cases be representative of the entire study area. Interestingly, in these cases, the area covered by cameras may have little effect on the number of species detected (<a href="/08_references.html#tobler_et_al_2008" target="_blank">Tobler et al., 2008</a>).</p>
 <p><strong><font size="4"><span style="color:#2F5496">Bait and Lure</font></span></strong></p>
 <p>The use of lure or bait may improve the likelihood of detecting some species (e.g., carnivores).</p>
 <p><strong><font size="4"><span style="color:#2F5496">Camera Specifications</font></span></strong></p>
-<p>There are no specific guidelines for species inventories regarding camera features or deployment (e.g., number of cameras, camera days per location etc.). However, a camera model with a white flash, high sensitivity, large detection zone, and fast trigger speed may improve species detection (Rovero et al., 2013; Wearn &amp; Glover-Kapfer, 2017).</p>
-<p>Number of Cameras and Survey Duration
-For species with a high probability of detection (e.g., small home range), deployment times can be short (e.g., 1-2 weeks) and moving cameras between locations can allow more sites to be sampled (Wearn &amp; Glover-Kapfer, 2017). In contrast, cameras should be deployed longer in a location (e.g., 2-6 weeks; Wearn &amp; Glover-Kapfer, 2017) for species with low probability of detection.</p>
-<p>When the target species biology is poorly known, a general rule of thumb is to use a minimum of 20 single cameras per location within the study area, spaced 1-2 km apart, for ideally a minimum of 30 days per camera location and 1,000 overall camera days (Colyn et al., 2018; Rovero et al., 2013; Rovero &amp; Tobler, 2010; Tobler et al., 2008; Wearn et al., 2013; Wearn &amp; Glover-Kapfer, 2017). The more cameras deployed and/or locations sampled, generally the shorter the time needed to inventory an area. If fewer cameras are used, the cameras could be moved every 15 days, if feasible, to sample a larger area and avoid any biases associated with the camera locations (Rovero et al., 2013). In many areas, 1000-2000 camera days is sufficient to detect 60-70% of the species in the area (Ahumada et al., 2011; Tobler et al., 2008).</p>
+<p>There are no specific guidelines for species inventories regarding camera features or deployment (e.g., number of cameras, camera days per location etc.). However, a camera model with a white flash, high sensitivity, large detection zone, and fast trigger speed may improve species detection (<a href="/08_references.html#rovero_et_al_2013" target="_blank">Rovero et al., 2013</a>; <a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a>).</p>
+<p><strong><font size="4"><span style="color:#2F5496">Number of Cameras and Survey Duration</font></span></strong></p>
+<p>For species with a high probability of detection (e.g., small <a href="09_glossary.html#hr" target="_blank" data-bs-toggle="tooltip" data-bs-title="Home range: the area within which an animal normally lives and finds what it needs to survive and reproduce.">home range<button type="button" class="btn btn-bd-tip-info-hidden btn-sm position-relative">.<span class="position-absolute top-0 start-100 translate-middle"><svg version="4.0.0.63c5cb3" width="10.0px" height="10.0px" class="sd-material-icon sd-material-icon-info sd-text-primary" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span></button></a>), deployment times can be short (e.g., 1-2 weeks) and moving cameras between locations can allow more sites to be sampled (<a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a>). In contrast, cameras should be deployed longer in a location (e.g., 2-6 weeks; <a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a>) for species with low probability of detection.</p>
+<p>When the <a href="09_glossary.html#target_species" target="_blank" data-bs-toggle="tooltip" data-bs-title="Target Species: The common name(s) of the species that the survey was designed to detect.">Target Species<button type="button" class="btn btn-bd-tip-info-hidden btn-sm position-relative">.<span class="position-absolute top-0 start-100 translate-middle"><svg version="4.0.0.63c5cb3" width="10.0px" height="10.0px" class="sd-material-icon sd-material-icon-info sd-text-primary" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span></button></a> biology is poorly known, a general rule of thumb is to use a minimum of 20 single cameras per location within the study area, spaced 1-2 km apart, for ideally a minimum of 30 days per camera location and 1,000 overall camera days (<a href="/08_references.html#colyn_et_al_2018" target="_blank">Colyn et al., 2018</a>; <a href="/08_references.html#rovero_et_al_2013" target="_blank">Rovero et al., 2013</a>; <a href="/08_references.html#rovero_tobler_2010" target="_blank">Rovero &amp; Tobler, 2010</a>; <a href="/08_references.html#tobler_et_al_2008" target="_blank">Tobler et al., 2008</a>; <a href="/08_references.html#wearn_et_al_2013" target="_blank">Wearn et al., 2013</a>; <a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a>). The more cameras deployed and/or locations sampled, generally the shorter the time needed to inventory an area. If fewer cameras are used, the cameras could be moved every 15 days, if feasible, to sample a larger area and avoid any biases associated with the <a href="09_glossary.html#cam_location" target="_blank" data-bs-toggle="tooltip" data-bs-title="Camera location: The location where a single camera was placed (recorded as 'Camera Location Name').">camera locations<button type="button" class="btn btn-bd-tip-info-hidden btn-sm position-relative">.<span class="position-absolute top-0 start-100 translate-middle"><svg version="4.0.0.63c5cb3" width="10.0px" height="10.0px" class="sd-material-icon sd-material-icon-info sd-text-primary" viewBox="0 0 24 24" aria-hidden="true"><path d="M0 0h24v24H0z" fill="none"></path><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"></path></svg></span></button></a> (<a href="/08_references.html#rovero_et_al_2013" target="_blank">Rovero et al., 2013</a>). In many areas, 1000-2000 camera days is sufficient to detect 60-70% of the species in the area (<a href="/08_references.html#ahumada_et_al_2011" target="_blank">Ahumada et al., 2011</a>; <a href="/08_references.html#tobler_et_al_2008" target="_blank">Tobler et al., 2008</a>).</p>
 <p><strong><font size="4"><span style="color:#2F5496"> Analysis</font></span></strong></p>
 <p>Caution should be exercised in comparing the results of species inventories from different times of year within the same study area, or between study areas. The amount of sampling effort will need to be accounted for when examining any results.</p>
-<div class="docutils">
-<div class="sd-container-fluid sd-sphinx-override sd-m-0 sd-p-0 docutils">
-<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-1 sd-g-xs-1 sd-g-sm-1 sd-g-md-1 sd-g-lg-1 docutils">
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Wearn &amp; Glover-Kapfer, 2017</div>
-<figure class="align-default">
-<img alt="../_images/wearn_gloverkapfer_2017_fig7_3.png" class="img-grid" src="../_images/wearn_gloverkapfer_2017_fig7_3.png" />
-</figure>
-<p class="sd-card-text"><strong>Wearn &amp; Glover-Kapfer (2017) – Fig. 7-3</strong> Decision tree for short-term inventory work.</p>
-</div>
-</div>
-</div>
-<div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-body docutils">
-<div class="sd-card-title sd-font-weight-bold docutils">
-Wearn &amp; Glover-Kapfer, 2017</div>
-<figure class="align-default">
-<img alt="../_images/wearn_gloverkapfer_2017_table_7_2.png" class="img-grid" src="../_images/wearn_gloverkapfer_2017_table_7_2.png" />
-</figure>
-<p class="sd-card-text"><strong>Wearn &amp; Glover-Kapfer (2017) – Table 7-2</strong> - Recommended survey design characteristics for the major types of camera trap study, as taken from a broad review of the camera trap literature. Key references provide survey design advice or draw attention to important survey design considerations. The quantitative recommendations made here will often need to be adjusted to the specific context of a single study; this process can be informed by pilot studies or simulation work.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-2">
-Shiny apps/Widgets</label><div class="sd-tab-content docutils">
-<p>Check back in the future!</p>
+Visual resources</label><div class="sd-tab-content docutils">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 wrapper docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a></div>
+<p class="sd-card-text"><img alt="../_images/wearn_gloverkapfer_2017_fig7_3.png" class="img-grid" src="../_images/wearn_gloverkapfer_2017_fig7_3.png" /><br><br><strong>Wearn &amp; Glover-Kapfer (2017) – Fig. 7-3</strong> Decision tree for short-term inventory work.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<a href="/08_references.html#wearn_gloverkapfer_2017" target="_blank">Wearn &amp; Glover-Kapfer, 2017</a></div>
+<p class="sd-card-text"><img alt="../_images/wearn_gloverkapfer_2017_table_7_2.png" class="img-grid" src="../_images/wearn_gloverkapfer_2017_table_7_2.png" /><br><br><strong>Wearn &amp; Glover-Kapfer (2017) – Table 7.2</strong> Recommended survey design characteristics for the major types of camera trap study, as taken from a broad review of the camera trap literature. Key references provide survey design advice or draw attention to important survey design considerations. The quantitative recommendations made here will often need to be adjusted to the specific context of a single study; this process can be informed by pilot studies or simulation work.</p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_figure3_ref_id</div>
+<p class="sd-card-text"><img alt="../_images/figure3_filename.png" class="img-grid" src="../_images/figure3_filename.png" /><br><br></p>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid1_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid1_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid2_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid2_url"></iframe></div>
+</div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+rtxt_vid3_ref_id</div>
+<div class="iframe-container-vid"><iframe class="iframe-responsive-vid" src="vid3_url"></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
+Shiny apps/Widgets</label><div class="sd-tab-content docutils">
+<p>Check back in the future!</p>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-4">
 Analytical tools &amp; Resources</label><div class="sd-tab-content docutils">
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
@@ -286,7 +551,7 @@ Analytical tools &amp; Resources</label><div class="sd-tab-content docutils">
 </tr>
 <tr class="row-odd"><td class="text-left"><p>This package allow users to simulate the required sample size for a desired level of precision in species richness.</p></td>
 <td class="text-left"><p><strong>Software</strong>: &lt;<a class="reference external" href="http://www.mbr-pwrc.usgs.gov/">www.mbr-pwrc.usgs.gov/</a> software/presence.html&gt;;<br><strong>Help forum</strong>: &lt;<a class="reference external" href="http://www.phidot.org">www.phidot.org</a>&gt;</p></td>
-<td class="text-left"><p>Hines, J. E. (2006). <em>PRESENCE - Software to estimate patch occupancy and related parameters.</em> <a class="reference external" href="https://www.mbr-pwrc.usgs.gov/software/presence.html">https://www.mbr-pwrc.usgs.gov/software/presence.html</a>.</p></td>
+<td class="text-left"><p><div class="hanging">Hines, J. E. (2006). <i>PRESENCE - Software to estimate patch occupancy and related parameters.</i> <a href="https://www.mbr-pwrc.usgs.gov/software/presence.html." target="_blank">https://www.mbr-pwrc.usgs.gov/software/presence.html.</a></div></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 </tr>
@@ -296,7 +561,7 @@ Analytical tools &amp; Resources</label><div class="sd-tab-content docutils">
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Bailey, L. L., Hines, J. E., Nichols, J. D., &amp; MacKenzie, D. I. (2007). Sampling Design Trade-Offs in Occupancy Studies with Imperfect Detection: Examples and Software. <em>Ecological Applications, 17</em>(1), 281-290. <a class="reference external" href="https://www.jstor.org/stable/40061993">https://www.jstor.org/stable/40061993</a></p></td>
+<tr class="row-odd"><td class="text-left"><p><div class="hanging">Bailey, L. L., Hines, J. E., Nichols, J. D., &amp; MacKenzie, D. I. (2007). Sampling Design Trade-Offs in Occupancy Studies with Imperfect Detection: Examples and Software. <i>Ecological Applications, 17</i>(1), 281-290. <a href="https://www.jstor.org/stable/40061993" target="_blank">https://www.jstor.org/stable/40061993</a></div></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
@@ -306,7 +571,7 @@ Analytical tools &amp; Resources</label><div class="sd-tab-content docutils">
 <td class="text-left"><p>specaccum: Species Accumulation Curve</p></td>
 <td class="text-left"><p>The specaccum function finds species accumulation curves or the number of species for a certain number of sampled sites or individuals.</p></td>
 <td class="text-left"><p><a class="reference external" href="https://rdrr.io/rforge/vegan/man/specaccum.html">https://rdrr.io/rforge/vegan/man/specaccum.html</a></p></td>
-<td class="text-left"><p>Oksanen, J., Simpson, G. L., Blanchet, F. G., Kindt, R., Legendre, P., Minchin, P. R., O’Hara, R. B., Solymos, P., Stevens, M. H. H., Szoecs, E., Wagner, H., Barbour, M., Bedward, M., Bolker, B., Borcard, D., Carvalho, G., Chirico, M., De Caceres, M., Durand, S., … Weedon, J. (2024). <em>vegan: Community Ecology Package</em>. R package Version 2.6-6.1. &lt;<a class="reference external" href="https://doi.org/10.32614/CRAN.package.vegan">https://doi.org/10.32614/CRAN.package.vegan</a></p></td>
+<td class="text-left"><p><div class="hanging">Oksanen, J., Simpson, G. L., Blanchet, F. G., Kindt, R., Legendre, P., Minchin, P. R., O’Hara, R. B., Solymos, P., Stevens, M. H. H., Szoecs, E., Wagner, H., Barbour, M., Bedward, M., Bolker, B., Borcard, D., Carvalho, G., Chirico, M., De Caceres, M., Durand, S., … Weedon, J. (2024). <i>vegan: Community Ecology Package</i>. R package version 2.6-6.1. <a href="https://doi.org/10.32614/CRAN.package.vegan" target="_blank">https://doi.org/10.32614/CRAN.package.vegan</a></div></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>R package</p></td>
 <td class="text-left"><p>PresenceAbsence: An R package for presence absence analysis</p></td>
@@ -316,7 +581,37 @@ Analytical tools &amp; Resources</label><div class="sd-tab-content docutils">
 </tr>
 <tr class="row-even"><td class="text-left"><p>the results of presence-absence analysis.</p></td>
 <td class="text-left"><p><a class="reference external" href="https://research.fs.usda.gov/treesearch/29484">https://research.fs.usda.gov/treesearch/29484</a></p></td>
-<td class="text-left"><p>Freeman, E. A. &amp; Moisen, G. (2008). PresenceAbsence: An R Package for Presence Absence Analysis. <em>Journal of Statistical Software, 23</em>(11). <a class="reference external" href="https://www.fs.usda.gov/rm/pubs_other/rmrs_2008_freeman_e001.pdf">https://www.fs.usda.gov/rm/pubs_other/rmrs_2008_freeman_e001.pdf</a></p></td>
+<td class="text-left"><p><div class="hanging">Freeman, E. A. &amp; Moisen, G. (2008). PresenceAbsence: An R Package for Presence Absence Analysis. <i>Journal of Statistical Software, 23</i>(11). <a href="https://www.fs.usda.gov/rm/pubs_other/rmrs_2008_freeman_e001.pdf" target="_blank">https://www.fs.usda.gov/rm/pubs_other/rmrs_2008_freeman_e001.pdf</a></div></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 </tr>
@@ -324,22 +619,21 @@ Analytical tools &amp; Resources</label><div class="sd-tab-content docutils">
 </table>
 </div>
 </div>
-<input id="sd-tab-item-4" name="sd-tab-set-0" type="radio">
-<label class="sd-tab-label" for="sd-tab-item-4">
+<input id="sd-tab-item-5" name="sd-tab-set-0" type="radio">
+<label class="sd-tab-label" for="sd-tab-item-5">
 References</label><div class="sd-tab-content docutils">
-<p>Ahumada, J. A., Silva, C. E. F., Gajapersad, K., Hallam, C., Hurtado, J., Martin, E., McWilliam, A., Mugerwa, B., O’Brien, T., Rovero, F., Sheil, D., Spironello, W. R., Winarni, N., &amp; Andelman, S. J. (2011). Community Structure and Diversity of Tropical Forest Mammals: Data from a Global Camera Trap Network. <em>Philosophical Transactions: Biological Sciences, 366</em>(1578), 2703-2711. <a class="reference external" href="https://doi.org/10.1098/rstb.2011.0115">https://doi.org/10.1098/rstb.2011.0115</a></p>
-<p>Colyn, R. B., Radloff, F., &amp; O’Riain, M. J. (2018). Camera trapping mammals in the scrubland’s of the cape floristic kingdom - the importance of effort, spacing and trap placement. <em>Biodiversity and Conservation, 27</em>(2), 503-520. <a class="reference external" href="https://doi.org/10.1007/s10531-017-1448-z">https://doi.org/10.1007/s10531-017-1448-z</a></p>
-<p>Colwell, R. K., &amp; Coddington, J. A. (1994).Estimating terrestrial biodiversity through extrapolation. <em>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences, 345</em>, 101-118. <a class="reference external" href="https://doi.org/10.1098/rstb.1994.0091">https://doi.org/10.1098/rstb.1994.0091</a></p>
-<p>Colwell, R. K., Mao, C. X., &amp; Chang, J. (2004). Interpolating, Extrapolating, and Comparing Incidence-based Species Accumulation Curves. <em>Ecology, 85</em>(10), 2717-2727. <a class="reference external" href="https://doi.org/10.1890/03-0557">https://doi.org/10.1890/03-0557</a></p>
-<p>Freeman, E. A. &amp; Moisen, G. (2008). PresenceAbsence: An R Package for Presence Absence Analysis. <em>Journal of Statistical Software, 23</em>(11). <a class="reference external" href="https://www.fs.usda.gov/rm/pubs_other/rmrs_2008_freeman_e001.pdf">https://www.fs.usda.gov/rm/pubs_other/rmrs_2008_freeman_e001.pdf</a></p>
-<p>Alberta Remote Camera Steering Committee [RCSC], Stevenson, C., Hubbs, A., &amp; Wildlife Cameras for Adaptive Management (WildCAM). (2024). <em>Remote Camera Survey Guidelines: Guidelines for Western Canada</em>. Version 3.0. Edmonton, Alberta. <a class="reference external" href="https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/1_Survey-guidelines/1_0.1_Citation-and-Info.html">https://ab-rcsc.github.io/RCSC-WildCAM_Remote-Camera-Survey-Guidelines-and-Metadata-Standards/1_Survey-guidelines/1_0.1_Citation-and-Info.html</a></p>
-<p>Rovero, F., Zimmermann, F., Berzi, D., &amp; Meek, P. (2013). “Which camera trap type and how many do I need?” A review of camera features and study designs for a range of wildlife research applications. <em>Hystrix, the Italian Journal of Mammalogy</em>, <em>24</em>(2), 148-156. <a class="reference external" href="https://doi.org/10.4404/hystrix-24.2-6316">https://doi.org/10.4404/hystrix-24.2-6316</a></p>
-<p>Rovero, F., &amp; Tobler, M., (2010). Camera trapping for inventorying terrestrial vertebrates. <em>Manual on Field Recording Techniques and Protocols for All Taxa Biodiversity Inventories and Monitoring</em>. <a class="reference external" href="https://www.researchgate.net/publication/229057405_Camera_trapping_for_inventorying_terrestrial_vertebrates">https://www.researchgate.net/publication/229057405_Camera_trapping_for_inventorying_terrestrial_vertebrates</a></p>
-<p>Soberón, J., &amp; Llorente, J. (1993). The Use of Species Accumulation Functions for the Prediction of Species Richness. <em>Conservation Biology, 7</em>(3), 480-488. <a class="reference external" href="https://doi.org/10.1046/j.1523-1739.1993.07030480.x">https://doi.org/10.1046/j.1523-1739.1993.07030480.x</a></p>
-<p>Tobler, M. W., Pitman, R. L., Mares, R. &amp; Powell, G. (2008). An Evaluation of Camera Traps for Inventorying Large- and Medium-Sized Terrestrial Rainforest Mammals. <em>Animal Conservation, 11</em>, 169-178. <a class="reference external" href="https://doi.org/10.1111/j.1469-1795.2008.00169.x">https://doi.org/10.1111/j.1469-1795.2008.00169.x</a></p>
-<p>Walther, B. A., &amp; Moore, J. L. (2005). The Concepts of Bias, Precision and Accuracy, and Their Use in Testing the Performance of Species Richness Estimators, with a Literature Review of Estimator Performance. <em>Ecography, 28</em>, 815-829. <a class="reference external" href="https://doi.org/10.1111/j.2005.0906-7590.04112.x">https://doi.org/10.1111/j.2005.0906-7590.04112.x</a></p>
-<p>Wearn, O. R., Rowcliffe, J. M., Carbone, C., Bernard, H., &amp; Ewers, R. M. (2013). Assessing the status of wild felids in a highly-disturbed commercial forest reserve in Borneo and the implications for camera trap Survey design. <em>PLoS One, 8</em>(11), e77598. <a class="reference external" href="https://doi.org/10.1371/journal.pone.0077598">https://doi.org/10.1371/journal.pone.0077598</a></p>
-<p>Wearn, O. R., &amp; Glover-Kapfer, P. (2017). Camera-Trapping for Conservation: A Guide to Best-ractices. <em>WWF conservation technology series, 1</em>, 1-181. <a class="reference external" href="http://dx.doi.org/10.13140/RG.2.2.23409.17767">http://dx.doi.org/10.13140/RG.2.2.23409.17767</a></p>
+<div class="hanging">Ahumada, J. A., Silva, C. E. F., Gajapersad, K., Hallam, C., Hurtado, J., Martin, E., McWilliam, A., Mugerwa, B., O'Brien, T., Rovero, F., Sheil, D., Spironello, W. R., Winarni, N., & Andelman, S. J. (2011). Community Structure and Diversity of Tropical Forest Mammals: Data from a Global Camera Trap Network. <i>Philosophical Transactions: Biological Sciences, 366</i>(1578), 2703-2711. <a href="https://doi.org/10.1098/rstb.2011.0115" target="_blank">https://doi.org/10.1098/rstb.2011.0115</a></div>
+<div class="hanging">Colyn, R. B., Radloff, F., & O'Riain, M. J. (2018). Camera trapping mammals in the scrubland’s of the cape floristic kingdom - the importance of effort, spacing and trap placement. <i>Biodiversity and Conservation, 27</i>(2), 503-520. <a href="https://doi.org/10.1007/s10531-017-1448-z" target="_blank">https://doi.org/10.1007/s10531-017-1448-z</a></div>
+<div class="hanging">Colwell, R. K., & Coddington, J. A. (1994).Estimating terrestrial biodiversity through extrapolation. <i>Philosophical Transactions of the Royal Society of London. Series B, Biological Sciences, 345</i>, 101-118. <a href="https://doi.org/10.1098/rstb.1994.0091" target="_blank">https://doi.org/10.1098/rstb.1994.0091</a></div>
+<div class="hanging">Colwell, R. K., Mao, C. X., & Chang, J. (2004). Interpolating, Extrapolating, and Comparing Incidence-based Species Accumulation Curves. <i>Ecology, 85</i>(10), 2717-2727. <a href="https://doi.org/10.1890/03-0557" target="_blank">https://doi.org/10.1890/03-0557</a></div>
+<div class="hanging">Freeman, E. A. & Moisen, G. (2008). PresenceAbsence: An R Package for Presence Absence Analysis. <i>Journal of Statistical Software, 23</i>(11). <a href="https://www.fs.usda.gov/rm/pubs_other/rmrs_2008_freeman_e001.pdf" target="_blank">https://www.fs.usda.gov/rm/pubs_other/rmrs_2008_freeman_e001.pdf</a></div>
+<div class="hanging">Rovero, F., Zimmermann, F., Berzi, D., & Meek, P. (2013). “Which camera trap type and how many do I need?” A review of camera features and study designs for a range of wildlife research applications. <i>Hystrix, the Italian Journal of Mammalogy, 24</i>(2), 148-156. <a href="https://doi.org/10.4404/hystrix-24.2-6316" target="_blank">https://doi.org/10.4404/hystrix-24.2-6316</a></div>
+<div class="hanging">Rovero, F., & Tobler, M., (2010). Camera trapping for inventorying terrestrial vertebrates. <i>Manual on Field Recording Techniques and Protocols for All Taxa Biodiversity Inventories and Monitoring</i>. <a href="https://www.researchgate.net/publication/229057405_Camera_trapping_for_inventorying_terrestrial_vertebrates" target="_blank">https://www.researchgate.net/publication/229057405_Camera_trapping_for_inventorying_terrestrial_vertebrates</a></div>
+<div class="hanging">Soberón, J., & Llorente, J. (1993). The Use of Species Accumulation Functions for the Prediction of Species Richness. <i>Conservation Biology, 7</i>(3), 480-488. <a href="https://doi.org/10.1046/j.1523-1739.1993.07030480.x" target="_blank">https://doi.org/10.1046/j.1523-1739.1993.07030480.x</a></div>
+<div class="hanging">Tobler, M. W., Pitman, R. L., Mares, R. & Powell, G. (2008). An Evaluation of Camera Traps for Inventorying Large- and Medium-Sized Terrestrial Rainforest Mammals. <i>Animal Conservation, 11</i>, 169-178. <a href="https://doi.org/10.1111/j.1469-1795.2008.00169.x" target="_blank">https://doi.org/10.1111/j.1469-1795.2008.00169.x</a></div>
+<div class="hanging">Walther, B. A., & Moore, J. L. (2005). The Concepts of Bias, Precision and Accuracy, and Their Use in Testing the Performance of Species Richness Estimators, with a Literature Review of Estimator Performance. <i>Ecography, 28</i>, 815-829. <a href="https://doi.org/10.1111/j.2005.0906-7590.04112.x" target="_blank">https://doi.org/10.1111/j.2005.0906-7590.04112.x</a></div>
+<div class="hanging">Wearn, O. R., Rowcliffe, J. M., Carbone, C., Bernard, H., & Ewers, R. M. (2013). Assessing the status of wild felids in a highly-disturbed commercial forest reserve in Borneo and the implications for camera trap Survey design. <i>PLoS One, 8</i>(11), e77598. <a href="https://doi.org/10.1371/journal.pone.0077598" target="_blank">https://doi.org/10.1371/journal.pone.0077598</a></div>
+<div class="hanging">Wearn, O. R., & Glover-Kapfer, P. (2017). Camera-Trapping for Conservation: A Guide to Best-ractices. <i>WWF conservation technology series, 1</i>, 1-181. <a href="http://dx.doi.org/10.13140/RG.2.2.23409.17767" target="_blank">http://dx.doi.org/10.13140/RG.2.2.23409.17767</a></div>
 </div>
 </div>
 </section>
@@ -385,11 +679,25 @@ References</label><div class="sd-tab-content docutils">
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
   
   
   
